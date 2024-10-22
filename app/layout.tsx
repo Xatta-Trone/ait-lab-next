@@ -6,13 +6,13 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props
   return (
     <html suppressHydrationWarning>
-      <body>
+      <body style={{ backgroundColor: "white" }}>
         <ChakraProvider>
-          <Provider>
-            <Theme appearance="dark" colorPalette={"blue"}>
+          <Theme appearance="light" colorPalette={"#2b6cb0"}>
+            <Provider>
               {children}
-            </Theme>
-          </Provider>
+            </Provider>
+          </Theme>
         </ChakraProvider>
       </body>
     </html>
