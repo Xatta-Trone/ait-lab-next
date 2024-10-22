@@ -1,5 +1,4 @@
-
-import { Box, Flex, Link as ChakraLink, Button, Center } from '@chakra-ui/react'
+import { Box, Flex, Link as ChakraLink, Button, Center, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Separator } from "@chakra-ui/react"
 import Image from 'next/image'
@@ -7,7 +6,6 @@ import aitLogo from "@/public/img/logo-white.png"
 import navLinks from "@/data/navLinks.json"
 import NextLink from 'next/link'
 import {
-    DrawerActionTrigger,
     DrawerBackdrop,
     DrawerBody,
     DrawerCloseTrigger,
@@ -21,6 +19,7 @@ import {
 import { RiMenu3Line } from 'react-icons/ri'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import { FaGoogleScholar, FaResearchgate } from 'react-icons/fa6'
 
 interface NavLink {
     name: string;
@@ -28,11 +27,12 @@ interface NavLink {
 }
 
 const Navbar = () => {
-
     return (
         <>
+            {/* Navigation Container  */}
             <Box w={"100%"} padding={"4"}>
                 <Flex align={"center"} justify={'space-between'} paddingX={20} paddingY={1}>
+                    {/* Logo with link to home */}
                     <NextLink href={"/"}>
                         <Image src={aitLogo} style={{
                             width: 'auto',
@@ -40,34 +40,47 @@ const Navbar = () => {
                         }} alt='AIT Lab Logo' />
                     </NextLink>
 
+                    {/* Desktop navigation links  */}
                     <Flex align={"center"} justify={'center'} spaceX={5} hideBelow={"lg"}>
                         {navLinks.map((item: NavLink) => (
-                            // <ChakraLink asChild key={item.name} >
-                            <NextLink href={item.path} key={item.name}>
-                                {item.name}
-                            </NextLink>
-                            // </ChakraLink>
+                            <ChakraLink asChild key={item.name} >
+                                <NextLink href={item.path} key={item.name}>
+                                    {item.name}
+                                </NextLink>
+                            </ChakraLink>
                         ))}
                     </Flex>
 
-                    <Flex align={'center'} justify={"flex-end"} spaceX={2} hideBelow={"lg"}>
+                    {/* Desktop Nav Links with icons  */}
+                    <Flex align={'center'} justify={"flex-end"} spaceX={4} hideBelow={"lg"}>
                         <NextLink href={"https://github.com/https://github.com/subasish"}>
-                            <Center w="40px" h="40px" bg="blue" color="white" rounded={"md"}>
+                            <Text fontSize={"2xl"}>
                                 <FaGithub />
-                            </Center>
+                            </Text>
                         </NextLink>
                         <NextLink href={"mailto:subasish@txstate.edu"}>
-                            <Center w="40px" h="40px" bg="blue" color="white" rounded={"md"}>
+                            <Text fontSize={"2xl"}>
                                 <MdEmail />
-                            </Center>
+                            </Text>
                         </NextLink>
                         <NextLink href={"https://www.linkedin.com/in/subasishdas/"}>
-                            <Center w="40px" h="40px" bg="blue" color="white" rounded={"md"}>
+                            <Text fontSize={"2xl"}>
                                 <FaLinkedin />
-                            </Center>
+                            </Text>
+                        </NextLink>
+                        <NextLink href={"https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"}>
+                            <Text fontSize={"2xl"}>
+                                <FaGoogleScholar />
+                            </Text>
+                        </NextLink>
+                        <NextLink href={"https://www.researchgate.net/profile/Subasish_Das"}>
+                            <Text fontSize={"2xl"}>
+                                <FaResearchgate />
+                            </Text>
                         </NextLink>
                     </Flex>
 
+                    {/* Mobile Hamburger Menu and Drawer  */}
                     <Box hideFrom={"lg"}>
                         <DrawerRoot>
                             <DrawerBackdrop />
@@ -81,6 +94,7 @@ const Navbar = () => {
                                     <DrawerTitle>Menu</DrawerTitle>
                                 </DrawerHeader>
                                 <DrawerBody>
+                                    {/* Mobile Navigation Links  */}
                                     <Flex align={"flex-start"} justify={'center'} spaceY={5} direction={"column"}>
                                         {navLinks.map((item: NavLink) => (
                                             <ChakraLink asChild key={item.name} >
@@ -92,20 +106,31 @@ const Navbar = () => {
                                     </Flex>
                                 </DrawerBody>
                                 <DrawerFooter>
+                                    {/* Mobile Links with icons  */}
                                     <NextLink href={"https://github.com/https://github.com/subasish"}>
-                                        <Center w="40px" h="40px" bg="blue" color="white">
+                                        <Text fontSize={"2xl"}>
                                             <FaGithub />
-                                        </Center>
+                                        </Text>
                                     </NextLink>
                                     <NextLink href={"mailto:subasish@txstate.edu"}>
-                                        <Center w="40px" h="40px" bg="blue" color="white">
+                                        <Text fontSize={"2xl"}>
                                             <MdEmail />
-                                        </Center>
+                                        </Text>
                                     </NextLink>
                                     <NextLink href={"https://www.linkedin.com/in/subasishdas/"}>
-                                        <Center w="40px" h="40px" bg="blue" color="white">
+                                        <Text fontSize={"2xl"}>
                                             <FaLinkedin />
-                                        </Center>
+                                        </Text>
+                                    </NextLink>
+                                    <NextLink href={"https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"}>
+                                        <Text fontSize={"2xl"}>
+                                            <FaGoogleScholar />
+                                        </Text>
+                                    </NextLink>
+                                    <NextLink href={"https://www.researchgate.net/profile/Subasish_Das"}>
+                                        <Text fontSize={"2xl"}>
+                                            <FaResearchgate />
+                                        </Text>
                                     </NextLink>
                                 </DrawerFooter>
                                 <DrawerCloseTrigger />
