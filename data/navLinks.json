@@ -1,0 +1,13 @@
+[
+  { "name": "Home", "path": "/" },
+  { "name": "Grants", "path": "/projects" },
+  { "name": "Publication", "path": "/publication" },
+  { "name": "Team", "path": "/teams" },
+  { "name": "Opening", "path": "/opening" },
+  { "name": "Talk", "path": "/talks" },
+  { "name": "About Me", "path": "/about" },
+  {
+    "name": "Resume",
+    "path": "https://subasish.github.io/ait_lab/pdfs/Subasish%20Das%20CV%20revised.pdf"
+  }
+]
