@@ -44,7 +44,7 @@ const Navbar = () => {
                     <Flex align={"center"} justify={'center'} spaceX={5} hideBelow={"lg"}>
                         {navLinks.map((item: NavLink) => (
                             <ChakraLink asChild key={item.name} >
-                                <NextLink href={item.path} key={item.name}>
+                                <NextLink href={item.path} target={item.name == "Resume" ? "_blank" : "_self"}>
                                     {item.name}
                                 </NextLink>
                             </ChakraLink>
@@ -53,27 +53,27 @@ const Navbar = () => {
 
                     {/* Desktop Nav Links with icons  */}
                     <Flex align={'center'} justify={"flex-end"} spaceX={4} hideBelow={"lg"}>
-                        <NextLink href={"https://github.com/https://github.com/subasish"}>
+                        <NextLink href={"https://github.com/subasish"} target='_blank'>
                             <Text fontSize={"2xl"}>
                                 <FaGithub />
                             </Text>
                         </NextLink>
-                        <NextLink href={"mailto:subasish@txstate.edu"}>
+                        <NextLink href={"mailto:subasish@txstate.edu"} target='_blank'>
                             <Text fontSize={"2xl"}>
                                 <MdEmail />
                             </Text>
                         </NextLink>
-                        <NextLink href={"https://www.linkedin.com/in/subasishdas/"}>
+                        <NextLink href={"https://www.linkedin.com/in/subasishdas/"} target='_blank'>
                             <Text fontSize={"2xl"}>
                                 <FaLinkedin />
                             </Text>
                         </NextLink>
-                        <NextLink href={"https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"}>
+                        <NextLink href={"https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"} target='_blank'>
                             <Text fontSize={"2xl"}>
                                 <FaGoogleScholar />
                             </Text>
                         </NextLink>
-                        <NextLink href={"https://www.researchgate.net/profile/Subasish_Das"}>
+                        <NextLink href={"https://www.researchgate.net/profile/Subasish_Das"} target='_blank'>
                             <Text fontSize={"2xl"}>
                                 <FaResearchgate />
                             </Text>
@@ -98,7 +98,7 @@ const Navbar = () => {
                                     <Flex align={"flex-start"} justify={'center'} spaceY={5} direction={"column"}>
                                         {navLinks.map((item: NavLink) => (
                                             <ChakraLink asChild key={item.name} >
-                                                <NextLink href={item.path} >
+                                                <NextLink href={item.path} target={item.name == "Resume" ? "_blank" : "_self"}>
                                                     {item.name}
                                                 </NextLink>
                                             </ChakraLink>
@@ -107,27 +107,27 @@ const Navbar = () => {
                                 </DrawerBody>
                                 <DrawerFooter>
                                     {/* Mobile Links with icons  */}
-                                    <NextLink href={"https://github.com/https://github.com/subasish"}>
+                                    <NextLink href={"https://github.com/https://github.com/subasish"} target='_blank'>
                                         <Text fontSize={"2xl"}>
                                             <FaGithub />
                                         </Text>
                                     </NextLink>
-                                    <NextLink href={"mailto:subasish@txstate.edu"}>
+                                    <NextLink href={"mailto:subasish@txstate.edu"} target='_blank'>
                                         <Text fontSize={"2xl"}>
                                             <MdEmail />
                                         </Text>
                                     </NextLink>
-                                    <NextLink href={"https://www.linkedin.com/in/subasishdas/"}>
+                                    <NextLink href={"https://www.linkedin.com/in/subasishdas/"} target='_blank'>
                                         <Text fontSize={"2xl"}>
                                             <FaLinkedin />
                                         </Text>
                                     </NextLink>
-                                    <NextLink href={"https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"}>
+                                    <NextLink href={"https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"} target='_blank'>
                                         <Text fontSize={"2xl"}>
                                             <FaGoogleScholar />
                                         </Text>
                                     </NextLink>
-                                    <NextLink href={"https://www.researchgate.net/profile/Subasish_Das"}>
+                                    <NextLink href={"https://www.researchgate.net/profile/Subasish_Das"} target='_blank'>
                                         <Text fontSize={"2xl"}>
                                             <FaResearchgate />
                                         </Text>
