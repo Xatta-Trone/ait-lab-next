@@ -264,5 +264,20 @@
     "twitter": "",
     "websites": [],
     "description": "Teale is currently a senior at Texas State University, majoring in Urban and Regional Planning and minoring in Geographic Information Systems (GIS). She started at the Artificial Intelligence in Transportation (AIT) lab in fall 2024 and is currently working as an undergraduate research assistant for Dr. Das. Teale is passionate about the environment and sustainable development, especially involving transportation and creating a more efficient system. She has prior experience working as a Visual Analytics intern at Texas A&M Transportation Institute (TTI) utilizing GIS and ArcPy. Involved in several campus activities such as the Student Urban Planning Organization (SUPO) and SWIG (Supporting Women in Geography). In her free time, Teale enjoys playing board games, reading, and paddleboarding."
+  },
+  {
+    "name": "Gaurab Chhetri",
+    "label": "B.Sc., Computer Science (Fall 2024 - Current)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://www.linkedin.com/in/gaurabchhetri/",
+    "email": "",
+    "image": "gaurab_chhetri.jpg",
+    "googleScholar": "",
+    "researchGate": "",
+    "orcid": "",
+    "github": "https://github.com/gauravfs-14",
+    "twitter": "https://x.com/gaurav_fs_14",
+    "websites": ["https://gaurabchhetri.com.np", "https://computenepal.com"],
+    "description": "Gaurab is currently an undergraduate student in the Computer Science Program at Texas State University. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant for Dr. Das. Originally from Nepal, Gaurab is passionate about web development and IT operations, with a strong focus on creating responsive and user-friendly web applications. His technical expertise spans HTML, CSS, JavaScript, React, Tailwind, Node.js, Express, MongoDB, and MySQL, along with version control using Git and GitHub. Before joining Texas State, Gaurab worked as an IT Officer, where he managed domain registrations, email systems, and computer lab environments. He also has experience in digital marketing, social media management, and graphic design, providing a holistic approach to enhancing online presence for businesses. His hands-on experience extends to WordPress, PHP, SQL, and a variety of tools that streamline IT operations and web development.'"
   }
 ]

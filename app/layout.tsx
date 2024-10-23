@@ -6,12 +6,19 @@ import { ColorModeScript } from "@chakra-ui/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import "./index.css";
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props;
 
   return (
     <html suppressHydrationWarning>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body style={{ backgroundColor: "white" }}>
         {/* Ensure ColorModeScript is included for proper SSR hydration */}
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />

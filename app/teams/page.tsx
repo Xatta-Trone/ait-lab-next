@@ -17,24 +17,6 @@ import teamData from "@/data/team.json";
 import alumniData from "@/data/alumni.json";
 import fellowData from "@/data/fellow.json";
 
-// Define the structure for the member data
-interface TeamMembers {
-    name: string;
-    label: string;
-    description?: string; // Optional
-    email?: string;
-    linkedin?: string;
-    github?: string;
-    googleScholar?: string;
-    researchGate?: string;
-    orcid?: string;
-    twitter?: string;
-    websites?: string[];
-    subject?: string; // Used for alumni
-    duration?: string; // Used for alumni
-    image?: string; // Optional property
-}
-
 // Create a motion-enabled version of GridItem with explicit typing
 const MotionGridItem = motion(
     forwardRef<HTMLDivElement, React.ComponentPropsWithoutRef<typeof GridItem>>(
@@ -58,10 +40,10 @@ const Team: React.FC = () => {
         document.title = "Team | AIT Lab";
     }, []);
 
-    const [selectedMember, setSelectedMember] = useState<TeamMembers | null>(null);
+    const [selectedMember, setSelectedMember] = useState<any>(null); // Use any for flexibility
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
-    const handleShowMore = (member: TeamMembers) => {
+    const handleShowMore = (member: any) => {
         setSelectedMember(member);
         setIsModalOpen(true);
     };
@@ -82,9 +64,10 @@ const Team: React.FC = () => {
                         </Heading>
                     </GridItem>
                     <GridItem>
-                        {teamData.map((member: TeamMembers, index: number) => (
+                        {teamData.map((member, index) => (
                             <MotionGridItem
                                 key={index}
+                                custom={index} // Custom index for staggered effect
                                 initial="hidden"
                                 animate="visible"
                                 variants={cardVariants}
@@ -103,9 +86,10 @@ const Team: React.FC = () => {
                         </Heading>
                     </GridItem>
                     <GridItem>
-                        {fellowData.map((member: TeamMembers, index: number) => (
+                        {fellowData.map((member, index) => (
                             <MotionGridItem
                                 key={index}
+                                custom={index}
                                 initial="hidden"
                                 animate="visible"
                                 variants={cardVariants}
@@ -124,7 +108,7 @@ const Team: React.FC = () => {
                         </Heading>
                     </GridItem>
                     <GridItem>
-                        {alumniData.map((alumni: TeamMembers, index: number) => (
+                        {alumniData.map((alumni, index) => (
                             <Box
                                 key={index}
                                 borderBottom="1px solid"
@@ -135,9 +119,10 @@ const Team: React.FC = () => {
                                 <Text fontWeight="bold" fontSize="lg" color="gray.600">
                                     {alumni.name}
                                     <Text as="span" fontWeight="300" color="gray.500">
-                                        {" "}- {alumni.label}
-                                        {alumni.subject && alumni.subject.length > 0 && `, ${alumni.subject}`}
-                                        {alumni.duration && alumni.duration.length > 0 && ` (${alumni.duration})`}
+                                        {" "}
+                                        - {alumni.label}
+                                        {alumni.subject.length > 0 && `, ${alumni.subject}`}
+                                        {alumni.duration.length > 0 && ` (${alumni.duration})`}
                                     </Text>
                                 </Text>
                             </Box>
