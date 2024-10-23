@@ -14,7 +14,7 @@ import {
     Flex,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons"; // Import the external link icon
-import talksData from "@/data/talk.json"; // Assuming talks.json is located here
+import talksData from "@/data/talk.json";
 
 const Talk = () => {
     // Set dynamic page title

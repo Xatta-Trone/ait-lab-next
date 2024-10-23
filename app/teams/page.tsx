@@ -1,7 +1,7 @@
 /** @format */
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, forwardRef } from "react";
 import {
     Box,
     Container,
@@ -35,8 +35,12 @@ interface TeamMembers {
     image?: string; // Optional property
 }
 
-// Create MotionGridItem by wrapping GridItem with motion
-const MotionGridItem = motion(GridItem); // Use motion(GridItem) directly
+// Create a motion-enabled version of GridItem with explicit typing
+const MotionGridItem = motion(
+    forwardRef<HTMLDivElement, React.ComponentPropsWithoutRef<typeof GridItem>>(
+        (props, ref) => <GridItem ref={ref} {...props} />
+    )
+);
 
 // Animation variant for staggered slide-in effect
 const cardVariants = {
