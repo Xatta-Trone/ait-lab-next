@@ -1,160 +1,117 @@
-import { Box, Flex, Link as ChakraLink, Button, Center, Text, Theme, Grid, GridItem } from '@chakra-ui/react'
-import React from 'react'
-import { Separator } from "@chakra-ui/react"
-import Image from 'next/image'
-import aitLogo from "@/public/img/logo-white.png"
-import navLinks from "@/data/navLinks.json"
-import NextLink from 'next/link'
+/** @format */
+"use client";
+
+import { HamburgerIcon, CloseIcon, useDisclosure } from "@chakra-ui/icons";
+import navLinks from "@/data/navLinks.json"; // Import the nav_links from JSON
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import {
-    DrawerBackdrop,
+    Image,
+    Box,
+    Container,
+    Flex,
+    HStack,
+    Stack,
+    Text,
+    IconButton,
+    Drawer,
     DrawerBody,
-    DrawerCloseTrigger,
+    DrawerCloseButton,
     DrawerContent,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerRoot,
-    DrawerTitle,
-    DrawerTrigger,
-} from "@/components/ui/drawer"
-import { RiMenu3Line } from 'react-icons/ri'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
-import { FaGoogleScholar, FaResearchgate } from 'react-icons/fa6'
+    DrawerOverlay,
+} from "@chakra-ui/react";
+import { usePathname } from "next/navigation"; // Updated: usePathname instead of useRouter
 
-interface NavLink {
-    name: string;
-    path: string;
-}
+function Navbar() {
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    const pathname = usePathname(); // Get current path
+    const [isMounted, setIsMounted] = useState(false); // State to check if mounted
 
-const Navbar = () => {
+    // Ensure we're on the client-side
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
     return (
-        <>
-            {/* Navigation Container  */}
-            <Theme appearance='light' color={"whiteAlpha.800"}>
+        <Box bg="blue.600" w="100%">
+            {/* Container to constrain content within container.xl */}
+            <Container maxW="container.xl">
+                <Flex h={16} alignItems="center" justifyContent="space-between">
+                    {/* Logo: Clickable to Home */}
+                    <Link href="/">
+                        <Image
+                            src="/img/logo-white.png" // Path to logo in the public folder
+                            alt="AIT Lab Logo"
+                            boxSize="70px"
+                            objectFit="contain"
+                            cursor="pointer"
+                        />
+                    </Link>
 
-                <Box w={"100%"} paddingY={"3"} paddingX={2} bgColor={"#2b6cb0"}>
-                    <Grid templateColumns="1fr 5fr 1fr" smToXl={{ gridTemplateColumns: "1fr 1fr" }} paddingX={20} paddingY={1} alignItems={"center"}>
-                        {/* Logo with link to home */}
-                        <GridItem>
-                            <NextLink href={"/"}>
-                                <Image src={aitLogo} style={{
-                                    width: 'auto',
-                                    height: '35px',
-                                }} alt='AIT Lab Logo' />
-                            </NextLink>
-                        </GridItem>
+                    {/* Desktop Menu */}
+                    <HStack as="nav" spacing={4} display={{ base: "none", md: "flex" }}>
+                        {navLinks.map((item) => (
+                            <Link key={item.path} href={item.path} passHref>
+                                <Text
+                                    fontSize="larger"
+                                    letterSpacing="wide"
+                                    color="white"
+                                    position="relative"
+                                    paddingBottom="3px"
+                                    _before={{
+                                        content: '""',
+                                        position: "absolute",
+                                        width: isMounted && pathname === item.path ? "100%" : "0%", // Active link check after mounting
+                                        height: "3px",
+                                        bottom: "-3px",
+                                        left: "0",
+                                        backgroundColor: "white",
+                                        transition: "width 0.3s ease-in-out",
+                                    }}
+                                    _hover={{
+                                        _before: {
+                                            width: "100%",
+                                        },
+                                    }}
+                                >
+                                    {item.name}
+                                </Text>
+                            </Link>
+                        ))}
+                    </HStack>
 
-                        {/* Desktop navigation links  */}
-                        <GridItem hideBelow={"xl"}>
-                            <Flex align={"center"} justify={'center'} spaceX={4} hideBelow={"lg"}>
-                                {navLinks.map((item: NavLink) => (
-                                    <ChakraLink asChild key={item.name} color={"whiteAlpha.800"} outline={"none"}>
-                                        <NextLink href={item.path} target={item.name == "Resume" ? "_blank" : "_self"}>
-                                            {item.name}
-                                        </NextLink>
-                                    </ChakraLink>
-                                ))}
-                            </Flex>
-                        </GridItem>
+                    {/* Mobile Menu Toggle */}
+                    <IconButton
+                        size="md"
+                        icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+                        aria-label="Open Menu"
+                        display={{ md: "none" }}
+                        onClick={onOpen}
+                        color={"white"}
+                    />
+                </Flex>
+            </Container>
 
-                        {/* Desktop Nav Links with icons  */}
-                        <GridItem hideBelow={"xl"}>
-                            <Flex align={'center'} justify={"flex-end"} spaceX={4} hideBelow={"xl"}>
-                                <NextLink href={"https://github.com/subasish"} target='_blank'>
-                                    <Text fontSize={"2xl"}>
-                                        <FaGithub />
+            {/* Mobile Drawer Menu */}
+            <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+                <DrawerOverlay />
+                <DrawerContent>
+                    <DrawerCloseButton />
+                    <DrawerBody>
+                        <Stack as="nav" spacing={4} mt={6}>
+                            {navLinks.map((item) => (
+                                <Link key={item.path} href={item.path} passHref>
+                                    <Text fontWeight="bold" onClick={onClose}>
+                                        {item.name}
                                     </Text>
-                                </NextLink>
-                                <NextLink href={"mailto:subasish@txstate.edu"} target='_blank'>
-                                    <Text fontSize={"2xl"}>
-                                        <MdEmail />
-                                    </Text>
-                                </NextLink>
-                                <NextLink href={"https://www.linkedin.com/in/subasishdas/"} target='_blank'>
-                                    <Text fontSize={"2xl"}>
-                                        <FaLinkedin />
-                                    </Text>
-                                </NextLink>
-                                <NextLink href={"https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"} target='_blank'>
-                                    <Text fontSize={"2xl"}>
-                                        <FaGoogleScholar />
-                                    </Text>
-                                </NextLink>
-                                <NextLink href={"https://www.researchgate.net/profile/Subasish_Das"} target='_blank'>
-                                    <Text fontSize={"2xl"}>
-                                        <FaResearchgate />
-                                    </Text>
-                                </NextLink>
-                            </Flex>
-                        </GridItem>
-
-
-                        {/* Mobile Hamburger Menu and Drawer  */}
-                        <GridItem hideFrom={"xl"} justifyItems={"end"}>
-                            <Box hideFrom={"xl"} justifyItems={"end"}>
-                                <DrawerRoot>
-                                    <DrawerBackdrop />
-                                    <DrawerTrigger asChild >
-                                        <Button variant="outline" size="sm" color={"whiteAlpha.800"}>
-                                            <RiMenu3Line />
-                                        </Button>
-                                    </DrawerTrigger>
-                                    <DrawerContent>
-                                        <DrawerHeader>
-                                            <DrawerTitle>Menu</DrawerTitle>
-                                        </DrawerHeader>
-                                        <DrawerBody>
-                                            {/* Mobile Navigation Links  */}
-                                            <Flex align={"flex-start"} justify={'center'} spaceY={5} direction={"column"}>
-                                                {navLinks.map((item: NavLink) => (
-                                                    <ChakraLink asChild key={item.name} outline={"none"} >
-                                                        <NextLink href={item.path} target={item.name == "Resume" ? "_blank" : "_self"}>
-                                                            {item.name}
-                                                        </NextLink>
-                                                    </ChakraLink>
-                                                ))}
-                                            </Flex>
-                                        </DrawerBody>
-                                        <DrawerFooter>
-                                            {/* Mobile Links with icons  */}
-                                            <NextLink href={"https://github.com/https://github.com/subasish"} target='_blank'>
-                                                <Text fontSize={"2xl"}>
-                                                    <FaGithub />
-                                                </Text>
-                                            </NextLink>
-                                            <NextLink href={"mailto:subasish@txstate.edu"} target='_blank'>
-                                                <Text fontSize={"2xl"}>
-                                                    <MdEmail />
-                                                </Text>
-                                            </NextLink>
-                                            <NextLink href={"https://www.linkedin.com/in/subasishdas/"} target='_blank'>
-                                                <Text fontSize={"2xl"}>
-                                                    <FaLinkedin />
-                                                </Text>
-                                            </NextLink>
-                                            <NextLink href={"https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"} target='_blank'>
-                                                <Text fontSize={"2xl"}>
-                                                    <FaGoogleScholar />
-                                                </Text>
-                                            </NextLink>
-                                            <NextLink href={"https://www.researchgate.net/profile/Subasish_Das"} target='_blank'>
-                                                <Text fontSize={"2xl"}>
-                                                    <FaResearchgate />
-                                                </Text>
-                                            </NextLink>
-                                        </DrawerFooter>
-                                        <DrawerCloseTrigger />
-                                    </DrawerContent>
-                                </DrawerRoot>
-                            </Box>
-                        </GridItem>
-
-                    </Grid>
-                </Box>
-                <Separator />
-            </Theme >
-        </>
-    )
+                                </Link>
+                            ))}
+                        </Stack>
+                    </DrawerBody>
+                </DrawerContent>
+            </Drawer>
+        </Box>
+    );
 }
 
-export default Navbar
+export default Navbar;

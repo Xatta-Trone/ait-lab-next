@@ -1,7 +1,7 @@
 
 import { Metadata } from "next";
-import Navbar from "../components/Navbar";
-import { Flex, Heading } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react/flex";
+import { Heading } from "@chakra-ui/react/typography";
 
 export const metadata: Metadata = {
   title: "AIT Lab",
