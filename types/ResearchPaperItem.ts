@@ -9,3 +9,16 @@ interface ResearchPaperItemProps {
     issue?: string; // Optional props
     book?: string; // Optional props
 }
+
+interface ResearchPaper {
+    title: string;
+    authors?: string;
+    total_citations: number;
+    year: number;
+    url: string;
+    journal?: string;
+    publisher?: string;
+    source?: string;
+    issue?: string;
+    book?: string;
+}

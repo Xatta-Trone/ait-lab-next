@@ -7,20 +7,6 @@ import { motion } from "framer-motion"; // Import framer-motion for animations
 import projectsData from "@/data/projects.json"; // Importing the data directly from the JSON file
 import ProjectCard from "@/components/ProjectCard"; // Import the ProjectCard component
 
-// Define the Project interface
-interface ProjectTypes {
-    title: string;
-    description: string;
-    link: string;
-    PI: string;
-    budget: string;
-    PI_role: "PI" | "Co-PI";
-    start_year: number;
-    end_year: number;
-    status: "completed" | "ongoing";
-    image: string;
-}
-
 // Type the imported projects data
 const typedProjectsData: ProjectTypes[] = projectsData as ProjectTypes[];
 

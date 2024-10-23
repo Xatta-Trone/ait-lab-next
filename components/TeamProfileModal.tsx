@@ -24,24 +24,6 @@ interface TeamProfileModalProps {
     member: TeamMembers;
 }
 
-// Define the structure for the member data
-interface TeamMembers {
-    name: string;
-    label: string;
-    description?: string; // Optional
-    email?: string;
-    linkedin?: string;
-    github?: string;
-    googleScholar?: string;
-    researchGate?: string;
-    orcid?: string;
-    twitter?: string;
-    websites?: string[];
-    subject?: string; // Used for alumni
-    duration?: string; // Used for alumni
-    image?: string; // Optional property
-}
-
 const TeamProfileModal: React.FC<TeamProfileModalProps> = ({ isOpen, onClose, member }) => {
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
