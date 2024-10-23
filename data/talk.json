@@ -1,0 +1,182 @@
+{
+  "items": [
+    {
+      "group": "talk",
+      "year": 2014,
+      "content": "Two days’ workshop on Interactive Highway Safety Design Model (IHSDM). Civil Engineering Department, University of Louisiana at Lafayette, LA, Mar."
+    },
+    {
+      "group": "talk",
+      "year": 2015,
+      "content": "Two days’ workshop on Interactive Highway Safety Design Model (IHSDM). Civil Engineering Department, University of Louisiana at Lafayette, LA, Mar."
+    },
+    {
+      "group": "talk",
+      "year": 2016,
+      "content": "Modeling in Roadway Safety: The Two Cultures. Texas A&M University ITE General Meeting, College Station, TX, May 17."
+    },
+    {
+      "group": "talk",
+      "year": 2017,
+      "content": "Visualization Lightning Talk: Visual Analytics by using Web GIS Tools in Transportation Decision Making. The 96th Transportation Research Board Annual Meeting, Washington D.C., Jan 11."
+    },
+    {
+      "group": "talk",
+      "year": 2017,
+      "content": "Workshop on R in Transportation Safety Research: Case Studies. Texas A&M University ITE General Meeting, College Station, TX, February 7."
+    },
+    {
+      "group": "talk",
+      "year": 2017,
+      "content": "Workshop on Text Mining in R: Understanding 100 years of Air Crash Narratives. Texas A&M University ITE General Meeting, College Station, TX, February 9."
+    },
+    {
+      "group": "talk",
+      "year": 2017,
+      "content": "Text mining on 100 years of Air Crash Narratives: Key Findings. The 96th Transportation Research Board Annual Meeting, Washington D.C., Jan 11."
+    },
+    {
+      "group": "talk",
+      "year": 2017,
+      "content": "Developing a Method for Estimating AADT on Local Roads. 2017 TRC Transportation Engineering Conference, Hot Springs, AK, May 17."
+    },
+    {
+      "group": "talk",
+      "year": 2018,
+      "content": "#TRBAM: Understanding Communication Patterns and Research Trends by Twitter Mining. The 97th Transportation Research Board Annual Meeting, Washington D.C., Jan 9."
+    },
+    {
+      "group": "talk",
+      "year": 2019,
+      "content": "Estimation of Traffic Volumes on Low-Volume Roads: Interpretable Machine Learning Approach, Washington D.C., Jan 16."
+    },
+    {
+      "group": "talk",
+      "year": 2018,
+      "content": "Using Deep Learning in Severity Analysis of At-Fault Motorcycle Rider Crashes. The 97th Transportation Research Board Annual Meeting, Washington D.C., Jan 9."
+    },
+    {
+      "group": "talk",
+      "year": 2019,
+      "content": "Injury Severity Analysis from Crash Narratives of Tree and Utility Pole associated Crashes: An Interpretable Machine Learning Approach, Washington D.C., Jan 15."
+    },
+    {
+      "group": "talk",
+      "year": 2019,
+      "content": "Youtube as a Source of Information in Understanding Autonomous Vehicle Consumers: A Natural Language Processing (NLP) Study, Washington D.C., Jan 14."
+    },
+    {
+      "group": "talk",
+      "year": 2019,
+      "content": "AADT Estimation Errors in Predicting Safety of Low-volume Roadways. The 98th Transportation Research Board Annual Meeting, Washington D.C., Jan 13."
+    },
+    {
+      "group": "talk",
+      "year": 2019,
+      "content": "Application of Natural Language Processing (NLP) in Transportation Studies. Texas A&M University ITE General Meeting, College Station, TX, February 2."
+    },
+    {
+      "group": "talk",
+      "year": 2019,
+      "content": "TxDOT Roadway Departure Safety Implementation Workshop. Lubbock, TX. November 4."
+    },
+    {
+      "group": "talk",
+      "year": 2021,
+      "content": "Application of Big Data in Highway Safety Modeling. Transportation Data Science Seminar Series. Texas A&M University Institute of Data Science, College Station, March 11."
+    },
+    {
+      "group": "talk",
+      "year": 2021,
+      "content": "Naturalistic Driving Studies with focus on Novice Teenage Drivers—Research Challenges and Opportunities. American Statistical Association Invited Talks. November 3 (virtual)."
+    },
+    {
+      "group": "talk",
+      "year": 2021,
+      "content": "New Frontiers in Highway Safety Research. UL Lafayette Civil Engineering Department Invited Talk. November 24 (virtual)."
+    },
+    {
+      "group": "talk",
+      "year": 2021,
+      "content": "A Real-time Decision Support Tool for Rural Roadways. November 29, Austin."
+    },
+    {
+      "group": "media",
+      "year": 2013,
+      "content": "GRITS Newsletter highlighted Subasish’s First Place Scholarship for Academic Excellence.",
+      "link": "#"
+    },
+    {
+      "group": "media",
+      "year": 2014,
+      "content": "LTRC newsletter made a feature on Subasish’s 2014 AASHTO Sweet Sixteen High Value Research award.",
+      "link": "#"
+    },
+    {
+      "group": "media",
+      "year": 2014,
+      "content": "AASHTO Research Impact 2014 newsletter featured on Subasish’s ‘4U to 5T’ project.",
+      "link": "#"
+    },
+    {
+      "group": "media",
+      "year": 2014,
+      "content": "AASHTO newsletter ‘Research Makes Difference’ featured on Subasish’s 2014 AASHTO Sweet Sixteen High Value Research award.",
+      "link": "#"
+    },
+    {
+      "group": "media",
+      "year": 2013,
+      "content": "GRITS Newsletter highlighted Subasish’s First Place Scholarship for Academic Excellence.",
+      "link": "#"
+    },
+    {
+      "group": "media",
+      "year": 2015,
+      "content": "Eno Transportation Center’s online annual report highlighted Subasish’s Eno fellowship.",
+      "link": "#"
+    },
+    {
+      "group": "media",
+      "year": 2016,
+      "content": "TRB Committee ABG40’s newsletter Kaleidoscope featured Subasish’s text mining paper.",
+      "link": "#"
+    },
+    {
+      "group": "media",
+      "year": 2020,
+      "content": "An interview is featured in Star Tribune Newspaper (March 21).",
+      "link": "https://www.startribune.com/arrests-rare-in-minor-minneapolis-hit-and-run-cases/568965202/"
+    },
+    {
+      "group": "media",
+      "year": 2020,
+      "content": "TTI News feature ‘Winfree, Das Featured in Traffic Technology International.’",
+      "link": "https://tti.tamu.edu/news/winfree-das-featured-in-traffic-technology-international/"
+    },
+    {
+      "group": "media",
+      "year": 2021,
+      "content": "Texas Transportation Research Special Issue on ‘Big Data Goes Country: Integrating Speed and Weather Measures to Study Rural Roadway Safety’.",
+      "link": "https://tti.tamu.edu/researcher/big-data-goes-country-integrating-speed-and-weather-measures-to-study-rural-roadway-safety/"
+    },
+    {
+      "group": "media",
+      "year": 2021,
+      "content": "TTI News feature ‘Das Publishes Transportation Research Record Analysis in TR News.’",
+      "link": "https://tti.tamu.edu/news/das-publishes-transportation-research-record-analysis-in-tr-news/"
+    },
+    {
+      "group": "media",
+      "year": 2021,
+      "content": "TTI News feature ‘TTI Authors TCRP Guidance for Transit Agencies Using Social Media.’",
+      "link": "https://tti.tamu.edu/news/tti-authors-tcrp-guidance-for-transit-agencies-using-social-media/"
+    },
+    {
+      "group": "media",
+      "year": 2022,
+      "content": "TTI News feature ‘TTI’s Das Publishes Book on Artificial Intelligence in Highway Safety’.",
+      "link": "https://tti.tamu.edu/news/ttis-das-publishes-book-on-artificial-intelligence-in-highway-safety/"
+    }
+  ]
+}
