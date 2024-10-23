@@ -1,0 +1,488 @@
+[
+  {
+    "name": "Dr. Subasish Das",
+    "institution": "TXST",
+    "years": "",
+    "linkedinProfile": "https://www.linkedin.com/in/nasim045/",
+    "email": "rab347@txstate.edu",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/C4D03AQFQkdfuYLwalw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516835664903?e=2147483647&v=beta&t=T_cxprE9Qpj5ylj0Gf3Ydz6xmVRSy4m3EdSopTmaNpk",
+    "status": "current",
+    "label": "Director, AIT Lab",
+    "description": "Dr. Subasish Das is an Assistant Professor of Civil Engineering Program in the Ingram School of Engineering at Texas State University. He is also involved with Texas A&M Transportation Institute (TTI) as a part time Associate Research Scientist. Previously, he worked as a full-time Associate Research Scientist at TTI during 2015 to 2022. He has more than 13 years of experience related to roadway safety, traffic operation, and connected and automated vehicle (CAV) technologies. He is a Systems Engineer by training with hands on experience on Six Sigma and Lean Engineering. His major areas of expertise include database management, statistical analysis and machine learning with emphasis in safety and transportation operations, spatial analysis with modern web GIS tools, interactive data visualization, and deep learning tools for CAV technologies. Dr. Das is a prolific author. He has published more than 160 technical reports, and journal articles. He is the author of the book “Artificial Intelligence in Highway Safety,” which was published by CRC Press in 2022. The AASHTO Research Advisory Committee (RAC) awarded one of his research reports as 2014 AASHTO Sweet Sixteen High Value Research Project. Dr. Das is an active member of ITE, and ASCE. He is an Eno Fellow. He served as vice-president of membership of Young Professionals in Transportation Houston chapter. He is currently a member of three TRB Committees: Information and Knowledge Management (AJE45), Artificial Intelligence and Advanced Computing Applications (AED50), and Impairment in Transportation (ACS50).",
+    "links": [
+      {
+        "icon": "github",
+        "href": "https://github.com/subasish"
+      },
+      {
+        "icon": "linkedin",
+        "href": "https://www.linkedin.com/in/subasishdas/"
+      },
+      {
+        "icon": "website",
+        "href": "https://subasish.github.io/"
+      }
+    ]
+  },
+  {
+    "name": "Md. Nasim Khan",
+    "department": "Physic",
+    "institution": "TXST",
+    "years": "2022-Pre",
+    "linkedinProfile": "https://www.linkedin.com/in/nasim045/",
+    "email": "rab347@txstate.edu",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D5603AQExcXv3_EGaNw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1706279446862?e=1730937600&v=beta&t=_qGJqEF4M7FGjbmfQAVZ2mGLf9n4dotguUliLQTiHfI",
+    "status": "Alumni",
+    "label": "PI",
+    "description": "An architect and engineer by training sdf dsf sdfsdfdfsdf dsf sfds fs dfdsfdfdsdf dsf d s"
+  },
+  {
+    "name": "Soheil Sohrabi",
+    "department": "Civil Engineering",
+    "institution": "TTI",
+    "years": "2021-2022",
+    "linkedinProfile": "",
+    "email": "",
+    "status": "Alumni",
+    "label": "Lab Assistant"
+  },
+  {
+    "name": "Jinli Liu",
+    "department": "Geography",
+    "institution": "TXST",
+    "years": "2022-current",
+    "linkedinProfile": "dipeshpandit12",
+    "email": "rab347@txstate.edu",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Amir Hossein Oliaee",
+    "department": "Architecture",
+    "institution": "TAMU",
+    "years": "2022",
+    "linkedinProfile": "https://www.linkedin.com/in/oliaee/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D4D03AQFBZBakrdGG6Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1704919888398?e=1730937600&v=beta&t=JyUvS1kRG4HqYMaPuw4m6UzCdD3daONVXh7i-i3BAcg",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Nuzhat Kabir",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2022",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Musfira Rahman",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2021",
+    "linkedinProfile": "https://www.linkedin.com/in/musfira-rahman/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D5603AQEDEZENgzU5SA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1703225636347?e=1730937600&v=beta&t=ydVB8-cUaKFP8MLcXey6gORhftN3CdTfeI4NIvkGt9c",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Yanmo Wang",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2021-2022",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Zihang Wei",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2020-2022",
+    "linkedinProfile": "https://www.linkedin.com/in/zihang-wei-b41054103/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D5603AQHlei3LrJf-CA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1705808864565?e=1730937600&v=beta&t=h2Dd0Z_72JDvoQzLrZwxwfZ-7dZzEJjS5fwop6CtHC4",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Ali Khodadadi",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2019-2021",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Shruti Ashraf",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "https://www.linkedin.com/in/sruthiashraf/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D5603AQHgSydJTVnjyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686810336240?e=1730937600&v=beta&t=3-nkiCADCwC0-1rRxuKOQdvuPCc5oUs5C4QVojkwrVs",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Chaolun Ma",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "https://www.linkedin.com/in/chaolun-ma-67732b77/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/C4E03AQGFeKs19zbqWw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1608781557691?e=1730937600&v=beta&t=Bsbjg7PhUlDnYtgGwV4LnOQIcMSVaQ9699mct2Iw2LE",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Songjukta Datta",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2017-2018",
+    "linkedinProfile": "https://www.linkedin.com/in/songjukta/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D5603AQFRG1W2uGkoXw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722680716325?e=1730937600&v=beta&t=Lgzg2bbMDf2v3wVfwhRSR1ZsvQliIcrjWnb0feMNk1Q",
+    "label": "PHD Students"
+  },
+  {
+    "name": "Vikram Agarwal",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2020-2021",
+    "linkedinProfile": "https://www.linkedin.com/in/agarwal-vikram/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/C4E03AQFcSl406wY4CA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1599059144846?e=1730937600&v=beta&t=lh0PPglBSqbIcOS2GPJkzd71msH7_D-zutAvdDXe9q8",
+    "label": "MS Students"
+  },
+  {
+    "name": "Ruihong Wang",
+    "department": "Electrical and CoE",
+    "institution": "TAMU",
+    "years": "2019-2020",
+    "linkedinProfile": "https://www.linkedin.com/in/ruihong-wang-b5330a176/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/C4E03AQFSl4xUFaFyFQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1565570288164?e=1730937600&v=beta&t=JreekPX7H-HUXf_yStYPTYmaAem-GUKc8RSSh1DTaTg",
+    "label": "MS Students"
+  },
+  {
+    "name": "Nabila Nazneen",
+    "department": "Chemical Engineering",
+    "institution": "TAMU",
+    "years": "2019-2020",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "MS Students"
+  },
+  {
+    "name": "Samia Tasnim",
+    "department": "Public Health",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "https://www.linkedin.com/in/samiatasnim53/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/C5103AQHoW9qJX1nHCA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1581013567233?e=1730937600&v=beta&t=XOIA_l_FQZzfupJYSTSXB8Q9maZrGrlmvUciVcodjCM",
+    "label": "MS Students"
+  },
+  {
+    "name": "Nusrat Trisha",
+    "department": "Public Health",
+    "institution": "TAMU",
+    "years": "2019-2021",
+    "linkedinProfile": "https://www.linkedin.com/in/nftrisha27/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/C4E03AQFOP44c1ssGBw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1649117017637?e=1730937600&v=beta&t=eqSuFb9y5RH26G51JDsPUIAYTw1bSg-m0xwZ5u8WUJc",
+    "label": "MS Students"
+  },
+  {
+    "name": "Tahmida Shimu",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "https://www.linkedin.com/in/tahmida-shimu/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D5603AQEWDs4GNGzURg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1671410883790?e=1730937600&v=beta&t=SxDfauQavF3lTdAxiu5Yva9gZPPWX1rYNqeIBIzSeKU",
+    "label": "MS Students"
+  },
+  {
+    "name": "Bita Maraghehpour",
+    "department": "Public Health",
+    "institution": "TAMU",
+    "years": "2017-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "MS Students"
+  },
+  {
+    "name": "Apoorba Bibeka",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2016-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "profilePicture": "",
+    "label": "MS Students"
+  },
+  {
+    "name": "Yucong Du",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2016-2017",
+    "linkedinProfile": "https://www.linkedin.com/in/yucong-du-pe-9a99a8144/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D4E03AQH5pdhWxnKC0A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1706214178747?e=1730937600&v=beta&t=LQ3yRh8U_RdGw-lf1_fUs3-GDyw5JLTeV_IhNdJ4FZo",
+    "label": "MS Students"
+  },
+  {
+    "name": "Sadia Najneen",
+    "department": "Public Health",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "https://www.linkedin.com/in/sadia-najneen-9a5b10191/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/C5603AQEatehrQmtcsg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1611868738074?e=1730937600&v=beta&t=eg58jc5O_0Kt9PzG8I-ZdkmsrQauJbwA1Vp1ZyCg2zU",
+    "label": "MS Students"
+  },
+  {
+    "name": "Isha Narsaria",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "https://www.linkedin.com/in/isha-narsaria/?originalSubdomain=in",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D4E03AQFPajZp98oeJg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1649047028699?e=1730937600&v=beta&t=8Eg3Z0cm83qhO6XZ7zdjNnsu-3fIcyWJrhys4Y8I58g",
+    "label": "MS Students"
+  },
+  {
+    "name": "Noor-A Nazia",
+    "department": "Computer Science",
+    "institution": "TAMI",
+    "years": "2018-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "MS Students"
+  },
+  {
+    "name": "Condor Manaswini",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "MS Students"
+  },
+  {
+    "name": "Alence Poudel",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "MS Students"
+  },
+  {
+    "name": "Bharadwaj Bommanayakanahalli",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2016-2017",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "MS Students"
+  },
+  {
+    "name": "Tamanna Tasnum",
+    "department": "Construction Science",
+    "institution": "TAMU",
+    "years": "2016",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "MS Students"
+  },
+  {
+    "name": "Juan Gonzalez",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2022-2023",
+    "linkedinProfile": "https://www.linkedin.com/in/juandiegocruzgonzalez/",
+    "email": "",
+    "profilePicture": "https://media.licdn.com/dms/image/v2/D5603AQG3SFDWOUp3yw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1668551595487?e=1730937600&v=beta&t=z0_gUxKHMpRHzE30uBLbIV9TpYvngjySS7f8hiIEqtk",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Valerie Vierkant",
+    "department": "Psychology",
+    "institution": "TAMU",
+    "years": "2019-2023",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Jaxson Murray",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2022",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Ashley Trujillo",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2021-2022",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Vinesh Ravuri",
+    "department": "Computer Science",
+    "institution": "TAMU",
+    "years": "2021",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Magdalena Theel",
+    "department": "Psychology",
+    "institution": "TAMU",
+    "years": "2017-2020",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Turzo Bose",
+    "department": "Chemical Engineering",
+    "institution": "HUST",
+    "years": "2018",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Jared Wheeler",
+    "department": "Computer Science",
+    "institution": "TAMU",
+    "years": "2018",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Tyler Sizemore",
+    "department": "Mechanical Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Matthew Foley",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Christopher Lira",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2017-2018",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate"
+  },
+  {
+    "name": "Ly-Na Tran",
+    "department": "Biomedical Science",
+    "institution": "TAMU",
+    "years": "2017-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate",
+    "status": "Alumni"
+  },
+  {
+    "name": "Jacob Bruce",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2019-",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate",
+    "status": "Alumni"
+  },
+  {
+    "name": "Elizabeth Clark",
+    "department": "Civil Engineering",
+    "institution": "Virginia Tech",
+    "years": "2017",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate",
+    "status": "Alumni"
+  },
+  {
+    "name": "Anthony Teo",
+    "department": "CS and Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate",
+    "status": "Alumni"
+  },
+  {
+    "name": "Urel Djiogan",
+    "department": "CS and Engineering",
+    "institution": "TAMU",
+    "years": "2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate",
+    "status": "Alumni"
+  },
+  {
+    "name": "Richard Padilla",
+    "department": "CS and Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate",
+    "status": "Alumni"
+  },
+  {
+    "name": "Daxton Davidson",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2018",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate",
+    "status": "Alumni"
+  },
+  {
+    "name": "Michelle Zupancich",
+    "department": "Civil Engineering",
+    "institution": "TAMU",
+    "years": "2016",
+    "linkedinProfile": "",
+    "email": "",
+    "label": "Undergraduate",
+    "status": "Alumni"
+  },
+  {
+    "name": "Ram",
+    "department": "CS and Engineering",
+    "institution": "TAMU",
+    "years": "2018-2019",
+    "linkedinProfile": "",
+    "emai": "",
+    "label": "Undergraduate",
+    "status": "Alumni"
+  }
+]

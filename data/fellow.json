@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Monire Jafari",
+    "label": "M.Sc., Information Science (2023-2024)",
+    "group": "Graduate Student",
+    "linkedin": "https://www.linkedin.com/in/monire-jafari-544988238/",
+    "email": "",
+    "image": "monire_jafari.jpg",
+    "description": "Monire Jafari is a skilled Data Analyst with expertise in mathematics, statistics, and data analytics, holding master’s degrees in Mathematics with a concentration in Statistics (2023) and Data Analytics and Information Systems (2024). During her time as a Graduate Research Assistant at the Artificial Intelligence in Transportation (AIT) Lab at Texas State University, under the mentorship of Dr. Subasish Das, she led various research initiatives and contributed to academic publications. She quickly excelled when working with transportation data, applying her statistical expertise to areas such as choice modeling and advanced machine learning techniques. Monire is proficient in Python, R, SQL, and data visualization tools, and continues to apply her knowledge to solve complex analytical problems.",
+    "googleScholar": "",
+    "github": "",
+    "twitter": "",
+    "researchGate": "https://www.researchgate.net/profile/Monire-Jafari",
+    "websites": []
+  },
+  {
+    "name": "Jett Tipsword",
+    "label": "B.Sc., Computer Science (2023- 2024)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://linkedin.com/in/jett-tipsword-8204031a7/",
+    "email": "",
+    "image": "jett_tipsword.jpg",
+    "description": "Jett Tipsword is a Data Engineer at Leap Metrics, where he uses SQL, Python, and Sigma BI to design and maintain scalable data pipelines, ensuring data accuracy across platforms. He earned a Bachelor of Science in Computer Science from Texas State University in December 2023, where he also worked as an AI Researcher, specializing in natural language processing and machine learning with models like BERT, Llama-2, and GPT-2. Jett is also part of the AIT Lab at Texas State University, where he contributed to projects focused on AI and data processing. With expertise in cloud computing, DevOps, and AI integration, he is passionate about turning complex data into actionable insights. Outside of work, Jett enjoys exploring the latest trends in AI.",
+    "googleScholar": "",
+    "github": "https://github.com/jett512",
+    "twitter": "",
+    "websites": []
+  },
+  {
+    "name": "Dr. Md. Nasim Khan",
+    "label": "Post-Doctoral Researcher (2022 - 2023)",
+    "group": "Post-Doctoral Researcher",
+    "linkedin": "https://www.linkedin.com/in/nasim045/",
+    "email": "",
+    "image": "dr._md._nasim_khan.jpg",
+    "description": "Dr. Nasim Khan is a Senior Transportation Engineer at AtkinsRéalis, specializing in transportation safety, intelligent transportation systems, and traffic engineering. He holds a Ph.D. and a Master of Science in Transportation Engineering from the University of Wyoming, along with a Bachelor's degree in Civil Engineering from Bangladesh University of Engineering and Technology. Before his current role, Dr. Khan served as a Postdoctoral Scholar at Texas State University, where he worked at the Artificial Intelligence in Transportation (AIT) Lab, focusing on crash risk modeling, connected and autonomous vehicles, and smart traffic management systems. His professional experience includes roles as a Postdoctoral Research Associate and Graduate Research Assistant at the University of Wyoming, and as a Lecturer at the University of Information Technology & Sciences. Dr. Khan’s expertise includes advanced traffic control strategies, data-driven safety analysis, and GIS-based transportation studies. He has a strong record of publishing and presenting his research at major conferences and is dedicated to integrating innovative technologies to enhance transportation systems and improve safety.",
+    "googleScholar": "https://scholar.google.com/citations?user=isdeiukAAAAJ&hl=en",
+    "github": "",
+    "twitter": "",
+    "websites": []
+  },
+  {
+    "name": "Soheil Sohrabi",
+    "label": "Post-Doctoral Researcher (2021 - 2022)",
+    "group": "Post-Doctoral Researcher",
+    "linkedin": "https://www.linkedin.com/in/soheil-sohrabi/",
+    "email": "",
+    "image": "soheil_sohrabi.jpg",
+    "description": "Soheil Sohrabi is a Senior Risk Assessment Engineer at Cruise, where he specializes in evaluating and mitigating risks associated with autonomous vehicle systems. He holds a Ph.D. in Transportation Planning from Texas A&M University, where his dissertation focused on evaluating automated vehicle safety using duration modeling. Prior to his current role, Soheil worked as a Postdoctoral Researcher at the University of California, Berkeley, and Texas A&M Transportation Institute, contributing to projects in transportation safety, traffic engineering, and automated vehicle systems. His experience spans roles as a Graduate Research Assistant at Texas A&M and Old Dominion University, and as a Transportation Engineer with Metra Consulting Engineers and Imenrah. Soheil’s technical expertise includes data analysis, machine learning, big data, and statistical modeling, which he applies to solve complex problems in transportation planning and safety. He is passionate about advancing the field of transportation by integrating innovative technologies and data-driven insights to enhance road safety and efficiency.",
+    "googleScholar": "https://scholar.google.com/citations?user=wZvmpSMAAAAJ&hl=en",
+    "github": "",
+    "twitter": "",
+    "websites": []
+  },
+  {
+    "name": "Amir Hossein Oliaee",
+    "label": "Ph.D. Candidate, Architecture, TAMU (2022) ",
+    "group": "Ph.D. Candidate",
+    "linkedin": "https://www.linkedin.com/in/oliaee/",
+    "email": "",
+    "image": "amir_hossein_oliaee.jpg",
+    "description": "Amir Hossein Oliaee holds a Ph.D. in Architecture from Texas A&M University, where he graduated in 2021. During his time at Texas A&M, he worked as a Research and Teaching Assistant, focusing on advanced topics such as large language models (LLM), natural language processing (NLP), high-performance computing (HPC), and data science. Proficient in Python, PyTorch, TensorFlow, and AWS, Amir has applied these skills to a range of innovative projects. His experience includes serving as a Graduate Student Worker at Texas A&M Transportation Institute, Co-Founder of Heterorganum, where he developed open-source tools for architectural design automation, and as a Data Scientist at V-SENSE, Trinity College Dublin, where he contributed to the development of a LiDAR point cloud dataset. Amir’s diverse background also includes roles as a Workshop Assistant at the Iranian Architecture Center and Digital Artist for the TADAEX festival. Throughout his career, Amir has combined his technical and creative skills to advance computational design, AI-driven solutions, and data-driven research in architecture and engineering.",
+    "googleScholar": "https://scholar.google.com/citations?user=uh210ZEQTg0C&hl=en",
+    "github": "",
+    "twitter": "",
+    "websites": []
+  }
+]
