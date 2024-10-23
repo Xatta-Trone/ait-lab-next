@@ -1,0 +1,74 @@
+[
+  {
+    "title": "AI-Driven Safe Navigation Tool",
+    "description": "Develops an AI-based tool for real-time safe route navigation using big data and AI algorithms.",
+    "link": "https://safed.vtti.vt.edu/projects/developing-ai-driven-safe-navigation-tool/",
+    "PI": "Subasish Das",
+    "budget": "$330,000",
+    "PI_role": "Co-PI",
+    "start_year": 2021,
+    "end_year": 2023,
+    "status": "completed",
+    "image": "rural1.png"
+  },
+  {
+    "title": "Develop a Real-Time Decision Support Tool for Urban Roadway Safety Improvements.",
+    "description": "This study used three national databases [National Performance Management Research Data Set (NPMRDS), Travel Monitoring Analysis System (TMAS), and National Oceanic and Atmospheric Administration (NOAA)] to develop SPFs (both annual and short-duration) for urban roadways.",
+    "link": "",
+    "PI": "Subasish Das",
+    "budget": "$470,000",
+    "PI_role": "PI",
+    "start_year": 2022,
+    "end_year": 2024,
+    "status": "ongoing",
+    "image": "probe.png"
+  },
+  {
+    "title": "Vehicle Probe Data for Speed Limit Evaluation",
+    "description": "Explores the use of vehicle probe data to determine speed limits.",
+    "link": "https://ftp.dot.state.tx.us/pub/txdot/rti/FY2023/PS_23-107.pdf",
+    "PI": "Subasish Das",
+    "budget": "$400,000",
+    "start_year": 2022,
+    "end_year": 2024,
+    "PI_role": "PI",
+    "status": "ongoing",
+    "image": "img/probe.png"
+  },
+  {
+    "title": "Leveraging AI to Manage Freeway Congestion",
+    "description": "Mitigates freeway congestion using AI to validate data sources and models.",
+    "link": "https://library.ctr.utexas.edu/Presto/content/Detail.aspx?ctID=M2UxNzg5YmEtYzMyZS00ZjBlLWIyODctYzljMzQ3ZmVmOWFl&rID=OTQx",
+    "PI": "Subasish Das",
+    "budget": "$310,000",
+    "start_year": 2021,
+    "end_year": 2023,
+    "PI_role": "PI",
+    "status": "completed",
+    "image": "img/a7131.png"
+  },
+  {
+    "title": "Safety Enhancements at Railroad Crossings",
+    "description": "Explores safety enhancements at short-storage-space railroad crossings.",
+    "link": "https://rip.trb.org/view/1860970",
+    "PI": "Subasish Das",
+    "budget": "$110,000",
+    "start_year": 2019,
+    "end_year": 2023,
+    "PI_role": "Co-PI",
+    "status": "completed",
+    "image": "img/mdot1.png"
+  },
+  {
+    "title": "Speed Crash Modification Factors",
+    "description": "Develops speed crash modification factors for rural and urban roads.",
+    "link": "https://www.ite.org/events-meetings/ite-calendar/development-of-speed-crash-modification-factors-using-shrp-2-rid-data/",
+    "PI": "Subasish Das",
+    "budget": "$189,891",
+    "start_year": 2019,
+    "end_year": 2023,
+    "PI_role": "PI",
+    "status": "completed",
+    "image": "img/shrp.png"
+  }
+]
