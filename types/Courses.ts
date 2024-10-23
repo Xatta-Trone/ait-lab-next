@@ -3,5 +3,6 @@ interface CourseTypes {
     schedule: string;
     term: string;
     description: string;
-    prerequisite: {courseTitle: string, grade: string}
+    prerequisite?: { courseTitle: string, grade: string };
+    image: string;
 }
