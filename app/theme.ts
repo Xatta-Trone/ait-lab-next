@@ -1,6 +1,6 @@
 /** @format */
 
-import { extendTheme } from "@chakra-ui/react/extend-theme";
+import { extendTheme } from "@chakra-ui/react";
 
 export default extendTheme({
   fonts: {

@@ -1,22 +1,12 @@
-import { Flex, Heading } from '@chakra-ui/react';
-import { Metadata } from 'next';
+import React, { Suspense } from 'react';
+import ResearchPapers from '@/components/ResearchPapers';
 
-export const metadata: Metadata = {
-    title: "Publication | AIT Lab",
-    description: "AIT Lab",
+const PublicationPage = () => {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <ResearchPapers />
+        </Suspense>
+    );
 };
 
-const page = () => {
-    return (
-        <>
-            <Flex align={"center"} width={"100%"} marginTop={5} direction={'column'}>
-                <Heading>
-                    Publication Page
-                </Heading>
-                Page under construction!!
-            </Flex>
-        </>
-    )
-}
-
-export default page
+export default PublicationPage;
