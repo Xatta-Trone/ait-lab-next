@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Flex align={"center"} widows={"100%"} marginTop={5} direction={'column'}>
+      <Flex align={"center"} width={"100%"} marginTop={5} direction={'column'}>
         <Heading>
           Home Page
         </Heading>
