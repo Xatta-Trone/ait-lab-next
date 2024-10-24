@@ -20,19 +20,6 @@ import axios from "axios";
 import ResearchPaperItem from "@/components/ResearchPaperItem";
 import { motion } from "framer-motion";
 
-interface ResearchPaper {
-    title: string;
-    authors?: string;
-    total_citations: number;
-    year: number;
-    url: string;
-    journal?: string;
-    publisher?: string;
-    source?: string;
-    issue?: string;
-    book?: string;
-}
-
 const ResearchPapers: React.FC = () => {
     const searchParams = useSearchParams();
     const router = useRouter();
