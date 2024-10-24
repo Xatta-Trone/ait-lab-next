@@ -1,6 +1,7 @@
 [
   { "name": "Home", "path": "/" },
   { "name": "Grants", "path": "/grants" },
+  { "name": "Projects", "path": "/projects" },
   { "name": "Publication", "path": "/publication" },
   { "name": "Courses", "path": "/courses" },
   { "name": "Team", "path": "/teams" },
