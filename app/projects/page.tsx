@@ -18,7 +18,7 @@ const Projects = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [sortByStatus, setSortByStatus] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
-    const papersPerPage = 20;
+    const projectsPerPage = 15;
     const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
     // Set initial data from json 
@@ -86,10 +86,10 @@ const Projects = () => {
         setFilteredProjects(tempProjects);
     }, [projects, searchTerm, sortByStatus]);
 
-    const indexOfLastProject = currentPage * papersPerPage;
-    const indexOfFirstProject = indexOfLastProject - papersPerPage;
+    const indexOfLastProject = currentPage * projectsPerPage;
+    const indexOfFirstProject = indexOfLastProject - projectsPerPage;
     const currentProjects = filteredProjects.slice(indexOfFirstProject, indexOfLastProject);
-    const totalPages = Math.ceil(filteredProjects.length / papersPerPage);
+    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
 
     const updateURL = useCallback((search: string, status: string, page: number) => {
         const searchParams = new URLSearchParams();
