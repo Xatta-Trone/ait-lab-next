@@ -12,4 +12,4 @@ interface ProjectTypes {
     image: string;                // Image file name related to the project
   }
   
-type PI_role = `PI` | `Co-PI` | `Instructional PI`; 
+type PI_role = `PI` | `Co-PI` | `Instructional PI` | `Key Researcher`; 
