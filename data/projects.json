@@ -1,74 +1,1282 @@
 [
   {
-    "title": "AI-Driven Safe Navigation Tool",
-    "description": "Develops an AI-based tool for real-time safe route navigation using big data and AI algorithms.",
-    "link": "https://safed.vtti.vt.edu/projects/developing-ai-driven-safe-navigation-tool/",
+    "number": "Syn 56-05",
+    "title": "Traffic Analysis Practices for Non-Motorized Modes (Vulnerable Road Users)",
+    "description": "The objective of this synthesis is to document the current state of the traffic analysis practice (not limited to the deterministic methods such as HCM) for non-motorized modes (or multimodal analysis).",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5716",
+    "sponsor": "NCHRP",
     "PI": "Subasish Das",
-    "budget": "$330,000",
-    "PI_role": "Co-PI",
-    "start_year": 2021,
-    "end_year": 2023,
-    "status": "completed",
-    "image": "rural1.png"
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2024,
+      "month": "October"
+    },
+    "end_date": {
+      "year": 2025,
+      "month": "October"
+    },
+    "status": "ongoing",
+    "image": ""
   },
   {
-    "title": "Develop a Real-Time Decision Support Tool for Urban Roadway Safety Improvements.",
-    "description": "This study used three national databases [National Performance Management Research Data Set (NPMRDS), Travel Monitoring Analysis System (TMAS), and National Oceanic and Atmospheric Administration (NOAA)] to develop SPFs (both annual and short-duration) for urban roadways.",
+    "number": "0-7215",
+    "title": "Predicting Field Performance of Pavement Markings Statewide in Texas",
+    "description": "This project will explore various factors that affect pavement marking performance over the service life of the marking (pavement marking materials, installation specifications, pavement surface, traffic conditions, and geographic and climatic region) to develop performance models for Texas. Performance of a variety of markings and markers will be evaluated at various field test areas.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=0-7215",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Instructional PI",
+    "start_date": {
+      "year": 2024,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2028,
+      "month": "August"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "0-7230",
+    "title": "Improve Safety and Decrease Vehicle Fatalities by Improving Pavement Markings",
+    "description": "The main objective of this project is to improve roadway safety by evaluating and maintaining pavement markings, including retroreflective markers, in selected roadways. The goal is to assess their condition, renew markings as needed, and determine if these efforts reduce vehicle fatalities and crashes.",
     "link": "",
+    "sponsor": "TxDOT",
     "PI": "Subasish Das",
-    "budget": "$470,000",
-    "PI_role": "PI",
-    "start_year": 2022,
-    "end_year": 2024,
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2024,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2027,
+      "month": "August"
+    },
     "status": "ongoing",
-    "image": "probe.png"
+    "image": ""
   },
   {
-    "title": "Vehicle Probe Data for Speed Limit Evaluation",
-    "description": "Explores the use of vehicle probe data to determine speed limits.",
-    "link": "https://ftp.dot.state.tx.us/pub/txdot/rti/FY2023/PS_23-107.pdf",
+    "number": "0-7226",
+    "title": "Analyze Operational and Safety Improvements Associated with Implemented Innovative Intersections in Texas",
+    "description": "The objective of this project is to document the benefits of innovative intersection designs, develop case studies of successfully implemented intersections in Texas, and provide resources to support the adoption and implementation of these designs across the state.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=0-7226",
+    "sponsor": "TxDOT",
     "PI": "Subasish Das",
-    "budget": "$400,000",
-    "start_year": 2022,
-    "end_year": 2024,
-    "PI_role": "PI",
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2025,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2026,
+      "month": "August"
+    },
     "status": "ongoing",
-    "image": "img/probe.png"
+    "image": ""
   },
   {
-    "title": "Leveraging AI to Manage Freeway Congestion",
-    "description": "Mitigates freeway congestion using AI to validate data sources and models.",
-    "link": "https://library.ctr.utexas.edu/Presto/content/Detail.aspx?ctID=M2UxNzg5YmEtYzMyZS00ZjBlLWIyODctYzljMzQ3ZmVmOWFl&rID=OTQx",
+    "number": "0-7222",
+    "title": "Develop Crash Predictive Methods for Frontage Roads Including Ramp Terminals, and Intersections with Crossroads in Texas",
+    "description": "The objective of this project is to develop Safety Performance Functions (SPFs) and Crash Modification Factors (CMFs) for ramp terminals and frontage road intersections, evaluate the safety impact of weaving on frontage roads versus freeways, and create crash predictive models tailored to different area types, regions, and facility types.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=0-7222",
+    "sponsor": "TxDOT",
     "PI": "Subasish Das",
-    "budget": "$310,000",
-    "start_year": 2021,
-    "end_year": 2023,
-    "PI_role": "PI",
-    "status": "completed",
-    "image": "img/a7131.png"
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2025,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2026,
+      "month": "August"
+    },
+    "status": "ongoing",
+    "image": ""
   },
   {
-    "title": "Safety Enhancements at Railroad Crossings",
-    "description": "Explores safety enhancements at short-storage-space railroad crossings.",
-    "link": "https://rip.trb.org/view/1860970",
+    "number": "",
+    "title": "Identification of Unprecedented Coastal Flooding Hotspots for Highway Network Durability and Social Justice",
+    "description": "The objective of this project is to develop a comprehensive framework and toolsets for evaluating coastal flood risks and assessing highway network durability using AI-based flood models, hydrodynamic simulations, and road risk scoring.",
+    "link": "https://rip.trb.org/View/2422886",
+    "sponsor": "USDOT",
     "PI": "Subasish Das",
-    "budget": "$110,000",
-    "start_year": 2019,
-    "end_year": 2023,
     "PI_role": "Co-PI",
-    "status": "completed",
-    "image": "img/mdot1.png"
+    "start_date": {
+      "year": 2024,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2025,
+      "month": "August"
+    },
+    "status": "ongoing",
+    "image": ""
   },
   {
-    "title": "Speed Crash Modification Factors",
-    "description": "Develops speed crash modification factors for rural and urban roads.",
-    "link": "https://www.ite.org/events-meetings/ite-calendar/development-of-speed-crash-modification-factors-using-shrp-2-rid-data/",
+    "number": "",
+    "title": "Social and Community Factors Contributing to Pedestrian Trespass Behaviors (and Motorist Incursions) on Railroad Systems",
+    "description": "",
+    "link": "",
+    "sponsor": "FRA",
     "PI": "Subasish Das",
-    "budget": "$189,891",
-    "start_year": 2019,
-    "end_year": 2023,
     "PI_role": "PI",
+    "start_date": {
+      "year": 2024,
+      "month": "July"
+    },
+    "end_date": {
+      "year": 2026,
+      "month": "June"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Roadside Feature Placement and Pedestrian Safety on Low and Intermediate Speed Roads",
+    "description": "The objective of this study is to provide empirical models and evidence to help designers balance complete streets principles with roadside safety on low- and intermediate-speed urban roads.",
+    "link": "https://researchprojects.dot.state.mn.us/projectpages/pages/projectDetails.jsf?id=29684&type=CONTRACT&jftfdi=&jffi=projectDetails%3Fid%3D29684%26type%3DCONTRACT",
+    "sponsor": "MDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2024,
+      "month": "July"
+    },
+    "end_date": {
+      "year": 2025,
+      "month": "December"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 17-113",
+    "title": "Incorporating Safe System Approach into the NCHRP 500 Series",
+    "description": "The objective of this project is to develop a searchable electronic toolkit that updates and expands the NCHRP Report 500 series to align with Safe System principles and AASHTO's current priorities.",
+    "link": "http://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5342",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2024,
+      "month": "February"
+    },
+    "end_date": {
+      "year": 2026,
+      "month": "January"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Increasing Equity in Traffic Safety, AAA Foundation",
+    "description": "",
+    "link": "",
+    "sponsor": "AAA",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2023,
+      "month": ""
+    },
+    "end_date": {
+      "year": 2024,
+      "month": ""
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "SafeR: The Safest Routing Tool",
+    "description": "",
+    "link": "",
+    "sponsor": "NSF",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2023,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2024,
+      "month": "August"
+    },
     "status": "completed",
-    "image": "img/shrp.png"
+    "image": ""
+  },
+  {
+    "number": "0-7183",
+    "title": "Develop Crash Modification Factors for Super 2 Highways",
+    "description": "The objective of this project is to develop updated Crash Modification Factors (CMFs) for Super 2 highways in Texas by analyzing recent crash data and site characteristics. The results will help TxDOT and other practitioners make informed decisions about installing future Super 2 corridors, providing additional safety support and complementing existing guidance. The CMFs will also be submitted to the FHWA's CMF Clearinghouse for inclusion in their database.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=7183",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2023,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2025,
+      "month": "August"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "0-7187",
+    "title": "Exploring and Developing Innovative Methods for Estimating VMT on Local Roads in Texas",
+    "description": "The objective of this project is to develop and validate data-driven methods for estimating vehicle miles traveled (VMT) on local roads in Texas. These methods aim to provide more accurate and cost-effective VMT estimates, reducing potential bias and financial challenges associated with conducting short-term traffic counts, while offering significant savings to the Texas Department of Transportation.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=0-7187",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2023,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2025,
+      "month": "August"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "0-7189",
+    "title": "Safety Assessment of Shared use Paths at Roadway Crossings using Exposure-based Models",
+    "description": "The objective of this project is to assess safety concerns at shared use path (SUP) roadway crossings involving pedestrians, bicyclists, micromobility users, and people with disabilities. The project aims to develop design and planning guidance for selecting appropriate treatments, considering different types of users, road classifications, land-use contexts, and crossing geometries, including paths next to railroads. This will support the safe implementation of SUPs across Texas.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=0-7189",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2023,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2025,
+      "month": "August"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "0-7171",
+    "title": "Barrier Striping for the Reduction of Accidents",
+    "description": "The objective of this project is to evaluate the long-term and short-term safety effectiveness of retroreflective solid stripe applications on concrete barriers by analyzing before-and-after collision and near-collision data. The research also involves installing the treatments at six high-crash locations with various barrier types to assess their short-term impact. The findings will be used to update the special specification (SS) drafted by TxDOT's Traffic Safety Division for wider future use.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=7171",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2023,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2024,
+      "month": "December"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "SafeR: The Safest Routing Tool",
+    "description": "",
+    "link": "",
+    "sponsor": "FIAP",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2023,
+      "month": "May"
+    },
+    "end_date": {
+      "year": 2023,
+      "month": "December"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Evaluation of NJDOT Hardened Traffic Paint Markings and Stripes Performance",
+    "description": "The objective of this project is to evaluate the performance of various pavement marking materials in relation to visibility, durability, and compatibility with autonomous vehicle systems. The study aims to analyze technical and performance data, address issues such as drying time, durability, and supply chain challenges, and provide recommendations for improving marking installation, maintenance practices, and specifications. The goal is to enhance road marking performance under varying conditions, ensuring visibility for both human drivers and automated driving systems.",
+    "link": "https://rip.trb.org/View/2124968",
+    "sponsor": "NJDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2023,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2025,
+      "month": "November"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "0-7144",
+    "title": "Develop a Real-Time Decision Support Tool for Urban Roadway Safety Improvement",
+    "description": "The objective of this project is to develop updated Safety Performance Functions (SPFs) for urban roadways and create a real-time decision support tool for risk scoring, incorporating speed, short-duration traffic volume, and weather data from national databases. This tool will provide a dynamic model updating pipeline to improve urban roadway safety, addressing the increased fatality rates and enhancing decision-making for transportation agencies.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=7144",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2023,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2024,
+      "month": "December"
+    },
+    "status": "ongoing",
+    "image": ""
+  },
+  {
+    "number": "0-7131",
+    "title": "Leveraging Artificial Intelligence (AI) Techniques to Detect, Forecast, and Manage Freeway Congestion",
+    "description": "The objective of this project is to enhance the quality and efficiency of Texas' surface transportation system by leveraging artificial intelligence (AI) to predict and manage congestion. The project involves verifying the reliability of commercial data sources, identifying effective AI models for transportation needs, and developing a GIS-based decision support tool to aid decision-makers in prioritizing resources and implementing tailored congestion management strategies across various freeway segments.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/72322",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2022,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2023,
+      "month": "August"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "0-7156",
+    "title": "Using Vehicle Probe Data to Evaluate Speed Limits on Texas Highways",
+    "description": "The objective of this project is to explore the use of vehicle probe data and other big datasets to streamline the process of conducting speed limit studies for TxDOT. The goal is to reduce the effort and time required to collect speed data, provide a safer method for data collection, and develop procedures for using probe speed information to produce speed limit recommendations that align with TxDOT's current engineering practices. This will help TxDOT districts become more proactive and responsive in their speed zone programs.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=7156",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Co-PI",
+    "start_date": {
+      "year": 2021,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2023,
+      "month": "July"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Developing AI-driven Safe Navigation Tool",
+    "description": "The objective of this study is to develop a real-time navigation system that provides data-driven decisions on the safest route by leveraging historical and real-time data sources. The tool integrates safety, distance, travel time, and other scoring factors using advanced AI algorithms to offer users informed route options, enhancing road safety and improving the reliability of navigation compared to existing applications that only focus on distance or travel time.",
+    "link": "https://trid.trb.org/View/2339974",
+    "sponsor": "SafeD UTC",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2021,
+      "month": "August"
+    },
+    "end_date": {
+      "year": 2023,
+      "month": "July"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "SB-33",
+    "title": "Uses of Social Media in Public Transportation",
+    "description": "The objective of the study is to analyze how transit agencies use social media to communicate with their audiences. The study aims to document innovative and effective practices, explore the reasons transit agencies use social media, identify the platforms used, measure social media effectiveness, and provide resources and strategies for improving transit agency engagement with the public.",
+    "link": "https://nap.nationalacademies.org/download/26451",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2020,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2021,
+      "month": "August"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Safety Enhancements at Short-Storage-Space Railroad Crossings",
+    "description": "The objective of this project is to provide guidance on short-storage railroad crossings in Michigan by examining crash data, driver behavior, and environmental factors to identify suitable safety countermeasures. The project aims to refine guidelines through collaboration between MDOT Traffic & Safety and the Office of Rail, ultimately improving safety at short-storage crossings through data analysis, driver behavior studies, and recommendations for relevant MDOT publications.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/66941",
+    "sponsor": "MDOT",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2020,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2022,
+      "month": "December"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Autonomous Delivery Vehicle as a Disruptive Technology: How to Shape the Future with a Focus on Safety?",
+    "description": "The objective of this study is to understand and analyze the safety-related issues and impacts of low-speed autonomous delivery vehicles (ADVs). The study performed safety implication and safety impact analyses using alternative datasets due to the lack of large-scale vehicle movement data from ADV operators. The research employed association rules mining to identify risk patterns, providing benchmarks for reducing risks in ADV deployments compared to human-driven trips.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/64569",
+    "sponsor": "SafeD UTC",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2019,
+      "month": "August"
+    },
+    "end_date": {
+      "year": 2022,
+      "month": "July"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "0-7051",
+    "title": "Develop a Real-Time Decision Support Tool for Rural Roadway Safety Improvements",
+    "description": "The objective of this project is to reduce rural roadway crashes, specifically focusing on roadway departure and speeding-related crashes, by developing updated safety performance functions and a decision support tool. The research combines real-time speed, volume, and weather data from national databases to enhance crash risk analysis and support TxDOT's future vision plans for improving rural roadway safety.",
+    "link": "https://library.ctr.utexas.edu/Presto/project=0-7051",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2019,
+      "month": "August"
+    },
+    "end_date": {
+      "year": 2022,
+      "month": "March"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA-HRT-24-129",
+    "title": "Develop Speed Crash Modification Factors (CMFs) from SHRP-2 Data",
+    "description": "The objective of this project is to develop speed-related Crash Modification Factors (CMFs) for 12 different roadway facility types, including rural highways, urban and suburban arterials, and freeways. By using data from Washington and North Carolina, the project aims to improve the precision of crash prediction models by incorporating speed variation and speed differential measures. The CMFs provide a data-driven approach for evaluating speed-related crashes, which can be applied in various states to enhance roadway safety analysis.",
+    "link": "https://highways.dot.gov/research/publications/safety/FHWA-HRT-24-130",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2019,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2023,
+      "month": "January"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "04-113",
+    "title": "Use of Disruptive Technologies to Support Safety Analysis and Meet New Federal Requirements",
+    "description": "The objective of this project is to assess the accuracy of alternative data sources for estimating annual average daily traffic (AADT) on non-federal aid system (NFAS) roads and to evaluate the impact of AADT on safety analysis. The research aims to compare AADT estimates from traditional methods with probe-based estimates, develop safety performance functions (SPFs), and perform sensitivity analysis to understand how AADT affects safety outcomes using the empirical Bayes method.",
+    "link": "https://vtechworks.lib.vt.edu/items/adacadcb-b9e6-4213-a504-4426ccf3771a",
+    "sponsor": "SafeD UTC",
+    "PI": "Subasish Das",
+    "PI_role": "Co-PI",
+    "start_date": {
+      "year": 2019,
+      "month": "August"
+    },
+    "end_date": {
+      "year": 2021,
+      "month": "July"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "20-07 (384)",
+    "title": "Core Competencies for Key Safety Analysis",
+    "description": "The objective of the project is to compile a comprehensive synthesis of research on education and training opportunities related to core competencies in safety analysis. The project aims to develop a user-friendly tool that allows transportation agencies to assess their workforce development needs effectively. Additionally, the project provides a template for highway agencies to identify efficient and effective education and training programs, ensuring that their staff are equipped with the necessary skills and knowledge for conducting safety analysis.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=3999",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "Co-PI",
+    "start_date": {
+      "year": 2018,
+      "month": "October"
+    },
+    "end_date": {
+      "year": 2021,
+      "month": "June"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "14-40",
+    "title": "Comparison of Cost, Safety, and Environmental Benefits of Routine Mowing and Managed Succession of Roadside Vegetation",
+    "description": "The objective of the project is to provide guidance for roadside vegetation management by comparing the costs, safety, and environmental impacts of routine mowing with managed vegetation succession outside the safety clear zone. The project aims to help DOTs re-evaluate their roadside management practices to balance environmental benefits, such as stormwater management, carbon sequestration, and habitat conservation, with cost savings and safety improvements for maintenance personnel.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4197",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "Co-PI",
+    "start_date": {
+      "year": 2018,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2020,
+      "month": "February"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Rural Speed Safety Project for USDOT Safety Data Initiative",
+    "description": "The objective of this project was to analyze how operating speeds and speed differentials interact with roadway characteristics to influence crash likelihood. The project developed conflated databases for Ohio and Washington, created data visualization tools to display the association between speed and safety outcomes, and built models to assess the impact of operating speeds at both annual and daily levels. The study established a replicable framework for data analysis, offering insights into the relationship between speed measures and crash risks, with tools for decision support and risk scoring.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/48840",
+    "sponsor": "USDOT",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2018,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2020,
+      "month": "February"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Transportation Safety Planning Noteworthy Practices",
+    "description": "The objective of Transportation Safety Planning (TSP) is to reduce transportation fatalities and serious injuries by incorporating safety into regional and statewide transportation planning. TSP is a proactive, system-wide, multimodal process that ensures transportation safety is integrated into decision-making, in alignment with federal requirements and Strategic Highway Safety Plans, with a focus on improving safety for both motorized and non-motorized users.",
+    "link": "https://highways.dot.gov/safety/other/transportation-safety-planning-tsp",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2017,
+      "month": "December"
+    },
+    "end_date": {
+      "year": 2019,
+      "month": "April"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/LA.17/655",
+    "title": "Louisiana’s Alcohol-Impaired Driving Problem: An Analysis of Crash and Cultural Factors",
+    "description": "The objective of this analysis is to examine alcohol-related behaviors specific to Louisiana's diverse cultural groups and their impact on alcohol-involved crashes. The study identifies key risk factors, high-risk locations, and public perceptions of drinking and driving. It also explores countermeasures such as sobriety checkpoints and safe ride options. Additionally, the study addresses data gaps through surveys of DUI/DWI offenders and interviews with key stakeholders to better understand the underlying causes of drinking and driving and to recommend strategies for prevention.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/61208",
+    "sponsor": "LaDOTD",
+    "PI": "Subasish Das",
+    "PI_role": "Co-PI",
+    "start_date": {
+      "year": 2017,
+      "month": "October"
+    },
+    "end_date": {
+      "year": 2020,
+      "month": "February"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "ATLAS-2017-19",
+    "title": "Safety Impacts of Reduced Visibility in Inclement Weather",
+    "description": "The objective of this research is to better understand the impact of inclement weather on road safety from a visibility perspective. By quantifying the relationship between visibility issues and crashes, the study aims to identify key factors associated with inclement weather crashes, such as low friction roadways, driver age, and road design. The findings highlight the increased likelihood of crashes during low visibility conditions, despite reduced traffic and speeds, offering insights to improve safety in adverse weather conditions.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/32135",
+    "sponsor": "ATLAS UTC",
+    "PI": "Subasish Das",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2016,
+      "month": "August"
+    },
+    "end_date": {
+      "year": 2017,
+      "month": "June"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "User Sentiment Analysis with Louisiana Social Media Data for Better and Effective Crash Countermeasures",
+    "description": "The objective of this project is to examine how governmental transportation authorities use Twitter to provide information to the public, particularly in extreme weather or other emergencies. By analyzing nearly nine thousand official tweets from two major Louisiana cities, the study uses text mining and semantic analysis to identify key terms and trends in information sharing. The research also includes sentiment analysis to assess public reactions to various countermeasures, with recommendations for authorities to address negative sentiments and improve communication strategies.",
+    "link": "https://subasish.github.io/SD_Conts/2015%20Das%20LTRC%20TIRE%20Sentiment%20Analysis.pdf",
+    "sponsor": "LaDOTD",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2015,
+      "month": "February"
+    },
+    "end_date": {
+      "year": 2015,
+      "month": "July"
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 15-76",
+    "title": "Designing for Target Speed",
+    "description": "The objectives of this research are to (1) determine the effects of roadway, roadside, and non-roadway elements on operating speeds on roadways with a target speed between 30 and 40 mph and (2) develop recommendations on how the findings can be incorporated into the roadway design process.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4765",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2022
+    },
+    "end_date": {
+      "year": 2024
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 07-30",
+    "title": "Methods for Assigning Short-Duration Traffic Volume Counts to Adjustment Factor Groups for Estimating AADT",
+    "description": "The objective of this research was to develop rational methods for assigning short-duration traffic volume counts to adjustment factor groups for estimating AADT (the research was to consider all functional classes of roadways and traffic volumes).",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4945",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2022
+    },
+    "end_date": {
+      "year": 2024
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 03-144",
+    "title": "Leveraging Existing Traffic Signal Assets to Obtain Quality Traffic Counts and Enhance Transportation Monitoring Programs",
+    "description": "The objective of this research is to determine the feasibility of utilizing existing or enhanced traffic equipment to collect, store, and disseminate data for purposes beyond traffic operations, specifically for traffic monitoring programs. The study aims to evaluate the suitability of traffic count data from installed traffic assets and develop effective practices for integrating this data. The research will assess the quality and applicability of data from various traffic assets, including motorized and non-motorized modes, and equipment such as signals, video, loops, magnetometers, radar, and traffic detection cameras.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5126",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2022
+    },
+    "end_date": {
+      "year": 2024
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Using Machine Learning Tools to Identify Pedestrian Crash Types",
+    "description": "",
+    "link": "",
+    "sponsor": "",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2022
+    },
+    "end_date": {
+      "year": 2022
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Proposed AASHTO Highway Safety Manual, Second Edition",
+    "description": "The objective of this research was to develop and prepare a proposed Second Edition Highway Safety Manual (HSM) in a format suitable for adoption as an AASHTO publication. The proposed Second Edition will synthesize and incorporate relevant ongoing and completed research, related documents, and user feedback in order to expand the scope and quality of the HSM to increase application and improve its usability.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=3874",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2021
+    },
+    "end_date": {
+      "year": 2022
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "0-7083",
+    "title": "Develop Highway Safety Manual (HSM) Safety Performance Functions (SPFs) and Calibration Factors for Texas",
+    "description": "The objective of this project is to develop local calibration factors and new safety performance functions (SPFs) for Texas roadways, particularly for frontage roads and ramps, which are not adequately addressed by the Highway Safety Manual (HSM). The research team created new SPFs for one-way and two-way frontage roads, as well as ramp segments, and developed an analysis tool to help practitioners estimate crash frequency and evaluate design alternatives for both rural and urban road segments and intersections in Texas.",
+    "link": "https://library.ctr.utexas.edu/Presto/content/Detail.aspx?ctID=M2UxNzg5YmEtYzMyZS00ZjBlLWIyODctYzljMzQ3ZmVmOWFl&rID=ODky&sID=MQ==&qrs=VHJ1ZQ==&q=KHJwLmNhdGRhdGU9WzIwMjEwMjIyMDAwMDAwIFRPIDIwMjEwMjI2MDAwMDAwXSk=&qcf=M2UxNzg5YmEtYzMyZS00ZjBlLWIyODctYzljMzQ3ZmVmOWFl&rrtc=VHJ1ZQ==",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2021
+    },
+    "end_date": {
+      "year": 2022
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "0-7067",
+    "title": "Enhancing Freeway Safety Prediction Model",
+    "description": "The objective of this project is to address knowledge gaps and develop updated local calibration factors for safety prediction models used on urban freeway segments, particularly for freeways with 12 lanes or managed lanes (e.g., HOV or HOT lanes). The research team derived calibration factors for 4–10 lane segments, assessed the applicability of models to segments with 11 or more lanes, and developed new models for managed lanes. Additionally, the team created an analysis tool to help practitioners apply these models in complex urban freeway configurations, supporting decisions in projects with design tradeoffs.",
+    "link": "https://library.ctr.utexas.edu/Presto/content/Detail.aspx?ctID=M2UxNzg5YmEtYzMyZS00ZjBlLWIyODctYzljMzQ3ZmVmOWFl&rID=ODMy",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2019
+    },
+    "end_date": {
+      "year": 2022
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "0-7049",
+    "title": "Improving and Communicating Speed Management Practices",
+    "description": "The objective of this project is to study and improve the understanding of operating speed and posted speed limits (PSLs) through research, communication tools, and dialogue with TxDOT districts. The project examines the relationship between PSLs, roadway characteristics, and operating speeds, and develops products like videos, pamphlets, and workshops to inform engineers and the public. The research also evaluates the impact of freeway geometric factors and suggests that changes in roadway geometry, PSLs, and enforcement can influence operational speeds by up to 6.2 mph.",
+    "link": "https://library.ctr.utexas.edu/Presto/content/Detail.aspx?ctID=M2UxNzg5YmEtYzMyZS00ZjBlLWIyODctYzljMzQ3ZmVmOWFl&rID=ODE0",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2019
+    },
+    "end_date": {
+      "year": 2022
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 03-134",
+    "title": "Determination of Encroachment Conditions in Work Zones",
+    "description": "The objective of this research was to evaluate work zone encroachments and develop comprehensive guidance to improve safety for workers and the traveling public in roadway work zones. The guidance covers all phases of work zone management, from planning to implementation, and is designed for use by any entity involved in work zone operations. Key areas addressed include defining encroachment conditions, methods for data collection, analyzing driver behavior, reviewing state practices, assessing MASH guidance applicability, and proposing methods to improve data collection and validate the safety and effectiveness of the developed guidance.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4547",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2019
+    },
+    "end_date": {
+      "year": 2022
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 17-92",
+    "title": "Developing Safety Performance Functions for Rural Two-Lane Highways that Incorporate Speed Measures",
+    "description": "The objective of this research was to develop a predictive methodology for rural two-lane, two-way highways, for consideration by the AASHTO HSM Steering Committee, that incorporates speed measures (or surrogates for speed measures) to estimate crash frequency and severity.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4574",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2019
+    },
+    "end_date": {
+      "year": 2024
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 14-41",
+    "title": "Permanent Vegetation Control Treatments for Roadsides",
+    "description": "The objective of this research is to produce up-to-date guidance for transportation agencies for selecting appropriate vegetation controls that will be effective in preventing or significantly retarding the growth of unwanted vegetation around roadside appurtenances and along roadsides. The guidance will identify controls appropriate for new construction and for existing facilities. In addition, the guidance will describe how to select effective long-term vegetation controls that also address traveler and highway worker safety and costs of construction and maintenance, as well as minimize adverse environmental impacts.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4368",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2018
+    },
+    "end_date": {
+      "year": 2022
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "TTI-Student-05",
+    "title": "Exploring Crowdsourced Monitoring Data for Safety",
+    "description": "The objective of this project was to explore and evaluate four different data sources to improve roadway safety analysis. The studies examined: 1) crowdsourced bicyclist activity data from StreetLight, showing strong correlations with actual bicyclist counts; 2) pedestrian counting accuracy of the Miovision system, revealing higher error rates at night; 3) INRIX trip trace data to define origin-destination patterns using decision rules; and 4) Waze crowdsourced traffic incident data, which was found to reliably identify high-risk locations and complement police-reported crash data.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/50717",
+    "sponsor": "SafeD UTC",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2019
+    },
+    "end_date": {
+      "year": 2019
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Urban Roadway Fatality Analysis",
+    "description": "",
+    "link": "",
+    "sponsor": "",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2016
+    },
+    "end_date": {
+      "year": 2016
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 17-66",
+    "title": "Guidance for Selection of Appropriate Countermeasures for Opposite Direction Crashes",
+    "description": "The objective of the study from the document is to develop guidelines for the identification, prioritization, and selection of effective countermeasures to reduce or eliminate opposite direction crashes. This objective was accomplished by analyzing existing data and providing guidance on the implementation of various safety treatments to minimize the occurrence and severity of opposite direction crashes. The study specifically targeted crashes between vehicles traveling in opposing directions, focusing on countermeasures such as rumble strips, barriers, and roadway lighting to help reduce these incidents.",
+    "link": "https://nap.nationalacademies.org/catalog/26586/guidelines-for-treatments-to-mitigate-opposite-direction-crashes",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2017
+    },
+    "end_date": {
+      "year": 2021
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA-HRT-21-105",
+    "title": "Development of Pedestrian Intersection Crash Modification Factors",
+    "description": "The objective of this project was to investigate the impact of intersection corner radius on pedestrian crashes and right-turn vehicle speeds. The study aimed to identify key factors influencing pedestrian crashes at specific corners, such as pedestrian and vehicle volumes, corner radius, and road configurations, and to develop a crash modification factor (CMF) for corner radius. Additionally, the project analyzed right-turn speeds, developing models that predict speeds based on corner radius and other influencing variables. The findings provide insights for improving intersection design and updating design manuals.",
+    "link": "https://www.fhwa.dot.gov/publications/research/safety/21105/index.cfm",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2019
+    },
+    "end_date": {
+      "year": 2021
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 06-18",
+    "title": "Guide for Snow and Ice Control Operations",
+    "description": "The objective of this research was to develop a guide that will serve as the primary source for guidance on all aspects of snow and ice control operations. The guide was intended for adoption/publication by AASHTO and will supersede the 1999 AASHTO Guide for Snow and Ice Control, and other guidance on snow and ice control operations.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4552",
+    "sponsor": "NCHRP",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2019
+    },
+    "end_date": {
+      "year": 2022
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA-SA-20-064",
+    "title": "Informational Guide on Data Collection and Annual Average Daily Traffic (AADT) Estimation for Non-Federal Aid-System (NFAS) Roads",
+    "description": "The objective of this Informational Guide is to assist traffic monitoring personnel, both experienced and new, in the collection and estimation of Annual Average Daily Traffic (AADT) for non-Federal aid-system (NFAS) roads, including rural minor collectors and local roads. The guide outlines a four-step preparation process for safety data integration and an eight-step process for developing a random stratified sampling scheme and AADT estimates.",
+    "link": "https://safety.fhwa.dot.gov/rsdp/downloads/fhwasa20064.pdf",
+    "sponsor": "FHWA",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2017
+    },
+    "end_date": {
+      "year": 2019
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "NCHRP 17-76",
+    "title": "Posted Speed Limit Setting Procedure and Tool: User Guide",
+    "description": "The objective of the project was to identify factors influencing driver operating speeds and develop a Speed Limit Setting Procedure (SLS-Procedure) and an automated Speed Limit Setting Tool (SLS-Tool) to calculate objective suggested speed limits for road segments. The goal is to assist traffic engineers in setting appropriate speed limits and explaining the process to the public or officials.",
+    "link": "https://nap.nationalacademies.org/catalog/26216/posted-speed-limit-setting-procedure-and-tool-user-guide",
+    "sponsor": "NCHRP",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2016
+    },
+    "end_date": {
+      "year": 2018
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA-HRT-21-105",
+    "title": "Crash Modification Factor for Corner Radius, Right-Turn Speed, and Prediction of Pedestrian Crashes at Signalized Intersections",
+    "description": "The objective of this project was to investigate the influence of intersection corner radius on pedestrian crashes and right-turn vehicle speeds. The study aimed to identify the relationship between corner-level pedestrian crashes and various factors, including pedestrian and vehicle volumes, corner radius, and street configurations.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/59936",
+    "sponsor": "FHWA",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2019
+    },
+    "end_date": {
+      "year": 2021
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/TX-21/0-7035-R1",
+    "title": "Examine Trade-Offs Between Center Separation and Shoulder Width Allotment for a Given Roadway Width",
+    "description": "The objective of this research project is to develop a framework for road design engineers to optimize the operational and safety performance of rural four-lane undivided highways by evaluating alternative cross-section designs without increasing the roadway width.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/60135",
+    "sponsor": "FHWA",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2019
+    },
+    "end_date": {
+      "year": 2021
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/TX-20/0-6991-R1",
+    "title": "Evaluation of Roadside Treatments to Mitigate Roadway Departure Crashes",
+    "description": "The objective of this research project was to develop a systemic framework for identifying high-risk locations for roadway departure crashes and recommending proactive countermeasures for implementation.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/55555",
+    "sponsor": "FHWA",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2018
+    },
+    "end_date": {
+      "year": 2020
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/TX-19/0-6961-R1",
+    "title": "Evaluation of Highway Safety Improvement Projects and Countermeasures",
+    "description": "The objective of this study is to advance the evaluation processes and practices of the Highway Safety Improvement Program (HSIP) at the Texas Department of Transportation (TxDOT) by assessing the safety and cost-effectiveness of implemented HSIP projects and countermeasures.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/60218",
+    "sponsor": "FHWA",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2017
+    },
+    "end_date": {
+      "year": 2019
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/TX-19/0-6927-R1",
+    "title": "Improving the Amount and Availability of Pedestrian and Bicyclist Count Data in Texas",
+    "description": "The objective of this project was to recommend a sustainable count monitoring process for pedestrians and bicyclists across Texas, and to develop a consolidated database of pedestrian and bicyclist counts from pilot cities and other available data sources.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/44342",
+    "sponsor": "FHWA",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2017
+    },
+    "end_date": {
+      "year": 2019
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "TTI-01-04",
+    "title": "Vehicle Operating Speed on Urban Arterial Roadways",
+    "description": "The objective of this research is to explore the relationship between suburban vehicle operating speeds and roadway characteristics, particularly the presence of bicyclists, and to determine whether crowdsourced speed data can be used to estimate unconstrained speeds at specific locations.",
+    "link": "https://safed.vtti.vt.edu/projects/influences-on-bicyclists-and-motor-vehicles-operating-speed-within-a-corridor/",
+    "sponsor": "SafeD UTC",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2017
+    },
+    "end_date": {
+      "year": 2018
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/TX-18/0-6927-P6",
+    "title": "Guide for Seasonal Adjustment and Crowdsourced Data Scaling",
+    "description": "The objective of this guide is to describe two adjustment processes for pedestrian and bicyclist data. The first is seasonal adjustment, which annualizes short-duration counts to estimate annual average daily traffic. The second is crowdsourced data scaling, which expands crowdsourced GPS data samples to estimate the total number of bicyclists using factors such as facility type and nearby household income levels.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/62064",
+    "sponsor": "FHWA",
+    "PI": "Key Researcher",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2016
+    },
+    "end_date": {
+      "year": 2018
+    },
+    "status": "completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/TX-18/0-6932-R1",
+    "title": "Pavement Safety-Based Guidelines for Horizontal Curve Safety",
+    "description": "The objective of this research project is to improve rural highway curve safety by developing calibrated safety prediction models that account for curve characteristics, pavement skid resistance, and weather patterns. The project aims to create guidelines and a life-cycle benefit-cost evaluation framework to help prioritize and select effective safety treatments for curves, optimizing the use of limited HSIP funds to reduce crashes and prevent injuries and fatalities.",
+    "link": "https://library.ctr.utexas.edu/Presto/content/Detail.aspx?ctID=UHVibGljYXRpb25fMTE2MTA%3D&rID=MzA1NDA%3D&ssid=c2NyZWVuSURfMTQ2MDk%3D&bmdc=MQ==",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2016,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2018,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA-SA-18-032",
+    "title": "Guide for Scalable Risk Assessment Methods for Pedestrians and Bicyclists",
+    "description": "The objective of identifying risk assessment goals is to clarify the specific use and purpose of risk values in relation to pedestrian and bicyclist safety. Key considerations include determining what progress is needed for safety, the desired result, the level of detail required, whether the result integrates into an existing process, and the geographic scope of interest, such as focusing on a few locations or a larger area.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/43673",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2016,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2018,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/TX-15/0-6840-1",
+    "title": "Analysis of the Shoulder Widening Need on the State Highway System",
+    "description": "The objective of this project is to define criteria for roadway shoulder suitability for pedestrians and cyclists on rural low-speed highways in Texas, identify candidate locations for shoulder improvements, and determine high-use or high-demand areas. The goal is to develop a list of potential target locations with suitability criteria to be incorporated into a Strategic Corridor Development Plan.",
+    "link": "https://static.tti.tamu.edu/tti.tamu.edu/documents/0-6840-1.pdf",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2014,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2016,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA-SA-17-041",
+    "title": "Synthesis of Methods for Estimating Pedestrian and Bicyclist Exposure to Risk at Areawide Levels and on Specific Transportation Facilities",
+    "description": "The objective of this project is to develop a standardized approach, called the Scalable Risk Assessment Methodology (ScRAM), to estimate pedestrian and bicyclist exposure to risk. The project has three main goals: 1) synthesize and document existing technical resources, 2) develop scalable methods for calculating exposure to risk at different levels (facility, corridor, network, or region), and 3) promote the use of these methods through outreach, training, and technical assistance.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/36098",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2015,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2017,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "0-6992",
+    "title": "Traffic Safety Improvements at Low Water Crossings",
+    "description": "The objective of this project is to explore low-cost, easy-to-implement countermeasures to improve safety at low water crossings (LWCs) in Texas. The research focuses on enhanced delineation techniques, improved flood-detection sensors, warning device deployment, and integrating connected vehicle technology to increase driver awareness of LWCs, particularly at night. The project aims to improve roadway safety by providing long-range warnings and advanced alerts to drivers.",
+    "link": "https://library.ctr.utexas.edu/Presto/content/Detail.aspx?ctID=M2UxNzg5YmEtYzMyZS00ZjBlLWIyODctYzljMzQ3ZmVmOWFl&rID=NjQ0&sID=MQ==&qrs=VHJ1ZQ==&q=Y2F0YWxvZy5jYXRlZ29yeTppc3N1ZXM=&rrtc=VHJ1ZQ==",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2018,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2021,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "",
+    "title": "Safety Performance of Truck Lane Restrictions in Dallas-Fort Worth",
+    "description": "The objective of this project is to evaluate the implementation and expansion of Truck Lane Restrictions (TLRs) in Texas, particularly in the Dallas-Fort Worth (DFW) region. The study aims to determine the feasibility of new TLR corridors using criteria such as freeway length, truck volume, and lane usage. Based on previous positive outcomes in terms of speed improvements, crash reduction, and emission decreases, the project seeks to recommend additional TLR sections across Texas for further traffic safety and operational benefits.",
+    "link": "https://subasish.github.io/SD_Conts/2016%20Le%20TTI%20TLR.pdf",
+    "sponsor": "",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2016,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2016,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "ATLAS-2016-14",
+    "title": "Is Age a Factor in Crashes at Channelized Right-Turn Lanes? An Exploration of Potential Relationships",
+    "description": "The objective of this research project is to determine whether driver age is associated with crashes at channelized right-turn lanes.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/31413",
+    "sponsor": "ATLAS UTC",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2015,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2016,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/LA.14/548",
+    "title": "Developing a Method for Estimating AADT on all Louisiana Roads",
+    "description": "The objective of this project is to develop a methodology for estimating Annual Average Daily Traffic (AADT) on all Louisiana roadways, with a focus on non-state rural roadways. The project aims to review current traffic counts, identify roadways without counts, and determine influential variables for AADT estimation. It also involves developing AADT estimation models for rural roadways and exploring methods for small urban areas.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/29691",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2013,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2015,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/LA.13/508",
+    "title": "A Comprehensive Study on Pavement Edge Line Implementation",
+    "description": "The objective of this project is to investigate the safety impact of pavement markings on narrow rural, two-lane highways in Louisiana. Specifically, the research aims to: 1) conduct a before-and-after crash analysis to estimate crash reduction factors, 2) analyze crash characteristics, and 3) perform a benefit-cost analysis.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/27322",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2012,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2014,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/LA.11/487",
+    "title": "Developing Louisiana Crash Reduction Factors",
+    "description": "The objective of this project is to evaluate and develop crash modification factors (CMFs) specific to Louisiana for improving roadway safety. Two unique CMFs were created: one for converting four-lane urban undivided roadways to five-lane roadways, which demonstrated significant crash reductions in urban areas, and another for raised pavement markers (RPM) and striping, which proved effective in reducing nighttime crashes on rural freeways but showed no safety benefits on urban freeways. These CMFs aim to support Louisiana's goal of reducing roadway fatalities under the 'Destination Zero Death' initiative.",
+    "link": "https://rosap.ntl.bts.gov/view/dot/22289",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2011,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2013,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
+  },
+  {
+    "number": "FHWA/LA.11/487",
+    "title": "Safety Improvement from Edge Lines on Rural Two-Lane Highways",
+    "description": "The objective of this project was to investigate the safety impact of edge lines on rural, two-lane highways in Louisiana by identifying the segments that would benefit the most from edge line implementation, installing edge lines at selected locations, and conducting a before-and-after study to estimate the crash modification factors (CMF).",
+    "link": "https://rosap.ntl.bts.gov/view/dot/24250",
+    "sponsor": "FHWA",
+    "PI": "Subasish Das",
+    "PI_role": "Key Researcher",
+    "start_date": {
+      "year": 2010,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2012,
+      "month": "December"
+    },
+    "status": "Completed",
+    "image": ""
   }
 ]
