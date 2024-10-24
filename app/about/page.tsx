@@ -19,6 +19,7 @@ const AboutMe = () => {
     useEffect(() => {
         document.title = "About | AIT Lab";
     }, []);
+
     return (
         <Box py={8} minHeight="100vh">
             <Container maxW="container.xl">

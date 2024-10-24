@@ -36,7 +36,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                     {/* Course Image */}
                     <Box flexShrink={0} mr={6}>
                         <Image
-                            src={`/img/coursses/${course.image}`}
+                            src={`/img/courses/${course.image}`}
                             alt={course.title}
                             borderRadius="md"
                             boxSize={{ base: "200px", md: "250px" }}
