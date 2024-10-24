@@ -63,7 +63,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
                             Status: {project.status}
                         </Badge>
                         <Badge variant="solid" colorScheme="purple" fontSize="sm">
-                            Duration: {project.start_year} - {project.end_year}
+                            {project.start_date.month} {project.start_date.year} - {project.end_date.month} {project.end_date.year}
                         </Badge>
                         <Badge variant="solid" colorScheme="blue" fontSize="sm">
                             Sponsor: {project.sponsor}

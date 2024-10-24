@@ -36,7 +36,7 @@ const Projects = () => {
             if (statusA !== statusB) {
                 return statusA - statusB;
             }
-            return b.end_year - a.end_year;
+            return b.start_date.year - a.end_date.year;
         });
 
         setProjects(sortedProjects);
@@ -119,7 +119,7 @@ const Projects = () => {
 
                 <Stack mb={6} direction={{ base: "column", md: "row" }} spacing={4}>
                     <Input
-                        placeholder="Search by title, author"
+                        placeholder="Search by title, project number, sponsor"
                         value={searchTerm}
                         onChange={handleSearch}
                         bg="white"
