@@ -4,24 +4,24 @@
 import React, { useState, useEffect } from "react";
 import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion"; // Import framer-motion for animations
-import projectsData from "@/data/projects.json"; // Importing the data directly from the JSON file
-import ProjectCard from "@/components/ProjectCard"; // Import the ProjectCard component
+import grantsData from "@/data/grants.json"; // Importing the data directly from the JSON file
+import GrantCard from "@/components/GrantCard"; // Import the GrantCard component
 
-// Type the imported projects data
-const typedProjectsData: ProjectTypes[] = projectsData as ProjectTypes[];
+// Type the imported grants data
+const typedGrantsData: GrantTypes[] = grantsData as GrantTypes[];
 
-const Projects: React.FC = () => {
-    const [projects, setProjects] = useState<ProjectTypes[]>([]); // Set the state type to ProjectTypes[]
+const Grants: React.FC = () => {
+    const [grants, setGrants] = useState<GrantTypes[]>([]); // Set the state type to GrantTypes[]
 
-    // Set initial projects data from JSON and sort by status and recency
+    // Set initial grants data from JSON and sort by status and recency
     useEffect(() => {
         // Set dynamic page title
         document.title = "Research Grants | AIT Lab";
 
-        let sortedProjects = [...typedProjectsData];
+        let sortedGrants = [...typedGrantsData];
 
-        // Sort projects by status ("ongoing" first, then "completed") and by "end_year" (recent first)
-        sortedProjects = sortedProjects.sort((a, b) => {
+        // Sort grants by status ("ongoing" first, then "completed") and by "end_year" (recent first)
+        sortedGrants = sortedGrants.sort((a, b) => {
             // Prioritize by status: "ongoing" first, then "completed"
             const statusOrder: { [key: string]: number } = { ongoing: 1, completed: 2 };
 
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
             return b.end_year - a.end_year;
         });
 
-        setProjects(sortedProjects);
+        setGrants(sortedGrants);
     }, []);
 
     return (
@@ -47,11 +47,11 @@ const Projects: React.FC = () => {
                     Research Grants
                 </Heading>
 
-                {/* Projects */}
+                {/* Grants */}
                 <Box>
-                    {projects.length > 0 && (
+                    {grants.length > 0 && (
                         <Stack spacing={6}>
-                            {projects.map((project, index) => (
+                            {grants.map((grant, index) => (
                                 <motion.div
                                     key={index}
                                     initial="hidden"
@@ -65,16 +65,16 @@ const Projects: React.FC = () => {
                                         },
                                     }}
                                 >
-                                    <ProjectCard project={project} /> {/* Assuming ProjectCard accepts a project prop of type ProjectTypes */}
+                                    <GrantCard grant={grant} /> {/* Assuming GrantCard accepts a grant prop of type GrantTypes */}
                                 </motion.div>
                             ))}
                         </Stack>
                     )}
 
-                    {/* No Projects Found */}
-                    {projects.length === 0 && (
+                    {/* No Grants Found */}
+                    {grants.length === 0 && (
                         <Box textAlign="center" py={6}>
-                            <Text color="gray.700">No projects found</Text>
+                            <Text color="gray.700">No grants found</Text>
                         </Box>
                     )}
                 </Box>
@@ -83,4 +83,4 @@ const Projects: React.FC = () => {
     );
 };
 
-export default Projects;
+export default Grants;
