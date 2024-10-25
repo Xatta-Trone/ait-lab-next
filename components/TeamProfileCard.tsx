@@ -74,13 +74,13 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                         target.src = "/img/team/default.png"; // Fallback to default image
                     }}
                 />
-                <Stack spacing={3} flex="1" marginLeft={{ md: 6 }} marginTop={{ base: 4, md: 0 }}>
+                <Stack flex="1" marginLeft={{ md: 6 }} marginTop={{ base: 4, md: 0 }}>
                     {/* Name as a Heading */}
-                    <Heading as="h3" size="lg" color="blue.800">
+                    <Heading as="h3" size="lg" color="blue.800" mb={-2}>
                         {member.name}
                     </Heading>
                     {/* Label as a smaller Heading */}
-                    <Heading as="h4" size="sm" color="gray.500">
+                    <Heading as="h4" size="sm" color="gray.500" mb={1}>
                         {member.label}
                     </Heading>
 
@@ -220,7 +220,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                     </HStack>
                 </Stack>
             </Flex>
-        </Box>
+        </Box >
     );
 };
 
