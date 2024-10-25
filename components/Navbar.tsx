@@ -49,7 +49,7 @@ function Navbar() {
                     </Link>
 
                     {/* Desktop Menu */}
-                    <HStack as="nav" spacing={4} display={{ base: "none", md: "flex" }}>
+                    <HStack as="nav" spacing={4} display={{ base: "none", lg: "flex" }}>
                         {navLinks.map((item) => (
                             <Link key={item.path} href={item.path} passHref>
                                 <Text
@@ -85,7 +85,7 @@ function Navbar() {
                         size="md"
                         icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
                         aria-label="Open Menu"
-                        display={{ md: "none" }}
+                        display={{ lg: "none" }}
                         onClick={onOpen}
                         color={"white"}
                     />
