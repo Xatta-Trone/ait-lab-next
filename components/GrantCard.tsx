@@ -13,8 +13,8 @@ import {
     Button,
 } from "@chakra-ui/react";
 
-const ProjectCard = (props: { project: ProjectTypes }) => {
-    const { project } = props;
+const GrantCard = (props: { grant: GrantTypes }) => {
+    const { grant } = props;
     return (
         <Box
             p={5}
@@ -30,49 +30,49 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
             width="100%"
         >
             <Flex direction="row" alignItems="center">
-                {/* project Image */}
+                {/* Grant Image */}
                 <Box flexShrink={0} mr={6}>
                     <Image
-                        src={`/img/projects/${project.image}`}
-                        alt={project.title}
+                        src={`/img/grants/${grant.image}`}
+                        alt={grant.title}
                         borderRadius="md"
                         boxSize={{ base: "200px", md: "250px" }}
                         objectFit="contain"
-                        fallbackSrc="/img/projects/default.png"
+                        fallbackSrc="/img/grants/default.png"
                     />
                 </Box>
 
-                {/* project Info */}
+                {/* Grant Info */}
                 <Box flex="1">
                     <Heading as="h3" size="lg" mb={2}>
-                        {project.title}
+                        {grant.title}
                     </Heading>
                     <Text fontSize="md" color="gray.700" mb={4}>
-                        {project.description}
+                        {grant.description}
                     </Text>
 
                     {/* PI and Co-PI Information */}
                     <Text fontSize="md" color="gray.600" mb={4}>
-                        <strong>{project.PI_role === "Co-PI" ? "Co-PI" : project.PI_role === "Key Researcher" ? "Key Researcher" : "PI"}:</strong>{" "}
-                        {project.PI}
+                        <strong>{grant.PI_role === "Co-PI" ? "Co-PI" : "PI"}:</strong>{" "}
+                        {grant.PI}
                     </Text>
 
-                    {/* project Metadata */}
+                    {/* Grant Metadata */}
                     <Stack direction="row" spacing={4} mb={4}>
                         <Badge variant="solid" colorScheme="teal" fontSize="sm">
-                            Status: {project.status}
-                        </Badge>
-                        <Badge variant="solid" colorScheme="purple" fontSize="sm">
-                            {project.start_date.month} {project.start_date.year} - {project.end_date.month} {project.end_date.year}
+                            Status: {grant.status}
                         </Badge>
                         <Badge variant="solid" colorScheme="blue" fontSize="sm">
-                            Sponsor: {project.sponsor}
+                            Budget: {grant.budget}
+                        </Badge>
+                        <Badge variant="solid" colorScheme="purple" fontSize="sm">
+                            Duration: {grant.start_year} - {grant.end_year}
                         </Badge>
                     </Stack>
 
-                    {/* Link to project Details */}
-                    {project.link && (
-                        <Link href={project.link} isExternal>
+                    {/* Link to Grant Details */}
+                    {grant.link && (
+                        <Link href={grant.link} isExternal>
                             <Button
                                 variant="solid"
                                 size="md"
@@ -88,4 +88,4 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
     );
 };
 
-export default ProjectCard;
+export default GrantCard;
