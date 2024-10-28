@@ -4,6 +4,7 @@ import { HeroParticles } from "@/components/Homepage/HeroParticles";
 import Hero from "@/components/Homepage/Hero";
 import { Box } from "@chakra-ui/react";
 import ProjectsSection from "@/components/Homepage/ProjectsSection";
+import RecentNews from "@/components/Homepage/RecentNews";
 
 export const metadata: Metadata = {
   title: "AIT Lab",
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Box backgroundColor={"white"} w={"100vw"}>
         <ProjectsSection />
+        <RecentNews />
       </Box>
     </>
   );

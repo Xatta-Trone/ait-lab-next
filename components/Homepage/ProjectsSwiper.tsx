@@ -1,38 +1,47 @@
+// ProjectsSwiper.tsx
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
+import projectsData from "@/data/projects.json";
+import ProjectSwiperCard from './ProjectSwiperCard';
 
-export default function ProjectsSwiper() {
+const ProjectsSwiper = () => {
+    // Get the four most recent projects
+    const recentProjects = ([...projectsData] as ProjectTypes[])
+        .sort((a, b) => b.start_date.year - a.start_date.year)
+        .slice(0, 4);
+
+
     return (
         <>
             <Swiper
                 slidesPerView={'auto'}
                 centeredSlides={true}
                 spaceBetween={30}
-                loop={true} // Enables infinite scrolling
+                loop={true}
                 autoplay={{
-                    delay: 3000, // Delay between slides in ms
-                    disableOnInteraction: true, // Keeps autoplay on even when interacting with slides
+                    delay: 3000,
+                    disableOnInteraction: true,
                 }}
                 pagination={{
                     clickable: true,
-                    el: '.swiper-pagination-custom', // Target custom pagination container
+                    el: '.swiper-pagination-custom',
                 }}
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
             >
-                <SwiperSlide className="swiper-slide">Slide 1</SwiperSlide>
-                <SwiperSlide className="swiper-slide">Slide 2</SwiperSlide>
-                <SwiperSlide className="swiper-slide">Slide 3</SwiperSlide>
-                <SwiperSlide className="swiper-slide">Slide 4</SwiperSlide>
-                <SwiperSlide className="swiper-slide">Slide 5</SwiperSlide>
-
-                {/* Custom Pagination */}
+                {recentProjects.map((project, index) => (
+                    <SwiperSlide key={index}>
+                        <ProjectSwiperCard project={project} />
+                    </SwiperSlide>
+                ))}
                 <div className="swiper-pagination-custom" />
             </Swiper>
         </>
     );
-}
+};
+
+export default ProjectsSwiper;
