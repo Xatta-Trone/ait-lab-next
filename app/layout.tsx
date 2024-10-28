@@ -30,7 +30,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
             </GridItem>
 
             {/* Main Content (Limited to container.xl) */}
-            <GridItem as="main" w="100%">
+            <GridItem as="main" w="100%" mt={"60px"}>
               <Container maxW="container.xl" py={8}>
                 {children}
               </Container>
