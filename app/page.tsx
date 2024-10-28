@@ -2,6 +2,7 @@
 import { Metadata } from "next";
 import { Flex } from "@chakra-ui/react/flex";
 import { Heading } from "@chakra-ui/react/typography";
+import { Hero } from "@/components/Homepage/Hero";
 
 export const metadata: Metadata = {
   title: "AIT Lab",
@@ -11,12 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Flex align={"center"} width={"100%"} marginTop={5} direction={'column'}>
-        <Heading>
-          Home Page
-        </Heading>
-        Page under construction!!
-      </Flex>
+      <Hero />
     </>
   );
 }
