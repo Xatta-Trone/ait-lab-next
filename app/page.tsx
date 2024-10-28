@@ -1,8 +1,9 @@
 
 import { Metadata } from "next";
-import { Flex } from "@chakra-ui/react/flex";
-import { Heading } from "@chakra-ui/react/typography";
-import { Hero } from "@/components/Homepage/Hero";
+import { HeroParticles } from "@/components/Homepage/HeroParticles";
+import Hero from "@/components/Homepage/Hero";
+import { Box } from "@chakra-ui/react";
+import ProjectsSection from "@/components/Homepage/ProjectsSection";
 
 export const metadata: Metadata = {
   title: "AIT Lab",
@@ -12,7 +13,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <HeroParticles />
       <Hero />
+      <Box backgroundColor={"white"} w={"100vw"}>
+        <ProjectsSection />
+
+      </Box>
     </>
   );
 }

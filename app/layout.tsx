@@ -19,21 +19,19 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           rel="stylesheet"
         />
       </head>
-      <body style={{ backgroundColor: "white" }}>
+      <body style={{ backgroundColor: "white", overflowX: "hidden" }}>
         {/* Ensure ColorModeScript is included for proper SSR hydration */}
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <ChakraProvider theme={theme}>
-          <Grid templateRows="auto 1fr auto" minH="100vh">
+          <Grid templateRows="auto 1fr auto" minH="100vh" maxWidth={"100vw"}>
             {/* Navbar (Full Width) */}
             <GridItem as="header" w="100%">
               <Navbar />
             </GridItem>
 
             {/* Main Content (Limited to container.xl) */}
-            <GridItem as="main" w="100%" mt={"60px"}>
-              <Container maxW="container.xl" py={8}>
-                {children}
-              </Container>
+            <GridItem as="main" w="100%" pt={"80px"}>
+              {children}
             </GridItem>
 
             {/* Footer (Full Width) */}
@@ -44,6 +42,6 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           </Grid>
         </ChakraProvider>
       </body>
-    </html>
+    </html >
   );
 }
