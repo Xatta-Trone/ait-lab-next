@@ -17,7 +17,6 @@ export default function Home() {
       <Hero />
       <Box backgroundColor={"white"} w={"100vw"}>
         <ProjectsSection />
-
       </Box>
     </>
   );

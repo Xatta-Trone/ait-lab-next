@@ -109,16 +109,18 @@ export const HeroParticles = () => {
 
     if (init) {
         return (
-            // Wrapping Particles in a Box with zIndex to control stacking
-            <Box position="absolute" zIndex={-1}>
-                <Particles
-                    id="tsparticles"
-                    particlesLoaded={particlesLoaded}
-                    options={options}
-                    style={{ position: "absolute", top: 0, left: 0, zIndex: -1 }}
-                />
-            </Box>
+            <>
+                {/* // Wrapping Particles in a Box with zIndex to control stacking */}
+                <Box position="absolute" zIndex={-1}>
+                    <Particles
+                        id="tsparticles"
+                        particlesLoaded={particlesLoaded}
+                        options={options}
+                        style={{ position: "absolute", top: 0, left: 0, zIndex: -1 }}
+                    />
+                </Box>
 
+            </>
         );
     }
 

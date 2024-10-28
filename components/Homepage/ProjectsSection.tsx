@@ -1,5 +1,7 @@
+"use client"
 import { Box, Container, Heading } from '@chakra-ui/react';
 import React from 'react';
+import ProjectsSwiper from './ProjectsSwiper';
 
 const ProjectsSection = () => {
     return (
@@ -20,10 +22,11 @@ const ProjectsSection = () => {
             </Box>
 
             {/* Projects Section Content */}
-            <Box position="relative" bg="white" py={20}>
+            <Box bg="white" py={20}>
                 <Container maxWidth="container.xl" textAlign={"center"}>
-                    <Heading color="blue.600">Projects</Heading>
+                    <Heading color="blue.600" marginBottom={15}>Projects</Heading>
                     {/* Add your projects content here */}
+                    <ProjectsSwiper />
                 </Container>
             </Box>
         </>

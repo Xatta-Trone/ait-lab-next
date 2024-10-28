@@ -23,3 +23,29 @@
 .custom-shape-divider-top-1730154608 .shape-fill {
   fill: #2b6cb0;
 }
+
+.mySwiper {
+  width: 100%;
+  padding-bottom: 3rem; /* Space below slides to prevent pagination overlap */
+}
+
+.swiper-pagination-bullet {
+  background-color: #0070f3; /* Customize the bullet color */
+}
+
+/* Custom Pagination Styling */
+.swiper-pagination-custom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Space out pagination from slides */
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+  background-color: #2b6cb0;
+  opacity: 0.7;
+  margin: 0 4px; /* Add spacing between bullets */
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  opacity: 1;
+}
