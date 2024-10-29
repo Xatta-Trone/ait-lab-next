@@ -1,4 +1,3 @@
-// ProjectsSwiper.tsx
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -14,13 +13,12 @@ const ProjectsSwiper = () => {
         .sort((a, b) => b.start_date.year - a.start_date.year)
         .slice(0, 4);
 
-
     return (
         <>
             <Swiper
-                slidesPerView={'auto'}
+                slidesPerView={'auto'} // Adjust number of slides based on screen size
                 centeredSlides={true}
-                spaceBetween={30}
+                spaceBetween={20} // Adjust space between slides
                 loop={true}
                 autoplay={{
                     delay: 3000,
