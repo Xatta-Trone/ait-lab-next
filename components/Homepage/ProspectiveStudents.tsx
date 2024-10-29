@@ -16,7 +16,7 @@ const ProspectiveStudents = () => {
     return (
         <Box py={20}>
             <Container maxW="container.xl" display={"flex"} flexDirection={"column"} alignItems={"center"}>
-                <Heading as="h2" size="lg" mb={4} textAlign="center">
+                <Heading as="h2" size="lg" mb={4} textAlign="center" color={"blue.600"}>
                     Opportunities for Prospective Students
                 </Heading>
                 <Text textAlign="center" mb={6}>
