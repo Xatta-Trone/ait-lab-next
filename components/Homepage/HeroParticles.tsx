@@ -38,11 +38,6 @@ export const HeroParticles = () => {
 
     const options: ISourceOptions = useMemo(
         () => ({
-            background: {
-                color: {
-                    value: "#2b6cb0",
-                },
-            },
             fpsLimit: 1120,
             interactivity: {
                 events: {
@@ -111,7 +106,26 @@ export const HeroParticles = () => {
         return (
             <>
                 {/* // Wrapping Particles in a Box with zIndex to control stacking */}
-                <Box position="absolute" zIndex={-1}>
+                <Box
+                    position="absolute"
+                    w="100%"
+                    h="100vh"
+                    bgImage="url('https://images5.alphacoders.com/134/1346556.png')"
+                    bgSize="cover"
+                    bgPosition="center"
+                    bgRepeat="no-repeat"
+                    overflow="hidden"
+                    zIndex={-1}
+                >
+                    <Box
+                        position="absolute"
+                        top={0}
+                        left={0}
+                        right={0}
+                        bottom={0}
+                        bgGradient="linear(to-b, rgba(43, 108, 176, 1), rgba(43, 108, 176, 0.7), rgba(43, 108, 176, 1))"
+                        zIndex={-1}
+                    />
                     <Particles
                         id="tsparticles"
                         particlesLoaded={particlesLoaded}
