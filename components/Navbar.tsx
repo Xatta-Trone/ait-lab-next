@@ -48,7 +48,8 @@ function Navbar() {
             zIndex={10}
             transition="all 0.3s ease"
             height={scrolled ? "60px" : "80px"}
-            py="auto"
+            pt={scrolled ? 1 : 2}
+            pb={scrolled ? 2 : 3}
         >
             <Container maxW="container.xl">
                 <Flex h="100%" alignItems="center" justifyContent="space-between">
