@@ -6,6 +6,7 @@ import { Box } from "@chakra-ui/react";
 import ProjectsSection from "@/components/Homepage/ProjectsSection";
 import RecentNews from "@/components/Homepage/RecentNews";
 import ProspectiveStudents from "@/components/Homepage/ProspectiveStudents";
+import BookSection from "@/components/Homepage/BookSection";
 
 export const metadata: Metadata = {
   title: "AIT Lab",
@@ -21,6 +22,7 @@ export default function Home() {
         <ProjectsSection />
         <RecentNews />
         <ProspectiveStudents />
+        <BookSection />
       </Box>
     </>
   );
