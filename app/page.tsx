@@ -7,6 +7,7 @@ import ProjectsSection from "@/components/Homepage/ProjectsSection";
 import RecentNews from "@/components/Homepage/RecentNews";
 import ProspectiveStudents from "@/components/Homepage/ProspectiveStudents";
 import BookSection from "@/components/Homepage/BookSection";
+import ContactSection from "@/components/Homepage/ContactSection";
 
 export const metadata: Metadata = {
   title: "AIT Lab",
@@ -23,6 +24,7 @@ export default function Home() {
         <RecentNews />
         <ProspectiveStudents />
         <BookSection />
+        <ContactSection />
       </Box>
     </>
   );
