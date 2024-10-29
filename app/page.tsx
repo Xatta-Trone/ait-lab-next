@@ -1,7 +1,13 @@
 
 import { Metadata } from "next";
-import { Flex } from "@chakra-ui/react/flex";
-import { Heading } from "@chakra-ui/react/typography";
+import { HeroParticles } from "@/components/Homepage/HeroParticles";
+import Hero from "@/components/Homepage/Hero";
+import { Box } from "@chakra-ui/react";
+import ProjectsSection from "@/components/Homepage/ProjectsSection";
+import RecentNews from "@/components/Homepage/RecentNews";
+import ProspectiveStudents from "@/components/Homepage/ProspectiveStudents";
+import BookSection from "@/components/Homepage/BookSection";
+import ContactSection from "@/components/Homepage/ContactSection";
 
 export const metadata: Metadata = {
   title: "AIT Lab",
@@ -11,12 +17,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Flex align={"center"} width={"100%"} marginTop={5} direction={'column'}>
-        <Heading>
-          Home Page
-        </Heading>
-        Page under construction!!
-      </Flex>
+      <HeroParticles />
+      <Hero />
+      <Box backgroundColor={"white"} w={"100vw"}>
+        <ProjectsSection />
+        <RecentNews />
+        <ProspectiveStudents />
+        <BookSection />
+        <ContactSection />
+      </Box>
     </>
   );
 }

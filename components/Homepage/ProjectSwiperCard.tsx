@@ -1,23 +1,11 @@
-/** @format */
-
 import React from "react";
-import {
-    Box,
-    Flex,
-    Image,
-    Heading,
-    Text,
-    Stack,
-    Badge,
-    Link,
-    Button,
-} from "@chakra-ui/react";
+import { Box, Flex, Image, Heading, Text, Stack, Badge, Link, Button } from "@chakra-ui/react";
 
-const ProjectCard = (props: { project: ProjectTypes }) => {
+const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
     const { project } = props;
     return (
         <Box
-            p={5}
+            p={{ base: 4, md: 5 }} // Responsive padding
             shadow="md"
             borderWidth="1px"
             borderRadius="lg"
@@ -27,39 +15,42 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
                 transform: "translateY(-10px)",
             }}
             transition="all 0.3s ease-in-out"
-            width="100%"
+            maxWidth="100%"
+            overflow={"hidden"}
         >
-            <Flex direction="row" alignItems="center">
-                {/* project Image */}
-                <Box flexShrink={0} mr={6}>
+            <Flex direction="column" alignItems="center" wrap={"wrap"}>
+                {/* Project Image */}
+                <Box flexShrink={0} mb={4}>
                     <Image
                         src={`/img/projects/${project.image}`}
                         alt={project.title}
                         borderRadius="md"
-                        boxSize={{ base: "200px", md: "250px" }}
+                        boxSize={{ base: "180px", md: "250px" }} // Responsive sizing
                         objectFit="contain"
                         fallbackSrc="/img/projects/default.png"
                     />
                 </Box>
 
-                {/* project Info */}
-                <Box flex="1">
-                    <Heading as="h3" size="lg" mb={2}>
+                {/* Project Info */}
+                <Box textAlign="center" width={"100%"}>
+                    <Heading as="h3" size={{ base: "md", md: "lg" }} mb={2}> {/* Responsive heading size */}
                         {project.number && `${project.number} : `}
                         {project.title}
                     </Heading>
-                    <Text fontSize="md" color="gray.700" mb={4}>
+                    <Text fontSize={{ base: "sm", md: "md" }} color="gray.700" mb={4}>
                         {project.description}
                     </Text>
 
                     {/* PI and Co-PI Information */}
-                    <Text fontSize="md" color="gray.600" mb={4}>
-                        <strong>{project.PI_role === "Co-PI" ? "Co-PI" : project.PI_role === "Key Researcher" ? "Key Researcher" : "PI"}:</strong>{" "}
+                    <Text fontSize={{ base: "sm", md: "md" }} color="gray.600" mb={4}>
+                        <strong>
+                            {project.PI_role === "Co-PI" ? "Co-PI" : project.PI_role === "Key Researcher" ? "Key Researcher" : "PI"}:
+                        </strong>{" "}
                         {project.PI}
                     </Text>
 
-                    {/* project Metadata */}
-                    <Stack direction="row" spacing={4} mb={4}>
+                    {/* Project Metadata */}
+                    <Stack direction="row" spacing={2} mb={4} justify="center" wrap={"wrap"}> {/* Reduced spacing for better mobile display */}
                         <Badge variant="solid" colorScheme="teal" fontSize="sm">
                             Status: {project.status}
                         </Badge>
@@ -89,4 +80,4 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
     );
 };
 
-export default ProjectCard;
+export default ProjectSwiperCard;

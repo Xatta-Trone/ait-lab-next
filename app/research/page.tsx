@@ -1,12 +1,12 @@
 import React, { Suspense } from 'react';
-import Projects from '@/components/ProjectsPage';
+import Research from '@/components/ResearchPage';
 
-const ProjectsPage = () => {
+const ResearchPage = () => {
     return (
         <Suspense fallback={<div>Loading...</div>}>
-            <Projects />
+            <Research />
         </Suspense>
     );
 };
 
-export default ProjectsPage;
+export default ResearchPage;

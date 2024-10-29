@@ -1,15 +1,9 @@
 [
-  { "name": "Home", "path": "/" },
-  { "name": "Grants", "path": "/grants" },
-  { "name": "Projects", "path": "/projects" },
+  { "name": "Research", "path": "/research" },
   { "name": "Publication", "path": "/publication" },
   { "name": "Courses", "path": "/courses" },
   { "name": "Team", "path": "/teams" },
   { "name": "Opening", "path": "/opening" },
   { "name": "Talk", "path": "/talks" },
-  {
-    "name": "Resume",
-    "path": "https://subasish.github.io/ait_lab/pdfs/Subasish%20Das%20CV%20revised.pdf"
-  },
   { "name": "About Me", "path": "/about" }
 ]

@@ -16,7 +16,7 @@ const Grants: React.FC = () => {
     // Set initial grants data from JSON and sort by status and recency
     useEffect(() => {
         // Set dynamic page title
-        document.title = "Research Grants | AIT Lab";
+        // document.title = "Research Grants | AIT Lab";
 
         let sortedGrants = [...typedGrantsData];
 
@@ -43,7 +43,7 @@ const Grants: React.FC = () => {
     return (
         <Box py={8}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="blue.600">
+                <Heading as="h2" size="xl" mb={6} color="blue.600">
                     Research Grants
                 </Heading>
 

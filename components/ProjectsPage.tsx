@@ -23,7 +23,7 @@ const Projects = () => {
 
     // Set initial data from json 
     useEffect(() => {
-        document.title = "Projects | AIT Lab";
+        // document.title = "Projects | AIT Lab";
 
         let sortedProjects = [...typedProjectsData];
 
@@ -114,7 +114,7 @@ const Projects = () => {
 
         <Box py={8}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="blue.600">
+                <Heading as="h2" size="xl" mb={6} color="blue.600">
                     Projects
                 </Heading>
 
