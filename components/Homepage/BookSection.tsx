@@ -16,7 +16,7 @@ const BookSection = () => {
     return (
         <Box py={20} bg="gray.50">
             <Container maxW="container.xl">
-                <Heading as="h2" size="lg" mb={2} textAlign="center">
+                <Heading as="h2" size="lg" mb={{ base: 10, md: 2 }} textAlign="center" color={"blue.600"}>
                     A New Text Book
                 </Heading>
 
@@ -27,7 +27,7 @@ const BookSection = () => {
                 >
                     {/* Text Section */}
                     <Box flex="1" pr={{ md: 5 }} mb={{ base: 6, md: 0 }}>
-                        <Heading as={"h2"}>Artificial Intelligence in Highway Safety By Dr. Subasish Das</Heading>
+                        <Heading as={"h3"} size={"lg"} mb={5}>Artificial Intelligence in Highway Safety By Dr. Subasish Das</Heading>
                         <Text fontSize="lg" color="gray.700" lineHeight="taller" mb={6}>
                             Artificial Intelligence in Highway Safety provides cutting-edge
                             advances in highway safety using AI. The author is a highway
@@ -42,8 +42,8 @@ const BookSection = () => {
                         >
                             <Button
                                 size="lg"
-                                variant="solid"
-                                colorScheme="blue"
+                                variant="outline"
+                                _hover={{ color: "white", backgroundColor: "blue.600" }}
                                 rightIcon={<ExternalLinkIcon />}
                             >
                                 Order The Book
