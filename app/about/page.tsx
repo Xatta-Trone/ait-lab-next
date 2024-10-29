@@ -59,11 +59,27 @@ const AboutMe = () => {
                             javascript), interactive data visualization, and deep learning
                             tools for CV/AV technologies.
                             <br />
-                            <br />I have published more than 120 technical reports, and
+                            <br />
+                            I have published more than 120 technical reports, and
                             journal articles. I am an active member of ITE, and ASCE. I am an
                             Eno Fellow. I recently served as vice-president of membership of
                             Young Professionals in Transportation Houston chapter.
                         </Text>
+
+                        <Link
+                            href="https://subasish.github.io/ait_lab/pdfs/Subasish%20Das%20CV%20revised.pdf"
+                            isExternal
+                        >
+                            <Button
+                                mt={4}
+                                size="lg"
+                                variant="outline"
+                                _hover={{ bg: "blue.500", color: "white" }}
+                            >
+                                Resume
+                                <ExternalLinkIcon mx={2} />
+                            </Button>
+                        </Link>
                     </Box>
 
                     {/* Image section */}
