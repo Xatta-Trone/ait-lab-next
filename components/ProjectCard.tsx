@@ -45,6 +45,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
                 {/* project Info */}
                 <Box flex="1">
                     <Heading as="h3" size="lg" mb={2}>
+                        {project.number && `${project.number} : `}
                         {project.title}
                     </Heading>
                     <Text fontSize="md" color="gray.700" mb={4}>
