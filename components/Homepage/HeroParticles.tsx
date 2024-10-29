@@ -108,6 +108,7 @@ export const HeroParticles = () => {
                 {/* // Wrapping Particles in a Box with zIndex to control stacking */}
                 <Box
                     position="absolute"
+                    top={0}
                     w="100%"
                     h="100vh"
                     bgImage="url('https://images5.alphacoders.com/134/1346556.png')"

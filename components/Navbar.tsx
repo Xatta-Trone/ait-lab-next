@@ -1,4 +1,6 @@
-import { HamburgerIcon, CloseIcon, useDisclosure } from "@chakra-ui/icons";
+"use client";
+
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import navLinks from "@/data/navLinks.json";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -16,6 +18,7 @@ import {
     DrawerCloseButton,
     DrawerContent,
     DrawerOverlay,
+    useDisclosure,
 } from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
 
@@ -40,7 +43,6 @@ function Navbar() {
 
     return (
         <Box
-            bg="blue.600"
             w="100%"
             position="fixed"
             top={0}
@@ -50,6 +52,8 @@ function Navbar() {
             height={scrolled ? "60px" : "80px"}
             pt={scrolled ? 1 : 2}
             pb={scrolled ? 2 : 3}
+            bg={scrolled ? "blue.600" : "transparent"}
+            boxShadow={scrolled ? "md" : "none"}
         >
             <Container maxW="container.xl">
                 <Flex h="100%" alignItems="center" justifyContent="space-between">
