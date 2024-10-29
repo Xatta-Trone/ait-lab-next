@@ -1,0 +1,32 @@
+[
+  {
+    "title": "New Project Launched",
+    "description": "We are excited to announce the launch of our new project focused on enhancing user experience.",
+    "date": "October 25, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Research Collaboration Announcement",
+    "description": "We are collaborating with several institutions to advance research in AI and machine learning.",
+    "date": "October 22, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Upcoming Workshop on AI",
+    "description": "Join us for a workshop on the latest trends in AI, featuring industry experts.",
+    "date": "October 18, 2024",
+    "link": ""
+  },
+  {
+    "title": "Conference Participation",
+    "description": "Our team will participate in the upcoming conference to share our latest findings.",
+    "date": "October 15, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "New Feature Released",
+    "description": "We have released a new feature that improves performance and usability.",
+    "date": "October 10, 2024",
+    "link": "/news"
+  }
+]
