@@ -7,10 +7,10 @@ const Hero = () => {
     return (
         <Box display={"flex"} justifyContent={"center"} height={"calc(100vh - 80px)"} alignItems={"center"}>
             <Container maxW={"container.xl"}>
-                <Heading color={"white"} textAlign={"center"}>
+                <Heading color={"whiteAlpha.900"} textAlign={"center"} as={"h1"} size={{ base: '2xl', md: "3xl" }}>
                     Artificial Intelligence in Technology Lab
                 </Heading>
-                <List spacing={2} textAlign={"center"} color={"white"} mt={4} fontSize={"xl"}>
+                <List spacing={2} textAlign={"center"} color={"white"} mt={4} fontSize={{ base: "xl", md: "2xl" }}>
                     <ListItem>
                         <ListIcon as={HiMiniArrowRightCircle} color={'white'} />
                         Casual Artificial Intelligence
