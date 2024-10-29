@@ -19,7 +19,7 @@ const ContactSection = () => {
                         w={{ base: "100%", md: "33%" }}
                         spacing={4}
                     >
-                        <Heading size="md">AIT Lab</Heading>
+                        <Heading size="md" as={"h4"}>AIT Lab</Heading>
                         <Text>
                             AIT lab has the experience of handling more than $7 million in research funds. The lab aims to support federal and state agencies in solving transportation problems through AI applications. We have developed several user-friendly web tools, widely used by stakeholders. The lab also believes in open-source contributions, with active GitHub projects.
                         </Text>
@@ -32,11 +32,11 @@ const ContactSection = () => {
                         w={{ base: "100%", md: "auto" }}
                         maxW="full"
                     >
-                        <Heading size="sm" mb={2}>
+                        <Heading size="sm" mb={2} as={"h4"}>
                             Contact
                         </Heading>
-                        <Text>Address: 601 University Drive, San Marcos, TX</Text>
-                        <Text>Email: info@aitlab.com</Text>
+                        <Text>Address: AIT.Lab, RFM 5th Floor, TXST</Text>
+                        <Text>Email: subasish@txstate.edu</Text>
                     </VStack>
 
                     {/* Quick Links Section - auto width */}
@@ -46,15 +46,15 @@ const ContactSection = () => {
                         w={{ base: "100%", md: "auto" }}
                         maxW="full"
                     >
-                        <Heading size="sm" mb={2}>
+                        <Heading size="sm" mb={2} as={"h4"}>
                             Quick Links
                         </Heading>
                         {quickLinks.map((link, index) => (
                             <Link
                                 key={index}
                                 href={link.path}
-                                color="blue.300"
-                                _hover={{ color: "blue.500" }}
+                                color="blue.600"
+                                _hover={{ color: "blue.300", textDecoration: "underline" }}
                             >
                                 {link.name}
                             </Link>
