@@ -9,7 +9,7 @@ const ProjectsSection = () => {
             {/* Projects Section Content */}
             <Box bg="white" py={20}>
                 <Container maxWidth={"container.xl"} textAlign={"center"}>
-                    <Heading color="blue.600" marginBottom={10}>Projects</Heading>
+                    <Heading as={"h2"} color="blue.600" marginBottom={10} size={"lg"}>Projects</Heading>
                     <ProjectsSwiper />
                 </Container>
             </Box>
