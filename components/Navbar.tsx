@@ -41,6 +41,9 @@ function Navbar() {
         };
     }, []);
 
+    // Determine if the navbar should be transparent
+    const isHomepage = pathname === "/";
+
     return (
         <Box
             w="100%"
@@ -52,7 +55,7 @@ function Navbar() {
             height={scrolled ? "60px" : "80px"}
             pt={scrolled ? 1 : 2}
             pb={scrolled ? 2 : 3}
-            bg={scrolled ? "blue.600" : "transparent"}
+            bg={isHomepage && !scrolled ? "transparent" : "blue.600"} // Change background based on the page
             boxShadow={scrolled ? "md" : "none"}
         >
             <Container maxW="container.xl">
