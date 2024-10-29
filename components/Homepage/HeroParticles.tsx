@@ -41,19 +41,19 @@ export const HeroParticles = () => {
             fpsLimit: 1120,
             interactivity: {
                 events: {
-                    onClick: {
-                        enable: true,
-                        mode: "push",
-                    },
+                    // onClick: {
+                    //     enable: true,
+                    //     mode: "push",
+                    // },
                     onHover: {
                         enable: true,
                         mode: "repulse",
                     },
                 },
                 modes: {
-                    push: {
-                        quantity: 4,
-                    },
+                    // push: {
+                    //     quantity: 4,
+                    // },
                     repulse: {
                         distance: 100,
                         duration: 1,
@@ -85,7 +85,7 @@ export const HeroParticles = () => {
                     density: {
                         enable: true,
                     },
-                    value: 80,
+                    value: 90,
                 },
                 opacity: {
                     value: 0.5,

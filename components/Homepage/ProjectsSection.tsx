@@ -6,6 +6,8 @@ import ProjectsSwiper from './ProjectsSwiper';
 const ProjectsSection = () => {
     return (
         <>
+
+
             {/* Projects Section Content */}
             <Box bg="white" py={20}>
                 <Container maxWidth="container.xl" textAlign={"center"}>
