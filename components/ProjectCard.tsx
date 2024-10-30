@@ -29,7 +29,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
             transition="all 0.3s ease-in-out"
             width="100%"
         >
-            <Flex direction="row" alignItems="center">
+            <Flex direction={{ base: "column", md: "row" }} alignItems="center" wrap={"wrap"}>
                 {/* project Image */}
                 <Box flexShrink={0} mr={6}>
                     <Image
@@ -59,14 +59,14 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
                     </Text>
 
                     {/* project Metadata */}
-                    <Stack direction="row" spacing={4} mb={4}>
-                        <Badge variant="solid" colorScheme="teal" fontSize="sm">
+                    <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
+                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
                             Status: {project.status}
                         </Badge>
-                        <Badge variant="solid" colorScheme="purple" fontSize="sm">
+                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
                             {project.start_date.month} {project.start_date.year} - {project.end_date.month} {project.end_date.year}
                         </Badge>
-                        <Badge variant="solid" colorScheme="blue" fontSize="sm">
+                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
                             Sponsor: {project.sponsor}
                         </Badge>
                     </Stack>

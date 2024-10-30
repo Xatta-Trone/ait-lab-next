@@ -1,32 +1,64 @@
 import React from "react";
-import { Box, Heading, Stack, Text, Link, Container, Button } from "@chakra-ui/react";
+import {
+    Box,
+    Heading,
+    Stack,
+    Text,
+    Link,
+    Container,
+    Button,
+    Flex,
+} from "@chakra-ui/react";
 import { HiExternalLink } from "react-icons/hi";
 import newsData from "@/data/news.json"; // Adjust the import path as needed
 
 const RecentNews = () => {
-    // Get the four most recent news items
-    const recentNewsItems = newsData.slice(0, 4); // Assuming the newsData is sorted by date in descending order
+    // Get the four most recent news items and parse dates for sorting
+    const recentNewsItems = newsData
+        .map((item) => ({
+            ...item,
+            date: new Date(item.date),
+        }))
+        .sort((a, b) => b.date.getTime() - a.date.getTime())
+        .slice(0, 4);
 
     return (
         <Box py={20} bg="gray.50">
-            <Container maxW={"container.xl"}>
-                <Heading as="h2" size="lg" textAlign="center" color={"blue.600"} mb={10}>
+            <Container maxW="container.xl">
+                <Heading as="h2" size="lg" textAlign="center" color="blue.600" mb={10}>
                     Recent News
                 </Heading>
                 <Stack spacing={4} mt={10}>
                     {recentNewsItems.map((item, index) => (
-                        <Box key={index} p={4} bg="white" borderRadius="md" shadow="md">
-                            <Text fontWeight="bold" color="blue.600">
+                        <Box
+                            key={index}
+                            p={6}
+                            bg="white"
+                            borderRadius="md"
+                            shadow="md"
+                            _hover={{ shadow: "lg", transform: "translateY(-5px)" }}
+                            transition="all 0.3s ease"
+                        >
+                            {/* Title */}
+                            <Text fontWeight="bold" fontSize="lg" color="blue.600" mb={2}>
                                 {item.title}
                             </Text>
-                            <Text fontSize="md" color="gray.700" mb={1}>
-                                {item.description} {/* Brief description of the news */}
-                            </Text>
-                            <Text fontSize="sm" color="gray.500" mb={2}>
-                                {item.date}
+
+                            {/* Description */}
+                            <Text fontSize="md" color="gray.700" mb={3}>
+                                {item.description}
                             </Text>
 
-                            {/* Conditional rendering of the button */}
+                            {/* Date */}
+                            <Text fontSize="sm" color="gray.500" mb={4}>
+                                {item.date.toLocaleDateString("en-US", {
+                                    year: "numeric",
+                                    month: "long",
+                                    day: "numeric",
+                                })}
+                            </Text>
+
+                            {/* "Read More" button if link exists */}
                             {item.link && (
                                 <Link href={item.link} isExternal>
                                     <Button

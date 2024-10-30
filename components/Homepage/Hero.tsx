@@ -1,5 +1,5 @@
 "use client"
-import { Box, Button, Container, Heading, List, ListIcon, ListItem } from '@chakra-ui/react'
+import { Box, Container, Heading, List, ListIcon, ListItem } from '@chakra-ui/react'
 import React from 'react'
 import { HiMiniArrowRightCircle } from 'react-icons/hi2'
 

@@ -21,7 +21,7 @@ const AboutMe = () => {
     }, []);
 
     return (
-        <Box py={8} minHeight="100vh">
+        <Box py={20} minHeight="100vh">
             <Container maxW="container.xl">
                 {/* Heading */}
                 <Heading
