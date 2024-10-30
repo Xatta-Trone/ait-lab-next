@@ -54,7 +54,7 @@ const Team: React.FC = () => {
     };
 
     return (
-        <Box py={8}>
+        <Box py={20}>
             <Container maxW="container.xl">
                 {/* Current Team Section */}
                 <Grid templateColumns={{ base: "1fr", md: "1fr 2fr" }} gap={10} mb={12}>

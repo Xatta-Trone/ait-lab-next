@@ -22,7 +22,7 @@ const Openings = () => {
     }, []);
 
     return (
-        <Box py={8}>
+        <Box py={20}>
             <Container maxW="container.xl">
                 {/* Heading */}
                 <Heading as="h1" size="2xl" mb={6} color="blue.600">
