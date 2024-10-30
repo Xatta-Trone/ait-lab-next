@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* Hero-Projects Section Divider  */
 .custom-shape-divider-bottom-1730319297 {
   position: absolute;
   bottom: 0;
@@ -22,6 +23,28 @@
 .custom-shape-divider-bottom-1730319297 .shape-fill {
   fill: #ffffff;
 }
+/* Hero-Projects section divider end  */
+
+/* .custom-shape-divider-bottom-173031929 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-173031929 svg {
+  position: relative;
+  display: block;
+  width: calc(152% + 1.3px);
+  height: 155px;
+}
+
+.custom-shape-divider-bottom-173031929 .shape-fill {
+  fill: #ffffff;
+} */
 
 .mySwiper {
   padding-bottom: 3rem; /* Space below slides to prevent pagination overlap */
