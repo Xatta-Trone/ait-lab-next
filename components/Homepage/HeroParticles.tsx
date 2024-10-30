@@ -116,7 +116,7 @@ export const HeroParticles = () => {
                     bgPosition="center"
                     bgRepeat="no-repeat"
                     overflow="hidden"
-                    zIndex={-1}
+                    zIndex={-2}
                 >
                     <Box
                         position="absolute"
@@ -125,14 +125,20 @@ export const HeroParticles = () => {
                         right={0}
                         bottom={0}
                         bgGradient="linear(to-b, rgba(43, 108, 176, 1), rgba(43, 108, 176, 0.7), rgba(43, 108, 176, 1))"
-                        zIndex={-1}
+                        zIndex={-2}
                     />
                     <Particles
                         id="tsparticles"
                         particlesLoaded={particlesLoaded}
                         options={options}
-                        style={{ position: "absolute", top: 0, left: 0, zIndex: -1 }}
+                        style={{ position: "absolute", top: 0, left: 0, zIndex: -2 }}
                     />
+                </Box>
+
+                <Box position="absolute" top={"85vh"} w="100%" zIndex={-1} className="custom-shape-divider-bottom-1730319297">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
+                    </svg>
                 </Box>
 
             </>
