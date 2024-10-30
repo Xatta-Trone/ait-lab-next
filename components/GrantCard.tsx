@@ -29,7 +29,7 @@ const GrantCard = (props: { grant: GrantTypes }) => {
             transition="all 0.3s ease-in-out"
             width="100%"
         >
-            <Flex direction="row" alignItems="center">
+            <Flex direction={{ base: "column", md: "row" }} alignItems="center" wrap={"wrap"}>
                 {/* Grant Image */}
                 <Box flexShrink={0} mr={6}>
                     <Image
@@ -58,7 +58,7 @@ const GrantCard = (props: { grant: GrantTypes }) => {
                     </Text>
 
                     {/* Grant Metadata */}
-                    <Stack direction="row" spacing={4} mb={4}>
+                    <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
                         <Badge variant="solid" colorScheme="teal" fontSize="sm">
                             Status: {grant.status}
                         </Badge>

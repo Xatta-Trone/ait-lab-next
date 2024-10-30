@@ -29,7 +29,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
             transition="all 0.3s ease-in-out"
             width="100%"
         >
-            <Flex direction="row" alignItems="center">
+            <Flex direction={{ base: "column", md: "row" }} alignItems="center" wrap={"wrap"}>
                 {/* project Image */}
                 <Box flexShrink={0} mr={6}>
                     <Image
@@ -59,7 +59,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
                     </Text>
 
                     {/* project Metadata */}
-                    <Stack direction="row" spacing={4} mb={4}>
+                    <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
                         <Badge variant="solid" colorScheme="teal" fontSize="sm">
                             Status: {project.status}
                         </Badge>
