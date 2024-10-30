@@ -65,10 +65,10 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 
                         {/* Schedule and Term Pills */}
                         <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
-                            <Badge variant="solid" colorScheme="green" fontSize="sm">
+                            <Badge variant="outline" colorScheme="blue" fontSize="sm">
                                 Schedule: {course.schedule}
                             </Badge>
-                            <Badge variant="solid" colorScheme="blue" fontSize="sm">
+                            <Badge variant="outline" colorScheme="blue" fontSize="sm">
                                 Term: {course.term}
                             </Badge>
                         </Stack>

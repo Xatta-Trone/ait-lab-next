@@ -60,13 +60,13 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
 
                     {/* project Metadata */}
                     <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
-                        <Badge variant="solid" colorScheme="teal" fontSize="sm">
+                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
                             Status: {project.status}
                         </Badge>
-                        <Badge variant="solid" colorScheme="purple" fontSize="sm">
+                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
                             {project.start_date.month} {project.start_date.year} - {project.end_date.month} {project.end_date.year}
                         </Badge>
-                        <Badge variant="solid" colorScheme="blue" fontSize="sm">
+                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
                             Sponsor: {project.sponsor}
                         </Badge>
                     </Stack>
