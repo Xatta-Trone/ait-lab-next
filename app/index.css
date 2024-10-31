@@ -11,14 +11,15 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: scale(-1, 1);
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1730319297 svg {
   position: relative;
   display: block;
-  width: calc(152% + 1.3px);
-  height: 150px;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1730319297 .shape-fill {

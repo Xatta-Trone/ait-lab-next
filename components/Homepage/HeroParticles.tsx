@@ -358,7 +358,7 @@ export const HeroParticles = () => {
                 "size": {
                     "value": {
                         "min": 1,
-                        "max": 10
+                        "max": 9
                     },
                     "animation": {
                         "count": 0,
@@ -541,7 +541,7 @@ export const HeroParticles = () => {
                     position="absolute"
                     top={0}
                     w="100%"
-                    h="100vh"
+                    h="110vh"
                     bgImage="url('https://images5.alphacoders.com/134/1346556.png')"
                     bgSize="cover"
                     bgPosition="center"
@@ -565,12 +565,10 @@ export const HeroParticles = () => {
                         style={{ position: "absolute", top: 0, left: 0, zIndex: -2 }}
                     />
                 </Box>
-                {/* <Box minW={"100vw"} minH={"100vh"} position={"absolute"} inset={0}> */}
                 <Box position="absolute" bottom={0} w={"100%"} overflowX={"hidden"} zIndex={-1} className="custom-shape-divider-bottom-1730319297">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" className="shape-fill"></path>
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
                     </svg>
-                    {/* </Box> */}
                 </Box>
 
             </>

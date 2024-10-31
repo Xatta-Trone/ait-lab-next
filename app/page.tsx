@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Box position={"relative"} mt={"-80px"} border={"none"}>
+      <Box position={"relative"} mt={"-80px"} border={"none"} height={"calc(100vh + 100px)"}>
         <HeroParticles />
         <Hero />
       </Box>
