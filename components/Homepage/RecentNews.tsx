@@ -23,7 +23,7 @@ const RecentNews = () => {
         .slice(0, 4);
 
     return (
-        <Box py={20} bg="gray.50">
+        <Box py={20} bg="gray.50" position={"relative"}>
             <Container maxW="container.xl">
                 <Heading as="h2" size="lg" textAlign="center" color="blue.600" mb={10}>
                     Recent News
@@ -74,6 +74,14 @@ const RecentNews = () => {
                     ))}
                 </Stack>
             </Container>
+
+
+            <Box position="absolute" bottom={-10} w={"100%"} overflowX={"hidden"} zIndex={1} className="custom-shape-divider-bottom-1730319297">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
+                </svg>
+            </Box>
+
         </Box>
     );
 };
