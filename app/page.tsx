@@ -17,8 +17,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <HeroParticles />
-      <Hero />
+      <Box position={"relative"} mt={"-80px"} border={"none"}>
+        <HeroParticles />
+        <Hero />
+      </Box>
       <Box backgroundColor={"white"} w={"100vw"}>
         <ProjectsSection />
         <RecentNews />
