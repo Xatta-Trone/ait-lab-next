@@ -14,12 +14,12 @@ const ProspectiveStudents = () => {
     ];
 
     return (
-        <Box py={20} position={"relative"}>
+        <Box pb={20} pt={"20"} position={"relative"}>
             <Container maxW="container.xl" display={"flex"} flexDirection={"column"} alignItems={"center"}>
-                <Heading as="h2" size="lg" mb={4} textAlign="center" color={"blue.600"}>
+                <Heading as="h2" size="lg" textAlign="center" color="blue.600" marginBottom={"5"} style={{ fontSize: "var(--chakra-fontSizes-5xl)" }}>
                     Opportunities for Prospective Students
                 </Heading>
-                <Text textAlign="center" mb={6}>
+                <Text textAlign="center" mb={20}>
                     Join our team and contribute to innovative research projects. Below are the positions available:
                 </Text>
 

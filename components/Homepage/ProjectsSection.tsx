@@ -7,9 +7,9 @@ const ProjectsSection = () => {
     return (
         <>
             {/* Projects Section Content */}
-            <Box bg="white" pb={20} pt={10} position={"relative"}>
+            <Box bg="white" pb={20} pt={"14"} position={"relative"}>
                 <Container maxWidth={"container.xl"} textAlign={"center"}>
-                    <Heading as={"h2"} color="blue.600" marginBottom={10} size={"lg"}>Projects</Heading>
+                    <Heading as={"h2"} color="blue.600" marginBottom={"20"} style={{ fontSize: "var(--chakra-fontSizes-5xl)" }}>Projects</Heading>
                     <ProjectsSwiper />
                 </Container>
                 <Box position="absolute" bottom={-10} w={"100%"} overflowX={"hidden"} zIndex={1} className="custom-shape-divider-bottom-1730319297">
