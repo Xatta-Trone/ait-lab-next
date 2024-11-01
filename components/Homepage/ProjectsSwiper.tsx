@@ -45,9 +45,10 @@ const ProjectsSwiper = () => {
             }}
             modules={[Pagination, Autoplay, Navigation]}
             className="mySwiper"
-            autoHeight={false}
+            autoHeight={true}
             navigation={true}
             initialSlide={1}
+            style={{ paddingTop: "10px" }}
         >
             {recentProjects.map((project, index) => (
                 <SwiperSlide key={index} > {/* Aligns slides to stretch */}
@@ -69,8 +70,9 @@ const ProjectsSwiper = () => {
                     maxWidth="100%"
                     display="flex"
                     flexDirection="column"
-                    justifyContent="space-between"
+                    justifyContent="center"
                     height="100%"
+                    minH={"400px"}
                 >
                     <Box textAlign="center">
                         <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2}>

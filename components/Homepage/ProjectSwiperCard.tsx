@@ -1,98 +1,71 @@
-// ProjectSwiperCard.tsx
 import React from "react";
-import { Box, Flex, Image, Heading, Text, Stack, Badge, Link, Button } from "@chakra-ui/react";
+import { Box, Text, Stack, Link, Button, Image, Heading } from "@chakra-ui/react";
 
 const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
     const { project } = props;
 
     return (
         <Box
-            p={{ base: 4, md: 5 }} // Responsive padding
+            p={3}
             shadow="md"
             borderWidth="1px"
-            borderRadius="lg"
+            borderRadius="md"
             bg="white"
-            _hover={{
-                shadow: "xl",
-                transform: "translateY(-10px)",
-            }}
-            transition="all 0.3s ease-in-out"
-            maxWidth="100%"
+            _hover={{ shadow: "lg", transform: "translateY(-10px)" }} // Hover effect for the card
+            transition="all 0.3s ease"
+            height="100%"
             display="flex"
             flexDirection="column"
             justifyContent="space-between"
-            height="100%"
+            textAlign="left"
         >
-            {/* Project Image */}
-            <Box flexShrink={0} mb={4}>
+            {/* Image Container */}
+            <Box overflow="hidden" borderRadius="md" height="200px" position="relative">
                 <Image
-                    src={`/img/projects/${project.image}`}
+                    src={`/img/projects/${project.image}`} // Image path
                     alt={project.title}
                     borderRadius="md"
-                    boxSize={{ base: "180px", md: "250px" }} // Responsive sizing
+                    height="100%"
+                    width="100%"
                     objectFit="contain"
-                    fallbackSrc="/img/projects/default.png"
+                    fallbackSrc="/img/projects/default.png" // Fallback image
+                    transition="transform 0.3s ease"
+                    _hover={{ transform: "scale(1.1)" }} // Zoom effect on hover
                 />
             </Box>
 
-            {/* Project Info */}
-            <Box textAlign="left" width={"100%"} display={"flex"} flexDirection={"column"} flexGrow={1}>
-                <Box>
-                    {/* Clickable Project Title */}
-                    {project.link ? (
-                        <Link href={project.link} isExternal>
-                            <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2} _hover={{ color: "blue.600" }}>
-                                {project.number && `${project.number} : `}
-                                {project.title}
-                            </Heading>
-                        </Link>
-                    ) : (
-                        <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2}>
-                            {project.number && `${project.number} : `}
+            {/* Project Title and Description */}
+            <Stack spacing={1} my={"5"} flex="1">
+                {project.link ? (
+                    <Link href={project.link} isExternal>
+                        <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2} _hover={{ color: "blue.600" }}>
+                            {project.number && `${project.number} : `} {/* Fixed template literal */}
                             {project.title}
                         </Heading>
-                    )}
-                </Box>
-                <Box flexGrow={1}>
-                    <Text fontSize={{ base: "small", md: "sm" }} color="gray.700" mb={4}>
-                        {project.description}
-                    </Text>
+                    </Link>
+                ) : (
+                    <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2}>
+                        {project.number && `${project.number} : `} {/* Fixed template literal */}
+                        {project.title}
+                    </Heading>
+                )}
+                <Text fontSize="md" color="gray.700" noOfLines={2}> {/* Truncate description */}
+                    {project.description}
+                </Text>
+            </Stack>
 
-                    {/* PI and Co-PI Information */}
-                    <Text fontSize={{ base: "sm", md: "md" }} color="gray.600" mb={4}>
-                        <strong>
-                            {project.PI_role === "Co-PI" ? "Co-PI" : project.PI_role === "Key Researcher" ? "Key Researcher" : "PI"}:
-                        </strong>{" "}
-                        {project.PI}
-                    </Text>
-
-                    {/* Project Metadata */}
-                    <Stack direction="row" spacing={2} mb={4} justify="left" wrap={"wrap"}>
-                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
-                            Status: {project.status}
-                        </Badge>
-                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
-                            {project.start_date.month} {project.start_date.year} - {project.end_date.month} {project.end_date.year}
-                        </Badge>
-                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
-                            Sponsor: {project.sponsor}
-                        </Badge>
-                    </Stack>
-
-                    {/* Link to project Details */}
-                    {project.link && (
-                        <Link href={project.link} isExternal>
-                            <Button
-                                variant="solid"
-                                size="md"
-                                _hover={{ bg: "blue.500", color: "white" }}
-                            >
-                                View Details
-                            </Button>
-                        </Link>
-                    )}
-                </Box>
-            </Box>
+            {/* Link to Project Details */}
+            {project.link && (
+                <Link href={project.link} isExternal>
+                    <Button
+                        variant="solid"
+                        size="md"
+                        _hover={{ bg: "blue.500", color: "white" }}
+                    >
+                        View Details
+                    </Button>
+                </Link>
+            )}
         </Box>
     );
 };
