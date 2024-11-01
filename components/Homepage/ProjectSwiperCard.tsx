@@ -6,7 +6,7 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
 
     return (
         <Box
-            p={3}
+            p={5}
             shadow="md"
             borderWidth="1px"
             borderRadius="md"

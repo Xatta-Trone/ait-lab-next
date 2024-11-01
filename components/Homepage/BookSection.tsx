@@ -14,7 +14,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const BookSection = () => {
     return (
-        <Box pb={20} pt={"20"} bg="gray.50" position={"relative"}>
+        <Box pb={40} pt={"20"} bg="gray.50" position={"relative"}>
 
             <Container maxW="container.xl">
                 <Heading as="h2" size="lg" textAlign="center" color="blue.600" marginBottom={"5"} style={{ fontSize: "var(--chakra-fontSizes-5xl)" }}>
