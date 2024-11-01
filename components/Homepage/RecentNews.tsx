@@ -28,7 +28,7 @@ const RecentNews = () => {
                 <Heading as="h2" size="lg" textAlign="center" color="blue.600" marginBottom={"20"} style={{ fontSize: "var(--chakra-fontSizes-5xl)" }}>
                     Recent News
                 </Heading>
-                <Stack spacing={4} mt={10}>
+                <Stack spacing={4} my={10}>
                     {recentNewsItems.map((item, index) => (
                         <Box
                             key={index}
@@ -73,6 +73,21 @@ const RecentNews = () => {
                         </Box>
                     ))}
                 </Stack>
+
+                <Box textAlign={"center"}>
+                    <Link href="/news" target={"_blank"}>
+                        <Button
+                            variant="solid"
+                            width="fit-content"
+                            alignContent="center"
+                            size="lg"
+                            _hover={{ bg: "blue.500", color: "white" }}
+                        >
+                            All News
+                        </Button>
+                    </Link>
+                </Box>
+
             </Container>
 
 

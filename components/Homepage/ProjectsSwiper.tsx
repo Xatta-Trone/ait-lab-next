@@ -45,7 +45,7 @@ const ProjectsSwiper = () => {
             }}
             modules={[Pagination, Autoplay, Navigation]}
             className="mySwiper"
-            autoHeight={true}
+            autoHeight={false}
             navigation={true}
             initialSlide={1}
             style={{ paddingTop: "10px" }}

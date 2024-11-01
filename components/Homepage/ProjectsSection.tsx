@@ -10,7 +10,9 @@ const ProjectsSection = () => {
             <Box bg="white" pb={40} pt={"14"} position={"relative"}>
                 <Container maxWidth={"container.xl"} textAlign={"center"}>
                     <Heading as={"h2"} color="blue.600" marginBottom={"20"} style={{ fontSize: "var(--chakra-fontSizes-5xl)" }}>Projects</Heading>
-                    <ProjectsSwiper />
+                    <Box>
+                        <ProjectsSwiper />
+                    </Box>
                 </Container>
                 <Box position="absolute" bottom={-10} w={"100%"} overflowX={"hidden"} zIndex={1} className="custom-shape-divider-bottom-1730319297">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
