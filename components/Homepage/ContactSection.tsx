@@ -5,7 +5,7 @@ import quickLinks from "@/data/navLinks.json";
 
 const ContactSection = () => {
     return (
-        <Box bg="white" py={20}>
+        <Box bg="white" py={40}>
             <Container maxW="container.xl" mx="auto" px={{ base: 4, md: 8 }}>
                 <Flex
                     direction={{ base: "column", md: "row" }}

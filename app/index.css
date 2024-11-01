@@ -11,17 +11,23 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1730319297 svg {
   position: relative;
   display: block;
-  width: calc(147% + 1.3px);
-  height: 155px;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1730319297 .shape-fill {
   fill: #ffffff;
+}
+
+.custom-shape-divider-bottom-1730319297 .gray-fill {
+  fill: #f7fafc;
 }
 /* Hero-Projects section divider end  */
 

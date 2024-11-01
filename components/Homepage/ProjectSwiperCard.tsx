@@ -1,81 +1,71 @@
 import React from "react";
-import { Box, Flex, Image, Heading, Text, Stack, Badge, Link, Button } from "@chakra-ui/react";
+import { Box, Text, Stack, Link, Button, Image, Heading } from "@chakra-ui/react";
 
 const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
     const { project } = props;
+
     return (
         <Box
-            p={{ base: 4, md: 5 }} // Responsive padding
+            p={5}
             shadow="md"
             borderWidth="1px"
-            borderRadius="lg"
+            borderRadius="md"
             bg="white"
-            _hover={{
-                shadow: "xl",
-                transform: "translateY(-10px)",
-            }}
-            transition="all 0.3s ease-in-out"
-            maxWidth="100%"
-            overflow={"hidden"}
+            _hover={{ shadow: "lg", transform: "translateY(-10px)" }} // Hover effect for the card
+            transition="all 0.3s ease"
+            height="100%"
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-between"
+            textAlign="left"
         >
-            <Flex direction="column" alignItems="center" wrap={"wrap"}>
-                {/* Project Image */}
-                <Box flexShrink={0} mb={4}>
-                    <Image
-                        src={`/img/projects/${project.image}`}
-                        alt={project.title}
-                        borderRadius="md"
-                        boxSize={{ base: "180px", md: "250px" }} // Responsive sizing
-                        objectFit="contain"
-                        fallbackSrc="/img/projects/default.png"
-                    />
-                </Box>
+            {/* Image Container */}
+            <Box overflow="hidden" borderRadius="md" height="200px" position="relative">
+                <Image
+                    src={`/img/projects/${project.image}`} // Image path
+                    alt={project.title}
+                    borderRadius="md"
+                    height="100%"
+                    width="100%"
+                    objectFit="contain"
+                    fallbackSrc="/img/projects/default.png" // Fallback image
+                    transition="transform 0.3s ease"
+                    _hover={{ transform: "scale(1.1)" }} // Zoom effect on hover
+                />
+            </Box>
 
-                {/* Project Info */}
-                <Box textAlign="center" width={"100%"}>
-                    <Heading as="h3" size={{ base: "md", md: "lg" }} mb={2}> {/* Responsive heading size */}
-                        {project.number && `${project.number} : `}
+            {/* Project Title and Description */}
+            <Stack spacing={1} my={"5"} flex="1">
+                {project.link ? (
+                    <Link href={project.link} isExternal>
+                        <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2} _hover={{ color: "blue.600" }}>
+                            {project.number && `${project.number} : `} {/* Fixed template literal */}
+                            {project.title}
+                        </Heading>
+                    </Link>
+                ) : (
+                    <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2}>
+                        {project.number && `${project.number} : `} {/* Fixed template literal */}
                         {project.title}
                     </Heading>
-                    <Text fontSize={{ base: "sm", md: "md" }} color="gray.700" mb={4}>
-                        {project.description}
-                    </Text>
+                )}
+                <Text fontSize="md" color="gray.700" noOfLines={2}> {/* Truncate description */}
+                    {project.description}
+                </Text>
+            </Stack>
 
-                    {/* PI and Co-PI Information */}
-                    <Text fontSize={{ base: "sm", md: "md" }} color="gray.600" mb={4}>
-                        <strong>
-                            {project.PI_role === "Co-PI" ? "Co-PI" : project.PI_role === "Key Researcher" ? "Key Researcher" : "PI"}:
-                        </strong>{" "}
-                        {project.PI}
-                    </Text>
-
-                    {/* Project Metadata */}
-                    <Stack direction="row" spacing={2} mb={4} justify="center" wrap={"wrap"}> {/* Reduced spacing for better mobile display */}
-                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
-                            Status: {project.status}
-                        </Badge>
-                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
-                            {project.start_date.month} {project.start_date.year} - {project.end_date.month} {project.end_date.year}
-                        </Badge>
-                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
-                            Sponsor: {project.sponsor}
-                        </Badge>
-                    </Stack>
-
-                    {/* Link to project Details */}
-                    {project.link && (
-                        <Link href={project.link} isExternal>
-                            <Button
-                                variant="solid"
-                                size="md"
-                                _hover={{ bg: "blue.500", color: "white" }}
-                            >
-                                View Details
-                            </Button>
-                        </Link>
-                    )}
-                </Box>
-            </Flex>
+            {/* Link to Project Details */}
+            {project.link && (
+                <Link href={project.link} isExternal>
+                    <Button
+                        variant="solid"
+                        size="md"
+                        _hover={{ bg: "blue.500", color: "white" }}
+                    >
+                        View Details
+                    </Button>
+                </Link>
+            )}
         </Box>
     );
 };

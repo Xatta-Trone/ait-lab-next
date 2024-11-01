@@ -14,12 +14,12 @@ const ProspectiveStudents = () => {
     ];
 
     return (
-        <Box py={20}>
+        <Box pb={40} pt={"20"} position={"relative"}>
             <Container maxW="container.xl" display={"flex"} flexDirection={"column"} alignItems={"center"}>
-                <Heading as="h2" size="lg" mb={4} textAlign="center" color={"blue.600"}>
+                <Heading as="h2" size="lg" textAlign="center" color="blue.600" marginBottom={"5"} style={{ fontSize: "var(--chakra-fontSizes-5xl)" }}>
                     Opportunities for Prospective Students
                 </Heading>
-                <Text textAlign="center" mb={6}>
+                <Text textAlign="center" mb={20}>
                     Join our team and contribute to innovative research projects. Below are the positions available:
                 </Text>
 
@@ -46,6 +46,14 @@ const ProspectiveStudents = () => {
                     </Button>
                 </Link>
             </Container>
+
+
+            <Box position="absolute" bottom={-10} w={"100%"} overflowX={"hidden"} zIndex={1} className="custom-shape-divider-bottom-1730319297">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="gray-fill"></path>
+                </svg>
+            </Box>
+
         </Box>
     );
 };

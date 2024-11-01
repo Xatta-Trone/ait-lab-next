@@ -1,4 +1,5 @@
 [
+  { "name": "Home", "path": "/" },
   { "name": "Research", "path": "/research" },
   { "name": "Publication", "path": "/publication" },
   { "name": "Courses", "path": "/courses" },
