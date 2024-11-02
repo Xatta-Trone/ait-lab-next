@@ -37,7 +37,7 @@ const BookSection = () => {
 
     return (
         <Box pb={40} pt={"20"} bg="gray.50" position={"relative"} ref={sectionRef}>
-            <Container maxW="container.xl">
+            <Container maxW="container.xl" px={20}>
                 <MotionBox
                     initial={{ opacity: 0, y: 50 }}
                     animate={isInView ? { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } : {}}
@@ -49,7 +49,7 @@ const BookSection = () => {
                     </Heading>
                 </MotionBox>
 
-                <Flex direction={{ base: "column", md: "row" }} alignItems="center" justifyContent="space-between">
+                <Flex direction={{ base: "column", lg: "row" }} alignItems="center" justifyContent="space-between">
                     {/* Text Section */}
                     <MotionBox
                         flex="1"
@@ -58,7 +58,7 @@ const BookSection = () => {
                         initial={{ opacity: 0, x: -50 }}
                         animate={isInView ? { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } } : {}}
                     >
-                        <Heading as="h3" size="lg" mb={5}>
+                        <Heading as="h3" size="lg" mb={5} mt={{ base: 10, lg: 0 }}>
                             Artificial Intelligence in Highway Safety <br /> by Dr. Subasish Das
                         </Heading>
                         <Text fontSize="lg" color="gray.700" lineHeight="taller" mb={6}>

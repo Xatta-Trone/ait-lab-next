@@ -73,7 +73,7 @@ const RecentNews = () => {
 
     return (
         <Box pb={40} pt={"20"} bg="gray.50" position={"relative"} ref={sectionRef}>
-            <Container maxW="container.xl">
+            <Container maxW="container.xl" px={20}>
                 <Heading
                     as="h2"
                     size="lg"

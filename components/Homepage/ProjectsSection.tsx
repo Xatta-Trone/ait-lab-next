@@ -8,7 +8,7 @@ const ProjectsSection = () => {
         <>
             {/* Projects Section Content */}
             <Box bg="white" pb={40} pt={"14"} position={"relative"}>
-                <Container maxWidth={"container.xl"} textAlign={"center"}>
+                <Container maxWidth={"container.xl"} textAlign={"center"} px={20}>
                     <Heading as={"h2"} color="blue.600" marginBottom={"20"} style={{ fontSize: "var(--chakra-fontSizes-5xl)" }}>Projects</Heading>
                     <Box>
                         <ProjectsSwiper />

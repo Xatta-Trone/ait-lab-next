@@ -38,9 +38,9 @@ const ContactSection = () => {
 
     return (
         <Box bg="white" py={40} ref={sectionRef}>
-            <Container maxW="container.xl" mx="auto" px={{ base: 4, md: 8 }}>
+            <Container maxW="container.xl" mx="auto" px={20}>
                 <Flex
-                    direction={{ base: "column", md: "row" }}
+                    direction={{ base: "column", lg: "row" }}
                     justify="space-between"
                     align="flex-start"
                     gap={{ base: 8, md: 4 }}
@@ -48,7 +48,7 @@ const ContactSection = () => {
                     {/* Logo Section */}
                     <VStack
                         align="flex-start"
-                        w={{ base: "100%", md: "33%", lg: "40%" }}
+                        w={{ base: "100%", md: "60%", lg: "33%", xl: "40%" }}
                         spacing={4}
                     >
                         <MotionBox
@@ -77,7 +77,7 @@ const ContactSection = () => {
                             w={{ base: "100%", md: "auto" }}
                             maxW="full"
                         >
-                            <Heading size="sm" mb={6} as={"h4"} color={"blue.600"}>
+                            <Heading size="sm" mb={6} as={"h4"} color={"blue.600"} mt={{ base: 20, lg: 0 }}>
                                 Contact Us
                             </Heading>
                             <Text mb={4}>
@@ -102,7 +102,7 @@ const ContactSection = () => {
                             w={{ base: "100%", md: "auto" }}
                             maxW="full"
                         >
-                            <Heading size="sm" mb={6} as={"h4"}>
+                            <Heading size="sm" mb={6} as={"h4"} mt={{ base: 10, lg: 0 }}>
                                 Quick Links
                             </Heading>
                             {quickLinks.map((link, index) => (
