@@ -99,7 +99,7 @@ const BookSection = () => {
 
             <Box
                 position="absolute"
-                bottom={-10}
+                bottom={0}
                 w={"100%"}
                 overflowX={"hidden"}
                 zIndex={1}
