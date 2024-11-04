@@ -11,28 +11,28 @@ const Research: React.FC = () => {
 
     // Update page title based on active tab
     useEffect(() => {
-        document.title = activeTab === 0 ? "Research Grants | AIT Lab" : "Projects | AIT Lab";
+        document.title = activeTab === 0 ? "Research Projects | AIT Lab" : "Research Grants | AIT Lab";
     }, [activeTab]);
 
     return (
         <Box py={20}>
             <Container maxW="container.xl">
                 <Heading as="h1" size="2xl" mb={6} color="blue.600">
-                    Research
+                    {activeTab === 0 ? "Research Projects" : "Research Grants"}
                 </Heading>
 
                 <Tabs variant="soft-rounded" colorScheme="blue" onChange={(index) => setActiveTab(index)}>
                     <TabList mb={4}>
-                        <Tab>Grants</Tab>
                         <Tab>Projects</Tab>
+                        <Tab>Grants</Tab>
                     </TabList>
 
                     <TabPanels>
                         <TabPanel>
-                            <Grants />
+                            <Projects />
                         </TabPanel>
                         <TabPanel>
-                            <Projects />
+                            <Grants />
                         </TabPanel>
                     </TabPanels>
                 </Tabs>

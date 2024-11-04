@@ -43,9 +43,6 @@ const Grants: React.FC = () => {
     return (
         <Box py={8}>
             <Container maxW="container.xl">
-                <Heading as="h2" size="xl" mb={6} color="blue.600">
-                    Research Grants
-                </Heading>
 
                 {/* Grants */}
                 <Box>

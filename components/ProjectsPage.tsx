@@ -114,9 +114,6 @@ const Projects = () => {
 
         <Box py={8}>
             <Container maxW="container.xl">
-                <Heading as="h2" size="xl" mb={6} color="blue.600">
-                    Projects
-                </Heading>
 
                 <Stack mb={6} direction={{ base: "column", md: "row" }} spacing={4}>
                     <Input
