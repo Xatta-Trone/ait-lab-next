@@ -5,6 +5,7 @@
 html {
   overflow-y: scroll;
   overflow-x: hidden !important;
+  accent-color: #b7791f !important;
 }
 
 /* Hero-Projects Section Divider  */
@@ -30,8 +31,8 @@ html {
   fill: #ffffff;
 }
 
-.custom-shape-divider-bottom-1730319297 .gray-fill {
-  fill: #f7fafc;
+.custom-shape-divider-bottom-1730319297 .yellow-fill {
+  fill: #fffff0;
 }
 /* Hero-Projects section divider end  */
 

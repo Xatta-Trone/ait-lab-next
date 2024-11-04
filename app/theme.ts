@@ -1,8 +1,6 @@
 /** @format */
 
-import { extendTheme, Input } from "@chakra-ui/react";
-import { color } from "framer-motion";
-import { TbBaselineDensityLarge } from "react-icons/tb";
+import { extendTheme } from "@chakra-ui/react";
 
 export default extendTheme({
   fonts: {
@@ -14,27 +12,39 @@ export default extendTheme({
     background: "#1A202C", // Dark background
     text: "#1A202C", // Light text color for dark mode
   },
+  styles: {
+    global: {
+      "::-moz-selection": {
+        backgroundColor: "#b7791f", // Accent color for text selection in Firefox
+        color: "white", // Text color for selected text
+      },
+      "::selection": {
+        backgroundColor: "#b7791f", // Accent color for text selection
+        color: "white", // Text color for selected text
+      },
+    },
+  },
   components: {
     Heading: {
       baseStyle: {
         fontFamily: "heading",
         fontWeight: "bold",
-        color: "gray.600", // Golden color for headings
+        color: "gray.600", // Color for headings
       },
     },
     Text: {
       baseStyle: {
         fontFamily: "body",
-        color: "text", // Light color for body text in dark mode
+        color: "text", // Color for body text
       },
     },
     Link: {
       baseStyle: {
         fontFamily: "body",
-        color: "primary", // Golden color for links
+        color: "primary", // Color for links
         _hover: {
           textDecoration: "none",
-          color: "text", // Change to light color on hover
+          color: "text", // Change to text color on hover
         },
       },
     },
@@ -69,24 +79,10 @@ export default extendTheme({
     Input: {
       baseStyle: {
         field: {
-          borderColor: "primary", // Yellow border color
+          borderColor: "primary", // Border color
           _focus: {
-            borderColor: "primary", // Yellow border on focus
-            boxShadow: "0 0 0 1px #FFD700", // Yellow outline
-          },
-        },
-      },
-      defaultProps: {
-        focusBorderColor: "primary",
-      },
-    },
-    Select: {
-      baseStyle: {
-        field: {
-          borderColor: "primary", // Yellow border color
-          _focus: {
-            borderColor: "primary", // Yellow border on focus
-            boxShadow: "0 0 0 1px #FFD700", // Yellow outline
+            borderColor: "primary", // Border on focus
+            boxShadow: "0 0 0 1px #b7791f", // Outline on focus
           },
         },
       },
@@ -96,7 +92,7 @@ export default extendTheme({
     },
   },
   config: {
-    initialColorMode: "light", // Default to dark mode
+    initialColorMode: "light", // Default to light mode
     useSystemColorMode: false, // Do not use the system color mode
   },
 });
