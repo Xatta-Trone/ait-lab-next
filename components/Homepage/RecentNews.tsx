@@ -80,7 +80,7 @@ const RecentNews = () => {
                     textAlign="center"
                     color="blue.600"
                     marginBottom={"20"}
-                    style={{ fontSize: "var(--chakra-fontSizes-5xl)" }}
+                    fontSize={{ base: "4xl", md: "5xl" }}
                 >
                     Recent News
                 </Heading>

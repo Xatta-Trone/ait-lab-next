@@ -54,7 +54,7 @@ const ProspectiveStudents = () => {
                     textAlign="center"
                     mb={5}
                 >
-                    <Heading as="h2" size="lg" color="blue.600" style={{ fontSize: "var(--chakra-fontSizes-5xl)" }}>
+                    <Heading as="h2" size="lg" color="blue.600" fontSize={{ base: "4xl", md: "5xl" }}>
                         Prospective Students
                     </Heading>
                 </MotionBox>
