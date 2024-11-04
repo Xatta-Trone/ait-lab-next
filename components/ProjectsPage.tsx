@@ -1,69 +1,52 @@
 /** @format */
 "use client";
 
-import React, { useCallback, useEffect, useRef, useState, Suspense, lazy } from "react";
-import { Box, Button, Center, Container, Input, Select, Spinner, Stack, Text } from "@chakra-ui/react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import { Box, Container, Input, Select, Stack, Text, Button, Center, Spinner } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import projectsData from "@/data/projects.json";
-import { useRouter, useSearchParams } from "next/navigation";
+import ProjectCard from "@/components/ProjectCard";
+import { useRouter } from "next/navigation";
 
-// Lazy load the ProjectCard component
-const ProjectCard = lazy(() => import("@/components/ProjectCard"));
-
+// Type the imported projects data
 const typedProjectsData: ProjectTypes[] = projectsData as ProjectTypes[];
 
 const Projects: React.FC = () => {
-    const searchParams = useSearchParams();
     const router = useRouter();
-    const [projects, setProjects] = useState<ProjectTypes[]>([]);
+    const [projects, setProjects] = useState<ProjectTypes[]>(typedProjectsData);
     const [filteredProjects, setFilteredProjects] = useState<ProjectTypes[]>([]);
-    const [searching, setSearching] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
     const [sortByStatus, setSortByStatus] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
+    const [debouncing, setDebouncing] = useState(false); // New state to track if debouncing is active
     const projectsPerPage = 15;
-    const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+    // Create a ref to store the debounce timer
+    const debounceTimer = useRef<NodeJS.Timeout | null>(null);
+
+    const updateURL = useCallback(() => {
+        const queryParams = new URLSearchParams();
+        queryParams.set("page", currentPage.toString());
+        if (searchTerm) queryParams.set("q", searchTerm);
+        if (sortByStatus) queryParams.set("status", sortByStatus);
+
+        const url = `#projects?${queryParams.toString()}`;
+        router.push(url, { scroll: false });
+    }, [currentPage, searchTerm, sortByStatus, router]);
 
     useEffect(() => {
-        let sortedProjects = [...typedProjectsData];
-        sortedProjects.sort((a, b) => {
-            const statusOrder: { [key: string]: number } = { ongoing: 1, completed: 2 };
-            const statusA = statusOrder[a.status.toLowerCase()] || 3;
-            const statusB = statusOrder[b.status.toLowerCase()] || 3;
+        const hash = window.location.hash;
+        if (hash.startsWith("#projects")) {
+            const urlParams = new URLSearchParams(hash.split("?")[1]);
+            const page = parseInt(urlParams.get("page") || "1", 10);
+            const query = urlParams.get("q") || "";
+            const status = urlParams.get("status") || "";
 
-            if (statusA !== statusB) {
-                return statusA - statusB;
-            }
-            return b.start_date.year - a.end_date.year;
-        });
-
-        setProjects(sortedProjects);
-    }, []);
-
-    useEffect(() => {
-        const search = searchParams.get("search") || "";
-        const status = searchParams.get("status") || "";
-        const page = parseInt(searchParams.get("page") || "1", 10);
-
-        setSearchTerm(search);
-        setSortByStatus(status);
-        setCurrentPage(page);
-    }, [searchParams]);
-
-    const handleSearch = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-        const searchQuery = e.target.value;
-        setSearchTerm(searchQuery);
-        setSearching(true);
-
-        if (searchTimeoutRef.current) {
-            clearTimeout(searchTimeoutRef.current);
+            setCurrentPage(page);
+            setSearchTerm(query);
+            setSortByStatus(status);
         }
-
-        searchTimeoutRef.current = setTimeout(() => {
-            updateURL(searchQuery, sortByStatus, 1);
-            setSearching(false);
-        }, 500);
-    }, [sortByStatus]);
+    }, []);
 
     useEffect(() => {
         let tempProjects = [...projects];
@@ -77,47 +60,53 @@ const Projects: React.FC = () => {
         }
 
         if (sortByStatus) {
-            tempProjects = tempProjects.filter((item) => item.status === sortByStatus);
+            tempProjects = tempProjects.filter((project) => project.status === sortByStatus);
         }
 
         setFilteredProjects(tempProjects);
-    }, [projects, searchTerm, sortByStatus]);
+        updateURL();
+    }, [projects, searchTerm, sortByStatus, currentPage, updateURL]);
+
+    const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const query = e.target.value;
+        setDebouncing(true); // Start debouncing
+
+        // Clear the previous debounce timer
+        if (debounceTimer.current) {
+            clearTimeout(debounceTimer.current);
+        }
+
+        // Set a new debounce timer
+        debounceTimer.current = setTimeout(() => {
+            setSearchTerm(query);
+            setDebouncing(false); // End debouncing
+        }, 500); // Delay of 500ms
+    };
+
+    const handleSortByStatus = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        setSortByStatus(e.target.value);
+        setCurrentPage(1);
+    };
+
+    const handlePageChange = (page: number) => {
+        setCurrentPage(page);
+    };
 
     const indexOfLastProject = currentPage * projectsPerPage;
     const indexOfFirstProject = indexOfLastProject - projectsPerPage;
     const currentProjects = filteredProjects.slice(indexOfFirstProject, indexOfLastProject);
     const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
 
-    const updateURL = useCallback((search: string, status: string, page: number) => {
-        const searchParams = new URLSearchParams();
-        if (search) searchParams.set("search", search);
-        if (status) searchParams.set("status", status);
-        if (page) searchParams.set("page", page.toString());
-
-        router.push(`?${searchParams.toString()}`);
-    }, [router]);
-
-    const handleSortByStatus = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setSortByStatus(e.target.value);
-        updateURL(searchTerm, e.target.value, 1);
-    };
-
-    const handlePageChange = (page: number) => {
-        setCurrentPage(page);
-        updateURL(searchTerm, sortByStatus, page);
-    };
-
     return (
         <Box py={8}>
             <Container maxW="container.xl">
                 <Stack mb={6} direction={{ base: "column", md: "row" }} spacing={4}>
                     <Input
-                        placeholder="Search by title, project number, sponsor"
-                        value={searchTerm}
+                        placeholder="Search by title or sponsor"
+                        defaultValue={searchTerm}
                         onChange={handleSearch}
                         bg="white"
                         borderColor="gray.300"
-                        color="gray.700"
                     />
                     <Select
                         placeholder="Sort by Status"
@@ -125,87 +114,47 @@ const Projects: React.FC = () => {
                         onChange={handleSortByStatus}
                         bg="white"
                         borderColor="gray.300"
-                        color="gray.700"
                     >
-                        <option value="ongoing" style={{ color: "black" }}>
-                            Ongoing
-                        </option>
-                        <option value="completed" style={{ color: "black" }}>
-                            Completed
-                        </option>
+                        <option value="ongoing">Ongoing</option>
+                        <option value="completed">Completed</option>
                     </Select>
                 </Stack>
 
-                {searching && (
-                    <Box textAlign="center" py={6}>
+                {debouncing ? (
+                    <Center py={10}>
                         <Spinner size="xl" color="blue.500" />
-                    </Box>
+                    </Center>
+                ) : currentProjects.length > 0 ? (
+                    <Stack spacing={6}>
+                        {currentProjects.map((project, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
+                            >
+                                <ProjectCard project={project} />
+                            </motion.div>
+                        ))}
+                    </Stack>
+                ) : (
+                    <Text>No projects found</Text>
                 )}
 
-                {!searching && filteredProjects.length > 0 && (
-                    <Box>
-                        {currentProjects.length > 0 ? (
-                            <Stack spacing={6}>
-                                {currentProjects.map((project, index) => (
-                                    <motion.div
-                                        key={index}
-                                        initial="hidden"
-                                        animate="visible"
-                                        variants={{
-                                            hidden: { opacity: 0, y: 50 },
-                                            visible: {
-                                                opacity: 1,
-                                                y: 0,
-                                                transition: { duration: 0.5 },
-                                            },
-                                        }}
-                                    >
-                                        <Suspense fallback={<Text>Loading...</Text>}>
-                                            <ProjectCard project={project} />
-                                        </Suspense>
-                                    </motion.div>
-                                ))}
-                            </Stack>
-                        ) : (
-                            <Box textAlign="center" py={6}>
-                                <Text color="gray.700">No projects found for this search.</Text>
-                            </Box>
-                        )}
-
-                        <Stack mt={8} direction="row" spacing={4} justify="center">
-                            {currentPage > 1 && (
-                                <Button
-                                    onClick={() => handlePageChange(currentPage - 1)}
-                                    colorScheme="blue"
-                                >
-                                    Previous
-                                </Button>
-                            )}
-                            <Center>
-                                Page {currentPage} of {totalPages}
-                            </Center>
-                            {currentPage < totalPages && (
-                                <Button
-                                    onClick={() => handlePageChange(currentPage + 1)}
-                                    colorScheme="blue"
-                                >
-                                    Next
-                                </Button>
-                            )}
-                        </Stack>
-                    </Box>
-                )}
-
-                {/* No Projects Found */}
-                {!searching && filteredProjects.length === 0 && (
-                    <Text textAlign="center" py={6}>
-                        No results found.
-                    </Text>
-                )}
+                <Stack direction="row" justify="center" mt={8}>
+                    {currentPage > 1 && (
+                        <Button onClick={() => handlePageChange(currentPage - 1)}>Previous</Button>
+                    )}
+                    <Center>
+                        Page {currentPage} of {totalPages}
+                    </Center>
+                    {currentPage < totalPages && (
+                        <Button onClick={() => handlePageChange(currentPage + 1)}>Next</Button>
+                    )}
+                </Stack>
             </Container>
         </Box>
     );
 };
 
 export default Projects;
-

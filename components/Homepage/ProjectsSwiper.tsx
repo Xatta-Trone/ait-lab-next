@@ -81,7 +81,7 @@ const ProjectsSwiper = () => {
                         <Text fontSize={{ base: "small", md: "sm" }} color="gray.700" mb={4}>
                             Explore our complete list of projects and find detailed information.
                         </Text>
-                        <Link href="/research" isExternal>
+                        <Link href="/projects-and-grants#projects" isExternal>
                             <Button
                                 variant="solid"
                                 size="md"

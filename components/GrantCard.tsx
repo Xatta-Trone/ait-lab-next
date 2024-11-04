@@ -59,13 +59,13 @@ const GrantCard = (props: { grant: GrantTypes }) => {
 
                     {/* Grant Metadata */}
                     <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
-                        <Badge variant="outline" fontSize="sm" colorScheme="blue">
+                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"}>
                             Status: {grant.status}
                         </Badge>
-                        <Badge variant="outline" fontSize="sm" colorScheme="blue">
+                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"}>
                             Budget: {grant.budget}
                         </Badge>
-                        <Badge variant="outline" colorScheme="blue" fontSize="sm">
+                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"}>
                             Duration: {grant.start_year} - {grant.end_year}
                         </Badge>
                     </Stack>
