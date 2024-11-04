@@ -125,7 +125,7 @@ const Grants: React.FC = () => {
 
                 {debouncing ? (
                     <Center py={10}>
-                        <Spinner size="xl" color="blue.500" />
+                        <Spinner size="xl" color="yellow.500" />
                     </Center>
                 ) : currentGrants.length > 0 ? (
                     <Stack spacing={6}>

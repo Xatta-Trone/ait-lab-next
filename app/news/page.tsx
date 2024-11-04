@@ -34,7 +34,7 @@ const News = () => {
     return (
         <Box py={20}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="blue.600">
+                <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                     News & Updates
                 </Heading>
 
@@ -70,7 +70,7 @@ const News = () => {
                             </Flex>
 
                             {/* Title and description with optional link */}
-                            <Text color="blue.600" fontSize="lg" fontWeight="bold">
+                            <Text color="yellow.600" fontSize="lg" fontWeight="bold">
                                 {news.link ? (
                                     <LinkOverlay href={news.link} isExternal>
                                         {news.title} <ExternalLinkIcon mx="2px" />

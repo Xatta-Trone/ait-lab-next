@@ -74,7 +74,7 @@ const AboutMe = () => {
                                 mt={4}
                                 size="lg"
                                 variant="outline"
-                                _hover={{ bg: "blue.500", color: "white" }}
+                                _hover={{ bg: "yellow.500", color: "white" }}
                             >
                                 Resume
                                 <ExternalLinkIcon mx={2} />
@@ -120,9 +120,9 @@ const AboutMe = () => {
                         isExternal
                         target="_blank"
                         rel="noreferrer"
-                        color="blue.600"
+                        color="yellow.600"
                         textDecoration="underline"
-                        _hover={{ color: "blue.800", textDecoration: "underline" }}
+                        _hover={{ color: "yellow.800", textDecoration: "underline" }}
                     >
                         September 2020
                         <ExternalLinkIcon mx="2px" />
@@ -234,7 +234,7 @@ const AboutMe = () => {
                                 mt={4}
                                 size="lg"
                                 variant="outline"
-                                _hover={{ bg: "blue.500", color: "white" }}
+                                _hover={{ bg: "yellow.500", color: "white" }}
                             >
                                 Order The Book
                                 <ExternalLinkIcon mx={2} />

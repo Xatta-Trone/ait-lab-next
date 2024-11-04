@@ -555,7 +555,7 @@ export const HeroParticles = () => {
                         left={0}
                         right={0}
                         bottom={0}
-                        bgGradient="linear(to-b, rgba(43, 108, 176, 1), rgba(43, 108, 176, 0.7), rgba(43, 108, 176, 1))"
+                        bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))"
                         zIndex={-2}
                     />
                     <Particles

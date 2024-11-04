@@ -76,7 +76,7 @@ const GrantCard = (props: { grant: GrantTypes }) => {
                             <Button
                                 variant="solid"
                                 size="md"
-                                _hover={{ bg: "blue.500", color: "white" }}
+                                _hover={{ bg: "yellow.500", color: "white" }}
                             >
                                 View Details
                             </Button>

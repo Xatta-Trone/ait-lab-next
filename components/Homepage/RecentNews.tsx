@@ -78,7 +78,7 @@ const RecentNews = () => {
                     as="h2"
                     size="lg"
                     textAlign="center"
-                    color="blue.600"
+                    color="yellow.600"
                     marginBottom={"20"}
                     fontSize={{ base: "4xl", md: "5xl" }}
                 >
@@ -100,7 +100,7 @@ const RecentNews = () => {
                             transition="all 0.3s ease"
                         >
                             {/* Title */}
-                            <Text fontWeight="bold" fontSize="lg" color="blue.600" mb={2}>
+                            <Text fontWeight="bold" fontSize="lg" color="yellow.600" mb={2}>
                                 {item.title}
                             </Text>
 
@@ -124,7 +124,7 @@ const RecentNews = () => {
                                     <Button
                                         rightIcon={<HiExternalLink />}
                                         variant="outline"
-                                        _hover={{ color: "white", backgroundColor: "blue.600" }}
+                                        _hover={{ color: "white", backgroundColor: "yellow.600" }}
                                     >
                                         Read More
                                     </Button>
@@ -141,7 +141,7 @@ const RecentNews = () => {
                             width="fit-content"
                             alignContent="center"
                             size="lg"
-                            _hover={{ bg: "blue.500", color: "white" }}
+                            _hover={{ bg: "yellow.500", color: "white" }}
                         >
                             All News
                         </Button>

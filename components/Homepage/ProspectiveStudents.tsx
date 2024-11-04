@@ -54,7 +54,7 @@ const ProspectiveStudents = () => {
                     textAlign="center"
                     mb={5}
                 >
-                    <Heading as="h2" size="lg" color="blue.600" fontSize={{ base: "4xl", md: "5xl" }}>
+                    <Heading as="h2" size="lg" color="yellow.600" fontSize={{ base: "4xl", md: "5xl" }}>
                         Prospective Students
                     </Heading>
                 </MotionBox>
@@ -99,7 +99,7 @@ const ProspectiveStudents = () => {
                             alignContent="center"
                             mt={4}
                             size="lg"
-                            _hover={{ bg: "blue.500", color: "white" }}
+                            _hover={{ bg: "yellow.500", color: "white" }}
                         >
                             Learn More
                         </Button>

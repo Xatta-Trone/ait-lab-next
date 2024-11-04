@@ -77,7 +77,7 @@ const ContactSection = () => {
                             w={{ base: "100%", md: "auto" }}
                             maxW="full"
                         >
-                            <Heading size="sm" mb={6} as={"h4"} color={"blue.600"} mt={{ base: 20, lg: 0 }}>
+                            <Heading size="sm" mb={6} as={"h4"} color={"yellow.600"} mt={{ base: 20, lg: 0 }}>
                                 Contact Us
                             </Heading>
                             <Text mb={4}>
@@ -108,7 +108,7 @@ const ContactSection = () => {
                             {quickLinks.map((link, index) => (
                                 <Link key={index} href={link.path}>
                                     <Text
-                                        color="blue.600"
+                                        color="yellow.600"
                                         position="relative"
                                         paddingBottom="3px"
                                         _before={{
@@ -118,7 +118,7 @@ const ContactSection = () => {
                                             height: "2px",
                                             bottom: "-2px",
                                             left: "0",
-                                            backgroundColor: "blue.600",
+                                            backgroundColor: "yellow.600",
                                             transition: "width 0.3s ease-in-out",
                                         }}
                                         _hover={{

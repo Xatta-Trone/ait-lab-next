@@ -44,7 +44,7 @@ const BookSection = () => {
                     textAlign="center"
                     mb={5}
                 >
-                    <Heading as="h2" size="lg" color="blue.600" fontSize={{ base: "4xl", md: "5xl" }}>
+                    <Heading as="h2" size="lg" color="yellow.600" fontSize={{ base: "4xl", md: "5xl" }}>
                         A New Text Book
                     </Heading>
                 </MotionBox>
@@ -72,7 +72,7 @@ const BookSection = () => {
                             <Button
                                 size="lg"
                                 variant="solid"
-                                _hover={{ bg: "blue.500", color: "white" }}
+                                _hover={{ bg: "yellow.500", color: "white" }}
                                 rightIcon={<FaShoppingCart />}
                             >
                                 Order The Book

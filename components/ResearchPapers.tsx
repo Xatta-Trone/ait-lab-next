@@ -149,7 +149,7 @@ const ResearchPapers: React.FC = () => {
     return (
         <Box py={20}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="blue.600">
+                <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                     Research Papers
                 </Heading>
 
@@ -185,7 +185,7 @@ const ResearchPapers: React.FC = () => {
 
                 {(searching || isPageChanging) && (
                     <Box textAlign="center" py={6}>
-                        <Spinner size="xl" color="blue.500" />
+                        <Spinner size="xl" color="yellow.500" />
                     </Box>
                 )}
 
@@ -220,7 +220,7 @@ const ResearchPapers: React.FC = () => {
                                 {currentPage > 1 && (
                                     <Button
                                         onClick={() => handlePageChange(currentPage - 1)}
-                                        colorScheme="blue"
+                                        colorScheme="yellow"
                                     >
                                         Previous
                                     </Button>
@@ -231,7 +231,7 @@ const ResearchPapers: React.FC = () => {
                                 {currentPage < totalPages && (
                                     <Button
                                         onClick={() => handlePageChange(currentPage + 1)}
-                                        colorScheme="blue"
+                                        colorScheme="yellow"
                                     >
                                         Next
                                     </Button>

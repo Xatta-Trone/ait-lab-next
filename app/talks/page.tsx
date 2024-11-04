@@ -28,7 +28,7 @@ const Talk = () => {
     return (
         <Box py={20}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="blue.600">
+                <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                     Talks & Media
                 </Heading>
 
@@ -51,7 +51,7 @@ const Talk = () => {
                                 {/* Badge for the group */}
                                 <Badge
                                     variant="solid"
-                                    colorScheme={talk.group === "media" ? "blue" : "gray"}
+                                    colorScheme={talk.group === "media" ? "yellow" : "gray"}
                                     fontSize="md"
                                 >
                                     {talk.group}

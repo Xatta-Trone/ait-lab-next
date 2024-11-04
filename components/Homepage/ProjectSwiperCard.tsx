@@ -38,7 +38,7 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
             <Stack spacing={1} my={"5"} flex="1">
                 {project.link ? (
                     <Link href={project.link} isExternal>
-                        <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2} _hover={{ color: "blue.600" }}>
+                        <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2} _hover={{ color: "yellow.600" }}>
                             {project.number && `${project.number} : `} {/* Fixed template literal */}
                             {project.title}
                         </Heading>
@@ -60,7 +60,7 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
                     <Button
                         variant="solid"
                         size="md"
-                        _hover={{ bg: "blue.500", color: "white" }}
+                        _hover={{ bg: "yellow.500", color: "white" }}
                     >
                         View Details
                     </Button>

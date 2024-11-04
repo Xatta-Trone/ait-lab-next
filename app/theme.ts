@@ -1,6 +1,8 @@
 /** @format */
 
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, Input } from "@chakra-ui/react";
+import { color } from "framer-motion";
+import { TbBaselineDensityLarge } from "react-icons/tb";
 
 export default extendTheme({
   fonts: {
@@ -8,7 +10,7 @@ export default extendTheme({
     body: "'Roboto', sans-serif", // Font for body text
   },
   colors: {
-    primary: "#2B6CB0", // Golden color for primary elements
+    primary: "#b7791f", // Golden color for primary elements
     background: "#1A202C", // Dark background
     text: "#1A202C", // Light text color for dark mode
   },
@@ -62,6 +64,34 @@ export default extendTheme({
       defaultProps: {
         size: "md",
         variant: "outline",
+      },
+    },
+    Input: {
+      baseStyle: {
+        field: {
+          borderColor: "primary", // Yellow border color
+          _focus: {
+            borderColor: "primary", // Yellow border on focus
+            boxShadow: "0 0 0 1px #FFD700", // Yellow outline
+          },
+        },
+      },
+      defaultProps: {
+        focusBorderColor: "primary",
+      },
+    },
+    Select: {
+      baseStyle: {
+        field: {
+          borderColor: "primary", // Yellow border color
+          _focus: {
+            borderColor: "primary", // Yellow border on focus
+            boxShadow: "0 0 0 1px #FFD700", // Yellow outline
+          },
+        },
+      },
+      defaultProps: {
+        focusBorderColor: "primary",
       },
     },
   },

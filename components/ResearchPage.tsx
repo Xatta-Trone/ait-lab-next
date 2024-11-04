@@ -35,11 +35,11 @@ const Research: React.FC = () => {
     return (
         <Box py={20}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="blue.600">
+                <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                     {activeTab === 0 ? "Research Projects" : "Research Grants"}
                 </Heading>
 
-                <Tabs index={activeTab} onChange={handleTabChange}>
+                <Tabs index={activeTab} onChange={handleTabChange} colorScheme="yellow">
                     <TabList mb={4}>
                         <Tab>Projects</Tab>
                         <Tab>Grants</Tab>
@@ -48,14 +48,14 @@ const Research: React.FC = () => {
                     <TabPanels>
                         <TabPanel>
                             {activeTab === 0 && (
-                                <Suspense fallback={<Spinner size="xl" color="blue.500" />}>
+                                <Suspense fallback={<Spinner size="xl" color="yellow.500" />}>
                                     <Projects />
                                 </Suspense>
                             )}
                         </TabPanel>
                         <TabPanel>
                             {activeTab === 1 && (
-                                <Suspense fallback={<Spinner size="xl" color="blue.500" />}>
+                                <Suspense fallback={<Spinner size="xl" color="yellow.500" />}>
                                     <Grants />
                                 </Suspense>
                             )}
