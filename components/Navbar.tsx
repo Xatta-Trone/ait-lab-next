@@ -58,7 +58,7 @@ function Navbar() {
             bg={isHomepage && !scrolled ? "transparent" : "blue.600"} // Change background based on the page
             boxShadow={scrolled ? "md" : "none"}
         >
-            <Container maxW="container.xl" px={20}>
+            <Container maxW="container.xl" px={{ base: "10", md: 0 }}>
                 <Flex h="100%" alignItems="center" justifyContent="space-between">
                     <Link href="/">
                         <Image

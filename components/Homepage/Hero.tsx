@@ -6,7 +6,7 @@ import { HiMiniArrowRightCircle } from 'react-icons/hi2'
 const Hero = () => {
     return (
         <Box display={"flex"} justifyContent={"center"} height={"calc(100vh - 80px)"} alignItems={"center"}>
-            <Container maxW={"container.xl"} px={20}>
+            <Container maxW={"container.xl"} px={{ base: "10", md: 0 }}>
                 <Heading color={"whiteAlpha.900"} textAlign={"left"} as={"h1"} size={{ base: '2xl', md: "3xl" }} pb={"20px"} lineHeight={1.2}>
                     Artificial Intelligence in <br /> Transportation Lab
                 </Heading>

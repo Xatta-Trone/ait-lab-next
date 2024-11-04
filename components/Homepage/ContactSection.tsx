@@ -38,7 +38,7 @@ const ContactSection = () => {
 
     return (
         <Box bg="white" py={40} ref={sectionRef}>
-            <Container maxW="container.xl" mx="auto" px={20}>
+            <Container maxW="container.xl" mx="auto" px={{ base: "10", md: 0 }}>
                 <Flex
                     direction={{ base: "column", lg: "row" }}
                     justify="space-between"

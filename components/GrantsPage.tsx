@@ -102,7 +102,7 @@ const Grants: React.FC = () => {
 
     return (
         <Box py={8}>
-            <Container maxW="container.xl">
+            <Container maxW="container.xl" >
                 <Stack mb={6} direction={{ base: "column", md: "row" }} spacing={4}>
                     <Input
                         placeholder="Search by title"
