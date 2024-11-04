@@ -1,15 +1,18 @@
+/** @format */
 "use client";
 
-import ProjectCard from '@/components/ProjectCard';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import projectsData from "@/data/projects.json";
-import { Box, Button, Center, Container, Heading, Input, Select, Spinner, Stack, Text } from '@chakra-ui/react';
+import React, { useCallback, useEffect, useRef, useState, Suspense, lazy } from "react";
+import { Box, Button, Center, Container, Input, Select, Spinner, Stack, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { useRouter, useSearchParams } from 'next/navigation';
+import projectsData from "@/data/projects.json";
+import { useRouter, useSearchParams } from "next/navigation";
+
+// Lazy load the ProjectCard component
+const ProjectCard = lazy(() => import("@/components/ProjectCard"));
 
 const typedProjectsData: ProjectTypes[] = projectsData as ProjectTypes[];
 
-const Projects = () => {
+const Projects: React.FC = () => {
     const searchParams = useSearchParams();
     const router = useRouter();
     const [projects, setProjects] = useState<ProjectTypes[]>([]);
@@ -21,13 +24,8 @@ const Projects = () => {
     const projectsPerPage = 15;
     const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-    // Set initial data from json 
     useEffect(() => {
-        // document.title = "Projects | AIT Lab";
-
         let sortedProjects = [...typedProjectsData];
-
-        // Sort projects by status ("ongoing" first, then "completed") and by "end_year" (recent first)
         sortedProjects.sort((a, b) => {
             const statusOrder: { [key: string]: number } = { ongoing: 1, completed: 2 };
             const statusA = statusOrder[a.status.toLowerCase()] || 3;
@@ -74,8 +72,7 @@ const Projects = () => {
             tempProjects = tempProjects.filter(
                 (project) =>
                     project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                    project.sponsor.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                    project.number.toLowerCase().includes(searchTerm.toLowerCase())
+                    project.sponsor.toLowerCase().includes(searchTerm.toLowerCase())
             );
         }
 
@@ -111,13 +108,8 @@ const Projects = () => {
     };
 
     return (
-
         <Box py={8}>
             <Container maxW="container.xl">
-                <Heading as="h2" size="xl" mb={6} color="blue.600">
-                    Projects
-                </Heading>
-
                 <Stack mb={6} direction={{ base: "column", md: "row" }} spacing={4}>
                     <Input
                         placeholder="Search by title, project number, sponsor"
@@ -150,7 +142,6 @@ const Projects = () => {
                     </Box>
                 )}
 
-                {/* Projects */}
                 {!searching && filteredProjects.length > 0 && (
                     <Box>
                         {currentProjects.length > 0 ? (
@@ -169,7 +160,9 @@ const Projects = () => {
                                             },
                                         }}
                                     >
-                                        <ProjectCard project={project} />
+                                        <Suspense fallback={<Text>Loading...</Text>}>
+                                            <ProjectCard project={project} />
+                                        </Suspense>
                                     </motion.div>
                                 ))}
                             </Stack>
@@ -215,3 +208,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

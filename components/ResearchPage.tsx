@@ -1,38 +1,44 @@
 /** @format */
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { Box, Container, Heading, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
-import Grants from "@/components/GrantsPage";
-import Projects from "@/components/ProjectsPage";
+import React, { useEffect, useState, Suspense, lazy } from "react";
+import { Box, Container, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, Spinner } from "@chakra-ui/react";
+
+// Lazy load the Grants and Projects components
+const Grants = lazy(() => import("@/components/GrantsPage"));
+const Projects = lazy(() => import("@/components/ProjectsPage"));
 
 const Research: React.FC = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     // Update page title based on active tab
     useEffect(() => {
-        document.title = activeTab === 0 ? "Research Grants | AIT Lab" : "Projects | AIT Lab";
+        document.title = activeTab === 0 ? "Research Projects | AIT Lab" : "Research Grants | AIT Lab";
     }, [activeTab]);
 
     return (
         <Box py={20}>
             <Container maxW="container.xl">
                 <Heading as="h1" size="2xl" mb={6} color="blue.600">
-                    Research
+                    {activeTab === 0 ? "Research Projects" : "Research Grants"}
                 </Heading>
 
-                <Tabs variant="soft-rounded" colorScheme="blue" onChange={(index) => setActiveTab(index)}>
+                <Tabs variant="line" colorScheme="blue" onChange={(index) => setActiveTab(index)}>
                     <TabList mb={4}>
-                        <Tab>Grants</Tab>
                         <Tab>Projects</Tab>
+                        <Tab>Grants</Tab>
                     </TabList>
 
                     <TabPanels>
                         <TabPanel>
-                            <Grants />
+                            <Suspense fallback={<Spinner size="xl" color="blue.500" />}>
+                                <Projects />
+                            </Suspense>
                         </TabPanel>
                         <TabPanel>
-                            <Projects />
+                            <Suspense fallback={<Spinner size="xl" color="blue.500" />}>
+                                <Grants />
+                            </Suspense>
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
