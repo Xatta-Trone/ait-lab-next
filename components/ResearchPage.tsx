@@ -1,10 +1,12 @@
 /** @format */
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { Box, Container, Heading, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
-import Grants from "@/components/GrantsPage";
-import Projects from "@/components/ProjectsPage";
+import React, { useEffect, useState, Suspense, lazy } from "react";
+import { Box, Container, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, Spinner } from "@chakra-ui/react";
+
+// Lazy load the Grants and Projects components
+const Grants = lazy(() => import("@/components/GrantsPage"));
+const Projects = lazy(() => import("@/components/ProjectsPage"));
 
 const Research: React.FC = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -29,10 +31,14 @@ const Research: React.FC = () => {
 
                     <TabPanels>
                         <TabPanel>
-                            <Projects />
+                            <Suspense fallback={<Spinner size="xl" color="blue.500" />}>
+                                <Projects />
+                            </Suspense>
                         </TabPanel>
                         <TabPanel>
-                            <Grants />
+                            <Suspense fallback={<Spinner size="xl" color="blue.500" />}>
+                                <Grants />
+                            </Suspense>
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
