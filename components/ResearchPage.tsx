@@ -21,7 +21,7 @@ const Research: React.FC = () => {
                     {activeTab === 0 ? "Research Projects" : "Research Grants"}
                 </Heading>
 
-                <Tabs variant="soft-rounded" colorScheme="blue" onChange={(index) => setActiveTab(index)}>
+                <Tabs variant="line" colorScheme="blue" onChange={(index) => setActiveTab(index)}>
                     <TabList mb={4}>
                         <Tab>Projects</Tab>
                         <Tab>Grants</Tab>
