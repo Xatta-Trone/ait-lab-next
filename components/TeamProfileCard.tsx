@@ -76,7 +76,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                 />
                 <Stack flex="1" marginLeft={{ md: 6 }} marginTop={{ base: 4, md: 0 }}>
                     {/* Name as a Heading */}
-                    <Heading as="h3" size="lg" color="yellow.800" mb={-2}>
+                    <Heading as="h3" size="lg" color="gray.600" mb={-2}>
                         {member.name}
                     </Heading>
                     {/* Label as a smaller Heading */}
