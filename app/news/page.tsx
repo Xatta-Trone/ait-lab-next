@@ -17,20 +17,25 @@ import {
     Flex,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { useRouter, useSearchParams } from "next/navigation";
 import newsData from "@/data/news.json";
 
 interface NewsItem {
-    date: string; // Keep date as a string for simpler handling
+    date: string;
     title: string;
     description: string;
     link: string;
 }
 
 const News: React.FC = () => {
-    const [searchTerm, setSearchTerm] = useState<string>("");
+    const router = useRouter();
+    const searchParams = useSearchParams();
+    const [searchTerm, setSearchTerm] = useState<string>(searchParams.get("q") || "");
     const [filteredNews, setFilteredNews] = useState<NewsItem[]>([]);
     const [debouncing, setDebouncing] = useState<boolean>(false);
-    const [currentPage, setCurrentPage] = useState<number>(1);
+    const [currentPage, setCurrentPage] = useState<number>(
+        parseInt(searchParams.get("page") || "1", 10)
+    );
     const newsPerPage = 10;
     const debounceTimer = useRef<NodeJS.Timeout | null>(null);
 
@@ -55,6 +60,12 @@ const News: React.FC = () => {
             setFilteredNews(filtered);
             setCurrentPage(1); // Reset to the first page
             setDebouncing(false);
+
+            // Update the URL with the search query and reset page to 1
+            const params = new URLSearchParams();
+            if (searchTerm) params.set("q", searchTerm);
+            params.set("page", "1");
+            router.replace(`?${params.toString()}`);
         }, 500);
 
         // Clean up debounce timer on unmount
@@ -63,7 +74,16 @@ const News: React.FC = () => {
                 clearTimeout(debounceTimer.current);
             }
         };
-    }, [searchTerm, sortedNews]);
+    }, [searchTerm, sortedNews, router]);
+
+    // Load search term and page from URL on initial render
+    useEffect(() => {
+        const query = searchParams.get("q");
+        const page = parseInt(searchParams.get("page") || "1", 10);
+
+        if (query) setSearchTerm(query);
+        if (page) setCurrentPage(page);
+    }, [searchParams]);
 
     // Pagination Logic
     const indexOfLastNews = currentPage * newsPerPage;
@@ -73,6 +93,12 @@ const News: React.FC = () => {
 
     const handlePageChange = (page: number) => {
         setCurrentPage(page);
+
+        // Update the URL with the new page number
+        const params = new URLSearchParams();
+        if (searchTerm) params.set("q", searchTerm);
+        params.set("page", page.toString());
+        router.replace(`?${params.toString()}`);
     };
 
     const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
