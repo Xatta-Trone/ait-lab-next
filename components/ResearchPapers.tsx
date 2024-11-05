@@ -237,7 +237,7 @@ const ResearchPapers: React.FC = () => {
                                 {currentPage > 1 && (
                                     <Button
                                         onClick={() => handlePageChange(currentPage - 1)}
-                                        colorScheme="yellow"
+                                        colorScheme="yellow" _hover={{ color: "white", backgroundColor: "primary" }}
                                     >
                                         Previous
                                     </Button>
@@ -248,7 +248,7 @@ const ResearchPapers: React.FC = () => {
                                 {currentPage < totalPages && (
                                     <Button
                                         onClick={() => handlePageChange(currentPage + 1)}
-                                        colorScheme="yellow"
+                                        colorScheme="yellow" _hover={{ color: "white", backgroundColor: "primary" }}
                                     >
                                         Next
                                     </Button>

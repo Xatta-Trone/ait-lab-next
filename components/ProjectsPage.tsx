@@ -143,13 +143,13 @@ const Projects: React.FC = () => {
 
                 <Stack direction="row" justify="center" mt={8}>
                     {currentPage > 1 && (
-                        <Button onClick={() => handlePageChange(currentPage - 1)}>Previous</Button>
+                        <Button onClick={() => handlePageChange(currentPage - 1)} _hover={{ color: "white", backgroundColor: "primary" }}>Previous</Button>
                     )}
                     <Center>
                         Page {currentPage} of {totalPages}
                     </Center>
                     {currentPage < totalPages && (
-                        <Button onClick={() => handlePageChange(currentPage + 1)}>Next</Button>
+                        <Button onClick={() => handlePageChange(currentPage + 1)} _hover={{ color: "white", backgroundColor: "primary" }}>Next</Button>
                     )}
                 </Stack>
             </Container>
