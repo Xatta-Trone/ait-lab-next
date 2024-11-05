@@ -238,7 +238,7 @@ const AboutMe = () => {
                                 _hover={{ bg: "yellow.500", color: "white" }}
                                 rightIcon={<FaShoppingCart />}
                             >
-                                Order The Book
+                                Order Here
                             </Button>
                         </Link>
                     </Box>
