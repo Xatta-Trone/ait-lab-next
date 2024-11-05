@@ -51,7 +51,7 @@ const Talk = () => {
                                 {/* Badge for the group */}
                                 <Badge
                                     variant="solid"
-                                    colorScheme={talk.group === "media" ? "yellow" : "gray"}
+                                    colorScheme={talk.group === "media" ? "blackAlpha" : "gray"}
                                     fontSize="md"
                                 >
                                     {talk.group}
