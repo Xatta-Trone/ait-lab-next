@@ -46,7 +46,7 @@ const ProspectiveStudents = () => {
 
     return (
         <Box pb={40} pt={"20"} position={"relative"} ref={sectionRef}>
-            <Container maxW="container.xl" display={"flex"} flexDirection={"column"} alignItems={"center"} px={{ base: "10", md: 0 }}>
+            <Container maxW="container.xl" display={"flex"} flexDirection={"column"} alignItems={"center"} px={{ base: "10", md: "10" }}>
                 <MotionBox
                     as="header"
                     initial={{ opacity: 0, y: 50 }}

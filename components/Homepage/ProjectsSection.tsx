@@ -8,7 +8,7 @@ const ProjectsSection = () => {
         <>
             {/* Projects Section Content */}
             <Box bg="white" pb={40} pt={"14"} position={"relative"}>
-                <Container maxWidth={"container.xl"} textAlign={"center"} px={{ base: "10", md: 0 }}>
+                <Container maxWidth={"container.xl"} textAlign={"center"} px={{ base: "10", md: "10" }}>
                     <Heading as={"h2"} color="yellow.600" marginBottom={"20"} fontSize={{ base: "4xl", md: "5xl" }} >Projects</Heading>
                     <Box>
                         <ProjectsSwiper />

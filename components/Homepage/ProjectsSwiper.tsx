@@ -1,4 +1,3 @@
-// ProjectsSwiper.tsx
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -51,28 +50,24 @@ const ProjectsSwiper = () => {
             style={{ paddingTop: "10px" }}
         >
             {recentProjects.map((project, index) => (
-                <SwiperSlide key={index} > {/* Aligns slides to stretch */}
+                <SwiperSlide key={index}>
                     <ProjectSwiperCard project={project} />
                 </SwiperSlide>
             ))}
             <SwiperSlide>
                 <Box
-                    p={{ base: 4, md: 5 }} // Responsive padding
+                    p={{ base: 4, md: 5 }}
                     shadow="md"
                     borderWidth="1px"
                     borderRadius="lg"
                     bg="white"
-                    _hover={{
-                        shadow: "xl",
-                        transform: "translateY(-10px)",
-                    }}
+                    _hover={{ shadow: "xl", transform: "translateY(-10px)" }}
                     transition="all 0.3s ease-in-out"
                     maxWidth="100%"
                     display="flex"
                     flexDirection="column"
                     justifyContent="center"
-                    height="100%"
-                    minH={"400px"}
+                    height="400px" // Same fixed height
                 >
                     <Box textAlign="center">
                         <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2}>

@@ -37,7 +37,7 @@ const BookSection = () => {
 
     return (
         <Box pb={40} pt={"20"} bg="yellow.50" position={"relative"} ref={sectionRef}>
-            <Container maxW="container.xl" px={{ base: "10", md: 0 }}>
+            <Container maxW="container.xl" px={{ base: "10", md: "10" }}>
                 <MotionBox
                     initial={{ opacity: 0, y: 50 }}
                     animate={isInView ? { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } : {}}
