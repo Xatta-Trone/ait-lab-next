@@ -14,6 +14,8 @@ import {
     Link,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { FaFilePdf } from "react-icons/fa6";
+import { FaShoppingCart } from "react-icons/fa";
 
 const AboutMe = () => {
     useEffect(() => {
@@ -73,11 +75,11 @@ const AboutMe = () => {
                             <Button
                                 mt={4}
                                 size="lg"
-                                variant="outline"
+                                variant="solid"
                                 _hover={{ bg: "yellow.500", color: "white" }}
+                                rightIcon={<FaFilePdf />}
                             >
                                 Resume
-                                <ExternalLinkIcon mx={2} />
                             </Button>
                         </Link>
                     </Box>
@@ -231,13 +233,12 @@ const AboutMe = () => {
                             isExternal
                         >
                             <Button
-                                mt={4}
                                 size="lg"
-                                variant="outline"
+                                variant="solid"
                                 _hover={{ bg: "yellow.500", color: "white" }}
+                                rightIcon={<FaShoppingCart />}
                             >
                                 Order The Book
-                                <ExternalLinkIcon mx={2} />
                             </Button>
                         </Link>
                     </Box>
