@@ -77,7 +77,7 @@ const ContactSection = () => {
                             w={{ base: "100%", md: "auto" }}
                             maxW="full"
                         >
-                            <Heading size="xl" mb={6} as={"h4"} color={"yellow.500"} mt={{ base: 20, lg: 0 }}>
+                            <Heading size="xl" mb={6} as={"h4"} color={"white"} mt={{ base: 20, lg: 0 }}>
                                 Contact Us
                             </Heading>
                             <Text mb={4} color={"white"}>
