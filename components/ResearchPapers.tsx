@@ -43,7 +43,18 @@ const ResearchPapers: React.FC = () => {
                     "https://raw.githubusercontent.com/Xatta-Trone/google-scholar-scrapper/refs/heads/main/scholar-data-qK-YgxAAAAAJ.json"
                 );
                 setPapers(response.data.data || []);
-                setLastUpdated(response.data.last_updated_utc);
+
+                // Convert the last updated timestamp to a human-readable format
+                const updatedDate = new Date(response.data.last_updated_utc);
+                setLastUpdated(
+                    updatedDate.toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                    })
+                );
             } catch (error) {
                 console.error("Error fetching research papers:", error);
             }
@@ -61,20 +72,23 @@ const ResearchPapers: React.FC = () => {
         setCurrentPage(page);
     }, [searchParams]);
 
-    const handleSearch = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-        const searchQuery = e.target.value;
-        setSearchTerm(searchQuery);
-        setSearching(true);
+    const handleSearch = useCallback(
+        (e: React.ChangeEvent<HTMLInputElement>) => {
+            const searchQuery = e.target.value;
+            setSearchTerm(searchQuery);
+            setSearching(true);
 
-        if (searchTimeoutRef.current) {
-            clearTimeout(searchTimeoutRef.current);
-        }
+            if (searchTimeoutRef.current) {
+                clearTimeout(searchTimeoutRef.current);
+            }
 
-        searchTimeoutRef.current = setTimeout(() => {
-            updateURL(searchQuery, sortByYear, 1);
-            setSearching(false);
-        }, 500);
-    }, [sortByYear]);
+            searchTimeoutRef.current = setTimeout(() => {
+                updateURL(searchQuery, sortByYear, 1);
+                setSearching(false);
+            }, 500);
+        },
+        [sortByYear]
+    );
 
     useEffect(() => {
         let tempPapers = [...papers];
@@ -103,14 +117,17 @@ const ResearchPapers: React.FC = () => {
     const currentPapers = filteredPapers.slice(indexOfFirstPaper, indexOfLastPaper);
     const totalPages = Math.ceil(filteredPapers.length / papersPerPage);
 
-    const updateURL = useCallback((search: string, year: string, page: number) => {
-        const searchParams = new URLSearchParams();
-        if (search) searchParams.set("search", search);
-        if (year) searchParams.set("year", year);
-        if (page) searchParams.set("page", page.toString());
+    const updateURL = useCallback(
+        (search: string, year: string, page: number) => {
+            const searchParams = new URLSearchParams();
+            if (search) searchParams.set("search", search);
+            if (year) searchParams.set("year", year);
+            if (page) searchParams.set("page", page.toString());
 
-        router.push(`?${searchParams.toString()}`);
-    }, [router]);
+            router.push(`?${searchParams.toString()}`);
+        },
+        [router]
+    );
 
     const handleSortYearChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setSortByYear(e.target.value);
@@ -128,7 +145,7 @@ const ResearchPapers: React.FC = () => {
         if (isPageChanging) {
             const timer = setTimeout(() => {
                 setIsPageChanging(false);
-            }, 500); // Adjust as necessary for your loading animation
+            }, 500);
 
             return () => clearTimeout(timer);
         }
