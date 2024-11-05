@@ -37,7 +37,7 @@ const ContactSection = () => {
     }, []);
 
     return (
-        <Box bg="white" py={40} ref={sectionRef}>
+        <Box bg="gray.700" color={"white"} py={40} ref={sectionRef}>
             <Container maxW="container.xl" mx="auto" px={{ base: "10", md: 0 }}>
                 <Flex
                     direction={{ base: "column", lg: "row" }}
@@ -57,7 +57,7 @@ const ContactSection = () => {
                         >
 
                             <Image
-                                src="/logo_big_black.png"
+                                src="/logo_big_white.png"
                                 alt="Artificial Intelligence in Highway Safety"
                                 borderRadius="sm"
                                 width={"100%"}
@@ -77,15 +77,20 @@ const ContactSection = () => {
                             w={{ base: "100%", md: "auto" }}
                             maxW="full"
                         >
-                            <Heading size="sm" mb={6} as={"h4"} color={"yellow.600"} mt={{ base: 20, lg: 0 }}>
+                            <Heading size="xl" mb={6} as={"h4"} color={"yellow.500"} mt={{ base: 20, lg: 0 }}>
                                 Contact Us
                             </Heading>
-                            <Text mb={4}>
+                            <Text mb={4} color={"white"}>
                                 Artificial Intelligence in Transportation Lab,<br />
                                 Roy F Mitte Building, Room #5246,<br />
                                 Texas State University, San Marcos, TX 78666
                             </Text>
-                            <Link href="mailto:subasish@txstate.edu" isExternal>
+                            <Link
+                                href="mailto:subasish@txstate.edu"
+                                isExternal
+                                color={"yellow.500"}
+                                _hover={{ color: "yellow.400" }}
+                            >
                                 subasish@txstate.edu
                             </Link>
                         </VStack>
@@ -102,13 +107,13 @@ const ContactSection = () => {
                             w={{ base: "100%", md: "auto" }}
                             maxW="full"
                         >
-                            <Heading size="sm" mb={6} as={"h4"} mt={{ base: 10, lg: 0 }}>
+                            <Heading size="xl" mb={6} as={"h4"} mt={{ base: 10, lg: 0 }} color={"white"}>
                                 Quick Links
                             </Heading>
                             {quickLinks.map((link, index) => (
                                 <Link key={index} href={link.path}>
                                     <Text
-                                        color="yellow.600"
+                                        color="yellow.500"
                                         position="relative"
                                         paddingBottom="3px"
                                         _before={{
@@ -118,7 +123,7 @@ const ContactSection = () => {
                                             height: "2px",
                                             bottom: "-2px",
                                             left: "0",
-                                            backgroundColor: "yellow.600",
+                                            backgroundColor: "yellow.500",
                                             transition: "width 0.3s ease-in-out",
                                         }}
                                         _hover={{
