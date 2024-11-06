@@ -99,7 +99,7 @@ export const HeroParticles = () => {
                     position="absolute"
                     top={0}
                     w="100%"
-                    h="110vh"
+                    h="calc(100vh + 100px)"
                     bgImage="url('https://images5.alphacoders.com/134/1346556.png')"
                     bgSize="cover"
                     bgPosition="center"
