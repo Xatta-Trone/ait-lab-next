@@ -36,15 +36,15 @@ const BookSection = () => {
     }, []);
 
     return (
-        <Box pb={40} pt={"20"} bg="gray.50" position={"relative"} ref={sectionRef}>
-            <Container maxW="container.xl" px={{ base: "10", md: 0 }}>
+        <Box pb={40} pt={"20"} bg="yellow.50" position={"relative"} ref={sectionRef}>
+            <Container maxW="container.xl" px={{ base: "10", md: "10" }}>
                 <MotionBox
                     initial={{ opacity: 0, y: 50 }}
                     animate={isInView ? { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } : {}}
                     textAlign="center"
                     mb={5}
                 >
-                    <Heading as="h2" size="lg" color="blue.600" fontSize={{ base: "4xl", md: "5xl" }}>
+                    <Heading as="h2" size="lg" color="yellow.600" fontSize={{ base: "4xl", md: "5xl" }}>
                         A New Text Book
                     </Heading>
                 </MotionBox>
@@ -72,10 +72,10 @@ const BookSection = () => {
                             <Button
                                 size="lg"
                                 variant="solid"
-                                _hover={{ bg: "blue.500", color: "white" }}
+                                _hover={{ bg: "yellow.500", color: "white" }}
                                 rightIcon={<FaShoppingCart />}
                             >
-                                Order The Book
+                                Order Here
                             </Button>
                         </Link>
                     </MotionBox>
@@ -106,7 +106,7 @@ const BookSection = () => {
                 className="custom-shape-divider-bottom-1730319297"
             >
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="dark-fill"></path>
                 </svg>
             </Box>
         </Box>

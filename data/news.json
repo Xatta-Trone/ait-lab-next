@@ -28,5 +28,95 @@
     "description": "We have released a new feature that improves performance and usability.",
     "date": "October 10, 2024",
     "link": "/news"
+  },
+  {
+    "title": "Annual Report Published",
+    "description": "The annual report for 2024 is now available, highlighting our key achievements and future plans.",
+    "date": "October 8, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Partnership with Tech Giants",
+    "description": "We are thrilled to announce our partnership with leading tech companies to drive innovation.",
+    "date": "October 5, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Award Recognition",
+    "description": "Our organization has been recognized with an industry award for excellence in research.",
+    "date": "October 1, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "New Internship Opportunities",
+    "description": "We are offering new internship opportunities for students interested in AI and machine learning.",
+    "date": "September 28, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Workshop on Data Science",
+    "description": "A comprehensive workshop on data science will be conducted by our team next month.",
+    "date": "September 25, 2024",
+    "link": ""
+  },
+  {
+    "title": "Launch of New Mobile App",
+    "description": "Our new mobile app is now available, providing a seamless experience for our users.",
+    "date": "September 20, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Publication in Top Journal",
+    "description": "Our latest research paper has been published in a top-tier scientific journal.",
+    "date": "September 18, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Research Grant Secured",
+    "description": "We have secured a major research grant to advance our work in AI and robotics.",
+    "date": "September 15, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Team Expansion",
+    "description": "We are expanding our team and welcome new talent to join our innovative projects.",
+    "date": "September 12, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Hackathon Success",
+    "description": "Our team successfully hosted a hackathon, drawing participants from around the world.",
+    "date": "September 10, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Publication Milestone",
+    "description": "We have reached a significant milestone with over 100 published research papers.",
+    "date": "September 5, 2024",
+    "link": ""
+  },
+  {
+    "title": "Webinar on Blockchain",
+    "description": "Join our upcoming webinar to learn about the latest advancements in blockchain technology.",
+    "date": "September 2, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Startup Incubator Launch",
+    "description": "We have launched a startup incubator to support budding entrepreneurs in the tech field.",
+    "date": "August 30, 2024",
+    "link": "/news"
+  },
+  {
+    "title": "Community Outreach Program",
+    "description": "Our community outreach program is making a positive impact, and we are looking for more volunteers.",
+    "date": "August 28, 2024",
+    "link": ""
+  },
+  {
+    "title": "AI Ethics Roundtable",
+    "description": "We hosted a roundtable discussion on the ethics of AI, with insights from leading experts.",
+    "date": "August 25, 2024",
+    "link": "/news"
   }
 ]

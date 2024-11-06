@@ -5,14 +5,15 @@ import {
     Heading,
     Stack,
     Text,
-    Link,
     Container,
     Button,
+    Link as ChakraLink,
 } from "@chakra-ui/react";
 import { HiExternalLink } from "react-icons/hi";
 import newsData from "@/data/news.json"; // Adjust the import path as needed
 import { motion, isValidMotionProp } from "framer-motion"; // Import framer-motion
 import { chakra } from "@chakra-ui/react"; // Import chakra
+import Link from "next/link";
 
 // Create a motion-enabled version of Box
 const MotionBox = chakra(motion.div, {
@@ -72,13 +73,13 @@ const RecentNews = () => {
     }, []);
 
     return (
-        <Box pb={40} pt={"20"} bg="gray.50" position={"relative"} ref={sectionRef}>
-            <Container maxW="container.xl" px={{ base: "10", md: 0 }}>
+        <Box pb={40} pt={"20"} bg="yellow.50" position={"relative"} ref={sectionRef}>
+            <Container maxW="container.xl" px={{ base: "10", md: "10" }}>
                 <Heading
                     as="h2"
                     size="lg"
                     textAlign="center"
-                    color="blue.600"
+                    color="yellow.600"
                     marginBottom={"20"}
                     fontSize={{ base: "4xl", md: "5xl" }}
                 >
@@ -100,7 +101,7 @@ const RecentNews = () => {
                             transition="all 0.3s ease"
                         >
                             {/* Title */}
-                            <Text fontWeight="bold" fontSize="lg" color="blue.600" mb={2}>
+                            <Text fontWeight="bold" fontSize="lg" color="yellow.600" mb={2}>
                                 {item.title}
                             </Text>
 
@@ -120,28 +121,28 @@ const RecentNews = () => {
 
                             {/* "Read More" button if link exists */}
                             {item.link && (
-                                <Link href={item.link} isExternal>
+                                <ChakraLink href={item.link} isExternal>
                                     <Button
                                         rightIcon={<HiExternalLink />}
                                         variant="outline"
-                                        _hover={{ color: "white", backgroundColor: "blue.600" }}
+                                        _hover={{ color: "white", backgroundColor: "yellow.600" }}
                                     >
                                         Read More
                                     </Button>
-                                </Link>
+                                </ChakraLink>
                             )}
                         </MotionBox>
                     ))}
                 </Stack>
 
                 <Box textAlign={"center"}>
-                    <Link href="/news" target={"_blank"}>
+                    <Link href="/news">
                         <Button
                             variant="solid"
                             width="fit-content"
                             alignContent="center"
                             size="lg"
-                            _hover={{ bg: "blue.500", color: "white" }}
+                            _hover={{ bg: "yellow.500", color: "white" }}
                         >
                             All News
                         </Button>

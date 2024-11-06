@@ -60,13 +60,13 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
 
                     {/* project Metadata */}
                     <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
-                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"}>
+                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"} style={{ paddingLeft: "8px", paddingRight: "8px", paddingTop: "2px", paddingBottom: "2px" }}>
                             Status: {project.status}
                         </Badge>
-                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"}>
+                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"} style={{ paddingLeft: "8px", paddingRight: "8px", paddingTop: "2px", paddingBottom: "2px" }}>
                             {project.start_date.month} {project.start_date.year} - {project.end_date.month} {project.end_date.year}
                         </Badge>
-                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"}>
+                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"} style={{ paddingLeft: "8px", paddingRight: "8px", paddingTop: "2px", paddingBottom: "2px" }}>
                             Sponsor: {project.sponsor}
                         </Badge>
                     </Stack>
@@ -77,7 +77,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
                             <Button
                                 variant="solid"
                                 size="md"
-                                _hover={{ bg: "blue.500", color: "white" }}
+                                _hover={{ bg: "yellow.500", color: "white" }}
                             >
                                 View Details
                             </Button>

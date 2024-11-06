@@ -10,7 +10,7 @@ const NotFoundPage = () => {
 
     return (
         <Container maxW="container.md" py={20} textAlign="center">
-            <Heading as="h1" size="2xl" color="blue.600" mb={4}>
+            <Heading as="h1" size="2xl" color="yellow.600" mb={4}>
                 404 - Page Not Found
             </Heading>
             <Text fontSize="lg" color="gray.700" mb={6}>
@@ -18,9 +18,9 @@ const NotFoundPage = () => {
             </Text>
             <Button
                 onClick={() => router.push("/")}
-                colorScheme="blue"
+                colorScheme="yellow"
                 size="lg"
-                _hover={{ color: "white", backgroundColor: "blue.600" }}
+                _hover={{ color: "white", backgroundColor: "yellow.600" }}
             >
                 Go Back to Homepage
             </Button>

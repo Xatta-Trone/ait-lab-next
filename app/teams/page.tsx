@@ -59,7 +59,7 @@ const Team: React.FC = () => {
                 {/* Current Team Section */}
                 <Grid templateColumns={{ base: "1fr", md: "1fr 2fr" }} gap={10} mb={12}>
                     <GridItem>
-                        <Heading as="h1" size="2xl" mb={6} color="blue.600">
+                        <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                             Current Team
                         </Heading>
                     </GridItem>
@@ -81,7 +81,7 @@ const Team: React.FC = () => {
                 {/* Fellows Section */}
                 <Grid templateColumns={{ base: "1fr", md: "1fr 2fr" }} gap={10} mb={12}>
                     <GridItem>
-                        <Heading as="h1" size="2xl" mb={6} color="blue.600">
+                        <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                             Fellows
                         </Heading>
                     </GridItem>
@@ -103,7 +103,7 @@ const Team: React.FC = () => {
                 {/* Alumni Section with Grid Layout */}
                 <Grid templateColumns={{ base: "1fr", md: "1fr 2fr" }} gap={10} mb={12}>
                     <GridItem>
-                        <Heading as="h1" size="2xl" mb={6} color="blue.600">
+                        <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                             Alumni
                         </Heading>
                     </GridItem>

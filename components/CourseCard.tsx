@@ -65,10 +65,10 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 
                         {/* Schedule and Term Pills */}
                         <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
-                            <Badge variant="outline" colorScheme="blue" fontSize="sm">
+                            <Badge variant="outline" borderRadius={"lg"} fontSize="sm" style={{ paddingLeft: "8px", paddingRight: "8px", paddingTop: "2px", paddingBottom: "2px" }}>
                                 Schedule: {course.schedule}
                             </Badge>
-                            <Badge variant="outline" colorScheme="blue" fontSize="sm">
+                            <Badge variant="outline" borderRadius={"lg"} fontSize="sm" style={{ paddingLeft: "8px", paddingRight: "8px", paddingTop: "2px", paddingBottom: "2px" }}>
                                 Term: {course.term}
                             </Badge>
                         </Stack>
@@ -77,8 +77,8 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                         <Button
                             variant="solid"
                             size="md"
-                            colorScheme="blue"
-                            _hover={{ bg: "blue.500", color: "white" }}
+                            colorScheme="yellow"
+                            _hover={{ bg: "yellow.500", color: "white" }}
                             as="a"
                             href="http://mycatalog.txstate.edu/courses/ce/"
                             width={"fit-content"}

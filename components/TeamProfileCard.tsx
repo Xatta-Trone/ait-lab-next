@@ -76,7 +76,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                 />
                 <Stack flex="1" marginLeft={{ md: 6 }} marginTop={{ base: 4, md: 0 }}>
                     {/* Name as a Heading */}
-                    <Heading as="h3" size="lg" color="blue.800" mb={-2}>
+                    <Heading as="h3" size="lg" color="gray.600" mb={-2}>
                         {member.name}
                     </Heading>
                     {/* Label as a smaller Heading */}
@@ -90,9 +90,9 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                         {isDescriptionLong && (
                             <Button
                                 variant="link"
-                                color="blue.500"
+                                color="yellow.500"
                                 ml={2}
-                                _hover={{ textDecoration: "underline", color: "blue.700" }} // Button hover effect
+                                _hover={{ textDecoration: "underline", color: "yellow.700" }} // Button hover effect
                                 onClick={() => onShowMore(member)} // Open modal on click
                                 display="inline"
                             >
@@ -109,7 +109,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "blue.600",
+                                    color: "yellow.600",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -123,7 +123,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "blue.600",
+                                    color: "yellow.600",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -137,7 +137,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "blue.600",
+                                    color: "yellow.600",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -151,7 +151,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "blue.600",
+                                    color: "yellow.600",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -165,7 +165,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "blue.600",
+                                    color: "yellow.600",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -179,7 +179,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "blue.600",
+                                    color: "yellow.600",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -193,7 +193,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "blue.600",
+                                    color: "yellow.600",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -209,7 +209,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                     isExternal
                                     color="gray.700"
                                     _hover={{
-                                        color: "blue.600",
+                                        color: "yellow.600",
                                         transform: "scale(1.1)",
                                         transition: "all 0.2s ease",
                                     }}

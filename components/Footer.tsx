@@ -6,7 +6,7 @@ import { FaGoogleScholar, FaResearchgate } from "react-icons/fa6"; // Import fro
 
 export default function Footer() {
     return (
-        <Box as="footer" bg="gray.700" color="white" py={6}>
+        <Box as="footer" bg="gray.700" color="white" py={6} borderTop={"2px"}>
             <Stack
                 direction={{ base: "column", md: "row" }}
                 justify="space-between"

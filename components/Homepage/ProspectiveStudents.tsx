@@ -46,7 +46,7 @@ const ProspectiveStudents = () => {
 
     return (
         <Box pb={40} pt={"20"} position={"relative"} ref={sectionRef}>
-            <Container maxW="container.xl" display={"flex"} flexDirection={"column"} alignItems={"center"} px={{ base: "10", md: 0 }}>
+            <Container maxW="container.xl" display={"flex"} flexDirection={"column"} alignItems={"center"} px={{ base: "10", md: "10" }}>
                 <MotionBox
                     as="header"
                     initial={{ opacity: 0, y: 50 }}
@@ -54,7 +54,7 @@ const ProspectiveStudents = () => {
                     textAlign="center"
                     mb={5}
                 >
-                    <Heading as="h2" size="lg" color="blue.600" fontSize={{ base: "4xl", md: "5xl" }}>
+                    <Heading as="h2" size="lg" color="yellow.600" fontSize={{ base: "4xl", md: "5xl" }}>
                         Prospective Students
                     </Heading>
                 </MotionBox>
@@ -99,7 +99,7 @@ const ProspectiveStudents = () => {
                             alignContent="center"
                             mt={4}
                             size="lg"
-                            _hover={{ bg: "blue.500", color: "white" }}
+                            _hover={{ bg: "yellow.500", color: "white" }}
                         >
                             Learn More
                         </Button>
@@ -109,7 +109,7 @@ const ProspectiveStudents = () => {
 
             <Box position="absolute" bottom={0} w={"100%"} overflowX={"hidden"} zIndex={1} className="custom-shape-divider-bottom-1730319297">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="gray-fill"></path>
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="yellow-fill"></path>
                 </svg>
             </Box>
         </Box>

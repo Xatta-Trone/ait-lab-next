@@ -33,9 +33,9 @@ const ScrollToTop = () => {
     }, []);
 
     // Move useColorModeValue outside of conditional rendering
-    const bgColor = useColorModeValue("blue.600", "blue.300");
+    const bgColor = useColorModeValue("yellow.600", "yellow.300");
     const iconColor = useColorModeValue("white", "gray.800");
-    const hoverBgColor = useColorModeValue("blue.500", "blue.400");
+    const hoverBgColor = useColorModeValue("yellow.500", "yellow.400");
 
     return (
         isVisible && (

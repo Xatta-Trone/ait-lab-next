@@ -53,7 +53,7 @@ const ResearchPaperItem = (props: ResearchPaperItemProps) => {
                         fontSize="lg"
                         fontWeight="bold"
                         color="primary"
-                        _hover={{ color: "blue.600" }} // Hover effect for text
+                        _hover={{ color: "yellow.600" }} // Hover effect for text
                     >
                         {title}
                     </Text>

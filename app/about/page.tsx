@@ -14,6 +14,8 @@ import {
     Link,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { FaFilePdf } from "react-icons/fa6";
+import { FaShoppingCart } from "react-icons/fa";
 
 const AboutMe = () => {
     useEffect(() => {
@@ -73,11 +75,11 @@ const AboutMe = () => {
                             <Button
                                 mt={4}
                                 size="lg"
-                                variant="outline"
-                                _hover={{ bg: "blue.500", color: "white" }}
+                                variant="solid"
+                                _hover={{ bg: "yellow.500", color: "white" }}
+                                rightIcon={<FaFilePdf />}
                             >
                                 Resume
-                                <ExternalLinkIcon mx={2} />
                             </Button>
                         </Link>
                     </Box>
@@ -120,9 +122,9 @@ const AboutMe = () => {
                         isExternal
                         target="_blank"
                         rel="noreferrer"
-                        color="blue.600"
+                        color="yellow.600"
                         textDecoration="underline"
-                        _hover={{ color: "blue.800", textDecoration: "underline" }}
+                        _hover={{ color: "yellow.800", textDecoration: "underline" }}
                     >
                         September 2020
                         <ExternalLinkIcon mx="2px" />
@@ -231,13 +233,12 @@ const AboutMe = () => {
                             isExternal
                         >
                             <Button
-                                mt={4}
                                 size="lg"
-                                variant="outline"
-                                _hover={{ bg: "blue.500", color: "white" }}
+                                variant="solid"
+                                _hover={{ bg: "yellow.500", color: "white" }}
+                                rightIcon={<FaShoppingCart />}
                             >
-                                Order The Book
-                                <ExternalLinkIcon mx={2} />
+                                Order Here
                             </Button>
                         </Link>
                     </Box>

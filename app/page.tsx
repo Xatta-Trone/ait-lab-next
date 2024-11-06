@@ -21,7 +21,7 @@ export default function Home() {
         <HeroParticles />
         <Hero />
       </Box>
-      <Box backgroundColor={"white"} w={"100vw"}>
+      <Box w={"100vw"}>
         <ProjectsSection />
         <RecentNews />
         <ProspectiveStudents />
