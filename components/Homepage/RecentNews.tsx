@@ -5,14 +5,15 @@ import {
     Heading,
     Stack,
     Text,
-    Link,
     Container,
     Button,
+    Link as ChakraLink,
 } from "@chakra-ui/react";
 import { HiExternalLink } from "react-icons/hi";
 import newsData from "@/data/news.json"; // Adjust the import path as needed
 import { motion, isValidMotionProp } from "framer-motion"; // Import framer-motion
 import { chakra } from "@chakra-ui/react"; // Import chakra
+import Link from "next/link";
 
 // Create a motion-enabled version of Box
 const MotionBox = chakra(motion.div, {
@@ -120,7 +121,7 @@ const RecentNews = () => {
 
                             {/* "Read More" button if link exists */}
                             {item.link && (
-                                <Link href={item.link} isExternal>
+                                <ChakraLink href={item.link} isExternal>
                                     <Button
                                         rightIcon={<HiExternalLink />}
                                         variant="outline"
@@ -128,14 +129,14 @@ const RecentNews = () => {
                                     >
                                         Read More
                                     </Button>
-                                </Link>
+                                </ChakraLink>
                             )}
                         </MotionBox>
                     ))}
                 </Stack>
 
                 <Box textAlign={"center"}>
-                    <Link href="/news" target={"_blank"}>
+                    <Link href="/news">
                         <Button
                             variant="solid"
                             width="fit-content"
