@@ -94,7 +94,7 @@ const News: React.FC = () => {
     const handlePageChange = (page: number) => {
         setCurrentPage(page);
 
-        window.scrollTo({ top: 0 });
+        window.scrollTo({ top: 0, behavior: "smooth" });
 
         // Update the URL with the new page number
         const params = new URLSearchParams();
