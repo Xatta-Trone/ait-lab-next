@@ -90,6 +90,7 @@ const Projects: React.FC = () => {
 
     const handlePageChange = (page: number) => {
         setCurrentPage(page);
+        window.scrollTo({ top: 0 });
     };
 
     const indexOfLastProject = currentPage * projectsPerPage;
