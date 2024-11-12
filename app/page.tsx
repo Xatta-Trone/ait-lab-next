@@ -24,7 +24,7 @@ export default function Home() {
       <Box w={"100vw"}>
         <ProjectsSection />
         <RecentNews />
-        <ProspectiveStudents />
+        {/* <ProspectiveStudents /> */}
         <BookSection />
         <ContactSection />
       </Box>
