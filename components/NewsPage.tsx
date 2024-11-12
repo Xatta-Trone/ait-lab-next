@@ -150,20 +150,20 @@ const News: React.FC = () => {
                                             year: "numeric",
                                             month: "long",
                                             day: "numeric",
-                                        })}
+                                        })} :: {news.title}
                                     </Text>
                                 </Flex>
 
                                 <Text color="yellow.600" fontSize="lg" fontWeight="bold">
                                     {news.link ? (
                                         <LinkOverlay href={news.link} isExternal>
-                                            {news.title} <ExternalLinkIcon mx="2px" />
+                                            {news.description} <ExternalLinkIcon mx="2px" />
                                         </LinkOverlay>
                                     ) : (
-                                        news.title
+                                        news.description
                                     )}
                                 </Text>
-                                <Text color="gray.600">{news.description}</Text>
+                                {/* <Text color="gray.600">{news.description}</Text> */}
                             </LinkBox>
                         ))}
                     </Stack>
