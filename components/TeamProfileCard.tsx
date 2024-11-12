@@ -22,6 +22,7 @@ import {
     FaOrcid,
 } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
+import NextLink from "next/link"
 
 // Define the interface for the TeamProfileCard props
 interface TeamProfileCardProps {
@@ -87,7 +88,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                     {/* Shortened Description with Show more Button */}
                     <Text fontSize="sm" color="gray.600">
                         {descriptionToShow}
-                        {isDescriptionLong && (
+                        {isDescriptionLong && member.name != "Dr. Subasish Das" ? (
                             <Button
                                 variant="link"
                                 color="yellow.500"
@@ -98,7 +99,18 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                             >
                                 Show More
                             </Button>
-                        )}
+                        ) : (<NextLink href="/about" passHref>
+                            <Button
+                                as="a"
+                                variant="link"
+                                color="yellow.500"
+                                ml={2}
+                                _hover={{ textDecoration: "underline", color: "yellow.700" }} // Button hover effect
+                                display="inline"
+                            >
+                                Show More
+                            </Button>
+                        </NextLink>)}
                     </Text>
 
                     {/* Contact and Social Links */}
