@@ -108,7 +108,7 @@ export const HeroParticles = () => {
                         w="100%"
                         h="calc(100vh + 100px)"
                         overflow="hidden"
-                        zIndex={-2}
+                        zIndex={-3}
                     >
                         <video
                             src="/hero_vid.mp4"
@@ -123,7 +123,7 @@ export const HeroParticles = () => {
                                 width: "100%",
                                 height: "100%",
                                 objectFit: "cover",
-                                zIndex: -2,
+                                zIndex: -3,
                             }}
                         />
                         <Box
@@ -133,16 +133,33 @@ export const HeroParticles = () => {
                             right={0}
                             bottom={0}
                             bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))"
-                            zIndex={-1}
+                            zIndex={-2}
                         />
                     </Box>
                 )}
-                <Particles
-                    id="tsparticles"
-                    particlesLoaded={particlesLoaded}
-                    options={options}
-                    style={{ position: "absolute", top: 0, left: 0, zIndex: -2 }}
-                />
+                {init && (
+                    <Box
+                        position="absolute"
+                        top={0}
+                        left={0}
+                        w="100%"
+                        h="100%" // Match the full height of viewport
+                        zIndex={-1}
+                    >
+                        <Particles
+                            id="tsparticles"
+                            particlesLoaded={particlesLoaded}
+                            options={options}
+                            style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                width: "100%",
+                                height: "100%", // Ensure particles fill their container
+                            }}
+                        />
+                    </Box>
+                )}
                 {/* Bottom divider */}
                 <Box
                     position="absolute"
