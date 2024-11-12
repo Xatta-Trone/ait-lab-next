@@ -11,6 +11,7 @@ import { Box } from "@chakra-ui/react";
 
 export const HeroParticles = () => {
     const [init, setInit] = useState(false);
+    const [videoLoaded, setVideoLoaded] = useState(false);
 
     // Initialize the particles engine once
     useEffect(() => {
@@ -19,6 +20,11 @@ export const HeroParticles = () => {
         }).then(() => {
             setInit(true);
         });
+
+        // Simulate loading effect for demonstration, adjust timing as needed
+        setTimeout(() => {
+            setVideoLoaded(true);
+        }, 1000); // Delay loading of video by 1 second
     }, []);
 
     const particlesLoaded = async (container?: Container): Promise<void> => {
@@ -94,35 +100,49 @@ export const HeroParticles = () => {
     if (init) {
         return (
             <>
-                {/* Particles background */}
-                <Box
-                    position="absolute"
-                    top={0}
-                    w="100%"
-                    h="calc(100vh + 100px)"
-                    bgImage="url('https://images5.alphacoders.com/134/1346556.png')"
-                    bgSize="cover"
-                    bgPosition="center"
-                    bgRepeat="no-repeat"
-                    overflow="hidden"
-                    zIndex={-2}
-                >
+                {/* Video background */}
+                {videoLoaded && (
                     <Box
                         position="absolute"
                         top={0}
-                        left={0}
-                        right={0}
-                        bottom={0}
-                        bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))"
+                        w="100%"
+                        h="calc(100vh + 100px)"
+                        overflow="hidden"
                         zIndex={-2}
-                    />
-                    <Particles
-                        id="tsparticles"
-                        particlesLoaded={particlesLoaded}
-                        options={options}
-                        style={{ position: "absolute", top: 0, left: 0, zIndex: -2 }}
-                    />
-                </Box>
+                    >
+                        <video
+                            src="/hero_vid.mp4"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            style={{
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                zIndex: -2,
+                            }}
+                        />
+                        <Box
+                            position="absolute"
+                            top={0}
+                            left={0}
+                            right={0}
+                            bottom={0}
+                            bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))"
+                            zIndex={-1}
+                        />
+                    </Box>
+                )}
+                <Particles
+                    id="tsparticles"
+                    particlesLoaded={particlesLoaded}
+                    options={options}
+                    style={{ position: "absolute", top: 0, left: 0, zIndex: -2 }}
+                />
                 {/* Bottom divider */}
                 <Box
                     position="absolute"
