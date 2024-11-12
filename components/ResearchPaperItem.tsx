@@ -12,8 +12,15 @@ const ResearchPaperItem = (props: ResearchPaperItemProps) => {
         publisher,
         source,
         issue,
-        book
+        book,
+        img
     } = props;
+
+
+    const imageUrl = img
+        ? `https://raw.githubusercontent.com/Xatta-Trone/google-scholar-scrapper/refs/heads/main/${img}`
+        : `/img/research-default.jpg`;
+
     return (
         <Box
             p={3}
@@ -38,7 +45,7 @@ const ResearchPaperItem = (props: ResearchPaperItemProps) => {
                 {/* Background Image with zoom effect */}
                 <Box
                     height="100%"
-                    backgroundImage="url('/img/research-default.jpg')" // Image path
+                    backgroundImage={`url(${imageUrl})`}
                     backgroundSize="cover"
                     backgroundPosition="center"
                     transition="transform 0.3s ease"

@@ -18,5 +18,9 @@
   {
     "name": "Courses",
     "path": "/courses"
+  },
+  {
+    "name": "Publication",
+    "path": "/publication"
   }
 ]

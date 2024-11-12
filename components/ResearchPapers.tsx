@@ -228,6 +228,7 @@ const ResearchPapers: React.FC = () => {
                                             source={paper.source}
                                             issue={paper.issue}
                                             book={paper.book}
+                                            img={paper.img}
                                         />
                                     </motion.div>
                                 ))}
