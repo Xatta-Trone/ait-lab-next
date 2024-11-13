@@ -8,6 +8,7 @@ interface ResearchPaperItemProps {
     source?: string; // Optional props
     issue?: string; // Optional props
     book?: string; // Optional props
+    img?: string;
 }
 
 interface ResearchPaper {
@@ -21,4 +22,5 @@ interface ResearchPaper {
     source?: string;
     issue?: string;
     book?: string;
+    img?: string;
 }

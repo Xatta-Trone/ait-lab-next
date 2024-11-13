@@ -1,11 +1,26 @@
 [
-  { "name": "Home", "path": "/" },
-  { "name": "Projects & Grants", "path": "/projects-and-grants" },
-  { "name": "Publication", "path": "/publication" },
-  { "name": "Courses", "path": "/courses" },
-  { "name": "Team", "path": "/teams" },
-  { "name": "Opening", "path": "/opening" },
-  { "name": "News", "path": "/news" },
-  { "name": "Talk", "path": "/talks" },
-  { "name": "About Me", "path": "/about" }
+  {
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "name": "Projects & Grants",
+    "path": "/projects-and-grants"
+  },
+  {
+    "name": "Team",
+    "path": "/teams"
+  },
+  {
+    "name": "News",
+    "path": "/news"
+  },
+  {
+    "name": "Courses",
+    "path": "/courses"
+  },
+  {
+    "name": "Publication",
+    "path": "/publication"
+  }
 ]
