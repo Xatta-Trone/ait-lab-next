@@ -132,7 +132,6 @@ export const HeroParticles = () => {
                             left={0}
                             right={0}
                             bottom={0}
-                            bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))"
                             zIndex={-2}
                         />
                     </Box>
@@ -166,7 +165,7 @@ export const HeroParticles = () => {
                     bottom={0}
                     w="100%"
                     overflowX="hidden"
-                    zIndex={-1}
+                    zIndex={1}
                     className="custom-shape-divider-bottom-1730319297"
                 >
                     <svg
