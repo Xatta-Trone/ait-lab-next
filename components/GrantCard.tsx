@@ -53,7 +53,7 @@ const GrantCard = (props: { grant: GrantTypes }) => {
 
                     {/* PI and Co-PI Information */}
                     <Text fontSize="md" color="gray.600" mb={4}>
-                        <strong>{grant.PI_role === "Co-PI" ? "Co-PI" : "PI"}:</strong>{" "}
+                        <strong>{grant.PI_role === "Co-PI" ? "Co-Principal Investigator" : "Principal Investigator"}:</strong>{" "}
                         {grant.PI}
                     </Text>
 

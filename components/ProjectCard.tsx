@@ -54,7 +54,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
 
                     {/* PI and Co-PI Information */}
                     <Text fontSize="md" color="gray.600" mb={4}>
-                        <strong>{project.PI_role === "Co-PI" ? "Co-PI" : project.PI_role === "Key Researcher" ? "Key Researcher" : "PI"}:</strong>{" "}
+                        <strong>{project.PI_role === "Co-PI" ? "Co-Principal Investigator" : project.PI_role === "Key Researcher" ? "Key Researcher" : "Principal Investigator"}:</strong>{" "}
                         {project.PI}
                     </Text>
 
