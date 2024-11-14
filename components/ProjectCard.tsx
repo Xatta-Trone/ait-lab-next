@@ -33,7 +33,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
                 {/* project Image */}
                 <Box flexShrink={0} mr={6}>
                     <Image
-                        src={`/img/projects/${project.image}`}
+                        src={`/img/proj_grants/${project.image}`}
                         alt={project.title}
                         borderRadius="md"
                         boxSize={{ base: "200px", md: "250px" }}

@@ -4,6 +4,10 @@
     "schedule": "MW 5:00-6:20 pm CST",
     "term": "Fall 2022",
     "description": "This course covers alignment, interchange, construction, and maintenance issues related to highways. Topics include cross-sections, horizontal and vertical alignment, sight distance, pavement design, drainage analysis, traffic engineering, highway capacity, and construction materials. The analysis of data obtained from sensing devices during construction or use of a highway is also discussed.",
-    "prerequisite": { "courseTitle": "CE 3360", "grade": "C" }
+    "prerequisite": {
+      "courseTitle": "CE 3360",
+      "grade": "C"
+    },
+    "image": "ceHighwayEng.webp"
   }
 ]
