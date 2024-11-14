@@ -10,11 +10,15 @@ import {
     Container,
     Button,
     Link as ChakraLink,
+    LinkBox,
+    Flex,
+    LinkOverlay,
 } from "@chakra-ui/react";
 import { HiExternalLink } from "react-icons/hi";
 import newsData from "@/data/news.json"; // Adjust the import path as needed
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 // Animation variants for staggered effect
 const containerVariants = {
@@ -44,7 +48,7 @@ const RecentNews = () => {
             date: new Date(item.date),
         }))
         .sort((a, b) => b.date.getTime() - a.date.getTime())
-        .slice(0, 4);
+        .slice(0, 5);
 
     return (
         <Box pb={40} pt={"20"} bg="yellow.50" position={"relative"}>
@@ -65,52 +69,45 @@ const RecentNews = () => {
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.1 }} // Trigger animation when 10% of the container is in view
                 >
-                    <Stack spacing={4} my={10}>
-                        {recentNewsItems.map((item, index) => (
+                    <Stack spacing={6} my={10}>
+                        {recentNewsItems.map((news, index) => (
                             <motion.div
                                 key={index}
                                 variants={itemVariants}
                                 whileHover={{ y: -5, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)" }}
                             >
-                                <Box
-                                    p={6}
-                                    bg="white"
-                                    borderRadius="md"
+                                <LinkBox
+                                    key={index}
+                                    as="article"
+                                    p={5}
                                     shadow="md"
+                                    borderWidth="1px"
+                                    borderRadius="md"
+                                    bg="white"
                                     transition="all 0.3s ease"
+                                    cursor={news.link ? "pointer" : "default"}
                                 >
-                                    {/* Title */}
-                                    <Text fontWeight="bold" fontSize="lg" color="yellow.600" mb={2}>
-                                        {item.title}
-                                    </Text>
+                                    <Flex justify="space-between" align="center" mb={2}>
+                                        <Text fontWeight="bold" color="gray.500" fontSize="md">
+                                            {new Date(news.date).toLocaleDateString("en-US", {
+                                                year: "numeric",
+                                                month: "long",
+                                                day: "numeric",
+                                            })} :: {news.title}
+                                        </Text>
+                                    </Flex>
 
-                                    {/* Description */}
-                                    <Text fontSize="md" color="gray.700" mb={3}>
-                                        {item.description}
+                                    <Text color="yellow.600" fontSize="lg" fontWeight="bold">
+                                        {news.link ? (
+                                            <LinkOverlay href={news.link} isExternal>
+                                                {news.description} <ExternalLinkIcon mx="2px" />
+                                            </LinkOverlay>
+                                        ) : (
+                                            news.description
+                                        )}
                                     </Text>
-
-                                    {/* Date */}
-                                    <Text fontSize="sm" color="gray.500" mb={4}>
-                                        {item.date.toLocaleDateString("en-US", {
-                                            year: "numeric",
-                                            month: "long",
-                                            day: "numeric",
-                                        })}
-                                    </Text>
-
-                                    {/* "Read More" button if link exists */}
-                                    {item.link && (
-                                        <ChakraLink href={item.link} isExternal>
-                                            <Button
-                                                rightIcon={<HiExternalLink />}
-                                                variant="outline"
-                                                _hover={{ color: "white", backgroundColor: "yellow.600" }}
-                                            >
-                                                Read More
-                                            </Button>
-                                        </ChakraLink>
-                                    )}
-                                </Box>
+                                    {/* <Text color="gray.600">{news.description}</Text> */}
+                                </LinkBox>
                             </motion.div>
                         ))}
                     </Stack>
