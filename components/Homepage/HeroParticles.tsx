@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
     type Container,
@@ -12,6 +12,7 @@ import { Box } from "@chakra-ui/react";
 export const HeroParticles = () => {
     const [init, setInit] = useState(false);
     const [videoLoaded, setVideoLoaded] = useState(false);
+    const videoRef = useRef<HTMLVideoElement | null>(null);
 
     // Initialize the particles engine once
     useEffect(() => {
@@ -97,45 +98,55 @@ export const HeroParticles = () => {
         []
     );
 
+    const handleVideoLoadedData = () => {
+        setVideoLoaded(true); // Set the videoLoaded state to true when the video data is loaded
+    };
+
     if (init) {
         return (
             <>
                 {/* Video background */}
-                {videoLoaded && (
-                    <Box
-                        position="absolute"
-                        top={0}
-                        w="100%"
-                        h="calc(100vh + 100px)"
-                        overflow="hidden"
-                        zIndex={-3}
-                    >
-                        <video
-                            src="/hero_vid.mp4"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            style={{
-                                position: "absolute",
-                                top: 0,
-                                left: 0,
-                                width: "100%",
-                                height: "100%",
-                                objectFit: "cover",
-                                zIndex: -3,
-                            }}
-                        />
-                        <Box
-                            position="absolute"
-                            top={0}
-                            left={0}
-                            right={0}
-                            bottom={0}
-                            zIndex={-2}
-                        />
-                    </Box>
-                )}
+                <Box
+                    position="absolute"
+                    top={0}
+                    w="100%"
+                    h="calc(100vh + 100px)"
+                    overflow="hidden"
+                    zIndex={-3}
+                    backgroundImage={"url('/hero_vid_trim.mp4#t=0,0.1')"}
+                >
+                    {videoLoaded && (
+                        <>
+                            <video
+                                ref={videoRef}
+                                src="/hero_vid_trim.mp4"
+                                autoPlay
+                                muted
+                                loop={true}
+                                playsInline
+                                style={{
+                                    position: "absolute",
+                                    top: 0,
+                                    left: 0,
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                    zIndex: -3,
+                                }}
+                                poster="/hero_vid_trim.mp4#t=0,0.1"
+                                onLoadedData={handleVideoLoadedData}
+                            />
+                            <Box
+                                position="absolute"
+                                top={0}
+                                left={0}
+                                right={0}
+                                bottom={0}
+                                zIndex={-2}
+                            />
+                        </>
+                    )}
+                </Box>
                 {init && (
                     <Box
                         position="absolute"
