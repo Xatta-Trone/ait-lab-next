@@ -6,15 +6,13 @@ import { motion } from "framer-motion";
 import projectsData from "@/data/projs_and_grants.json";
 import ProjectCard from "@/components/ProjectCard";
 import GrantCard from "@/components/GrantCard";
-import { useRouter, useSearchParams } from "next/navigation";
 
 // Type the imported projects data
 const typedProjectsData: ProjectTypes[] = projectsData.projects as ProjectTypes[];
 const typedGrantsData: GrantTypes[] = projectsData.grants as GrantTypes[];
 
 const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
-    const searchParams = useSearchParams();
-    const router = useRouter();
+    const [isMounted, setIsMounted] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
     const [sortByStatus, setSortByStatus] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
@@ -66,7 +64,7 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
         if (sortByStatus) queryParams.set("status", sortByStatus);
 
         window.history.replaceState(null, "", `${window.location.pathname}?${queryParams.toString()}${hash}`);
-    }, [currentPage, searchTerm, sortByStatus, role]);
+    }, [currentPage, searchTerm, sortByStatus]);
 
     // Parse query string and hash when the page loads
     useEffect(() => {
@@ -78,6 +76,13 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
         if (page) setCurrentPage(page);
         if (query) setSearchTerm(query);
         if (status) setSortByStatus(status);
+    }, []);
+
+    // Ensure the component is mounted before using window.location
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setIsMounted(true); // Set mounted to true after the component is rendered on the client
+        }
     }, []);
 
     useEffect(() => {
@@ -144,6 +149,8 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
     const isGrant = (item: ProjectTypes | GrantTypes): item is GrantTypes => {
         return 'budget' in item;  // 'budget' is a unique field for GrantTypes
     };
+
+    if (!isMounted) return null; // Prevent rendering during SSR
 
     return (
         <Box py={8}>
