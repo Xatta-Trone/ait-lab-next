@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Box position="relative" mt="-80px" height="calc(100vh + 100px)" bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))" >
+      <Box position="relative" mt="-80px" height="calc(100vh + 100px)" >
         <HeroParticles />
         <Hero />
       </Box>

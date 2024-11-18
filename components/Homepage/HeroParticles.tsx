@@ -112,9 +112,13 @@ export const HeroParticles = () => {
                     w="100%"
                     h="calc(100vh + 100px)"
                     overflow="hidden"
-                    zIndex={-3}
-                    backgroundImage={"url('/hero_vid_trim.mp4#t=0,0.1')"}
-                >
+                    zIndex={-4} // All elements should be below 0
+                    backgroundImage={"url('/hero_vid_trim.mp4#t=0,0.1')"}>
+                    <Box
+                        height={"100%"}
+                        width={"100%"}
+                        zIndex={-3} // Video gradient background
+                        bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))" />
                     {videoLoaded && (
                         <>
                             <video
@@ -131,7 +135,7 @@ export const HeroParticles = () => {
                                     width: "100%",
                                     height: "100%",
                                     objectFit: "cover",
-                                    zIndex: -3,
+                                    zIndex: -4,
                                 }}
                                 poster="/hero_vid_trim.mp4#t=0,0.1"
                                 onLoadedData={handleVideoLoadedData}
@@ -142,7 +146,7 @@ export const HeroParticles = () => {
                                 left={0}
                                 right={0}
                                 bottom={0}
-                                zIndex={-2}
+                                zIndex={-3}
                             />
                         </>
                     )}
@@ -154,7 +158,7 @@ export const HeroParticles = () => {
                         left={0}
                         w="100%"
                         h="100%" // Match the full height of viewport
-                        zIndex={-1}
+                        zIndex={-2} // Particles container
                     >
                         <Particles
                             id="tsparticles"
@@ -176,7 +180,7 @@ export const HeroParticles = () => {
                     bottom={0}
                     w="100%"
                     overflowX="hidden"
-                    zIndex={1}
+                    zIndex={-1} // Divider below particles
                     className="custom-shape-divider-bottom-1730319297"
                 >
                     <svg
