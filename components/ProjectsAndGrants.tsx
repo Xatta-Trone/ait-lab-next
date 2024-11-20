@@ -57,14 +57,17 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
 
     // URL Update handler
     const updateURL = useCallback(() => {
-        const hash = window.location.hash;
         const queryParams = new URLSearchParams();
         queryParams.set("page", currentPage.toString());
         if (searchTerm) queryParams.set("q", searchTerm);
         if (sortByStatus) queryParams.set("status", sortByStatus);
 
+        // Dynamically set the hash based on the role
+        const hash = role === "PI/Co-PI" ? "#pi-co-pi" : role === "Key Researcher" ? "#key-researcher" : "";
+
         window.history.replaceState(null, "", `${window.location.pathname}?${queryParams.toString()}${hash}`);
-    }, [currentPage, searchTerm, sortByStatus]);
+    }, [currentPage, searchTerm, sortByStatus, role]);
+
 
     // Parse query string and hash when the page loads
     useEffect(() => {
@@ -92,10 +95,8 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
         if (searchTerm) {
             const lowerSearchTerm = searchTerm.toLowerCase();
             filtered = filtered.filter((item) => {
-                // Normalize search term by removing spaces
                 const normalizedSearchTerm = lowerSearchTerm.replace(/\s+/g, '');
 
-                // Check item type and access specific properties
                 if (isProject(item)) {
                     const normalizedProjectNumber = item.number.replace(/\s+/g, '').toLowerCase();
                     return (
@@ -132,8 +133,9 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
         }
 
         setFilteredData(filtered);
-        updateURL();
+        updateURL(); // Call the updated URL handler
     }, [combinedData, searchTerm, role, sortByStatus, currentPage, updateURL]);
+
 
     const indexOfLastItem = currentPage * dataPerPage;
     const indexOfFirstItem = indexOfLastItem - dataPerPage;
