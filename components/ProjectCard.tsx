@@ -66,9 +66,12 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
                         <Badge variant="outline" fontSize="sm" borderRadius={"lg"} style={{ paddingLeft: "8px", paddingRight: "8px", paddingTop: "2px", paddingBottom: "2px" }}>
                             {project.start_date.month} {project.start_date.year} - {project.end_date.month} {project.end_date.year}
                         </Badge>
-                        <Badge variant="outline" fontSize="sm" borderRadius={"lg"} style={{ paddingLeft: "8px", paddingRight: "8px", paddingTop: "2px", paddingBottom: "2px" }}>
-                            Sponsor: {project.sponsor}
-                        </Badge>
+                        {
+                            project.sponsor &&
+                            <Badge variant="outline" fontSize="sm" borderRadius={"lg"} style={{ paddingLeft: "8px", paddingRight: "8px", paddingTop: "2px", paddingBottom: "2px" }}>
+                                Sponsor: {project.sponsor}
+                            </Badge>
+                        }
                     </Stack>
 
                     {/* Link to project Details */}
