@@ -28,13 +28,6 @@ const Research: React.FC = () => {
         }
     }, []);
 
-    // Update the URL hash based on the active tab
-    useEffect(() => {
-        document.title = "Projects And Grants | AIT Lab";
-        const hash = activeTab === 0 ? "#pi-co-pi" : "#key-researcher";
-        window.location.hash = hash;  // Update the URL hash
-    }, [activeTab]);
-
     return (
         <Box py={20}>
             <Container maxW="container.xl">
