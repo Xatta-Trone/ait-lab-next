@@ -7,9 +7,7 @@ import RecentNews from "@/components/Homepage/RecentNews";
 import BookSection from "@/components/Homepage/BookSection";
 import ContactSection from "@/components/Homepage/ContactSection";
 
-export const siteURL = "https://ait-lab.vercel.app";
-export const canonicalURL = "https://ait-lab.vercel.app";
-
+// Metadata Object
 export const metadata: Metadata = {
   title: "AIT Lab - Innovation Meets Technology",
   description:
@@ -28,7 +26,7 @@ export const metadata: Metadata = {
     title: "AIT Lab - Innovation Meets Technology",
     description:
       "Explore the AIT Lab's innovative projects and advancements in AI and technology. Stay connected with the latest in research and development.",
-    url: siteURL,
+    url: "https://ait-lab.vercel.app",
     siteName: "AIT Lab",
     images: [
       {
@@ -51,7 +49,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: canonicalURL, // Replace with your canonical URL
+    canonical: "https://ait-lab.vercel.app",
   },
   themeColor: "#b7791f",
   manifest: "/site.webmanifest",
@@ -61,10 +59,11 @@ export const metadata: Metadata = {
   },
 };
 
+// Home Component
 export default function Home() {
   return (
     <>
-      <Box position="relative" mt="-80px" height="calc(100vh + 100px)" >
+      <Box position="relative" mt="-80px" height="calc(100vh + 100px)">
         <HeroParticles />
         <Hero />
       </Box>

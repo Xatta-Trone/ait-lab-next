@@ -1,6 +1,7 @@
 /** @format */
+"use client"
 
-import React from "react";
+import React, { useEffect } from "react";
 import {
     Box,
     Container,
@@ -15,64 +16,12 @@ import {
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { FaFilePdf } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
-import { Metadata } from "next";
-import { siteURL } from "../page";
-
-export const metadata: Metadata = {
-    title: "About Subasish Das | AIT Lab",
-    description:
-        "Learn more about Subasish Das, a tenure-track Assistant Professor of Civil Engineering at Texas State University, with over 13 years of experience in roadway safety, traffic operations, and CAV technologies.",
-    keywords: [
-        "Subasish Das",
-        "AIT Lab",
-        "Civil Engineering",
-        "Roadway Safety",
-        "Traffic Operations",
-        "CAV Technologies",
-        "Artificial Intelligence in Highway Safety",
-        "AI Models",
-        "Transportation Research",
-        "Texas State University",
-    ],
-    openGraph: {
-        title: "About Subasish Das | AIT Lab",
-        description:
-            "Explore the journey and expertise of Subasish Das, an Assistant Professor with over 13 years of experience in roadway safety, traffic operations, and AI applications in transportation.",
-        url: siteURL + '/about',
-        siteName: "AIT Lab",
-        images: [
-            {
-                url: "/img/das.jpg", // Primary image for the page
-                alt: "Subasish Das",
-            },
-        ],
-        locale: "en_US",
-        type: "profile",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "About Subasish Das | AIT Lab",
-        description:
-            "Discover the professional journey of Subasish Das, an expert in AI and transportation research.",
-        images: ["/img/das.jpg"],
-    },
-    robots: {
-        index: true,
-        follow: true,
-    },
-    alternates: {
-        canonical: siteURL + '/about', // Replace with the canonical URL
-    },
-    themeColor: "#b7791f",
-    manifest: "/site.webmanifest",
-    icons: {
-        icon: "/favicon.ico",
-        shortcut: "/favicon.ico",
-    },
-};
-
 
 const AboutMe = () => {
+    useEffect(() => {
+        document.title = "About | AIT Lab";
+    }, []);
+
     return (
         <Box py={{ base: 10, md: 20 }} minHeight="100vh">
             <Container maxW="container.xl" px={{ base: 4, md: 8 }}>
