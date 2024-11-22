@@ -1,3 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# BadBot
+User-agent: BadBot
+Disallow: /
+
+# Host
+Host: https://ait-lab.vercel.app
+
+# Sitemaps
+Sitemap: https://ait-lab.vercel.app/sitemap.xml
