@@ -7,9 +7,58 @@ import RecentNews from "@/components/Homepage/RecentNews";
 import BookSection from "@/components/Homepage/BookSection";
 import ContactSection from "@/components/Homepage/ContactSection";
 
+export const siteURL = "https://ait-lab.vercel.app";
+export const canonicalURL = "https://ait-lab.vercel.app";
+
 export const metadata: Metadata = {
-  title: "AIT Lab",
-  description: "AIT Lab",
+  title: "AIT Lab - Innovation Meets Technology",
+  description:
+    "Discover the AIT Lab – a hub for cutting-edge research, innovation, and technological advancements in AI and beyond. Explore projects, news, and resources to stay ahead.",
+  keywords: [
+    "AIT Lab",
+    "Artificial Intelligence",
+    "Technology Research",
+    "Innovation",
+    "Cutting-edge Research",
+    "AI Projects",
+    "Tech Advancements",
+    "Research Lab",
+  ],
+  openGraph: {
+    title: "AIT Lab - Innovation Meets Technology",
+    description:
+      "Explore the AIT Lab's innovative projects and advancements in AI and technology. Stay connected with the latest in research and development.",
+    url: siteURL,
+    siteName: "AIT Lab",
+    images: [
+      {
+        url: "/logo_big_black.png", // Ensure this image is placed in the public folder
+        alt: "AIT Lab Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AIT Lab - Innovation Meets Technology",
+    description:
+      "Discover the forefront of technology and innovation at AIT Lab. Dive into our projects, news, and AI advancements.",
+    images: ["/logo_big_black.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: canonicalURL, // Replace with your canonical URL
+  },
+  themeColor: "#b7791f",
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function Home() {
