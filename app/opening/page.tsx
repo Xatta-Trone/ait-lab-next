@@ -35,7 +35,7 @@ const Openings = () => {
                     content="AIT Lab Openings, GRA positions, Civil Engineering Jobs, Research Positions, Dr. Subasish Das, Texas State University"
                 />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://ait-lab.vercel.app/openings" />
+                <link rel="canonical" href="https://ait-lab.vercel.app/opening" />
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/favicon.ico" />
@@ -44,7 +44,7 @@ const Openings = () => {
                     property="og:description"
                     content="Discover exciting opportunities at AIT Lab, including GRA and GIA positions in Civil Engineering, focusing on AI, spatiotemporal modeling, and transportation safety."
                 />
-                <meta property="og:url" content="https://ait-lab.vercel.app/openings" />
+                <meta property="og:url" content="https://ait-lab.vercel.app/opening" />
                 <meta property="og:site_name" content="AIT Lab" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="en_US" />
