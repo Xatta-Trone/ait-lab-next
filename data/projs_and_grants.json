@@ -1279,6 +1279,74 @@
             },
             "status": "Completed",
             "image": "DALL·E 2024-11-14 17.23.13 - An image illustrating the safety improvement from edge lines on rural two-lane highways. The scene shows researchers analyzing crash data before and .webp"
+        },
+        {
+            "number": "",
+            "title": "Knowledge Extraction using Natural Language Processing from Farm Equipment related Crash Narratives",
+            "description": "",
+            "link": "",
+            "sponsor": "",
+            "PI": "Subasish Das",
+            "PI_role": "Key Researcher",
+            "start_date": {
+                "year": 2017
+            },
+            "end_date": {
+                "year": 2019
+            },
+            "status": "Completed",
+            "image": "DALL·E 2024-11-21 16.04.06 - A conceptual representation of natural language processing (NLP) analyzing text data related to farm equipment crash narratives. The image features a .webp"
+        },
+        {
+            "number": "",
+            "title": "Measuring Automated Vehicle Safety",
+            "description": "",
+            "link": "",
+            "sponsor": "",
+            "PI": "Subasish Das",
+            "PI_role": "Key Researcher",
+            "start_date": {
+                "year": 2017
+            },
+            "end_date": {
+                "year": 2017
+            },
+            "status": "Completed",
+            "image": "DALL·E 2024-11-21 16.04.55 - A futuristic representation of automated vehicle safety research. The image features an autonomous car surrounded by glowing digital safety symbols l.webp"
+        },
+        {
+            "number": "",
+            "title": "Field Evaluation of At-Grade Alternative Intersection Designs",
+            "description": "",
+            "link": "",
+            "sponsor": "FHWA",
+            "PI": "Subasish Das",
+            "PI_role": "Key Researcher",
+            "start_date": {
+                "year": 2016
+            },
+            "end_date": {
+                "year": 2022
+            },
+            "status": "Completed",
+            "image": "DALL·E 2024-11-21 16.07.37 - A detailed depiction of an at-grade alternative intersection design evaluation. The image showcases a modern intersection with innovative features su.webp"
+        },
+        {
+            "number": "",
+            "title": "Technical Support for Focus Approach to Roadway Departure (RwD) Safety",
+            "description": "",
+            "link": "",
+            "sponsor": "",
+            "PI": "Subasish Das",
+            "PI_role": "Key Researcher",
+            "start_date": {
+                "year": 2016
+            },
+            "end_date": {
+                "year": 2019
+            },
+            "status": "Completed",
+            "image": "DALL·E 2024-11-21 16.08.14 - A representation of technical support for roadway departure (RwD) safety focusing on data analysis and innovative countermeasures. The image shows a .webp"
         }
     ],
     "grants": [
