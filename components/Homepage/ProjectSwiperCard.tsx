@@ -22,12 +22,12 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
             {/* Image Container */}
             <Box overflow="hidden" borderRadius="md" height="200px" position="relative">
                 <Image
-                    src={`/img/projects/${project.image}`}
+                    src={`/img/proj_grants/${project.image}`}
                     alt={project.title}
                     borderRadius="md"
                     height="100%"
                     width="100%"
-                    objectFit="contain"
+                    objectFit="cover"
                     fallbackSrc="/img/projects/default.png"
                     transition="transform 0.3s ease"
                     _hover={{ transform: "scale(1.1)" }}

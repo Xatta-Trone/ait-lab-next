@@ -4,11 +4,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
-import projectsData from "@/data/projects.json";
+import projsAndGrants from "@/data/projs_and_grants.json";
 import ProjectSwiperCard from './ProjectSwiperCard';
 import { Box, Button, Heading, Link, Text } from '@chakra-ui/react';
 
 const ProjectsSwiper = () => {
+    const projectsData = projsAndGrants.projects;
     const recentProjects = ([...projectsData] as ProjectTypes[])
         .sort((a, b) => b.start_date.year - a.start_date.year)
         .slice(0, 4);
