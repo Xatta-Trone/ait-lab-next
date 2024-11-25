@@ -120,7 +120,7 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
         if (role) {
             filtered = filtered.filter(item =>
                 role === "PI/Co-PI"
-                    ? ["PI", "Co-PI", "Instructional PI"].includes(item.PI_role)
+                    ? ["PI", "Co-PI", "Instructional PI", "Institutional PI"].includes(item.PI_role)
                     : role === "Key Researcher"
                         ? item.PI_role === "Key Researcher"
                         : true
