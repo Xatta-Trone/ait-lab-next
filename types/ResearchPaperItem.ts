@@ -1,27 +1,27 @@
 interface ResearchPaperItemProps {
-    title: string;
-    total_citations: number;
-    year: number;
-    url: string;
-    journal?: string; // Optional props
-    publisher?: string; // Optional props
-    source?: string; // Optional props
-    issue?: string; // Optional props
-    book?: string; // Optional props
-    img?: string;
-    authors?: string; // Optional props
+    title: string; // The title of the research paper
+    total_citations: number; // The total number of citations the paper has received
+    year: number; // The year the research paper was published
+    url: string; // The URL linking to the full research paper or its details
+    journal?: string; // (Optional) The journal where the paper was published
+    publisher?: string; // (Optional) The publisher of the paper
+    source?: string; // (Optional) The source of the publication
+    issue?: string; // (Optional) The issue number of the publication
+    book?: string; // (Optional) If the paper is part of a book, the book title
+    img?: string; // (Optional) The URL or file path of an image representing the research paper
+    authors?: string; // (Optional) The authors of the research paper
 }
 
 interface ResearchPaper {
-    title: string;
-    authors?: string;
-    total_citations: number;
-    year: number;
-    url: string;
-    journal?: string;
-    publisher?: string;
-    source?: string;
-    issue?: string;
-    book?: string;
-    img?: string;
+    title: string; // The title of the research paper
+    authors?: string; // (Optional) The authors of the research paper
+    total_citations: number; // The total number of citations the paper has received
+    year: number; // The year the research paper was published
+    url: string; // The URL linking to the full research paper or its details
+    journal?: string; // (Optional) The journal where the paper was published
+    publisher?: string; // (Optional) The publisher of the paper
+    source?: string; // (Optional) The source of the publication
+    issue?: string; // (Optional) The issue number of the publication
+    book?: string; // (Optional) If the paper is part of a book, the book title
+    img?: string; // (Optional) The URL or file path of an image representing the research paper
 }
