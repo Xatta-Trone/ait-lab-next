@@ -1,5 +1,5 @@
 /** @format */
-"use client";
+"use client"; // Enables client-side rendering for this component
 
 import React, { useEffect } from "react";
 import Head from "next/head"; // Import Head for metadata management
@@ -14,16 +14,17 @@ import {
     Link,
     Button,
 } from "@chakra-ui/react";
-import { FaCheckCircle } from "react-icons/fa"; // Import icon
+import { FaCheckCircle } from "react-icons/fa"; // Import check icon for list items
 
 const Openings = () => {
+    // Set the page title dynamically when the component mounts
     useEffect(() => {
-        document.title = "Openings | AIT Lab"; // Dynamically update the page title
+        document.title = "Openings | AIT Lab";
     }, []);
 
     return (
         <>
-            {/* Metadata */}
+            {/* Metadata for SEO and social sharing */}
             <Head>
                 <title>Openings | AIT Lab</title>
                 <meta
@@ -62,12 +63,12 @@ const Openings = () => {
             {/* Page Content */}
             <Box py={20}>
                 <Container maxW="container.xl">
-                    {/* Heading */}
+                    {/* Main heading */}
                     <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                         Openings
                     </Heading>
 
-                    {/* Introduction */}
+                    {/* Introduction text */}
                     <Text fontSize="lg" mb={4}>
                         The Ingram School of Engineering (ISOE) invites applications for
                         several highly motivated M.S./Ph.D. GIA/GRA positions under the
@@ -76,10 +77,10 @@ const Openings = () => {
                         thrusts:
                     </Text>
 
-                    {/* Research Thrusts */}
+                    {/* Research Thrusts List */}
                     <List spacing={3} mb={4}>
                         <ListItem>
-                            <ListIcon as={FaCheckCircle} color="yellow.500" />
+                            <ListIcon as={FaCheckCircle} color="yellow.500" /> {/* Check icon */}
                             Causal Artificial Intelligence
                         </ListItem>
                         <ListItem>
@@ -92,7 +93,7 @@ const Openings = () => {
                         </ListItem>
                     </List>
 
-                    {/* Responsibilities */}
+                    {/* Responsibilities Section */}
                     <Text fontSize="lg" mb={4}>
                         The responsibilities of the GRA include:
                     </Text>
@@ -121,12 +122,12 @@ const Openings = () => {
                         </ListItem>
                     </List>
 
-                    {/* Call to Action */}
+                    {/* Additional Information */}
                     <Text fontSize="lg" mb={4}>
                         Please see the PDF for the open position of Ph.D. GRA.
                     </Text>
 
-                    {/* Download PDF Button */}
+                    {/* PDF Download Button */}
                     <Link
                         href="https://subasish.github.io/ait_lab/pdfs/GRA_Position%20Details_Fall22.pdf"
                         isExternal
@@ -146,4 +147,4 @@ const Openings = () => {
     );
 };
 
-export default Openings;
+export default Openings; // Export the Openings component
