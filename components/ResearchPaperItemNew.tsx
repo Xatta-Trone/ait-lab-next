@@ -49,7 +49,7 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
                             src={imageUrl}
                             alt={title}
                             borderRadius="md"
-                            boxSize={{ base: "150px", md: "200px" }}
+                            boxSize={{ base: "200px", md: "250px" }}
                             objectFit="cover"
                             fallbackSrc="/img/research-default.jpg"
                         />
