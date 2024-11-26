@@ -57,7 +57,7 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
 
                     {/* Paper Info */}
                     <Box flex="1">
-                        <Heading as="h3" size="lg" mb={1}>
+                        <Heading as="h3" size="lg" mb={1} mt={{ base: 6, md: 0 }}>
                             {title}
                         </Heading>
 

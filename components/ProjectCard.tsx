@@ -31,7 +31,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
         >
             <Flex direction={{ base: "column", md: "row" }} alignItems="center" wrap={"wrap"}>
                 {/* project Image */}
-                <Box flexShrink={0} mr={6}>
+                <Box flexShrink={0} mr={6} >
                     <Image
                         src={`/img/new_proj_grant/${project.image}`}
                         alt={project.title}
@@ -44,7 +44,7 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
 
                 {/* project Info */}
                 <Box flex="1">
-                    <Heading as="h3" size="lg" mb={2}>
+                    <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }}>
                         {project.number && `${project.number} : `}
                         {project.title}
                     </Heading>
