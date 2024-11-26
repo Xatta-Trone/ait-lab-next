@@ -1,11 +1,12 @@
-import News from "@/components/NewsPage";
+import News from "@/components/NewsPage"; // Component for rendering the News section
 import React, { Suspense } from "react";
 import Head from "next/head"; // Import Head for managing metadata
+import { Box, Spinner } from "@chakra-ui/react"; // Chakra UI components for styling and loading spinner
 
 const NewsPage = () => {
     return (
         <>
-            {/* Metadata */}
+            {/* Metadata for SEO and social sharing */}
             <Head>
                 <title>News | AIT Lab</title>
                 <meta
@@ -42,11 +43,19 @@ const NewsPage = () => {
             </Head>
 
             {/* Page Content */}
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense
+                fallback={
+                    <Box textAlign="center" py={6}>
+                        {/* Fallback UI with a loading spinner */}
+                        <Spinner size="xl" color="yellow.500" />
+                    </Box>
+                }
+            >
+                {/* Main content: News section */}
                 <News />
             </Suspense>
         </>
     );
 };
 
-export default NewsPage;
+export default NewsPage; // Export the NewsPage component
