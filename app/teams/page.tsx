@@ -1,5 +1,5 @@
 /** @format */
-"use client";
+"use client"; // Enables client-side rendering for this component
 
 import React, { useEffect, useState, forwardRef } from "react";
 import Head from "next/head"; // Import Head for managing metadata
@@ -11,43 +11,47 @@ import {
     Heading,
     Text,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion"; // Import framer-motion
-import TeamProfileCard from "@/components/TeamProfileCard";
-import TeamProfileModal from "@/components/TeamProfileModal";
-import teamData from "@/data/team.json";
-import alumniData from "@/data/alumni.json";
-import fellowData from "@/data/fellow.json";
+import { motion } from "framer-motion"; // Import framer-motion for animations
+import TeamProfileCard from "@/components/TeamProfileCard"; // Component for individual team member cards
+import TeamProfileModal from "@/components/TeamProfileModal"; // Modal component for detailed member view
+import teamData from "@/data/team.json"; // Data for current team members
+import alumniData from "@/data/alumni.json"; // Data for alumni
+import fellowData from "@/data/fellow.json"; // Data for fellows
 
-// Create a motion-enabled version of GridItem
+// Create a motion-enabled version of GridItem for animations
 const MotionGridItem = motion(
     forwardRef<HTMLDivElement, React.ComponentPropsWithoutRef<typeof GridItem>>(
         (props, ref) => <GridItem ref={ref} {...props} />
     )
 );
 
-// Animation variant for staggered slide-in effect
+// Animation variants for the staggered slide-in effect
 const cardVariants = {
-    hidden: { opacity: 0, x: 100 }, // Start off-screen (right)
+    hidden: { opacity: 0, x: 100 }, // Card starts off-screen to the right
     visible: (i: number) => ({
         opacity: 1,
-        x: 0,
-        transition: { delay: i * 0.2, duration: 0.6 }, // Delay each card for stagger effect
+        x: 0, // Moves into view
+        transition: { delay: i * 0.2, duration: 0.6 }, // Delays each card for a staggered effect
     }),
 };
 
 const Team: React.FC = () => {
+    // Dynamically update the page title
     useEffect(() => {
-        document.title = "Team | AIT Lab"; // Dynamically update page title
+        document.title = "Team | AIT Lab";
     }, []);
 
+    // State to manage the selected team member for the modal
     const [selectedMember, setSelectedMember] = useState<any>(null);
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
+    // Show the modal with detailed information for a selected member
     const handleShowMore = (member: any) => {
         setSelectedMember(member);
         setIsModalOpen(true);
     };
 
+    // Close the modal and clear the selected member
     const handleCloseModal = () => {
         setIsModalOpen(false);
         setSelectedMember(null);
@@ -55,7 +59,7 @@ const Team: React.FC = () => {
 
     return (
         <>
-            {/* Metadata */}
+            {/* Metadata for SEO and social sharing */}
             <Head>
                 <title>Team | AIT Lab</title>
                 <meta
@@ -105,10 +109,10 @@ const Team: React.FC = () => {
                             {teamData.map((member, index) => (
                                 <MotionGridItem
                                     key={index}
-                                    custom={index}
+                                    custom={index} // Custom index for stagger effect
                                     initial="hidden"
                                     animate="visible"
-                                    variants={cardVariants}
+                                    variants={cardVariants} // Animation variants
                                 >
                                     <TeamProfileCard member={member} onShowMore={handleShowMore} />
                                 </MotionGridItem>
@@ -154,6 +158,7 @@ const Team: React.FC = () => {
                                     pb={2}
                                     pt={2}
                                 >
+                                    {/* Alumni Details */}
                                     <Text fontWeight="bold" fontSize="lg" color="gray.600">
                                         {alumni.name}
                                         <Text as="span" fontWeight="300" color="gray.500">
@@ -168,7 +173,7 @@ const Team: React.FC = () => {
                         </GridItem>
                     </Grid>
 
-                    {/* Modal */}
+                    {/* Modal for Detailed Profile View */}
                     {selectedMember && (
                         <TeamProfileModal
                             isOpen={isModalOpen}
@@ -182,4 +187,4 @@ const Team: React.FC = () => {
     );
 };
 
-export default Team;
+export default Team; // Export the Team component
