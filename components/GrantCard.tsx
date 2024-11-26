@@ -33,7 +33,7 @@ const GrantCard = (props: { grant: GrantTypes }) => {
                 {/* Grant Image */}
                 <Box flexShrink={0} mr={6}>
                     <Image
-                        src={`/img/proj_grants/${grant.image}`}
+                        src={`/img/new_proj_grant/${grant.image}`}
                         alt={grant.title}
                         borderRadius="md"
                         boxSize={{ base: "200px", md: "250px" }}
@@ -44,7 +44,7 @@ const GrantCard = (props: { grant: GrantTypes }) => {
 
                 {/* Grant Info */}
                 <Box flex="1">
-                    <Heading as="h3" size="lg" mb={2}>
+                    <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }}>
                         {grant.title}
                     </Heading>
                     <Text fontSize="md" color="gray.700" mb={4}>

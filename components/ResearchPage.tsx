@@ -15,6 +15,7 @@ const Research: React.FC = () => {
 
     // Check URL hash and query parameters to set the active tab
     useEffect(() => {
+        document.title = "Projects And Grants | AIT Lab"
         const hash = window.location.hash;
 
         // Handle tab selection based on URL hash

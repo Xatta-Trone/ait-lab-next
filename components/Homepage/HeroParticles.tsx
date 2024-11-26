@@ -1,35 +1,33 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import {
-    type Container,
-    type ISourceOptions,
-} from "@tsparticles/engine";
-import { loadSlim } from "@tsparticles/slim"; // Load a slim version to reduce bundle size
-import { Box } from "@chakra-ui/react";
+import Particles, { initParticlesEngine } from "@tsparticles/react"; // Import tsParticles
+import { type Container, type ISourceOptions } from "@tsparticles/engine"; // Type definitions for tsParticles
+import { loadSlim } from "@tsparticles/slim"; // Slim version for reduced bundle size
+import { Box } from "@chakra-ui/react"; // Chakra UI components
 
 export const HeroParticles = () => {
-    const [init, setInit] = useState(false);
-    const [videoLoaded, setVideoLoaded] = useState(false);
-    const videoRef = useRef<HTMLVideoElement | null>(null);
+    const [init, setInit] = useState(false); // State to track if particles engine is initialized
+    const [videoLoaded, setVideoLoaded] = useState(false); // State to track if the video has loaded
+    const videoRef = useRef<HTMLVideoElement | null>(null); // Ref for the background video
 
-    // Initialize the particles engine once
+    // Initialize the particles engine
     useEffect(() => {
         initParticlesEngine(async (engine) => {
-            await loadSlim(engine);
+            await loadSlim(engine); // Load the slim version of the particles engine
         }).then(() => {
-            setInit(true);
+            setInit(true); // Mark the engine as initialized
         });
 
-        // Simulate loading effect for demonstration, adjust timing as needed
+        // Simulate video loading effect (adjust timing as needed)
         setTimeout(() => {
             setVideoLoaded(true);
-        }, 1000); // Delay loading of video by 1 second
+        }, 1000); // Delay of 1 second for demonstration
     }, []);
 
+    // Callback for when particles are loaded
     const particlesLoaded = async (container?: Container): Promise<void> => {
-        console.log(container);
+        console.log(container); // Debug log for the loaded container
     };
 
     // Particle configuration options
@@ -37,69 +35,70 @@ export const HeroParticles = () => {
         () => ({
             autoPlay: true,
             backgroundMask: {
-                enable: false,
+                enable: false, // Disable background masking
                 composite: "destination-out",
                 cover: {
                     color: { value: "#fff" },
                     opacity: 1,
                 },
             },
-            pauseOnOutsideViewport: true,
+            pauseOnOutsideViewport: true, // Pause particles when outside the viewport
             clear: true,
-            detectRetina: true,
-            fpsLimit: 120,
+            detectRetina: true, // Use retina resolution
+            fpsLimit: 120, // Limit frames per second
             interactivity: {
-                detectsOn: "window",
+                detectsOn: "window", // Interaction is detected across the entire window
                 events: {
-                    onClick: { enable: true, mode: "repulse" },
+                    onClick: { enable: true, mode: "repulse" }, // Repulse particles on click
                     onHover: {
                         enable: true,
-                        mode: "grab",
+                        mode: "grab", // Grab mode when hovering
                         parallax: { enable: true, force: 60, smooth: 10 },
                     },
                     resize: { enable: true, delay: 0.5 },
                 },
                 modes: {
                     grab: { distance: 400, links: { opacity: 1 } },
-                    push: { quantity: 4 },
+                    push: { quantity: 4 }, // Push 4 particles on interaction
                 },
             },
             particles: {
-                color: { value: "#ffffff" },
+                color: { value: "#ffffff" }, // Particle color
                 move: {
                     direction: "none",
                     enable: true,
-                    outModes: { default: "out" },
+                    outModes: { default: "out" }, // Particles move out of the viewport
                     speed: 2,
                 },
                 number: {
-                    density: { enable: true, width: 1920, height: 1080 },
-                    value: 120,
+                    density: { enable: true, width: 1920, height: 1080 }, // Particle density
+                    value: 120, // Total number of particles
                 },
                 opacity: {
-                    value: { min: 0.1, max: 0.5 },
+                    value: { min: 0.1, max: 0.5 }, // Range of opacity
                     animation: { enable: true, speed: 3, startValue: "random" },
                 },
-                shape: { type: "circle" },
+                shape: { type: "circle" }, // Shape of particles
                 size: {
-                    value: { min: 1, max: 9 },
+                    value: { min: 1, max: 9 }, // Size range
                     animation: { enable: true, speed: 20, startValue: "random" },
                 },
                 links: {
-                    enable: true,
-                    distance: 150,
+                    enable: true, // Enable connecting lines between particles
+                    distance: 150, // Max distance for connections
                     color: "#ffffff",
                     opacity: 0.4,
                     width: 1,
                 },
             },
-            pauseOnBlur: true,
+            pauseOnBlur: true, // Pause when the browser tab is inactive
         }),
         []
     );
 
+    // Handler for video loaded data
     const handleVideoLoadedData = () => {
-        setVideoLoaded(true); // Set the videoLoaded state to true when the video data is loaded
+        setVideoLoaded(true); // Set video loaded state to true
     };
 
     if (init) {
@@ -110,15 +109,17 @@ export const HeroParticles = () => {
                     position="absolute"
                     top={0}
                     w="100%"
-                    h="calc(100vh + 100px)"
+                    h="calc(100vh + 100px)" // Extend height slightly beyond viewport
                     overflow="hidden"
-                    zIndex={-4} // All elements should be below 0
-                    backgroundImage={"url('/hero_vid_trim.mp4#t=0,0.1')"}>
+                    zIndex={-4} // Position below all content
+                    backgroundImage={"url('/hero_vid_trim.mp4#t=0,0.1')"}
+                >
                     <Box
                         height={"100%"}
                         width={"100%"}
-                        zIndex={-3} // Video gradient background
-                        bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))" />
+                        zIndex={-3}
+                        bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))" // Gradient overlay for better visibility
+                    />
                     {videoLoaded && (
                         <>
                             <video
@@ -134,7 +135,7 @@ export const HeroParticles = () => {
                                     left: 0,
                                     width: "100%",
                                     height: "100%",
-                                    objectFit: "cover",
+                                    objectFit: "cover", // Ensure video fills its container
                                     zIndex: -4,
                                 }}
                                 poster="/hero_vid_trim.mp4#t=0,0.1"
@@ -157,19 +158,19 @@ export const HeroParticles = () => {
                         top={0}
                         left={0}
                         w="100%"
-                        h="100%" // Match the full height of viewport
-                        zIndex={-2} // Particles container
+                        h="100%"
+                        zIndex={-2}
                     >
                         <Particles
-                            id="tsparticles"
+                            id="tsparticles" // Unique ID for the particles instance
                             particlesLoaded={particlesLoaded}
-                            options={options}
+                            options={options} // Particle configuration
                             style={{
                                 position: "absolute",
                                 top: 0,
                                 left: 0,
                                 width: "100%",
-                                height: "100%", // Ensure particles fill their container
+                                height: "100%",
                             }}
                         />
                     </Box>
@@ -180,7 +181,7 @@ export const HeroParticles = () => {
                     bottom={0}
                     w="100%"
                     overflowX="hidden"
-                    zIndex={-1} // Divider below particles
+                    zIndex={-1}
                     className="custom-shape-divider-bottom-1730319297"
                 >
                     <svg

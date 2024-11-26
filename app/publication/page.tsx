@@ -1,11 +1,12 @@
 import React, { Suspense } from "react";
 import Head from "next/head"; // Import Head for metadata management
-import ResearchPapers from "@/components/ResearchPapers";
+import ResearchPapers from "@/components/ResearchPapers"; // Component to display the list of research papers
+import { Box, Spinner } from "@chakra-ui/react"; // Chakra UI components for styling and loading spinner
 
 const PublicationPage = () => {
     return (
         <>
-            {/* Metadata */}
+            {/* Metadata for SEO and social sharing */}
             <Head>
                 <title>Publications | AIT Lab</title>
                 <meta
@@ -45,11 +46,17 @@ const PublicationPage = () => {
             </Head>
 
             {/* Page Content */}
-            <Suspense fallback={<div>Loading...</div>}>
-                <ResearchPapers />
+            <Suspense
+                fallback={
+                    <Box textAlign="center" py={6}>
+                        <Spinner size="xl" color="yellow.500" /> {/* Loading spinner for fallback UI */}
+                    </Box>
+                }
+            >
+                <ResearchPapers /> {/* Displays the research publications */}
             </Suspense>
         </>
     );
 };
 
-export default PublicationPage;
+export default PublicationPage; // Export the PublicationPage component

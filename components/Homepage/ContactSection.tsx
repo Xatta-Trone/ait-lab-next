@@ -1,8 +1,8 @@
 "use client";
 
-import { Box, chakra, Container, Flex, Heading, Image, Link, Text, VStack } from "@chakra-ui/react";
-import quickLinks from "@/data/navLinks.json";
-import { isValidMotionProp, motion } from "framer-motion";
+import { Box, chakra, Container, Flex, Heading, Image, Link, Text, VStack } from "@chakra-ui/react"; // Chakra UI components
+import quickLinks from "@/data/navLinks.json"; // Import quick links data
+import { isValidMotionProp, motion } from "framer-motion"; // Framer Motion for animations
 import { useEffect, useRef, useState } from "react";
 
 // Create a MotionBox using chakra and motion
@@ -11,27 +11,28 @@ const MotionBox = chakra(motion.div, {
 });
 
 const ContactSection = () => {
-    const [isInView, setIsInView] = useState(false);
-    const sectionRef = useRef<HTMLDivElement | null>(null);
+    const [isInView, setIsInView] = useState(false); // State to track if the section is in view
+    const sectionRef = useRef<HTMLDivElement | null>(null); // Ref to monitor section visibility
 
+    // IntersectionObserver to trigger animations when the section comes into view
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    setIsInView(true);
-                    observer.disconnect(); // Stop observing once it is in view
+                    setIsInView(true); // Trigger animation when the section is visible
+                    observer.disconnect(); // Disconnect observer to optimize performance
                 }
             },
             { threshold: 0.2 } // Trigger when 20% of the section is visible
         );
 
         if (sectionRef.current) {
-            observer.observe(sectionRef.current);
+            observer.observe(sectionRef.current); // Start observing the section
         }
 
         return () => {
             if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
+                observer.unobserve(sectionRef.current); // Clean up observer on unmount
             }
         };
     }, []);
@@ -40,7 +41,7 @@ const ContactSection = () => {
         <Box bg="gray.700" color={"white"} py={40} ref={sectionRef}>
             <Container maxW="container.xl" mx="auto" px={{ base: "10", md: "10" }}>
                 <Flex
-                    direction={{ base: "column", lg: "row" }}
+                    direction={{ base: "column", lg: "row" }} // Responsive layout for mobile and desktop
                     justify="space-between"
                     align="flex-start"
                     gap={{ base: 8, md: 4 }}
@@ -48,27 +49,26 @@ const ContactSection = () => {
                     {/* Logo Section */}
                     <VStack
                         align="flex-start"
-                        w={{ base: "100%", md: "60%", lg: "33%", xl: "40%" }}
+                        w={{ base: "100%", md: "60%", lg: "33%", xl: "40%" }} // Adjust width for responsiveness
                         spacing={4}
                     >
                         <MotionBox
-                            animate={isInView ? { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } : {}}
-                            initial={{ opacity: 0, y: 50 }}
+                            animate={isInView ? { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } : {}} // Animate when in view
+                            initial={{ opacity: 0, y: 50 }} // Initial state before animation
                         >
-
                             <Image
-                                src="/logo_big_white.png"
+                                src="/logo_big_white.png" // Logo image
                                 alt="Artificial Intelligence in Highway Safety"
                                 borderRadius="sm"
                                 width={"100%"}
-                                objectFit="contain"
+                                objectFit="contain" // Maintain aspect ratio
                             />
                         </MotionBox>
                     </VStack>
 
                     {/* Contact Section */}
                     <MotionBox
-                        initial={{ opacity: 0, y: 50 }}
+                        initial={{ opacity: 0, y: 50 }} // Start off-screen
                         animate={isInView ? { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } : {}}
                     >
                         <VStack
@@ -86,10 +86,10 @@ const ContactSection = () => {
                                 Texas State University, San Marcos, TX 78666
                             </Text>
                             <Link
-                                href="mailto:subasish@txstate.edu"
+                                href="mailto:subasish@txstate.edu" // Email link
                                 isExternal
-                                color={"yellow.500"}
-                                _hover={{ color: "yellow.400" }}
+                                color={"yellow.500"} // Highlight link in yellow
+                                _hover={{ color: "yellow.400" }} // Lighter color on hover
                             >
                                 subasish@txstate.edu
                             </Link>
@@ -98,7 +98,7 @@ const ContactSection = () => {
 
                     {/* Quick Links Section */}
                     <MotionBox
-                        initial={{ opacity: 0, y: 50 }}
+                        initial={{ opacity: 0, y: 50 }} // Start off-screen
                         animate={isInView ? { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } : {}}
                     >
                         <VStack
@@ -119,15 +119,15 @@ const ContactSection = () => {
                                         _before={{
                                             content: '""',
                                             position: "absolute",
-                                            width: "0%",
+                                            width: "0%", // Initial underline width
                                             height: "2px",
                                             bottom: "-2px",
                                             left: "0",
                                             backgroundColor: "yellow.500",
-                                            transition: "width 0.3s ease-in-out",
+                                            transition: "width 0.3s ease-in-out", // Smooth transition
                                         }}
                                         _hover={{
-                                            _before: { width: "100%" },
+                                            _before: { width: "100%" }, // Expand underline on hover
                                         }}
                                     >
                                         {link.name}

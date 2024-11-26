@@ -19,6 +19,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import axios from "axios";
 import ResearchPaperItem from "@/components/ResearchPaperItem";
 import { motion } from "framer-motion";
+import ResearchPaperItemNew from "./ResearchPaperItemNew";
 
 const ResearchPapers: React.FC = () => {
     const searchParams = useSearchParams();
@@ -31,7 +32,7 @@ const ResearchPapers: React.FC = () => {
     const [sortByYear, setSortByYear] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const [isPageChanging, setIsPageChanging] = useState(false);
-    const papersPerPage = 20;
+    const papersPerPage = 10;
     const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
     useEffect(() => {
@@ -209,7 +210,7 @@ const ResearchPapers: React.FC = () => {
                 <Box>
                     {!searching && !isPageChanging && filteredPapers.length > 0 && (
                         <>
-                            <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={6}>
+                            <SimpleGrid columns={{ base: 1 }} spacing={6}>
                                 {currentPapers.map((paper, index) => (
                                     <motion.div
                                         key={index}
@@ -218,7 +219,7 @@ const ResearchPapers: React.FC = () => {
                                         animate="visible"
                                         variants={variants}
                                     >
-                                        <ResearchPaperItem
+                                        <ResearchPaperItemNew
                                             title={paper.title}
                                             total_citations={paper.total_citations}
                                             year={paper.year}
@@ -229,6 +230,7 @@ const ResearchPapers: React.FC = () => {
                                             issue={paper.issue}
                                             book={paper.book}
                                             img={paper.img}
+                                            authors={paper.authors}
                                         />
                                     </motion.div>
                                 ))}

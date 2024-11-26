@@ -47,7 +47,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 
                     {/* Course Info */}
                     <Box flex="1">
-                        <Heading as="h3" size="lg" mb={2}>
+                        <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }}>
                             {course.title}
                         </Heading>
 

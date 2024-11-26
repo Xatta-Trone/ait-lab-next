@@ -7,11 +7,11 @@ import RecentNews from "@/components/Homepage/RecentNews";
 import BookSection from "@/components/Homepage/BookSection";
 import ContactSection from "@/components/Homepage/ContactSection";
 
-// Metadata Object
+// Metadata for the homepage, including SEO, Open Graph, and Twitter configuration
 export const metadata: Metadata = {
-  title: "AIT Lab - Innovation Meets Technology",
+  title: "AIT Lab - Innovation Meets Technology", // Page title
   description:
-    "Discover the AIT Lab – a hub for cutting-edge research, innovation, and technological advancements in AI and beyond. Explore projects, news, and resources to stay ahead.",
+    "Discover the AIT Lab – a hub for cutting-edge research, innovation, and technological advancements in AI and beyond. Explore projects, news, and resources to stay ahead.", // Short description for SEO
   keywords: [
     "AIT Lab",
     "Artificial Intelligence",
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     "AI Projects",
     "Tech Advancements",
     "Research Lab",
-  ],
+  ], // Keywords for search engines
   openGraph: {
-    title: "AIT Lab - Innovation Meets Technology",
+    title: "AIT Lab - Innovation Meets Technology", // Open Graph title
     description:
-      "Explore the AIT Lab's innovative projects and advancements in AI and technology. Stay connected with the latest in research and development.",
-    url: "https://ait-lab.vercel.app",
+      "Explore the AIT Lab's innovative projects and advancements in AI and technology. Stay connected with the latest in research and development.", // Open Graph description
+    url: "https://ait-lab.vercel.app", // Canonical URL for the site
     siteName: "AIT Lab",
     images: [
       {
-        url: "/logo_big_black.png", // Ensure this image is placed in the public folder
+        url: "/logo_big_black.png", // Open Graph preview image
         alt: "AIT Lab Logo",
       },
     ],
@@ -38,40 +38,43 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "AIT Lab - Innovation Meets Technology",
+    card: "summary_large_image", // Twitter card type
+    title: "AIT Lab - Innovation Meets Technology", // Title for Twitter preview
     description:
-      "Discover the forefront of technology and innovation at AIT Lab. Dive into our projects, news, and AI advancements.",
-    images: ["/logo_big_black.png"],
+      "Discover the forefront of technology and innovation at AIT Lab. Dive into our projects, news, and AI advancements.", // Description for Twitter preview
+    images: ["/logo_big_black.png"], // Twitter preview image
   },
   robots: {
-    index: true,
-    follow: true,
+    index: true, // Allow search engines to index this page
+    follow: true, // Allow search engines to follow links
   },
   alternates: {
-    canonical: "https://ait-lab.vercel.app",
+    canonical: "https://ait-lab.vercel.app", // Prevent duplicate content issues
   },
-  themeColor: "#b7791f",
-  manifest: "/site.webmanifest",
+  themeColor: "#b7791f", // Theme color for the browser's address bar
+  manifest: "/site.webmanifest", // Path to the web app manifest
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
   },
 };
 
-// Home Component
+// Main homepage component with sections for hero, projects, news, books, and contact
 export default function Home() {
   return (
     <>
+      {/* Hero section with a background animation and welcome content */}
       <Box position="relative" mt="-80px" height="calc(100vh + 100px)">
-        <HeroParticles />
-        <Hero />
+        <HeroParticles /> {/* Particle effects for visual enhancement */}
+        <Hero /> {/* Main content of the hero section */}
       </Box>
+
+      {/* Sections for projects, news, books, and contact details */}
       <Box w="100vw">
-        <ProjectsSection />
-        <RecentNews />
-        <BookSection />
-        <ContactSection />
+        <ProjectsSection /> {/* Highlights lab projects */}
+        <RecentNews /> {/* Displays the latest news and updates */}
+        <BookSection /> {/* Features related books or resources */}
+        <ContactSection /> {/* Contact form and lab contact details */}
       </Box>
     </>
   );

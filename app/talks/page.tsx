@@ -1,8 +1,8 @@
 /** @format */
-"use client";
+"use client"; // Enables client-side rendering for this component
 
 import React, { useEffect } from "react";
-import Head from "next/head"; // Import Head for metadata management
+import Head from "next/head"; // Import Head for managing metadata
 import {
     Box,
     Container,
@@ -14,20 +14,21 @@ import {
     Stack,
     Flex,
 } from "@chakra-ui/react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import talksData from "@/data/talk.json";
+import { ExternalLinkIcon } from "@chakra-ui/icons"; // Icon for external links
+import talksData from "@/data/talk.json"; // Import talks data
 
 const Talk = () => {
+    // Dynamically set the document title when the component mounts
     useEffect(() => {
-        document.title = "Talks | AIT Lab"; // Dynamically set page title
+        document.title = "Talks | AIT Lab";
     }, []);
 
-    // Access the items array and sort by year in descending order
+    // Sort talks data by year in descending order
     const sortedTalks = talksData.items.sort((a, b) => b.year - a.year);
 
     return (
         <>
-            {/* Metadata */}
+            {/* Metadata for SEO and social sharing */}
             <Head>
                 <title>Talks & Media | AIT Lab</title>
                 <meta
@@ -66,11 +67,12 @@ const Talk = () => {
             {/* Page Content */}
             <Box py={20}>
                 <Container maxW="container.xl">
+                    {/* Main Heading */}
                     <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                         Talks & Media
                     </Heading>
 
-                    {/* List of talks */}
+                    {/* List of Talks */}
                     <Stack spacing={3}>
                         {sortedTalks.map((talk, index) => (
                             <LinkBox
@@ -81,12 +83,13 @@ const Talk = () => {
                                 borderWidth="1px"
                                 borderRadius="md"
                                 bg="white"
-                                _hover={{ shadow: "lg", transform: "translateY(-5px)" }}
+                                _hover={{ shadow: "lg", transform: "translateY(-5px)" }} // Hover effect for elevation
                                 transition="all 0.3s ease"
-                                cursor={talk.link ? "pointer" : "default"}
+                                cursor={talk.link ? "pointer" : "default"} // Cursor changes if there's a link
                             >
+                                {/* Flex container for group and year */}
                                 <Flex justify="space-between" align="center" mb={2}>
-                                    {/* Badge for the group */}
+                                    {/* Badge for group type */}
                                     <Badge
                                         variant="solid"
                                         colorScheme={talk.group === "media" ? "blackAlpha" : "gray"}
@@ -95,17 +98,17 @@ const Talk = () => {
                                         {talk.group}
                                     </Badge>
 
-                                    {/* Year */}
+                                    {/* Year of the talk */}
                                     <Text fontWeight="bold" color="gray.500" fontSize="md">
                                         {talk.year}
                                     </Text>
                                 </Flex>
 
-                                {/* Content and optional link */}
+                                {/* Content of the talk with optional link */}
                                 <Text color="gray.700" fontSize="lg">
                                     {talk.link ? (
                                         <LinkOverlay href={talk.link} isExternal>
-                                            {talk.content} <ExternalLinkIcon mx="2px" />
+                                            {talk.content} <ExternalLinkIcon mx="2px" /> {/* External link icon */}
                                         </LinkOverlay>
                                     ) : (
                                         talk.content
@@ -120,4 +123,4 @@ const Talk = () => {
     );
 };
 
-export default Talk;
+export default Talk; // Export the Talk component

@@ -1,25 +1,27 @@
 /** @format */
-"use client";
+"use client"; // Enables client-side rendering for this component
 
 import React, { useState, useEffect } from "react";
 import Head from "next/head"; // Import Head for managing metadata
 import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
-import coursesData from "@/data/courses.json";
-import CourseCard from "@/components/CourseCard";
+import coursesData from "@/data/courses.json"; // Import courses data from JSON
+import CourseCard from "@/components/CourseCard"; // Component to display individual course cards
 
-// Apply types to the JSON data from courses.json
+// Apply types to the JSON data for type safety
 const typedCoursesData: CourseTypes[] = coursesData as CourseTypes[];
 
 const Courses: React.FC = () => {
+    // State to hold the list of courses
     const [courses, setCourses] = useState<CourseTypes[]>([]);
 
+    // Populate the courses state with data from JSON on component mount
     useEffect(() => {
         setCourses(typedCoursesData);
     }, []);
 
     return (
         <>
-            {/* Metadata */}
+            {/* Metadata for SEO and social sharing */}
             <Head>
                 <title>Courses | AIT Lab</title>
                 <meta
@@ -58,21 +60,23 @@ const Courses: React.FC = () => {
             {/* Page Content */}
             <Box py={20}>
                 <Container maxW="container.xl">
+                    {/* Page heading */}
                     <Heading as="h1" size="2xl" mb={6} color="yellow.600">
                         Courses
                     </Heading>
 
-                    {/* Courses */}
+                    {/* Courses Section */}
                     <Box>
+                        {/* Render course cards if courses are available */}
                         {courses.length > 0 && (
                             <Stack spacing={6}>
                                 {courses.map((course, index) => (
-                                    <CourseCard key={index} course={course} />
+                                    <CourseCard key={index} course={course} /> // Render a CourseCard for each course
                                 ))}
                             </Stack>
                         )}
 
-                        {/* No Courses Found */}
+                        {/* Show a message if no courses are found */}
                         {courses.length === 0 && (
                             <Box textAlign="center" py={6}>
                                 <Text color="gray.700">No courses found</Text>
@@ -85,4 +89,4 @@ const Courses: React.FC = () => {
     );
 };
 
-export default Courses;
+export default Courses; // Export the Courses component as the default export
