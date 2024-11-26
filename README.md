@@ -133,7 +133,7 @@ Detailed developer documentation is available in the `docs/` folder. Key guides 
 
 For questions or support, contact the maintainers:
 
-- **Monzurul Md Islam**  
+- **Md Monzurul Islam**  
   GitHub: [@Xatta-Trone](https://github.com/Xatta-Trone)
 - **Gaurab Chhetri**  
   GitHub: [@gauravfs-14](https://github.com/gauravfs-14)
