@@ -1,11 +1,12 @@
 import React, { Suspense } from "react";
 import Head from "next/head"; // Import Head for managing metadata
-import Research from "@/components/ResearchPage";
+import Research from "@/components/ResearchPage"; // Component to display projects and grants
+import { Box, Spinner } from "@chakra-ui/react"; // Chakra UI components for styling and loading spinner
 
 const ResearchPage = () => {
     return (
         <>
-            {/* Metadata */}
+            {/* Metadata for SEO and social sharing */}
             <Head>
                 <title>Projects and Grants | AIT Lab</title>
                 <meta
@@ -42,11 +43,19 @@ const ResearchPage = () => {
             </Head>
 
             {/* Page Content */}
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense
+                fallback={
+                    <Box textAlign="center" py={6}>
+                        {/* Fallback UI with a loading spinner while ResearchPage is loading */}
+                        <Spinner size="xl" color="yellow.500" />
+                    </Box>
+                }
+            >
+                {/* Main content: Research component */}
                 <Research />
             </Suspense>
         </>
     );
 };
 
-export default ResearchPage;
+export default ResearchPage; // Export the ResearchPage component
