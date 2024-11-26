@@ -13,16 +13,16 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
             bg="white"
             _hover={{ shadow: "lg", transform: "translateY(-10px)" }}
             transition="all 0.3s ease"
-            height="400px" // Set a fixed height for all cards
+            height="500px" // Set a fixed height for all cards
             display="flex"
             flexDirection="column"
             justifyContent="space-between"
             textAlign="left"
         >
             {/* Image Container */}
-            <Box overflow="hidden" borderRadius="md" height="200px" position="relative">
+            <Box overflow="hidden" borderRadius="md" height="300px" position="relative">
                 <Image
-                    src={`/img/proj_grants/${project.image}`}
+                    src={`/img/new_proj_grant/${project.image}`}
                     alt={project.title}
                     borderRadius="md"
                     height="100%"
@@ -35,7 +35,7 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
             </Box>
 
             {/* Project Title */}
-            <Stack spacing={1} my={"5"} flex="1" justify="center">
+            <Stack spacing={1} my={"5"} flex="1">
                 {project.link ? (
                     <Link href={project.link} isExternal>
                         <Heading as="h3" size={{ base: "sm", md: "md" }} _hover={{ color: "yellow.600" }}>

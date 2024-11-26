@@ -37,9 +37,6 @@ const itemVariants = {
 };
 
 const RecentNews = () => {
-    useEffect(() => {
-        document.title = "Recent News | Your Site Name"; // Set dynamic page title
-    }, []);
 
     // Get the four most recent news items and parse dates for sorting
     const recentNewsItems = newsData

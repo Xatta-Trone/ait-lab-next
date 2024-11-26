@@ -68,7 +68,7 @@ const ProjectsSwiper = () => {
                     display="flex"
                     flexDirection="column"
                     justifyContent="center"
-                    height="400px" // Same fixed height
+                    height="500px" // Same fixed height
                 >
                     <Box textAlign="center">
                         <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2}>
