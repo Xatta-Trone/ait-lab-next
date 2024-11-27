@@ -33,11 +33,12 @@ const GrantCard = (props: { grant: GrantTypes }) => {
                 {/* Grant Image */}
                 <Box flexShrink={0} mr={6}>
                     <Image
-                        src={`/img/new_proj_grant/${grant.image}`}
+                        src={`/img/stock_projs/${grant.image}`}
+                        // src={`/img/new_proj_grant/${grant.image}`}
                         alt={grant.title}
                         borderRadius="md"
                         boxSize={{ base: "200px", md: "250px" }}
-                        objectFit="contain"
+                        objectFit="cover"
                         fallbackSrc="/img/grants/default.png"
                     />
                 </Box>
