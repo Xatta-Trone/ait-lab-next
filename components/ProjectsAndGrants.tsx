@@ -3,7 +3,8 @@
 import React, { useEffect, useState, useRef, useCallback, useMemo } from "react";
 import { Box, Container, Input, Select, Stack, Text, Button, Center, Spinner } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import projectsData from "@/data/projs_and_grants.json";
+import projectsData from "@/data/stock_projs_grants.json";
+// import projectsData from "@/data/projs_and_grants.json";
 import ProjectCard from "@/components/ProjectCard";
 import GrantCard from "@/components/GrantCard";
 
