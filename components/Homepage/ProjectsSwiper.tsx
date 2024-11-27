@@ -4,7 +4,7 @@ import 'swiper/css'; // Swiper core styles
 import 'swiper/css/pagination'; // Swiper pagination styles
 import 'swiper/css/autoplay'; // Swiper autoplay styles
 import { Pagination, Autoplay, Navigation } from 'swiper/modules'; // Swiper modules
-import projsAndGrants from "@/data/projs_and_grants.json"; // JSON data for projects and grants
+import projsAndGrants from "@/data/stock_projs_grants.json"; // JSON data for projects and grants
 import ProjectSwiperCard from './ProjectSwiperCard'; // Custom component for individual project cards
 import { Box, Button, Heading, Link, Text } from '@chakra-ui/react'; // Chakra UI components
 

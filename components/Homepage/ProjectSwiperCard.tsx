@@ -31,7 +31,7 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
                 position="relative" // Set relative positioning for child elements
             >
                 <Image
-                    src={`/img/new_proj_grant/${project.image}`} // Dynamic image source based on project data
+                    src={`/img/stock_projs/${project.image}`} // Dynamic image source based on project data
                     alt={project.title} // Alt text for accessibility
                     borderRadius="md" // Rounded corners for the image
                     height="100%" // Image fills the container height
