@@ -44,7 +44,7 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
             </Box>
 
             {/* Project Title */}
-            <Stack spacing={1} my={"5"} flex="1"> {/* Ensure some spacing between title and image */}
+            <Stack spacing={1} my="5" flex="1"> {/* Ensure some spacing between title and image */}
                 {project.link ? (
                     // If the project has a link, wrap the title in a clickable link
                     <Link href={project.link} isExternal>
@@ -52,6 +52,13 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
                             as="h3"
                             size={{ base: "sm", md: "md" }} // Responsive font size
                             _hover={{ color: "yellow.600" }} // Change color on hover
+                            sx={{
+                                display: "-webkit-box",
+                                WebkitLineClamp: 3, // Limit to 3 lines
+                                WebkitBoxOrient: "vertical",
+                                overflow: "hidden",
+                                textOverflow: "ellipsis",
+                            }}
                         >
                             {project.number && `${project.number} : `} {/* Show project number if available */}
                             {project.title}
@@ -59,12 +66,23 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
                     </Link>
                 ) : (
                     // If no link, display the title as a plain heading
-                    <Heading as="h3" size={{ base: "sm", md: "md" }}>
+                    <Heading
+                        as="h3"
+                        size={{ base: "sm", md: "md" }}
+                        sx={{
+                            display: "-webkit-box",
+                            WebkitLineClamp: 3, // Limit to 3 lines
+                            WebkitBoxOrient: "vertical",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                        }}
+                    >
                         {project.number && `${project.number} : `}
                         {project.title}
                     </Heading>
                 )}
             </Stack>
+
 
             {/* Link to Project Details */}
             {project.link && (
