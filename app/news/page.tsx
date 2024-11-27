@@ -21,7 +21,7 @@ const NewsPage = () => {
                 <link rel="canonical" href="https://ait-lab.vercel.app/news" />
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/New_AIT_Favicon.png" />
                 <meta property="og:title" content="News | AIT Lab" />
                 <meta
                     property="og:description"

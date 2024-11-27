@@ -57,9 +57,11 @@ const ContactSection = () => {
                             initial={{ opacity: 0, y: 50 }} // Initial state before animation
                         >
                             <Image
-                                src="/logo_big_white.png" // Logo image
+                                src="/Free_New_White_AIT_Logo.png"
+                                // src="/New_WH_Circle_AIT_Logo.png"
+                                // src="/New_WHBG_AIT_Logo.png"
                                 alt="Artificial Intelligence in Highway Safety"
-                                borderRadius="sm"
+                                borderRadius="xl"
                                 width={"100%"}
                                 objectFit="contain" // Maintain aspect ratio
                             />

@@ -54,8 +54,8 @@ export const metadata: Metadata = {
   themeColor: "#b7791f", // Theme color for the browser's address bar
   manifest: "/site.webmanifest", // Path to the web app manifest
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: "/New_AIT_Favicon.png",
+    shortcut: "/New_AIT_Favicon.png",
   },
 };
 

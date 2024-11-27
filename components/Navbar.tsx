@@ -62,12 +62,14 @@ function Navbar() {
                 <Flex h="100%" alignItems="center" justifyContent="space-between">
                     <Link href="/">
                         <Image
-                            src="/img/logo-white.png"
+                            src="2.1New_White_Horizontal_AIT_Logo.png"
                             alt="AIT Lab Logo"
-                            boxSize={scrolled ? "50px" : "70px"}
-                            objectFit="contain"
+                            height={scrolled ? '50px' : '70px'}
+                            // boxSize={scrolled ? "50px" : "70px"}
+                            objectFit="cover"
                             cursor="pointer"
                             transition="all 0.3s ease"
+                            py={scrolled ? 1 : 2}
                         />
                     </Link>
 

@@ -100,7 +100,7 @@ ait-lab-next/
 - **Purpose:** Stores static assets that are publicly accessible.
 - **Key Files:**
   - `img/`: Subfolder for images used in the project.
-  - `favicon.ico`: The favicon for the site.
+  - `New_AIT_Favicon.png`: The favicon for the site.
   - `sitemap.xml`: Auto-generated sitemap for SEO purposes.
   - `robots.txt`: Instructions for web crawlers.
   - `manifest.json`: Web app manifest file for PWA support.
