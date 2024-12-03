@@ -20,6 +20,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="shortcut icon" href="New_AIT_Favicon.png" type="image/x-icon" />
       </head>
       <body style={{ backgroundColor: "white", overflowX: "hidden" }}>
         {/* Add ColorModeScript for proper color mode hydration during SSR */}
