@@ -22,5 +22,9 @@
   {
     "name": "News",
     "path": "/news"
+  },
+  {
+    "name": "Tools",
+    "path": "/tools"
   }
 ]
