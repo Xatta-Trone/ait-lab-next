@@ -1,5 +1,18 @@
 import React from "react";
-import { Box, Flex, Heading, Text, Stack, Badge, Button, Image, List, ListItem, ListIcon, Link } from "@chakra-ui/react";
+import {
+    Box,
+    Flex,
+    Heading,
+    Text,
+    Stack,
+    Badge,
+    Button,
+    Image,
+    List,
+    ListItem,
+    ListIcon,
+    Link,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
@@ -11,17 +24,16 @@ const LabToolsCard: React.FC<LabTools> = ({
     links,
     image,
 }) => {
-
     return (
         <motion.div
             initial="hidden"
             animate="visible"
             variants={{
-                hidden: { opacity: 0, y: 50 },
+                hidden: { opacity: 0, y: 50 }, // Initial hidden state
                 visible: {
                     opacity: 1,
                     y: 0,
-                    transition: { duration: 0.5 },
+                    transition: { duration: 0.5 }, // Smooth transition
                 },
             }}
         >
@@ -33,7 +45,7 @@ const LabToolsCard: React.FC<LabTools> = ({
                 bg="white"
                 _hover={{
                     shadow: "xl",
-                    transform: "translateY(-10px)",
+                    transform: "translateY(-10px)", // Hover effect: Elevate and move up slightly
                 }}
                 transition="all 0.3s ease-in-out"
                 width="100%"
@@ -42,29 +54,28 @@ const LabToolsCard: React.FC<LabTools> = ({
                     {/* Tool Image */}
                     <Box flexShrink={0} mr={6}>
                         <Image
-                            src={`/img/lab_tools/${image}`}
+                            src={`/img/lab_tools/${image}`} // Dynamic path for the image
                             alt={title}
                             borderRadius="md"
-                            boxSize={{ base: "200px", md: "250px" }}
+                            boxSize={{ base: "200px", md: "250px" }} // Responsive sizing
                             objectFit="cover"
-                            fallbackSrc='/New_AIT_Favicon.png'
+                            fallbackSrc="/New_AIT_Favicon.png" // Default fallback image
                         />
                     </Box>
 
-                    {/* Tool Info */}
+                    {/* Tool Information */}
                     <Box flex="1">
+                        {/* Tool Title */}
                         <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }}>
                             {title}
                         </Heading>
 
-                        {/* <Text fontSize="md" color="gray.700" mb={4}>
-                            {project}
-                        </Text> */}
-
+                        {/* Tool Description */}
                         <Text fontSize="md" color="gray.700" mb={4}>
                             {description}
                         </Text>
 
+                        {/* Additional Links Section */}
                         {links.length > 0 && (
                             <>
                                 <Text fontSize="lg" color="gray.600" mb={1}>
@@ -74,7 +85,13 @@ const LabToolsCard: React.FC<LabTools> = ({
                                     {links.map((link, index) => (
                                         <ListItem key={index}>
                                             <ListIcon as={ChevronRightIcon} color="yellow.600" />
-                                            <Link href={link.url} target="_blank" rel="noopener noreferrer" color="yellow.600" _hover={{ color: "yellow.500", textDecoration: "underline" }}>
+                                            <Link
+                                                href={link.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                color="yellow.600"
+                                                _hover={{ color: "yellow.500", textDecoration: "underline" }}
+                                            >
                                                 {link.label}
                                             </Link>
                                         </ListItem>
@@ -82,9 +99,16 @@ const LabToolsCard: React.FC<LabTools> = ({
                                 </List>
                             </>
                         )}
+
+                        {/* Project Badge */}
                         {project && (
                             <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
-                                <Badge variant="outline" fontSize="sm" borderRadius={"lg"} style={{ paddingLeft: "8px", paddingRight: "8px", paddingTop: "2px", paddingBottom: "2px" }}>
+                                <Badge
+                                    variant="outline"
+                                    fontSize="sm"
+                                    borderRadius={"lg"}
+                                    style={{ padding: "2px 8px" }}
+                                >
                                     {project}
                                 </Badge>
                             </Stack>
