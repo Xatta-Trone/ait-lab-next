@@ -16,6 +16,8 @@ const Courses: React.FC = () => {
 
     // Populate the courses state with data from JSON on component mount
     useEffect(() => {
+        // Set page title dynamically
+        document.title = "Courses - Artificial Intelligence in Transportation Lab (AIT Lab";
         setCourses(typedCoursesData);
     }, []);
 
@@ -23,7 +25,7 @@ const Courses: React.FC = () => {
         <>
             {/* Metadata for SEO and social sharing */}
             <Head>
-                <title>Courses | AIT Lab</title>
+                <title>Courses - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Explore the wide range of courses offered by AIT Lab. From Artificial Intelligence to Machine Learning, these courses are designed to help you master modern technologies."
@@ -37,7 +39,7 @@ const Courses: React.FC = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="Courses | AIT Lab" />
+                <meta property="og:title" content="Courses - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Discover the variety of courses offered by AIT Lab, designed to help you excel in cutting-edge technologies like Artificial Intelligence and Machine Learning."
@@ -49,7 +51,7 @@ const Courses: React.FC = () => {
                 <meta property="og:image" content="/logo_big_black.png" />
                 <meta property="og:image:alt" content="AIT Lab Logo" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Courses | AIT Lab" />
+                <meta name="twitter:title" content="Courses - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Explore cutting-edge courses offered by AIT Lab, focusing on AI, Machine Learning, and modern technologies."

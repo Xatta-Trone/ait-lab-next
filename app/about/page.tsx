@@ -20,7 +20,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const AboutMe = () => {
     useEffect(() => {
-        document.title = "About | AIT Lab";
+        document.title = "About Subasish Das - Artificial Intelligence in Transportation Lab (AIT Lab)";
     }, []);
 
     return (
@@ -28,7 +28,7 @@ const AboutMe = () => {
 
             {/* Metadata */}
             <Head>
-                <title>About Subasish Das | AIT Lab</title>
+                <title>About Subasish Das - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Learn more about Subasish Das, a tenure-track Assistant Professor of Civil Engineering at Texas State University, with over 13 years of experience in roadway safety, traffic operations, and CAV technologies."
@@ -42,7 +42,7 @@ const AboutMe = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="About Subasish Das | AIT Lab" />
+                <meta property="og:title" content="About Subasish Das - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Explore the journey and expertise of Subasish Das, an Assistant Professor with over 13 years of experience in roadway safety, traffic operations, and AI applications in transportation."
@@ -54,7 +54,7 @@ const AboutMe = () => {
                 <meta property="og:image" content="/img/das.jpg" />
                 <meta property="og:image:alt" content="Subasish Das" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="About Subasish Das | AIT Lab" />
+                <meta name="twitter:title" content="About Subasish Das - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Discover the professional journey of Subasish Das, an expert in AI and transportation research."

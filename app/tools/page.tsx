@@ -8,7 +8,7 @@ const Page = () => {
         <>
             {/* Page Metadata */}
             <Head>
-                <title>Tools | AIT Lab</title>
+                <title>Tools - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Explore the extensive list of tools from AIT Lab, showcasing advancements in artificial intelligence, transportation safety, and spatiotemporal modeling."
@@ -24,7 +24,7 @@ const Page = () => {
                 <link rel="icon" href="/New_AIT_Favicon.png" />
 
                 {/* Open Graph Metadata for Social Media */}
-                <meta property="og:title" content="Tools | AIT Lab" />
+                <meta property="og:title" content="Tools - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Discover impactful tools from AIT Lab, focusing on artificial intelligence, transportation safety, and innovative methodologies."
@@ -41,7 +41,7 @@ const Page = () => {
 
                 {/* Twitter Metadata */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Tools | AIT Lab" />
+                <meta name="twitter:title" content="Tools - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Browse the extensive list of tools from AIT Lab, highlighting groundbreaking advancements in AI and transportation safety."

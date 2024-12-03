@@ -20,7 +20,7 @@ import talksData from "@/data/talk.json"; // Import talks data
 const Talk = () => {
     // Dynamically set the document title when the component mounts
     useEffect(() => {
-        document.title = "Talks | AIT Lab";
+        document.title = "Talks - Artificial Intelligence in Transportation Lab (AIT Lab)";
     }, []);
 
     // Sort talks data by year in descending order
@@ -30,7 +30,7 @@ const Talk = () => {
         <>
             {/* Metadata for SEO and social sharing */}
             <Head>
-                <title>Talks & Media | AIT Lab</title>
+                <title>Talks & Media - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Explore the latest talks and media appearances by AIT Lab and Dr. Subasish Das, featuring discussions on artificial intelligence, transportation safety, and spatiotemporal modeling."
@@ -44,7 +44,7 @@ const Talk = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="Talks & Media | AIT Lab" />
+                <meta property="og:title" content="Talks & Media - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Discover talks and media features by AIT Lab and Dr. Subasish Das, exploring AI, transportation safety, and advanced research."
@@ -56,7 +56,7 @@ const Talk = () => {
                 <meta property="og:image" content="/logo_big_black.png" />
                 <meta property="og:image:alt" content="AIT Lab Logo" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Talks & Media | AIT Lab" />
+                <meta name="twitter:title" content="Talks & Media - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Stay updated with AIT Lab's latest talks and media features on AI and transportation safety."

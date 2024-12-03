@@ -36,7 +36,7 @@ const ResearchPapers: React.FC = () => {
     const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
     useEffect(() => {
-        document.title = "Research Papers | AIT Lab";
+
 
         const fetchPapers = async () => {
             try {

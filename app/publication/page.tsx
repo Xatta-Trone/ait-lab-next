@@ -1,14 +1,19 @@
-import React, { Suspense } from "react";
+"use client"
+
+import React, { Suspense, useEffect } from "react";
 import Head from "next/head"; // Import Head for metadata management
 import ResearchPapers from "@/components/ResearchPapers"; // Component to display the list of research papers
 import { Box, Spinner } from "@chakra-ui/react"; // Chakra UI components for styling and loading spinner
 
 const PublicationPage = () => {
+    useEffect(() => {
+        document.title = "Publications - Artificial Intelligence in Transportation Lab (AIT Lab)";
+    }, []);
     return (
         <>
             {/* Metadata for SEO and social sharing */}
             <Head>
-                <title>Publications | AIT Lab</title>
+                <title>Publications - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Explore the extensive list of research publications from AIT Lab, showcasing advancements in artificial intelligence, transportation safety, and spatiotemporal modeling."
@@ -22,7 +27,7 @@ const PublicationPage = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="Publications | AIT Lab" />
+                <meta property="og:title" content="Publications - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Discover impactful research publications from AIT Lab, focusing on artificial intelligence, transportation safety, and innovative methodologies."
@@ -37,7 +42,7 @@ const PublicationPage = () => {
                 <meta property="og:image" content="/logo_big_black.png" />
                 <meta property="og:image:alt" content="AIT Lab Logo" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Publications | AIT Lab" />
+                <meta name="twitter:title" content="Publications - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Browse the extensive list of academic research papers and publications from AIT Lab, highlighting groundbreaking advancements in AI and transportation safety."

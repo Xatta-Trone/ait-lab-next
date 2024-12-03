@@ -13,7 +13,7 @@ const typedLabToolsData: LabTools[] = labToolsData as LabTools[];
 const LabToolsPage: React.FC = () => {
     // Set the document title dynamically
     useEffect(() => {
-        document.title = "Tools | AIT Lab";
+        document.title = "Tools - Artificial Intelligence in Transportation Lab (AIT Lab)";
     });
 
     const router = useRouter();

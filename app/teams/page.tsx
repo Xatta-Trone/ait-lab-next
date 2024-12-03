@@ -38,7 +38,7 @@ const cardVariants = {
 const Team: React.FC = () => {
     // Dynamically update the page title
     useEffect(() => {
-        document.title = "Team | AIT Lab";
+        document.title = "Team - Artificial Intelligence in Transportation Lab (AIT Lab)";
     }, []);
 
     // State to manage the selected team member for the modal
@@ -61,7 +61,7 @@ const Team: React.FC = () => {
         <>
             {/* Metadata for SEO and social sharing */}
             <Head>
-                <title>Team | AIT Lab</title>
+                <title>Team - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Meet the brilliant team members, fellows, and alumni of AIT Lab, contributing to cutting-edge research in artificial intelligence and transportation safety."
@@ -75,7 +75,7 @@ const Team: React.FC = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="Team | AIT Lab" />
+                <meta property="og:title" content="Team - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Explore the profiles of the AIT Lab team, including current members, fellows, and alumni, contributing to groundbreaking research."
@@ -87,7 +87,7 @@ const Team: React.FC = () => {
                 <meta property="og:image" content="/logo_big_black.png" />
                 <meta property="og:image:alt" content="AIT Lab Logo" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Team | AIT Lab" />
+                <meta name="twitter:title" content="Team - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Learn about the dedicated team of researchers, fellows, and alumni driving innovation at AIT Lab."

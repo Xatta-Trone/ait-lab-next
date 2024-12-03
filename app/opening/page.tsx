@@ -19,14 +19,14 @@ import { FaCheckCircle } from "react-icons/fa"; // Import check icon for list it
 const Openings = () => {
     // Set the page title dynamically when the component mounts
     useEffect(() => {
-        document.title = "Openings | AIT Lab";
+        document.title = "Openings - Artificial Intelligence in Transportation Lab (AIT Lab)";
     }, []);
 
     return (
         <>
             {/* Metadata for SEO and social sharing */}
             <Head>
-                <title>Openings | AIT Lab</title>
+                <title>Openings - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Explore the latest openings at AIT Lab, including GRA and GIA positions in the Civil Engineering program under Dr. Subasish Das."
@@ -40,7 +40,7 @@ const Openings = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="Openings | AIT Lab" />
+                <meta property="og:title" content="Openings - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Discover exciting opportunities at AIT Lab, including GRA and GIA positions in Civil Engineering, focusing on AI, spatiotemporal modeling, and transportation safety."
@@ -52,7 +52,7 @@ const Openings = () => {
                 <meta property="og:image" content="/logo_big_black.png" />
                 <meta property="og:image:alt" content="AIT Lab Logo" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Openings | AIT Lab" />
+                <meta name="twitter:title" content="Openings - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Explore GRA and GIA opportunities at AIT Lab in cutting-edge research areas such as AI and transportation safety."
