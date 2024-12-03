@@ -121,7 +121,7 @@ const BookSection = () => {
             {/* Decorative SVG shape divider */}
             <Box
                 position="absolute"
-                bottom={0}
+                bottom={-1}
                 w={"100%"}
                 overflowX={"hidden"}
                 zIndex={1}
