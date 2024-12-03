@@ -68,6 +68,7 @@ function Navbar() {
                             objectFit="cover"
                             cursor="pointer"
                             transition="all 0.3s ease"
+                            pb={{ md: scrolled ? 2 : 4 }}
                         />
                     </Link>
 
