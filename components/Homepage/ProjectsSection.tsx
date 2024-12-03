@@ -1,12 +1,13 @@
 "use client";
 
-import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react'; // Chakra UI components
+import { Box, Container, Heading, useColorMode, useColorModeValue } from '@chakra-ui/react'; // Chakra UI components
 import React from 'react';
 import ProjectsSwiper from './ProjectsSwiper'; // Import the Swiper component for project cards
 
 const ProjectsSection = () => {
-    const bgColor = useColorModeValue("background.light", "gray.700");
-    const headingColor = useColorModeValue("yellow.600", "heading.dark");
+    const { colorMode } = useColorMode();
+    const bgColor = useColorModeValue("white", "gray.700");
+    const headingColor = useColorModeValue("yellow.600", "white");
     return (
         <>
             {/* Projects Section */}
@@ -56,7 +57,7 @@ const ProjectsSection = () => {
                     >
                         <path
                             d="M1200 120L0 16.48 0 0 1200 0 1200 120z" // Path for the SVG shape
-                            className="yellow-fill" // Custom CSS class for fill color
+                            className="yellow-fill" style={{ fill: colorMode === 'light' ? "#fffff0" : "#4a5568" }} // Custom CSS class for fill color
                         ></path>
                     </svg>
                 </Box>
