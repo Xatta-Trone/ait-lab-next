@@ -58,18 +58,16 @@ function Navbar() {
             bg={isHomepage && !scrolled ? "transparent" : "yellow.600"} // Change background based on the page
             boxShadow={scrolled ? "md" : "none"}
         >
-            <Container maxW="container.xl" px={{ base: "10", md: "10" }}>
+            <Container maxW="container.xl" px={{ base: "10", md: "10" }} py={scrolled ? 1 : 2}>
                 <Flex h="100%" alignItems="center" justifyContent="space-between">
                     <Link href="/">
                         <Image
                             src="2.1New_White_Horizontal_AIT_Logo.png"
                             alt="AIT Lab Logo"
-                            height={scrolled ? '50px' : '70px'}
-                            // boxSize={scrolled ? "50px" : "70px"}
+                            height={{ base: scrolled ? '30px' : '40px', md: scrolled ? '50px' : '70px' }}
                             objectFit="cover"
                             cursor="pointer"
                             transition="all 0.3s ease"
-                            py={scrolled ? 1 : 2}
                         />
                     </Link>
 
