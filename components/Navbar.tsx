@@ -19,14 +19,18 @@ import {
     DrawerContent,
     DrawerOverlay,
     useDisclosure,
+    Icon,
+    useColorMode,
 } from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
+import { MdDarkMode, MdLightMode } from "react-icons/md"
 
 function Navbar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const pathname = usePathname();
     const [isMounted, setIsMounted] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const { colorMode, toggleColorMode } = useColorMode();
 
     useEffect(() => {
         setIsMounted(true);
@@ -72,47 +76,52 @@ function Navbar() {
                         />
                     </Link>
 
-                    <HStack as="nav" spacing={4} display={{ base: "none", lg: "flex" }}>
-                        {navLinks.map((item) => (
-                            <Link key={item.path} href={item.path} passHref>
-                                <Text
-                                    fontSize="larger"
-                                    letterSpacing="wide"
-                                    color="white"
-                                    position="relative"
-                                    paddingBottom="3px"
-                                    transition="all 0.3s ease"
-                                    _before={{
-                                        content: '""',
-                                        position: "absolute",
-                                        width: isMounted && pathname === item.path ? "100%" : "0%",
-                                        height: "3px",
-                                        bottom: "-3px",
-                                        left: "0",
-                                        backgroundColor: "white",
-                                        transition: "width 0.3s ease-in-out",
-                                    }}
-                                    _hover={{
-                                        _before: {
-                                            width: "100%",
-                                        },
-                                    }}
-                                >
-                                    {item.name}
-                                </Text>
-                            </Link>
-                        ))}
-                    </HStack>
+                    <Flex gap={6}>
+                        <HStack as="nav" spacing={4} display={{ base: "none", lg: "flex" }}>
+                            {navLinks.map((item) => (
+                                <Link key={item.path} href={item.path} passHref>
+                                    <Text
+                                        fontSize="larger"
+                                        letterSpacing="wide"
+                                        color="white"
+                                        position="relative"
+                                        // paddingBottom="3px"
+                                        transition="all 0.3s ease"
+                                        _before={{
+                                            content: '""',
+                                            position: "absolute",
+                                            width: isMounted && pathname === item.path ? "100%" : "0%",
+                                            height: "3px",
+                                            bottom: "-3px",
+                                            left: "0",
+                                            backgroundColor: "white",
+                                            transition: "width 0.3s ease-in-out",
+                                        }}
+                                        _hover={{
+                                            _before: {
+                                                width: "100%",
+                                            },
+                                        }}
+                                    >
+                                        {item.name}
+                                    </Text>
+                                </Link>
+                            ))}
+                        </HStack>
 
-                    <IconButton
-                        size="md"
-                        icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-                        aria-label="Open Menu"
-                        display={{ lg: "none" }}
-                        onClick={onOpen}
-                        color="white"
-                        transition="all 0.3s ease"
-                    />
+                        <Icon as={colorMode === "light" ? MdDarkMode : MdLightMode} color={"white"} fontSize={"xl"} onClick={toggleColorMode} _hover={{ color: "whiteAlpha.800" }} cursor={"pointer"} />
+
+                        <IconButton
+                            size="md"
+                            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+                            aria-label="Open Menu"
+                            display={{ lg: "none" }}
+                            onClick={onOpen}
+                            color="white"
+                            transition="all 0.3s ease"
+                        />
+                    </Flex>
+
                 </Flex>
             </Container>
 
