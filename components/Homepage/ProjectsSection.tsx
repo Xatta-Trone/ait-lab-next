@@ -1,18 +1,21 @@
 "use client";
 
-import { Box, Container, Heading } from '@chakra-ui/react'; // Chakra UI components
+import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react'; // Chakra UI components
 import React from 'react';
 import ProjectsSwiper from './ProjectsSwiper'; // Import the Swiper component for project cards
 
 const ProjectsSection = () => {
+    const bgColor = useColorModeValue("background.light", "gray.700");
+    const headingColor = useColorModeValue("yellow.600", "heading.dark");
     return (
         <>
             {/* Projects Section */}
             <Box
-                bg="white" // Background color of the section
+                bg={bgColor} // Background color of the section
                 pb={40} // Padding at the bottom of the section
                 pt={"14"} // Padding at the top of the section
                 position={"relative"} // Set relative positioning for the section
+                zIndex={3}
             >
                 {/* Section Content */}
                 <Container
@@ -23,7 +26,7 @@ const ProjectsSection = () => {
                     {/* Section Heading */}
                     <Heading
                         as={"h2"} // Semantic HTML tag for heading
-                        color="yellow.600" // Text color
+                        color={headingColor} // Text color
                         marginBottom={"20"} // Space below the heading
                         fontSize={{ base: "4xl", md: "5xl" }} // Responsive font size
                     >

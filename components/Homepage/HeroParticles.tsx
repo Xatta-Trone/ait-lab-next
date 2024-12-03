@@ -4,12 +4,13 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react"; // Import tsParticles
 import { type Container, type ISourceOptions } from "@tsparticles/engine"; // Type definitions for tsParticles
 import { loadSlim } from "@tsparticles/slim"; // Slim version for reduced bundle size
-import { Box } from "@chakra-ui/react"; // Chakra UI components
+import { Box, useColorMode } from "@chakra-ui/react"; // Chakra UI components
 
 export const HeroParticles = () => {
     const [init, setInit] = useState(false); // State to track if particles engine is initialized
     const [videoLoaded, setVideoLoaded] = useState(false); // State to track if the video has loaded
     const videoRef = useRef<HTMLVideoElement | null>(null); // Ref for the background video
+    const { colorMode } = useColorMode()
 
     // Initialize the particles engine
     useEffect(() => {
@@ -192,7 +193,7 @@ export const HeroParticles = () => {
                     >
                         <path
                             d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-                            className="shape-fill"
+                            className="shape-fill" style={{ fill: colorMode === 'light' ? "#ffffff" : "#2d3748" }}
                         ></path>
                     </svg>
                 </Box>

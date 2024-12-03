@@ -6,9 +6,12 @@ import 'swiper/css/autoplay'; // Swiper autoplay styles
 import { Pagination, Autoplay, Navigation } from 'swiper/modules'; // Swiper modules
 import projsAndGrants from "@/data/stock_projs_grants.json"; // JSON data for projects and grants
 import ProjectSwiperCard from './ProjectSwiperCard'; // Custom component for individual project cards
-import { Box, Button, Heading, Link, Text } from '@chakra-ui/react'; // Chakra UI components
+import { Box, Button, Heading, Link, Text, useColorModeValue } from '@chakra-ui/react'; // Chakra UI components
 
 const ProjectsSwiper = () => {
+    const bgColor = useColorModeValue("white", "gray.600")
+    const color = useColorModeValue("gray.800", "whiteAlpha.900")
+
     const projectsData = projsAndGrants.projects; // Extract projects from the JSON data
 
     // Sort projects by start year (descending) and take the 4 most recent projects
@@ -67,7 +70,7 @@ const ProjectsSwiper = () => {
                     shadow="md" // Box shadow
                     borderWidth="1px" // Border styling
                     borderRadius="lg" // Rounded corners
-                    bg="white" // Background color
+                    bg={bgColor} // Background color
                     _hover={{
                         shadow: "xl", // Larger shadow on hover
                         transform: "translateY(-10px)", // Slight upward animation on hover
@@ -81,11 +84,11 @@ const ProjectsSwiper = () => {
                 >
                     <Box textAlign="center">
                         {/* Heading for the slide */}
-                        <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2}>
+                        <Heading as="h3" size={{ base: "sm", md: "md" }} mb={2} color={color}>
                             View All Projects
                         </Heading>
                         {/* Description text */}
-                        <Text fontSize={{ base: "small", md: "sm" }} color="gray.700" mb={4}>
+                        <Text fontSize={{ base: "small", md: "sm" }} color={color} mb={4}>
                             Explore our complete list of projects and find detailed information.
                         </Text>
                         {/* Link to the projects page */}

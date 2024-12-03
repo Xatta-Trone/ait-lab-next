@@ -22,7 +22,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         />
         <link rel="shortcut icon" href="New_AIT_Favicon.png" type="image/x-icon" />
       </head>
-      <body style={{ backgroundColor: "white", overflowX: "hidden" }}>
+      <body style={{ overflowX: "hidden" }}>
         {/* Add ColorModeScript for proper color mode hydration during SSR */}
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
 
