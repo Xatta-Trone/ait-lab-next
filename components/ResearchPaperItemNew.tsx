@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Heading, Text, Stack, Badge, Button, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Stack, Badge, Button, Image, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
@@ -12,6 +12,11 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
     img,
     authors
 }) => {
+
+    const bgColor = useColorModeValue("white", "gray.600");
+    const headingCol = useColorModeValue("gray.800", "whiteAlpha.900");
+    const textCol = useColorModeValue("gray.600", "whiteAlpha.800");
+
     const imageUrl = img
         ? `https://raw.githubusercontent.com/Xatta-Trone/google-scholar-scrapper/refs/heads/main/${img}`
         : `/img/research-default.jpg`;
@@ -34,7 +39,7 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
                 shadow="md"
                 borderWidth="1px"
                 borderRadius="lg"
-                bg="white"
+                bg={bgColor}
                 _hover={{
                     shadow: "xl",
                     transform: "translateY(-10px)",
@@ -57,17 +62,17 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
 
                     {/* Paper Info */}
                     <Box flex="1">
-                        <Heading as="h3" size="lg" mb={1} mt={{ base: 6, md: 0 }}>
+                        <Heading as="h3" size="lg" mb={1} mt={{ base: 6, md: 0 }} color={headingCol}>
                             {title}
                         </Heading>
 
-                        <Text fontSize="md" color="gray.700" mb={4}>
+                        <Text fontSize="md" color={textCol} mb={4}>
                             {authors && authors.length > 100
                                 ? `${authors.slice(0, 100)}...`
                                 : authors}
                         </Text>
 
-                        <Text fontSize="md" color="gray.700" mb={4}>
+                        <Text fontSize="md" color={headingCol} mb={4}>
                             {journal || "No journal information available"}
                         </Text>
 

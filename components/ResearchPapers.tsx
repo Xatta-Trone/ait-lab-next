@@ -14,6 +14,7 @@ import {
     Spinner,
     Heading,
     Center,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import { useSearchParams, useRouter } from "next/navigation";
 import axios from "axios";
@@ -22,6 +23,12 @@ import { motion } from "framer-motion";
 import ResearchPaperItemNew from "./ResearchPaperItemNew";
 
 const ResearchPapers: React.FC = () => {
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+    const inputBg = useColorModeValue("white", "gray.600");
+    const inputBorder = useColorModeValue("gray.200", "gray.500");
+    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700")
+
     const searchParams = useSearchParams();
     const router = useRouter();
     const [papers, setPapers] = useState<ResearchPaper[]>([]);
@@ -165,13 +172,13 @@ const ResearchPapers: React.FC = () => {
     };
 
     return (
-        <Box py={20}>
+        <Box py={20} backgroundColor={bgColor}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                     Research Papers
                 </Heading>
 
-                <Text fontSize="sm" color="gray.600" mb={2}>
+                <Text fontSize="sm" color={placeHolderColor} mb={2}>
                     Last Updated: {lastUpdated} from Google Scholar
                 </Text>
 
@@ -180,22 +187,22 @@ const ResearchPapers: React.FC = () => {
                         placeholder="Search by title, author"
                         value={searchTerm}
                         onChange={handleSearch}
-                        bg="white"
-                        borderColor="gray.300"
-                        color="gray.700"
+                        bg={inputBg}
+                        borderColor={inputBorder}
+                        _placeholder={{ color: placeHolderColor }}
                     />
                     <Select
                         placeholder="Sort by Year"
                         value={sortByYear}
                         onChange={handleSortYearChange}
-                        bg="white"
-                        borderColor="gray.300"
-                        color="gray.700"
+                        bg={inputBg}
+                        borderColor={inputBorder}
+                        color={placeHolderColor}
                     >
-                        <option value="asc" style={{ color: "black" }}>
+                        <option value="asc">
                             Oldest First
                         </option>
-                        <option value="desc" style={{ color: "black" }}>
+                        <option value="desc">
                             Newest First
                         </option>
                     </Select>
