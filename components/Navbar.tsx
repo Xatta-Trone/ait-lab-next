@@ -47,6 +47,7 @@ function Navbar() {
     }, []);
 
     const bgColor = useColorModeValue("yellow.600", "gray.800")
+    const textCol = useColorModeValue("black", "white");
 
     // Determine if the navbar should be transparent
     const isHomepage = pathname === "/";
@@ -136,7 +137,7 @@ function Navbar() {
                         <Stack as="nav" spacing={4} mt={6}>
                             {navLinks.map((item) => (
                                 <Link key={item.path} href={item.path} passHref>
-                                    <Text fontWeight="bold" onClick={onClose}>
+                                    <Text fontWeight="bold" onClick={onClose} color={textCol}>
                                         {item.name}
                                     </Text>
                                 </Link>
