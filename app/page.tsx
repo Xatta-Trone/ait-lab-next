@@ -9,7 +9,7 @@ import ContactSection from "@/components/Homepage/ContactSection";
 
 // Metadata for the homepage, including SEO, Open Graph, and Twitter configuration
 export const metadata: Metadata = {
-  title: "AIT Lab - Innovation Meets Technology", // Page title
+  title: "Home - Artificial Intelligence in Transportation (AIT Lab)", // Page title
   description:
     "Discover the AIT Lab – a hub for cutting-edge research, innovation, and technological advancements in AI and beyond. Explore projects, news, and resources to stay ahead.", // Short description for SEO
   keywords: [
