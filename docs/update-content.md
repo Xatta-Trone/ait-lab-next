@@ -77,6 +77,7 @@ The `data/` directory contains structured JSON files that store the content for 
 
 - **File**: `news.json`
 - **Steps**:
+
   1. Open `data/news.json`.
   2. Add a new news object:
      ```json
@@ -88,6 +89,34 @@ The `data/` directory contains structured JSON files that store the content for 
      }
      ```
   3. Save the file.
+
+  ### 4. **Add a New Tool**
+
+- **File**: `lab_tools.json`
+- **Steps**:
+  1. Open `data/lab_tools.json`.
+  2. Add a new tool object:
+     ```json
+        {
+            "title": "Smart Location Database (SLD) Driveway Density Tool",
+            "project": "TxDOT 0-7144 Project",
+            "description": "This tool allows users to analyze driveway density data by setting specific thresholds for variables such as employment, residential classification, and commercial/industrial sectors. The results are visualized on a map and presented in table format for further analysis.",
+            "latestProjectLink": "https://aitlab.shinyapps.io/TX_DrivewayType_V02/",
+            "links": [
+                {
+                    "label": "Version 1",
+                    "url": "https://aitlab.shinyapps.io/TX_DrivewayType_V01/"
+                },
+                {
+                    "label": "Version 2",
+                    "url": "https://aitlab.shinyapps.io/TX_DrivewayType_V02/"
+                }
+            ],
+            "image": "Screenshot 2024-12-02 180107.png"
+        },
+     ```
+  3. Save the file.
+  4. Add the image to `public/img/lab_tools/`.
 
 ---
 
