@@ -1,10 +1,14 @@
 "use client";
 
 import React, { useEffect, useState, Suspense } from "react";
-import { Box, Container, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, Spinner } from "@chakra-ui/react";
+import { Box, Container, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, Spinner, useColorModeValue } from "@chakra-ui/react";
 import ProjectsAndGrants from "./ProjectsAndGrants";
 
 const Research: React.FC = () => {
+
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+
     const [activeTab, setActiveTab] = useState(0);
 
     // Function to handle tab change and update the active tab
@@ -29,9 +33,9 @@ const Research: React.FC = () => {
     }, []);
 
     return (
-        <Box py={20}>
+        <Box py={20} bg={bgColor}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                     Projects And Grants
                 </Heading>
 

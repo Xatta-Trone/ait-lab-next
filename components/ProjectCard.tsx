@@ -11,17 +11,23 @@ import {
     Badge,
     Link,
     Button,
+    useColorModeValue,
 } from "@chakra-ui/react";
 
 const ProjectCard = (props: { project: ProjectTypes }) => {
     const { project } = props;
+
+    const bgColor = useColorModeValue("white", "gray.600");
+    const headingCol = useColorModeValue("gray.800", "whiteAlpha.900");
+    const textCol = useColorModeValue("gray.600", "whiteAlpha.800");
+
     return (
         <Box
             p={5}
             shadow="md"
             borderWidth="1px"
             borderRadius="lg"
-            bg="white"
+            bg={bgColor}
             _hover={{
                 shadow: "xl",
                 transform: "translateY(-10px)",
@@ -45,16 +51,16 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
 
                 {/* project Info */}
                 <Box flex="1">
-                    <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }}>
+                    <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }} color={headingCol}>
                         {project.number && `${project.number} : `}
                         {project.title}
                     </Heading>
-                    <Text fontSize="md" color="gray.700" mb={4}>
+                    <Text fontSize="md" color={headingCol} mb={4}>
                         {project.description}
                     </Text>
 
                     {/* PI and Co-PI Information */}
-                    <Text fontSize="md" color="gray.600" mb={4}>
+                    <Text fontSize="md" color={textCol} mb={4}>
                         <strong>{project.PI_role === "Co-PI" ? "Co-Principal Investigator" : project.PI_role === "Key Researcher" ? "Key Researcher" : "Principal Investigator"}:</strong>{" "}
                         {project.PI}
                     </Text>
