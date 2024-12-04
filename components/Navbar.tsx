@@ -21,6 +21,7 @@ import {
     useDisclosure,
     Icon,
     useColorMode,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
 import { MdDarkMode, MdLightMode } from "react-icons/md"
@@ -45,6 +46,8 @@ function Navbar() {
         };
     }, []);
 
+    const bgColor = useColorModeValue("yellow.600", "gray.800")
+
     // Determine if the navbar should be transparent
     const isHomepage = pathname === "/";
 
@@ -59,7 +62,7 @@ function Navbar() {
             height={scrolled ? "60px" : "80px"}
             pt={scrolled ? 1 : 2}
             pb={scrolled ? 2 : 3}
-            bg={isHomepage && !scrolled ? "transparent" : "yellow.600"} // Change background based on the page
+            bg={isHomepage && !scrolled ? "transparent" : bgColor} // Change background based on the page
             boxShadow={scrolled ? "md" : "none"}
         >
             <Container maxW="container.xl" px={{ base: "10", md: "10" }} py={scrolled ? 1 : 2}>
