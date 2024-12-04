@@ -4,13 +4,14 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react"; // Import tsParticles
 import { type Container, type ISourceOptions } from "@tsparticles/engine"; // Type definitions for tsParticles
 import { loadSlim } from "@tsparticles/slim"; // Slim version for reduced bundle size
-import { Box, useColorMode } from "@chakra-ui/react"; // Chakra UI components
+import { Box, useColorMode, useColorModeValue } from "@chakra-ui/react"; // Chakra UI components
 
 export const HeroParticles = () => {
     const [init, setInit] = useState(false); // State to track if particles engine is initialized
     const [videoLoaded, setVideoLoaded] = useState(false); // State to track if the video has loaded
     const videoRef = useRef<HTMLVideoElement | null>(null); // Ref for the background video
     const { colorMode } = useColorMode()
+    const bgGradient = useColorModeValue("linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))", "linear(to-b, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9))")
 
     // Initialize the particles engine
     useEffect(() => {
@@ -119,7 +120,7 @@ export const HeroParticles = () => {
                         height={"100%"}
                         width={"100%"}
                         zIndex={-3}
-                        bgGradient="linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))" // Gradient overlay for better visibility
+                        bgGradient={bgGradient} // Gradient overlay for better visibility
                     />
                     {videoLoaded && (
                         <>
