@@ -13,6 +13,7 @@ import {
     ListIcon,
     Link,
     Button,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa"; // Import check icon for list items
 
@@ -21,6 +22,9 @@ const Openings = () => {
     useEffect(() => {
         document.title = "Openings - Artificial Intelligence in Transportation Lab (AIT Lab)";
     }, []);
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingCol = useColorModeValue("yellow.600", "whiteAlpha.900");
+    const textCol = useColorModeValue("gray.800", "whiteAlpha.900");
 
     return (
         <>
@@ -61,15 +65,15 @@ const Openings = () => {
             </Head>
 
             {/* Page Content */}
-            <Box py={20}>
+            <Box py={20} bgColor={bgColor} minH={"100%"}>
                 <Container maxW="container.xl">
                     {/* Main heading */}
-                    <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                    <Heading as="h1" size="2xl" mb={6} color={headingCol}>
                         Openings
                     </Heading>
 
                     {/* Introduction text */}
-                    <Text fontSize="lg" mb={4}>
+                    <Text fontSize="lg" mb={4} color={textCol}>
                         The Ingram School of Engineering (ISOE) invites applications for
                         several highly motivated M.S./Ph.D. GIA/GRA positions under the
                         supervision of Dr. Subasish Das in the Civil Engineering program. The
@@ -94,7 +98,7 @@ const Openings = () => {
                     </List>
 
                     {/* Responsibilities Section */}
-                    <Text fontSize="lg" mb={4}>
+                    <Text fontSize="lg" mb={4} color={textCol}>
                         The responsibilities of the GRA include:
                     </Text>
 
@@ -123,7 +127,7 @@ const Openings = () => {
                     </List>
 
                     {/* Additional Information */}
-                    <Text fontSize="lg" mb={4}>
+                    <Text fontSize="lg" mb={4} color={textCol}>
                         Please see the PDF for the open position of Ph.D. GRA.
                     </Text>
 
