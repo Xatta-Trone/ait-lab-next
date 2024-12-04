@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import Head from "next/head"; // Import Head for managing metadata
-import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import coursesData from "@/data/courses.json"; // Import courses data from JSON
 import CourseCard from "@/components/CourseCard"; // Component to display individual course cards
 
@@ -11,6 +11,9 @@ import CourseCard from "@/components/CourseCard"; // Component to display indivi
 const typedCoursesData: CourseTypes[] = coursesData as CourseTypes[];
 
 const Courses: React.FC = () => {
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+
     // State to hold the list of courses
     const [courses, setCourses] = useState<CourseTypes[]>([]);
 
@@ -60,10 +63,10 @@ const Courses: React.FC = () => {
             </Head>
 
             {/* Page Content */}
-            <Box py={20}>
+            <Box py={20} bgColor={bgColor} minH={"100%"}>
                 <Container maxW="container.xl">
                     {/* Page heading */}
-                    <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                    <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                         Courses
                     </Heading>
 
@@ -86,7 +89,7 @@ const Courses: React.FC = () => {
                         )}
                     </Box>
                 </Container>
-            </Box>
+            </Box >
         </>
     );
 };

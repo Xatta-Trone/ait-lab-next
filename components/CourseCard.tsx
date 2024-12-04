@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, Stack, Badge, Button, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Stack, Badge, Button, Image, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 interface CourseCardProps {
@@ -6,6 +6,9 @@ interface CourseCardProps {
 }
 
 const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
+    const bgColor = useColorModeValue("white", "gray.600");
+    const headingCol = useColorModeValue("gray.800", "whiteAlpha.900");
+    const textCol = useColorModeValue("gray.600", "whiteAlpha.800");
     return (
         <motion.div
             initial="hidden"
@@ -24,7 +27,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                 shadow="md"
                 borderWidth="1px"
                 borderRadius="lg"
-                bg="white"
+                bg={bgColor}
                 _hover={{
                     shadow: "xl",
                     transform: "translateY(-10px)",
@@ -47,18 +50,18 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 
                     {/* Course Info */}
                     <Box flex="1">
-                        <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }}>
+                        <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }} color={headingCol}>
                             {course.title}
                         </Heading>
 
-                        <Text fontSize="md" color="gray.700" mb={4}>
+                        <Text fontSize="md" mb={4} color={textCol}>
                             {course.description}
                         </Text>
 
                         {/* Conditionally render prerequisite if it exists */}
                         {course.prerequisite && (
-                            <Text fontSize="md" color="gray.700" mb={4}>
-                                Prerequisite: {course.prerequisite.courseTitle} with a minimum grade of {" "}
+                            <Text fontSize="md" color={headingCol} mb={4}>
+                                <strong>Prerequisites:</strong> {course.prerequisite.courseTitle} with a minimum grade of {" "}
                                 {`"${course.prerequisite.grade}"`}.
                             </Text>
                         )}
