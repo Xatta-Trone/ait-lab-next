@@ -12,6 +12,7 @@ import {
     ListItem,
     ListIcon,
     Link,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "@chakra-ui/icons";
@@ -24,6 +25,13 @@ const LabToolsCard: React.FC<LabTools> = ({
     links,
     image,
 }) => {
+
+    const cardBgColor = useColorModeValue("white", "gray.600");
+    const cardHeading = useColorModeValue("gray.800", "whiteAlpha.800")
+    const textCol = useColorModeValue("gray.700", "whiteAlpha.800")
+    const listCol = useColorModeValue("yellow.600", "yellow.500")
+    const listHeading = useColorModeValue("gray.800", "whiteAlpha.800")
+
     return (
         <motion.div
             initial="hidden"
@@ -42,7 +50,7 @@ const LabToolsCard: React.FC<LabTools> = ({
                 shadow="md"
                 borderWidth="1px"
                 borderRadius="lg"
-                bg="white"
+                bg={cardBgColor}
                 _hover={{
                     shadow: "xl",
                     transform: "translateY(-10px)", // Hover effect: Elevate and move up slightly
@@ -60,25 +68,26 @@ const LabToolsCard: React.FC<LabTools> = ({
                             boxSize={{ base: "200px", md: "250px" }} // Responsive sizing
                             objectFit="cover"
                             fallbackSrc="/New_AIT_Favicon.png" // Default fallback image
+                            backgroundColor={"white"}
                         />
                     </Box>
 
                     {/* Tool Information */}
                     <Box flex="1">
                         {/* Tool Title */}
-                        <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }}>
+                        <Heading as="h3" size="lg" mb={2} mt={{ base: 6, md: 0 }} color={cardHeading}>
                             {title}
                         </Heading>
 
                         {/* Tool Description */}
-                        <Text fontSize="md" color="gray.700" mb={4}>
+                        <Text fontSize="md" color={textCol} mb={4}>
                             {description}
                         </Text>
 
                         {/* Additional Links Section */}
                         {links.length > 0 && (
                             <>
-                                <Text fontSize="lg" color="gray.600" mb={1}>
+                                <Text fontSize="lg" color={listHeading} mb={1}>
                                     <strong>Links</strong>
                                 </Text>
                                 <List mb={4}>
@@ -89,7 +98,7 @@ const LabToolsCard: React.FC<LabTools> = ({
                                                 href={link.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                color="yellow.600"
+                                                color={listCol}
                                                 _hover={{ color: "yellow.500", textDecoration: "underline" }}
                                             >
                                                 {link.label}

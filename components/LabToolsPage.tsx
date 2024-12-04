@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef, useCallback } from "react";
-import { Box, Container, Input, Stack, Text, Button, Center, Spinner, Heading } from "@chakra-ui/react";
+import { Box, Container, Input, Stack, Text, Button, Center, Spinner, Heading, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
 import LabToolsCard from "./LabToolsCard";
@@ -11,6 +11,13 @@ import labToolsData from "@/data/lab_tools.json";
 const typedLabToolsData: LabTools[] = labToolsData as LabTools[];
 
 const LabToolsPage: React.FC = () => {
+
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+    const inputBg = useColorModeValue("white", "gray.600");
+    const inputBorder = useColorModeValue("gray.200", "gray.500");
+    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700")
+
     // Set the document title dynamically
     useEffect(() => {
         document.title = "Tools - Artificial Intelligence in Transportation Lab (AIT Lab)";
@@ -120,10 +127,10 @@ const LabToolsPage: React.FC = () => {
     }, [isPageChanging]);
 
     return (
-        <Box py={20}>
+        <Box py={20} minH={"100%"} bgColor={bgColor}>
             <Container maxW="container.xl">
                 {/* Page title */}
-                <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                     AIT Lab Tools
                 </Heading>
 
@@ -133,8 +140,9 @@ const LabToolsPage: React.FC = () => {
                         placeholder="Search by title, project, or description"
                         value={searchTerm}
                         onChange={handleSearch}
-                        bg="white"
-                        borderColor="gray.300"
+                        bg={inputBg}
+                        borderColor={inputBorder}
+                        _placeholder={{ color: placeHolderColor }}
                     />
                 </Stack>
 
