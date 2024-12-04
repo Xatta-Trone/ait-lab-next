@@ -36,7 +36,8 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
     const h3Col = useColorModeValue("gray.600", "whiteAlpha.900");
     const h4col = useColorModeValue("gray.500", "whiteAlpha.800");
     const textCol = useColorModeValue("gray.600", "whiteAlpha.800");
-    const iconCol = useColorModeValue("#333", "whiteAlpha.800")
+    const iconColPlain = useColorModeValue("black", "white");
+    const linkedinIconCol = useColorModeValue("#0e76a8", "#1DA1F2")
 
 
     // Limit description to 50 words
@@ -127,14 +128,14 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                             <Link
                                 href={`mailto:${member.email}`}
                                 isExternal
-                                color={iconCol}
+                                color={iconColPlain}
                                 _hover={{
-                                    color: "yellow.600",
+                                    color: "yellow.500",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
                             >
-                                <FaEnvelope size="22px" />
+                                <FaEnvelope size="25px" />
                             </Link>
                         )}
                         {member.linkedin && (
@@ -143,35 +144,34 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "yellow.600",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
                             >
-                                <FaLinkedin size="22px" color="#0e76a8" />
+                                <FaLinkedin size="24px" color={linkedinIconCol} />
                             </Link>
                         )}
                         {member.github && (
                             <Link
                                 href={member.github}
                                 isExternal
-                                color={iconCol}
+                                color={iconColPlain}
                                 _hover={{
-                                    color: "yellow.600",
+                                    color: "yellow.500",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
                             >
-                                <FaGithub size="22px" color={iconCol} />
+                                <FaGithub size="22px" />
                             </Link>
                         )}
                         {member.googleScholar && (
                             <Link
                                 href={member.googleScholar}
                                 isExternal
-                                color={iconCol}
+                                color={iconColPlain}
                                 _hover={{
-                                    color: "yellow.600",
+                                    color: "yellow.500",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -185,7 +185,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "yellow.600",
+                                    color: "yellow.500",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -199,7 +199,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "yellow.600",
+                                    color: "yellow.500",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -213,7 +213,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                 isExternal
                                 color="gray.700"
                                 _hover={{
-                                    color: "yellow.600",
+                                    color: "yellow.500",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
@@ -227,9 +227,9 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                     key={index}
                                     href={website}
                                     isExternal
-                                    color={iconCol}
+                                    color={iconColPlain}
                                     _hover={{
-                                        color: "yellow.600",
+                                        color: "yellow.500",
                                         transform: "scale(1.1)",
                                         transition: "all 0.2s ease",
                                     }}
