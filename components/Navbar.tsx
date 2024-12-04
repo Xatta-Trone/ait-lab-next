@@ -79,7 +79,7 @@ function Navbar() {
                         />
                     </Link>
 
-                    <Flex gap={6}>
+                    <Flex gap={6} alignItems={"center"}>
                         <HStack as="nav" spacing={4} display={{ base: "none", lg: "flex" }}>
                             {navLinks.map((item) => (
                                 <Link key={item.path} href={item.path} passHref>
