@@ -11,6 +11,7 @@ import {
     Button,
     HStack,
     Heading,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import {
     FaGithub,
@@ -31,6 +32,13 @@ interface TeamProfileCardProps {
 }
 
 const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore }) => {
+    const bgColor = useColorModeValue("white", "gray.600");
+    const h3Col = useColorModeValue("gray.600", "whiteAlpha.900");
+    const h4col = useColorModeValue("gray.500", "whiteAlpha.800");
+    const textCol = useColorModeValue("gray.600", "whiteAlpha.800");
+    const iconCol = useColorModeValue("#333", "whiteAlpha.800")
+
+
     // Limit description to 50 words
     const MAX_WORD_COUNT = 50;
     const words = member.description ? member.description.split(" ") : [];
@@ -45,7 +53,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
             shadow="md"
             borderWidth="1px"
             borderRadius="lg"
-            bg="white"
+            bg={bgColor}
             mb={8}
             transition="all 0.3s ease-in-out"
             _hover={{
@@ -77,16 +85,16 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                 />
                 <Stack flex="1" marginLeft={{ md: 6 }} marginTop={{ base: 4, md: 0 }}>
                     {/* Name as a Heading */}
-                    <Heading as="h3" size="lg" color="gray.600" mb={-2}>
+                    <Heading as="h3" size="lg" color={h3Col} mb={-2}>
                         {member.name}
                     </Heading>
                     {/* Label as a smaller Heading */}
-                    <Heading as="h4" size="sm" color="gray.500" mb={1}>
+                    <Heading as="h4" size="sm" color={h4col} mb={1}>
                         {member.label}
                     </Heading>
 
                     {/* Shortened Description with Show more Button */}
-                    <Text fontSize="sm" color="gray.600">
+                    <Text fontSize="sm" color={textCol}>
                         {descriptionToShow}
                         {isDescriptionLong && member.name != "Dr. Subasish Das" ? (
                             <Button
@@ -119,7 +127,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                             <Link
                                 href={`mailto:${member.email}`}
                                 isExternal
-                                color="gray.700"
+                                color={iconCol}
                                 _hover={{
                                     color: "yellow.600",
                                     transform: "scale(1.1)",
@@ -147,21 +155,21 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                             <Link
                                 href={member.github}
                                 isExternal
-                                color="gray.700"
+                                color={iconCol}
                                 _hover={{
                                     color: "yellow.600",
                                     transform: "scale(1.1)",
                                     transition: "all 0.2s ease",
                                 }}
                             >
-                                <FaGithub size="22px" color="#333" />
+                                <FaGithub size="22px" color={iconCol} />
                             </Link>
                         )}
                         {member.googleScholar && (
                             <Link
                                 href={member.googleScholar}
                                 isExternal
-                                color="gray.700"
+                                color={iconCol}
                                 _hover={{
                                     color: "yellow.600",
                                     transform: "scale(1.1)",
@@ -219,7 +227,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({ member, onShowMore })
                                     key={index}
                                     href={website}
                                     isExternal
-                                    color="gray.700"
+                                    color={iconCol}
                                     _hover={{
                                         color: "yellow.600",
                                         transform: "scale(1.1)",

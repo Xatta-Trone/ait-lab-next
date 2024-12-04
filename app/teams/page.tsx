@@ -10,6 +10,7 @@ import {
     GridItem,
     Heading,
     Text,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 import TeamProfileCard from "@/components/TeamProfileCard"; // Component for individual team member cards
@@ -36,6 +37,12 @@ const cardVariants = {
 };
 
 const Team: React.FC = () => {
+
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+    const alumniBoldColor = useColorModeValue("gray.600", "whiteAlpha.800");
+    const alumniColor = useColorModeValue("gray.500", "whiteAlpha.700");
+
     // Dynamically update the page title
     useEffect(() => {
         document.title = "Team - Artificial Intelligence in Transportation Lab (AIT Lab)";
@@ -96,12 +103,12 @@ const Team: React.FC = () => {
             </Head>
 
             {/* Page Content */}
-            <Box py={20}>
+            <Box py={20} bgColor={bgColor}>
                 <Container maxW="container.xl">
                     {/* Current Team Section */}
                     <Grid templateColumns={{ base: "1fr", md: "1fr 2fr" }} gap={10} mb={12}>
                         <GridItem>
-                            <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                            <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                                 Current Team
                             </Heading>
                         </GridItem>
@@ -123,7 +130,7 @@ const Team: React.FC = () => {
                     {/* Fellows Section */}
                     <Grid templateColumns={{ base: "1fr", md: "1fr 2fr" }} gap={10} mb={12}>
                         <GridItem>
-                            <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                            <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                                 Fellows
                             </Heading>
                         </GridItem>
@@ -145,7 +152,7 @@ const Team: React.FC = () => {
                     {/* Alumni Section */}
                     <Grid templateColumns={{ base: "1fr", md: "1fr 2fr" }} gap={10} mb={12}>
                         <GridItem>
-                            <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                            <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                                 Alumni
                             </Heading>
                         </GridItem>
@@ -159,9 +166,9 @@ const Team: React.FC = () => {
                                     pt={2}
                                 >
                                     {/* Alumni Details */}
-                                    <Text fontWeight="bold" fontSize="lg" color="gray.600">
+                                    <Text fontWeight="bold" fontSize="lg" color={alumniBoldColor}>
                                         {alumni.name}
-                                        <Text as="span" fontWeight="300" color="gray.500">
+                                        <Text as="span" fontWeight="300" color={alumniColor}>
                                             {" "}
                                             - {alumni.label}
                                             {alumni.subject.length > 0 && `, ${alumni.subject}`}
