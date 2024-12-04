@@ -65,8 +65,8 @@ function Navbar() {
             bg={isHomepage && !scrolled ? "transparent" : bgColor} // Change background based on the page
             boxShadow={scrolled ? "md" : "none"}
         >
-            <Container maxW="container.xl" px={{ base: "10", md: "10" }} py={scrolled ? 1 : 2}>
-                <Flex h="100%" alignItems="center" justifyContent="space-between">
+            <Container maxW="container.xl" px={{ base: "10", md: "10" }} py={scrolled ? 1 : 2} alignItems={"center"}>
+                <Flex minH="100%" alignItems="center" justifyContent="space-between">
                     <Link href="/">
                         <Image
                             src="2.1New_White_Horizontal_AIT_Logo.png"
@@ -79,7 +79,7 @@ function Navbar() {
                         />
                     </Link>
 
-                    <Flex gap={6} alignItems={"center"}>
+                    <Flex gap={6} alignItems={"center"} mb={{ md: scrolled ? 2 : 4 }} >
                         <HStack as="nav" spacing={4} display={{ base: "none", lg: "flex" }}>
                             {navLinks.map((item) => (
                                 <Link key={item.path} href={item.path} passHref>
