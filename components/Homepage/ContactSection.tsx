@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, chakra, Container, Flex, Heading, Image, Link, Text, VStack } from "@chakra-ui/react"; // Chakra UI components
+import { Box, chakra, Container, Flex, Heading, Image, Link, Text, useColorModeValue, VStack } from "@chakra-ui/react"; // Chakra UI components
 import quickLinks from "@/data/navLinks.json"; // Import quick links data
 import { isValidMotionProp, motion } from "framer-motion"; // Framer Motion for animations
 import { useEffect, useRef, useState } from "react";
@@ -11,6 +11,9 @@ const MotionBox = chakra(motion.div, {
 });
 
 const ContactSection = () => {
+
+    const bgColor = useColorModeValue("gray.700", "gray.800");
+
     const [isInView, setIsInView] = useState(false); // State to track if the section is in view
     const sectionRef = useRef<HTMLDivElement | null>(null); // Ref to monitor section visibility
 
@@ -38,7 +41,7 @@ const ContactSection = () => {
     }, []);
 
     return (
-        <Box bg="gray.700" color={"white"} py={40} ref={sectionRef}>
+        <Box bg={bgColor} color={"white"} py={40} ref={sectionRef}>
             <Container maxW="container.xl" mx="auto" px={{ base: "10", md: "10" }}>
                 <Flex
                     direction={{ base: "column", lg: "row" }} // Responsive layout for mobile and desktop

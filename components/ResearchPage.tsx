@@ -1,21 +1,24 @@
 "use client";
 
 import React, { useEffect, useState, Suspense } from "react";
-import { Box, Container, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, Spinner } from "@chakra-ui/react";
+import { Box, Container, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, Spinner, useColorModeValue } from "@chakra-ui/react";
 import ProjectsAndGrants from "./ProjectsAndGrants";
-import { useSearchParams } from "next/navigation";
 
 const Research: React.FC = () => {
+
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+
     const [activeTab, setActiveTab] = useState(0);
 
-    // Function to handle tab change and update the hash in the URL
+    // Function to handle tab change and update the active tab
     const handleTabChange = (index: number) => {
         setActiveTab(index);
     };
 
     // Check URL hash and query parameters to set the active tab
     useEffect(() => {
-        document.title = "Projects And Grants | AIT Lab"
+        document.title = "Projects And Grants - Artificial Intelligence in Transportation Lab (AIT Lab)";
         const hash = window.location.hash;
 
         // Handle tab selection based on URL hash
@@ -30,30 +33,32 @@ const Research: React.FC = () => {
     }, []);
 
     return (
-        <Box py={20}>
+        <Box py={20} bg={bgColor}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                     Projects And Grants
                 </Heading>
 
                 <Tabs index={activeTab} onChange={handleTabChange} colorScheme="yellow">
                     <TabList mb={4}>
-                        <Tab>Pi/ Co-PI</Tab>
+                        <Tab>PI/Co-PI</Tab>
                         <Tab>Key Researcher</Tab>
                     </TabList>
 
                     <TabPanels>
                         <TabPanel>
                             {activeTab === 0 && (
-                                <Suspense fallback={<Spinner size="xl" color="yellow.500" />} >
-                                    <ProjectsAndGrants role="PI/Co-PI" />
+                                <Suspense fallback={<Spinner size="xl" color="yellow.500" />}>
+                                    {/* Assign a unique key based on the active tab */}
+                                    <ProjectsAndGrants key={`tab-${activeTab}`} role="PI/Co-PI" />
                                 </Suspense>
                             )}
                         </TabPanel>
                         <TabPanel>
                             {activeTab === 1 && (
-                                <Suspense fallback={<Spinner size="xl" color="yellow.500" />} >
-                                    <ProjectsAndGrants role="Key Researcher" />
+                                <Suspense fallback={<Spinner size="xl" color="yellow.500" />}>
+                                    {/* Assign a unique key based on the active tab */}
+                                    <ProjectsAndGrants key={`tab-${activeTab}`} role="Key Researcher" />
                                 </Suspense>
                             )}
                         </TabPanel>

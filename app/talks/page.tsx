@@ -13,14 +13,24 @@ import {
     LinkOverlay,
     Stack,
     Flex,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons"; // Icon for external links
 import talksData from "@/data/talk.json"; // Import talks data
 
 const Talk = () => {
+
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+    const cardBgColor = useColorModeValue("white", "gray.600");
+    const textCol = useColorModeValue("gray.500", "whiteAlpha.800");
+    const badgeCol1 = useColorModeValue("blackAlpha", "whiteAlpha.50");
+    const badgeCol2 = useColorModeValue("gray", "white");
+    const txtBld = useColorModeValue("gray.500", "whiteAlpha.600");
+
     // Dynamically set the document title when the component mounts
     useEffect(() => {
-        document.title = "Talks | AIT Lab";
+        document.title = "Talks - Artificial Intelligence in Transportation Lab (AIT Lab)";
     }, []);
 
     // Sort talks data by year in descending order
@@ -30,7 +40,7 @@ const Talk = () => {
         <>
             {/* Metadata for SEO and social sharing */}
             <Head>
-                <title>Talks & Media | AIT Lab</title>
+                <title>Talks & Media - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Explore the latest talks and media appearances by AIT Lab and Dr. Subasish Das, featuring discussions on artificial intelligence, transportation safety, and spatiotemporal modeling."
@@ -44,7 +54,7 @@ const Talk = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="Talks & Media | AIT Lab" />
+                <meta property="og:title" content="Talks & Media - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Discover talks and media features by AIT Lab and Dr. Subasish Das, exploring AI, transportation safety, and advanced research."
@@ -56,7 +66,7 @@ const Talk = () => {
                 <meta property="og:image" content="/logo_big_black.png" />
                 <meta property="og:image:alt" content="AIT Lab Logo" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Talks & Media | AIT Lab" />
+                <meta name="twitter:title" content="Talks & Media - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Stay updated with AIT Lab's latest talks and media features on AI and transportation safety."
@@ -65,10 +75,10 @@ const Talk = () => {
             </Head>
 
             {/* Page Content */}
-            <Box py={20}>
+            <Box py={20} bgColor={bgColor} minH={"100%"}>
                 <Container maxW="container.xl">
                     {/* Main Heading */}
-                    <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                    <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                         Talks & Media
                     </Heading>
 
@@ -82,7 +92,7 @@ const Talk = () => {
                                 shadow="md"
                                 borderWidth="1px"
                                 borderRadius="md"
-                                bg="white"
+                                bg={cardBgColor}
                                 _hover={{ shadow: "lg", transform: "translateY(-5px)" }} // Hover effect for elevation
                                 transition="all 0.3s ease"
                                 cursor={talk.link ? "pointer" : "default"} // Cursor changes if there's a link
@@ -92,20 +102,20 @@ const Talk = () => {
                                     {/* Badge for group type */}
                                     <Badge
                                         variant="solid"
-                                        colorScheme={talk.group === "media" ? "blackAlpha" : "gray"}
+                                        colorScheme={talk.group === "media" ? badgeCol1 : badgeCol2}
                                         fontSize="md"
                                     >
                                         {talk.group}
                                     </Badge>
 
                                     {/* Year of the talk */}
-                                    <Text fontWeight="bold" color="gray.500" fontSize="md">
+                                    <Text fontWeight="bold" color={txtBld} fontSize="md">
                                         {talk.year}
                                     </Text>
                                 </Flex>
 
                                 {/* Content of the talk with optional link */}
-                                <Text color="gray.700" fontSize="lg">
+                                <Text color={textCol} fontSize="lg">
                                     {talk.link ? (
                                         <LinkOverlay href={talk.link} isExternal>
                                             {talk.content} <ExternalLinkIcon mx="2px" /> {/* External link icon */}

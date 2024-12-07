@@ -12,6 +12,8 @@ import {
     LinkBox,
     Flex,
     LinkOverlay,
+    useColorModeValue,
+    useColorMode,
 } from "@chakra-ui/react";
 import { HiExternalLink } from "react-icons/hi";
 import newsData from "@/data/news.json"; // Import news data
@@ -36,6 +38,14 @@ const itemVariants = {
 };
 
 const RecentNews = () => {
+    const { colorMode } = useColorMode();
+
+    const bgColor = useColorModeValue("yellow.50", "gray.600");
+    const headingColor = useColorModeValue("yellow.600", "white");
+    const boxBg = useColorModeValue("white", "gray.700");
+    const cardHeading = useColorModeValue("yellow.600", "whiteAlpha.800")
+    const textCol = useColorModeValue("gray.500", "gray.400")
+
     // Get the five most recent news items and parse dates for sorting
     const recentNewsItems = newsData
         .map((item) => ({
@@ -49,7 +59,7 @@ const RecentNews = () => {
         <Box
             pb={40} // Padding at the bottom
             pt={"20"} // Padding at the top
-            bg="yellow.50" // Background color
+            bg={bgColor} // Background color
             position={"relative"} // Position relative for custom shapes
         >
             {/* Container for the section */}
@@ -59,7 +69,7 @@ const RecentNews = () => {
                     as="h2"
                     size="lg"
                     textAlign="center"
-                    color="yellow.600"
+                    color={headingColor}
                     marginBottom={"20"} // Space below heading
                     fontSize={{ base: "4xl", md: "5xl" }} // Responsive font size
                 >
@@ -91,13 +101,13 @@ const RecentNews = () => {
                                     shadow="md" // Box shadow
                                     borderWidth="1px" // Border
                                     borderRadius="md" // Rounded corners
-                                    bg="white" // Background color
+                                    bg={boxBg} // Background color
                                     transition="all 0.3s ease" // Smooth transition
                                     cursor={news.link ? "pointer" : "default"} // Pointer cursor if link exists
                                 >
                                     {/* Date and title section */}
                                     <Flex justify="space-between" align="center" mb={2}>
-                                        <Text fontWeight="bold" color="gray.500" fontSize="md">
+                                        <Text fontWeight="bold" color={textCol} fontSize="md">
                                             {new Date(news.date).toLocaleDateString("en-US", {
                                                 year: "numeric",
                                                 month: "long",
@@ -108,7 +118,7 @@ const RecentNews = () => {
                                     </Flex>
 
                                     {/* News description */}
-                                    <Text color="yellow.600" fontSize="lg" fontWeight="bold">
+                                    <Text color={cardHeading} fontSize="lg" fontWeight="bold">
                                         {news.link ? (
                                             // Link to external news source
                                             <LinkOverlay href={news.link} isExternal>
@@ -157,7 +167,7 @@ const RecentNews = () => {
                 >
                     <path
                         d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-                        className="shape-fill" // Class for custom shape fill
+                        className="shape-fill" style={{ fill: colorMode === 'light' ? "#ffffff" : "#2d3748" }}// Class for custom shape fill
                     ></path>
                 </svg>
             </Box>

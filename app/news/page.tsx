@@ -1,14 +1,20 @@
+"use client"
 import News from "@/components/NewsPage"; // Component for rendering the News section
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import Head from "next/head"; // Import Head for managing metadata
 import { Box, Spinner } from "@chakra-ui/react"; // Chakra UI components for styling and loading spinner
 
 const NewsPage = () => {
+    // Dynamically set page title
+    useEffect(() => {
+        document.title = "News - Artificial Intelligence in Transportation Lab (AIT Lab)";
+    }, []);
+
     return (
         <>
             {/* Metadata for SEO and social sharing */}
             <Head>
-                <title>News | AIT Lab</title>
+                <title>News - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Stay updated with the latest news and advancements from AIT Lab, including research updates, technology innovations, and more."
@@ -22,7 +28,7 @@ const NewsPage = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="News | AIT Lab" />
+                <meta property="og:title" content="News - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Discover the latest news and updates from AIT Lab, covering research, innovations, and breakthroughs in technology."
@@ -34,7 +40,7 @@ const NewsPage = () => {
                 <meta property="og:image" content="/logo_big_black.png" />
                 <meta property="og:image:alt" content="AIT Lab Logo" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="News | AIT Lab" />
+                <meta name="twitter:title" content="News - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Stay informed with the latest news and updates from AIT Lab on technology and innovation."

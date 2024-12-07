@@ -20,8 +20,9 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="shortcut icon" href="New_AIT_Favicon.png" type="image/x-icon" />
       </head>
-      <body style={{ backgroundColor: "white", overflowX: "hidden" }}>
+      <body style={{ overflowX: "hidden" }} >
         {/* Add ColorModeScript for proper color mode hydration during SSR */}
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
 
@@ -33,7 +34,6 @@ export default function RootLayout(props: { children: React.ReactNode }) {
             <GridItem as="header" w="100%">
               <Navbar />
             </GridItem>
-
             {/* Main content area with a padding at the top to account for Navbar */}
             <GridItem as="main" w="100%" pt={"80px"}>
               {children}

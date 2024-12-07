@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef, useCallback, useMemo } from "react";
-import { Box, Container, Input, Select, Stack, Text, Button, Center, Spinner } from "@chakra-ui/react";
+import { Box, Container, Input, Select, Stack, Text, Button, Center, Spinner, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import projectsData from "@/data/stock_projs_grants.json";
 // import projectsData from "@/data/projs_and_grants.json";
@@ -13,6 +13,11 @@ const typedProjectsData: ProjectTypes[] = projectsData.projects as ProjectTypes[
 const typedGrantsData: GrantTypes[] = projectsData.grants as GrantTypes[];
 
 const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
+
+    const inputBg = useColorModeValue("white", "gray.600");
+    const inputBorder = useColorModeValue("gray.200", "gray.500");
+    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700")
+
     const [isMounted, setIsMounted] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
     const [sortByStatus, setSortByStatus] = useState("");
@@ -163,15 +168,17 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
                         placeholder="Search by title, sponsor, description, or project number"
                         value={searchTerm}
                         onChange={handleSearch}
-                        bg="white"
-                        borderColor="gray.300"
+                        bg={inputBg}
+                        borderColor={inputBorder}
+                        _placeholder={{ color: placeHolderColor }}
                     />
                     <Select
                         placeholder="Sort by Status"
                         value={sortByStatus}
                         onChange={handleSortByStatus}
-                        bg="white"
-                        borderColor="gray.300"
+                        bg={inputBg}
+                        borderColor={inputBorder}
+                        color={placeHolderColor}
                     >
                         <option value="ongoing">Ongoing</option>
                         <option value="completed">Completed</option>

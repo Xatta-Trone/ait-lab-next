@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { Box, Container, Heading, Text, Image, Button, Link, Flex } from "@chakra-ui/react"; // Chakra UI components
+import { Box, Container, Heading, Text, Image, Button, Link, Flex, useColorModeValue, useColorMode } from "@chakra-ui/react"; // Chakra UI components
 import { motion, isValidMotionProp } from "framer-motion"; // Framer Motion for animations
 import { chakra } from "@chakra-ui/react"; // Chakra wrapper for motion
 import { FaShoppingCart } from "react-icons/fa"; // Icon for the "Order Here" button
@@ -12,6 +12,11 @@ const MotionBox = chakra(motion.div, {
 });
 
 const BookSection = () => {
+    const { colorMode } = useColorMode();
+    const bgColor = useColorModeValue("white", "gray.700");
+    const textColor = useColorModeValue("gray.700", "whiteAlpha.800");
+    const headingCol = useColorModeValue("yellow.600", "whiteAlpha.900")
+
     const [isInView, setIsInView] = useState(false); // State to track if the section is in view
     const sectionRef = useRef(null); // Ref to monitor section visibility
 
@@ -39,7 +44,7 @@ const BookSection = () => {
     }, []);
 
     return (
-        <Box pb={40} pt={"20"} bg="white" position={"relative"} ref={sectionRef}>
+        <Box pb={40} pt={"20"} bg={bgColor} position={"relative"} ref={sectionRef}>
             {/* Container for section content */}
             <Container maxW="container.xl" px={{ base: "10", md: "10" }}>
                 {/* Section Heading with motion animation */}
@@ -53,7 +58,7 @@ const BookSection = () => {
                     textAlign="center"
                     mb={5}
                 >
-                    <Heading as="h2" size="lg" color="yellow.600" fontSize={{ base: "4xl", md: "5xl" }}>
+                    <Heading as="h2" size="lg" color={headingCol} fontSize={{ base: "4xl", md: "5xl" }}>
                         A New Text Book
                     </Heading>
                 </MotionBox>
@@ -72,10 +77,10 @@ const BookSection = () => {
                                 : {}
                         }
                     >
-                        <Heading as="h3" size="lg" mb={5} mt={{ base: 10, lg: 0 }}>
+                        <Heading as="h3" size="lg" mb={5} mt={{ base: 10, lg: 0 }} color={textColor}>
                             Artificial Intelligence in Highway Safety <br /> by Dr. Subasish Das
                         </Heading>
-                        <Text fontSize="lg" color="gray.700" lineHeight="taller" mb={6}>
+                        <Text fontSize="lg" color={textColor} lineHeight="taller" mb={6}>
                             Artificial Intelligence in Highway Safety provides cutting-edge advances in highway safety
                             using AI. The author is a highway safety expert, drawing attention to the predictive powers
                             of AI techniques in solving complex problems for safety improvement.
@@ -121,14 +126,14 @@ const BookSection = () => {
             {/* Decorative SVG shape divider */}
             <Box
                 position="absolute"
-                bottom={0}
+                bottom={-1}
                 w={"100%"}
                 overflowX={"hidden"}
                 zIndex={1}
                 className="custom-shape-divider-bottom-1730319297"
             >
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="dark-fill"></path>
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="dark-fill" style={{ fill: colorMode === 'light' ? "#2d3748" : "#1a202c" }}></path>
                 </svg>
             </Box>
         </Box>

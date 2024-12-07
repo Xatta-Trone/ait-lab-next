@@ -15,6 +15,7 @@ import {
     LinkBox,
     LinkOverlay,
     Flex,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -28,6 +29,16 @@ interface NewsItem {
 }
 
 const News: React.FC = () => {
+
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+    const inputBg = useColorModeValue("white", "gray.600");
+    const inputBorder = useColorModeValue("gray.200", "gray.500");
+    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700")
+    const cardBgColor = useColorModeValue("white", "gray.600");
+    const cardHeading = useColorModeValue("yellow.600", "whiteAlpha.800")
+    const textCol = useColorModeValue("gray.500", "gray.400")
+
     const router = useRouter();
     const searchParams = useSearchParams();
     const [searchTerm, setSearchTerm] = useState<string>(searchParams.get("q") || "");
@@ -108,9 +119,9 @@ const News: React.FC = () => {
     };
 
     return (
-        <Box py={20}>
+        <Box py={20} minH={"100%"} bgColor={bgColor}>
             <Container maxW="container.xl">
-                <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                     News & Updates
                 </Heading>
 
@@ -120,8 +131,9 @@ const News: React.FC = () => {
                         placeholder="Search news by title"
                         value={searchTerm}
                         onChange={handleSearch}
-                        bg="white"
-                        borderColor="gray.300"
+                        bg={inputBg}
+                        borderColor={inputBorder}
+                        _placeholder={{ color: placeHolderColor }}
                     />
                 </Stack>
 
@@ -139,13 +151,13 @@ const News: React.FC = () => {
                                 shadow="md"
                                 borderWidth="1px"
                                 borderRadius="md"
-                                bg="white"
+                                bg={cardBgColor}
                                 _hover={{ shadow: "lg", transform: "translateY(-5px)" }}
                                 transition="all 0.3s ease"
                                 cursor={news.link ? "pointer" : "default"}
                             >
                                 <Flex justify="space-between" align="center" mb={2}>
-                                    <Text fontWeight="bold" color="gray.500" fontSize="md">
+                                    <Text fontWeight="bold" color={textCol} fontSize="md">
                                         {new Date(news.date).toLocaleDateString("en-US", {
                                             year: "numeric",
                                             month: "long",
@@ -154,7 +166,7 @@ const News: React.FC = () => {
                                     </Text>
                                 </Flex>
 
-                                <Text color="yellow.600" fontSize="lg" fontWeight="bold">
+                                <Text color={cardHeading} fontSize="lg" fontWeight="bold">
                                     {news.link ? (
                                         <LinkOverlay href={news.link} isExternal>
                                             {news.description} <ExternalLinkIcon mx="2px" />

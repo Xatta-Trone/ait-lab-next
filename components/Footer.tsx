@@ -1,12 +1,14 @@
 /** @format */
 
-import { Box, Text, Link, Stack, Icon } from "@chakra-ui/react";
+import { Box, Text, Link, Stack, Icon, useColorModeValue } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { FaGoogleScholar, FaResearchgate } from "react-icons/fa6"; // Import from fa6
 
 export default function Footer() {
+    const bgColor = useColorModeValue("gray.700", "gray.800");
+
     return (
-        <Box as="footer" bg="gray.700" color="white" py={6} borderTop={"2px"}>
+        <Box as="footer" bg={bgColor} color="white" py={6} borderTop={"2px"}>
             <Stack
                 direction={{ base: "column", md: "row" }}
                 justify="space-between"

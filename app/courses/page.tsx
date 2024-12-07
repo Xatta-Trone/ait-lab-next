@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import Head from "next/head"; // Import Head for managing metadata
-import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import coursesData from "@/data/courses.json"; // Import courses data from JSON
 import CourseCard from "@/components/CourseCard"; // Component to display individual course cards
 
@@ -11,11 +11,16 @@ import CourseCard from "@/components/CourseCard"; // Component to display indivi
 const typedCoursesData: CourseTypes[] = coursesData as CourseTypes[];
 
 const Courses: React.FC = () => {
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+
     // State to hold the list of courses
     const [courses, setCourses] = useState<CourseTypes[]>([]);
 
     // Populate the courses state with data from JSON on component mount
     useEffect(() => {
+        // Set page title dynamically
+        document.title = "Courses - Artificial Intelligence in Transportation Lab (AIT Lab";
         setCourses(typedCoursesData);
     }, []);
 
@@ -23,7 +28,7 @@ const Courses: React.FC = () => {
         <>
             {/* Metadata for SEO and social sharing */}
             <Head>
-                <title>Courses | AIT Lab</title>
+                <title>Courses - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Explore the wide range of courses offered by AIT Lab. From Artificial Intelligence to Machine Learning, these courses are designed to help you master modern technologies."
@@ -37,7 +42,7 @@ const Courses: React.FC = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="Courses | AIT Lab" />
+                <meta property="og:title" content="Courses - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Discover the variety of courses offered by AIT Lab, designed to help you excel in cutting-edge technologies like Artificial Intelligence and Machine Learning."
@@ -49,7 +54,7 @@ const Courses: React.FC = () => {
                 <meta property="og:image" content="/logo_big_black.png" />
                 <meta property="og:image:alt" content="AIT Lab Logo" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Courses | AIT Lab" />
+                <meta name="twitter:title" content="Courses - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Explore cutting-edge courses offered by AIT Lab, focusing on AI, Machine Learning, and modern technologies."
@@ -58,10 +63,10 @@ const Courses: React.FC = () => {
             </Head>
 
             {/* Page Content */}
-            <Box py={20}>
+            <Box py={20} bgColor={bgColor} minH={"100%"}>
                 <Container maxW="container.xl">
                     {/* Page heading */}
-                    <Heading as="h1" size="2xl" mb={6} color="yellow.600">
+                    <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                         Courses
                     </Heading>
 
@@ -84,7 +89,7 @@ const Courses: React.FC = () => {
                         )}
                     </Box>
                 </Container>
-            </Box>
+            </Box >
         </>
     );
 };

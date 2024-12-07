@@ -8,7 +8,7 @@ const ResearchPage = () => {
         <>
             {/* Metadata for SEO and social sharing */}
             <Head>
-                <title>Projects and Grants | AIT Lab</title>
+                <title>Projects and Grants - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Explore the innovative projects and research grants managed by AIT Lab, focusing on artificial intelligence, transportation safety, and advanced spatiotemporal modeling."
@@ -22,7 +22,7 @@ const ResearchPage = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="Projects and Grants | AIT Lab" />
+                <meta property="og:title" content="Projects and Grants - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Discover the impactful research projects and grants at AIT Lab, advancing artificial intelligence, transportation safety, and innovative technologies."
@@ -34,7 +34,7 @@ const ResearchPage = () => {
                 <meta property="og:image" content="/logo_big_black.png" />
                 <meta property="og:image:alt" content="AIT Lab Logo" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Projects and Grants | AIT Lab" />
+                <meta name="twitter:title" content="Projects and Grants - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Learn about AIT Lab's cutting-edge projects and research grants that focus on AI and transportation safety advancements."

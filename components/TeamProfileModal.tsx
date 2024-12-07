@@ -13,6 +13,7 @@ import {
     Text,
     Center,
     HStack,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { FaEnvelope, FaGithub, FaGlobe, FaLinkedin, FaLinkedinIn, FaOrcid, FaResearchgate, FaTwitter } from "react-icons/fa";
@@ -25,6 +26,10 @@ interface TeamProfileModalProps {
 }
 
 const TeamProfileModal: React.FC<TeamProfileModalProps> = ({ isOpen, onClose, member }) => {
+    const textCol = useColorModeValue("gray.800", "whiteAlpha.800")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+    const iconCol = useColorModeValue("#333", "whiteAlpha.600")
+
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
             <ModalOverlay bg="blackAlpha.300" backdropFilter="blur(10px)" />
@@ -32,10 +37,10 @@ const TeamProfileModal: React.FC<TeamProfileModalProps> = ({ isOpen, onClose, me
                 <ModalHeader>{member?.name}</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
-                    <Text fontWeight="bold" mb={2}>
+                    <Text fontWeight="bold" mb={2} color={headingColor}>
                         {member?.label}
                     </Text>
-                    <Text mb={4}>{member?.description}</Text>
+                    <Text mb={4} color={textCol}>{member?.description}</Text>
 
                     {/* Links Section */}
                     <HStack spacing={3} mt={3} align="center">
@@ -51,7 +56,7 @@ const TeamProfileModal: React.FC<TeamProfileModalProps> = ({ isOpen, onClose, me
                         )}
                         {member.github && (
                             <Link href={member.github} target="_blank" color="gray.700">
-                                <FaGithub size="22px" color="#333" />
+                                <FaGithub size="22px" color={iconCol} />
                             </Link>
                         )}
                         {member.googleScholar && (

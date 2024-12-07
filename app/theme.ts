@@ -13,7 +13,7 @@ export default extendTheme({
   // Custom colors for branding and consistency
   colors: {
     primary: "#b7791f", // Golden color for primary elements
-    background: "#1A202C", // Dark background color
+    background: "gray.700", // Dark background color
     text: "#1A202C", // Text color (used primarily for dark mode styling)
   },
 

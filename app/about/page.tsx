@@ -13,6 +13,7 @@ import {
     Flex,
     Button,
     Link,
+    useColorModeValue,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { FaFilePdf } from "react-icons/fa6";
@@ -20,15 +21,19 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const AboutMe = () => {
     useEffect(() => {
-        document.title = "About | AIT Lab";
+        document.title = "About Subasish Das - Artificial Intelligence in Transportation Lab (AIT Lab)";
     }, []);
+    const bgColor = useColorModeValue("white", "gray.700")
+    const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
+    const textCol = useColorModeValue("gray.700", "whiteAlpha.800")
+    const blackHeadingColor = useColorModeValue("gray.600", "whiteAlpha.800");
 
     return (
         <>
 
             {/* Metadata */}
             <Head>
-                <title>About Subasish Das | AIT Lab</title>
+                <title>About Subasish Das - Artificial Intelligence in Transportation Lab (AIT Lab)</title>
                 <meta
                     name="description"
                     content="Learn more about Subasish Das, a tenure-track Assistant Professor of Civil Engineering at Texas State University, with over 13 years of experience in roadway safety, traffic operations, and CAV technologies."
@@ -42,7 +47,7 @@ const AboutMe = () => {
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/New_AIT_Favicon.png" />
-                <meta property="og:title" content="About Subasish Das | AIT Lab" />
+                <meta property="og:title" content="About Subasish Das - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
                     content="Explore the journey and expertise of Subasish Das, an Assistant Professor with over 13 years of experience in roadway safety, traffic operations, and AI applications in transportation."
@@ -54,7 +59,7 @@ const AboutMe = () => {
                 <meta property="og:image" content="/img/das.jpg" />
                 <meta property="og:image:alt" content="Subasish Das" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="About Subasish Das | AIT Lab" />
+                <meta name="twitter:title" content="About Subasish Das - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     name="twitter:description"
                     content="Discover the professional journey of Subasish Das, an expert in AI and transportation research."
@@ -62,7 +67,7 @@ const AboutMe = () => {
                 <meta name="twitter:image" content="/img/das.jpg" />
             </Head>
 
-            <Box py={{ base: 10, md: 20 }} minHeight="100vh">
+            <Box py={{ base: 10, md: 20 }} minHeight="100vh" bgColor={bgColor}>
                 <Container maxW="container.xl" px={{ base: 4, md: 8 }}>
                     {/* Heading */}
                     <Heading
@@ -70,6 +75,7 @@ const AboutMe = () => {
                         size="2xl"
                         mb={6}
                         textAlign={{ base: "center", md: "left" }}
+                        color={headingColor}
                     >
                         About Subasish Das
                     </Heading>
@@ -81,10 +87,11 @@ const AboutMe = () => {
                         justifyContent="space-between"
                         gap={{ base: 6, md: 0 }}
                         mb={10}
+                        color={textCol}
                     >
                         {/* Text section */}
                         <Box flex="1" pr={{ md: 5 }} mb={{ base: 6, md: 0 }}>
-                            <Text fontSize={{ base: "md", md: "lg" }} color="gray.700" lineHeight="taller">
+                            <Text fontSize={{ base: "md", md: "lg" }} color={textCol} lineHeight="taller">
                                 I am Subasish. I grew up in Chattogram, Bangladesh. I am a
                                 tenure-track Assistant Professor of Civil Engineering program
                                 (Ingram School of Engineering) at Texas State University.
@@ -144,10 +151,11 @@ const AboutMe = () => {
                         size="lg"
                         my={6}
                         textAlign={{ base: "center", md: "left" }}
+                        color={blackHeadingColor}
                     >
                         Traffic Technology International: A Conversation with Subasish Das
                     </Heading>
-                    <Text fontSize={{ base: "md", md: "lg" }} color="gray.700" lineHeight="taller">
+                    <Text fontSize={{ base: "md", md: "lg" }} color={textCol} lineHeight="taller">
                         Researchers at Texas A&M Transportation Institute are using AI to
                         predict exactly where and when crashes will occur so that road
                         authorities can prioritize funding for safety improvements in a more
@@ -179,10 +187,10 @@ const AboutMe = () => {
                     >
                         {/* Text section */}
                         <Box flex="1" pr={{ md: 5 }} mb={{ base: 6, md: 0 }}>
-                            <Heading as="h3" size="md" fontWeight="bold" mb={3}>
+                            <Heading as="h3" size="md" fontWeight="bold" mb={3} color={blackHeadingColor}>
                                 Q: Can AI algorithms deliver much more accurate predictions?
                             </Heading>
-                            <Text fontSize={{ base: "md", md: "lg" }} color="gray.700" lineHeight="taller">
+                            <Text fontSize={{ base: "md", md: "lg" }} color={textCol} lineHeight="taller">
                                 In the conventional model we just use roadway geometric
                                 information and traffic volume. But other data such as operating
                                 speed — which is very important in predicting crash severity — and
@@ -196,10 +204,10 @@ const AboutMe = () => {
                                 now trying to get even more detail, down to daytime crashes versus
                                 nighttime crashes.
                             </Text>
-                            <Heading as="h3" size="md" fontWeight="bold" mb={3} mt={6}>
+                            <Heading as="h3" size="md" fontWeight="bold" mb={3} mt={6} color={blackHeadingColor}>
                                 Q: Why is there a need for AI models in highway safety analysis?
                             </Heading>
-                            <Text fontSize={{ base: "md", md: "lg" }} color="gray.700" lineHeight="taller">
+                            <Text fontSize={{ base: "md", md: "lg" }} color={textCol} lineHeight="taller">
                                 Conventional statistical models cannot process big data and data
                                 stream-related problems. We need some advanced AI to get that done
                                 and from there we can offer predictions that are daily or even
@@ -230,6 +238,7 @@ const AboutMe = () => {
                         size="lg"
                         my={6}
                         textAlign={{ base: "center", md: "left" }}
+                        color={blackHeadingColor}
                     >
                         Artificial Intelligence in Highway Safety: A New Text Book written by
                         Subasish Das
@@ -245,7 +254,7 @@ const AboutMe = () => {
                     >
                         {/* Text section */}
                         <Box flex="1" pr={{ md: 5 }} mb={{ base: 6, md: 0 }}>
-                            <Text fontSize={{ base: "md", md: "lg" }} color="gray.700" lineHeight="taller">
+                            <Text fontSize={{ base: "md", md: "lg" }} color={textCol} lineHeight="taller">
                                 Artificial Intelligence in Highway Safety provides cutting-edge
                                 advances in highway safety using AI. The author is a highway
                                 safety expert. He pursues highway safety within its contexts,
@@ -303,6 +312,7 @@ const AboutMe = () => {
                         size="lg"
                         my={6}
                         textAlign={{ base: "center", md: "left" }}
+                        color={blackHeadingColor}
                     >
                         Sponsors
                     </Heading>
@@ -313,9 +323,10 @@ const AboutMe = () => {
                         borderRadius="sm"
                         objectFit="contain"
                         mx="auto"
+                        rounded={"lg"}
                     />
                 </Container>
-            </Box>
+            </Box >
         </>
     );
 };

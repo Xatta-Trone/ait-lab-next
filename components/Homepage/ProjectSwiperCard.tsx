@@ -1,17 +1,19 @@
 import React from "react";
-import { Box, Text, Stack, Link, Button, Image, Heading } from "@chakra-ui/react";
+import { Box, Text, Stack, Link, Button, Image, Heading, useColorModeValue } from "@chakra-ui/react";
 
 // Component for displaying a single project in the Swiper
 const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
     const { project } = props; // Destructure the project prop
-
+    const bgColor = useColorModeValue("white", "gray.600")
+    const color = useColorModeValue("yellow.600", "whiteAlpha.900")
+    const textHover = useColorModeValue("yellow.600", "whiteAlpha.700")
     return (
         <Box
             p={5} // Padding inside the card
             shadow="md" // Medium shadow for the card
             borderWidth="1px" // Border styling
             borderRadius="md" // Rounded corners
-            bg="white" // Background color
+            bg={bgColor} // Background color
             _hover={{
                 shadow: "lg", // Larger shadow on hover
                 transform: "translateY(-10px)", // Lift effect on hover
@@ -50,8 +52,9 @@ const ProjectSwiperCard = (props: { project: ProjectTypes }) => {
                     <Link href={project.link} isExternal>
                         <Heading
                             as="h3"
+                            color={color}
                             size={{ base: "sm", md: "md" }} // Responsive font size
-                            _hover={{ color: "yellow.600" }} // Change color on hover
+                            _hover={{ color: textHover }} // Change color on hover
                             sx={{
                                 display: "-webkit-box",
                                 WebkitLineClamp: 3, // Limit to 3 lines
