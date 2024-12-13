@@ -12,19 +12,19 @@
     "path": "/publication"
   },
   {
-    "name": "Team",
-    "path": "/teams"
+    "name": "Tools",
+    "path": "/tools"
   },
   {
     "name": "Courses",
     "path": "/courses"
   },
   {
-    "name": "News",
-    "path": "/news"
+    "name": "Team",
+    "path": "/teams"
   },
   {
-    "name": "Tools",
-    "path": "/tools"
+    "name": "News",
+    "path": "/news"
   }
 ]
