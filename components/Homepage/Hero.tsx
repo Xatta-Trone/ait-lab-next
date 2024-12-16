@@ -39,7 +39,7 @@ const Hero = () => {
                     {/* First Feature */}
                     <ListItem>
                         <ListIcon as={HiMiniArrowRightCircle} color="white" /> {/* Arrow icon */}
-                        Casual Artificial Intelligence
+                        Causal Artificial Intelligence
                     </ListItem>
 
                     {/* Second Feature */}
