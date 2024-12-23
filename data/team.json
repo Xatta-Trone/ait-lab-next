@@ -10,7 +10,9 @@
     "researchGate": "https://www.researchgate.net/profile/Subasish-Das",
     "github": "https://github.com/subasish",
     "twitter": "https://x.com/subasish_das",
-    "websites": ["https://subasish.github.io/"],
+    "websites": [
+      "https://subasish.github.io/"
+    ],
     "description": "Dr. Subasish Das is an Assistant Professor of Civil Engineering Program in the Ingram School of Engineering at Texas State University. He is also involved with Texas A&M Transportation Institute (TTI) as a part time Associate Research Scientist. Previously, he worked as a full-time Associate Research Scientist at TTI during 2015 to 2022. He has more than 13 years of experience related to roadway safety, traffic operation, and connected and automated vehicle (CAV) technologies. He is a Systems Engineer by training with hands on experience on Six Sigma and Lean Engineering. His major areas of expertise include database management, statistical analysis and machine learning with emphasis in safety and transportation operations, spatial analysis with modern web GIS tools, interactive data visualization, and deep learning tools for CAV technologies. Dr. Das is a prolific author. He has published more than 160 technical reports, and journal articles. He is the author of the book “Artificial Intelligence in Highway Safety,” which was published by CRC Press in 2022. The AASHTO Research Advisory Committee (RAC) awarded one of his research reports as 2014 AASHTO Sweet Sixteen High Value Research Project. Dr. Das is an active member of ITE, and ASCE. He is an Eno Fellow. He served as vice-president of membership of Young Professionals in Transportation Houston chapter. He is currently a member of three TRB Committees: Information and Knowledge Management (AJE45), Artificial Intelligence and Advanced Computing Applications (AED50), and Impairment in Transportation (ACS50)."
   },
   {
@@ -50,7 +52,9 @@
     "googleScholar": "https://scholar.google.com/citations?user=DJcqWr0AAAAJ&hl=en&oi=sra",
     "github": "https://github.com/davidamills",
     "twitter": "",
-    "websites": ["https://davidmills.io"]
+    "websites": [
+      "https://davidmills.io"
+    ]
   },
   {
     "name": "Shriyank Somvanshi",
@@ -175,19 +179,6 @@
     "description": "Sazzad Bin Bashar Polock is a Master's student in Civil Engineering (Transportation) at Texas State University, working under the guidance of Dr. Subasish Das. Currently working as a graduate instructional assistant at the Ingram School of Engineering, he joined the Artificial Intelligence in Transportation (AIT) lab in Fall 2024. His research interests include traffic safety, crash data analysis, driver behavior, and the integration of autonomous vehicles within existing infrastructure. He earned his bachelor's degree in civil engineering from Ahsanullah University of Science and Technology in 2023."
   },
   {
-    "name": "Rawand Almadi",
-    "label": "M.Sc., Civil Engineering (Fall 2023 - Current)",
-    "group": "Graduate Student",
-    "linkedin": "",
-    "email": "rfa20@txstate.edu",
-    "image": "rawand_almadi.jpg",
-    "googleScholar": "",
-    "github": "",
-    "twitter": "",
-    "websites": [],
-    "description": "Rawand Almadi is a Master's student in Civil Engineering (Transportation) at Texas State University, working under the guidance of Dr. Subasish Das. Currently working as a graduate instructional assistant at the Ingram School of Engineering. She joined the Artificial Intelligence in Transportation (AIT) lab in Fall 2024. He earned his bachelor's degree in civil engineering from TXST in 2023."
-  },
-  {
     "name": "Khaled Aly Abousabaa",
     "label": "B.Sc., Civil Engineering (Fall 2023 - Current)",
     "group": "Undergraduate Student",
@@ -212,32 +203,6 @@
     "twitter": "",
     "websites": [],
     "description": "Darrell is a senior at Texas State University, majoring in Civil Engineering (CE) and minoring in mathematics. In the summer of 2023, Darrell started working as an undergraduate research assistant at the Artificial Intelligence in Transportation (AIT) lab under Dr. Das Subasish. While at AIT, Darrell was awarded the Dwight David Eisenhower Transportation Fellowship (DDETFP), which he presented at DC on the concept of 15-minute cities. As a member of a few engineering and environmental groups, Darrell is passionate about the environment and water resources, and he is interested in the impact that urbanization, along with the increase in traffic systems, has on the environment. As a civil drafter/designer for a small urban planning and development company, he has helped design many sites currently under development. As a founding member of the Institute of Transportation Engineers – at Texas State University, he holds the treasurer position. In his free time, he enjoys cooking, baking, and reading and is working towards becoming a sommelier in his free time."
-  },
-  {
-    "name": "Dipesh Pandit",
-    "label": "B.Sc., Computer Science (Fall 2024 - Current)",
-    "group": "Undergraduate Student",
-    "linkedin": "https://www.linkedin.com/in/dipeshpandit12/",
-    "email": "",
-    "image": "dipesh_pandit.jpg",
-    "googleScholar": "",
-    "github": "https://github.com/dipeshpandit12/",
-    "twitter": "",
-    "websites": ["https://dipeshpandit12.github.io/"],
-    "description": "Dipesh Pandit is an undergraduate Computer Science student at Texas State University with a strong passion for AI and software development. He is currently working as an undergraduate research assistant in the AIT Lab under Professor Das, having joined in the fall of 2024. He is proficient in JavaScript, C++, and Python, and has applied these skills to various personal projects. In his free time, he enjoys hiking, cooking, photography, and video editing."
-  },
-  {
-    "name": "Diwas Pandit",
-    "label": "B.Sc., Computer Science (Fall 2024 - Current)",
-    "group": "Undergraduate Student",
-    "linkedin": "https://www.linkedin.com/in/diwaspandit12/",
-    "email": "",
-    "image": "diwas_pandit.jpg",
-    "googleScholar": "",
-    "github": "https://github.com/diwaspandit",
-    "twitter": "",
-    "websites": ["https://diwaspandit.github.io"],
-    "description": "Diwas is an undergraduate student in the Computer Science program at Texas State University, currently working as a research assistant at the AIT Lab. He joined the lab in the Fall of 2024 and has been enhancing its website. Originally from Nepal, Diwas has a strong interest in software development and machine learning, and he enjoys applying his computer science knowledge to various engineering domains. Previously, he worked as a Tech Support Engineer at Hybrid.co. His technical skills include programming languages such as JavaScript, C++, and Python, as well as web development. Outside of academics, Diwas enjoys creating content on YouTube, where his channel has over 10,000 subscribers, and exploring new technologies. Additionally, he has a passion for photography and creating travel vlogs."
   },
   {
     "name": "Biplov Pandey",
@@ -277,7 +242,10 @@
     "orcid": "",
     "github": "https://github.com/gauravfs-14",
     "twitter": "https://x.com/gaurav_fs_14",
-    "websites": ["https://gaurabchhetri.com.np", "https://computenepal.com"],
+    "websites": [
+      "https://gaurabchhetri.com.np",
+      "https://computenepal.com"
+    ],
     "description": "Gaurab is currently an undergraduate student in the Computer Science Program at Texas State University. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant for Dr. Das. Originally from Nepal, Gaurab is passionate about web development and IT operations, with a strong focus on creating responsive and user-friendly web applications. His technical expertise spans HTML, CSS, JavaScript, React, Tailwind, Node.js, Express, MongoDB, and MySQL, along with version control using Git and GitHub. Before joining Texas State, Gaurab worked as an IT Officer, where he managed domain registrations, email systems, and computer lab environments. He also has experience in digital marketing, social media management, and graphic design, providing a holistic approach to enhancing online presence for businesses. His hands-on experience extends to WordPress, PHP, SQL, and a variety of tools that streamline IT operations and web development.'"
   }
 ]
