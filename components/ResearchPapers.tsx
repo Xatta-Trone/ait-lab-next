@@ -238,6 +238,7 @@ const ResearchPapers: React.FC = () => {
                                             book={paper.book}
                                             img={paper.img}
                                             authors={paper.authors}
+                                            pdf_link={paper.pdf_link}
                                         />
                                     </motion.div>
                                 ))}
