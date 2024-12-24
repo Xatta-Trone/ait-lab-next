@@ -10,7 +10,8 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
     journal,
     publisher,
     img,
-    authors
+    authors,
+    pdf_link
 }) => {
 
     const bgColor = useColorModeValue("white", "gray.600");
@@ -98,6 +99,21 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
                                 target="_blank"
                             >
                                 View Publication
+                            </Button>
+                        )}
+                        {/* Download PDF Button */}
+                        {pdf_link && (
+                            <Button
+                                variant="solid"
+                                size="md"
+                                colorScheme="yellow"
+                                _hover={{ bg: "yellow.500", color: "white" }}
+                                as="a"
+                                mx={2}
+                                href={`https://raw.githubusercontent.com/Xatta-Trone/ait-lab-published-papers/refs/heads/main/${pdf_link}`}
+                                target="_blank"
+                            >
+                                Download Author Copy
                             </Button>
                         )}
                     </Box>

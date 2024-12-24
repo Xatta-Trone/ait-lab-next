@@ -72,7 +72,7 @@ const ResearchPapers: React.FC = () => {
 
     useEffect(() => {
         const search = searchParams.get("search") || "";
-        const year = searchParams.get("year") || "";
+        const year = searchParams.get("year") || "desc";
         const page = parseInt(searchParams.get("page") || "1", 10);
 
         setSearchTerm(search);
@@ -238,6 +238,7 @@ const ResearchPapers: React.FC = () => {
                                             book={paper.book}
                                             img={paper.img}
                                             authors={paper.authors}
+                                            pdf_link={paper.pdf_link}
                                         />
                                     </motion.div>
                                 ))}

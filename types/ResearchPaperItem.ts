@@ -10,6 +10,7 @@ interface ResearchPaperItemProps {
     book?: string; // (Optional) If the paper is part of a book, the book title
     img?: string; // (Optional) The URL or file path of an image representing the research paper
     authors?: string; // (Optional) The authors of the research paper
+    pdf_link?: string;
 }
 
 interface ResearchPaper {
@@ -24,4 +25,5 @@ interface ResearchPaper {
     issue?: string; // (Optional) The issue number of the publication
     book?: string; // (Optional) If the paper is part of a book, the book title
     img?: string; // (Optional) The URL or file path of an image representing the research paper
+    pdf_link?: string;
 }
