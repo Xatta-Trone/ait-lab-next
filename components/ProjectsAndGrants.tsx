@@ -1,164 +1,165 @@
 "use client";
 
 import React, { useEffect, useState, useRef, useCallback, useMemo } from "react";
-import { Box, Container, Input, Select, Stack, Text, Button, Center, Spinner, useColorModeValue } from "@chakra-ui/react";
+import {
+    Box,
+    Container,
+    Input,
+    Select,
+    Stack,
+    Text,
+    Center,
+    Spinner,
+    useColorModeValue,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import projectsData from "@/data/stock_projs_grants.json";
-// import projectsData from "@/data/projs_and_grants.json";
 import ProjectCard from "@/components/ProjectCard";
 import GrantCard from "@/components/GrantCard";
 
-// Type the imported projects data
 const typedProjectsData: ProjectTypes[] = projectsData.projects as ProjectTypes[];
 const typedGrantsData: GrantTypes[] = projectsData.grants as GrantTypes[];
 
 const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
-
     const inputBg = useColorModeValue("white", "gray.600");
     const inputBorder = useColorModeValue("gray.200", "gray.500");
-    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700")
+    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700");
 
-    const [isMounted, setIsMounted] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
     const [sortByStatus, setSortByStatus] = useState("");
-    const [currentPage, setCurrentPage] = useState(1);
-    const [debouncing, setDebouncing] = useState(false);
     const [filteredData, setFilteredData] = useState<(ProjectTypes | GrantTypes)[]>([]);
-    const debounceTimer = useRef<NodeJS.Timeout | null>(null);
+    const [displayedData, setDisplayedData] = useState<(ProjectTypes | GrantTypes)[]>([]);
+    const [hasMore, setHasMore] = useState(true);
+    const [isLoadingMore, setIsLoadingMore] = useState(false);
+    const [isSearching, setIsSearching] = useState(false);
 
     const dataPerPage = 10;
+    const observer = useRef<IntersectionObserver | null>(null);
 
-    // Combine and memoize the data
-    const combinedData = useMemo(() => {
-        return [...typedProjectsData, ...typedGrantsData];
-    }, [typedProjectsData, typedGrantsData]);
+    const combinedData = useMemo(() => [...typedProjectsData, ...typedGrantsData], []);
 
-    // Search handler with debouncing
-    const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const query = e.target.value;
+    // Parse query parameters and hash on initial render
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get("q") || "";
+        const status = params.get("status") || "";
+
         setSearchTerm(query);
-        setDebouncing(true);
-
-        if (debounceTimer.current) {
-            clearTimeout(debounceTimer.current);
-        }
-
-        debounceTimer.current = setTimeout(() => {
-            setDebouncing(false);
-        }, 300);
-    };
-
-    // Sort handler
-    const handleSortByStatus = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const status = e.target.value;
         setSortByStatus(status);
-        setCurrentPage(1);
-    };
+    }, []);
 
-    // Pagination handler
-    const handlePageChange = (page: number) => {
-        setCurrentPage(page);
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
-    // URL Update handler
+    // Update URL dynamically
     const updateURL = useCallback(() => {
-        const queryParams = new URLSearchParams();
-        queryParams.set("page", currentPage.toString());
-        if (searchTerm) queryParams.set("q", searchTerm);
-        if (sortByStatus) queryParams.set("status", sortByStatus);
+        const params = new URLSearchParams();
+        if (searchTerm) params.set("q", searchTerm);
+        if (sortByStatus) params.set("status", sortByStatus);
 
-        // Dynamically set the hash based on the role
-        const hash = role === "PI/Co-PI" ? "#pi-co-pi" : role === "Key Researcher" ? "#key-researcher" : "";
+        const hash = role === "PI/Co-PI" ? "#pi-co-pi" : "#key-researcher";
+        window.history.replaceState(
+            null,
+            "",
+            `${window.location.pathname}?${params.toString()}${hash}`
+        );
+    }, [searchTerm, sortByStatus, role]);
 
-        window.history.replaceState(null, "", `${window.location.pathname}?${queryParams.toString()}${hash}`);
-    }, [currentPage, searchTerm, sortByStatus, role]);
-
-
-    // Parse query string and hash when the page loads
-    useEffect(() => {
-        const urlParams = new URLSearchParams(window.location.search);
-
-        const page = parseInt(urlParams.get("page") || "1", 10);
-        const query = urlParams.get("q") || "";
-        const status = urlParams.get("status") || "";
-        if (page) setCurrentPage(page);
-        if (query) setSearchTerm(query);
-        if (status) setSortByStatus(status);
-    }, []);
-
-    // Ensure the component is mounted before using window.location
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            setIsMounted(true); // Set mounted to true after the component is rendered on the client
-        }
-    }, []);
-
-    useEffect(() => {
+    // Apply filters to data
+    const applyFilters = useCallback(() => {
         let filtered = combinedData;
 
-        // Apply search filter
         if (searchTerm) {
             const lowerSearchTerm = searchTerm.toLowerCase();
             filtered = filtered.filter((item) => {
-                const normalizedSearchTerm = lowerSearchTerm.replace(/\s+/g, '');
-
-                if (isProject(item)) {
-                    const normalizedProjectNumber = item.number.replace(/\s+/g, '').toLowerCase();
+                const normalizedSearchTerm = lowerSearchTerm.replace(/\s+/g, "");
+                if ("number" in item) {
+                    const normalizedProjectNumber = item.number.replace(/\s+/g, "").toLowerCase();
                     return (
                         normalizedProjectNumber.includes(normalizedSearchTerm) ||
                         item.title.toLowerCase().includes(lowerSearchTerm) ||
                         item.description.toLowerCase().includes(lowerSearchTerm) ||
                         item.sponsor.toLowerCase().includes(lowerSearchTerm)
                     );
-                } else if (isGrant(item)) {
+                } else {
                     return (
                         item.title.toLowerCase().includes(lowerSearchTerm) ||
                         item.description.toLowerCase().includes(lowerSearchTerm) ||
                         item.PI.toLowerCase().includes(lowerSearchTerm)
                     );
                 }
-                return false;
             });
         }
 
-        // Apply role filter
         if (role) {
-            filtered = filtered.filter(item =>
+            filtered = filtered.filter((item) =>
                 role === "PI/Co-PI"
                     ? ["PI", "Co-PI", "Instructional PI", "Institutional PI"].includes(item.PI_role)
-                    : role === "Key Researcher"
-                        ? item.PI_role === "Key Researcher"
-                        : true
+                    : item.PI_role === "Key Researcher"
             );
         }
 
-        // Apply status filter
         if (sortByStatus) {
-            filtered = filtered.filter(item => item.status === sortByStatus);
+            filtered = filtered.filter((item) => item.status === sortByStatus);
         }
 
         setFilteredData(filtered);
-        updateURL(); // Call the updated URL handler
-    }, [combinedData, searchTerm, role, sortByStatus, currentPage, updateURL]);
+        setDisplayedData(filtered.slice(0, dataPerPage));
+        setHasMore(filtered.length > dataPerPage);
+        updateURL();
+    }, [combinedData, searchTerm, role, sortByStatus, updateURL]);
 
+    useEffect(() => {
+        if (!isSearching) {
+            applyFilters();
+        }
+    }, [applyFilters, isSearching]);
 
-    const indexOfLastItem = currentPage * dataPerPage;
-    const indexOfFirstItem = indexOfLastItem - dataPerPage;
+    const loadMoreData = () => {
+        if (!hasMore || isLoadingMore) return;
 
-    const currentData = filteredData.slice(indexOfFirstItem, indexOfLastItem);
-    const totalPages = Math.ceil(filteredData.length / dataPerPage);
+        setIsLoadingMore(true);
 
-    // Type guard to distinguish between ProjectTypes and GrantTypes
-    const isProject = (item: ProjectTypes | GrantTypes): item is ProjectTypes => {
-        return 'number' in item;  // 'number' is a unique field for ProjectTypes
+        setTimeout(() => {
+            const nextData = filteredData.slice(
+                displayedData.length,
+                displayedData.length + dataPerPage
+            );
+            setDisplayedData((prev) => [...prev, ...nextData]);
+            setHasMore(displayedData.length + nextData.length < filteredData.length);
+            setIsLoadingMore(false);
+        }, 500);
     };
 
-    const isGrant = (item: ProjectTypes | GrantTypes): item is GrantTypes => {
-        return 'budget' in item;  // 'budget' is a unique field for GrantTypes
+    useEffect(() => {
+        if (observer.current) observer.current.disconnect();
+
+        observer.current = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) loadMoreData();
+            },
+            { root: null, rootMargin: "0px", threshold: 1.0 }
+        );
+
+        const triggerElement = document.querySelector("#load-more-trigger");
+        if (triggerElement) {
+            observer.current.observe(triggerElement);
+        }
+
+        return () => {
+            if (observer.current) observer.current.disconnect();
+        };
+    }, [loadMoreData]);
+
+    const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchTerm(e.target.value);
+        setIsSearching(true);
+
+        setTimeout(() => {
+            setIsSearching(false);
+        }, 500);
     };
 
-    if (!isMounted) return null; // Prevent rendering during SSR
+    const handleSortByStatus = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        setSortByStatus(e.target.value);
+    };
 
     return (
         <Box py={8}>
@@ -178,53 +179,48 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
                         onChange={handleSortByStatus}
                         bg={inputBg}
                         borderColor={inputBorder}
-                        color={placeHolderColor}
                     >
                         <option value="ongoing">Ongoing</option>
                         <option value="completed">Completed</option>
                     </Select>
                 </Stack>
 
-                {debouncing ? (
-                    <Center py={10}>
-                        <Spinner size="xl" color="yellow.500" />
-                    </Center>
-                ) : filteredData.length === 0 ? (
-                    <Text>No data found</Text>
-                ) : (
+                {isSearching && (
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                        <Center py={4}>
+                            <Spinner size="lg" color="yellow.500" />
+                        </Center>
+                    </motion.div>
+                )}
+
+                {displayedData.length > 0 ? (
                     <Stack spacing={6}>
-                        {currentData.map((item, index) => (
+                        {displayedData.map((item, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 50 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                {isProject(item) ? (
+                                {"number" in item ? (
                                     <ProjectCard project={item} />
-                                ) : isGrant(item) ? (
+                                ) : (
                                     <GrantCard grant={item} />
-                                ) : null}
+                                )}
                             </motion.div>
                         ))}
                     </Stack>
+                ) : (
+                    <Text>No data found</Text>
                 )}
 
-                <Stack direction="row" justify="center" mt={8}>
-                    {currentPage > 1 && (
-                        <Button onClick={() => handlePageChange(currentPage - 1)} _hover={{ color: "white", backgroundColor: "primary" }} >
-                            Previous
-                        </Button>
-                    )}
-                    <Center>
-                        Page {currentPage} of {totalPages}
+                {hasMore && <div id="load-more-trigger" style={{ height: "1px" }}></div>}
+
+                {isLoadingMore && (
+                    <Center py={6}>
+                        <Spinner size="xl" color="yellow.500" />
                     </Center>
-                    {currentPage < totalPages && (
-                        <Button onClick={() => handlePageChange(currentPage + 1)} _hover={{ color: "white", backgroundColor: "primary" }} >
-                            Next
-                        </Button>
-                    )}
-                </Stack>
+                )}
             </Container>
         </Box>
     );

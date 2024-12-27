@@ -1,58 +1,54 @@
-/** @format */
 "use client";
 
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
     Box,
     Container,
     Text,
     Input,
     Stack,
-    Button,
-    SimpleGrid,
     Select,
     Spinner,
     Heading,
     Center,
+    SimpleGrid,
     useColorModeValue,
 } from "@chakra-ui/react";
 import { useSearchParams, useRouter } from "next/navigation";
-import axios from "axios";
-import ResearchPaperItem from "@/components/ResearchPaperItem";
 import { motion } from "framer-motion";
+import axios from "axios";
 import ResearchPaperItemNew from "./ResearchPaperItemNew";
 
 const ResearchPapers: React.FC = () => {
-    const bgColor = useColorModeValue("white", "gray.700")
+    const bgColor = useColorModeValue("white", "gray.700");
     const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
     const inputBg = useColorModeValue("white", "gray.600");
     const inputBorder = useColorModeValue("gray.200", "gray.500");
-    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700")
+    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700");
 
     const searchParams = useSearchParams();
     const router = useRouter();
+
     const [papers, setPapers] = useState<ResearchPaper[]>([]);
     const [lastUpdated, setLastUpdated] = useState("");
     const [filteredPapers, setFilteredPapers] = useState<ResearchPaper[]>([]);
-    const [searching, setSearching] = useState(false);
-    const [searchTerm, setSearchTerm] = useState("");
+    const [displayedPapers, setDisplayedPapers] = useState<ResearchPaper[]>([]);
+    const [searchTerm, setSearchTerm] = useState(searchParams.get("q") || "");
+    const [debouncedSearchTerm, setDebouncedSearchTerm] = useState(searchParams.get("q") || "");
     const [sortByYear, setSortByYear] = useState("");
-    const [currentPage, setCurrentPage] = useState(1);
-    const [isPageChanging, setIsPageChanging] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [isLoadingMore, setIsLoadingMore] = useState(false);
+    const [hasMore, setHasMore] = useState(true);
     const papersPerPage = 10;
-    const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+    const observer = useRef<IntersectionObserver | null>(null);
 
     useEffect(() => {
-
-
         const fetchPapers = async () => {
             try {
                 const response = await axios.get(
                     "https://raw.githubusercontent.com/Xatta-Trone/google-scholar-scrapper/refs/heads/main/scholar-data-qK-YgxAAAAAJ.json"
                 );
                 setPapers(response.data.data || []);
-
-                // Convert the last updated timestamp to a human-readable format
                 const updatedDate = new Date(response.data.last_updated_utc);
                 setLastUpdated(
                     updatedDate.toLocaleDateString("en-US", {
@@ -70,43 +66,34 @@ const ResearchPapers: React.FC = () => {
         fetchPapers();
     }, []);
 
+    // Sync search term with query parameter on initial load
     useEffect(() => {
-        const search = searchParams.get("search") || "";
+        const q = searchParams.get("q") || "";
         const year = searchParams.get("year") || "desc";
-        const page = parseInt(searchParams.get("page") || "1", 10);
-
-        setSearchTerm(search);
+        setSearchTerm(q);
         setSortByYear(year);
-        setCurrentPage(page);
     }, [searchParams]);
 
-    const handleSearch = useCallback(
-        (e: React.ChangeEvent<HTMLInputElement>) => {
-            const searchQuery = e.target.value;
-            setSearchTerm(searchQuery);
-            setSearching(true);
+    // Debounce search term updates
+    useEffect(() => {
+        setIsLoading(true);
+        const handler = setTimeout(() => {
+            setDebouncedSearchTerm(searchTerm);
+            setIsLoading(false);
+        }, 300);
 
-            if (searchTimeoutRef.current) {
-                clearTimeout(searchTimeoutRef.current);
-            }
-
-            searchTimeoutRef.current = setTimeout(() => {
-                updateURL(searchQuery, sortByYear, 1);
-                setSearching(false);
-            }, 500);
-        },
-        [sortByYear]
-    );
+        return () => clearTimeout(handler);
+    }, [searchTerm]);
 
     useEffect(() => {
         let tempPapers = [...papers];
 
-        if (searchTerm) {
+        if (debouncedSearchTerm) {
             tempPapers = tempPapers.filter(
                 (paper) =>
-                    paper.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    paper.title.toLowerCase().includes(debouncedSearchTerm.toLowerCase()) ||
                     (paper.authors &&
-                        paper.authors.toLowerCase().includes(searchTerm.toLowerCase()))
+                        paper.authors.toLowerCase().includes(debouncedSearchTerm.toLowerCase()))
             );
         }
 
@@ -117,67 +104,70 @@ const ResearchPapers: React.FC = () => {
         }
 
         setFilteredPapers(tempPapers);
-    }, [papers, searchTerm, sortByYear]);
+        setDisplayedPapers(tempPapers.slice(0, papersPerPage));
+        setHasMore(tempPapers.length > papersPerPage);
+    }, [papers, debouncedSearchTerm, sortByYear]);
 
-    // Pagination Logic
-    const indexOfLastPaper = currentPage * papersPerPage;
-    const indexOfFirstPaper = indexOfLastPaper - papersPerPage;
-    const currentPapers = filteredPapers.slice(indexOfFirstPaper, indexOfLastPaper);
-    const totalPages = Math.ceil(filteredPapers.length / papersPerPage);
+    const loadMorePapers = () => {
+        if (!hasMore || isLoadingMore) return;
+        setIsLoadingMore(true);
 
-    const updateURL = useCallback(
-        (search: string, year: string, page: number) => {
-            const searchParams = new URLSearchParams();
-            if (search) searchParams.set("search", search);
-            if (year) searchParams.set("year", year);
-            if (page) searchParams.set("page", page.toString());
-
-            router.push(`?${searchParams.toString()}`);
-        },
-        [router]
-    );
-
-    const handleSortYearChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setSortByYear(e.target.value);
-        updateURL(searchTerm, e.target.value, 1);
+        setTimeout(() => {
+            const nextPapers = filteredPapers.slice(
+                displayedPapers.length,
+                displayedPapers.length + papersPerPage
+            );
+            setDisplayedPapers((prev) => [...prev, ...nextPapers]);
+            setHasMore(displayedPapers.length + nextPapers.length < filteredPapers.length);
+            setIsLoadingMore(false);
+        }, 500);
     };
 
-    const handlePageChange = (page: number) => {
-        setIsPageChanging(true);
-        setCurrentPage(page);
-        updateURL(searchTerm, sortByYear, page);
-    };
-
-    // Effect to handle loading state after page change
     useEffect(() => {
-        if (isPageChanging) {
-            const timer = setTimeout(() => {
-                setIsPageChanging(false);
-            }, 500);
-
-            return () => clearTimeout(timer);
-        }
-    }, [isPageChanging]);
-
-    const variants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: (i: number) => ({
-            opacity: 1,
-            y: 0,
-            transition: {
-                delay: i * 0.1,
-                duration: 0.5,
+        if (observer.current) observer.current.disconnect();
+        observer.current = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    loadMorePapers();
+                }
             },
-        }),
+            { root: null, rootMargin: "0px", threshold: 1.0 }
+        );
+
+        if (observer.current && document.querySelector("#load-more-trigger")) {
+            observer.current.observe(document.querySelector("#load-more-trigger")!);
+        }
+
+        return () => {
+            if (observer.current) observer.current.disconnect();
+        };
+    }, [loadMorePapers]);
+
+    // Update URL with query parameters
+    const updateURL = (search: string, year: string) => {
+        const params = new URLSearchParams();
+        if (search) params.set("q", search);
+        if (year) params.set("year", year);
+
+        router.push(`?${params.toString()}`);
+    };
+
+    const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchTerm(e.target.value);
+        updateURL(e.target.value, sortByYear);
+    };
+
+    const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        setSortByYear(e.target.value);
+        updateURL(searchTerm, e.target.value);
     };
 
     return (
-        <Box py={20} backgroundColor={bgColor}>
+        <Box py={20} backgroundColor={bgColor} minH={'90vh'}>
             <Container maxW="container.xl">
                 <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                     Research Papers
                 </Heading>
-
                 <Text fontSize="sm" color={placeHolderColor} mb={2}>
                     Last Updated: {lastUpdated} from Google Scholar
                 </Text>
@@ -186,7 +176,7 @@ const ResearchPapers: React.FC = () => {
                     <Input
                         placeholder="Search by title, author"
                         value={searchTerm}
-                        onChange={handleSearch}
+                        onChange={handleSearchChange}
                         bg={inputBg}
                         borderColor={inputBorder}
                         _placeholder={{ color: placeHolderColor }}
@@ -194,86 +184,41 @@ const ResearchPapers: React.FC = () => {
                     <Select
                         placeholder="Sort by Year"
                         value={sortByYear}
-                        onChange={handleSortYearChange}
+                        onChange={handleSortChange}
                         bg={inputBg}
                         borderColor={inputBorder}
-                        color={placeHolderColor}
                     >
-                        <option value="asc">
-                            Oldest First
-                        </option>
-                        <option value="desc">
-                            Newest First
-                        </option>
+                        <option value="asc">Oldest First</option>
+                        <option value="desc">Newest First</option>
                     </Select>
                 </Stack>
 
-                {(searching || isPageChanging) && (
-                    <Box textAlign="center" py={6}>
+                {isLoading && (
+                    <Center py={6}>
                         <Spinner size="xl" color="yellow.500" />
-                    </Box>
+                    </Center>
                 )}
 
-                <Box>
-                    {!searching && !isPageChanging && filteredPapers.length > 0 && (
-                        <>
-                            <SimpleGrid columns={{ base: 1 }} spacing={6}>
-                                {currentPapers.map((paper, index) => (
-                                    <motion.div
-                                        key={index}
-                                        custom={index}
-                                        initial="hidden"
-                                        animate="visible"
-                                        variants={variants}
-                                    >
-                                        <ResearchPaperItemNew
-                                            title={paper.title}
-                                            total_citations={paper.total_citations}
-                                            year={paper.year}
-                                            url={paper.url}
-                                            journal={paper.journal}
-                                            publisher={paper.publisher}
-                                            source={paper.source}
-                                            issue={paper.issue}
-                                            book={paper.book}
-                                            img={paper.img}
-                                            authors={paper.authors}
-                                            pdf_link={paper.pdf_link}
-                                        />
-                                    </motion.div>
-                                ))}
-                            </SimpleGrid>
+                <SimpleGrid columns={{ base: 1 }} spacing={6}>
+                    {displayedPapers.map((paper, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <ResearchPaperItemNew {...paper} />
+                        </motion.div>
+                    ))}
+                </SimpleGrid>
 
-                            <Stack mt={8} direction="row" spacing={4} justify="center">
-                                {currentPage > 1 && (
-                                    <Button
-                                        onClick={() => handlePageChange(currentPage - 1)}
-                                        colorScheme="yellow" _hover={{ color: "white", backgroundColor: "primary" }}
-                                    >
-                                        Previous
-                                    </Button>
-                                )}
-                                <Center>
-                                    Page {currentPage} of {totalPages}
-                                </Center>
-                                {currentPage < totalPages && (
-                                    <Button
-                                        onClick={() => handlePageChange(currentPage + 1)}
-                                        colorScheme="yellow" _hover={{ color: "white", backgroundColor: "primary" }}
-                                    >
-                                        Next
-                                    </Button>
-                                )}
-                            </Stack>
-                        </>
-                    )}
+                {isLoadingMore && (
+                    <Center py={6}>
+                        <Spinner size="xl" color="yellow.500" />
+                    </Center>
+                )}
 
-                    {!searching && !isPageChanging && filteredPapers.length === 0 && (
-                        <Text textAlign="center" py={6}>
-                            No results found.
-                        </Text>
-                    )}
-                </Box>
+                <div id="load-more-trigger" style={{ height: "1px" }}></div>
             </Container>
         </Box>
     );

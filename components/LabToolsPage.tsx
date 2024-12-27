@@ -1,63 +1,59 @@
 "use client";
 
 import React, { useEffect, useState, useRef, useCallback } from "react";
-import { Box, Container, Input, Stack, Text, Button, Center, Spinner, Heading, useColorModeValue } from "@chakra-ui/react";
+import {
+    Box,
+    Container,
+    Input,
+    Stack,
+    Text,
+    Spinner,
+    Heading,
+    Center,
+    useColorModeValue,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
 import LabToolsCard from "./LabToolsCard";
 import labToolsData from "@/data/lab_tools.json";
 
-// Define the typed LabTools data structure
 const typedLabToolsData: LabTools[] = labToolsData as LabTools[];
 
 const LabToolsPage: React.FC = () => {
-
-    const bgColor = useColorModeValue("white", "gray.700")
+    const bgColor = useColorModeValue("white", "gray.700");
     const headingColor = useColorModeValue("yellow.600", "whiteAlpha.900");
     const inputBg = useColorModeValue("white", "gray.600");
     const inputBorder = useColorModeValue("gray.200", "gray.500");
-    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700")
-
-    // Set the document title dynamically
-    useEffect(() => {
-        document.title = "Tools - Artificial Intelligence in Transportation Lab (AIT Lab)";
-    });
+    const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700");
 
     const router = useRouter();
     const searchParams = useSearchParams();
 
-    // State to manage filtered tools based on search input
+    // State management
     const [filteredTools, setFilteredTools] = useState<LabTools[]>([]);
-
-    // State to manage search and pagination behavior
+    const [displayedTools, setDisplayedTools] = useState<LabTools[]>([]);
     const [searching, setSearching] = useState(false);
-    const [searchTerm, setSearchTerm] = useState(searchParams.get("search") || ""); // Initialize with query string, if present
-    const [currentPage, setCurrentPage] = useState(parseInt(searchParams.get("page") || "1", 10)); // Initialize pagination
-    const [isPageChanging, setIsPageChanging] = useState(false);
-
-    const toolsPerPage = 10; // Number of tools to display per page
-    const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null); // Reference for debounce timer
+    const [searchTerm, setSearchTerm] = useState(searchParams.get("search") || "");
+    const [isLoadingMore, setIsLoadingMore] = useState(false);
+    const [hasMore, setHasMore] = useState(true);
+    const toolsPerPage = 10;
+    const observer = useRef<IntersectionObserver | null>(null);
 
     /**
-     * Updates the URL query parameters whenever the search term or page changes.
-     * This ensures the URL reflects the current state of the page.
+     * Updates the URL query parameters whenever the search term changes.
      */
     const updateURL = useCallback(() => {
         const params = new URLSearchParams();
-        if (searchTerm) params.set("search", searchTerm); // Add search term to query params
-        params.set("page", currentPage.toString()); // Add current page to query params
-
+        if (searchTerm) params.set("search", searchTerm);
         router.push(`?${params.toString()}`);
-    }, [router, searchTerm, currentPage]);
+    }, [router, searchTerm]);
 
-    // Run the URL update effect whenever the search term or page changes
     useEffect(() => {
         updateURL();
     }, [updateURL]);
 
     /**
-     * Handles the search input, updates the search term state, and implements debounce to avoid excessive filtering.
-     * @param e - Input change event
+     * Handles the search input, updates the search term state, and filters tools.
      */
     const handleSearch = useCallback(
         (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -65,15 +61,10 @@ const LabToolsPage: React.FC = () => {
             setSearchTerm(query);
             setSearching(true);
 
-            // Clear the debounce timer if it exists
-            if (searchTimeoutRef.current) {
-                clearTimeout(searchTimeoutRef.current);
-            }
-
-            // Set a new debounce timer
-            searchTimeoutRef.current = setTimeout(() => {
+            // Simulate a debounce effect
+            setTimeout(() => {
                 setSearching(false);
-            }, 500); // Wait 500ms before applying the search filter
+            }, 300);
         },
         []
     );
@@ -83,11 +74,10 @@ const LabToolsPage: React.FC = () => {
      * Runs every time the search term changes.
      */
     useEffect(() => {
-        let tempTools = [...typedLabToolsData]; // Clone the tools array
+        let tempTools = [...typedLabToolsData];
 
-        // Apply search filter
         if (searchTerm) {
-            const lowerSearchTerm = searchTerm.toLowerCase(); // Convert search term to lowercase
+            const lowerSearchTerm = searchTerm.toLowerCase();
             tempTools = tempTools.filter((tool) =>
                 tool.title.toLowerCase().includes(lowerSearchTerm) ||
                 tool.project.toLowerCase().includes(lowerSearchTerm) ||
@@ -95,36 +85,54 @@ const LabToolsPage: React.FC = () => {
             );
         }
 
-        setFilteredTools(tempTools); // Update the filtered tools state
+        setFilteredTools(tempTools);
+        setDisplayedTools(tempTools.slice(0, toolsPerPage));
+        setHasMore(tempTools.length > toolsPerPage);
     }, [searchTerm]);
 
     /**
-     * Calculates the tools to display on the current page and manages pagination.
+     * Loads more tools as the user scrolls.
      */
-    const indexOfLastTool = currentPage * toolsPerPage; // Calculate index of last tool on the page
-    const indexOfFirstTool = indexOfLastTool - toolsPerPage; // Calculate index of first tool on the page
-    const currentTools = filteredTools.slice(indexOfFirstTool, indexOfLastTool); // Slice the filtered tools for the current page
-    const totalPages = Math.ceil(filteredTools.length / toolsPerPage); // Calculate the total number of pages
+    const loadMoreTools = () => {
+        if (isLoadingMore || !hasMore) return;
 
-    /**
-     * Handles page changes for the pagination buttons.
-     * @param page - Page number to navigate to
-     */
-    const handlePageChange = (page: number) => {
-        setIsPageChanging(true); // Set page-changing state
-        setCurrentPage(page); // Update the current page
+        setIsLoadingMore(true);
+
+        setTimeout(() => {
+            const nextTools = filteredTools.slice(
+                displayedTools.length,
+                displayedTools.length + toolsPerPage
+            );
+
+            setDisplayedTools((prev) => [...prev, ...nextTools]);
+            setHasMore(displayedTools.length + nextTools.length < filteredTools.length);
+            setIsLoadingMore(false);
+        }, 500);
     };
 
-    // Adds a slight delay effect when changing pages for smooth transitions
+    /**
+     * Sets up the Intersection Observer to detect when the user reaches the bottom of the tools list.
+     */
     useEffect(() => {
-        if (isPageChanging) {
-            const timer = setTimeout(() => {
-                setIsPageChanging(false); // Reset page-changing state
-            }, 500); // 500ms delay for smoother transitions
+        if (observer.current) observer.current.disconnect();
 
-            return () => clearTimeout(timer); // Clear the timer on component unmount
+        observer.current = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    loadMoreTools();
+                }
+            },
+            { root: null, rootMargin: "0px", threshold: 1.0 }
+        );
+
+        if (observer.current && document.querySelector("#infinite-scroll-trigger")) {
+            observer.current.observe(document.querySelector("#infinite-scroll-trigger")!);
         }
-    }, [isPageChanging]);
+
+        return () => {
+            if (observer.current) observer.current.disconnect();
+        };
+    }, [loadMoreTools]);
 
     return (
         <Box py={20} minH={"100%"} bgColor={bgColor}>
@@ -147,7 +155,7 @@ const LabToolsPage: React.FC = () => {
                 </Stack>
 
                 {/* Loading Spinner */}
-                {(searching || isPageChanging) && (
+                {searching && (
                     <Center py={10}>
                         <Spinner size="xl" color="yellow.500" />
                     </Center>
@@ -155,10 +163,9 @@ const LabToolsPage: React.FC = () => {
 
                 {/* Tools List */}
                 <Box>
-                    {/* Display filtered tools */}
-                    {!searching && !isPageChanging && currentTools.length > 0 && (
+                    {!searching && displayedTools.length > 0 && (
                         <Stack spacing={6}>
-                            {currentTools.map((tool, index) => (
+                            {displayedTools.map((tool, index) => (
                                 <motion.div
                                     key={index}
                                     initial={{ opacity: 0, y: 50 }}
@@ -171,27 +178,23 @@ const LabToolsPage: React.FC = () => {
                         </Stack>
                     )}
 
-                    {/* No tools found message */}
-                    {!searching && !isPageChanging && currentTools.length === 0 && (
+                    {!searching && displayedTools.length === 0 && (
                         <Text textAlign={"center"}>No tools found</Text>
                     )}
 
-                    {/* Pagination Controls */}
-                    <Stack direction="row" justify="center" mt={8}>
-                        {currentPage > 1 && (
-                            <Button onClick={() => handlePageChange(currentPage - 1)} _hover={{ color: "white", backgroundColor: "primary" }}>
-                                Previous
-                            </Button>
-                        )}
-                        <Center>
-                            Page {currentPage} of {totalPages}
+                    {/* Infinite Scroll Trigger */}
+                    {hasMore && (
+                        <div
+                            id="infinite-scroll-trigger"
+                            style={{ height: "1px", visibility: "hidden" }}
+                        ></div>
+                    )}
+
+                    {isLoadingMore && (
+                        <Center py={6}>
+                            <Spinner size="xl" color="yellow.500" />
                         </Center>
-                        {currentPage < totalPages && (
-                            <Button onClick={() => handlePageChange(currentPage + 1)} _hover={{ color: "white", backgroundColor: "primary" }}>
-                                Next
-                            </Button>
-                        )}
-                    </Stack>
+                    )}
                 </Box>
             </Container>
         </Box>
