@@ -65,7 +65,7 @@ const News: React.FC = () => {
     }, []);
 
     return (
-        <Box py={20} minH={"100%"} bgColor={bgColor}>
+        <Box py={20} minH={"100vh"} bgColor={bgColor}>
             <Container maxW="container.xl">
                 <Heading as="h1" size="2xl" mb={6} color={headingColor}>
                     News & Updates

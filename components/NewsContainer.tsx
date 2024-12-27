@@ -1,11 +1,9 @@
-/** @format */
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import {
     Stack,
     Input,
-    Button,
     Center,
     Spinner,
     LinkBox,
@@ -35,117 +33,101 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
 
     const router = useRouter();
     const searchParams = useSearchParams();
+
     const [searchTerm, setSearchTerm] = useState<string>(searchParams.get("q") || "");
     const [filteredNews, setFilteredNews] = useState<NewsItem[]>([]);
-    const [debouncing, setDebouncing] = useState<boolean>(false);
-    const [currentPage, setCurrentPage] = useState<number>(
-        parseInt(searchParams.get("page") || "1", 10)
-    );
+    const [displayedNews, setDisplayedNews] = useState<NewsItem[]>([]);
+    const [isLoadingMore, setIsLoadingMore] = useState(false);
+    const [debouncing, setDebouncing] = useState(false);
+    const [hasMore, setHasMore] = useState(true);
+
     const newsPerPage = 10;
+    const observer = useRef<IntersectionObserver | null>(null);
     const debounceTimer = useRef<NodeJS.Timeout | null>(null);
 
-    // Sort news by most recent date
+    // Sort and filter news
     const sortedNews: NewsItem[] = newsData.sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     );
 
-    // Filter news based on type
-    const getFilteredNewsByType = (): NewsItem[] => {
+    const getFilteredNewsByType = useCallback((): NewsItem[] => {
         return type === "alert"
             ? sortedNews.filter((news) => news.title !== "New Paper Published")
             : sortedNews.filter((news) => news.title === "New Paper Published");
-    };
+    }, [type, sortedNews]);
 
-    // Search filter to look in title, description, and date
-    const applySearchFilter = (newsList: NewsItem[]) => {
-        return newsList.filter((news) => {
+    const applySearchFilter = useCallback(
+        (newsList: NewsItem[]) => {
+            if (!searchTerm) return newsList;
             const search = searchTerm.toLowerCase();
-            return (
-                news.title.toLowerCase().includes(search) ||
-                news.description.toLowerCase().includes(search) ||
-                new Date(news.date).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                })
-                    .toLowerCase()
-                    .includes(search)
+            return newsList.filter((news) =>
+                [news.title, news.description].some((field) =>
+                    field.toLowerCase().includes(search)
+                )
             );
-        });
-    };
+        },
+        [searchTerm]
+    );
 
-    // Update filtered news based on type and search term
-    const updateFilteredNews = () => {
-        const baseFilteredNews = getFilteredNewsByType();
-        const searchFilteredNews = applySearchFilter(baseFilteredNews);
-        setFilteredNews(searchFilteredNews);
-    };
-
+    // Filter and update news
     useEffect(() => {
-        // Initial filtering and hash handling
-        updateFilteredNews();
+        const filtered = applySearchFilter(getFilteredNewsByType());
+        setFilteredNews(filtered);
+        setDisplayedNews(filtered.slice(0, newsPerPage));
+        setHasMore(filtered.length > newsPerPage);
 
-        const hash = type === "alert" ? "#alert" : "#papers";
         const queryParams = new URLSearchParams();
-        queryParams.set("page", currentPage.toString());
         if (searchTerm) queryParams.set("q", searchTerm);
 
-        window.history.replaceState(
-            null,
-            "",
-            `${window.location.pathname}?${queryParams.toString()}${hash}`
-        );
-    }, [type, currentPage, searchTerm]);
+        const hash = type === "alert" ? "#alert" : "#papers";
+        router.replace(`?${queryParams.toString()}${hash}`);
+    }, [type, searchTerm, getFilteredNewsByType, applySearchFilter, router]);
 
-    // Handle debounced search
+    // Infinite scrolling logic
+    const loadMoreNews = () => {
+        if (isLoadingMore || !hasMore) return;
+
+        setIsLoadingMore(true);
+
+        setTimeout(() => {
+            const nextNews = filteredNews.slice(
+                displayedNews.length,
+                displayedNews.length + newsPerPage
+            );
+            setDisplayedNews((prev) => [...prev, ...nextNews]);
+            setHasMore(displayedNews.length + nextNews.length < filteredNews.length);
+            setIsLoadingMore(false);
+        }, 500);
+    };
+
     useEffect(() => {
-        if (debounceTimer.current) {
-            clearTimeout(debounceTimer.current);
+        if (observer.current) observer.current.disconnect();
+
+        observer.current = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) loadMoreNews();
+            },
+            { root: null, rootMargin: "0px", threshold: 1.0 }
+        );
+
+        if (observer.current && document.querySelector("#infinite-scroll-trigger")) {
+            observer.current.observe(document.querySelector("#infinite-scroll-trigger")!);
         }
 
-        setDebouncing(true);
-
-        debounceTimer.current = setTimeout(() => {
-            updateFilteredNews();
-            setCurrentPage(1); // Reset pagination on search
-            setDebouncing(false);
-
-            const params = new URLSearchParams();
-            if (searchTerm) params.set("q", searchTerm);
-            params.set("page", "1");
-
-            const hash = type === "alert" ? "#alert" : "#papers";
-            router.replace(`?${params.toString()}${hash}`);
-        }, 500);
-
         return () => {
-            if (debounceTimer.current) {
-                clearTimeout(debounceTimer.current);
-            }
+            if (observer.current) observer.current.disconnect();
         };
-    }, [searchTerm, type]);
-
-    // Pagination logic
-    const indexOfLastNews = currentPage * newsPerPage;
-    const indexOfFirstNews = indexOfLastNews - newsPerPage;
-    const currentNews = filteredNews.slice(indexOfFirstNews, indexOfLastNews);
-    const totalPages = Math.ceil(filteredNews.length / newsPerPage);
-
-    const handlePageChange = (page: number) => {
-        setCurrentPage(page);
-
-        window.scrollTo({ top: 0, behavior: "smooth" });
-
-        const params = new URLSearchParams();
-        if (searchTerm) params.set("q", searchTerm);
-        params.set("page", page.toString());
-
-        const hash = type === "alert" ? "#alert" : "#papers";
-        router.replace(`?${params.toString()}${hash}`);
-    };
+    }, [loadMoreNews]);
 
     const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(e.target.value);
+
+        if (debounceTimer.current) clearTimeout(debounceTimer.current);
+
+        setDebouncing(true);
+        debounceTimer.current = setTimeout(() => {
+            setDebouncing(false);
+        }, 500);
     };
 
     return (
@@ -166,9 +148,9 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
                 <Center py={10}>
                     <Spinner size="xl" color="yellow.500" />
                 </Center>
-            ) : currentNews.length > 0 ? (
+            ) : displayedNews.length > 0 ? (
                 <Stack spacing={3}>
-                    {currentNews.map((news, index) => (
+                    {displayedNews.map((news, index) => (
                         <LinkBox
                             key={index}
                             as="article"
@@ -179,7 +161,6 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
                             bg={cardBgColor}
                             _hover={{ shadow: "lg", transform: "translateY(-5px)" }}
                             transition="all 0.3s ease"
-                            cursor={news.link ? "pointer" : "default"}
                         >
                             <Flex justify="space-between" align="center" mb={2}>
                                 <Text fontWeight="bold" color={textCol} fontSize="md">
@@ -187,7 +168,8 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
                                         year: "numeric",
                                         month: "long",
                                         day: "numeric",
-                                    })} :: {news.title}
+                                    })}{" "}
+                                    :: {news.title}
                                 </Text>
                             </Flex>
 
@@ -207,28 +189,19 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
                 <Text>No news found</Text>
             )}
 
-            {/* Pagination Controls */}
-            <Stack direction="row" justify="center" mt={8}>
-                {currentPage > 1 && (
-                    <Button
-                        onClick={() => handlePageChange(currentPage - 1)}
-                        _hover={{ color: "white", backgroundColor: "primary" }}
-                    >
-                        Previous
-                    </Button>
-                )}
-                <Center>
-                    Page {currentPage} of {totalPages}
+            {/* Infinite Scroll Trigger */}
+            {hasMore && (
+                <div
+                    id="infinite-scroll-trigger"
+                    style={{ height: "1px", visibility: "hidden" }}
+                ></div>
+            )}
+
+            {isLoadingMore && (
+                <Center py={6}>
+                    <Spinner size="xl" color="yellow.500" />
                 </Center>
-                {currentPage < totalPages && (
-                    <Button
-                        onClick={() => handlePageChange(currentPage + 1)}
-                        _hover={{ color: "white", backgroundColor: "primary" }}
-                    >
-                        Next
-                    </Button>
-                )}
-            </Stack>
+            )}
         </>
     );
 };
