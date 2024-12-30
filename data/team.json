@@ -1,6 +1,6 @@
 [
   {
-    "name": "Dr. Subasish Das",
+    "name": "Subasish Das, Ph.D.",
     "label": "Director, AIT Lab",
     "group": "Faculty",
     "linkedin": "https://www.linkedin.com/in/subasishdas/",
@@ -16,7 +16,7 @@
     "description": "Dr. Subasish Das is an Assistant Professor of Civil Engineering Program in the Ingram School of Engineering at Texas State University. He is also involved with Texas A&M Transportation Institute (TTI) as a part time Associate Research Scientist. Previously, he worked as a full-time Associate Research Scientist at TTI during 2015 to 2022. He has more than 13 years of experience related to roadway safety, traffic operation, and connected and automated vehicle (CAV) technologies. He is a Systems Engineer by training with hands on experience on Six Sigma and Lean Engineering. His major areas of expertise include database management, statistical analysis and machine learning with emphasis in safety and transportation operations, spatial analysis with modern web GIS tools, interactive data visualization, and deep learning tools for CAV technologies. Dr. Das is a prolific author. He has published more than 160 technical reports, and journal articles. He is the author of the book “Artificial Intelligence in Highway Safety,” which was published by CRC Press in 2022. The AASHTO Research Advisory Committee (RAC) awarded one of his research reports as 2014 AASHTO Sweet Sixteen High Value Research Project. Dr. Das is an active member of ITE, and ASCE. He is an Eno Fellow. He served as vice-president of membership of Young Professionals in Transportation Houston chapter. He is currently a member of three TRB Committees: Information and Knowledge Management (AJE45), Artificial Intelligence and Advanced Computing Applications (AED50), and Impairment in Transportation (ACS50)."
   },
   {
-    "name": "Ahmed Hossain",
+    "name": "Ahmed Hossain, Ph.D.",
     "label": "Post-Doctoral Researcher (Fall 2024 - Current)",
     "group": "Post-Doctoral Researcher",
     "linkedin": "https://www.linkedin.com/in/ahmed-hossain-7a623ab2/",
@@ -29,7 +29,7 @@
     "websites": []
   },
   {
-    "name": "Jinli Liu",
+    "name": "Jinli Liu, Ph.D.",
     "label": "Ph.D. Post-doctoral Researcher (Jan 2025-Current), Ph.D. Student (2023-2024)",
     "group": "Ph.D. Candidate",
     "linkedin": "https://www.linkedin.com/in/jinli-liu-79a811197/",
@@ -122,19 +122,6 @@
     "websites": []
   },
   {
-    "name": "Michael J Starewich",
-    "label": "M.Sc., Mathematics (Fall 2024 - Current)",
-    "group": "Graduate Student",
-    "linkedin": "https://www.linkedin.com/in/michael-starewich-5a4921331",
-    "email": "mjstarewich@gmail.com",
-    "image": "michael_j_starewich.jpg",
-    "description": "Michael Starewich is currently pursuing his Master of Science in Mathematics with a Concentration in Statistics. He has been working as a Research Assistant with Dr. Subasish Das in the Artificial Intelligence in Transportation Lab since January 2024. Michael earned his Bachelor of Science in Mathematics from Texas State University in 2022. Outside of his academic studies, Michael enjoys playing instruments like guitar and trombone, working on cars under a nice shade tree, and spending time with his cats and dogs.",
-    "googleScholar": "",
-    "github": "",
-    "twitter": "",
-    "websites": []
-  },
-  {
     "name": "Anannya Ghosh Tusti",
     "label": "M.Sc., Civil Engineering (Fall 2024 - Current)",
     "group": "Graduate Student",
@@ -177,19 +164,6 @@
     "twitter": "",
     "websites": [],
     "description": "Sazzad Bin Bashar Polock is a Master's student in Civil Engineering (Transportation) at Texas State University, working under the guidance of Dr. Subasish Das. Currently working as a graduate instructional assistant at the Ingram School of Engineering, he joined the Artificial Intelligence in Transportation (AIT) lab in Fall 2024. His research interests include traffic safety, crash data analysis, driver behavior, and the integration of autonomous vehicles within existing infrastructure. He earned his bachelor's degree in civil engineering from Ahsanullah University of Science and Technology in 2023."
-  },
-  {
-    "name": "Khaled Aly Abousabaa",
-    "label": "B.Sc., Civil Engineering (Fall 2023 - Current)",
-    "group": "Undergraduate Student",
-    "linkedin": "https://www.linkedin.com/in/kabousabaa-210432129/",
-    "email": "",
-    "image": "khaled_aly_abousabaa.jpg",
-    "googleScholar": "",
-    "github": "",
-    "twitter": "",
-    "websites": [],
-    "description": "Khaled Abou-Sabaa is a senior at Texas State University, pursuing a B.S. degree in Civil Engineering (CE). Since joining the AIT Lab in Fall 2023, he has demonstrated a keen passion for transportation engineering. Khaled's work focuses primarily on conducting systematic literature reviews for various research projects, where he analyzes and synthesizes academic and industry sources to provide a solid foundation for ongoing studies. His dedication to the field and attention to detail are evident through his contributions to research aimed at improving transportation systems."
   },
   {
     "name": "Darrell Anderson",
