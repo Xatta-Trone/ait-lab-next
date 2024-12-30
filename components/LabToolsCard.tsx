@@ -67,7 +67,7 @@ const LabToolsCard: React.FC<LabTools> = ({
                             borderRadius="md"
                             boxSize={{ base: "200px", md: "250px" }} // Responsive sizing
                             objectFit="cover"
-                            fallbackSrc="/New_AIT_Favicon.png" // Default fallback image
+                            fallbackSrc="/AIT_Favicon.png" // Default fallback image
                             backgroundColor={"white"}
                         />
                     </Box>

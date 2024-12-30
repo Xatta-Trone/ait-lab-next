@@ -43,7 +43,7 @@ const Openings = () => {
                 <link rel="canonical" href="https://ait-lab.vercel.app/opening" />
                 <meta name="theme-color" content="#b7791f" />
                 <link rel="manifest" href="/site.webmanifest" />
-                <link rel="icon" href="/New_AIT_Favicon.png" />
+                <link rel="icon" href="/AIT_Favicon.png" />
                 <meta property="og:title" content="Openings - Artificial Intelligence in Transportation Lab (AIT Lab)" />
                 <meta
                     property="og:description"
