@@ -1,15 +1,87 @@
 [
   {
+    "name": "Michael J Starewich",
+    "label": "M.S.",
+    "subject": "Mathematics, TXST",
+    "duration": "2023-2024"
+  },
+  {
+    "name": "Khaled Aly Abousabaa",
+    "label": "B.Sc.",
+    "subject": "Civil Engineering, TXST",
+    "duration": "2023-2024"
+  },
+  {
+    "name": "Sandra R McGinnis",
+    "label": "M.S.",
+    "subject": "English, TXST",
+    "duration": "2024"
+  },
+  {
+    "name": "Insiya Maad Raja",
+    "label": "B.Sc.",
+    "subject": "Computer Science, TXST",
+    "duration": "2024"
+  },
+  {
+    "name": "Nick Hardin",
+    "label": "B.Sc.",
+    "subject": "Computer Science, TXST",
+    "duration": "2023"
+  },
+  {
+    "name": "Alan De La Torre",
+    "label": "B.Sc.",
+    "subject": "Computer Science, TXST",
+    "duration": "2023"
+  },
+  {
+    "name": "Diwas Pandit",
+    "label": "B.Sc.",
+    "subject": "Computer Science, TXST",
+    "duration": "2024"
+  },
+  {
+    "name": "Dipesh Pandit",
+    "label": "B.Sc.",
+    "subject": "Computer Science, TXST",
+    "duration": "2024"
+  },
+  {
+    "name": "Diana Garcia Mendez",
+    "label": "B.Sc.",
+    "subject": "Civil Engineering, TXST",
+    "duration": "2023"
+  },
+  {
+    "name": "M M Mahabubur Rahman",
+    "label": "Ph.D.",
+    "subject": "Computer Science, TXST",
+    "duration": "2023"
+  },
+  {
+    "name": "Maheshchandra S Churi",
+    "label": "M.S.",
+    "subject": "Computer Science, TXST",
+    "duration": "2023"
+  },
+  {
+    "name": "Shoujia Li",
+    "label": "Ph.D.",
+    "subject": "Urban and Regional Science, TAMU",
+    "duration": "2021-2022"
+  },
+  {
+    "name": "Soheil Sohrabi",
+    "label": "Post-Doctoral Researcher",
+    "subject": "TTI",
+    "duration": "2021-2022"
+  },
+  {
     "name": "Nuzhat Kabir",
     "label": "Ph.D. Candidate",
     "subject": "Civil Engineering, TAMU",
     "duration": "2022"
-  },
-  {
-    "name": "Musfira Rahman",
-    "label": "Ph.D. Candidate",
-    "subject": "Civil Engineering, TAMU",
-    "duration": "2021"
   },
   {
     "name": "Yanmo Wang",
@@ -28,6 +100,48 @@
     "label": "Ph.D. Candidate",
     "subject": "Civil Engineering, TAMU",
     "duration": "2019-2021"
+  },
+  {
+    "name": "Juan Gonzalez",
+    "label": "B.Sc.",
+    "subject": "Civil Engineering, TAMU",
+    "duration": "2022-2023"
+  },
+  {
+    "name": "Valerie Vierkant",
+    "label": "B.Sc.",
+    "subject": "Psychology, TAMU",
+    "duration": "2019-2023"
+  },
+  {
+    "name": "Jaxson Murray",
+    "label": "B.Sc.",
+    "subject": "Civil Engineering, TAMU",
+    "duration": "2022"
+  },
+  {
+    "name": "Ashley Trujillo",
+    "label": "B.Sc.",
+    "subject": "Civil Engineering, TAMU",
+    "duration": "2021-2022"
+  },
+  {
+    "name": "Vinesh Ravuri",
+    "label": "B.Sc.",
+    "subject": "Computer Science, TAMU",
+    "duration": "2021"
+  },
+  {
+    "name": "Magdalena Theel",
+    "label": "B.Sc.",
+    "subject": "Psychology, TAMU",
+    "duration": "2017-2020"
+  },
+  {
+    "name": "Musfira Rahman",
+    "label": "Ph.D. Candidate",
+    "subject": "Civil Engineering, TAMU",
+    "duration": "2021"
   },
   {
     "name": "Shruti Ashraf",
@@ -56,11 +170,11 @@
   {
     "name": "Ruihong Wang",
     "label": "M.Sc.",
-    "subject": "Electrical and Computer Engineering, TAMU",
+    "subject": "Electrical And Computer Engineering, TAMU",
     "duration": "2019-2020"
   },
   {
-    "name": "Nabila Nazneen",
+    "name": "Nabila Nazeen",
     "label": "M.Sc.",
     "subject": "Chemical Engineering, TAMU",
     "duration": "2019-2020"
@@ -116,7 +230,7 @@
   {
     "name": "Noor-A Nazia",
     "label": "M.Sc.",
-    "subject": "Computer Science, TAMI",
+    "subject": "Computer Science, TAMU",
     "duration": "2018-2019"
   },
   {
@@ -142,42 +256,6 @@
     "label": "M.Sc.",
     "subject": "Construction Science, TAMU",
     "duration": "2016"
-  },
-  {
-    "name": "Juan Gonzalez",
-    "label": "B.Sc.",
-    "subject": "Civil Engineering, TAMU",
-    "duration": "2022-2023"
-  },
-  {
-    "name": "Valerie Vierkant",
-    "label": "B.Sc.",
-    "subject": "Psychology, TAMU",
-    "duration": "2019-2023"
-  },
-  {
-    "name": "Jaxson Murray",
-    "label": "B.Sc.",
-    "subject": "Civil Engineering, TAMU",
-    "duration": "2022"
-  },
-  {
-    "name": "Ashley Trujillo",
-    "label": "B.Sc.",
-    "subject": "Civil Engineering, TAMU",
-    "duration": "2021-2022"
-  },
-  {
-    "name": "Vinesh Ravuri",
-    "label": "B.Sc.",
-    "subject": "Computer Science, TAMU",
-    "duration": "2021"
-  },
-  {
-    "name": "Magdalena Theel",
-    "label": "B.Sc.",
-    "subject": "Psychology, TAMU",
-    "duration": "2017-2020"
   },
   {
     "name": "Turzo Bose",
@@ -219,13 +297,7 @@
     "name": "Jacob Bruce",
     "label": "B.Sc.",
     "subject": "Civil Engineering, TAMU",
-    "duration": "2019-current"
-  },
-  {
-    "name": "Elizabeth Clark",
-    "label": "B.Sc.",
-    "subject": "Civil Engineering, Virginia Tech",
-    "duration": "2017"
+    "duration": "2019-2020"
   },
   {
     "name": "Anthony Teo",
@@ -250,6 +322,12 @@
     "label": "B.Sc.",
     "subject": "Civil Engineering, TAMU",
     "duration": "2018"
+  },
+  {
+    "name": "Elizabeth Clark",
+    "label": "B.Sc.",
+    "subject": "Civil Engineering, Virginia Tech",
+    "duration": "2017"
   },
   {
     "name": "Michelle Zupancich",
