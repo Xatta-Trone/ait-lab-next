@@ -167,7 +167,7 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
                                     {new Date(news.date).toLocaleDateString("en-US", {
                                         year: "numeric",
                                         month: "long",
-                                        day: "numeric",
+                                        day: news.date.split("-")[2] ? "numeric" : undefined,
                                     })}{" "}
                                     :: {news.title}
                                 </Text>
