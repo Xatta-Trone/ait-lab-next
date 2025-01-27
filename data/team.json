@@ -10,10 +10,9 @@
     "researchGate": "https://www.researchgate.net/profile/Subasish-Das",
     "github": "https://github.com/subasish",
     "twitter": "https://x.com/subasish_das",
-    "websites": [
-      "https://subasish.github.io/"
-    ],
-    "description": "Dr. Subasish Das is an Assistant Professor of Civil Engineering Program in the Ingram School of Engineering at Texas State University. He is also involved with Texas A&M Transportation Institute (TTI) as a part time Associate Research Scientist. Previously, he worked as a full-time Associate Research Scientist at TTI during 2015 to 2022. He has more than 13 years of experience related to roadway safety, traffic operation, and connected and automated vehicle (CAV) technologies. He is a Systems Engineer by training with hands on experience on Six Sigma and Lean Engineering. His major areas of expertise include database management, statistical analysis and machine learning with emphasis in safety and transportation operations, spatial analysis with modern web GIS tools, interactive data visualization, and deep learning tools for CAV technologies. Dr. Das is a prolific author. He has published more than 160 technical reports, and journal articles. He is the author of the book “Artificial Intelligence in Highway Safety,” which was published by CRC Press in 2022. The AASHTO Research Advisory Committee (RAC) awarded one of his research reports as 2014 AASHTO Sweet Sixteen High Value Research Project. Dr. Das is an active member of ITE, and ASCE. He is an Eno Fellow. He served as vice-president of membership of Young Professionals in Transportation Houston chapter. He is currently a member of three TRB Committees: Information and Knowledge Management (AJE45), Artificial Intelligence and Advanced Computing Applications (AED50), and Impairment in Transportation (ACS50)."
+    "websites": ["https://subasish.github.io/"],
+    "description": "Dr. Subasish Das is an Assistant Professor of Civil Engineering Program in the Ingram School of Engineering at Texas State University. He is also involved with Texas A&M Transportation  Institute (TTI) as a part time Associate Research Scientist. Previously, he worked as a full-time Associate Research Scientist at TTI during 2015 to 2022. He has more than 13 years of experience related to roadway safety, traffic operation, and connected and automated vehicle (CAV) technologies. He is a Systems Engineer by training with hands on experience on Six Sigma and Lean Engineering. His major areas of expertise include database management, statistical analysis and machine learning with emphasis in safety and transportation operations, spatial analysis with modern web GIS tools, interactive data visualization, and deep learning tools for CAV technologies. Dr. Das is a prolific author. He has published more than 160 technical reports, and journal articles. He is the author of the book “Artificial Intelligence in Highway Safety,” which was published by CRC Press in 2022. The AASHTO Research Advisory Committee (RAC) awarded one of his research reports as 2014 AASHTO Sweet Sixteen High Value Research Project. Dr. Das is an active member of ITE, and ASCE. He is an Eno Fellow. He served as vice-president of membership of Young Professionals in Transportation Houston chapter. He is currently a member of three TRB Committees: Information and Knowledge Management (AJE45), Artificial Intelligence and Advanced Computing Applications (AED50), and Impairment in Transportation (ACS50).",
+    "awards": [""]
   },
   {
     "name": "Ahmed Hossain, Ph.D.",
@@ -26,7 +25,8 @@
     "googleScholar": "https://scholar.google.com/citations?user=U9tD0ywAAAAJ&hl=en",
     "github": "https://github.com/AhmedHossain09",
     "twitter": "",
-    "websites": []
+    "websites": [],
+    "awards": [""]
   },
   {
     "name": "Jinli Liu, Ph.D.",
@@ -39,7 +39,15 @@
     "googleScholar": "https://scholar.google.com/citations?user=ALyhPncAAAAJ&hl=zh-CN&oi=ao",
     "github": "",
     "twitter": "",
-    "websites": []
+    "websites": [],
+    "awards": [
+      "WTS Heart of Texas Chapter WTS Helene M Overly Memorial Scholarship, $5,000 (2023)",
+      "P.E.O International Peace Scholarship, $10,000 (2023)",
+      "CASITE Scholarship (3rd Position), $500 (2023)",
+      "The Mao-Geng Zhan Scholarship, $1,100 (2024)",
+      "The Bernard W. Detlefsen Doctoral Candidate Scholarship, $1,000 (2024)",
+      "P.E.O International Peace Scholarship, $10,500 (2024)"
+    ]
   },
   {
     "name": "David A. Mills",
@@ -52,8 +60,11 @@
     "googleScholar": "https://scholar.google.com/citations?user=DJcqWr0AAAAJ&hl=en&oi=sra",
     "github": "https://github.com/davidamills",
     "twitter": "",
-    "websites": [
-      "https://davidmills.io"
+    "websites": ["https://davidmills.io"],
+    "awards": [
+      "Dwight D. Eisenhower Transportation Fellowship Program, $7,000 (2022)",
+      "NSF I-Corps Interior Northeast Winter 2024 Cohort, $50,000 (2024)",
+      "FY25 New Ventures Award, $10,000 (2025)"
     ]
   },
   {
@@ -67,7 +78,12 @@
     "googleScholar": "https://scholar.google.com/citations?hl=en&user=JecpxeUAAAAJ",
     "github": "https://github.com/shriyanksomvanshi",
     "twitter": "",
-    "websites": []
+    "websites": [],
+    "awards": [
+      "Student Government Scholarship, $1,000 (2024)",
+      "Scholarly Travel Activity and Research (S.T.A.R.) Grant + Graduate Student Travel Fund, $1,595 (2024)",
+      "2024 CASITE Scholarship (3rd Position), $500 (2024)"
+    ]
   },
   {
     "name": "Mahmuda Sultana Mimi",
@@ -80,7 +96,12 @@
     "googleScholar": "https://scholar.google.com/citations?user=CUmpUkAAAAAJ&hl=en",
     "github": "https://github.com/Mahmuda-mimi",
     "twitter": "",
-    "websites": []
+    "websites": [],
+    "awards": [
+      "Graduate College Scholarship for the academic year 2023-24, 2024-25, $1,000 (2023, 2024)",
+      "ASHE Central Texas Scholarship Award Fall 2024, $1,000 (2024)",
+      "WTS Helene Overley Memorial Scholarship, $5,000 (2025)"
+    ]
   },
   {
     "name": "Syed Aaqib Javed",
@@ -93,7 +114,11 @@
     "googleScholar": "https://scholar.google.com/citations?user=LN6RJTUAAAAJ&hl=en",
     "github": "https://github.com/Aaqibce",
     "twitter": "",
-    "websites": []
+    "websites": [],
+    "awards": [
+      "Graduate College Scholarship (Fall 24), $1,000 (2024)",
+      "Spring 2025 Research Support Fellowship, $1,924 (2024)"
+    ]
   },
   {
     "name": "Rohit Chakraborty",
@@ -106,7 +131,13 @@
     "googleScholar": "https://scholar.google.com/citations?user=Ip63NkMAAAAJ&hl=en",
     "github": "https://github.com/Rohitck98",
     "twitter": "",
-    "websites": []
+    "websites": [],
+    "awards": [
+      "Scholarly Travel Activity and Research (S.T.A.R.) Grant, $450 (2024)",
+      "Graduate Student Travel Fund, $1,600 (2024)",
+      "2024 CASITE Scholarship (2nd Position), $1,500 (2024)",
+      "Spring 2025 Research Support Fellowship, $1,899.99 (2024)"
+    ]
   },
   {
     "name": "Swastika Barua",
@@ -119,7 +150,11 @@
     "googleScholar": "https://scholar.google.com/citations?user=FYy8Sj8AAAAJ&hl=en&oi=ao",
     "github": "https://github.com/SwastikaBarua",
     "twitter": "",
-    "websites": []
+    "websites": [],
+    "awards": [
+      "Scholarly Travel Activity and Research (S.T.A.R.) Grant, $450 (2024)",
+      "Graduate Student Travel Fund, $1,600 (2024)"
+    ]
   },
   {
     "name": "Anannya Ghosh Tusti",
@@ -132,7 +167,8 @@
     "googleScholar": "",
     "github": "https://github.com/Anannya-Ghosh",
     "twitter": "",
-    "websites": []
+    "websites": [],
+    "awards": [""]
   },
   {
     "name": "Md Monzurul Islam",
@@ -150,7 +186,8 @@
       "https://sites.google.com/view/monzurul-islam/home?authuser=0",
       "https://xatta-trone.github.io/"
     ],
-    "description": "Md Monzurul Islam is a Master's student in Civil Engineering (Transportation) at Texas State University, where he works as a Graduate Research Assistant under the supervision of Dr. Subasish Das. He brings a diverse academic and professional background, holding a Master's degree in Architecture from the University of Tokyo and a Bachelor's degree in Civil Engineering from Bangladesh University of Engineering and Technology. Monzurul's research focuses on transportation safety, crash risk assessment, and driver behavior analysis, utilizing machine learning, statistical models, and GIS-based spatial analysis. He is also proficient in building R-based tools for quick visualization and decision-making. In addition to his research, Monzurul has extensive experience in software development, project management, and structural engineering. As Vice President of Outreach for the Institute of Transportation Engineers (TXST Chapter), Monzurul develops and implements strategies for community engagement, builds relationships with external organizations, alumni, and potential sponsors, organizes promotional events, and manages outreach and recruitment efforts to attract new members. Monzurul also enjoys tinkering with a wide variety of tools and technologies, always curious to explore and experiment with everything he encounters—in his words, 'I like to play with everything.'"
+    "description": "Md Monzurul Islam is a Master's student in Civil Engineering (Transportation) at Texas State University, where he works as a Graduate Research Assistant under the supervision of Dr. Subasish Das. He brings a diverse academic and professional background, holding a Master's degree in Architecture from the University of Tokyo and a Bachelor's degree in Civil Engineering from Bangladesh University of Engineering and Technology. Monzurul's research focuses on transportation safety, crash risk assessment, and driver behavior analysis, utilizing machine learning, statistical models, and GIS-based spatial analysis. He is also proficient in building R-based tools for quick visualization and decision-making. In addition to his research, Monzurul has extensive experience in software development, project management, and structural engineering. As Vice President of Outreach for the Institute of Transportation Engineers (TXST Chapter), Monzurul develops and implements strategies for community engagement, builds relationships with external organizations, alumni, and potential sponsors, organizes promotional events, and manages outreach and recruitment efforts to attract new members. Monzurul also enjoys tinkering with a wide variety of tools and technologies, always curious to explore and experiment with everything he encounters—in his words, 'I like to play with everything.'",
+    "awards": [""]
   },
   {
     "name": "Sazzad Bin Bashar Polock",
@@ -163,7 +200,8 @@
     "github": "",
     "twitter": "",
     "websites": [],
-    "description": "Sazzad Bin Bashar Polock is a Master's student in Civil Engineering (Transportation) at Texas State University, working under the guidance of Dr. Subasish Das. Currently working as a graduate instructional assistant at the Ingram School of Engineering, he joined the Artificial Intelligence in Transportation (AIT) lab in Fall 2024. His research interests include traffic safety, crash data analysis, driver behavior, and the integration of autonomous vehicles within existing infrastructure. He earned his bachelor's degree in civil engineering from Ahsanullah University of Science and Technology in 2023."
+    "description": "Sazzad Bin Bashar Polock is a Master's student in Civil Engineering (Transportation) at Texas State University, working under the guidance of Dr. Subasish Das. Currently working as a graduate instructional assistant at the Ingram School of Engineering, he joined the Artificial Intelligence in Transportation (AIT) lab in Fall 2024. His research interests include traffic safety, crash data analysis, driver behavior, and the integration of autonomous vehicles within existing infrastructure. He earned his bachelor's degree in civil engineering from Ahsanullah University of Science and Technology in 2023.",
+    "awards": [""]
   },
   {
     "name": "Darrell Anderson",
@@ -176,7 +214,11 @@
     "github": "",
     "twitter": "",
     "websites": [],
-    "description": "Darrell is a senior at Texas State University, majoring in Civil Engineering (CE) and minoring in mathematics. In the summer of 2023, Darrell started working as an undergraduate research assistant at the Artificial Intelligence in Transportation (AIT) lab under Dr. Das Subasish. While at AIT, Darrell was awarded the Dwight David Eisenhower Transportation Fellowship (DDETFP), which he presented at DC on the concept of 15-minute cities. As a member of a few engineering and environmental groups, Darrell is passionate about the environment and water resources, and he is interested in the impact that urbanization, along with the increase in traffic systems, has on the environment. As a civil drafter/designer for a small urban planning and development company, he has helped design many sites currently under development. As a founding member of the Institute of Transportation Engineers – at Texas State University, he holds the treasurer position. In his free time, he enjoys cooking, baking, and reading and is working towards becoming a sommelier in his free time."
+    "description": "Darrell is a senior at Texas State University, majoring in Civil Engineering (CE) and minoring in mathematics. In the summer of 2023, Darrell started working as an undergraduate research assistant at the Artificial Intelligence in Transportation (AIT) lab under Dr. Das Subasish. While at AIT, Darrell was awarded the Dwight David Eisenhower Transportation Fellowship (DDETFP), which he presented at DC on the concept of 15-minute cities. As a member of a few engineering and environmental groups, Darrell is passionate about the environment and water resources, and he is interested in the impact that urbanization, along with the increase in traffic systems, has on the environment. As a civil drafter/designer for a small urban planning and development company, he has helped design many sites currently under development. As a founding member of the Institute of Transportation Engineers – at Texas State University, he holds the treasurer position. In his free time, he enjoys cooking, baking, and reading and is working towards becoming a sommelier in his free time.",
+    "awards": [
+      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $8,500 (2023)",
+      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $7,000 (2024)"
+    ]
   },
   {
     "name": "Biplov Pandey",
@@ -189,7 +231,8 @@
     "github": "https://github.com/BiplovPandey17",
     "twitter": "",
     "websites": [],
-    "description": "Biplov is currently an undergraduate student in the Civil Engineering Program at Texas State University, guided by Dr. Das. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant. Originally from Nepal, Biplov is interested in transportation engineering and infrastructure development. His research focus includes transportation safety and sustainability. He has prior experience as a Surveying Assistant at SadaShiva Infra Private Limited, where he contributed to site assessments and data collection for mapping and project planning. Biplov's projects include geological field studies and detailed surveying tasks with proficiency in total stations, theodolites, CAD software, SolidWorks, and Microsoft Office. Outside of academics, Biplov enjoys watching cricket, playing table tennis, and hiking."
+    "description": "Biplov is currently an undergraduate student in the Civil Engineering Program at Texas State University, guided by Dr. Das. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant. Originally from Nepal, Biplov is interested in transportation engineering and infrastructure development. His research focus includes transportation safety and sustainability. He has prior experience as a Surveying Assistant at SadaShiva Infra Private Limited, where he contributed to site assessments and data collection for mapping and project planning. Biplov's projects include geological field studies and detailed surveying tasks with proficiency in total stations, theodolites, CAD software, SolidWorks, and Microsoft Office. Outside of academics, Biplov enjoys watching cricket, playing table tennis, and hiking.",
+    "awards": [""]
   },
   {
     "name": "Teale Robison",
@@ -202,7 +245,10 @@
     "github": "",
     "twitter": "",
     "websites": [],
-    "description": "Teale is currently a senior at Texas State University, majoring in Urban and Regional Planning and minoring in Geographic Information Systems (GIS). She started at the Artificial Intelligence in Transportation (AIT) lab in fall 2024 and is currently working as an undergraduate research assistant for Dr. Das. Teale is passionate about the environment and sustainable development, especially involving transportation and creating a more efficient system. She has prior experience working as a Visual Analytics intern at Texas A&M Transportation Institute (TTI) utilizing GIS and ArcPy. Involved in several campus activities such as the Student Urban Planning Organization (SUPO) and SWIG (Supporting Women in Geography). In her free time, Teale enjoys playing board games, reading, and paddleboarding."
+    "description": "Teale is currently a senior at Texas State University, majoring in Urban and Regional Planning and minoring in Geographic Information Systems (GIS). She started at the Artificial Intelligence in Transportation (AIT) lab in fall 2024 and is currently working as an undergraduate research assistant for Dr. Das. Teale is passionate about the environment and sustainable development, especially involving transportation and creating a more efficient system. She has prior experience working as a Visual Analytics intern at Texas A&M Transportation Institute (TTI) utilizing GIS and ArcPy. Involved in several campus activities such as the Student Urban Planning Organization (SUPO) and SWIG (Supporting Women in Geography). In her free time, Teale enjoys playing board games, reading, and paddleboarding.",
+    "awards": [
+      "Bernard W. Detlefsen Junior Academic and Leadership Scholarship, $1,500 (2024)"
+    ]
   },
   {
     "name": "Gaurab Chhetri",
@@ -216,10 +262,8 @@
     "orcid": "",
     "github": "https://github.com/gauravfs-14",
     "twitter": "https://x.com/gaurav_fs_14",
-    "websites": [
-      "https://gaurabchhetri.com.np",
-      "https://computenepal.com"
-    ],
-    "description": "Gaurab is currently an undergraduate student in the Computer Science Program at Texas State University. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant for Dr. Das. Originally from Nepal, Gaurab is passionate about web development and IT operations, with a strong focus on creating responsive and user-friendly web applications. His technical expertise spans HTML, CSS, JavaScript, React, Tailwind, Node.js, Express, MongoDB, and MySQL, along with version control using Git and GitHub. Before joining Texas State, Gaurab worked as an IT Officer, where he managed domain registrations, email systems, and computer lab environments. He also has experience in digital marketing, social media management, and graphic design, providing a holistic approach to enhancing online presence for businesses. His hands-on experience extends to WordPress, PHP, SQL, and a variety of tools that streamline IT operations and web development.'"
+    "websites": ["https://gaurabchhetri.com.np", "https://computenepal.com"],
+    "description": "Gaurab is currently an undergraduate student in the Computer Science Program at Texas State University. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant for Dr. Das. Originally from Nepal, Gaurab is passionate about web development and IT operations, with a strong focus on creating responsive and user-friendly web applications. His technical expertise spans HTML, CSS, JavaScript, React, Tailwind, Node.js, Express, MongoDB, and MySQL, along with version control using Git and GitHub. Before joining Texas State, Gaurab worked as an IT Officer, where he managed domain registrations, email systems, and computer lab environments. He also has experience in digital marketing, social media management, and graphic design, providing a holistic approach to enhancing online presence for businesses. His hands-on experience extends to WordPress, PHP, SQL, and a variety of tools that streamline IT operations and web development.'",
+    "awards": ["Best In Coding at Hackacat Nano by ACM AI @ TXST (2024)"]
   }
 ]

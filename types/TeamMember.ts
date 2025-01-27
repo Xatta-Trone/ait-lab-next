@@ -13,4 +13,5 @@ interface TeamMembers {
     subject?: string; // (Optional) Academic subject or area of expertise (used for alumni)
     duration?: string; // (Optional) Duration of the member's affiliation with the team (used for alumni)
     image?: string; // (Optional) Path or URL to the team member's profile image
+    awards?: string[]; // (Optional) Awards or recognitions received by the team member
 }
