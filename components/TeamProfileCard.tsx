@@ -66,7 +66,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({
     >
       <Flex
         direction={{ base: "column", md: "row" }} // Stack column on smaller devices
-        alignItems="center"
+        alignItems="flex-start"
       >
         {/* Image with hover scale animation */}
         <Image
@@ -76,9 +76,10 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({
           alt={member.name}
           maxW={{ base: "10rem", md: "20rem", lg: "9rem" }} // Responsive width for small, medium, large screens
           height={{ base: "15rem", lg: "15rem" }} // Responsive height for small and large screens
-          objectFit="contain" // Ensure the image fits fully and is visible
+          objectFit="cover" // Ensure the image fits fully and is visible
           objectPosition="center" // Center the image
           mx="auto" // Center the image on small screens
+          my={"auto"}
           transition="transform 0.3s linear"
           _hover={{
             transform: "scale(1.05)",
@@ -87,6 +88,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({
             const target = e.target as HTMLImageElement; // Cast to HTMLImageElement
             target.src = "/img/team/default.png"; // Fallback to default image
           }}
+          fallbackSrc="/img/team/default.png" // Fallback to default image
         />
         <Stack flex="1" marginLeft={{ md: 6 }} marginTop={{ base: 4, md: 0 }}>
           {/* Name as a Heading */}
@@ -128,7 +130,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({
             )}
           </Text>
           {/* Awards Section */}
-          <Text color={textCol} fontSize={"sm"}>
+          <Text color={textCol} fontSize={"sm"} mt={-1}>
             {member.awards && member.awards[0].length > 0 && (
               <>
                 <b>Awards: </b>
@@ -138,7 +140,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({
             )}
           </Text>
           {/* Contact and Social Links */}
-          <HStack spacing={3} mt={3} align="center">
+          <HStack spacing={3} align="center">
             {member.email && (
               <Link
                 href={`mailto:${member.email}`}
