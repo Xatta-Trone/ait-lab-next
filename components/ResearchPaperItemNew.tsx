@@ -29,7 +29,7 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
 
   const imageUrl = img
     ? `https://raw.githubusercontent.com/Xatta-Trone/google-scholar-scrapper/refs/heads/main/${img}`
-    : `New__Cr_WHBG_AIT_Logo.png`;
+    : `/AIT_Favicon.png`;
 
   return (
     <motion.div
@@ -66,7 +66,7 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
               borderRadius="md"
               boxSize={{ base: "200px", md: "250px" }}
               objectFit="cover"
-              fallbackSrc="New__Cr_WHBG_AIT_Logo.png"
+              fallbackSrc="/AIT_Favicon.png"
             />
           </Box>
 
