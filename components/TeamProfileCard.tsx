@@ -70,9 +70,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({
       >
         {/* Image with hover scale animation */}
         <Image
-          src={
-            member.image ? `/img/team/${member.image}` : "/img/team/default.png"
-          }
+          src={member.image ? `/img/team/${member.image}` : "/AIT_Favicon.png"}
           alt={member.name}
           maxW={{ base: "10rem", md: "20rem", lg: "9rem" }} // Responsive width for small, medium, large screens
           height={{ base: "15rem", lg: "15rem" }} // Responsive height for small and large screens
@@ -86,9 +84,10 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({
           }} // Image hover effect
           onError={(e) => {
             const target = e.target as HTMLImageElement; // Cast to HTMLImageElement
-            target.src = "/img/team/default.png"; // Fallback to default image
+            target.src = "/AIT_Favicon.png"; // Fallback to default image
           }}
-          fallbackSrc="/img/team/default.png" // Fallback to default image
+          fallbackSrc="/AIT_Favicon.png" // Fallback to default image
+          backgroundColor={"white"} // White background for the image
         />
         <Stack flex="1" marginLeft={{ md: 6 }} marginTop={{ base: 4, md: 0 }}>
           {/* Name as a Heading */}
