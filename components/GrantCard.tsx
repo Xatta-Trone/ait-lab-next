@@ -49,6 +49,7 @@ const GrantCard = (props: { grant: GrantTypes }) => {
             boxSize={{ base: "200px", md: "250px" }}
             objectFit="cover"
             fallbackSrc="/AIT_Favicon.png"
+            backgroundColor={"white"}
           />
         </Box>
 

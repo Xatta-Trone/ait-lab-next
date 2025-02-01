@@ -67,6 +67,7 @@ const ResearchPaperItemNew: React.FC<ResearchPaperItemProps> = ({
               boxSize={{ base: "200px", md: "250px" }}
               objectFit="cover"
               fallbackSrc="/AIT_Favicon.png"
+              backgroundColor={"white"}
             />
           </Box>
 
