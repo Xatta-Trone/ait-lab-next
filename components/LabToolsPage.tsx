@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback, useRef } from "react";
 import {
   Box,
   Container,
@@ -42,6 +42,10 @@ const LabToolsPage: React.FC = () => {
   const toolsPerPage = 10;
   const [isLoading, setIsLoading] = useState(true);
 
+  // Add new state and ref
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
+  const debounceTimer = useRef<NodeJS.Timeout | null>(null);
+
   /**
    * Updates the URL query parameters whenever the search term changes.
    */
@@ -59,14 +63,18 @@ const LabToolsPage: React.FC = () => {
    * Handles the search input, updates the search term state, and filters tools.
    */
   const handleSearch = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const query = e.target.value;
-    setSearchTerm(query);
+    const value = e.target.value;
+    setSearchTerm(value);
     setSearching(true);
 
-    // Simulate a debounce effect
-    setTimeout(() => {
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+
+    debounceTimer.current = setTimeout(() => {
+      setDebouncedSearchTerm(value);
       setSearching(false);
-    }, 300);
+    }, 500);
   }, []);
 
   /**
@@ -76,8 +84,8 @@ const LabToolsPage: React.FC = () => {
   useEffect(() => {
     let tempTools = [...typedLabToolsData];
 
-    if (searchTerm) {
-      const lowerSearchTerm = searchTerm.toLowerCase();
+    if (debouncedSearchTerm) {
+      const lowerSearchTerm = debouncedSearchTerm.toLowerCase();
       tempTools = tempTools.filter(
         (tool) =>
           tool.title.toLowerCase().includes(lowerSearchTerm) ||
@@ -90,7 +98,16 @@ const LabToolsPage: React.FC = () => {
     setDisplayedTools(tempTools.slice(0, toolsPerPage));
     setHasMore(tempTools.length > toolsPerPage);
     setIsLoading(false);
-  }, [searchTerm]);
+  }, [debouncedSearchTerm]);
+
+  // Add cleanup for debounce timer
+  useEffect(() => {
+    return () => {
+      if (debounceTimer.current) {
+        clearTimeout(debounceTimer.current);
+      }
+    };
+  }, []);
 
   /**
    * Loads more tools as the user scrolls.
