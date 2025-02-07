@@ -42,7 +42,11 @@ const ResearchPapers: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(false);
+  const [isSearching, setIsSearching] = useState(false);
   const papersPerPage = 10;
+
+  // Add debounce timer ref
+  const debounceTimer = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const fetchPapers = async () => {
@@ -141,9 +145,21 @@ const ResearchPapers: React.FC = () => {
     router.push(`?${params.toString()}`);
   };
 
+  // Update search handler with debouncing
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
-    updateURL(e.target.value, sortByYear);
+    const value = e.target.value;
+    setSearchTerm(value);
+    setIsSearching(true);
+    updateURL(value, sortByYear);
+
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+
+    debounceTimer.current = setTimeout(() => {
+      setDebouncedSearchTerm(value);
+      setIsSearching(false);
+    }, 500);
   };
 
   const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -151,6 +167,16 @@ const ResearchPapers: React.FC = () => {
     updateURL(searchTerm, e.target.value);
   };
 
+  // Cleanup debounce timer
+  useEffect(() => {
+    return () => {
+      if (debounceTimer.current) {
+        clearTimeout(debounceTimer.current);
+      }
+    };
+  }, []);
+
+  // Update the render section to handle loading states better
   return (
     <Box py={20} backgroundColor={bgColor} minH={"90vh"}>
       <Container maxW="container.xl">
@@ -182,41 +208,45 @@ const ResearchPapers: React.FC = () => {
           </Select>
         </Stack>
 
-        {isLoading ? (
+        {isLoading || isSearching ? (
           <Center py={6}>
             <Spinner size="xl" color="yellow.500" />
           </Center>
-        ) : (
-          <SimpleGrid columns={{ base: 1 }} spacing={6}>
-            {displayedPapers.map((paper, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <ResearchPaperItemNew {...paper} />
-              </motion.div>
-            ))}
-          </SimpleGrid>
-        )}
+        ) : displayedPapers.length > 0 ? (
+          <>
+            <SimpleGrid columns={{ base: 1 }} spacing={6}>
+              {displayedPapers.map((paper, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <ResearchPaperItemNew {...paper} />
+                </motion.div>
+              ))}
+            </SimpleGrid>
 
-        {!isLoading && hasMore && (
-          <Center py={6}>
-            <Button
-              onClick={loadMorePapers}
-              variant="solid"
-              size="md"
-              _hover={{ bg: "yellow.500", color: "white" }}
-            >
-              {isLoadingMore && (
-                <Center py={6} mr={2}>
-                  <Spinner color="white" />
-                </Center>
-              )}
-              See More
-            </Button>
-          </Center>
+            {hasMore && (
+              <Center py={6}>
+                <Button
+                  onClick={loadMorePapers}
+                  variant="solid"
+                  size="md"
+                  _hover={{ bg: "yellow.500", color: "white" }}
+                >
+                  {isLoadingMore && (
+                    <Center py={6} mr={2}>
+                      <Spinner color="white" />
+                    </Center>
+                  )}
+                  See More
+                </Button>
+              </Center>
+            )}
+          </>
+        ) : (
+          <Text>No papers found</Text>
         )}
       </Container>
     </Box>
