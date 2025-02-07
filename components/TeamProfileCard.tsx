@@ -70,7 +70,7 @@ const TeamProfileCard: React.FC<TeamProfileCardProps> = ({
       >
         {/* Image with hover scale animation */}
         <Image
-          src={member.image ? `/img/team/${member.image}` : "/AIT_Favicon.png"}
+          src={member.image ? `/img/team/${member.image}` : "/img/team/default.png"}
           alt={member.name}
           maxW={{ base: "10rem", md: "20rem", lg: "9rem" }} // Responsive width for small, medium, large screens
           height={{ base: "15rem", lg: "15rem" }} // Responsive height for small and large screens
