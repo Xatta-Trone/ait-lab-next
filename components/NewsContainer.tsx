@@ -38,6 +38,9 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
   const [searchTerm, setSearchTerm] = useState<string>(
     searchParams.get("q") || ""
   );
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState(
+    searchParams.get("q") || ""
+  );
   const [filteredNews, setFilteredNews] = useState<NewsItem[]>([]);
   const [displayedNews, setDisplayedNews] = useState<NewsItem[]>([]);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
@@ -62,15 +65,15 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
 
   const applySearchFilter = useCallback(
     (newsList: NewsItem[]) => {
-      if (!searchTerm) return newsList;
-      const search = searchTerm.toLowerCase();
+      if (!debouncedSearchTerm) return newsList;
+      const search = debouncedSearchTerm.toLowerCase();
       return newsList.filter((news) =>
         [news.title, news.description].some((field) =>
           field.toLowerCase().includes(search)
         )
       );
     },
-    [searchTerm]
+    [debouncedSearchTerm]
   );
 
   // Filter and update news
@@ -82,11 +85,17 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
     setIsLoading(false);
 
     const queryParams = new URLSearchParams();
-    if (searchTerm) queryParams.set("q", searchTerm);
+    if (debouncedSearchTerm) queryParams.set("q", debouncedSearchTerm);
 
     const hash = type === "alert" ? "#alert" : "#papers";
     router.replace(`?${queryParams.toString()}${hash}`);
-  }, [type, searchTerm, getFilteredNewsByType, applySearchFilter, router]);
+  }, [
+    type,
+    debouncedSearchTerm,
+    getFilteredNewsByType,
+    applySearchFilter,
+    router,
+  ]);
 
   // Infinite scrolling logic
   const loadMoreNews = () => {
@@ -113,15 +122,27 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
   }, [loadMoreNews]);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
-
-    if (debounceTimer.current) clearTimeout(debounceTimer.current);
-
+    const value = e.target.value;
+    setSearchTerm(value);
     setDebouncing(true);
+
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+
     debounceTimer.current = setTimeout(() => {
+      setDebouncedSearchTerm(value);
       setDebouncing(false);
     }, 500);
   };
+
+  useEffect(() => {
+    return () => {
+      if (debounceTimer.current) {
+        clearTimeout(debounceTimer.current);
+      }
+    };
+  }, []);
 
   return (
     <>
