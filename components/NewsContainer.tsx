@@ -43,6 +43,7 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [debouncing, setDebouncing] = useState(false);
   const [hasMore, setHasMore] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   const newsPerPage = 10;
   const observer = useRef<IntersectionObserver | null>(null);
@@ -78,6 +79,7 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
     setFilteredNews(filtered);
     setDisplayedNews(filtered.slice(0, newsPerPage));
     setHasMore(filtered.length > newsPerPage);
+    setIsLoading(false);
 
     const queryParams = new URLSearchParams();
     if (searchTerm) queryParams.set("q", searchTerm);
@@ -135,67 +137,69 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
         />
       </Stack>
 
-      {debouncing ? (
+      {debouncing || isLoading ? (
         <Center py={10}>
           <Spinner size="xl" color="yellow.500" />
         </Center>
       ) : displayedNews.length > 0 ? (
-        <Stack spacing={3}>
-          {displayedNews.map((news, index) => (
-            <LinkBox
-              key={index}
-              as="article"
-              p={5}
-              shadow="md"
-              borderWidth="1px"
-              borderRadius="md"
-              bg={cardBgColor}
-              _hover={{ shadow: "lg", transform: "translateY(-5px)" }}
-              transition="all 0.3s ease"
-            >
-              <Flex justify="space-between" align="center" mb={2}>
-                <Text fontWeight="bold" color={textCol} fontSize="md">
-                  {new Date(news.date).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: news.date.split("-")[2] ? "numeric" : undefined,
-                  })}{" "}
-                  :: {news.title}
-                </Text>
-              </Flex>
+        <>
+          <Stack spacing={3}>
+            {displayedNews.map((news, index) => (
+              <LinkBox
+                key={index}
+                as="article"
+                p={5}
+                shadow="md"
+                borderWidth="1px"
+                borderRadius="md"
+                bg={cardBgColor}
+                _hover={{ shadow: "lg", transform: "translateY(-5px)" }}
+                transition="all 0.3s ease"
+              >
+                <Flex justify="space-between" align="center" mb={2}>
+                  <Text fontWeight="bold" color={textCol} fontSize="md">
+                    {new Date(news.date).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: news.date.split("-")[2] ? "numeric" : undefined,
+                    })}{" "}
+                    :: {news.title}
+                  </Text>
+                </Flex>
 
-              <Text color={cardHeading} fontSize="lg" fontWeight="bold">
-                {news.link ? (
-                  <LinkOverlay href={news.link} isExternal>
-                    {news.description} <ExternalLinkIcon mx="2px" />
-                  </LinkOverlay>
-                ) : (
-                  news.description
+                <Text color={cardHeading} fontSize="lg" fontWeight="bold">
+                  {news.link ? (
+                    <LinkOverlay href={news.link} isExternal>
+                      {news.description} <ExternalLinkIcon mx="2px" />
+                    </LinkOverlay>
+                  ) : (
+                    news.description
+                  )}
+                </Text>
+              </LinkBox>
+            ))}
+          </Stack>
+
+          {!debouncing && hasMore && (
+            <Center py={6}>
+              <Button
+                onClick={loadMoreNews}
+                variant="solid"
+                size="md"
+                _hover={{ bg: "yellow.500", color: "white" }}
+              >
+                {isLoadingMore && (
+                  <Center py={6} mr={2}>
+                    <Spinner color="white" />
+                  </Center>
                 )}
-              </Text>
-            </LinkBox>
-          ))}
-        </Stack>
+                See More
+              </Button>
+            </Center>
+          )}
+        </>
       ) : (
         <Text>No news found</Text>
-      )}
-
-      {!debouncing && hasMore && (
-        <Center py={6}>
-          <Button
-            onClick={loadMoreNews}
-            variant="solid"
-            size="md"
-            _hover={{ bg: "yellow.500", color: "white" }}
-          >
-            {isLoadingMore && (
-              <Center py={6} mr={2}>
-                <Spinner color="white" />
-              </Center>
-            )}
-            See More
-          </Button>
-        </Center>
       )}
     </>
   );

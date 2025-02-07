@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useRef, useCallback } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import {
   Box,
   Container,
@@ -40,6 +40,7 @@ const LabToolsPage: React.FC = () => {
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const toolsPerPage = 10;
+  const [isLoading, setIsLoading] = useState(true);
 
   /**
    * Updates the URL query parameters whenever the search term changes.
@@ -88,6 +89,7 @@ const LabToolsPage: React.FC = () => {
     setFilteredTools(tempTools);
     setDisplayedTools(tempTools.slice(0, toolsPerPage));
     setHasMore(tempTools.length > toolsPerPage);
+    setIsLoading(false);
   }, [searchTerm]);
 
   /**
@@ -133,51 +135,49 @@ const LabToolsPage: React.FC = () => {
         </Stack>
 
         {/* Loading Spinner */}
-        {searching && (
+        {searching || isLoading ? (
           <Center py={10}>
             <Spinner size="xl" color="yellow.500" />
           </Center>
-        )}
+        ) : (
+          <Box>
+            {/* Tools List */}
+            {displayedTools.length > 0 ? (
+              <Stack spacing={6}>
+                {displayedTools.map((tool, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <LabToolsCard {...tool} />
+                  </motion.div>
+                ))}
+              </Stack>
+            ) : (
+              <Text textAlign={"center"}>No tools found</Text>
+            )}
 
-        {/* Tools List */}
-        <Box>
-          {!searching && displayedTools.length > 0 && (
-            <Stack spacing={6}>
-              {displayedTools.map((tool, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
+            {!searching && hasMore && (
+              <Center py={6}>
+                <Button
+                  onClick={loadMoreTools}
+                  variant="solid"
+                  size="md"
+                  _hover={{ bg: "yellow.500", color: "white" }}
                 >
-                  <LabToolsCard {...tool} />
-                </motion.div>
-              ))}
-            </Stack>
-          )}
-
-          {!searching && displayedTools.length === 0 && (
-            <Text textAlign={"center"}>No tools found</Text>
-          )}
-
-          {!searching && hasMore && (
-            <Center py={6}>
-              <Button
-                onClick={loadMoreTools}
-                variant="solid"
-                size="md"
-                _hover={{ bg: "yellow.500", color: "white" }}
-              >
-                {isLoadingMore && (
-                  <Center py={6} mr={2}>
-                    <Spinner color="white" />
-                  </Center>
-                )}
-                See More
-              </Button>
-            </Center>
-          )}
-        </Box>
+                  {isLoadingMore && (
+                    <Center py={6} mr={2}>
+                      <Spinner color="white" />
+                    </Center>
+                  )}
+                  See More
+                </Button>
+              </Center>
+            )}
+          </Box>
+        )}
       </Container>
     </Box>
   );

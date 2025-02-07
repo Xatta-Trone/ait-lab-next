@@ -1,12 +1,6 @@
 "use client";
 
-import React, {
-  useEffect,
-  useState,
-  useRef,
-  useCallback,
-  useMemo,
-} from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 import {
   Box,
   Container,
@@ -44,23 +38,25 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
   const [hasMore, setHasMore] = useState(false);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const dataPerPage = 10;
-  const observer = useRef<IntersectionObserver | null>(null);
 
   const combinedData = useMemo(
     () => [...typedProjectsData, ...typedGrantsData],
     []
   );
 
-  // Parse query parameters and hash on initial render
+  // Update initial load effect
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const query = params.get("q") || "";
     const status = params.get("status") || "";
 
+    setIsLoading(true);
     setSearchTerm(query);
     setSortByStatus(status);
+    // Don't set isLoading to false here, let applyFilters handle it
   }, []);
 
   // Update URL dynamically
@@ -77,8 +73,10 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
     );
   }, [searchTerm, sortByStatus, role]);
 
-  // Apply filters to data
+  // Update the filter application to handle loading state
   const applyFilters = useCallback(() => {
+    // Keep loading true until filtering is done
+    setIsLoading(true);
     let filtered = combinedData;
 
     if (searchTerm) {
@@ -123,6 +121,10 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
     setDisplayedData(filtered.slice(0, dataPerPage));
     setHasMore(filtered.length > dataPerPage);
     updateURL();
+    // Set loading to false only after all data is processed
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
   }, [combinedData, searchTerm, role, sortByStatus, updateURL]);
 
   useEffect(() => {
@@ -146,14 +148,6 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
       setIsLoadingMore(false);
     }, 500);
   };
-
-  // Remove the IntersectionObserver logic
-  useEffect(() => {
-    if (observer.current) observer.current.disconnect();
-    return () => {
-      if (observer.current) observer.current.disconnect();
-    };
-  }, [loadMoreData]);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
@@ -192,51 +186,53 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
           </Select>
         </Stack>
 
-        {isSearching && (
+        {isSearching || isLoading ? (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <Center py={4}>
-              <Spinner size="lg" color="yellow.500" />
+              <Spinner size="xl" color="yellow.500" />
             </Center>
           </motion.div>
-        )}
-
-        {displayedData.length > 0 && !isSearching ? (
-          <Stack spacing={6}>
-            {displayedData.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                {"number" in item ? (
-                  <ProjectCard project={item} />
-                ) : (
-                  <GrantCard grant={item} />
-                )}
-              </motion.div>
-            ))}
-          </Stack>
         ) : (
-          <Text>No data found</Text>
-        )}
+          <>
+            {displayedData.length > 0 ? (
+              <Stack spacing={6}>
+                {displayedData.map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    {"number" in item ? (
+                      <ProjectCard project={item} />
+                    ) : (
+                      <GrantCard grant={item} />
+                    )}
+                  </motion.div>
+                ))}
+              </Stack>
+            ) : (
+              <Text>No data found</Text>
+            )}
 
-        {!isSearching && hasMore && (
-          <Center py={6}>
-            <Button
-              onClick={loadMoreData}
-              variant="solid"
-              size="md"
-              _hover={{ bg: "yellow.500", color: "white" }}
-            >
-              {isLoadingMore && (
-                <Center py={6} mr={2}>
-                  <Spinner color="white" />
-                </Center>
-              )}
-              See More
-            </Button>
-          </Center>
+            {!isSearching && hasMore && (
+              <Center py={6}>
+                <Button
+                  onClick={loadMoreData}
+                  variant="solid"
+                  size="md"
+                  _hover={{ bg: "yellow.500", color: "white" }}
+                >
+                  {isLoadingMore && (
+                    <Center py={6} mr={2}>
+                      <Spinner color="white" />
+                    </Center>
+                  )}
+                  See More
+                </Button>
+              </Center>
+            )}
+          </>
         )}
       </Container>
     </Box>

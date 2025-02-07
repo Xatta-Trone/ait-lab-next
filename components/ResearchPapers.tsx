@@ -39,7 +39,7 @@ const ResearchPapers: React.FC = () => {
     searchParams.get("q") || ""
   );
   const [sortByYear, setSortByYear] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(false);
   const papersPerPage = 10;
@@ -112,6 +112,7 @@ const ResearchPapers: React.FC = () => {
     setFilteredPapers(tempPapers);
     setDisplayedPapers(tempPapers.slice(0, papersPerPage));
     setHasMore(tempPapers.length > papersPerPage);
+    setIsLoading(false);
   }, [papers, debouncedSearchTerm, sortByYear]);
 
   const loadMorePapers = () => {
@@ -181,26 +182,26 @@ const ResearchPapers: React.FC = () => {
           </Select>
         </Stack>
 
-        {isLoading && (
+        {isLoading ? (
           <Center py={6}>
             <Spinner size="xl" color="yellow.500" />
           </Center>
+        ) : (
+          <SimpleGrid columns={{ base: 1 }} spacing={6}>
+            {displayedPapers.map((paper, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <ResearchPaperItemNew {...paper} />
+              </motion.div>
+            ))}
+          </SimpleGrid>
         )}
 
-        <SimpleGrid columns={{ base: 1 }} spacing={6}>
-          {displayedPapers.map((paper, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <ResearchPaperItemNew {...paper} />
-            </motion.div>
-          ))}
-        </SimpleGrid>
-
-        {hasMore && (
+        {!isLoading && hasMore && (
           <Center py={6}>
             <Button
               onClick={loadMorePapers}
