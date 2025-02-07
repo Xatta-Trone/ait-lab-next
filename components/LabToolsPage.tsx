@@ -35,16 +35,18 @@ const LabToolsPage: React.FC = () => {
   const [filteredTools, setFilteredTools] = useState<LabTools[]>([]);
   const [displayedTools, setDisplayedTools] = useState<LabTools[]>([]);
   const [searching, setSearching] = useState(false);
-  const [searchTerm, setSearchTerm] = useState(
-    searchParams.get("search") || ""
-  );
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const toolsPerPage = 10;
   const [isLoading, setIsLoading] = useState(true);
 
+  // Update initial state to use URL params
+  const initialSearchTerm = searchParams.get("search") || "";
+  const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
+  const [debouncedSearchTerm, setDebouncedSearchTerm] =
+    useState(initialSearchTerm);
+
   // Add new state and ref
-  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
   const debounceTimer = useRef<NodeJS.Timeout | null>(null);
 
   /**
@@ -59,6 +61,15 @@ const LabToolsPage: React.FC = () => {
   useEffect(() => {
     updateURL();
   }, [updateURL]);
+
+  // Set initial search from URL
+  useEffect(() => {
+    const urlSearchTerm = searchParams.get("search") || "";
+    if (urlSearchTerm) {
+      setSearchTerm(urlSearchTerm);
+      setDebouncedSearchTerm(urlSearchTerm);
+    }
+  }, [searchParams]);
 
   /**
    * Handles the search input, updates the search term state, and filters tools.

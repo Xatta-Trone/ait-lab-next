@@ -35,10 +35,10 @@ const ResearchPapers: React.FC = () => {
   const [lastUpdated, setLastUpdated] = useState("");
   const [filteredPapers, setFilteredPapers] = useState<ResearchPaper[]>([]);
   const [displayedPapers, setDisplayedPapers] = useState<ResearchPaper[]>([]);
-  const [searchTerm, setSearchTerm] = useState(searchParams.get("q") || "");
-  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState(
-    searchParams.get("q") || ""
-  );
+  const initialSearchTerm = searchParams.get("q") || "";
+  const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
+  const [debouncedSearchTerm, setDebouncedSearchTerm] =
+    useState(initialSearchTerm);
   const [sortByYear, setSortByYear] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
@@ -77,7 +77,10 @@ const ResearchPapers: React.FC = () => {
   useEffect(() => {
     const q = searchParams.get("q") || "";
     const year = searchParams.get("year") || "desc";
-    setSearchTerm(q);
+    if (q) {
+      setSearchTerm(q);
+      setDebouncedSearchTerm(q);
+    }
     setSortByYear(year);
   }, [searchParams]);
 

@@ -64,8 +64,8 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
 
     setIsLoading(true);
     setSearchTerm(query);
+    setDebouncedSearchTerm(query); // Add this line
     setSortByStatus(status);
-    // Don't set isLoading to false here, let applyFilters handle it
   }, []);
 
   // Update URL dynamically
