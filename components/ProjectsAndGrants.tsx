@@ -1,6 +1,12 @@
 "use client";
 
-import React, { useEffect, useState, useCallback, useMemo } from "react";
+import React, {
+  useEffect,
+  useState,
+  useCallback,
+  useMemo,
+  useRef,
+} from "react";
 import {
   Box,
   Container,
@@ -39,6 +45,8 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
+  const debounceTimer = useRef<NodeJS.Timeout | null>(null);
 
   const dataPerPage = 10;
 
@@ -79,8 +87,8 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
     setIsLoading(true);
     let filtered = combinedData;
 
-    if (searchTerm) {
-      const lowerSearchTerm = searchTerm.toLowerCase();
+    if (debouncedSearchTerm) {
+      const lowerSearchTerm = debouncedSearchTerm.toLowerCase();
       filtered = filtered.filter((item) => {
         const normalizedSearchTerm = lowerSearchTerm.replace(/\s+/g, "");
         if ("number" in item) {
@@ -125,7 +133,7 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
     setTimeout(() => {
       setIsLoading(false);
     }, 500);
-  }, [combinedData, searchTerm, role, sortByStatus, updateURL]);
+  }, [combinedData, debouncedSearchTerm, role, sortByStatus, updateURL]);
 
   useEffect(() => {
     if (!isSearching) {
@@ -153,7 +161,12 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
     setSearchTerm(e.target.value);
     setIsSearching(true);
 
-    setTimeout(() => {
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+
+    debounceTimer.current = setTimeout(() => {
+      setDebouncedSearchTerm(e.target.value);
       setIsSearching(false);
     }, 500);
   };
@@ -161,6 +174,15 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
   const handleSortByStatus = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSortByStatus(e.target.value);
   };
+
+  // Cleanup debounce timer
+  useEffect(() => {
+    return () => {
+      if (debounceTimer.current) {
+        clearTimeout(debounceTimer.current);
+      }
+    };
+  }, []);
 
   return (
     <Box py={8}>
