@@ -74,10 +74,10 @@ const ProjectCard = (props: { project: ProjectTypes }) => {
           <Text fontSize="md" color={textCol} mb={4}>
             <strong>
               {project.PI_role === "Co-PI"
-                ? "Co-Principal Investigator"
+                ? "Co-PI"
                 : project.PI_role === "Key Researcher"
                 ? "Key Researcher"
-                : "Principal Investigator"}
+                : "PI"}
               :
             </strong>{" "}
             {project.PI}
