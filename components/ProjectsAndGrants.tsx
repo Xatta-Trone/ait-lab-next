@@ -32,6 +32,7 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
   const inputBg = useColorModeValue("white", "gray.600");
   const inputBorder = useColorModeValue("gray.200", "gray.500");
   const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700");
+  const textCol = useColorModeValue("gray.500", "gray.400");
 
   const [searchTerm, setSearchTerm] = useState("");
   const [sortByStatus, setSortByStatus] = useState("");
@@ -185,7 +186,7 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
   }, []);
 
   return (
-    <Box py={8}>
+    <Box py={8} minH={"50vh"}>
       <Container maxW="container.xl">
         <Stack mb={6} direction={{ base: "column", md: "row" }} spacing={4}>
           <Input
@@ -237,7 +238,7 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
               <Text>No data found</Text>
             )}
 
-            {!isSearching && hasMore && (
+            {!isSearching && hasMore ? (
               <Center py={6}>
                 <Button
                   onClick={loadMoreData}
@@ -253,6 +254,10 @@ const ProjectsAndGrants: React.FC<{ role: string }> = ({ role }) => {
                   See More
                 </Button>
               </Center>
+            ) : (
+              <Text align={"center"} color={textCol} mt={6}>
+                End of list.
+              </Text>
             )}
           </>
         )}

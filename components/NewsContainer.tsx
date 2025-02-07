@@ -201,7 +201,7 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
             ))}
           </Stack>
 
-          {!debouncing && hasMore && (
+          {!debouncing && hasMore ? (
             <Center py={6}>
               <Button
                 onClick={loadMoreNews}
@@ -217,6 +217,10 @@ const NewsContainer: React.FC<{ type: string }> = ({ type }) => {
                 See More
               </Button>
             </Center>
+          ) : (
+            <Text color={textCol} align={"center"} mt={6}>
+              End of list.
+            </Text>
           )}
         </>
       ) : (

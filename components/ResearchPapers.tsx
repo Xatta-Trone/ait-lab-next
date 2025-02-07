@@ -26,6 +26,7 @@ const ResearchPapers: React.FC = () => {
   const inputBg = useColorModeValue("white", "gray.600");
   const inputBorder = useColorModeValue("gray.200", "gray.500");
   const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700");
+  const textCol = useColorModeValue("gray.500", "gray.400");
 
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -227,7 +228,7 @@ const ResearchPapers: React.FC = () => {
               ))}
             </SimpleGrid>
 
-            {hasMore && (
+            {hasMore ? (
               <Center py={6}>
                 <Button
                   onClick={loadMorePapers}
@@ -243,10 +244,16 @@ const ResearchPapers: React.FC = () => {
                   See More
                 </Button>
               </Center>
+            ) : (
+              <Text align={"center"} color={textCol} mt={6}>
+                End of list.
+              </Text>
             )}
           </>
         ) : (
-          <Text>No papers found</Text>
+          <Text align={"center"} color={textCol}>
+            No papers found
+          </Text>
         )}
       </Container>
     </Box>

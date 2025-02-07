@@ -26,6 +26,7 @@ const LabToolsPage: React.FC = () => {
   const inputBg = useColorModeValue("white", "gray.600");
   const inputBorder = useColorModeValue("gray.200", "gray.500");
   const placeHolderColor = useColorModeValue("gray.500", "whiteAlpha.700");
+  const textCol = useColorModeValue("gray.500", "gray.400");
 
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -173,10 +174,12 @@ const LabToolsPage: React.FC = () => {
                 ))}
               </Stack>
             ) : (
-              <Text textAlign={"center"}>No tools found</Text>
+              <Text textAlign={"center"} color={textCol}>
+                No tools found
+              </Text>
             )}
 
-            {!searching && hasMore && (
+            {!searching && hasMore ? (
               <Center py={6}>
                 <Button
                   onClick={loadMoreTools}
@@ -192,6 +195,10 @@ const LabToolsPage: React.FC = () => {
                   See More
                 </Button>
               </Center>
+            ) : (
+              <Text align={"center"} color={textCol} mt={6}>
+                End of list.
+              </Text>
             )}
           </Box>
         )}
