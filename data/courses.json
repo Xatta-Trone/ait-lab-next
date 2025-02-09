@@ -21,7 +21,7 @@
       "grade": "C"
     },
     "level": "Undergraduate",
-    "image": ""
+    "image": "DALL·E 2025-02-08 21.20.26 - A minimalistic 3D textbook for 'CE 4362_ Traffic Engineering' placed on a clean surface. The book cover is sleek, featuring a simple yet professional.webp"
   },
   {
     "title": "CE 7393. Artificial Intelligence Applications in Civil Engineering",
@@ -42,6 +42,7 @@
     "courseSite": {
       "label": "Course Website",
       "url": "https://subasish.quarto.pub/ce7393-fall24/"
-    }
+    },
+    "image": "DALL·E 2025-02-08 21.21.22 - A minimalistic 3D textbook for 'CE 7393_ Artificial Intelligence Applications in Civil Engineering' placed on a clean surface. The book cover is sleek.webp"
   }
 ]
