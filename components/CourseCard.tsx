@@ -1,3 +1,4 @@
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
   Box,
   Flex,
@@ -8,6 +9,10 @@ import {
   Button,
   Image,
   useColorModeValue,
+  List,
+  ListItem,
+  ListIcon,
+  Link,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
@@ -19,6 +24,9 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
   const bgColor = useColorModeValue("white", "gray.600");
   const headingCol = useColorModeValue("gray.800", "whiteAlpha.900");
   const textCol = useColorModeValue("gray.600", "whiteAlpha.800");
+  const listCol = useColorModeValue("yellow.600", "yellow.500");
+  const listHeading = useColorModeValue("gray.800", "whiteAlpha.800");
+
   return (
     <motion.div
       initial="hidden"
@@ -55,7 +63,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
               boxSize={{ base: "200px", md: "250px" }}
               objectFit="contain"
               fallbackSrc="/AIT_Favicon.png"
-              backgroundColor={"white"}
+              backgroundColor={"#0d1925"}
             />
           </Box>
 
@@ -75,6 +83,34 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
               {course.description}
             </Text>
 
+            {/* Additional Links Section */}
+            {course.lectures && course.lectures.length > 0 && (
+              <>
+                <Text fontSize="lg" color={listHeading} mb={1}>
+                  <strong>Lectures</strong>
+                </Text>
+                <List mb={4}>
+                  {course.lectures.map((link, index) => (
+                    <ListItem key={index}>
+                      <ListIcon as={ChevronRightIcon} color="yellow.600" />
+                      <Link
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        color={listCol}
+                        _hover={{
+                          color: "yellow.500",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        {link.label}
+                      </Link>
+                    </ListItem>
+                  ))}
+                </List>
+              </>
+            )}
+
             {/* Conditionally render prerequisite if it exists */}
             {course.prerequisite && (
               <Text fontSize="md" color={headingCol} mb={4}>
@@ -84,8 +120,30 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
               </Text>
             )}
 
+            {/* Course Level */}
+            {course.level && (
+              <Text fontSize="md" color={headingCol} mb={4}>
+                <strong>Level:</strong> {course.level}
+              </Text>
+            )}
+
             {/* Schedule and Term Pills */}
             <Stack direction="row" spacing={4} mb={4} wrap={"wrap"}>
+              {course.schedule && (
+                <Badge
+                  variant="outline"
+                  borderRadius={"lg"}
+                  fontSize="sm"
+                  style={{
+                    paddingLeft: "8px",
+                    paddingRight: "8px",
+                    paddingTop: "2px",
+                    paddingBottom: "2px",
+                  }}
+                >
+                  Schedule: {course.schedule}
+                </Badge>
+              )}
               <Badge
                 variant="outline"
                 borderRadius={"lg"}
@@ -95,38 +153,43 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                   paddingRight: "8px",
                   paddingTop: "2px",
                   paddingBottom: "2px",
+                  textWrap: "wrap",
                 }}
               >
-                Schedule: {course.schedule}
-              </Badge>
-              <Badge
-                variant="outline"
-                borderRadius={"lg"}
-                fontSize="sm"
-                style={{
-                  paddingLeft: "8px",
-                  paddingRight: "8px",
-                  paddingTop: "2px",
-                  paddingBottom: "2px",
-                }}
-              >
-                Term: {course.term}
+                Offered: {course.term}
               </Badge>
             </Stack>
 
-            {/* Link to full course list */}
-            <Button
-              variant="solid"
-              size="md"
-              colorScheme="yellow"
-              _hover={{ bg: "yellow.500", color: "white" }}
-              as="a"
-              href="http://mycatalog.txstate.edu/courses/ce/"
-              width={"fit-content"}
-              target="_blank"
-            >
-              Full Course List
-            </Button>
+            <Flex wrap={"wrap"} alignItems={"center"} gap={4}>
+              {/* Course Site Link */}
+              {course.courseSite && (
+                <Button
+                  variant="solid"
+                  size="md"
+                  colorScheme="yellow"
+                  _hover={{ bg: "yellow.500", color: "white" }}
+                  as="a"
+                  href={course.courseSite}
+                  target="_blank"
+                >
+                  Course Site
+                </Button>
+              )}
+
+              {/* Link to full course list */}
+              <Button
+                variant="solid"
+                size="md"
+                colorScheme="yellow"
+                _hover={{ bg: "yellow.500", color: "white" }}
+                as="a"
+                href="http://mycatalog.txstate.edu/courses/ce/"
+                width={"fit-content"}
+                target="_blank"
+              >
+                Full Course List
+              </Button>
+            </Flex>
           </Box>
         </Flex>
       </Box>

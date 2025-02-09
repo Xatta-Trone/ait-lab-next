@@ -1,6 +1,25 @@
 {
   "projects": [
     {
+      "number": "",
+      "title": "Refining the Understanding of Parking Space Requirements and Its Impact on Vehicle Miles Traveled",
+      "description": "The goal of this project will be to explore, document, and broaden the collective understanding of mandated parking minimums within Minnesota and the region. Specifically, this project will examine the long-term benefits and challenges presented by reducing and/or removing currently established parking space requirements with new or redevelopment projects, and opportunities for parking space reallocation with existing uses.",
+      "link": "https://researchprojects.dot.state.mn.us/projectpages/details?id=30647&type=CONTRACT",
+      "sponsor": "MnDOT",
+      "PI": "Subasish Das (TXST), Lead-PI: Kakan Dey (MSU)",
+      "PI_role": "PI",
+      "start_date": {
+        "year": 2025,
+        "month": ""
+      },
+      "end_date": {
+        "year": 2027,
+        "month": ""
+      },
+      "status": "ongoing",
+      "image": "Refining the Understanding of Parking Space Requirements and Its Impact on Vehicle Miles Traveled.jpg"
+    },
+    {
       "number": "NCHRP 56-05",
       "title": "Traffic Analysis Practices for Non-Motorized Modes (Vulnerable Road Users)",
       "description": "The objective of this synthesis is to document the current state of the traffic analysis practice (not limited to the deterministic methods such as HCM) for non-motorized modes (or multimodal analysis).",
@@ -17,7 +36,7 @@
         "month": "October"
       },
       "status": "ongoing",
-      "image": "traffic-lights-6908699_640.jpg"
+      "image": "nchrp5605.png"
     },
     {
       "number": "0-7215",
@@ -131,7 +150,7 @@
         "month": "June"
       },
       "status": "ongoing",
-      "image": "japan-2014616_640.jpg"
+      "image": "Social and Community Factors Contributing to Pedestrian Trespass Behaviors (and Motorist Incursions) on Railroad Systems.jpg"
     },
     {
       "number": "",
