@@ -63,7 +63,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
               boxSize={{ base: "200px", md: "250px" }}
               objectFit="contain"
               fallbackSrc="/AIT_Favicon.png"
-              backgroundColor={"white"}
+              backgroundColor={"#0d1925"}
             />
           </Box>
 
