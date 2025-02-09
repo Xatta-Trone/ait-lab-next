@@ -1,6 +1,25 @@
 {
   "projects": [
     {
+      "number": "",
+      "title": "Refining the Understanding of Parking Space Requirements and Its Impact on Vehicle Miles Traveled",
+      "description": "The goal of this project will be to explore, document, and broaden the collective understanding of mandated parking minimums within Minnesota and the region. Specifically, this project will examine the long-term benefits and challenges presented by reducing and/or removing currently established parking space requirements with new or redevelopment projects, and opportunities for parking space reallocation with existing uses.",
+      "link": "https://researchprojects.dot.state.mn.us/projectpages/details?id=30647&type=CONTRACT",
+      "sponsor": "MnDOT",
+      "PI": "Subasish Das (TXST), Lead-PI: Kakan Dey (MSU)",
+      "PI_role": "PI",
+      "start_date": {
+        "year": 2025,
+        "month": ""
+      },
+      "end_date": {
+        "year": 2027,
+        "month": ""
+      },
+      "status": "ongoing",
+      "image": "Parking-bays-904652019.jpg"
+    },
+    {
       "number": "NCHRP 56-05",
       "title": "Traffic Analysis Practices for Non-Motorized Modes (Vulnerable Road Users)",
       "description": "The objective of this synthesis is to document the current state of the traffic analysis practice (not limited to the deterministic methods such as HCM) for non-motorized modes (or multimodal analysis).",
