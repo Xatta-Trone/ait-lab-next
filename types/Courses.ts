@@ -11,5 +11,7 @@ interface CourseTypes {
   lectures?: { label: string; url: string }[]; // An array of lecture objects, each containing:
   // - `label`: The title or label of the lecture
   // - `url`: The URL or path to the lecture resource
-  courseSite?: string;
+  courseSite?: { label: string; url: string }; // An object representing the course website, containing:
+  // - `label`: The title or label of the course website
+  // - `url`: The URL or path to the course website
 }

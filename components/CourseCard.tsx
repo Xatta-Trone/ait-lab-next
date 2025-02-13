@@ -169,7 +169,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                   colorScheme="yellow"
                   _hover={{ bg: "yellow.500", color: "white" }}
                   as="a"
-                  href={course.courseSite}
+                  href={course.courseSite.url}
                   target="_blank"
                 >
                   Course Site
