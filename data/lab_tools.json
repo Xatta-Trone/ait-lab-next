@@ -234,14 +234,16 @@
         "description": "",
         "latestProjectLink": "https://aitlab.shinyapps.io/older_bicyclists/",
         "type": "shiny",
-        "links": []
+        "links": [],
+        "image": "older-bicycle.png"
     },
     {
         "title": "Young Motorcyclist",
         "description": "",
         "latestProjectLink": "https://aitlab.shinyapps.io/young_motocyclists/",
         "type": "shiny",
-        "links": []
+        "links": [],
+        "image": "young-motorcycle.png"
     },
     {
         "title": "SUP",
