@@ -24,7 +24,7 @@
         "latestProjectLink": "https://subasish.shinyapps.io/ScRAM/",
         "links": [],
         "image": "Screenshot 2024-12-02 175600.png",
-        "type": "web"
+        "type": "shiny"
     },
     {
         "title": "Data Visualization Tool for Impaired Driving",
@@ -33,7 +33,7 @@
         "latestProjectLink": "https://alcoholtool.shinyapps.io/LA_Alcohol_Tool/",
         "links": [],
         "image": "",
-        "type": "web"
+        "type": "shiny"
     },
     {
         "title": "Short-Duration Operation Speed Measures for Interstate Roadways",
@@ -212,5 +212,68 @@
         "links": [],
         "image": "Screenshot 2024-12-02 181234.png",
         "type": "shiny"
+    },
+    {
+        "title": "Travis Simplified",
+        "description": "",
+        "latestProjectLink": "https://xattatrone.shinyapps.io/travis-simplified/",
+        "type": "shiny",
+        "links": []
+    },
+    {
+        "title": "Child Pedestrian",
+        "description": "",
+        "latestProjectLink": "https://aitlab.shinyapps.io/child_pedestrian/",
+        "type": "shiny",
+        "links": []
+    },
+    {
+        "title": "Older Bicyclist",
+        "description": "",
+        "latestProjectLink": "https://aitlab.shinyapps.io/older_bicyclists/",
+        "type": "shiny",
+        "links": []
+    },
+    {
+        "title": "Young Motorcyclist",
+        "description": "",
+        "latestProjectLink": "https://aitlab.shinyapps.io/young_motocyclists/",
+        "type": "shiny",
+        "links": []
+    },
+    {
+        "title": "SUP",
+        "description": "",
+        "latestProjectLink": "https://aitlab.shinyapps.io/sup-demo/",
+        "type": "shiny",
+        "links": []
+    },
+    {
+        "title": "Farm Equipment",
+        "description": "",
+        "latestProjectLink": "https://aitlab.shinyapps.io/farm-equipment/",
+        "type": "shiny",
+        "links": []
+    },
+    {
+        "title": "NCHRP 17-113: Safe System Approach",
+        "description": "This is searchable electronic toolkit that builds on the NCHRP Report 500 series to align with Safe System Approach (SSA) principles and AASHTO’s current priorities, as well as reflect the most recent research and identify new innovations to help achieve the goal of zero deaths on the nation’s roads.",
+        "latestProjectLink": "https://nchrp-17-113-demo-v6.vercel.app/",
+        "type": "web",
+        "links": []
+    },
+    {
+        "title": "Google Scholar Scraper",
+        "description": "This project automatically scrapes publication data and metadata from an author's Google Scholar profile. The scraper is currently configured to scrape and update the data of Dr. Subhasish Das on a daily basis, saving the results to the JSON file scholar-data-qK-YgxAAAAAJ.json.",
+        "latestProjectLink": "https://google-scholar-scrapper.vercel.app/",
+        "type": "web",
+        "links": []
+    },
+    {
+        "title": "American Public Transportation Association",
+        "description": "",
+        "latestProjectLink": "https://apta-demo.vercel.app/",
+        "type": "web",
+        "links": []
     }
 ]
