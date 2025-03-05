@@ -282,5 +282,13 @@
         "type": "web",
         "links": [],
         "image": "Screenshot 2025-03-04 235325.png"
+    },
+    {
+        "title": "Texas Roundabouts",
+        "description": "",
+        "latestProjectLink": "https://aitlab.shinyapps.io/texas-roundabouts/",
+        "type": "shiny",
+        "links": [],
+        "image": "screenshot-1741191946388.png"
     }
 ]
