@@ -152,7 +152,7 @@ const RecentNews = () => {
       {/* Bottom SVG Divider */}
       <Box
         position="absolute"
-        bottom={0} // Positioned at the bottom
+        bottom={-1} // Positioned at the bottom
         w={"100%"} // Full width
         overflowX={"hidden"} // Hide overflow on X-axis
         zIndex={1} // Ensure above background

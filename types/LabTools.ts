@@ -5,6 +5,7 @@ interface LabTools {
   latestProjectLink: string;
   links: ToolLink[];
   image: string;
+  type: "shiny" | "web";
 }
 
 interface ToolLink {

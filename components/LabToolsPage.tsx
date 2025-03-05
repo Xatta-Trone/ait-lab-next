@@ -12,6 +12,11 @@ import {
   Center,
   useColorModeValue,
   Button,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -49,18 +54,35 @@ const LabToolsPage: React.FC = () => {
   // Add new state and ref
   const debounceTimer = useRef<NodeJS.Timeout | null>(null);
 
-  /**
-   * Updates the URL query parameters whenever the search term changes.
-   */
-  const updateURL = useCallback(() => {
-    const params = new URLSearchParams();
-    if (searchTerm) params.set("search", searchTerm);
-    router.push(`?${params.toString()}`);
-  }, [router, searchTerm]);
+  // Add tab state
+  const [selectedTab, setSelectedTab] = useState(0);
 
+  // Initialize tab based on URL hash
   useEffect(() => {
-    updateURL();
-  }, [updateURL]);
+    const hash = window.location.hash.toLowerCase();
+    if (hash === "#web") {
+      setSelectedTab(1);
+    } else {
+      setSelectedTab(0); // Default to Shiny tools
+      if (!hash) {
+        window.location.hash = "shiny";
+      }
+    }
+  }, []);
+
+  // Update URL without causing rerender
+  const updateURLSilently = useCallback((search: string, tab: number) => {
+    const params = new URLSearchParams();
+    if (search) params.set("search", search);
+
+    const hash = tab === 0 ? "#shiny" : "#web";
+    const queryString = params.toString();
+    const newUrl = queryString
+      ? `${window.location.pathname}?${queryString}${hash}`
+      : `${window.location.pathname}${hash}`;
+
+    window.history.replaceState({ ...window.history.state }, "", newUrl);
+  }, []);
 
   // Set initial search from URL
   useEffect(() => {
@@ -74,20 +96,24 @@ const LabToolsPage: React.FC = () => {
   /**
    * Handles the search input, updates the search term state, and filters tools.
    */
-  const handleSearch = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setSearchTerm(value);
-    setSearching(true);
+  const handleSearch = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const value = e.target.value;
+      setSearchTerm(value);
+      setSearching(true);
 
-    if (debounceTimer.current) {
-      clearTimeout(debounceTimer.current);
-    }
+      if (debounceTimer.current) {
+        clearTimeout(debounceTimer.current);
+      }
 
-    debounceTimer.current = setTimeout(() => {
-      setDebouncedSearchTerm(value);
-      setSearching(false);
-    }, 500);
-  }, []);
+      debounceTimer.current = setTimeout(() => {
+        setDebouncedSearchTerm(value);
+        setSearching(false);
+        updateURLSilently(value, selectedTab);
+      }, 500);
+    },
+    [selectedTab, updateURLSilently]
+  );
 
   /**
    * Filters the LabTools data based on the search term.
@@ -96,6 +122,7 @@ const LabToolsPage: React.FC = () => {
   useEffect(() => {
     let tempTools = [...typedLabToolsData];
 
+    // Filter by search term
     if (debouncedSearchTerm) {
       const lowerSearchTerm = debouncedSearchTerm.toLowerCase();
       tempTools = tempTools.filter(
@@ -106,11 +133,16 @@ const LabToolsPage: React.FC = () => {
       );
     }
 
+    // Filter by tool type
+    tempTools = tempTools.filter((tool) =>
+      selectedTab === 0 ? tool.type === "shiny" : tool.type === "web"
+    );
+
     setFilteredTools(tempTools);
     setDisplayedTools(tempTools.slice(0, toolsPerPage));
     setHasMore(tempTools.length > toolsPerPage);
     setIsLoading(false);
-  }, [debouncedSearchTerm]);
+  }, [debouncedSearchTerm, selectedTab]);
 
   // Add cleanup for debounce timer
   useEffect(() => {
@@ -143,76 +175,167 @@ const LabToolsPage: React.FC = () => {
     }, 500);
   };
 
+  // Handle tab change
+  const handleTabChange = (index: number) => {
+    setSelectedTab(index);
+    setIsLoading(true);
+    // Reset displayed tools when changing tabs
+    setDisplayedTools([]);
+    updateURLSilently(searchTerm, index);
+  };
+
   return (
     <Box py={20} minH={"100%"} bgColor={bgColor}>
       <Container maxW="container.xl">
-        {/* Page title */}
         <Heading as="h1" size="2xl" mb={6} color={headingColor}>
           AIT Lab Tools
         </Heading>
 
-        {/* Search Input */}
-        <Stack mb={6} spacing={4}>
-          <Input
-            placeholder="Search by title, project, or description"
-            value={searchTerm}
-            onChange={handleSearch}
-            bg={inputBg}
-            borderColor={inputBorder}
-            _placeholder={{ color: placeHolderColor }}
-          />
-        </Stack>
+        <Tabs
+          variant="line"
+          onChange={handleTabChange}
+          mb={6}
+          index={selectedTab}
+        >
+          <TabList mb="1em">
+            <Tab _selected={{ color: "yellow.500", borderColor: "yellow.500" }}>
+              Shiny Tools
+            </Tab>
+            <Tab _selected={{ color: "yellow.500", borderColor: "yellow.500" }}>
+              Web Tools
+            </Tab>
+          </TabList>
 
-        {/* Loading Spinner */}
-        {searching || isLoading ? (
-          <Center py={10}>
-            <Spinner size="xl" color="yellow.500" />
-          </Center>
-        ) : (
-          <Box>
-            {/* Tools List */}
-            {displayedTools.length > 0 ? (
-              <Stack spacing={6}>
-                {displayedTools.map((tool, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <LabToolsCard {...tool} />
-                  </motion.div>
-                ))}
+          <TabPanels>
+            <TabPanel p={0}>
+              {/* Search Input */}
+              <Stack mb={6} spacing={4}>
+                <Input
+                  placeholder="Search Shiny tools"
+                  value={searchTerm}
+                  onChange={handleSearch}
+                  bg={inputBg}
+                  borderColor={inputBorder}
+                  _placeholder={{ color: placeHolderColor }}
+                />
               </Stack>
-            ) : (
-              <Text textAlign={"center"} color={textCol}>
-                No tools found
-              </Text>
-            )}
 
-            {!searching && hasMore ? (
-              <Center py={6}>
-                <Button
-                  onClick={loadMoreTools}
-                  variant="solid"
-                  size="md"
-                  _hover={{ bg: "yellow.500", color: "white" }}
-                >
-                  {isLoadingMore && (
-                    <Center py={6} mr={2}>
-                      <Spinner color="white" />
-                    </Center>
+              {/* Tools List */}
+              {searching || isLoading ? (
+                <Center py={10}>
+                  <Spinner size="xl" color="yellow.500" />
+                </Center>
+              ) : (
+                <Box>
+                  {displayedTools.length > 0 ? (
+                    <Stack spacing={6}>
+                      {displayedTools.map((tool, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5 }}
+                        >
+                          <LabToolsCard {...tool} />
+                        </motion.div>
+                      ))}
+                    </Stack>
+                  ) : (
+                    <Text textAlign={"center"} color={textCol}>
+                      No tools found
+                    </Text>
                   )}
-                  See More
-                </Button>
-              </Center>
-            ) : (
-              <Text align={"center"} color={textCol} mt={6}>
-                End of list.
-              </Text>
-            )}
-          </Box>
-        )}
+
+                  {!searching && hasMore ? (
+                    <Center py={6}>
+                      <Button
+                        onClick={loadMoreTools}
+                        variant="solid"
+                        size="md"
+                        _hover={{ bg: "yellow.500", color: "white" }}
+                      >
+                        {isLoadingMore && (
+                          <Center py={6} mr={2}>
+                            <Spinner color="white" />
+                          </Center>
+                        )}
+                        See More
+                      </Button>
+                    </Center>
+                  ) : (
+                    <Text align={"center"} color={textCol} mt={6}>
+                      End of list.
+                    </Text>
+                  )}
+                </Box>
+              )}
+            </TabPanel>
+
+            <TabPanel p={0}>
+              {/* Search Input */}
+              <Stack mb={6} spacing={4}>
+                <Input
+                  placeholder="Search Web tools"
+                  value={searchTerm}
+                  onChange={handleSearch}
+                  bg={inputBg}
+                  borderColor={inputBorder}
+                  _placeholder={{ color: placeHolderColor }}
+                />
+              </Stack>
+
+              {/* Tools List */}
+              {searching || isLoading ? (
+                <Center py={10}>
+                  <Spinner size="xl" color="yellow.500" />
+                </Center>
+              ) : (
+                <Box>
+                  {displayedTools.length > 0 ? (
+                    <Stack spacing={6}>
+                      {displayedTools.map((tool, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5 }}
+                        >
+                          <LabToolsCard {...tool} />
+                        </motion.div>
+                      ))}
+                    </Stack>
+                  ) : (
+                    <Text textAlign={"center"} color={textCol}>
+                      No tools found
+                    </Text>
+                  )}
+
+                  {!searching && hasMore ? (
+                    <Center py={6}>
+                      <Button
+                        onClick={loadMoreTools}
+                        variant="solid"
+                        size="md"
+                        _hover={{ bg: "yellow.500", color: "white" }}
+                      >
+                        {isLoadingMore && (
+                          <Center py={6} mr={2}>
+                            <Spinner color="white" />
+                          </Center>
+                        )}
+                        See More
+                      </Button>
+                    </Center>
+                  ) : (
+                    <Text align={"center"} color={textCol} mt={6}>
+                      End of list.
+                    </Text>
+                  )}
+                </Box>
+              )}
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
       </Container>
     </Box>
   );

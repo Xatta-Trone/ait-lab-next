@@ -6,6 +6,7 @@ import ProjectsSection from "@/components/Homepage/ProjectsSection";
 import RecentNews from "@/components/Homepage/RecentNews";
 import BookSection from "@/components/Homepage/BookSection";
 import ContactSection from "@/components/Homepage/ContactSection";
+import HeroNew from "@/components/Homepage/HeroNew";
 
 // Metadata for the homepage, including SEO, Open Graph, and Twitter configuration
 export const metadata: Metadata = {
@@ -65,8 +66,9 @@ export default function Home() {
     <>
       {/* Hero section with a background animation and welcome content */}
       <Box position="relative" mt="-80px" height="calc(100vh + 100px)">
-        <HeroParticles /> {/* Particle effects for visual enhancement */}
-        <Hero /> {/* Main content of the hero section */}
+        {/* <HeroParticles /> Particle effects for visual enhancement */}
+        {/* <Hero /> Main content of the hero section */}
+        <HeroNew />
       </Box>
 
       {/* Sections for projects, news, books, and contact details */}
