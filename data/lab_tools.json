@@ -267,12 +267,30 @@
         "latestProjectLink": "https://nchrp-17-113-demo-v6.vercel.app/",
         "type": "web",
         "links": [
-            "https://nchrp-17113-demo.vercel.app/",
-            "https://nchrp-17-113-v2.vercel.app/",
-            "https://nchrp-17-113-demo-v3.vercel.app/",
-            "https://nchrp-17-113-demo-v4.vercel.app/",
-            "https://nchrp-17-113-demo-v5.vercel.app/",
-            "https://nchrp-17-113-demo-v6.vercel.app/"
+            {
+                "label": "Version 1",
+                "url": "https://nchrp-17113-demo.vercel.app/"
+            },
+            {
+                "label": "Version 2",
+                "url": "https://nchrp-17-113-v2.vercel.app/"
+            },
+            {
+                "label": "Version 3",
+                "url": "https://nchrp-17-113-demo-v3.vercel.app/"
+            },
+            {
+                "label": "Version 4",
+                "url": "https://nchrp-17-113-demo-v4.vercel.app/"
+            },
+            {
+                "label": "Version 5",
+                "url": "https://nchrp-17-113-demo-v5.vercel.app/"
+            },
+            {
+                "label": "Version 6",
+                "url": "https://nchrp-17-113-demo-v6.vercel.app/"
+            }
         ],
         "image": "Screenshot 2025-03-04 235104.png"
     },
