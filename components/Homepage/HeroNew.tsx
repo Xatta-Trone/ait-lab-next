@@ -2,6 +2,7 @@
 
 import {
   Box,
+  Button,
   Container,
   Heading,
   List,
@@ -9,15 +10,20 @@ import {
   ListItem,
   useColorMode,
   useColorModeValue,
+  Link,
 } from "@chakra-ui/react"; // Chakra UI components
 import React from "react";
 import { HiMiniArrowRightCircle } from "react-icons/hi2"; // Icon for list items
+import { FaProjectDiagram, FaBook } from "react-icons/fa"; // Icons for buttons
 
 const HeroNew = () => {
   const bgGradient = useColorModeValue(
     "linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))",
     "linear(to-b, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9))"
   );
+  const textCol = useColorModeValue("black", "white");
+  const headingColor = useColorModeValue("yellow.600", "white");
+  const bgColor = useColorModeValue("yellow.50", "gray.600");
   const { colorMode } = useColorMode();
 
   return (
@@ -28,17 +34,18 @@ const HeroNew = () => {
       justifyContent="center" // Horizontally center content
       height="calc(100vh + 90px)" // Full viewport height minus navbar height
       // Vertically center content
-      backgroundImage={`${bgGradient}, url(./hero.png)`}
+      //   backgroundImage={`${bgGradient}, url(./hero.png)`}
       alignItems={"center"}
       backgroundPosition={"center"}
+      backgroundColor={bgColor}
     >
-      <Container maxW="container.xl" px={{ base: "10", md: "10" }}>
+      <Container maxW="container.xl" px={{ base: "5", md: "10" }} w={"full"}>
         {" "}
         {/* Responsive container */}
         {/* Main Heading */}
         <Heading
-          color="whiteAlpha.900" // Text color for contrast against background
-          textAlign="left" // Align heading text to the left
+          color={headingColor} // Text color for contrast against background
+          textAlign="center" // Align heading text to the left
           as="h1" // Semantic HTML tag for primary heading
           size={{ base: "2xl", md: "3xl" }} // Responsive font sizes
           pb="20px" // Add padding below the heading
@@ -50,36 +57,65 @@ const HeroNew = () => {
         {/* Key Features List */}
         <List
           spacing={2} // Add spacing between list items
-          textAlign="left" // Align list items to the left
-          color="white" // Text color for visibility
+          textAlign="center" // Align list items to the left
+          color={textCol} // Text color for visibility
           mt={4} // Margin above the list
           fontSize={{ base: "xl", md: "2xl" }} // Responsive font sizes
           lineHeight={1.2} // Adjust line height for readability
         >
           {/* First Feature */}
           <ListItem>
-            <ListIcon as={HiMiniArrowRightCircle} color="white" />
+            <ListIcon as={HiMiniArrowRightCircle} color={textCol} />
             {/* Arrow icon */}
             Causal Artificial Intelligence
           </ListItem>
 
           {/* Second Feature */}
           <ListItem>
-            <ListIcon as={HiMiniArrowRightCircle} color="white" />
+            <ListIcon as={HiMiniArrowRightCircle} color={textCol} />
             Transportation Safety and Operations
           </ListItem>
 
           {/* Third Feature */}
           <ListItem>
-            <ListIcon as={HiMiniArrowRightCircle} color="white" />
+            <ListIcon as={HiMiniArrowRightCircle} color={textCol} />
             Infrastructure readiness for disruptive technologies
           </ListItem>
         </List>
+        <Box
+          display="flex"
+          justifyContent="center"
+          gap={4}
+          mt={8}
+          flexWrap={"wrap"}
+        >
+          <Button
+            as={Link}
+            href="/projects-and-grants"
+            size="lg"
+            colorScheme="yellow"
+            variant={"solid"}
+            leftIcon={<FaProjectDiagram />}
+          >
+            View Projects
+          </Button>
+          <Button
+            as={Link}
+            href="/publication"
+            size="lg"
+            variant="outline"
+            leftIcon={<FaBook />}
+            color={headingColor}
+            _hover={{ color: "white", backgroundColor: "yellow.600" }}
+          >
+            Publications
+          </Button>
+        </Box>
       </Container>
       {/* Bottom divider */}
       <Box
         position="absolute"
-        bottom={-1}
+        bottom={-3}
         w="100%"
         overflowX="hidden"
         zIndex={-1}
