@@ -5,7 +5,8 @@
         "description": "This data visualization tool for rural roadways is based on safety performance functions (SPFs) considering speed and weather crash modification factors (CMFs). The map shows the entire rural roadway networks in the National Highway System. The color of the segments is based on the number of expected crashes on the individual segment. Below the interactive map, an interactive table produces the result of the final selection. This tool has functionality with location selection from the county, district, and different AADT ranges.",
         "latestProjectLink": "https://ruralspeedsafety.shinyapps.io/rss_sdi",
         "links": [],
-        "image": "Screenshot 2024-12-02 175009.png"
+        "image": "Screenshot 2024-12-02 175009.png",
+        "type": "shiny"
     },
     {
         "title": "Data Visualization Tool for Rural Roadways",
@@ -13,7 +14,8 @@
         "description": "This data visualization tool for rural roadways is based on safety performance functions (SPFs) considering speed and weather crash modification factors (CMFs) using data from Washington and Ohio. The color of the segments is based on the number of expected crashes on the individual segment. Below the interactive map, an interactive table produces the results of the final selection. The interactive table can display 10, 25, 50, or 100 entries using the drop-down menu to the left. The SPFs developed in this project considered traffic volume, roadway geometry, and traffic crashes.",
         "latestProjectLink": "https://ruralspeedsafety.shinyapps.io/0_7051Tool_v2/",
         "links": [],
-        "image": "Screenshot 2024-12-02 175408.png"
+        "image": "Screenshot 2024-12-02 175408.png",
+        "type": "shiny"
     },
     {
         "title": "Data Visualization Tool for Non-motorist Exposure Estimates",
@@ -21,7 +23,8 @@
         "description": "The GIS web tool provides estimates of pedestrian and bike commute trips by different Census spatial units (from tracts to block group). This tool also has the functionality of data downloading and data display in interactive data table format.",
         "latestProjectLink": "https://subasish.shinyapps.io/ScRAM/",
         "links": [],
-        "image": "Screenshot 2024-12-02 175600.png"
+        "image": "Screenshot 2024-12-02 175600.png",
+        "type": "web"
     },
     {
         "title": "Data Visualization Tool for Impaired Driving",
@@ -29,7 +32,8 @@
         "description": "This interactive GIS web tool that provides estimates of impaired driving related safety issues by Parish, block group, and interactive visualization of survey results. This tool also has the functionality of data downloading and data display in interactive data table format.",
         "latestProjectLink": "https://alcoholtool.shinyapps.io/LA_Alcohol_Tool/",
         "links": [],
-        "image": ""
+        "image": "",
+        "type": "web"
     },
     {
         "title": "Short-Duration Operation Speed Measures for Interstate Roadways",
@@ -46,7 +50,8 @@
                 "url": "https://aitlab.shinyapps.io/0_7131_V0/"
             }
         ],
-        "image": ""
+        "image": "",
+        "type": "shiny"
     },
     {
         "title": "Granular Level Precipitation Data",
@@ -54,7 +59,8 @@
         "description": "This tool provides an overview of precipitation data from 2019 to 2022. Users can filter data by County, Year, Month, Day, and Hour to view precipitation patterns on a map and in a table format.",
         "latestProjectLink": "https://aitlab.shinyapps.io/0_7144_V01/",
         "links": [],
-        "image": "Screenshot 2024-12-02 175834.png"
+        "image": "Screenshot 2024-12-02 175834.png",
+        "type": "shiny"
     },
     {
         "title": "Multi-Modal Driveway Density Comparison Tool",
@@ -83,7 +89,8 @@
                 "url": "https://aitlab.shinyapps.io/DrivewayDensity_V03/"
             }
         ],
-        "image": "Screenshot 2024-12-02 175942.png"
+        "image": "Screenshot 2024-12-02 175942.png",
+        "type": "shiny"
     },
     {
         "title": "Smart Location Database (SLD) Driveway Density Tool",
@@ -100,7 +107,8 @@
                 "url": "https://aitlab.shinyapps.io/TX_DrivewayType_V02/"
             }
         ],
-        "image": "Screenshot 2024-12-02 180107.png"
+        "image": "Screenshot 2024-12-02 180107.png",
+        "type": "shiny"
     },
     {
         "title": "Safe Route User Interface",
@@ -108,7 +116,8 @@
         "description": "This tool provides route directions between two points (e.g., from Texas State University to University of Texas) and assigns a combined safety score for each route based on various factors. Users can view the safest and fastest routes on the map.",
         "latestProjectLink": "https://aitlab.shinyapps.io/SafeR_V01/",
         "links": [],
-        "image": "Screenshot 2024-12-02 180237.png"
+        "image": "Screenshot 2024-12-02 180237.png",
+        "type": "shiny"
     },
     {
         "title": "AI-Driven Safe Navigation Tool",
@@ -116,7 +125,8 @@
         "description": "This tool provides safe and fast route recommendations between two points (e.g., Texas State University to University of Texas). It compares the crash score, distance, duration, and other factors for both the fastest and safest routes.",
         "latestProjectLink": "https://aitlab.shinyapps.io/SafeR_V02/",
         "links": [],
-        "image": "Screenshot 2024-12-02 180417.png"
+        "image": "Screenshot 2024-12-02 180417.png",
+        "type": "shiny"
     },
     {
         "title": "SSA Scoring Tool",
@@ -133,7 +143,8 @@
                 "url": "https://aitlab.shinyapps.io/CLE_SSA_Score/"
             }
         ],
-        "image": "Screenshot 2024-12-02 180540.png"
+        "image": "Screenshot 2024-12-02 180540.png",
+        "type": "shiny"
     },
     {
         "title": "CRIS Data Application",
@@ -141,7 +152,8 @@
         "description": "A tool that allows users to filter crash data by parameters such as Crash Hour and Crash Severity. The filtered results can be downloaded, and detailed crash information is displayed in the table format and can be downloaded by the user.",
         "latestProjectLink": "https://aitlab.shinyapps.io/CRIS_Tool_V01/",
         "links": [],
-        "image": "Screenshot 2024-12-02 180819.png"
+        "image": "Screenshot 2024-12-02 180819.png",
+        "type": "shiny"
     },
     {
         "title": "FARSTool Application",
@@ -149,7 +161,8 @@
         "description": "FARSTool provides an overview of Fatality Analysis Reporting System (FARS) data from 2016-2021 across all U.S. states. Users can filter by state, year, and variables such as day of the week to analyze traffic fatality data.",
         "latestProjectLink": "https://aitlab.shinyapps.io/FARSToolV01/",
         "links": [],
-        "image": "Screenshot 2024-12-02 180933.png"
+        "image": "Screenshot 2024-12-02 180933.png",
+        "type": "shiny"
     },
     {
         "title": "NCHRP 17-85 QIE Tool (Replication Approach)",
@@ -166,7 +179,8 @@
                 "url": "https://aitlab.shinyapps.io/17_85_Minimal_V01/"
             }
         ],
-        "image": "Screenshot 2024-12-02 181044.png"
+        "image": "Screenshot 2024-12-02 181044.png",
+        "type": "shiny"
     },
     {
         "title": "Inset Street View Tool",
@@ -187,7 +201,8 @@
                 "url": "https://aitlab.shinyapps.io/insetStreetViewToolV03/"
             }
         ],
-        "image": "Screenshot 2024-12-02 181142.png"
+        "image": "Screenshot 2024-12-02 181142.png",
+        "type": "shiny"
     },
     {
         "title": "Inset Map Tool",
@@ -195,6 +210,7 @@
         "description": "A visualization tool that differentiates between autonomous and conventional vehicle crashes using a color-coded map. Clicking on the map provides details on the Pre-Crash Mode for specific locations.",
         "latestProjectLink": "https://aitlab.shinyapps.io/insetMapTool/",
         "links": [],
-        "image": "Screenshot 2024-12-02 181234.png"
+        "image": "Screenshot 2024-12-02 181234.png",
+        "type": "shiny"
     }
 ]
