@@ -333,5 +333,13 @@
         "type": "web",
         "links": [],
         "image": "08-185.png"
+    },
+    {
+        "title": "Texas Intersections",
+        "description": "",
+        "latestProjectLink": "https://aitlab.shinyapps.io/texas-intersections/",
+        "type": "shiny",
+        "links": [],
+        "image": "tx-intersections.png"
     }
 ]
