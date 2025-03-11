@@ -12,8 +12,14 @@ import ProjectsSwiper from "./ProjectsSwiper"; // Import the Swiper component fo
 
 const ProjectsSection = () => {
   const { colorMode } = useColorMode();
-  const bgColor = useColorModeValue("white", "gray.700");
-  const headingColor = useColorModeValue("yellow.600", "white");
+  const bgColor = useColorModeValue(
+    "rgba(255, 255, 255, 0.7)",
+    "rgba(27, 27, 27, 0.5)"
+  );
+  const headingColor = useColorModeValue(
+    "rgba(0,0,0,0.8)",
+    "rgba(255, 255, 255, 0.8)"
+  );
   return (
     <>
       {/* Projects Section */}
@@ -65,7 +71,7 @@ const ProjectsSection = () => {
             <path
               d="M1200 120L0 16.48 0 0 1200 0 1200 120z" // Path for the SVG shape
               className="yellow-fill"
-              style={{ fill: colorMode === "light" ? "#fffff0" : "#4a5568" }} // Custom CSS class for fill color
+              style={{ fill: colorMode === "light" ? "#fffef9" : "#1b1f27" }} // Custom CSS class for fill color
             ></path>
           </svg>
         </Box>

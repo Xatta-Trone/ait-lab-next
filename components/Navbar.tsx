@@ -46,8 +46,23 @@ function Navbar() {
     };
   }, []);
 
-  const bgColor = useColorModeValue("yellow.600", "gray.800");
-  const textCol = useColorModeValue("black", "white");
+  // Update background colors for glassmorphic effect
+  const bgColor = useColorModeValue(
+    "rgba(255, 255, 255, 0.7)", // Light mode - semi-transparent yellow
+    "rgba(27, 27, 27, 0.7)" // Dark mode - semi-transparent gray
+  );
+  const logo = useColorModeValue(
+    "2.1New_Horizontal_AIT_Logo.png",
+    "2.1New_White_Horizontal_AIT_Logo.png"
+  );
+  const textCol = useColorModeValue(
+    "rgba(0, 0, 0, 0.7)",
+    "rgba(255, 255, 255, 0.9)"
+  );
+  const borderColor = useColorModeValue(
+    "rgb(216, 216, 216)", // Light mode border
+    "rgba(200, 200, 200, 0.34)" // Dark mode border
+  );
 
   // Determine if the navbar should be transparent
   const isHomepage = pathname === "/home";
@@ -63,8 +78,14 @@ function Navbar() {
       height={scrolled ? "60px" : "80px"}
       pt={scrolled ? 1 : 2}
       pb={scrolled ? 2 : 3}
-      bg={isHomepage && !scrolled ? "transparent" : bgColor} // Change background based on the page
-      boxShadow={scrolled ? "md" : "none"}
+      bg={isHomepage && !scrolled ? "transparent" : bgColor}
+      backdropFilter={isHomepage && !scrolled ? "none" : "blur(10px)"}
+      borderBottom="1px solid"
+      borderColor={isHomepage && !scrolled ? "transparent" : borderColor}
+      boxShadow={scrolled ? "0 4px 30px rgba(0, 0, 0, 0.1)" : "none"}
+      style={{
+        WebkitBackdropFilter: isHomepage && !scrolled ? "none" : "blur(10px)",
+      }}
     >
       <Container
         maxW="container.xl"
@@ -75,7 +96,7 @@ function Navbar() {
         <Flex minH="100%" alignItems="center" justifyContent="space-between">
           <Link href="/">
             <Image
-              src="2.1New_White_Horizontal_AIT_Logo.png"
+              src={logo}
               alt="AIT Lab Logo"
               height={{
                 base: scrolled ? "30px" : "40px",
@@ -95,10 +116,15 @@ function Navbar() {
                   <Text
                     fontSize="larger"
                     letterSpacing="wide"
-                    color="white"
+                    color={isHomepage && !scrolled ? "white" : textCol}
+                    fontWeight="medium"
                     position="relative"
-                    // paddingBottom="3px"
                     transition="all 0.3s ease"
+                    textShadow={
+                      isHomepage && !scrolled
+                        ? "0 1px 3px rgba(0,0,0,0.3)"
+                        : "none"
+                    }
                     _before={{
                       content: '""',
                       position: "absolute",
@@ -107,7 +133,8 @@ function Navbar() {
                       height: "3px",
                       bottom: "-3px",
                       left: "0",
-                      backgroundColor: "white",
+                      backgroundColor:
+                        isHomepage && !scrolled ? "white" : "currentColor",
                       transition: "width 0.3s ease-in-out",
                     }}
                     _hover={{
@@ -124,10 +151,12 @@ function Navbar() {
 
             <Icon
               as={colorMode === "light" ? MdDarkMode : MdLightMode}
-              color={"white"}
+              color={isHomepage && !scrolled ? "white" : textCol}
               fontSize={"xl"}
               onClick={toggleColorMode}
-              _hover={{ color: "whiteAlpha.800" }}
+              _hover={{
+                color: colorMode === "dark" ? "whiteAlpha.800" : "black",
+              }}
               cursor={"pointer"}
             />
 
@@ -137,16 +166,27 @@ function Navbar() {
               aria-label="Open Menu"
               display={{ lg: "none" }}
               onClick={onOpen}
-              color="white"
+              color={isHomepage && !scrolled ? "white" : textCol}
+              bg="transparent"
+              _hover={{ bg: "rgba(255, 255, 255, 0.1)" }}
               transition="all 0.3s ease"
+              border={"none"}
             />
           </Flex>
         </Flex>
       </Container>
 
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
-        <DrawerOverlay />
-        <DrawerContent>
+        <DrawerOverlay backdropFilter="blur(10px)" bg="rgba(0, 0, 0, 0.2)" />
+        <DrawerContent
+          bg={useColorModeValue(
+            "rgba(255, 255, 255, 0.8)",
+            "rgba(26, 32, 44, 0.8)"
+          )}
+          backdropFilter="blur(16px)"
+          borderRight="1px solid"
+          borderColor={borderColor}
+        >
           <DrawerCloseButton />
           <DrawerBody>
             <Stack as="nav" spacing={4} mt={6}>

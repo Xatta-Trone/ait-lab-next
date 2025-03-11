@@ -15,7 +15,6 @@ import {
   useColorModeValue,
   useColorMode,
 } from "@chakra-ui/react";
-import { HiExternalLink } from "react-icons/hi";
 import newsData from "@/data/news.json"; // Import news data
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -40,11 +39,34 @@ const itemVariants = {
 const RecentNews = () => {
   const { colorMode } = useColorMode();
 
-  const bgColor = useColorModeValue("yellow.50", "gray.600");
-  const headingColor = useColorModeValue("yellow.600", "white");
-  const boxBg = useColorModeValue("white", "gray.700");
-  const cardHeading = useColorModeValue("yellow.600", "whiteAlpha.800");
-  const textCol = useColorModeValue("gray.500", "gray.400");
+  const bgColor = useColorModeValue(
+    "radial-gradient(circle at center, rgba(255, 224, 130, 0.1), rgba(255, 236, 179, 0.01))",
+    "radial-gradient(circle at center, rgba(27, 27, 27, 0.7), rgba(25, 25, 25, 0.01))"
+  );
+  const textCol = useColorModeValue(
+    "rgba(0,0,0,0.6)",
+    "rgba(255, 255, 255, 0.6)"
+  );
+  const headingColor = useColorModeValue(
+    "rgba(0,0,0,0.8)",
+    "rgba(255, 255, 255, 0.8)"
+  );
+  const boxBg = useColorModeValue(
+    "radial-gradient(circle at center, rgba(254, 236, 181, 0.1), rgba(255, 236, 180, 0.01))",
+    "radial-gradient(circle at center, rgba(27, 27, 27, 0.7), rgba(25, 25, 25, 0.01))"
+  );
+  const cardHeading = useColorModeValue(
+    "rgba(0,0,0,0.7)",
+    "rgba(255, 255, 255, 0.8)"
+  );
+  const buttonBg = useColorModeValue(
+    "rgba(0,0,0,0.8)",
+    "rgba(255, 255, 255, 0.8)"
+  );
+  const buttonText = useColorModeValue(
+    "rgba(255, 255, 255, 0.9)",
+    "rgba(0, 0, 0, 0.65)"
+  );
 
   // Get the five most recent news items and parse dates for sorting
   const recentNewsItems = newsData
@@ -104,6 +126,8 @@ const RecentNews = () => {
                   bg={boxBg} // Background color
                   transition="all 0.3s ease" // Smooth transition
                   cursor={news.link ? "pointer" : "default"} // Pointer cursor if link exists
+                  bgPosition={"0 0"}
+                  bgSize={"300%"}
                 >
                   {/* Date and title section */}
                   <Flex justify="space-between" align="center" mb={2}>
@@ -138,10 +162,13 @@ const RecentNews = () => {
           <Link href="/news">
             <Button
               variant="solid" // Solid button style
-              width="fit-content" // Fit button width to content
-              alignContent="center"
-              size="lg" // Large button size
-              _hover={{ bg: "yellow.500", color: "white" }} // Hover effect
+              size="md" // Medium size
+              bg={buttonBg}
+              color={buttonText}
+              _hover={{
+                opacity: 0.9,
+              }}
+              borderColor={buttonBg}
             >
               All News
             </Button>
@@ -167,7 +194,7 @@ const RecentNews = () => {
           <path
             d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
             className="shape-fill"
-            style={{ fill: colorMode === "light" ? "#ffffff" : "#2d3748" }} // Class for custom shape fill
+            style={{ fill: colorMode === "light" ? "#ffffff" : "#1b1e24" }} // Class for custom shape fill
           ></path>
         </svg>
       </Box>
