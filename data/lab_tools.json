@@ -214,7 +214,7 @@
     },
     {
         "title": "Texas Crash Insights Tool",
-        "description": "",
+        "description": "This tool displays location of crashes in Texas during 2017-2022. This interactive tool provides locations with color codes based on different variable attributes.",
         "latestProjectLink": "https://aitlab.shinyapps.io/older_bicyclists/",
         "type": "shiny",
         "links": [
