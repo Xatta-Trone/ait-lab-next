@@ -27,15 +27,6 @@
         "type": "shiny"
     },
     {
-        "title": "Data Visualization Tool for Impaired Driving",
-        "project": "LADOTD Project",
-        "description": "This interactive GIS web tool that provides estimates of impaired driving related safety issues by Parish, block group, and interactive visualization of survey results. This tool also has the functionality of data downloading and data display in interactive data table format.",
-        "latestProjectLink": "https://alcoholtool.shinyapps.io/LA_Alcohol_Tool/",
-        "links": [],
-        "image": "",
-        "type": "shiny"
-    },
-    {
         "title": "Short-Duration Operation Speed Measures for Interstate Roadways",
         "project": "TxDOT 0-7131 Project",
         "description": "This tool visualizes speed and traffic data for the TxDOT 0-7131 Project. Users can filter by parameters such as District, County, Year, and Season to analyze traffic speeds, congestion, and other metrics on selected roadways.",
@@ -214,38 +205,37 @@
         "type": "shiny"
     },
     {
-        "title": "Travis Simplified",
-        "description": "",
+        "title": "SSA Scoring Tool (Travis County)",
+        "description": "This interactive tool shows SSA score on roadway segments in Travis.",
         "latestProjectLink": "https://xattatrone.shinyapps.io/travis-simplified/",
         "type": "shiny",
         "links": [],
         "image": "Screenshot 2025-03-04 235515.png"
     },
     {
-        "title": "Child Pedestrian",
-        "description": "",
-        "latestProjectLink": "https://aitlab.shinyapps.io/child_pedestrian/",
+        "title": "Texas Crash Insights Tool",
+        "description": "This tool displays location of crashes in Texas during 2017-2022. This interactive tool provides locations with color codes based on different variable attributes.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/older_bicyclists/",
         "type": "shiny",
-        "links": [],
+        "links": [
+            {
+                "label": "Older Bicyclist",
+                "url": "https://aitlab.shinyapps.io/older_bicyclists/"
+            },
+            {
+                "label": "Young Motorcyclist",
+                "url": "https://aitlab.shinyapps.io/young_motocyclists/"
+            },
+            {
+                "label": "Child Pedestrian",
+                "url": "https://aitlab.shinyapps.io/child_pedestrian/"
+            }
+        ],
         "image": "Screenshot 2025-03-04 235614.png"
     },
     {
-        "title": "Older Bicyclist",
-        "description": "",
-        "latestProjectLink": "https://aitlab.shinyapps.io/older_bicyclists/",
-        "type": "shiny",
-        "links": []
-    },
-    {
-        "title": "Young Motorcyclist",
-        "description": "",
-        "latestProjectLink": "https://aitlab.shinyapps.io/young_motocyclists/",
-        "type": "shiny",
-        "links": []
-    },
-    {
-        "title": "SUP",
-        "description": "",
+        "title": "Texas Shared Use Path (SUP) Tool",
+        "description": "This tool (developed as part of TxDOT 0-7189 project) displays crash locations associated with SUPs.  The color of the circles are based on non-motorist exposures. Clicking on the points will display the Google StreetView.",
         "latestProjectLink": "https://aitlab.shinyapps.io/sup-demo/",
         "type": "shiny",
         "links": [],
@@ -253,7 +243,7 @@
     },
     {
         "title": "Farm Equipment",
-        "description": "",
+        "description": "The Farm Equipment Crash Map visualizes crash incidents involving farm equipment across Texas, integrating road type, weather conditions, and crash distribution data. 🚜 Users can filter crashes based on weather conditions, road classifications etc, helping to identify trends and improve rural road safety. 🌾🚦",
         "latestProjectLink": "https://aitlab.shinyapps.io/farm-equipment/",
         "type": "shiny",
         "links": [],
@@ -264,7 +254,32 @@
         "description": "This is searchable electronic toolkit that builds on the NCHRP Report 500 series to align with Safe System Approach (SSA) principles and AASHTO’s current priorities, as well as reflect the most recent research and identify new innovations to help achieve the goal of zero deaths on the nation’s roads.",
         "latestProjectLink": "https://nchrp-17-113-demo-v6.vercel.app/",
         "type": "web",
-        "links": [],
+        "links": [
+            {
+                "label": "Version 1",
+                "url": "https://nchrp-17113-demo.vercel.app/"
+            },
+            {
+                "label": "Version 2",
+                "url": "https://nchrp-17-113-v2.vercel.app/"
+            },
+            {
+                "label": "Version 3",
+                "url": "https://nchrp-17-113-demo-v3.vercel.app/"
+            },
+            {
+                "label": "Version 4",
+                "url": "https://nchrp-17-113-demo-v4.vercel.app/"
+            },
+            {
+                "label": "Version 5",
+                "url": "https://nchrp-17-113-demo-v5.vercel.app/"
+            },
+            {
+                "label": "Version 6",
+                "url": "https://nchrp-17-113-demo-v6.vercel.app/"
+            }
+        ],
         "image": "Screenshot 2025-03-04 235104.png"
     },
     {
@@ -277,10 +292,42 @@
     },
     {
         "title": "American Public Transportation Association",
-        "description": "",
+        "description": "This is an online searchable database from the American Public Transportation Association (APTA) that allows users to explore research articles, reports, and studies related to public transit, multimodal transportation, micromobility, and behavioral impacts using categorized filters.",
         "latestProjectLink": "https://apta-demo.vercel.app/",
         "type": "web",
         "links": [],
         "image": "Screenshot 2025-03-04 235325.png"
+    },
+    {
+        "title": "Texas Roundabouts",
+        "description": "Texas Roundabouts is an interactive mapping tool showcasing roundabout locations across Texas, using TxDOT’s database. 🔄 Users can click on a roundabout to instantly view StreetView imagery and key intersection details, improving roadway navigation and planning! 🚦",
+        "latestProjectLink": "https://aitlab.shinyapps.io/texas-roundabouts/",
+        "type": "shiny",
+        "links": [],
+        "image": "screenshot-1741191946388.png"
+    },
+    {
+        "title": "TxDOT 26-021: Nature Based Solutions Demo Tool",
+        "description": "Transportation systems and facilities face challenges and impacts from extreme weather, changes in precipitation, sea level rise, and storm surge. There have been many discussions including the Statewide Resiliency Plan that identify the stressors and provide a summary of solutions to help bolster system resiliency; however, nature-based solutions is a tool and methodology that has little awareness at TxDOT and limited use. Currently, TxDOT does not have guidelines for implementing nature-based solutions",
+        "latestProjectLink": "https://26-021-nbs.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "nbs.png"
+    },
+    {
+        "title": "NCHRP 08-185: Advancing TSMO Knowledge Management with Generative AI",
+        "description": "The objective of this research is to explore gen AI's potential for enhancing knowledge management at transportation agencies by (1) developing a scalable framework to use gen AI tools for improved knowledge management, (2) designing a trustworthy human-AI collaboration prototype that leverages DOTs' resources to address common transportation systems management and operations (TSMO) scenarios within the established framework, and (3) implementing a pilot deploying the identified prototype to demonstrate its efficiency and effectiveness.",
+        "latestProjectLink": "https://nchrp-08-185-demo.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "08-185.png"
+    },
+    {
+        "title": "Texas Innovative Intersections",
+        "description": "Texas Innovative Intersections is an interactive mapping tool using TxDOT’s database to visualize advanced intersection designs across the state. 🗺️ Users can click on locations to instantly access StreetView and key details, enhancing roadway planning and analysis! 🚦",
+        "latestProjectLink": "https://aitlab.shinyapps.io/texas-intersections/",
+        "type": "shiny",
+        "links": [],
+        "image": "tx-intersections.png"
     }
 ]
