@@ -27,15 +27,6 @@
         "type": "shiny"
     },
     {
-        "title": "Data Visualization Tool for Impaired Driving",
-        "project": "LADOTD Project",
-        "description": "This interactive GIS web tool that provides estimates of impaired driving related safety issues by Parish, block group, and interactive visualization of survey results. This tool also has the functionality of data downloading and data display in interactive data table format.",
-        "latestProjectLink": "https://alcoholtool.shinyapps.io/LA_Alcohol_Tool/",
-        "links": [],
-        "image": "",
-        "type": "shiny"
-    },
-    {
         "title": "Short-Duration Operation Speed Measures for Interstate Roadways",
         "project": "TxDOT 0-7131 Project",
         "description": "This tool visualizes speed and traffic data for the TxDOT 0-7131 Project. Users can filter by parameters such as District, County, Year, and Season to analyze traffic speeds, congestion, and other metrics on selected roadways.",
@@ -214,40 +205,37 @@
         "type": "shiny"
     },
     {
-        "title": "Travis Simplified",
-        "description": "",
+        "title": "SSA Scoring Tool (Travis County)",
+        "description": "This interactive tool shows SSA score on roadway segments in Travis.",
         "latestProjectLink": "https://xattatrone.shinyapps.io/travis-simplified/",
         "type": "shiny",
         "links": [],
         "image": "Screenshot 2025-03-04 235515.png"
     },
     {
-        "title": "Child Pedestrian",
-        "description": "",
-        "latestProjectLink": "https://aitlab.shinyapps.io/child_pedestrian/",
-        "type": "shiny",
-        "links": [],
-        "image": "Screenshot 2025-03-04 235614.png"
-    },
-    {
-        "title": "Older Bicyclist",
+        "title": "Texas Crash Insights Tool",
         "description": "",
         "latestProjectLink": "https://aitlab.shinyapps.io/older_bicyclists/",
         "type": "shiny",
-        "links": [],
-        "image": "older-bicycle.png"
+        "links": [
+            {
+                "label": "Older Bicyclist",
+                "url": "https://aitlab.shinyapps.io/older_bicyclists/"
+            },
+            {
+                "label": "Young Motorcyclist",
+                "url": "https://aitlab.shinyapps.io/young_motocyclists/"
+            },
+            {
+                "label": "Child Pedestrian",
+                "url": "https://aitlab.shinyapps.io/child_pedestrian/"
+            },
+        ],
+        "image": "Screenshot 2025-03-04 235614.png"
     },
     {
-        "title": "Young Motorcyclist",
-        "description": "",
-        "latestProjectLink": "https://aitlab.shinyapps.io/young_motocyclists/",
-        "type": "shiny",
-        "links": [],
-        "image": "young-motorcycle.png"
-    },
-    {
-        "title": "SUP",
-        "description": "",
+        "title": "Texas Shared Use Path (SUP) Tool",
+        "description": "This tool (developed as part of TxDOT 0-7189 project) displays crash locations associated with SUPs.  The color of the circles are based on non-motorist exposures. Clicking on the points will display the Google StreetView.",
         "latestProjectLink": "https://aitlab.shinyapps.io/sup-demo/",
         "type": "shiny",
         "links": [],
@@ -255,7 +243,7 @@
     },
     {
         "title": "Farm Equipment",
-        "description": "",
+        "description": "The Farm Equipment Crash Map visualizes crash incidents involving farm equipment across Texas, integrating road type, weather conditions, and crash distribution data. 🚜 Users can filter crashes based on weather conditions, road classifications etc, helping to identify trends and improve rural road safety. 🌾🚦",
         "latestProjectLink": "https://aitlab.shinyapps.io/farm-equipment/",
         "type": "shiny",
         "links": [],
@@ -304,7 +292,7 @@
     },
     {
         "title": "American Public Transportation Association",
-        "description": "",
+        "description": "This is an online searchable database from the American Public Transportation Association (APTA) that allows users to explore research articles, reports, and studies related to public transit, multimodal transportation, micromobility, and behavioral impacts using categorized filters.",
         "latestProjectLink": "https://apta-demo.vercel.app/",
         "type": "web",
         "links": [],
@@ -312,7 +300,7 @@
     },
     {
         "title": "Texas Roundabouts",
-        "description": "",
+        "description": "Texas Roundabouts is an interactive mapping tool showcasing roundabout locations across Texas, using TxDOT’s database. 🔄 Users can click on a roundabout to instantly view StreetView imagery and key intersection details, improving roadway navigation and planning! 🚦",
         "latestProjectLink": "https://aitlab.shinyapps.io/texas-roundabouts/",
         "type": "shiny",
         "links": [],
@@ -335,8 +323,8 @@
         "image": "08-185.png"
     },
     {
-        "title": "Texas Intersections",
-        "description": "",
+        "title": "Texas Innovative Intersections",
+        "description": "Texas Innovative Intersections is an interactive mapping tool using TxDOT’s database to visualize advanced intersection designs across the state. 🗺️ Users can click on locations to instantly access StreetView and key details, enhancing roadway planning and analysis! 🚦",
         "latestProjectLink": "https://aitlab.shinyapps.io/texas-intersections/",
         "type": "shiny",
         "links": [],
