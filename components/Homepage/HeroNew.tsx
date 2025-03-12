@@ -17,13 +17,22 @@ import { HiMiniArrowRightCircle } from "react-icons/hi2"; // Icon for list items
 import { FaProjectDiagram, FaBook } from "react-icons/fa"; // Icons for buttons
 
 const HeroNew = () => {
-  const bgGradient = useColorModeValue(
-    "linear(to-b, rgba(183, 121, 31, 0.9), rgba(183, 121, 31, 0.6), rgba(183, 121, 31, 0.9))",
-    "linear(to-b, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9))"
+  const textCol = useColorModeValue(
+    "rgba(0,0,0,0.65)",
+    "rgba(255, 255, 255, 0.7)"
   );
-  const textCol = useColorModeValue("black", "white");
-  const headingColor = useColorModeValue("yellow.600", "white");
-  const bgColor = useColorModeValue("yellow.50", "gray.600");
+  const headingColor = useColorModeValue(
+    "rgba(0,0,0,0.8)",
+    "rgba(255, 255, 255, 0.8)"
+  );
+  const radialGradient = useColorModeValue(
+    "radial-gradient(circle at center, rgba(255, 224, 130, 0.1), rgba(255, 236, 179, 0.01))",
+    "radial-gradient(circle at center, rgba(27, 27, 27, 0.7), rgba(25, 25, 25, 0.01))"
+  );
+  const buttonText = useColorModeValue(
+    "rgba(255, 255, 255, 0.9)",
+    "rgba(0, 0, 0, 0.65)"
+  );
   const { colorMode } = useColorMode();
 
   return (
@@ -33,11 +42,10 @@ const HeroNew = () => {
       display="flex" // Use flexbox for centering content
       justifyContent="center" // Horizontally center content
       height="calc(100vh + 90px)" // Full viewport height minus navbar height
-      // Vertically center content
-      //   backgroundImage={`${bgGradient}, url(./hero.png)`}
+      backgroundImage={radialGradient}
+      backgroundSize="cover"
       alignItems={"center"}
       backgroundPosition={"center"}
-      backgroundColor={bgColor}
     >
       <Container maxW="container.xl" px={{ base: "5", md: "10" }} w={"full"}>
         {" "}
@@ -60,7 +68,7 @@ const HeroNew = () => {
           textAlign="center" // Align list items to the left
           color={textCol} // Text color for visibility
           mt={4} // Margin above the list
-          fontSize={{ base: "xl", md: "2xl" }} // Responsive font sizes
+          fontSize={{ base: "lg", md: "xl" }} // Responsive font sizes
           lineHeight={1.2} // Adjust line height for readability
         >
           {/* First Feature */}
@@ -93,8 +101,10 @@ const HeroNew = () => {
             as={Link}
             href="/projects-and-grants"
             size="lg"
-            colorScheme="yellow"
+            bgColor={headingColor}
+            color={buttonText}
             variant={"solid"}
+            _hover={{ bgColor: headingColor, color: buttonText, opacity: 0.9 }}
             leftIcon={<FaProjectDiagram />}
           >
             View Projects
@@ -106,7 +116,11 @@ const HeroNew = () => {
             variant="outline"
             leftIcon={<FaBook />}
             color={headingColor}
-            _hover={{ color: "white", backgroundColor: "yellow.600" }}
+            _hover={{
+              color: buttonText,
+              backgroundColor: headingColor,
+            }}
+            borderColor={headingColor}
           >
             Publications
           </Button>
@@ -115,7 +129,7 @@ const HeroNew = () => {
       {/* Bottom divider */}
       <Box
         position="absolute"
-        bottom={-3}
+        bottom={-2.5}
         w="100%"
         overflowX="hidden"
         zIndex={-1}
@@ -130,7 +144,7 @@ const HeroNew = () => {
           <path
             d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
             className="shape-fill"
-            style={{ fill: colorMode === "light" ? "#ffffff" : "#2d3748" }}
+            style={{ fill: colorMode === "light" ? "#ffffff" : "#1b1e24" }}
           ></path>
         </svg>
       </Box>

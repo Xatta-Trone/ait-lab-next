@@ -24,9 +24,26 @@ const MotionBox = chakra(motion.div, {
 
 const BookSection = () => {
   const { colorMode } = useColorMode();
-  const bgColor = useColorModeValue("white", "gray.700");
-  const textColor = useColorModeValue("gray.700", "whiteAlpha.800");
-  const headingCol = useColorModeValue("yellow.600", "whiteAlpha.900");
+  const bgColor = useColorModeValue(
+    "rgba(255, 255, 255, 0.7)",
+    "rgb(27, 30, 36, 0.7)"
+  );
+  const headingCol = useColorModeValue(
+    "rgba(0,0,0,0.8)",
+    "rgba(255, 255, 255, 0.8)"
+  );
+  const textColor = useColorModeValue(
+    "rgba(0,0,0,0.65)",
+    "rgba(255, 255, 255, 0.7)"
+  );
+  const buttonBg = useColorModeValue(
+    "rgba(0,0,0,0.8)",
+    "rgba(255, 255, 255, 0.8)"
+  );
+  const buttonText = useColorModeValue(
+    "rgba(255, 255, 255, 0.9)",
+    "rgba(0, 0, 0, 0.65)"
+  );
 
   const [isInView, setIsInView] = useState(false); // State to track if the section is in view
   const sectionRef = useRef(null); // Ref to monitor section visibility
@@ -130,7 +147,12 @@ const BookSection = () => {
               <Button
                 size="lg"
                 variant="solid"
-                _hover={{ bg: "yellow.500", color: "white" }} // Hover effect for button
+                bg={buttonBg}
+                color={buttonText}
+                _hover={{
+                  opacity: 0.9,
+                }}
+                borderColor={buttonBg}
                 rightIcon={<FaShoppingCart />} // Shopping cart icon
               >
                 Order Here
