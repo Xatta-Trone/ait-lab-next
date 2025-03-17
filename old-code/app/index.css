@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-y: scroll;
+  overflow-x: hidden !important;
+  accent-color: #b7791f !important;
+}
+
+/* Hero-Projects Section Divider  */
+.custom-shape-divider-bottom-1730319297 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1730319297 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1730319297 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-bottom-1730319297 .yellow-fill {
+  fill: #fffff0;
+}
+
+.custom-shape-divider-bottom-1730319297 .dark-fill {
+  fill: #2d3748;
+}
+/* Hero-Projects section divider end  */
+
+/* .custom-shape-divider-bottom-173031929 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-173031929 svg {
+  position: relative;
+  display: block;
+  width: calc(152% + 1.3px);
+  height: 155px;
+}
+
+.custom-shape-divider-bottom-173031929 .shape-fill {
+  fill: #ffffff;
+} */
+
+.mySwiper {
+  padding-bottom: 3rem; /* Space below slides to prevent pagination overlap */
+}
+
+.swiper-pagination-bullet {
+  background-color: #1b1b1b; /* Customize the bullet color */
+}
+
+/* Custom Pagination Styling */
+.swiper-pagination-custom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Space out pagination from slides */
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+  background-color: #1b1b1b;
+  opacity: 0.7;
+  margin: 0 4px; /* Add spacing between bullets */
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  opacity: 1;
+}
