@@ -1,22 +1,26 @@
 # **AIT Lab Website**
 
-The official website for the AIT Lab at Texas State University. Built with **Next.js**, this project features a modern, responsive design and a well-structured codebase for easy maintenance and scalability.
+The official website for the Artificial Intelligence in Transportation (AIT) Lab at Texas State University. Built with **Next.js**, this project features a modern, responsive design and a well-structured codebase for easy maintenance and scalability.
 
 ---
 
 ## **Project Structure**
 
 ```plaintext
-├── app/                  # Next.js App Router pages and layout components
-├── components/           # Reusable UI components
-├── data/                 # Static or dynamic data (JSON or external data sources)
-├── docs/                 # Documentation for developers
+├── src/                  # Source code directory
+│   ├── app/              # Next.js App Router pages and layout components
+│   ├── components/       # Reusable UI components
+│   ├── data/             # Static data in JSON format (news, projects, tools)
+│   │   ├── news.json     # Lab news and announcements
+│   │   ├── projects.json # Research projects data
+│   │   └── lab_tools.json # Interactive lab tools information
+│   └── types/            # TypeScript type definitions
 ├── public/               # Static assets (images, icons, etc.)
-├── types/                # TypeScript custom type definitions
+├── .next/                # Next.js build output (generated)
 ├── next-sitemap.config.js # Sitemap configuration
 ├── package.json          # Project metadata and dependencies
 ├── tsconfig.json         # TypeScript configuration
-├── README.md             # Project overview and instructions (this file)
+└── README.md             # Project overview and instructions (this file)
 ```
 
 ---
@@ -88,44 +92,15 @@ Configures sitemap generation for SEO optimization. Update this file to reflect 
 
 Defines TypeScript configuration for strict typing and IntelliSense support.
 
----
-
-## **Documentation**
-
-Detailed developer documentation is available in the `docs/` folder. Key guides include:
-
-- [Installation Guide](./docs/installation.md)
-- [Component Overview](./docs/components.md)
-- [Architecture Details](./docs/architecture.md)
-
----
-
-## **Contribution Guidelines**
-
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add your feature description"
-   ```
-4. Push the branch:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. Open a pull request.
-
----
-
 ## **Tech Stack**
 
-- **Framework:** Next.js
-- **Styling:** Chakra UI
-- **Animations:** AOS, Framer Motion
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** TailwindCSS
+- **Language:** TypeScript
+- **UI Components:** Shadcn UI
+- **Icons:** Lucide React
 - **SEO Tools:** next-sitemap
-- **TypeScript:** Strict typing for better developer experience
+- **Content Management:** JSON data files
 
 ---
 

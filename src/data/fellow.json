@@ -1,0 +1,82 @@
+[
+    {
+    "name": "Ahmed Hossain, Ph.D.",
+    "label": "Post-Doctoral Researcher (2024 - 2025)",
+    "group": "Post-Doctoral Researcher",
+    "linkedin": "https://www.linkedin.com/in/ahmed-hossain-7a623ab2/",
+    "email": "",
+    "image": "ahmed_hossain.jpg",
+    "description": "Ahmed Hossain is a transportation safety specialist with a deep focus on analyzing crash data to minimize traffic-related incidents and improve road safety. His expertise spans both classical statistical methods and cutting-edge techniques, such as machine learning and hybrid approaches, to identify and model crash patterns. He holds a Ph.D. in Systems Engineering with a concentration in Civil Engineering from the University of Louisiana at Lafayette, as well as a Master’s degree from the same institution, and an undergraduate degree in Civil Engineering from Rajshahi University of Engineering & Technology, Bangladesh. Currently, Ahmed serves as a Traffic Safety Officer at the Arizona Department of Transportation (ADOT). Previously, he was as a Post-Doctoral Researcher at the Artificial Intelligence in Transportation (AIT) Lab in the Civil Engineering Department at Texas State University. Over the years, he has contributed to over 30 peer-reviewed papers and presented his research at major international conferences across the U.S. He has been involved in several projects funded by the Louisiana Transportation Research Center (LTRC), Louisiana Department of Transportation and Development (LaDOTD), National Co-operative Highway Research Program (NCHRP). Ahmed’s research interests are diverse, focusing on improving transportation safety for vulnerable populations such as pedestrians, older adults, and young drivers, as well as safety in high-speed driving environments. His work also extends to exploring the impact of emerging technologies like connected and autonomous vehicles on road safety. As a dedicated researcher, Ahmed is committed to leveraging his multidisciplinary expertise to create data-driven solutions that enhance transportation safety, reduce crash risk, and inform policymaking.",
+    "googleScholar": "https://scholar.google.com/citations?user=U9tD0ywAAAAJ&hl=en",
+    "github": "https://github.com/AhmedHossain09",
+    "twitter": "",
+    "websites": [],
+    "awards": [""]
+  },
+  {
+    "name": "Monire Jafari",
+    "label": "M.Sc., Information Science (2023-2024)",
+    "group": "Graduate Student",
+    "linkedin": "https://www.linkedin.com/in/monire-jafari-544988238/",
+    "email": "",
+    "image": "monire_jafari.jpg",
+    "description": "Monire Jafari is a skilled Data Analyst with expertise in mathematics, statistics, and data analytics, holding master’s degrees in Mathematics with a concentration in Statistics (2023) and Data Analytics and Information Systems (2024). During her time as a Graduate Research Assistant at the Artificial Intelligence in Transportation (AIT) Lab at Texas State University, under the mentorship of Dr. Subasish Das, she led various research initiatives and contributed to academic publications. She quickly excelled when working with transportation data, applying her statistical expertise to areas such as choice modeling and advanced machine learning techniques. Monire is proficient in Python, R, SQL, and data visualization tools, and continues to apply her knowledge to solve complex analytical problems.",
+    "googleScholar": "",
+    "github": "",
+    "twitter": "",
+    "researchGate": "https://www.researchgate.net/profile/Monire-Jafari",
+    "websites": []
+  },
+  {
+    "name": "Jett Tipsword",
+    "label": "B.Sc., Computer Science (2023- 2024)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://linkedin.com/in/jett-tipsword-8204031a7/",
+    "email": "",
+    "image": "jett_tipsword.jpg",
+    "description": "Jett Tipsword is a Data Engineer at Leap Metrics, where he uses SQL, Python, and Sigma BI to design and maintain scalable data pipelines, ensuring data accuracy across platforms. He earned a Bachelor of Science in Computer Science from Texas State University in December 2023, where he also worked as an AI Researcher, specializing in natural language processing and machine learning with models like BERT, Llama-2, and GPT-2. Jett is also part of the AIT Lab at Texas State University, where he contributed to projects focused on AI and data processing. With expertise in cloud computing, DevOps, and AI integration, he is passionate about turning complex data into actionable insights. Outside of work, Jett enjoys exploring the latest trends in AI.",
+    "googleScholar": "",
+    "github": "https://github.com/jett512",
+    "twitter": "",
+    "websites": []
+  },
+  {
+    "name": "Gian Antariksa, Ph.D.",
+    "label": "Post-Doctoral Researcher (2023 - 2024)",
+    "group": "Post-Doctoral Researcher",
+    "linkedin": "",
+    "email": "",
+    "image": "gian_Antariksa.png",
+    "description": "Gian Antariksa, Ph.D. worked as a postdoctoral scholar at AIT Lab at Texas State University, specializes in Industrial Data Science and Engineering, holding a Ph.D. from a joint program between Pukyong National University and Pusan National University in South Korea. With a background that includes an M.Eng in Semiconductor Engineering from Pukyong National University and a B.Sc. in Physics from Diponegoro University, Indonesia, Dr. Antariksa’s research spans across optimizing business processes through big data and interdisciplinary approaches, including geosciences, finances, transportation engineering and semiconductor research. His contributions over six years in industrial intelligence, energy, retail, banking, manufacturing, and healthcare, are documented in numerous prestigious journals, showcasing his commitment to leveraging data science and AI across various sectors. He is current working as a Senior Data Scientist at PT Mitra Solusi Telematika.",
+    "googleScholar": "https://scholar.google.com/citations?user=5BawrcEAAAAJ&hl=en",
+    "github": "",
+    "twitter": "",
+    "websites": []
+  },
+  {
+    "name": "Md. Nasim Khan, Ph.D.",
+    "label": "Post-Doctoral Researcher (2022 - 2023)",
+    "group": "Post-Doctoral Researcher",
+    "linkedin": "https://www.linkedin.com/in/nasim045/",
+    "email": "",
+    "image": "dr._md._nasim_khan.jpg",
+    "description": "Dr. Nasim Khan is a Senior Transportation Engineer at AtkinsRéalis, specializing in transportation safety, intelligent transportation systems, and traffic engineering. He holds a Ph.D. and a Master of Science in Transportation Engineering from the University of Wyoming, along with a Bachelor's degree in Civil Engineering from Bangladesh University of Engineering and Technology. Before his current role, Dr. Khan served as a Postdoctoral Scholar at Texas State University, where he worked at the Artificial Intelligence in Transportation (AIT) Lab, focusing on crash risk modeling, connected and autonomous vehicles, and smart traffic management systems. His professional experience includes roles as a Postdoctoral Research Associate and Graduate Research Assistant at the University of Wyoming, and as a Lecturer at the University of Information Technology & Sciences. Dr. Khan’s expertise includes advanced traffic control strategies, data-driven safety analysis, and GIS-based transportation studies. He has a strong record of publishing and presenting his research at major conferences and is dedicated to integrating innovative technologies to enhance transportation systems and improve safety.",
+    "googleScholar": "https://scholar.google.com/citations?user=isdeiukAAAAJ&hl=en",
+    "github": "",
+    "twitter": "",
+    "websites": []
+  },
+  {
+    "name": "Amir Hossein Oliaee",
+    "label": "Ph.D. Candidate, Architecture, TAMU (2022) ",
+    "group": "Ph.D. Candidate",
+    "linkedin": "https://www.linkedin.com/in/oliaee/",
+    "email": "",
+    "image": "amir_hossein_oliaee.jpg",
+    "description": "Amir Hossein Oliaee holds a Ph.D. in Architecture from Texas A&M University, where he graduated in 2021. During his time at Texas A&M, he worked as a Research and Teaching Assistant, focusing on advanced topics such as large language models (LLM), natural language processing (NLP), high-performance computing (HPC), and data science. Proficient in Python, PyTorch, TensorFlow, and AWS, Amir has applied these skills to a range of innovative projects. His experience includes serving as a Graduate Student Worker at Texas A&M Transportation Institute, Co-Founder of Heterorganum, where he developed open-source tools for architectural design automation, and as a Data Scientist at V-SENSE, Trinity College Dublin, where he contributed to the development of a LiDAR point cloud dataset. Amir’s diverse background also includes roles as a Workshop Assistant at the Iranian Architecture Center and Digital Artist for the TADAEX festival. Throughout his career, Amir has combined his technical and creative skills to advance computational design, AI-driven solutions, and data-driven research in architecture and engineering.",
+    "googleScholar": "https://scholar.google.com/citations?user=uh210ZEQTg0C&hl=en",
+    "github": "",
+    "twitter": "",
+    "websites": []
+  }
+]

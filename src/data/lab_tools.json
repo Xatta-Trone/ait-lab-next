@@ -1,0 +1,359 @@
+[
+    {
+        "title": "Data Visualization Tool for Rural Roadways based on SPFs with speed and weather CMFs",
+        "project": "USDOT Project",
+        "description": "This data visualization tool for rural roadways is based on safety performance functions (SPFs) considering speed and weather crash modification factors (CMFs). The map shows the entire rural roadway networks in the National Highway System. The color of the segments is based on the number of expected crashes on the individual segment. Below the interactive map, an interactive table produces the result of the final selection. This tool has functionality with location selection from the county, district, and different AADT ranges.",
+        "latestProjectLink": "https://ruralspeedsafety.shinyapps.io/rss_sdi",
+        "links": [],
+        "image": "Screenshot 2024-12-02 175009.png",
+        "type": "shiny",
+        "date": "January 15, 2024"
+    },
+    {
+        "title": "Data Visualization Tool for Rural Roadways",
+        "project": "TxDOT 0-7051 Project",
+        "description": "This data visualization tool for rural roadways is based on safety performance functions (SPFs) considering speed and weather crash modification factors (CMFs) using data from Washington and Ohio. The color of the segments is based on the number of expected crashes on the individual segment. Below the interactive map, an interactive table produces the results of the final selection. The interactive table can display 10, 25, 50, or 100 entries using the drop-down menu to the left. The SPFs developed in this project considered traffic volume, roadway geometry, and traffic crashes.",
+        "latestProjectLink": "https://ruralspeedsafety.shinyapps.io/0_7051Tool_v2/",
+        "links": [],
+        "image": "Screenshot 2024-12-02 175408.png",
+        "type": "shiny",
+        "date": "February 28, 2024"
+    },
+    {
+        "title": "Data Visualization Tool for Non-motorist Exposure Estimates",
+        "project": "FHWA Project",
+        "description": "The GIS web tool provides estimates of pedestrian and bike commute trips by different Census spatial units (from tracts to block group). This tool also has the functionality of data downloading and data display in interactive data table format.",
+        "latestProjectLink": "https://subasish.shinyapps.io/ScRAM/",
+        "links": [],
+        "image": "Screenshot 2024-12-02 175600.png",
+        "type": "shiny",
+        "date": "March 22, 2024"
+    },
+    {
+        "title": "Short-Duration Operation Speed Measures for Interstate Roadways",
+        "project": "TxDOT 0-7131 Project",
+        "description": "This tool visualizes speed and traffic data for the TxDOT 0-7131 Project. Users can filter by parameters such as District, County, Year, and Season to analyze traffic speeds, congestion, and other metrics on selected roadways.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/0_7131_V01/",
+        "links": [
+            {
+                "label": "Version 1",
+                "url": "https://aitlab.shinyapps.io/0_7131_V01/"
+            },
+            {
+                "label": "Version 2",
+                "url": "https://aitlab.shinyapps.io/0_7131_V0/"
+            }
+        ],
+        "image": "",
+        "type": "shiny",
+        "date": "April 05, 2024"
+    },
+    {
+        "title": "Granular Level Precipitation Data",
+        "project": "TxDOT 0-7144 Project",
+        "description": "This tool provides an overview of precipitation data from 2019 to 2022. Users can filter data by County, Year, Month, Day, and Hour to view precipitation patterns on a map and in a table format.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/0_7144_V01/",
+        "links": [],
+        "image": "Screenshot 2024-12-02 175834.png",
+        "type": "shiny",
+        "date": "May 11, 2024"
+    },
+    {
+        "title": "Multi-Modal Driveway Density Comparison Tool",
+        "project": "TxDOT 0-7144 Project",
+        "description": "This tool allows users to compare driveway densities by different classifications (e.g., major residential, major commercial). It provides interactive maps and tables that display driveway data for selected TxDOT districts and classification types.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/DrivewayDensity_V03/",
+        "links": [
+            {
+                "label": "Version 1",
+                "url": "https://aitlab.shinyapps.io/DrivewayClass_V01/"
+            },
+            {
+                "label": "Version 2",
+                "url": "https://aitlab.shinyapps.io/DrivewayTypes_V01/"
+            },
+            {
+                "label": "Version 3",
+                "url": "https://aitlab.shinyapps.io/drivewayDensity_V01/"
+            },
+            {
+                "label": "Version 4",
+                "url": "https://aitlab.shinyapps.io/drivewayDensity_V02/"
+            },
+            {
+                "label": "Version 5",
+                "url": "https://aitlab.shinyapps.io/DrivewayDensity_V03/"
+            }
+        ],
+        "image": "Screenshot 2024-12-02 175942.png",
+        "type": "shiny",
+        "date": "June 30, 2024"
+    },
+    {
+        "title": "Smart Location Database (SLD) Driveway Density Tool",
+        "project": "TxDOT 0-7144 Project",
+        "description": "This tool allows users to analyze driveway density data by setting specific thresholds for variables such as employment, residential classification, and commercial/industrial sectors. The results are visualized on a map and presented in table format for further analysis.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/TX_DrivewayType_V02/",
+        "links": [
+            {
+                "label": "Version 1",
+                "url": "https://aitlab.shinyapps.io/TX_DrivewayType_V01/"
+            },
+            {
+                "label": "Version 2",
+                "url": "https://aitlab.shinyapps.io/TX_DrivewayType_V02/"
+            }
+        ],
+        "image": "Screenshot 2024-12-02 180107.png",
+        "type": "shiny",
+        "date": "July 17, 2024"
+    },
+    {
+        "title": "Safe Route User Interface",
+        "project": "UTC Project",
+        "description": "This tool provides route directions between two points (e.g., from Texas State University to University of Texas) and assigns a combined safety score for each route based on various factors. Users can view the safest and fastest routes on the map.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/SafeR_V01/",
+        "links": [],
+        "image": "Screenshot 2024-12-02 180237.png",
+        "type": "shiny",
+        "date": "August 09, 2024"
+    },
+    {
+        "title": "AI-Driven Safe Navigation Tool",
+        "project": "NSF Project",
+        "description": "This tool provides safe and fast route recommendations between two points (e.g., Texas State University to University of Texas). It compares the crash score, distance, duration, and other factors for both the fastest and safest routes.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/SafeR_V02/",
+        "links": [],
+        "image": "Screenshot 2024-12-02 180417.png",
+        "type": "shiny",
+        "date": "September 21, 2024"
+    },
+    {
+        "title": "SSA Scoring Tool",
+        "project": "",
+        "description": "A GIS-based safety analysis platform designed to help visualize and analyze roadway safety metrics. It allows users to explore different road segments, view key data like traffic volume and safety scores, and even check the real-world view of the segment through Google Street View integration.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/AAA_SSATool_V01/",
+        "links": [
+            {
+                "label": "Seattle Version",
+                "url": "https://aitlab.shinyapps.io/Score_Seattle_V1/"
+            },
+            {
+                "label": "Cleveland Version",
+                "url": "https://aitlab.shinyapps.io/CLE_SSA_Score/"
+            }
+        ],
+        "image": "Screenshot 2024-12-02 180540.png",
+        "type": "shiny",
+        "date": "October 03, 2024"
+    },
+    {
+        "title": "CRIS Data Application",
+        "project": "",
+        "description": "A tool that allows users to filter crash data by parameters such as Crash Hour and Crash Severity. The filtered results can be downloaded, and detailed crash information is displayed in the table format and can be downloaded by the user.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/CRIS_Tool_V01/",
+        "links": [],
+        "image": "Screenshot 2024-12-02 180819.png",
+        "type": "shiny",
+        "date": "November 26, 2024"
+    },
+    {
+        "title": "FARSTool Application",
+        "project": "FARS Project",
+        "description": "FARSTool provides an overview of Fatality Analysis Reporting System (FARS) data from 2016-2021 across all U.S. states. Users can filter by state, year, and variables such as day of the week to analyze traffic fatality data.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/FARSToolV01/",
+        "links": [],
+        "image": "Screenshot 2024-12-02 180933.png",
+        "type": "shiny",
+        "date": "December 14, 2024"
+    },
+    {
+        "title": "NCHRP 17-85 QIE Tool (Replication Approach)",
+        "project": "",
+        "description": "This tool allows users to upload roadway and driver files for Quantitative Intersection Evaluation (QIE). Once the files are uploaded, the tool generates QIE variables that can be downloaded and processed.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/17_85_Minimal_V01/",
+        "links": [
+            {
+                "label": "Version 1",
+                "url": "https://aitlab.shinyapps.io/17_85_QIE_V01/"
+            },
+            {
+                "label": "Version 2",
+                "url": "https://aitlab.shinyapps.io/17_85_Minimal_V01/"
+            }
+        ],
+        "image": "Screenshot 2024-12-02 181044.png",
+        "type": "shiny",
+        "date": "January 07, 2025"
+    },
+    {
+        "title": "Inset Street View Tool",
+        "project": "",
+        "description": "This tool visualizes crash data on a map using color-coded markers based on Collision Type. It allows users to click on circle markers to see specific crash details such as location, crash severity, weather, and lighting conditions. The tool integrates with Google Street View and Mapbox to provide visual context of the crash location.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/insetStreetViewToolV03/",
+        "links": [
+            {
+                "label": "Version 1",
+                "url": "https://aitlab.shinyapps.io/insetStreetViewToolV01/"
+            },
+            {
+                "label": "Version 2",
+                "url": "https://aitlab.shinyapps.io/insetStreetViewToolV02/"
+            },
+            {
+                "label": "Version 3",
+                "url": "https://aitlab.shinyapps.io/insetStreetViewToolV03/"
+            }
+        ],
+        "image": "Screenshot 2024-12-02 181142.png",
+        "type": "shiny",
+        "date": "February 19, 2025"
+    },
+    {
+        "title": "Inset Map Tool",
+        "project": "",
+        "description": "A visualization tool that differentiates between autonomous and conventional vehicle crashes using a color-coded map. Clicking on the map provides details on the Pre-Crash Mode for specific locations.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/insetMapTool/",
+        "links": [],
+        "image": "Screenshot 2024-12-02 181234.png",
+        "type": "shiny",
+        "date": "March 15, 2024"
+    },
+    {
+        "title": "SSA Scoring Tool (Travis County)",
+        "description": "This interactive tool shows SSA score on roadway segments in Travis.",
+        "latestProjectLink": "https://xattatrone.shinyapps.io/travis-simplified/",
+        "type": "shiny",
+        "links": [],
+        "image": "Screenshot 2025-03-04 235515.png",
+        "date": "April 20, 2024"
+    },
+    {
+        "title": "Texas Crash Insights Tool",
+        "description": "This tool displays location of crashes in Texas during 2017-2022. This interactive tool provides locations with color codes based on different variable attributes.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/older_bicyclists/",
+        "type": "shiny",
+        "links": [
+            {
+                "label": "Older Bicyclist",
+                "url": "https://aitlab.shinyapps.io/older_bicyclists/"
+            },
+            {
+                "label": "Young Motorcyclist",
+                "url": "https://aitlab.shinyapps.io/young_motocyclists/"
+            },
+            {
+                "label": "Child Pedestrian",
+                "url": "https://aitlab.shinyapps.io/child_pedestrian/"
+            }
+        ],
+        "image": "Screenshot 2025-03-04 235614.png",
+        "date": "May 28, 2024"
+    },
+    {
+        "title": "Texas Shared Use Path (SUP) Tool",
+        "description": "This tool (developed as part of TxDOT 0-7189 project) displays crash locations associated with SUPs.  The color of the circles are based on non-motorist exposures. Clicking on the points will display the Google StreetView.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/sup-demo/",
+        "type": "shiny",
+        "links": [],
+        "image": "Screenshot 2025-03-04 235826.png",
+        "date": "June 12, 2024"
+    },
+    {
+        "title": "Farm Equipment",
+        "description": "The Farm Equipment Crash Map visualizes crash incidents involving farm equipment across Texas, integrating road type, weather conditions, and crash distribution data. 🚜 Users can filter crashes based on weather conditions, road classifications etc, helping to identify trends and improve rural road safety. 🌾🚦",
+        "latestProjectLink": "https://aitlab.shinyapps.io/farm-equipment/",
+        "type": "shiny",
+        "links": [],
+        "image": "Screenshot 2025-03-04 235940.png",
+        "date": "July 30, 2024"
+    },
+    {
+        "title": "NCHRP 17-113: Safe System Approach",
+        "description": "This is searchable electronic toolkit that builds on the NCHRP Report 500 series to align with Safe System Approach (SSA) principles and AASHTO's current priorities, as well as reflect the most recent research and identify new innovations to help achieve the goal of zero deaths on the nation's roads.",
+        "latestProjectLink": "https://nchrp-17-113-demo-v6.vercel.app/",
+        "type": "web",
+        "links": [
+            {
+                "label": "Version 1",
+                "url": "https://nchrp-17113-demo.vercel.app/"
+            },
+            {
+                "label": "Version 2",
+                "url": "https://nchrp-17-113-v2.vercel.app/"
+            },
+            {
+                "label": "Version 3",
+                "url": "https://nchrp-17-113-demo-v3.vercel.app/"
+            },
+            {
+                "label": "Version 4",
+                "url": "https://nchrp-17-113-demo-v4.vercel.app/"
+            },
+            {
+                "label": "Version 5",
+                "url": "https://nchrp-17-113-demo-v5.vercel.app/"
+            },
+            {
+                "label": "Version 6",
+                "url": "https://nchrp-17-113-demo-v6.vercel.app/"
+            }
+        ],
+        "image": "Screenshot 2025-03-04 235104.png",
+        "date": "August 22, 2024"
+    },
+    {
+        "title": "Google Scholar Scraper",
+        "description": "This project automatically scrapes publication data and metadata from an author's Google Scholar profile. The scraper is currently configured to scrape and update the data of Dr. Subhasish Das on a daily basis, saving the results to the JSON file scholar-data-qK-YgxAAAAAJ.json.",
+        "latestProjectLink": "https://google-scholar-scrapper.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "Screenshot 2025-03-04 235232.png",
+        "date": "September 14, 2024"
+    },
+    {
+        "title": "American Public Transportation Association",
+        "description": "This is an online searchable database from the American Public Transportation Association (APTA) that allows users to explore research articles, reports, and studies related to public transit, multimodal transportation, micromobility, and behavioral impacts using categorized filters.",
+        "latestProjectLink": "https://apta-demo.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "Screenshot 2025-03-04 235325.png",
+        "date": "October 29, 2024"
+    },
+    {
+        "title": "Texas Roundabouts",
+        "description": "Texas Roundabouts is an interactive mapping tool showcasing roundabout locations across Texas, using TxDOT's database. 🔄 Users can click on a roundabout to instantly view StreetView imagery and key intersection details, improving roadway navigation and planning! 🚦",
+        "latestProjectLink": "https://aitlab.shinyapps.io/texas-roundabouts/",
+        "type": "shiny",
+        "links": [],
+        "image": "screenshot-1741191946388.png",
+        "date": "November 05, 2024"
+    },
+    {
+        "title": "TxDOT 26-021: Nature Based Solutions Demo Tool",
+        "description": "Transportation systems and facilities face challenges and impacts from extreme weather, changes in precipitation, sea level rise, and storm surge. There have been many discussions including the Statewide Resiliency Plan that identify the stressors and provide a summary of solutions to help bolster system resiliency; however, nature-based solutions is a tool and methodology that has little awareness at TxDOT and limited use. Currently, TxDOT does not have guidelines for implementing nature-based solutions",
+        "latestProjectLink": "https://26-021-nbs.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "nbs.png",
+        "date": "December 18, 2024"
+    },
+    {
+        "title": "NCHRP 08-185: Advancing TSMO Knowledge Management with Generative AI",
+        "description": "The objective of this research is to explore gen AI's potential for enhancing knowledge management at transportation agencies by (1) developing a scalable framework to use gen AI tools for improved knowledge management, (2) designing a trustworthy human-AI collaboration prototype that leverages DOTs' resources to address common transportation systems management and operations (TSMO) scenarios within the established framework, and (3) implementing a pilot deploying the identified prototype to demonstrate its efficiency and effectiveness.",
+        "latestProjectLink": "https://nchrp-08-185-demo.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "08-185.png",
+        "date": "January 25, 2025"
+    },
+    {
+        "title": "Texas Innovative Intersections",
+        "description": "Texas Innovative Intersections is an interactive mapping tool using TxDOT's database to visualize advanced intersection designs across the state. 🗺️ Users can click on locations to instantly access StreetView and key details, enhancing roadway planning and analysis! 🚦",
+        "latestProjectLink": "https://aitlab.shinyapps.io/texas-intersections/",
+        "type": "shiny",
+        "links": [],
+        "image": "tx-intersections.png",
+        "date": "February 10, 2025"
+    }
+]

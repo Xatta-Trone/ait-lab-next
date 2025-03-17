@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground scroll-smooth;
+  }
+}
+
+/* Custom styles */
+.glass-card {
+  @apply bg-white/80 dark:bg-black/10 backdrop-blur-md border border-white/50 dark:border-white/10 shadow-sm;
+}
+
+.glass-nav {
+  @apply bg-white/60 dark:bg-black/60 backdrop-blur-md border-b border-white/20 dark:border-white/10 shadow-sm;
+}
+
+.glass-button {
+  @apply bg-white/50 dark:bg-white/10 backdrop-blur-sm hover:bg-white/70 dark:hover:bg-white/20 border border-white/50 dark:border-white/20 transition-all shadow-sm hover:text-white;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(to right, #3b82f6, #60a5fa);
+}
+
+.dark .gradient-text {
+  background-image: linear-gradient(to right, #60a5fa, #93c5fd);
+}
+
+.section-divider {
+  @apply relative py-24;
+}
+
+.section-divider::before {
+  content: "";
+  @apply absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent;
+}
+
+.section-divider.light-section {
+  @apply bg-white/50 dark:bg-transparent backdrop-blur-sm;
+}
+
+.section-divider.dark-section {
+  @apply bg-gray-50/80 dark:bg-black/20 backdrop-blur-sm;
+}
+
+/* Replace the existing bg-grid styles with these new background patterns */
+
+.bg-grid {
+  background-size: 100px 100px;
+  background-image: radial-gradient(circle, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+}
+
+.dark .bg-grid {
+  background-image: radial-gradient(circle, rgba(96, 165, 250, 0.03) 1px, transparent 1px);
+}
+
+.bg-dots {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+}
+
+.dark .bg-dots {
+  background-image: radial-gradient(circle, rgba(96, 165, 250, 0.03) 1px, transparent 1px);
+}
+
+.bg-gradient-mesh {
+  background: linear-gradient(120deg, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
+    linear-gradient(240deg, rgba(96, 165, 250, 0.03) 0%, transparent 50%);
+}
+
+.dark .bg-gradient-mesh {
+  background: linear-gradient(120deg, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+    linear-gradient(240deg, rgba(96, 165, 250, 0.05) 0%, transparent 50%);
+}
+
+.glow {
+  position: relative;
+}
+
+.glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(circle at center, var(--tw-gradient-from) 0%, transparent 70%);
+  opacity: 0.4;
+  filter: blur(40px);
+}
+
+.glow-primary::after {
+  --tw-gradient-from: #3b82f6;
+}
+
+.dark .glow-primary::after {
+  --tw-gradient-from: #60a5fa;
+}
+
+.glow-blue::after {
+  --tw-gradient-from: #60a5fa;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:translate-y-[-5px];
+}
+
+.card-hover:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.dark .card-hover:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+

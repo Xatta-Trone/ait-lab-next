@@ -1,0 +1,48 @@
+[
+  {
+    "title": "CE 4361. Highway Engineering",
+    "schedule": "MW 5:00-6:20 pm CST",
+    "term": "Fall 2022, Spring 2023, Fall 2023, Spring 2024, Spring 2025",
+    "description": "This course covers alignment, interchange, construction, and maintenance issues related to highways. Topics include cross-sections, horizontal and vertical alignment, sight distance, pavement design, drainage analysis, traffic engineering, highway capacity, and construction materials. The analysis of data obtained from sensing devices during construction or use of a highway is also discussed.",
+    "prerequisite": {
+      "courseTitle": "CE 3360",
+      "grade": "C"
+    },
+    "level": "Undergraduate",
+    "image": "DALL·E 2024-11-25 15.24.27 - A book cover mockup featuring a modern and sleek design for a textbook titled 'Highway Engineering - CE 4361'. The cover includes a visually appealing.webp"
+  },
+  {
+    "title": "CE 4362: Traffic Engineering",
+    "schedule": "",
+    "term": "Fall 2024",
+    "description": "This course is a basic introduction of the components of a highway traffic system and fundamentals of traffic engineering; analysis of traffic stream characteristics, levels of service, and capacity of urban and rural highways; study of warrants for traffic control devices; design and analysis of traffic signals and timing plans; analysis of urban and highway traffic characteristics using simulation software.",
+    "prerequisite": {
+      "courseTitle": "CE 3360",
+      "grade": "C"
+    },
+    "level": "Undergraduate",
+    "image": "DALL·E 2025-02-08 21.20.26 - A minimalistic 3D textbook for 'CE 4362_ Traffic Engineering' placed on a clean surface. The book cover is sleek, featuring a simple yet professional.webp"
+  },
+  {
+    "title": "CE 7393. Artificial Intelligence Applications in Civil Engineering",
+    "schedule": "",
+    "term": "Fall 2024",
+    "description": "This course explores the interface between artificial intelligence (AI) and civil engineering. The course covers foundational topics including civil engineering basics, AI fundamentals, matrix algebra, and data preprocessing. The curriculum also includes specific AI methodologies, like supervised, unsupervised, deep learning, and explainable AI, in addition to natural language processing. It highlights emerging technologies in civil engineering and the ethical and social implications of AI in the sector.",
+    "level": "Ph.D. (Graduate)",
+    "lectures": [
+      {
+        "label": "Lecture 01a",
+        "url": "https://subasish.quarto.pub/ce7393-fall24/htmls/Lecture01a.html#/section"
+      },
+      {
+        "label": "Lecture 01b",
+        "url": "https://subasish.quarto.pub/ce7393-fall24/htmls/Lecture01b.html#/section"
+      }
+    ],
+    "courseSite": {
+      "label": "Course Website",
+      "url": "https://subasish.quarto.pub/ce7393-fall24/"
+    },
+    "image": "ce7393.png"
+  }
+]
