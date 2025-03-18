@@ -1371,5 +1371,24 @@
     },
     "status": "Completed",
     "image": "pexels-pixabay-210092.jpg"
+  },
+  {
+    "number": "NCHRP 17-134",
+    "title": "Center Line Buffer Areas for Safety: Implementation Guidelines and Tool",
+    "description": "The objective of this project is to develop guidelines and a tool for the implementation of center line buffer areas, with a focus on rural two-lane highways. The project will evaluate the safety benefits of center line buffer areas while considering the reallocation of other cross-sectional elements and develop criteria for implementation.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5682",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das (TXST), Co-PI: Srinivas Geedipally (TTI)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2025,
+      "month": "April"
+    },
+    "end_date": {
+      "year": 2027,
+      "month": "May"
+    },
+    "status": "ongoing",
+    "image": "road-5902758_640.jpg"
   }
 ]
