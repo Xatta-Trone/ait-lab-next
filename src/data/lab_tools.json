@@ -355,5 +355,32 @@
         "links": [],
         "image": "tx-intersections.png",
         "date": "February 10, 2025"
+    },
+    {
+        "title": "Near Miss and Near Crash Safety related Web Resources",
+        "description": "A web resource of near-miss/near-crash/near-collision studies",
+        "latestProjectLink": "https://near-miss-safety-wr.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "near-miss.png",
+        "date": "March 18, 2025"
+    },
+    {
+        "title": "Innovative Intersection Web Resources",
+        "description": "A web resource of innovative intersection studies",
+        "latestProjectLink": "https://inno-inter-wr.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "inno-intr.png",
+        "date": "March 18, 2025"
+    },
+     {
+        "title": "PM2.5 Web Resources",
+        "description": "A web resource of PM2.5 studies",
+        "latestProjectLink": "https://pm25-wr.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "pm25.png",
+        "date": "March 18, 2025"
     }
 ]
