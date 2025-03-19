@@ -3,7 +3,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SectionHeading from "@/components/ui/section-heading";
-import { ArrowRight, Calendar, Award, Lightbulb } from "lucide-react";
+import {
+  ArrowRight,
+  Calendar,
+  Award,
+  Lightbulb,
+  DollarSign,
+} from "lucide-react";
 import { useNewsData } from "@/hooks/useNewsData";
 
 export default function News() {
@@ -51,6 +57,8 @@ export default function News() {
                   {/* <item.icon className="h-5 w-5 text-blue-500" /> */}
                   {item.title.toLowerCase() == "student achievement" ? (
                     <Award className="h-5 w-5 text-blue-500" />
+                  ) : item.title.toLowerCase() == "new funding alert" ? (
+                    <DollarSign className="h-5 w-5 text-blue-500" />
                   ) : (
                     <Lightbulb className="h-5 w-5 text-blue-500" />
                   )}

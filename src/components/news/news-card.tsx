@@ -2,8 +2,8 @@ import {
   Calendar,
   ExternalLink,
   Award,
-  FileText,
-  AlertCircle,
+  DollarSign,
+  Lightbulb,
 } from "lucide-react";
 import {
   Card,
@@ -22,28 +22,11 @@ interface NewsItemCardProps {
 export default function NewsItemCard({ newsItem }: NewsItemCardProps) {
   // Function to get category icon
   const getCategoryIcon = () => {
-    if (
-      newsItem.title.toLowerCase().includes("achievement") ||
-      newsItem.description.toLowerCase().includes("congrats")
-    ) {
-      return <Award className="h-5 w-5 text-amber-500" />;
-    } else if (
-      newsItem.title.toLowerCase().includes("paper") ||
-      newsItem.title.toLowerCase().includes("conference") ||
-      newsItem.description.toLowerCase().includes("paper") ||
-      newsItem.description.toLowerCase().includes("published")
-    ) {
-      return <FileText className="h-5 w-5 text-blue-500" />;
-    } else if (
-      newsItem.title.toLowerCase().includes("funding") ||
-      newsItem.title.toLowerCase().includes("alert") ||
-      newsItem.description.toLowerCase().includes("awarded") ||
-      newsItem.description.toLowerCase().includes("grant")
-    ) {
-      return <AlertCircle className="h-5 w-5 text-green-500" />;
-    } else {
-      return <AlertCircle className="h-5 w-5 text-blue-500" />;
-    }
+    if (newsItem.title.toLowerCase() == "student achievement")
+      return <Award className="h-5 w-5 text-blue-500" />;
+    else if (newsItem.title.toLowerCase() == "new funding alert")
+      return <DollarSign className="h-5 w-5 text-blue-500" />;
+    else return <Lightbulb className="h-5 w-5 text-blue-500" />;
   };
 
   // Function to get category name
