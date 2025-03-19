@@ -2,11 +2,14 @@ import { useQueryState } from "nuqs";
 import projectsData from "../data/projects.json";
 import { useDataFetching } from "./useDataFetching";
 import { Project } from "@/types/project";
+import { useMemo } from "react";
 
 export function useProjectsData() {
-  const { data, isLoading, error } = useDataFetching<Project>(
-    projectsData as Project[]
-  );
+  const {
+    data: rawData,
+    isLoading,
+    error,
+  } = useDataFetching<Project>(projectsData as Project[]);
 
   // Create query parameters for filtering
   const [searchQuery, setSearchQuery] = useQueryState("search");
@@ -28,6 +31,12 @@ export function useProjectsData() {
   // Parse page to number after retrieving it
   const currentPage = pageString ? parseInt(pageString) : 1;
   const itemsPerPage = 9; // Number of projects per page
+
+  const data = useMemo(() => {
+    return [...rawData].sort((a, b) => {
+      return b.start_date.year - a.start_date.year;
+    });
+  }, [rawData]);
 
   // Filter projects based on query parameters
   const filteredProjects = data.filter((project) => {
