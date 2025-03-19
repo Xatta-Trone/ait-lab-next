@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { FileText, ExternalLink, BookOpen, Award } from "lucide-react";
+import { FileText, ExternalLink } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -10,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import type { ResearchPaper } from "@/types/publication";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import ImageWithFallback from "../image-w-fallback";
 
 interface PublicationCardProps {
   publication: ResearchPaper;
@@ -20,8 +20,8 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
     <Card className="glass-card h-full flex flex-col card-hover overflow-hidden">
       <CardHeader className="p-0">
         <div className="relative h-48 w-full bg-gradient-to-b from-blue-500/10 to-transparent">
-          {publication.img ? (
-            <Image
+          {
+            <ImageWithFallback
               src={
                 `https://raw.githubusercontent.com/Xatta-Trone/google-scholar-scrapper/refs/heads/main/${publication.img}` ||
                 "/images/placeholder.png"
@@ -29,20 +29,16 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
               alt={publication.title}
               fill
               className="object-cover opacity-80"
+              fallbackSrc="/images/placeholder.png"
             />
-          ) : (
-            <div className="flex items-center justify-center h-full">
-              <BookOpen className="h-16 w-16 text-blue-500/30" />
-            </div>
-          )}
+          }
           <div className="absolute top-2 right-2">
             <Badge className="bg-blue-500 text-white">{publication.year}</Badge>
           </div>
-          {publication.total_citations > 5 && (
+          {publication.total_citations > 0 && (
             <div className="absolute top-2 left-2">
               <Badge className="bg-amber-500 text-white flex items-center gap-1">
-                <Award className="h-3 w-3" />
-                Highly Cited
+                {publication.total_citations} Citations
               </Badge>
             </div>
           )}
@@ -72,12 +68,6 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
             </Badge>
           )}
         </div>
-        {publication.total_citations && publication.total_citations > 0 && (
-          <div className="flex items-center gap-2 text-sm">
-            <Award className="h-4 w-4 text-amber-500" />
-            <span>{publication.total_citations} citations</span>
-          </div>
-        )}
         {publication.issue && (
           <p className="text-xs text-foreground/60 mt-1">
             Issue: {publication.issue}

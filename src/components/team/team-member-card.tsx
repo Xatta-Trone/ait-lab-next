@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { Mail, Linkedin } from "lucide-react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import type { TeamMember, Fellow } from "@/types/team";
 import Link from "next/link";
+import ImageWithFallback from "../image-w-fallback";
 
 interface TeamMemberCardProps {
   member: TeamMember | Fellow;
@@ -19,11 +19,12 @@ export default function TeamMemberCard({
   return (
     <Card className="glass-card h-full flex flex-col card-hover overflow-hidden">
       <div className="relative aspect-square overflow-hidden">
-        <Image
+        <ImageWithFallback
           src={"/images/team/" + member.image || "/images/placeholder.png"}
           alt={member.name}
           fill
           className="object-cover transition-transform duration-300 hover:scale-105"
+          fallbackSrc="/images/placeholder.png"
         />
       </div>
       <CardContent className="flex-grow p-4 text-center">

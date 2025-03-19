@@ -12,6 +12,7 @@ import { FaGoogleScholar } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiResearchgate } from "react-icons/si";
+import ImageWithFallback from "../image-w-fallback";
 
 interface TeamMemberModalProps {
   member: TeamMember | Fellow | null;
@@ -62,11 +63,12 @@ export default function TeamMemberModal({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-4">
               <div className="relative aspect-[1.5/2] rounded-xl overflow-hidden">
-                <Image
+                <ImageWithFallback
                   src={"/images/team/" + member.image || "/placeholder.svg"}
                   alt={member.name}
                   fill
                   className="object-cover"
+                  fallbackSrc="/images/placeholder.png"
                 />
               </div>
 

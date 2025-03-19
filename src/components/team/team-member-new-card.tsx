@@ -11,6 +11,7 @@ import { FaGoogleScholar } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiResearchgate } from "react-icons/si";
+import ImageWithFallback from "../image-w-fallback";
 
 interface TeamMemberCardProps {
   member: TeamMember | Fellow;
@@ -24,11 +25,12 @@ export default function TeamMemberCard({
   return (
     <Card className="glass-card h-full flex flex-col md:flex-row items-start card-hover overflow-hidden p-4">
       <div className="relative h-full overflow-hidden rounded-md aspect-[300/450] mx-auto md:mx-0 w-full sm:w-[60%] md:w-[30%] lg:w-[20%]">
-        <Image
+        <ImageWithFallback
           src={"/images/team/" + member.image || "/images/placeholder.png"}
           alt={member.name}
           fill
           className="object-cover transition-transform duration-300 hover:scale-105"
+          fallbackSrc="/images/placeholder.png"
         />
       </div>
       <div className="md:w-[70%]">
