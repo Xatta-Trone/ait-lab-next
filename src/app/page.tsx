@@ -1,4 +1,4 @@
-import Hero from "@/components/home-page/hero";
+import Hero from "@/components/home-page/hero-new";
 import Projects from "@/components/home-page/projects";
 import News from "@/components/home-page/news";
 import BookPromotion from "@/components/home-page/book-promotion";
