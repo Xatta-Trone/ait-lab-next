@@ -60,12 +60,9 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
             </p>
           )}
           {publication.book && (
-            <Badge
-              variant="outline"
-              className="text-purple-500 border-purple-500 text-xs"
-            >
+            <p className="text-xs text-foreground/60 mt-1">
               {publication.book}
-            </Badge>
+            </p>
           )}
         </div>
         {publication.issue && (
