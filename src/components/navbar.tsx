@@ -59,14 +59,20 @@ export default function Navbar() {
               <Link
                 key={item.title}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-500 relative group ${
+                className={`text-sm font-medium transition-colors relative group ${
                   isActive ? "text-blue-500" : ""
+                } ${
+                  pathname === "/" && !scrolled
+                    ? "text-white hover:text-white"
+                    : "hover:text-blue-500"
                 }`}
               >
                 {item.title}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-blue-500 transition-all duration-300 ${
+                  className={`absolute -bottom-1 left-0 h-0.5  transition-all duration-300 ${
                     isActive ? "w-full" : "w-0 group-hover:w-full"
+                  } ${
+                    pathname === "/" && !scrolled ? "bg-white" : "bg-blue-500"
                   }`}
                 ></span>
               </Link>
