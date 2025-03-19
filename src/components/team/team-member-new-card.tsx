@@ -44,8 +44,7 @@ export default function TeamMemberCard({
         </CardContent>
         <CardFooter className="flex gap-2 p-4 pt-0 flex-wrap">
           <Button
-            variant="outline"
-            className="glass-button text-foreground rounded-full px-4"
+            className="text-white rounded-full px-4"
             onClick={() => onOpenModal(member)}
           >
             View Profile
