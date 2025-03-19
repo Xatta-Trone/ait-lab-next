@@ -64,7 +64,7 @@
 }
 
 .glass-card-hero {
-  @apply bg-white/50 dark:bg-black/10 backdrop-blur-md border border-white/50 dark:border-white/10 shadow-sm;
+  @apply bg-white dark:bg-black/10 backdrop-blur-md border border-white/50 dark:border-white/10 shadow-sm;
 }
 
 .glass-nav {
@@ -73,6 +73,10 @@
 
 .glass-button {
   @apply bg-white/50 dark:bg-white/10 backdrop-blur-sm hover:bg-white/70 dark:hover:bg-white/20 border border-white/50 dark:border-white/20 transition-all shadow-sm hover:text-white;
+}
+
+.glass-button-hero {
+  @apply bg-white dark:bg-white/10 backdrop-blur-sm dark:hover:bg-white/20 border border-white/50 dark:border-white/20 transition-all shadow-sm hover:text-white;
 }
 
 .gradient-text {

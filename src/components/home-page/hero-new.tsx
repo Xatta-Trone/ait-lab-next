@@ -41,7 +41,7 @@ export default function Hero() {
                 </Button>
               </Link>
               <Link href="/publications">
-                <Button className="glass-button text-foreground hover:text-white px-8 py-6 rounded-full group shadow-md hover:shadow-lg">
+                <Button className="glass-button-hero text-foreground hover:text-white px-8 py-6 rounded-full group shadow-md hover:shadow-lg">
                   <span>View Publications</span>
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
