@@ -1,18 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Mail,
-  Linkedin,
-  BookOpen,
-  Github,
-  Twitter,
-  FileText,
-} from "lucide-react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import type { TeamMember, Fellow } from "@/types/team";
 import Link from "next/link";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { FiLinkedin } from "react-icons/fi";
+import { FaGoogleScholar } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiResearchgate } from "react-icons/si";
 
 interface TeamMemberCardProps {
   member: TeamMember | Fellow;
@@ -24,7 +22,7 @@ export default function TeamMemberCard({
   onOpenModal,
 }: TeamMemberCardProps) {
   return (
-    <Card className="glass-card h-full flex flex-col md:flex-row items-start card-hover overflow-hidden p-2">
+    <Card className="glass-card h-full flex flex-col md:flex-row items-start card-hover overflow-hidden p-4">
       <div className="relative h-full overflow-hidden rounded-md aspect-[300/450] mx-auto md:mx-0 w-full sm:w-[60%] md:w-[30%] lg:w-[20%]">
         <Image
           src={"/images/team/" + member.image || "/images/placeholder.png"}
@@ -57,7 +55,7 @@ export default function TeamMemberCard({
             className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
             aria-label={`Email ${member.name}`}
           >
-            <Mail className="h-4 w-4 text-blue-500" />
+            <MdOutlineMailOutline className="h-4 w-4 text-blue-500" />
           </Link>
           <Link
             href={member.linkedin}
@@ -66,7 +64,7 @@ export default function TeamMemberCard({
             className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
             aria-label={`${member.name}'s LinkedIn profile`}
           >
-            <Linkedin className="h-4 w-4 text-blue-500" />
+            <FiLinkedin className="h-4 w-4 text-blue-500" />
           </Link>
           {member.googleScholar && (
             <Link
@@ -75,7 +73,7 @@ export default function TeamMemberCard({
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
             >
-              <BookOpen className="h-4 w-4 text-blue-500" />
+              <FaGoogleScholar className="h-4 w-4 text-blue-500" />
             </Link>
           )}
           {member.github && (
@@ -85,7 +83,7 @@ export default function TeamMemberCard({
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
             >
-              <Github className="h-4 w-4 text-blue-500" />
+              <FiGithub className="h-4 w-4 text-blue-500" />
             </Link>
           )}
           {member.twitter && (
@@ -95,7 +93,7 @@ export default function TeamMemberCard({
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
             >
-              <Twitter className="h-4 w-4 text-blue-500" />
+              <FaXTwitter className="h-4 w-4 text-blue-500" />
             </Link>
           )}
           {member.researchGate && (
@@ -105,7 +103,7 @@ export default function TeamMemberCard({
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
             >
-              <FileText className="h-4 w-4 text-blue-500" />
+              <SiResearchgate className="h-4 w-4 text-blue-500" />
             </Link>
           )}
         </CardFooter>

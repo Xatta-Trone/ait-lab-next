@@ -46,7 +46,7 @@ export default function TeamPage() {
               <div className="w-10 h-10 rounded-full flex items-center justify-center glass-card shrink-0 bg-blue-500/10">
                 <Users className="h-5 w-5 text-blue-500" />
               </div>
-              <h2 className="text-2xl font-bold">Current Team</h2>
+              <h2 className="text-2xl font-bold gradient-text">Current Team</h2>
             </div>
           </div>
 
@@ -74,7 +74,7 @@ export default function TeamPage() {
               <div className="w-10 h-10 rounded-full flex items-center justify-center glass-card shrink-0 bg-purple-500/10">
                 <GraduationCap className="h-5 w-5 text-purple-500" />
               </div>
-              <h2 className="text-2xl font-bold">Fellows</h2>
+              <h2 className="text-2xl font-bold gradient-text">Fellows</h2>
             </div>
           </div>
 
@@ -101,7 +101,7 @@ export default function TeamPage() {
             <div className="w-10 h-10 rounded-full flex items-center justify-center glass-card shrink-0 bg-green-500/10">
               <UserCheck className="h-5 w-5 text-green-500" />
             </div>
-            <h2 className="text-2xl font-bold">Alumni</h2>
+            <h2 className="text-2xl font-bold gradient-text">Alumni</h2>
             <div className="h-px flex-grow bg-gradient-to-r from-green-500/20 to-transparent"></div>
           </div>
 

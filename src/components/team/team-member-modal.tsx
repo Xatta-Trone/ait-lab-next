@@ -2,21 +2,16 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import {
-  X,
-  Mail,
-  Linkedin,
-  BookOpen,
-  Github,
-  Twitter,
-  Globe,
-  Award,
-  FileText,
-  ExternalLink,
-} from "lucide-react";
+import { X, Globe, Award, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { TeamMember, Fellow } from "@/types/team";
 import Link from "next/link";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { FiLinkedin } from "react-icons/fi";
+import { FaGoogleScholar } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiResearchgate } from "react-icons/si";
 
 interface TeamMemberModalProps {
   member: TeamMember | Fellow | null;
@@ -85,7 +80,7 @@ export default function TeamMemberModal({
                   href={`mailto:${member.email}`}
                   className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
                 >
-                  <Mail className="h-4 w-4 text-blue-500" />
+                  <MdOutlineMailOutline className="h-4 w-4 text-blue-500" />
                   <span>Email</span>
                 </Link>
                 <Link
@@ -94,7 +89,7 @@ export default function TeamMemberModal({
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
                 >
-                  <Linkedin className="h-4 w-4 text-blue-500" />
+                  <FiLinkedin className="h-4 w-4 text-blue-500" />
                   <span>LinkedIn</span>
                 </Link>
                 {member.googleScholar && (
@@ -104,7 +99,7 @@ export default function TeamMemberModal({
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
                   >
-                    <BookOpen className="h-4 w-4 text-blue-500" />
+                    <FaGoogleScholar className="h-4 w-4 text-blue-500" />
                     <span>Google Scholar</span>
                   </Link>
                 )}
@@ -115,7 +110,7 @@ export default function TeamMemberModal({
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
                   >
-                    <Github className="h-4 w-4 text-blue-500" />
+                    <FiGithub className="h-4 w-4 text-blue-500" />
                     <span>GitHub</span>
                   </Link>
                 )}
@@ -126,7 +121,7 @@ export default function TeamMemberModal({
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
                   >
-                    <Twitter className="h-4 w-4 text-blue-500" />
+                    <FaXTwitter className="h-4 w-4 text-blue-500" />
                     <span>Twitter</span>
                   </Link>
                 )}
@@ -137,7 +132,7 @@ export default function TeamMemberModal({
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
                   >
-                    <FileText className="h-4 w-4 text-blue-500" />
+                    <SiResearchgate className="h-4 w-4 text-blue-500" />
                     <span>ResearchGate</span>
                   </Link>
                 )}
