@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import type { TeamMember, Fellow } from "@/types/team";
