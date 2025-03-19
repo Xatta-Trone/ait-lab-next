@@ -121,6 +121,16 @@ export default function CoursesPage() {
             <div className="flex items-center gap-1">
               <Badge
                 className={`${
+                  levelFilter === "" ? "bg-blue-500" : "bg-blue-500/70"
+                } text-white cursor-pointer hover:bg-blue-600`}
+                onClick={() => setLevelFilter("")}
+              >
+                All
+              </Badge>
+            </div>
+            <div className="flex items-center gap-1">
+              <Badge
+                className={`${
                   levelFilter === "Undergraduate"
                     ? "bg-blue-500"
                     : "bg-blue-500/70"

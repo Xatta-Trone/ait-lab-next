@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Calendar, ExternalLink, FileText } from "lucide-react";
 import {
   Card,
@@ -10,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import type { Course } from "@/types/course";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import ImageWithFallback from "../image-w-fallback";
 
 interface CourseCardProps {
   course: Course;
@@ -39,11 +39,12 @@ export default function CourseCard({ course }: CourseCardProps) {
     <Card className="glass-card h-full flex flex-col card-hover overflow-hidden">
       <CardHeader className="p-0">
         <div className="relative h-48 w-full">
-          <Image
+          <ImageWithFallback
             src={"/images/courses/" + course.image || "/images/placeholder.png"}
             alt={course.title}
             fill
             className="object-cover"
+            fallbackSrc="/images/placeholder.png"
           />
           <div className="absolute top-2 right-2">
             <Badge className={`${getLevelColor(course.level)} text-white`}>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Calendar, ExternalLink } from "lucide-react";
 import {
@@ -12,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Project } from "@/types/project";
+import ImageWithFallback from "../image-w-fallback";
 
 interface ProjectCardProps {
   project: Project;
@@ -21,11 +21,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="glass-card h-full flex flex-col card-hover overflow-hidden">
       <div className="relative h-48 w-full">
-        <Image
+        <ImageWithFallback
           src={"/images/projects/" + project.image || "/images/placeholder.png"}
           alt={project.title}
           fill
           className="object-cover"
+          fallbackSrc="/images/placeholder.png"
         />
         <div className="absolute top-2 right-2">
           <Badge

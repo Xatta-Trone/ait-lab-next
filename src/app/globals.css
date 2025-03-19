@@ -63,6 +63,10 @@
   @apply bg-white/80 dark:bg-black/10 backdrop-blur-md border border-white/50 dark:border-white/10 shadow-sm;
 }
 
+.glass-card-hero {
+  @apply bg-white dark:bg-black/10 backdrop-blur-md border border-white/50 dark:border-white/10 shadow-sm;
+}
+
 .glass-nav {
   @apply bg-white/60 dark:bg-black/60 backdrop-blur-md border-b border-white/20 dark:border-white/10 shadow-sm;
 }
@@ -71,9 +75,21 @@
   @apply bg-white/50 dark:bg-white/10 backdrop-blur-sm hover:bg-white/70 dark:hover:bg-white/20 border border-white/50 dark:border-white/20 transition-all shadow-sm hover:text-white;
 }
 
+.glass-button-book {
+  @apply bg-white/50 dark:bg-white/10 backdrop-blur-sm hover:bg-white/70 dark:hover:bg-white/20 border border-blue-500/50 dark:border-white/20 transition-all shadow-sm hover:text-white;
+}
+
+.glass-button-hero {
+  @apply bg-white dark:bg-white/10 backdrop-blur-sm dark:hover:bg-white/20 border border-white/50 dark:border-white/20 transition-all shadow-sm hover:text-white;
+}
+
 .gradient-text {
   @apply bg-clip-text text-transparent;
   background-image: linear-gradient(to right, #3b82f6, #60a5fa);
+}
+.gradient-text-hero {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(to right, #1f4179, #235fa9);
 }
 
 .dark .gradient-text {
@@ -118,8 +134,8 @@
 }
 
 .bg-gradient-mesh {
-  background: linear-gradient(120deg, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
-    linear-gradient(240deg, rgba(96, 165, 250, 0.03) 0%, transparent 50%);
+  background: linear-gradient(120deg, rgba(59, 130, 246, 0.04) 50%, transparent 100%),
+    linear-gradient(240deg, rgba(96, 165, 250, 0.04) 50%, transparent 100%);
 }
 
 .dark .bg-gradient-mesh {
