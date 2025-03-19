@@ -81,7 +81,7 @@ export default function News() {
                   </CardTitle>
                 </div>
               </CardHeader>
-              <CardContent className="pt-4 pb-4 pl-14">
+              <CardContent className="pt-4 pb-4 pl-20">
                 {item.link && (
                   <Link href={`${item.link}`} target="_blank">
                     <Button
