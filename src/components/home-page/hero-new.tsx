@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="py-40 md:py-48 relative overflow-hidden min-h-[100vh]">
       {/* Background elements */}
-      <div className="absolute inset-0 -z-50 bg-[url('/hero_vid.gif')] bg-cover blur-sm opacity-50 dark:opacity-35 bg-opacity-35 bg-center"></div>
+      <div className="absolute inset-0 -z-50 bg-[url('/hero_vid.gif')] bg-cover bg-center"></div>
       <div className="absolute inset-0 bg-black/50 dark:bg-black/30"></div>
       <div className="absolute inset-0 bg-gradient-mesh"></div>
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl dark:opacity-50 -z-40"></div>
