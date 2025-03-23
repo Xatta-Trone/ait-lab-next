@@ -105,7 +105,7 @@ export default function ToolsPage() {
             ) : !isLoading && filteredTools.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {currentPageTools.map((tool, index) => (
-                  <ToolCard key={index} tool={tool} />
+                  <ToolCard key={index + tool.title} tool={tool} />
                 ))}
               </div>
             ) : (
@@ -135,7 +135,7 @@ export default function ToolsPage() {
                 {currentPageTools
                   .filter((tool) => tool.type === "shiny")
                   .map((tool, index) => (
-                    <ToolCard key={`shiny-${index}`} tool={tool} />
+                    <ToolCard key={`shiny-${index + tool.title}`} tool={tool} />
                   ))}
               </div>
             ) : (
@@ -164,7 +164,7 @@ export default function ToolsPage() {
                 {currentPageTools
                   .filter((tool) => tool.type === "web")
                   .map((tool, index) => (
-                    <ToolCard key={`web-${index}`} tool={tool} />
+                    <ToolCard key={`web-${index + tool.title}`} tool={tool} />
                   ))}
               </div>
             ) : (

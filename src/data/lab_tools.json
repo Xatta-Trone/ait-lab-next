@@ -374,7 +374,7 @@
         "image": "inno-inter.png",
         "date": "March 18, 2025"
     },
-     {
+    {
         "title": "PM2.5 Web Resources",
         "description": "A web resource of PM2.5 studies",
         "latestProjectLink": "https://pm25-wr.vercel.app/",
@@ -382,5 +382,68 @@
         "links": [],
         "image": "pm25.png",
         "date": "March 18, 2025"
+    },
+    {
+        "title": "FRA-RS-005: Demo Tool",
+        "description": "This interactive curriculum provides first responders with hands-on, scenario-based training that replicates the complexities of a passenger train accident, enabling them to practice real-time decision-making, communication, and coordination skills in a controlled environment.",
+        "latestProjectLink": "https://fra-rs-005-demotool.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "Screenshot 2025-03-23 162707.png",
+        "date": "January 15, 2025"
+    },
+    {
+        "title": "Bluesky CLI Tool",
+        "description": "Bluesky CLI is a command line application which can get the historical data from the bluesky social platform as well as the live posts with certain keywords.",
+        "latestProjectLink": "https://www.npmjs.com/package/bluesky-cli",
+        "type": "web",
+        "links": [],
+        "image": "Screenshot 2025-03-23 162754.png",
+        "date": "February 13, 2025"
+    },
+    {
+        "title": "#TRBAM Bluesky Posts Dashboard",
+        "description": "A comprehensive analytics dashboard for tracking and visualizing #TRBAM posts from Bluesky. The dashboard provides insights into post metrics, engagement stats, contributor analysis, and content trends.",
+        "latestProjectLink": "https://trbam-bluesky-dashboard.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "Screenshot 2025-03-23 163033.png",
+        "date": "February 17, 2025"
+    },
+    {
+        "title": "NCHRP 20-07/384: Demo Tool",
+        "description": "Explore the groundbreaking research from NCHRP 20-07/384, providing actionable insights into the competencies needed for effective safety analysis in transportation systems.",
+        "latestProjectLink": "https://nchrp-20-07-corecompetencies.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "Screenshot 2025-03-23 163408.png",
+        "date": "December 31, 2024"
+    },
+    {
+        "title": "Demo Tool NCHRP 23-46: AI Integration and Workforce Transformation for State DOTs",
+        "description": "Explore innovative solutions to integrate AI and transform the workforce of state and local transportation agencies. This research outlines actionable strategies for AI adoption and workforce development.",
+        "latestProjectLink": "https://nchrp-23-46-demotool.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "Screenshot 2025-03-23 163846.png",
+        "date": "December 31, 2024"
+    },
+    {
+        "title": "NCHRP 08-189 Demo Tool",
+        "description": "Evaluation of TSMO Strategies.",
+        "latestProjectLink": "https://nchrp-08-189-demo-tool.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "Screenshot 2025-03-23 163939.png",
+        "date": "January 03, 2025"
+    },
+    {
+        "title": "Texas Measles Outbreak (2025) Dashboard",
+        "description": "A comprehensive dashboard application for visualizing and analyzing measles outbreak data. This project provides public health officials, researchers, and the general public with up-to-date information on measles cases, vaccination rates, and outbreak predictions.",
+        "latestProjectLink": "https://measles-dashboard.vercel.app/",
+        "type": "web",
+        "links": [],
+        "image": "Screenshot 2025-03-23 164137.png",
+        "date": "March 13, 2025"
     }
 ]
