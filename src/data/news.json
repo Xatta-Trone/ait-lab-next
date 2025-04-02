@@ -239,16 +239,34 @@
     "date": "January 01, 2025",
     "link": ""
   },
-    {
+  {
     "title": "New Funding Alert",
     "description": "AIT Lab got awarded 'NCHRP 17-134: Center Line Buffer Areas for Safety: Implementation Guidelines and Tool.' Budget: $250,000. TTI will work as a sub-contractor! PI: Subasish Das, Co-PI: Srinivas Geedipally.",
     "date": "February 26, 2025",
     "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5682"
   },
-    {
+  {
     "title": "Student Achievement",
     "description": "Big congratulations to Mahmuda Sultana Mimi for being selected as a 2025 Eno Fellow — a prestigious national honor awarded to the top MS/PhD students in transportation across the U.S.! Mimi’s passion, leadership, and dedication to shaping the future of transportation have earned her a spot among an elite cohort of future leaders.",
     "date": "March 21, 2025",
     "link": "https://enotrans.org/2025-leadership-awards/"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Darrell Anderson has been awarded a $1,160 URF grant for a project: Case Study: Ensuring Walkability in San Marcos, TX Using Machine Learning and GIS to Assess the Feasibility of the 15-Minute City Concept. Congrats!",
+    "date": "March 27, 2025",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Biplov Pandey has been awarded a $2,000 URF grant for a project: Enhancing Grid Resilience by Incorporating Sustainable EV Charging Networks in Texas. Congrats!",
+    "date": "April 02, 2025",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Gaurab Chhetri has been awarded a $2,000 URF grant for a project: Integrating AI and IoT Technologies for Heat Stress Prediction in Solar Energy Facilities Using Synthetic Data. Congrats!",
+    "date": "April 02, 2025",
+    "link": ""
   }
 ]
