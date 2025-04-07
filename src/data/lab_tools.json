@@ -271,7 +271,7 @@
     {
         "title": "NCHRP 17-113: Safe System Approach",
         "description": "This is searchable electronic toolkit that builds on the NCHRP Report 500 series to align with Safe System Approach (SSA) principles and AASHTO's current priorities, as well as reflect the most recent research and identify new innovations to help achieve the goal of zero deaths on the nation's roads.",
-        "latestProjectLink": "https://nchrp-17-113-demo-v6.vercel.app/",
+        "latestProjectLink": "https://nchrp-17-113-demo-v7.vercel.app/",
         "type": "web",
         "links": [
             {
@@ -297,6 +297,10 @@
             {
                 "label": "Version 6",
                 "url": "https://nchrp-17-113-demo-v6.vercel.app/"
+            },
+            {
+                "label": "Version 7",
+                "url": "https://nchrp-17-113-demo-v7.vercel.app/"
             }
         ],
         "image": "Screenshot 2025-03-04 235104.png",
