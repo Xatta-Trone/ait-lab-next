@@ -458,5 +458,23 @@
         "links": [],
         "image": "last-leg-toolkit.png",
         "date": "April 07, 2025"
+    },
+    {
+        "title": "TxDOT 0-7144 Develop a Real-time Decision Support Tool for Urban Roadway Safety Improvement",
+        "description": "User can filter by district,  county, facility, AADT, crash severity. Also the user can upload data.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/0_7144_V03/",
+        "type": "web",
+        "links": [
+            {
+                "label": "With data upload feature",
+                "url": "https://aitlab.shinyapps.io/0_7144_V03/"
+            },
+            {
+                "label": "Without data upload feature",
+                "url": "https://aitlab.shinyapps.io/7144Tool/"
+            }
+        ],
+        "image": "0-7144.png",
+        "date": "April 16, 2025"
     }
 ]
