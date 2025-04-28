@@ -5,13 +5,15 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { Calendar } from "lucide-react";
 
-// Add metadata generation
+interface PageProps {
+  params: Promise<{ slug: string }>; // params should be a Promise
+}
+
 export async function generateMetadata({
   params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const news = await getNewsById(await params.slug);
+}: PageProps): Promise<Metadata> {
+  const resolvedParams = await params; // Await the params to access slug
+  const news = await getNewsById(resolvedParams.slug);
 
   if (!news) {
     return {
@@ -20,18 +22,17 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${news.slug} | AIT Lab`,
+    title: `${news.title} | AIT Lab`,
     description: news.description,
     openGraph: {
       title: news.slug,
       description: news.description,
-      type: 'article',
+      type: "article",
       publishedTime: news.date,
     },
   };
 }
 
-// Add static params generation
 export async function generateStaticParams() {
   const news = await import("@/data/news.json");
   return news.default
@@ -41,15 +42,9 @@ export async function generateStaticParams() {
     }));
 }
 
-// Update page component with proper typing and async params handling
-export default async function NewsPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  // Ensure that params are awaited before using it
-  const { slug } = await params; // Await the params before accessing slug
-  const news = await getNewsById(slug);
+export default async function NewsPage({ params }: PageProps) {
+  const resolvedParams = await params; // Await the params here as well
+  const news = await getNewsById(resolvedParams.slug);
 
   if (!news) {
     notFound();
