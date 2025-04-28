@@ -87,16 +87,16 @@ export default function NewsItemCard({ newsItem }: NewsItemCardProps) {
       <CardContent className="pt-2 pb-4 pl-20">
         <p className="text-sm text-foreground/70">{newsItem.description}</p>
       </CardContent>
-      {newsItem.link && (
+      {(newsItem.link || newsItem.slug) && (
         <CardFooter className="pt-0 pb-4 pl-20">
           <Link
-            href={newsItem.link}
+            href={newsItem.slug ? `/news/${newsItem.slug}` : newsItem.link}
             className="flex items-center gap-2 text-sm text-blue-500 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
+            target={newsItem.slug ? "_self" : "_blank"}
+            rel={newsItem.slug ? "" : "noopener noreferrer"}
           >
             <ExternalLink className="h-4 w-4" />
-            Read more
+            {newsItem.slug ? "View details" : "Read more"}
           </Link>
         </CardFooter>
       )}
