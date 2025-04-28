@@ -2,8 +2,8 @@
 
 We are thrilled to announce that **Mahmuda Sultana Mimi** has been honored with the prestigious **Helene M. Overly Memorial Scholarship** at the WTS Heart of Texas Chapter’s 21st Gala, held at the Hyatt Regency Austin. This award celebrates Mimi's dedication and outstanding achievements in the field of transportation.
 
-![Image Description](images/news/mimi-wts/image1.jpg)
-
+<!-- for Images use ../ for relative paths... for example public/images/news will be ../images/news -->
+![Image Description](../images/news/mimi-wts/image1.jpg)
 
 The evening was filled with inspiring conversations with industry professionals, creating an incredible networking experience that further motivated Mimi to continue striving for excellence in the transportation sector. The gala highlighted the achievements and future of women in the transportation industry, with over 160 members and corporate partners in attendance, reflecting WTS Heart of Texas Chapter’s commitment to empowering the next generation of professionals.
 
