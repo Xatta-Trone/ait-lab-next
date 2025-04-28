@@ -53,7 +53,7 @@ export function usePublicationData() {
     defaultValue: "1",
   });
   const currentPage = pageString ? parseInt(pageString) : 1;
-  const itemsPerPage = 9; // Number of publications per page
+  const itemsPerPage = 15; // Number of publications per page
 
   // Filter publications based on query parameters
   const filteredPublications = data.filter((publication) => {
