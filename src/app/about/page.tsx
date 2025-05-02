@@ -85,7 +85,7 @@ const AboutPage = () => {
                   improvements in a more targeted fashion than ever before.
                   Traffic Technology International interviewed Subasish Das on
                   this issue. This issue was featured in Texas Transportation
-                  International's{" "}
+                  International&apos;s{" "}
                   <Link
                     href="https://tti.mydigitalpublication.co.uk/publication/?i=672384"
                     target="_blank"
