@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://ait-lab.vercel.app/about</loc><lastmod>2025-05-02T20:03:03.997Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ait-lab.vercel.app/team</loc><lastmod>2025-05-02T20:03:03.998Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ait-lab.vercel.app/news</loc><lastmod>2025-05-02T20:03:03.998Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ait-lab.vercel.app</loc><lastmod>2025-05-02T20:03:03.998Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ait-lab.vercel.app/tools</loc><lastmod>2025-05-02T20:03:03.998Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ait-lab.vercel.app/courses</loc><lastmod>2025-05-02T20:03:03.998Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ait-lab.vercel.app/publications</loc><lastmod>2025-05-02T20:03:03.998Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ait-lab.vercel.app/projects</loc><lastmod>2025-05-02T20:03:03.998Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ait-lab.vercel.app/news/2025-mahmuda-sultana-mimi-awarded-helene-m-overly-memorial-scholarship</loc><lastmod>2025-05-02T20:03:03.998Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ait-lab.vercel.app/team</loc><lastmod>2025-05-02T20:09:29.378Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ait-lab.vercel.app/news</loc><lastmod>2025-05-02T20:09:29.379Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ait-lab.vercel.app</loc><lastmod>2025-05-02T20:09:29.379Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ait-lab.vercel.app/publications</loc><lastmod>2025-05-02T20:09:29.379Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ait-lab.vercel.app/projects</loc><lastmod>2025-05-02T20:09:29.379Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ait-lab.vercel.app/tools</loc><lastmod>2025-05-02T20:09:29.379Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ait-lab.vercel.app/about</loc><lastmod>2025-05-02T20:09:29.379Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ait-lab.vercel.app/news/2025-mahmuda-sultana-mimi-awarded-helene-m-overly-memorial-scholarship</loc><lastmod>2025-05-02T20:09:29.379Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ait-lab.vercel.app/courses</loc><lastmod>2025-05-02T20:09:29.379Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
