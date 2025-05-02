@@ -23,6 +23,10 @@ export default function TeamPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = (member: any) => {
+    if (member.name.includes("Subasish Das")) {
+      window.location.href = "/about";
+      return;
+    }
     setSelectedMember(member);
     setIsModalOpen(true);
   };
