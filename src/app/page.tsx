@@ -17,6 +17,14 @@ export default function Home() {
       link: "https://www.routledge.com/Urban-Human-Mobility-Practices-Analytics-and-Strategies-for-Smart-Cities/Huang-Ye-Stewart-Das/p/book/9781032821627",
       image: "/images/books/urban_book.jpg",
     },
+    {
+      title: "Artificial Intelligence in Highway Safety",
+      author: "Dr. Subasish Das",
+      description:
+        "Artificial Intelligence in Highway Safety provides cutting-edge advances in highway safety using AI. The author is a highway safety expert, drawing attention to the predictive powers of AI techniques in solving complex problems for safety improvement.",
+      link: "https://www.routledge.com/Artificial-Intelligence-in-Highway-Safety/Das/p/book/9780367436704",
+      image: "/images/books/aihs1.png",
+    },
   ];
   return (
     <>
