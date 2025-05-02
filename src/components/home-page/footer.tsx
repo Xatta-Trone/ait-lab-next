@@ -5,10 +5,13 @@ import { NavLinks } from "@/data/navLinks";
 const quickLinks = NavLinks;
 
 const socialLinks = [
-  { name: "Twitter", href: "https://twitter.com/aitlab" },
-  { name: "LinkedIn", href: "https://linkedin.com/company/aitlab" },
-  { name: "GitHub", href: "https://github.com/aitlab" },
-  { name: "YouTube", href: "https://youtube.com/aitlab" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/subasishdas/" },
+  { name: "Twitter", href: "https://x.com/subasish_das" },
+  { name: "GitHub", href: "https://github.com/subasish" },
+  {
+    name: "Research Gate",
+    href: "https://www.researchgate.net/profile/Subasish-Das",
+  },
 ];
 
 export default function Footer() {
@@ -68,10 +71,10 @@ export default function Footer() {
               ))}
               <li>
                 <Link
-                  href="/contact"
+                  href="/about"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Contact
+                  About
                 </Link>
               </li>
             </ul>
