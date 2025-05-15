@@ -12,6 +12,7 @@ export interface TeamMember {
   researchGate?: string;
   websites?: string[];
   awards?: string[];
+  orcid?: string;
 }
 
 export interface Fellow {
@@ -28,6 +29,7 @@ export interface Fellow {
   researchGate?: string;
   websites?: string[];
   awards?: string[];
+  orcid?: string;
 }
 
 export interface Alumnus {
