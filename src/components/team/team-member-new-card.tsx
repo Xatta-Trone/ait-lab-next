@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import type { TeamMember, Fellow } from "@/types/team";
 import Link from "next/link";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { LiaOrcid } from "react-icons/lia";
 import { FiLinkedin } from "react-icons/fi";
 import { FaGoogleScholar } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
@@ -66,12 +67,22 @@ export default function TeamMemberCard({
           >
             <FiLinkedin className="h-4 w-4 text-blue-500" />
           </Link>
+          {member.orcid && (
+            <Link
+              href={member.orcid}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
+            >
+              <LiaOrcid className="h-5 w-5 text-blue-500" />
+            </Link>
+          )}
           {member.googleScholar && (
             <Link
               href={member.googleScholar}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
             >
               <FaGoogleScholar className="h-4 w-4 text-blue-500" />
             </Link>
@@ -81,7 +92,7 @@ export default function TeamMemberCard({
               href={member.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
             >
               <FiGithub className="h-4 w-4 text-blue-500" />
             </Link>
@@ -91,7 +102,7 @@ export default function TeamMemberCard({
               href={member.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
             >
               <FaXTwitter className="h-4 w-4 text-blue-500" />
             </Link>
@@ -101,7 +112,7 @@ export default function TeamMemberCard({
               href={member.researchGate}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
             >
               <SiResearchgate className="h-4 w-4 text-blue-500" />
             </Link>
