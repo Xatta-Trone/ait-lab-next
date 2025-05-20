@@ -91,10 +91,13 @@ export function usePublicationData() {
 
   // Sort publications
   const sortedPublications = [...filteredPublications].sort((a, b) => {
+    const dateA = new Date(a.date_added).getTime();
+    const dateB = new Date(b.date_added).getTime();
+
     if (sortOrder === "newest") {
-      return b.year - a.year;
+      return dateB - dateA;
     } else {
-      return a.year - b.year;
+      return dateA - dateB;
     }
   });
 
@@ -128,9 +131,17 @@ export function usePublicationData() {
     )
   );
 
-  const years = Array.from(
-    new Set(data.map((publication) => publication.year))
-  ).sort((a, b) => b - a); // Sort years descending
+  // const years = Array.from(
+  //   new Set(data.map((publication) => publication.year))
+  // ).sort((a, b) => b - a); // Sort years descending
+
+  const dates = Array.from(
+  new Set(
+    data
+      .map((publication) => publication.date_added)
+      .filter((date): date is string => typeof date === 'string')
+  )
+).sort((a, b) => new Date(b).getTime() - new Date(a).getTime());
 
   return {
     lastUpdated,
@@ -139,7 +150,7 @@ export function usePublicationData() {
     isLoading,
     error,
     journals,
-    years,
+    dates,
     searchQuery: searchQuery || "",
     setSearchQuery,
     journalFilter: journalFilter || "",
