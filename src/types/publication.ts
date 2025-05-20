@@ -11,4 +11,5 @@ export interface ResearchPaper {
   book?: string;
   img?: string;
   pdf_link?: string;
+  date_added: string;
 }
