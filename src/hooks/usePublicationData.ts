@@ -155,6 +155,7 @@ export function usePublicationData() {
     allFilteredPublications: sortedPublications,
     isLoading,
     error,
+    years,
     journals,
     searchQuery: searchQuery || "",
     setSearchQuery,
