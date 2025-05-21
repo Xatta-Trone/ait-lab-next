@@ -131,17 +131,23 @@ export function usePublicationData() {
     )
   );
 
-  // const years = Array.from(
-  //   new Set(data.map((publication) => publication.year))
-  // ).sort((a, b) => b - a); // Sort years descending
+  const years = Array.from(
+    new Set(data.map((publication) => publication.year))
+  ).sort((a, b) => {
+    // Handle empty strings and null values
+    if (!a && !b) return 0;        // both empty/null
+    if (!a) return 1;              // push a to end
+    if (!b) return -1;             // push b to end
+    return b - a;                  // normal descending sort
+  });
 
-  const dates = Array.from(
-  new Set(
-    data
-      .map((publication) => publication.date_added)
-      .filter((date): date is string => typeof date === 'string')
-  )
-).sort((a, b) => new Date(b).getTime() - new Date(a).getTime());
+  // const dates = Array.from(
+  //   new Set(
+  //     data
+  //       .map((publication) => publication.date_added)
+  //       .filter((date): date is string => typeof date === 'string')
+  //   )
+  // ).sort((a, b) => new Date(b).getTime() - new Date(a).getTime());
 
   return {
     lastUpdated,
@@ -150,7 +156,7 @@ export function usePublicationData() {
     isLoading,
     error,
     journals,
-    dates,
+    years,
     searchQuery: searchQuery || "",
     setSearchQuery,
     journalFilter: journalFilter || "",
