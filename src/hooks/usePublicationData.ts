@@ -149,12 +149,15 @@ export function usePublicationData() {
   //   )
   // ).sort((a, b) => new Date(b).getTime() - new Date(a).getTime());
 
+  //
+
   return {
     lastUpdated,
     publications: currentPageItems,
     allFilteredPublications: sortedPublications,
     isLoading,
     error,
+    years,
     journals,
     searchQuery: searchQuery || "",
     setSearchQuery,
