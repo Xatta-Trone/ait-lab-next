@@ -13,6 +13,8 @@ export function useCoursesData() {
   const [levelFilter, setLevelFilter] = useQueryState("level");
   const [termFilter, setTermFilter] = useQueryState("term");
 
+  const totalItems = data.length;
+
   // Filter courses based on query parameters
   const filteredCourses = data.filter((course) => {
     const matchesSearch =
@@ -47,5 +49,6 @@ export function useCoursesData() {
     setLevelFilter,
     termFilter: termFilter || "",
     setTermFilter,
+    totalItems,
   };
 }
