@@ -25,7 +25,6 @@ export default function PublicationsPage() {
     allFilteredPublications: filteredPublications,
     isLoading,
     publications: _publications,
-    currentPage,
   } = usePublicationData();
 
   // console.log("Current page:", currentPage);
