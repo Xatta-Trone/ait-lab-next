@@ -29,6 +29,7 @@ export default function CoursesPage() {
     termFilter,
     setTermFilter,
     isLoading,
+    totalItems,
   } = useCoursesData();
 
   // Add state for debounced inputs
@@ -98,6 +99,15 @@ export default function CoursesPage() {
           title={<span className="gradient-text">Courses</span>}
           subtitle="Transportation engineering and safety courses offered by our faculty"
         />
+
+        <div className="flex flex-wrap items-center justify-between mb-4 text-sm text-muted-foreground/80">
+          <div className="flex items-center gap-1">
+            <span className="font-medium">Showing:</span>
+            <span>
+              {filteredCourses.length} of {totalItems} courses
+            </span>
+          </div>
+        </div>
 
         {/* Search section */}
         <div className="mb-8 glass-card p-6 rounded-xl">

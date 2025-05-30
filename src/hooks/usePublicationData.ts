@@ -24,7 +24,7 @@ export function usePublicationData() {
         const result = await response.json();
         setLastUpdated(result.last_updated_utc);
         setData(Array.isArray(result.data) ? result.data : []);
-        console.log("Fetched publication data:", result.data);
+        // console.log("Fetched publication data:", result.data);
       } catch (e) {
         console.error("Error fetching publication data:", e);
         setError(e instanceof Error ? e : new Error("Unknown error occurred"));
@@ -135,10 +135,10 @@ export function usePublicationData() {
     new Set(data.map((publication) => publication.year))
   ).sort((a, b) => {
     // Handle empty strings and null values
-    if (!a && !b) return 0;        // both empty/null
-    if (!a) return 1;              // push a to end
-    if (!b) return -1;             // push b to end
-    return b - a;                  // normal descending sort
+    if (!a && !b) return 0; // both empty/null
+    if (!a) return 1; // push a to end
+    if (!b) return -1; // push b to end
+    return b - a; // normal descending sort
   });
 
   // const dates = Array.from(

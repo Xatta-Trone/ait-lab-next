@@ -24,8 +24,10 @@ export default function PublicationsPage() {
     setSortOrder,
     allFilteredPublications: filteredPublications,
     isLoading,
+    publications: _publications,
   } = usePublicationData();
 
+  // console.log("Current page:", currentPage);
   // Add state for debounced input
   const [searchInput, setSearchInput] = useState(searchQuery);
   // Track debouncing state
@@ -49,14 +51,27 @@ export default function PublicationsPage() {
           title={<span className="gradient-text">Research Publications</span>}
           subtitle="Explore our scholarly contributions to transportation research"
         />
-        <div className="mb-2 text-sm text-muted-foreground">
-          {lastUpdated &&
-            "Last Updated: " +
-              new Date(lastUpdated).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+
+        <div className="flex flex-wrap items-center justify-between mb-4 text-sm text-muted-foreground/80">
+          <div className="flex items-center gap-1">
+            <span className="font-medium">Showing:</span>
+            <span>
+              {_publications.length} of {filteredPublications.length}{" "}
+              publications
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="font-medium">Last Updated:</span>
+            {lastUpdated && (
+              <time dateTime={new Date(lastUpdated).toISOString()}>
+                {new Date(lastUpdated).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+            )}
+          </div>
         </div>
         {/* Search and sort section */}
         <div className="mb-8 glass-card p-6 rounded-xl">

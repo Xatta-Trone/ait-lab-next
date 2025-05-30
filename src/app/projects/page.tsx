@@ -43,6 +43,7 @@ export default function ProjectsPage() {
     prevPage,
     hasNextPage,
     hasPrevPage,
+    totalItems,
   } = useProjectsData();
 
   // Add state for debounced input
@@ -204,6 +205,15 @@ export default function ProjectsPage() {
           title={<span className="gradient-text">Research Projects</span>}
           subtitle="Explore our ongoing and completed research projects"
         />
+
+        <div className="flex flex-wrap items-center justify-between mb-4 text-sm text-muted-foreground/80">
+          <div className="flex items-center gap-1">
+            <span className="font-medium">Showing:</span>
+            <span>
+              {projects.length} of {totalItems} projects
+            </span>
+          </div>
+        </div>
 
         {/* Search and filter section */}
         <div className="mb-8 glass-card p-6 rounded-xl">

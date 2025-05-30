@@ -34,6 +34,7 @@ export default function ToolsPage() {
     goToPage,
     hasNextPage,
     hasPrevPage,
+    totalItems,
   } = useLabToolsData();
 
   // Add state for debounced input
@@ -66,6 +67,15 @@ export default function ToolsPage() {
           title={<span className="gradient-text">Research Tools</span>}
           subtitle="Interactive tools and applications developed by our lab"
         />
+
+        <div className="flex flex-wrap items-center justify-between mb-4 text-sm text-muted-foreground/80">
+          <div className="flex items-center gap-1">
+            <span className="font-medium">Showing:</span>
+            <span>
+              {currentPageTools.length} of {totalItems} tools
+            </span>
+          </div>
+        </div>
 
         {/* Search section */}
         <div className="mb-8 glass-card p-6 rounded-xl">
