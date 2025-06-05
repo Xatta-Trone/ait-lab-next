@@ -13,15 +13,13 @@ import {
   useReactTable,
   VisibilityState,
 } from "@tanstack/react-table";
-import { ArrowUpDown, ChevronDown, MoreHorizontal } from "lucide-react";
+import { ArrowUpDown, ChevronDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
@@ -45,8 +43,8 @@ export function ImpactFactorTable({
 
   const yearColumns: ColumnDef<ImpactFactorTableData>[] = React.useMemo(
     () =>
-      Array.from({ length: 5 }, (_, index) => {
-        const year = (2018 + index).toString();
+      Array.from({ length: 10 }, (_, index) => {
+        const year = (new Date().getFullYear() + index - 9).toString();
         return {
           accessorKey: year,
           header: ({ column }) => (
@@ -56,7 +54,7 @@ export function ImpactFactorTable({
                 column.toggleSorting(column.getIsSorted() === "asc")
               }
             >
-              {year} <ArrowUpDown className="ml-2 h-4 w-4" />
+              {year} <ArrowUpDown className="h-4 w-4" />
             </Button>
           ),
           cell: ({ row }) => (
@@ -70,19 +68,19 @@ export function ImpactFactorTable({
 
   const columns: ColumnDef<ImpactFactorTableData>[] = React.useMemo(
     () => [
-      {
-        accessorKey: "journal",
-        header: ({ column }) => (
-          <Button
-            variant="ghost"
-            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          >
-            Journal <ArrowUpDown className="ml-2 h-4 w-4" />
-          </Button>
-        ),
-        enableColumnFilter: true,
-        enableGlobalFilter: true,
-      },
+      // {
+      //   accessorKey: "journal",
+      //   header: ({ column }) => (
+      //     <Button
+      //       variant="ghost"
+      //       onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+      //     >
+      //       Journal <ArrowUpDown className="ml-2 h-4 w-4" />
+      //     </Button>
+      //   ),
+      //   enableColumnFilter: true,
+      //   enableGlobalFilter: true,
+      // },
       {
         accessorKey: "abbr",
         header: ({ column }) => (
@@ -90,7 +88,7 @@ export function ImpactFactorTable({
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
           >
-            Abbreviation <ArrowUpDown className="ml-2 h-4 w-4" />
+            Journal <ArrowUpDown className="h-4 w-4" />
           </Button>
         ),
         enableColumnFilter: true,
@@ -103,7 +101,7 @@ export function ImpactFactorTable({
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
           >
-            Impact Factor <ArrowUpDown className="ml-2 h-4 w-4" />
+            Imp Fctr <ArrowUpDown className="h-4 w-4" />
           </Button>
         ),
         cell: ({ row }) => (
@@ -120,7 +118,7 @@ export function ImpactFactorTable({
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
           >
-            Total <ArrowUpDown className="ml-2 h-4 w-4" />
+            Total <ArrowUpDown className="h-4 w-4" />
           </Button>
         ),
         cell: ({ row }) => (
@@ -129,31 +127,6 @@ export function ImpactFactorTable({
           </div>
         ),
         enableSorting: true,
-      },
-      {
-        id: "actions",
-        enableHiding: false,
-        cell: ({ row }) => {
-          const paper = row.original;
-          return (
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="h-8 w-8 p-0">
-                  <span className="sr-only">Open menu</span>
-                  <MoreHorizontal />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                <DropdownMenuItem
-                  onClick={() => navigator.clipboard.writeText(paper.journal)}
-                >
-                  Copy journal name
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          );
-        },
       },
     ],
     [yearColumns]
@@ -224,7 +197,7 @@ export function ImpactFactorTable({
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
-                  <TableHead key={header.id}>
+                  <TableHead key={header.id} className="m-0 p-0">
                     {header.isPlaceholder
                       ? null
                       : flexRender(
