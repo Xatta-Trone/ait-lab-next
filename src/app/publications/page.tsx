@@ -14,6 +14,7 @@ import SectionHeading from "@/components/ui/section-heading";
 import { usePublicationData } from "@/hooks/usePublicationData";
 import PublicationsList from "@/components/publication/publications-list";
 import { Spinner } from "@/components/ui/spinner";
+import { ImpactFactorTable } from "@/components/publication/impact-factor-table";
 
 export default function PublicationsPage() {
   const {
@@ -25,9 +26,9 @@ export default function PublicationsPage() {
     allFilteredPublications: filteredPublications,
     isLoading,
     publications: _publications,
+    data,
   } = usePublicationData();
 
-  // console.log("Current page:", currentPage);
   // Add state for debounced input
   const [searchInput, setSearchInput] = useState(searchQuery);
   // Track debouncing state
@@ -134,6 +135,15 @@ export default function PublicationsPage() {
             </button>
           </div>
         )}
+
+        {/* Impact Factor Section */}
+        <div className="mt-16">
+          <SectionHeading
+            title={<span className="gradient-text">Impact Factors</span>}
+            subtitle="Explore the impact factors of journals where our research is published"
+          />
+          <ImpactFactorTable publicationData={data} />
+        </div>
       </div>
     </div>
   );

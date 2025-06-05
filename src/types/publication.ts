@@ -13,3 +13,18 @@ export interface ResearchPaper {
   pdf_link?: string;
   date_added: string;
 }
+
+export interface ImpactFactor {
+  journal: string;
+  impact_factor: number;
+  abbr: string;
+}
+
+export interface ImpactFactorTableData {
+  id: number;
+  journal: string;
+  impact_factor: number;
+  abbr: string;
+  total: number;
+  [key: number]: number;
+}

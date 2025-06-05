@@ -152,6 +152,7 @@ export function usePublicationData() {
   //
 
   return {
+    data,
     lastUpdated,
     publications: currentPageItems,
     allFilteredPublications: sortedPublications,
