@@ -1,0 +1,97 @@
+[
+    {
+        "journal": "Accident Analysis & Prevention",
+        "abbr": "AAP",
+        "impact_factor": 5.7
+    },
+    {
+        "journal": "Journal of Safety Research",
+        "abbr": "JOSR",
+        "impact_factor": 3.9
+    },
+    {
+        "journal": "IATSS Research",
+        "abbr": "IATSS",
+        "impact_factor": 2.8
+    },
+    {
+        "journal": "ACM Computing Surveys",
+        "abbr": "ACM CS",
+        "impact_factor": 23.8
+    },
+    {
+        "journal": "Transportmetrica A",
+        "abbr": "Trans-A",
+        "impact_factor": 3.6
+    },
+    {
+        "journal": "Transportation Research Part A: Policy and Practice",
+        "abbr": "TR-A",
+        "impact_factor": 6.3
+    },
+    {
+        "journal": "Transportation Research Part D: Transport and Environment",
+        "abbr": "TR-D",
+        "impact_factor": 7.3
+    },
+    {
+        "journal": "Transportation Research Part F: Traffic Psychology and Behaviour",
+        "abbr": "TR-F",
+        "impact_factor": 3.5
+    },
+    {
+        "journal": "Cities",
+        "abbr": "Cities",
+        "impact_factor": 6
+    },
+    {
+        "journal": "Journal of Transportation Safety & Security",
+        "abbr": "JTSS",
+        "impact_factor": 2.4
+    },
+    {
+        "journal": "Transportmetrica B: Transport Dynamics",
+        "abbr": "Trans-B",
+        "impact_factor": 5.1
+    },
+    {
+        "journal": "Transportation Research Record",
+        "abbr": "TRR",
+        "impact_factor": 1.6
+    },
+    {
+        "journal": "Traffic Injury Prevention",
+        "abbr": "TIP",
+        "impact_factor": 2.3
+    },
+    {
+        "journal": "Transport Policy",
+        "abbr": "TP",
+        "impact_factor": 6.3
+    },
+    {
+        "journal": "Transport Letters: The International Journal of Transportation Research",
+        "abbr": "TL",
+        "impact_factor": 3.3
+    },
+    {
+        "journal": "Natural Language Processing-related journal",
+        "abbr": "NLP",
+        "impact_factor": 2.3
+    },
+    {
+        "journal": "IEEE Transactions on Intelligent Transportation Systems",
+        "abbr": "IEEE ITS",
+        "impact_factor": 7.9
+    },
+    {
+        "journal": "Scientific Reports",
+        "abbr": "Sc Rep",
+        "impact_factor": 3.8
+    },
+    {
+        "journal": "Sustainability Futures",
+        "abbr": "Sus F",
+        "impact_factor": 3.3
+    }
+]
