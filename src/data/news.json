@@ -61,12 +61,6 @@
   },
   {
     "title": "New Paper Published",
-    "description": "A Survey on Kolmogorov-Arnold Network - Shriyank Somvanshi, Syed Aaqib Javed, Md Monzurul Islam, Diwas Pandit, Subasish Das",
-    "date": "November 12, 2024",
-    "link": "https://arxiv.org/abs/2411.06078"
-  },
-  {
-    "title": "New Paper Published",
     "description": "A Survey on Deep Tabular Learning - Shriyank Somvanshi, Subasish Das, Syed Aaqib Javed, Gian Antariksa, Ahmed Hossain",
     "date": "October 17, 2024",
     "link": "https://arxiv.org/abs/2410.12034"
@@ -305,5 +299,11 @@
     "description": "Uncovering the role of restraint usage in driver ejection: a data mining investigation of fatal and injury crashes - Rohit Chakraborty, Anannya Ghosh Tusti, Ahmed Hossain, Mohaddese Salehian, Syed Aaqib Javed, Subasish Das",
     "date": "May 06, 2025",
     "link": "https://www.tandfonline.com/doi/full/10.1080/15389588.2025.2491580?src=exp-la"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "A Survey on Kolmogorov-Arnold Network - Shriyank Somvanshi, Syed Aaqib Javed, Md Monzurul Islam, Diwas Pandit, Subasish Das",
+    "date": "June 06, 2025",
+    "link": "https://dl.acm.org/doi/10.1145/3743128"
   }
 ]
