@@ -19,27 +19,6 @@
     ]
   },
   {
-    "name": "Jinli Liu, Ph.D.",
-    "label": "Post-doctoral Researcher (Jan 2025-Current), Ph.D. Student (2023-2024)",
-    "group": "Ph.D. Candidate",
-    "linkedin": "https://www.linkedin.com/in/jinli-liu-79a811197/",
-    "email": "",
-    "image": "jinli_liu.jpg",
-    "description": "Jinli Liu is a Ph.D. Candidate in the Geographic Information Science Program in the Department of Geography & Environmental Studies at Texas State University, under the supervision of Dr. Das. She joined the AIT Lab in Fall 2022 and worked as a Doctoral Research Assistant. She holds an M.S. in Transportation Management & Planning from Texas Southern University (2021) and a bachelor's degree, along with an additional master's degree, from Zhejiang Normal University in China. Jinli's research focuses on traffic safety analysis, GIS-based data conflation, spatial analysis, traffic signal design, operational analysis, and the integration of machine learning in transportation studies.",
-    "googleScholar": "https://scholar.google.com/citations?user=ALyhPncAAAAJ&hl=zh-CN&oi=ao",
-    "github": "",
-    "twitter": "",
-    "websites": [],
-    "awards": [
-      "WTS Helene Overley Memorial Scholarship, $5,000 (2023)",
-      "P.E.O International Peace Scholarship, $10,000 (2023)",
-      "CASITE Scholarship (3rd Position), $500 (2023)",
-      "The Mao-Geng Zhan Scholarship, $1,100 (2024)",
-      "The Bernard W. Detlefsen Doctoral Candidate Scholarship, $1,000 (2024)",
-      "P.E.O International Peace Scholarship, $10,500 (2024)"
-    ]
-  },
-  {
     "name": "David A. Mills",
     "label": "Ph.D. Candidate, Geographic Information Science (Fall 2022 - Current)",
     "group": "Ph.D. Candidate",
@@ -253,22 +232,6 @@
     ]
   },
   {
-    "name": "Teale Robison",
-    "label": "B.Sc., Urban and Regional Planning (Fall 2021- Current)",
-    "group": "",
-    "linkedin": "https://www.linkedin.com/in/teale-robison-b0ab7624b",
-    "email": "",
-    "image": "teale_robison.jpg",
-    "googleScholar": "",
-    "github": "",
-    "twitter": "",
-    "websites": [],
-    "description": "Teale is currently a senior at Texas State University, majoring in Urban and Regional Planning and minoring in Geographic Information Systems (GIS). She started at the Artificial Intelligence in Transportation (AIT) lab in fall 2024 and is currently working as an undergraduate research assistant for Dr. Das. Teale is passionate about the environment and sustainable development, especially involving transportation and creating a more efficient system. She has prior experience working as a Visual Analytics intern at Texas A&M Transportation Institute (TTI) utilizing GIS and ArcPy. Involved in several campus activities such as the Student Urban Planning Organization (SUPO) and SWIG (Supporting Women in Geography). In her free time, Teale enjoys playing board games, reading, and paddleboarding.",
-    "awards": [
-      "Bernard W. Detlefsen Junior Academic and Leadership Scholarship, $1,500 (2024)"
-    ]
-  },
-  {
     "name": "Gaurab Chhetri",
     "label": "B.Sc., Computer Science (Fall 2024 - Current)",
     "group": "Undergraduate Student",
@@ -289,5 +252,19 @@
       "Best In Coding at Hackacat Nano by ACM AI @ TXST (2024)",
       "Undergraduate Research Fellowship (URF), $2,000 (2025)"
     ]
+  },
+  {
+    "name": "Dipti Koirala",
+    "label": "B.Sc., Electrical Engineering (Summer 2025 - Current)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://www.linkedin.com/in/dipti-koirala-978172340",
+    "email": "yfn21@txstate.edu",
+    "image": "dipti_k.jpg",
+    "googleScholar": "",
+    "github": "",
+    "twitter": "",
+    "websites": [],
+    "description": "Dipti Koirala is currently an undergraduate student in the Electrical Engineering program at Texas State University, concentrating in Micro and Nano Devices and Systems. She joined the Artificial Intelligence in Transportation (AIT) Lab in Summer 2025 and is an undergraduate research assistant under the supervision of Dr. Subasish Das. Dipti is keenly interested in the intersection of electronics, semiconductors, data science, and intelligent transportation systems. Her academic interests include sensor-driven technologies, signal processing, and the use of AI to improve traffic safety and infrastructure performance. With a background in physics-based research, materials analysis, and applied mathematics, she brings a multidisciplinary perspective to the lab and is passionate about contributing to innovative, data-informed solutions engineering fields.",
+    "awards": []
   }
 ]
