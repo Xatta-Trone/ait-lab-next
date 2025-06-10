@@ -71,7 +71,7 @@ export default function TeamPage() {
           </div>
         </div>
 
-        {/* Post-Doctoral Researcher */}
+        {/* Lab Alumni (Post-Doc) */}
         <div className="mb-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex items-start h-min">
             <div className="flex items-center gap-3 mb-8">
@@ -79,7 +79,7 @@ export default function TeamPage() {
                 <GraduationCap className="h-5 w-5 text-purple-500" />
               </div>
               <h2 className="text-2xl font-bold gradient-text">
-                Post-Doctoral Researcher
+                Lab Alumni (Post-Doc)
               </h2>
             </div>
           </div>
