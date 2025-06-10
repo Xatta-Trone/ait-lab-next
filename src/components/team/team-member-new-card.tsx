@@ -51,22 +51,26 @@ export default function TeamMemberCard({
           >
             View Profile
           </Button>
-          <Link
-            href={`mailto:${member.email}`}
-            className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
-            aria-label={`Email ${member.name}`}
-          >
-            <MdOutlineMailOutline className="h-4 w-4 text-blue-500" />
-          </Link>
-          <Link
-            href={member.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
-            aria-label={`${member.name}'s LinkedIn profile`}
-          >
-            <FiLinkedin className="h-4 w-4 text-blue-500" />
-          </Link>
+          {member.email !== "" && (
+            <Link
+              href={`mailto:${member.email}`}
+              className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
+              aria-label={`Email ${member.name}`}
+            >
+              <MdOutlineMailOutline className="h-4 w-4 text-blue-500" />
+            </Link>
+          )}
+          {member.linkedin !== "" && (
+            <Link
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full flex items-center justify-center glass-card hover:bg-blue-500/10 transition-colors"
+              aria-label={`${member.name}'s LinkedIn profile`}
+            >
+              <FiLinkedin className="h-4 w-4 text-blue-500" />
+            </Link>
+          )}
           {member.orcid && (
             <Link
               href={member.orcid}
