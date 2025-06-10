@@ -80,22 +80,26 @@ export default function TeamMemberModal({
               </div>
 
               <div className="flex flex-wrap gap-2">
-                <Link
-                  href={`mailto:${member.email}`}
-                  className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
-                >
-                  <MdOutlineMailOutline className="h-4 w-4 text-blue-500" />
-                  <span>Email</span>
-                </Link>
-                <Link
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
-                >
-                  <FiLinkedin className="h-4 w-4 text-blue-500" />
-                  <span>LinkedIn</span>
-                </Link>
+                {member.email !== "" && (
+                  <Link
+                    href={`mailto:${member.email}`}
+                    className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
+                  >
+                    <MdOutlineMailOutline className="h-4 w-4 text-blue-500" />
+                    <span>Email</span>
+                  </Link>
+                )}
+                {member.linkedin !== "" && (
+                  <Link
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
+                  >
+                    <FiLinkedin className="h-4 w-4 text-blue-500" />
+                    <span>LinkedIn</span>
+                  </Link>
+                )}
                 {member.googleScholar && (
                   <Link
                     href={member.googleScholar}
