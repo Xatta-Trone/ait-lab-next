@@ -1,5 +1,26 @@
 [
-    {
+  {
+    "name": "Jinli Liu, Ph.D.",
+    "label": "Post-doctoral Researcher (Jan 2025-Current), Ph.D. Student (2023-2024)",
+    "group": "Post-Doctoral Researcher",
+    "linkedin": "https://www.linkedin.com/in/jinli-liu-79a811197/",
+    "email": "",
+    "image": "jinli_liu.jpg",
+    "description": "Jinli Liu is a Ph.D. Candidate in the Geographic Information Science Program in the Department of Geography & Environmental Studies at Texas State University, under the supervision of Dr. Das. She joined the AIT Lab in Fall 2022 and worked as a Doctoral Research Assistant. She holds an M.S. in Transportation Management & Planning from Texas Southern University (2021) and a bachelor's degree, along with an additional master's degree, from Zhejiang Normal University in China. Jinli's research focuses on traffic safety analysis, GIS-based data conflation, spatial analysis, traffic signal design, operational analysis, and the integration of machine learning in transportation studies.",
+    "googleScholar": "https://scholar.google.com/citations?user=ALyhPncAAAAJ&hl=zh-CN&oi=ao",
+    "github": "",
+    "twitter": "",
+    "websites": [],
+    "awards": [
+      "WTS Helene Overley Memorial Scholarship, $5,000 (2023)",
+      "P.E.O International Peace Scholarship, $10,000 (2023)",
+      "CASITE Scholarship (3rd Position), $500 (2023)",
+      "The Mao-Geng Zhan Scholarship, $1,100 (2024)",
+      "The Bernard W. Detlefsen Doctoral Candidate Scholarship, $1,000 (2024)",
+      "P.E.O International Peace Scholarship, $10,500 (2024)"
+    ]
+  },
+  {
     "name": "Ahmed Hossain, Ph.D.",
     "label": "Post-Doctoral Researcher (2024 - 2025)",
     "group": "Post-Doctoral Researcher",
@@ -11,7 +32,9 @@
     "github": "https://github.com/AhmedHossain09",
     "twitter": "",
     "websites": [],
-    "awards": [""]
+    "awards": [
+      ""
+    ]
   },
   {
     "name": "Monire Jafari",
@@ -26,6 +49,22 @@
     "twitter": "",
     "researchGate": "https://www.researchgate.net/profile/Monire-Jafari",
     "websites": []
+  },
+  {
+    "name": "Teale Robison",
+    "label": "B.Sc., Urban and Regional Planning (Fall 2021- Current)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://www.linkedin.com/in/teale-robison-b0ab7624b",
+    "email": "",
+    "image": "teale_robison.jpg",
+    "googleScholar": "",
+    "github": "",
+    "twitter": "",
+    "websites": [],
+    "description": "Teale is currently a senior at Texas State University, majoring in Urban and Regional Planning and minoring in Geographic Information Systems (GIS). She started at the Artificial Intelligence in Transportation (AIT) lab in fall 2024 and is currently working as an undergraduate research assistant for Dr. Das. Teale is passionate about the environment and sustainable development, especially involving transportation and creating a more efficient system. She has prior experience working as a Visual Analytics intern at Texas A&M Transportation Institute (TTI) utilizing GIS and ArcPy. Involved in several campus activities such as the Student Urban Planning Organization (SUPO) and SWIG (Supporting Women in Geography). In her free time, Teale enjoys playing board games, reading, and paddleboarding.",
+    "awards": [
+      "Bernard W. Detlefsen Junior Academic and Leadership Scholarship, $1,500 (2024)"
+    ]
   },
   {
     "name": "Jett Tipsword",
@@ -62,19 +101,6 @@
     "image": "dr._md._nasim_khan.jpg",
     "description": "Dr. Nasim Khan is a Senior Transportation Engineer at AtkinsRéalis, specializing in transportation safety, intelligent transportation systems, and traffic engineering. He holds a Ph.D. and a Master of Science in Transportation Engineering from the University of Wyoming, along with a Bachelor's degree in Civil Engineering from Bangladesh University of Engineering and Technology. Before his current role, Dr. Khan served as a Postdoctoral Scholar at Texas State University, where he worked at the Artificial Intelligence in Transportation (AIT) Lab, focusing on crash risk modeling, connected and autonomous vehicles, and smart traffic management systems. His professional experience includes roles as a Postdoctoral Research Associate and Graduate Research Assistant at the University of Wyoming, and as a Lecturer at the University of Information Technology & Sciences. Dr. Khan’s expertise includes advanced traffic control strategies, data-driven safety analysis, and GIS-based transportation studies. He has a strong record of publishing and presenting his research at major conferences and is dedicated to integrating innovative technologies to enhance transportation systems and improve safety.",
     "googleScholar": "https://scholar.google.com/citations?user=isdeiukAAAAJ&hl=en",
-    "github": "",
-    "twitter": "",
-    "websites": []
-  },
-  {
-    "name": "Amir Hossein Oliaee",
-    "label": "Ph.D. Candidate, Architecture, TAMU (2022) ",
-    "group": "Ph.D. Candidate",
-    "linkedin": "https://www.linkedin.com/in/oliaee/",
-    "email": "",
-    "image": "amir_hossein_oliaee.jpg",
-    "description": "Amir Hossein Oliaee holds a Ph.D. in Architecture from Texas A&M University, where he graduated in 2021. During his time at Texas A&M, he worked as a Research and Teaching Assistant, focusing on advanced topics such as large language models (LLM), natural language processing (NLP), high-performance computing (HPC), and data science. Proficient in Python, PyTorch, TensorFlow, and AWS, Amir has applied these skills to a range of innovative projects. His experience includes serving as a Graduate Student Worker at Texas A&M Transportation Institute, Co-Founder of Heterorganum, where he developed open-source tools for architectural design automation, and as a Data Scientist at V-SENSE, Trinity College Dublin, where he contributed to the development of a LiDAR point cloud dataset. Amir’s diverse background also includes roles as a Workshop Assistant at the Iranian Architecture Center and Digital Artist for the TADAEX festival. Throughout his career, Amir has combined his technical and creative skills to advance computational design, AI-driven solutions, and data-driven research in architecture and engineering.",
-    "googleScholar": "https://scholar.google.com/citations?user=uh210ZEQTg0C&hl=en",
     "github": "",
     "twitter": "",
     "websites": []

@@ -71,14 +71,16 @@ export default function TeamPage() {
           </div>
         </div>
 
-        {/* Graduate Students */}
+        {/* Post-Doctoral Researcher */}
         <div className="mb-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex items-start h-min">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-10 h-10 rounded-full flex items-center justify-center glass-card shrink-0 bg-purple-500/10">
                 <GraduationCap className="h-5 w-5 text-purple-500" />
               </div>
-              <h2 className="text-2xl font-bold gradient-text">Fellows</h2>
+              <h2 className="text-2xl font-bold gradient-text">
+                Post-Doctoral Researcher
+              </h2>
             </div>
           </div>
 
@@ -88,13 +90,79 @@ export default function TeamPage() {
                 <Spinner />
               </div>
             ) : (
-              fellows.map((fellow, index) => (
-                <TeamMemberCard
-                  key={index}
-                  member={fellow}
-                  onOpenModal={handleOpenModal}
-                />
-              ))
+              fellows
+                .filter((fellow) =>
+                  fellow.group.includes("Post-Doctoral Researcher")
+                )
+                .map((fellow, index) => (
+                  <TeamMemberCard
+                    key={index}
+                    member={fellow}
+                    onOpenModal={handleOpenModal}
+                  />
+                ))
+            )}
+          </div>
+        </div>
+
+        {/* Lab Alumni (Graduate) */}
+        <div className="mb-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="flex items-start h-min">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center glass-card shrink-0 bg-green-500/10">
+                <GraduationCap className="h-5 w-5 text-green-500" />
+              </div>
+              <h2 className="text-2xl font-bold gradient-text">
+                Lab Alumni (Graduate)
+              </h2>
+            </div>
+          </div>
+          <div className="col-span-2 grid grid-cols-1 gap-6">
+            {isFellowLoading ? (
+              <div className="flex items-center justify-center h-96">
+                <Spinner />
+              </div>
+            ) : (
+              fellows
+                .filter((fellow) => fellow.group.includes("Graduate"))
+                .map((fellow, index) => (
+                  <TeamMemberCard
+                    key={index}
+                    member={fellow}
+                    onOpenModal={handleOpenModal}
+                  />
+                ))
+            )}
+          </div>
+        </div>
+
+        {/* Lab Alumni (Undergraduate) */}
+        <div className="mb-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="flex items-start h-min">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center glass-card shrink-0 bg-yellow-500/10">
+                <GraduationCap className="h-5 w-5 text-yellow-500" />
+              </div>
+              <h2 className="text-2xl font-bold gradient-text">
+                Lab Alumni (Undergraduate)
+              </h2>
+            </div>
+          </div>
+          <div className="col-span-2 grid grid-cols-1 gap-6">
+            {isFellowLoading ? (
+              <div className="flex items-center justify-center h-96">
+                <Spinner />
+              </div>
+            ) : (
+              fellows
+                .filter((fellow) => fellow.group.includes("Undergraduate"))
+                .map((fellow, index) => (
+                  <TeamMemberCard
+                    key={index}
+                    member={fellow}
+                    onOpenModal={handleOpenModal}
+                  />
+                ))
             )}
           </div>
         </div>
