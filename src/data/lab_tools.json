@@ -476,5 +476,14 @@
         ],
         "image": "0-7144.png",
         "date": "April 16, 2025"
+    },
+    {
+        "title": "FRA-HF-001 Social and Community Factors Contributing to Pedestrian Trespass Behaviors on Railroad Systems",
+        "description": "This study presents a data-driven framework combining AI, behavioral insights, and visualization tools to address railroad trespassing. It highlights the importance of multidisciplinary strategies for improving rail safety and reducing trespass-related incidents.",
+        "latestProjectLink": "https://aitlab.shinyapps.io/fra-hrgc-trespass/",
+        "type": "web",
+        "links": [],
+        "image": "fra-hf-001.png",
+        "date": "June 20, 2025"
     }
 ]
