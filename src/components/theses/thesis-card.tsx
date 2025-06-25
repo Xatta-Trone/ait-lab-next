@@ -40,7 +40,7 @@ export default function ThesisCard({ thesis }: ThesisCardProps) {
           />
           <div className="absolute top-2 right-2">
             <Badge className={`${getTypeColor(thesis.type)} text-white`}>
-              {thesis.type === "dissertation" ? "Ph.D." : "Thesis"}
+              {thesis.type === "dissertation" ? "Dissertation" : "Thesis"}
             </Badge>
           </div>
         </div>

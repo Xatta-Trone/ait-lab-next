@@ -1,12 +1,12 @@
 [
     {
-        "title": "Artificial Intelligence and Spatial Modeling to Estimate Traffic Volume Measures on Local Roadways",
-        "author": "Mahumda Sultana Mimi",
+        "title": "Evaluating Crash Characteristics and Safety Outcomes at Roundabouts: Implications for Safer Intersections",
+        "author": "Rohit Chakraborty",
         "year": 2025,
         "term": "Summer",
-        "presentationLink": "/theses/MS_Thesis_Defense_Mahmuda2.pptx",
-        "thesesLink": "/theses/MS_Final Thesis Draft_Mahmuda Sultana Mimi_v2.docx",
-        "image": "/images/theses/mimi_theses.png",
+        "presentationLink": "/theses/Thesis_Defense_Rohit_Chakraborty_v5.pptx",
+        "thesesLink": "/theses/Thesis Final Draft_Rohit Chakraborty.docx",
+        "image": "/images/theses/rohit_theses.png",
         "type": "thesis"
     },
     {
@@ -37,6 +37,16 @@
         "presentationLink": "/theses/MS_ThesisDefense_SwastikaBarua_v05.pptx",
         "thesesLink": "/theses/Thesis-SB_Rural_Undivided-Fin_SB.docx",
         "image": "/images/theses/swastika_theses.png",
+        "type": "thesis"
+    },
+    {
+        "title": "Artificial Intelligence and Spatial Modeling to Estimate Traffic Volume Measures on Local Roadways",
+        "author": "Mahumda Sultana Mimi",
+        "year": 2025,
+        "term": "Summer",
+        "presentationLink": "/theses/MS_Thesis_Defense_Mahmuda2.pptx",
+        "thesesLink": "/theses/MS_Final Thesis Draft_Mahmuda Sultana Mimi_v2.docx",
+        "image": "/images/theses/mimi_theses.png",
         "type": "thesis"
     }
 ]
