@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Artificial Intelligence and Spatial Modeling to Estimate Traffic Volume Measures on Local Roadways",
+        "author": "Mahumda Sultana Mimi",
+        "year": 2025,
+        "term": "Summer",
+        "presentationLink": "/theses/MS_Thesis_Defense_Mahmuda2.pptx",
+        "thesesLink": "/theses/MS_Final Thesis Draft_Mahmuda Sultana Mimi_v2.docx",
+        "image": "/images/theses/mimi_theses.png",
+        "type": "thesis"
+    },
+    {
+        "title": "Analysis of Association Between Demographic, Socioeconomic, and Built Environment Factors and Pedestrian Safety Using Traditional and AI Approaches",
+        "author": "Jinli Liu, Ph.D.",
+        "year": 2024,
+        "term": "Fall",
+        "presentationLink": "/theses/LIU-DISSERTATION-2024.pdf",
+        "thesesLink": "/theses/LIU-DISSERTATION-2024.pdf",
+        "image": "/images/theses/liu_theses.png",
+        "type": "dissertation"
+    },
+    {
+        "title": "Exploring Latent Patterns in U-Turn Crashes: A Dual-Model Approach Using Association Rules Mining and Cluster Correspondence Analysis",
+        "author": "Syed Aaqib Javed",
+        "year": 2025,
+        "term": "Summer",
+        "presentationLink": "/theses/MS_ThesisDefense_SyedAaqibJaved_V2.pptx",
+        "thesesLink": "/theses/Thesis_V12_Javed.docx",
+        "image": "/images/theses/javed_theses.png",
+        "type": "thesis"
+    },
+    {
+        "title": "Analyzing Motorcycle Crashes on Rural Undivided Roads: A Data-Driven Approach",
+        "author": "Swastika Barua",
+        "year": 2025,
+        "term": "Summer",
+        "presentationLink": "/theses/MS_ThesisDefense_SwastikaBarua_v05.pptx",
+        "thesesLink": "/theses/Thesis-SB_Rural_Undivided-Fin_SB.docx",
+        "image": "/images/theses/swastika_theses.png",
+        "type": "thesis"
+    }
+]
