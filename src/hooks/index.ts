@@ -6,3 +6,4 @@ export * from "./useLabToolsData";
 export * from "./useFellowData";
 export * from "./useCoursesData";
 export * from "./useAlumniData";
+export * from "./useThesesData";

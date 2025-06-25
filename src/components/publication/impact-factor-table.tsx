@@ -78,7 +78,7 @@ export function ImpactFactorTable({
         };
       })
       .filter((row) => row !== null);
-  }, [ifPublicationData]);
+  }, [ifPublicationData, recentYears]);
 
   const yearColumns: ColumnDef<any>[] = React.useMemo(() => {
     return recentYears.map((year) => ({
@@ -96,7 +96,7 @@ export function ImpactFactorTable({
       ),
       enableSorting: true,
     }));
-  }, [ifPublicationData]);
+  }, [ifPublicationData, recentYears]);
 
   const columns: ColumnDef<any>[] = React.useMemo(
     () => [

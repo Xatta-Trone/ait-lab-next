@@ -52,7 +52,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-6">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -82,7 +82,7 @@ export default function Navbar() {
         </nav>
 
         {/* Mobile navigation with Sheet */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>
