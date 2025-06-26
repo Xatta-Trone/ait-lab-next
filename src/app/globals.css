@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import KaTeX styles for LaTeX math rendering */
+@import 'katex/dist/katex.min.css';
+
+/* Import Prism themes for syntax highlighting */
+@import 'prism-themes/themes/prism-vsc-dark-plus.css';
+
+/* Custom code block styling - override Prism defaults */
+pre[class*="language-"] {
+  background: rgb(15 23 42) !important; /* slate-900 */
+  color: rgb(241 245 249) !important; /* slate-100 */
+  border: 1px solid rgb(51 65 85) !important; /* slate-700 */
+  border-radius: 0.5rem !important;
+  padding: 1rem !important;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  overflow-x: auto !important;
+  margin: 1.5rem 0 !important;
+}
+
+.dark pre[class*="language-"] {
+  background: rgb(2 6 23) !important; /* slate-950 */
+  border-color: rgb(30 41 59) !important; /* slate-800 */
+}
+
+/* Ensure prose code blocks get the same styling */
+.prose pre {
+  background: rgb(15 23 42) !important; /* slate-900 */
+  color: rgb(241 245 249) !important; /* slate-100 */
+  border: 1px solid rgb(51 65 85) !important; /* slate-700 */
+  border-radius: 0.5rem !important;
+  padding: 1rem !important;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  overflow-x: auto !important;
+}
+
+.dark .prose pre {
+  background: rgb(2 6 23) !important; /* slate-950 */
+  border-color: rgb(30 41 59) !important; /* slate-800 */
+}
+
 @layer base {
   :root {
     --background: 210 40% 98%;

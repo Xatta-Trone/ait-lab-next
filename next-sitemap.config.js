@@ -1,15 +1,40 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://ait-lab.vercel.app", // Replace with your site's URL
-  generateRobotsTxt: true, // (optional) Generate robots.txt file
-  sitemapSize: 5000, // Maximum entries per sitemap
-  changefreq: "daily", // Default change frequency
-  priority: 0.7, // Default priority for URLs
-  // Optional: Add custom paths to exclude
-  // exclude: ['/exclude-path', '/another-path'],
-  // Optional: Additional configurations
+  siteUrl: process.env.NEXT_PUBLIC_BASE_URL || "https://aitlab.ioe.edu.np",
+  generateRobotsTxt: true,
+  sitemapSize: 5000,
+  changefreq: "daily",
+  priority: 0.7,
+  // Custom configuration for different page types
+  transform: async (config, path) => {
+    // Higher priority for story pages
+    if (path.startsWith("/story/")) {
+      return {
+        loc: path,
+        changefreq: "weekly",
+        priority: 0.9,
+        lastmod: new Date().toISOString(),
+      };
+    }
+
+    // Default configuration for other pages
+    return {
+      loc: path,
+      changefreq: config.changefreq,
+      priority: config.priority,
+      lastmod: new Date().toISOString(),
+    };
+  },
   robotsTxtOptions: {
-    policies: [{ userAgent: "*", allow: "/" }],
+    policies: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+      {
+        userAgent: "*",
+        disallow: ["/api/", "/_next/", "/admin/"],
+      },
+    ],
   },
 };
-  

@@ -1,0 +1,84 @@
+---
+title: "A Survey on Kolmogorov-Arnold Networks"
+authors:
+  - name: "Shriyank Somvanshi"
+    profile: "https://scholar.google.com/citations?user=JecpxeUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Syed Aaqib Javed"
+    profile: "https://scholar.google.com/citations?user=LN6RJTUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Md Monzurul Islam"
+    profile: "https://scholar.google.com/citations?hl=en&user=edkjFpwAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Diwas Pandit"
+    profile: "https://orcid.org/0009-0005-8481-2851"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+year: 2025
+category: "ACM Computing Surveys"
+abstract: "This review study explores the theoretical foundations, evolution, applications, and future potential of Kolmogorov-Arnold Networks (KAN), a neural network model inspired by the Kolmogorov-Arnold representation theorem. KANs set themselves apart from traditional neural networks by employing learnable, spline-parameterized functions rather than fixed activation functions, allowing for flexible and interpretable representations of high-dimensional functions. The review explores Kan's architectural strengths, including adaptive edge-based activation functions that enhance parameter efficiency and scalability across varied applications such as time series forecasting, computational biomedicine, and graph learning. Key advancements including Temporal-KAN (T-KAN), FastKAN, and Partial Differential Equation (PDE) KAN illustrate KAN's growing applicability in dynamic environments, significantly improving interpretability, computational efficiency, and adaptability for complex function approximation tasks. Moreover, the paper discusses KANs integration with other architectures, such as convolutional, recurrent, and transformer-based models, showcasing its versatility in complementing established neural networks for tasks that require hybrid approaches. Despite its strengths, KAN faces computational challenges in high-dimensional and noisy data settings, sparking continued research into optimization strategies, regularization techniques, and hybrid models. This paper highlights KANs expanding role in modern neural architectures and outlines future directions to enhance its computational efficiency, interpretability, and scalability in data-intensive applications."
+keywords: ["Computing methodologies", "Machine learning", "Deep learning theory", "Kolmogorov Arnold Networks (KAN)", "Model interpretability", "Applied computing", "Predictive analytics"]
+description: "Comprehensive survey of Kolmogorov-Arnold Networks (KAN) exploring theoretical foundations, evolution, applications, and future potential in neural network architectures."
+featured_image: "/images/story/kan_arch.png"
+buttons:
+  - text: "ACM Digital Library"
+    url: "https://doi.org/10.1145/3743128"
+    icon: "file"
+    variant: "default"
+  - text: "ArXiv Preprint"
+    url: "https://arxiv.org/abs/2411.06078"
+    icon: "globe"
+    variant: "secondary"
+  - text: "Watch Video"
+    url: "https://youtu.be/-vw9-gHQ7Jw"
+    icon: "play"
+    variant: "secondary"
+  - text: "GitHub"
+    url: "https://github.com/Xatta-Trone/awesome-kan"
+    icon: "github"
+    variant: "secondary"
+bibtex: |
+  @article{10.1145/3743128,
+        author = {Somvanshi, Shriyank and Javed, Syed Aaqib and Islam, Md Monzurul and Pandit, Diwas and Das, Subasish},
+        title = {A Survey on Kolmogorov-Arnold Network},
+        year = {2025},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        issn = {0360-0300},
+        url = {https://doi.org/10.1145/3743128},
+        doi = {10.1145/3743128},
+        note = {Just Accepted},
+        journal = {ACM Comput. Surv.},
+        month = jun,
+        keywords = {Kolmogorov-Arnold Network}
+    }
+---
+
+## KAN Architecture
+
+Kolmogorov-Arnold Networks (KANs) introduce a novel edge-based approach where learnable spline functions replace traditional fixed activation functions. Instead of applying non-linearities at nodes (like ReLU), each edge in a KAN applies a parameterized transformation $\phi_{ij}(x)$, typically modeled using B-splines.
+
+This design enables adaptive, interpretable, and compositional learning, inspired by the Kolmogorov–Arnold representation theorem. It enhances both model flexibility and explainability by learning customized activation behavior along each connection.
+
+![Kolmogorov-Arnold Network Architecture](/images/story/kan_arch.png)
+
+*Figure 1: Schematic representation of the KAN architecture. Each layer applies learnable univariate spline functions along the edges (between nodes), enabling edge-based transformations rather than traditional node-based activations. While the classical Kolmogorov-Arnold formulation applied outer functions only at the final stage, modern deep KAN architectures generalize this by applying spline-based transformations at every layer, ensuring compositional and interpretable modeling across the network.*
+
+## 🌱 Key Variants of KAN
+
+Since its introduction, the Kolmogorov-Arnold Network (KAN) has inspired several powerful architectural variants. Each is tailored to specific tasks or computational challenges, while preserving the core idea of edge-based, learnable spline activations.
+
+- **FastKAN**: An optimized version of KAN that replaces B-splines with Gaussian RBFs for faster computation and improved scalability.
+- **T-KAN**: A time-aware extension of KAN that incorporates temporal patterns, designed for sequence and time-series modeling.
+- **PDE-KAN**: Combines KAN with physics-informed learning to solve partial differential equations, enforcing domain constraints through regularization.
+- **Wav-KAN**: Integrates wavelet transformations into KAN, enhancing signal decomposition and localized feature extraction.
+- **SigKAN**: Uses signature transforms to model temporal dynamics in continuous streams, improving interpretability in time-series data.
+- **GKAN**: Adapts KAN to graph-structured data, supporting node-level and graph-level tasks via spline-transformed edge weights.
+
+These variants demonstrate KAN’s adaptability across domains such as physics, time-series analysis, graph learning, and signal processing.
+
+<YouTube id="-vw9-gHQ7Jw" />

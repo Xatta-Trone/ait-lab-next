@@ -7,3 +7,4 @@ export * from "./useFellowData";
 export * from "./useCoursesData";
 export * from "./useAlumniData";
 export * from "./useThesesData";
+export * from "./useStoriesData";

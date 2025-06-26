@@ -12,6 +12,10 @@ export const NavLinks: { title: string; href: string }[] = [
     href: "/publications",
   },
   {
+    title: "Paper Story",
+    href: "/story",
+  },
+  {
     title: "Theses & Dissertations",
     href: "/theses",
   },

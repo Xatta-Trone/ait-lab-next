@@ -96,7 +96,7 @@ export function ImpactFactorTable({
       ),
       enableSorting: true,
     }));
-  }, [ifPublicationData, recentYears]);
+  }, [recentYears]);
 
   const columns: ColumnDef<any>[] = React.useMemo(
     () => [
