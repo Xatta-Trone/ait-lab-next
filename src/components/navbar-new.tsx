@@ -22,7 +22,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpenDropdowns, setMobileOpenDropdowns] = useState<string[]>([]);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -33,30 +32,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Clear timeout on cleanup
-  useEffect(() => {
-    return () => {
-      if (hoverTimeout) {
-        clearTimeout(hoverTimeout);
-      }
-    };
-  }, [hoverTimeout]);
-
-  const handleDropdownEnter = (title: string) => {
-    if (hoverTimeout) {
-      clearTimeout(hoverTimeout);
-      setHoverTimeout(null);
-    }
-    setActiveDropdown(title);
-  };
-
-  const handleDropdownLeave = () => {
-    const timeout = setTimeout(() => {
-      setActiveDropdown(null);
-    }, 300); // Increased timeout for better UX
-    setHoverTimeout(timeout);
-  };
 
   const toggleMobileDropdown = (title: string) => {
     setMobileOpenDropdowns((prev) =>
@@ -80,9 +55,9 @@ export default function Navbar() {
       return (
         <div
           key={item.title}
-          className="relative"
-          onMouseEnter={() => handleDropdownEnter(item.title)}
-          onMouseLeave={handleDropdownLeave}
+          className="relative group"
+          onMouseEnter={() => setActiveDropdown(item.title)}
+          onMouseLeave={() => setActiveDropdown(null)}
         >
           <button
             className={cn(
@@ -102,32 +77,32 @@ export default function Navbar() {
             />
           </button>
 
-          {/* Custom Dropdown with improved positioning */}
-          {activeDropdown === item.title && (
-            <div
-              className="absolute top-full left-0 mt-2 w-max min-w-32 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50 py-1"
-              onMouseEnter={() => handleDropdownEnter(item.title)}
-              onMouseLeave={handleDropdownLeave}
-            >
+          {/* Custom Dropdown */}
+          <div
+            className={cn(
+              "absolute top-full left-0 mt-1 w-48 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 rounded-md shadow-lg transition-all duration-200 z-50",
+              "opacity-0 invisible translate-y-[-10px] pointer-events-none",
+              activeDropdown === item.title &&
+                "opacity-100 visible translate-y-0 pointer-events-auto"
+            )}
+          >
+            <div className="p-2 space-y-1">
               {item.children.map((child) => (
                 <Link
                   key={child.title}
                   href={child.href!}
-                  className="group block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors relative whitespace-nowrap w-fit"
+                  className={cn(
+                    "block px-3 py-2 text-sm rounded-md transition-colors hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400",
+                    pathname === child.href
+                      ? "text-blue-500 bg-blue-50 dark:bg-blue-900/20"
+                      : ""
+                  )}
                 >
                   {child.title}
-                  <span
-                    className={cn(
-                      "absolute bottom-1 left-4 right-4 h-0.5 bg-blue-500 transition-all duration-300",
-                      pathname === child.href
-                        ? "w-[calc(100%-2rem)]"
-                        : "w-0 group-hover:w-[calc(100%-2rem)]"
-                    )}
-                  ></span>
                 </Link>
               ))}
             </div>
-          )}
+          </div>
         </div>
       );
     }
@@ -148,7 +123,7 @@ export default function Navbar() {
         {item.title}
         <span
           className={cn(
-            "absolute -bottom-0.5 left-4 right-4 h-0.5 transition-all duration-300",
+            "absolute -bottom-1 left-4 right-4 h-0.5 transition-all duration-300",
             isActive
               ? "w-[calc(100%-2rem)]"
               : "w-0 group-hover:w-[calc(100%-2rem)]",

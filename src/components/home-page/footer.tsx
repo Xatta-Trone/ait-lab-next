@@ -1,8 +1,30 @@
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
-import { NavLinks } from "@/data/navLinks";
+import { NavLinks, type NavItem } from "@/data/navLinks";
 
-const quickLinks = NavLinks;
+// Flatten navigation items for footer display
+const flattenNavItems = (
+  items: NavItem[]
+): Array<{ title: string; href: string }> => {
+  const flattened: Array<{ title: string; href: string }> = [];
+
+  items.forEach((item) => {
+    if (item.href) {
+      flattened.push({ title: item.title, href: item.href });
+    }
+    if (item.children) {
+      item.children.forEach((child) => {
+        if (child.href) {
+          flattened.push({ title: child.title, href: child.href });
+        }
+      });
+    }
+  });
+
+  return flattened;
+};
+
+const quickLinks = flattenNavItems(NavLinks);
 
 const socialLinks = [
   { name: "LinkedIn", href: "https://www.linkedin.com/in/subasishdas/" },
