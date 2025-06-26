@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import KaTeX styles for LaTeX math rendering */
+@import 'katex/dist/katex.min.css';
+
+/* Import Prism themes for syntax highlighting */
+@import 'prism-themes/themes/prism-vsc-dark-plus.css';
+
+/* Custom code block styling - override Prism defaults */
+pre[class*="language-"] {
+  background: rgb(15 23 42) !important; /* slate-900 */
+  color: rgb(241 245 249) !important; /* slate-100 */
+  border: 1px solid rgb(51 65 85) !important; /* slate-700 */
+  border-radius: 0.5rem !important;
+  padding: 1rem !important;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  overflow-x: auto !important;
+  margin: 1.5rem 0 !important;
+}
+
+.dark pre[class*="language-"] {
+  background: rgb(2 6 23) !important; /* slate-950 */
+  border-color: rgb(30 41 59) !important; /* slate-800 */
+}
+
+/* Ensure prose code blocks get the same styling */
+.prose pre {
+  background: rgb(15 23 42) !important; /* slate-900 */
+  color: rgb(241 245 249) !important; /* slate-100 */
+  border: 1px solid rgb(51 65 85) !important; /* slate-700 */
+  border-radius: 0.5rem !important;
+  padding: 1rem !important;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  overflow-x: auto !important;
+}
+
+.dark .prose pre {
+  background: rgb(2 6 23) !important; /* slate-950 */
+  border-color: rgb(30 41 59) !important; /* slate-800 */
+}
+
 @layer base {
   :root {
     --background: 210 40% 98%;
@@ -179,5 +218,44 @@
 
 .dark .card-hover:hover {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Navigation Dropdown Styles */
+.nav-dropdown {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5rem;
+}
+
+.dark .nav-dropdown {
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-dropdown-item {
+  transition: all 0.15s ease-in-out;
+  position: relative;
+  isolation: isolate;
+}
+
+.nav-dropdown-item:hover span {
+  width: calc(100% - 1.5rem) !important;
+}
+
+/* Ensure proper isolation for nav items */
+.nav-item {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Smooth chevron rotation */
+.nav-chevron {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-chevron.open {
+  transform: rotate(180deg);
 }
 
