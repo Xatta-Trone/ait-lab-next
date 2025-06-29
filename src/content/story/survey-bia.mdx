@@ -1,0 +1,199 @@
+---
+title: "A Comprehensive Survey on Bio-Inspired Algorithms: Taxonomy, Applications, and Future Directions"
+authors:
+  - name: "Shriyank Somvanshi"
+    profile: "https://scholar.google.com/citations?user=JecpxeUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Md Monzurul Islam"
+    profile: "https://scholar.google.com/citations?hl=en&user=edkjFpwAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Syed Aaqib Javed"
+    profile: "https://scholar.google.com/citations?user=LN6RJTUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Gaurab Chhetri"
+    profile: "https://scholar.google.com/citations?user=NRzdAVEAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Kazi Sifatul Islam"
+    profile: "https://scholar.google.com/citations?hl=en&user=tROcM68AAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Tausif Islam Chowdhury"
+    profile: "https://scholar.google.com/citations?hl=en&user=CzZhaagAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Sazzad Bin Bashar Polock"
+    profile: "https://scholar.google.com/citations?user=jXTa4bAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Anandi Dutta, Ph.D."
+    profile: "https://scholar.google.com/citations?hl=en&user=x55wcQIAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+year: 2025
+category: "arXiv preprint"
+abstract: "Bio-inspired algorithms (BIAs) utilize natural processes such as evolution, swarm behavior, foraging, and plant growth to solve complex, nonlinear, high-dimensional optimization problems. This survey categorizes BIAs into eight groups: evolutionary, swarm intelligence, physics-inspired, ecosystem and plant-based, predator-prey, neural-inspired, human-inspired, and hybrid approaches, and reviews their core principles, strengths, and limitations. We illustrate the usage of these algorithms in machine learning, engineering design, bioinformatics, and intelligent systems, and highlight recent advances in hybridization, parameter tuning, and adaptive strategies. Finally, we identify open challenges such as scalability, convergence, reliability, and interpretability to suggest directions for future research. This work aims to serve as a foundational resource for both researchers and practitioners interested in understanding the current landscape and future directions of bio-inspired computing."
+keywords:
+  [
+    "Computing methodologies",
+    "Bio-inspired approaches",
+    "Heuristic function construction",
+    "Theory of computation",
+    "Evolutionary algorithms",
+    "Optimization algorithms",
+    "Mathematics of computing",
+    "Mathematical optimization",
+    "Swarm Intelligence",
+    "Hybrid Optimization",
+    "Multiobjective Optimization",
+    "Nature-Inspired Computing",
+  ]
+description: "Comprehensive survey of bio-inspired algorithms exploring their theoretical foundations, applications, and future potential in optimization and machine learning."
+featured_image: "/images/story/evolution_bia.png"
+buttons:
+  - text: "ArXiv Preprint"
+    url: "https://arxiv.org/abs/2506.04238"
+    icon: "globe"
+    variant: "default"
+  - text: "Watch Video"
+    url: "https://youtu.be/BnftNTFpJMc"
+    icon: "play"
+    variant: "secondary"
+bibtex: |
+  @article{somvanshi2025comprehensive,
+      title={A Comprehensive Survey on Bio-Inspired Algorithms: Taxonomy, Applications, and Future Directions},
+      author={Somvanshi, Shriyank and Islam, Md Monzurul and Javed, Syed Aaqib and Chhetri, Gaurab and Islam, Kazi Sifatul and Chowdhury, Tausif Islam and Polock, Sazzad Bin Bashar and Dutta, Anandi and Das, Subasish},
+      journal={arXiv preprint arXiv:2506.04238},
+      year={2025}
+  }
+---
+
+## Bio-Inspired Algorithm Taxonomy
+
+Bio-Inspired Algorithms (BIAs) represent a class of metaheuristic methods inspired by biological and natural processes, designed to solve complex, nonlinear, high-dimensional optimization problems. These algorithms emulate strategies from evolution, swarm behavior, foraging, and immune response systems, offering robust and flexible problem-solving mechanisms.
+
+The fundamental strength of BIAs lies in their ability to traverse vast and complex search spaces efficiently through stochastic, population-based, and adaptive approaches. Unlike classical optimization methods that require gradient information and struggle with local optima, BIAs maintain solution diversity through mechanisms such as mutation, self-organization, and decentralized coordination.
+
+![Bio-Inspired Algorithm Evolution](/images/story/evolution_bia.png)
+_Figure 1: Evolutionary motivation and lineage of major bio-inspired algorithms_
+
+## 🌱 Eight Categories of Bio-Inspired Algorithms
+
+This comprehensive survey categorizes bio-inspired algorithms into eight distinct groups, each inspired by different natural phenomena and exhibiting unique characteristics:
+
+### 1. **Evolutionary Algorithms**
+
+- **Genetic Algorithms (GA)**: Inspired by natural selection and genetic inheritance
+- **Differential Evolution (DE)**: Based on vector differences for population evolution
+- **Evolutionary Programming**: Focuses on behavioral evolution rather than genetic structure
+- **Evolution Strategies**: Emphasizes mutation and selection in continuous optimization
+
+### 2. **Swarm Intelligence**
+
+- **Particle Swarm Optimization (PSO)**: Models social behavior of bird flocking and fish schooling
+- **Ant Colony Optimization (ACO)**: Inspired by ant foraging behavior and pheromone trails
+- **Artificial Bee Colony (ABC)**: Based on honey bee foraging behavior
+- **Firefly Algorithm**: Models flashing behavior and attraction of fireflies
+
+### 3. **Physics-Inspired**
+
+- **Simulated Annealing**: Based on annealing process in metallurgy
+- **Gravitational Search Algorithm**: Inspired by gravitational forces between masses
+- **Harmony Search**: Models musical improvisation process
+- **Big Bang-Big Crunch**: Based on cosmological theories
+
+### 4. **Ecosystem and Plant-Based**
+
+- **Invasive Weed Optimization**: Inspired by weed colonization and growth
+- **Flower Pollination Algorithm**: Models flower pollination process
+- **Artificial Plant Optimization**: Based on plant growth and adaptation
+- **Photosynthetic Algorithm**: Inspired by photosynthesis process
+
+### 5. **Predator-Prey**
+
+- **Wolf Pack Algorithm**: Models wolf hunting behavior
+- **Lion Optimization Algorithm**: Based on lion pride behavior
+- **Whale Optimization Algorithm**: Inspired by humpback whale hunting
+- **Grey Wolf Optimizer**: Models grey wolf hunting hierarchy
+
+### 6. **Neural-Inspired**
+
+- **Artificial Immune Systems**: Based on human immune system response
+- **Neural Evolution**: Combines neural networks with evolutionary principles
+- **Spiking Neural Networks**: Models biological neuron behavior
+- **Cellular Neural Networks**: Inspired by cellular automata
+
+### 7. **Human-Inspired**
+
+- **Teaching-Learning-Based Optimization**: Models classroom teaching process
+- **Imperialist Competitive Algorithm**: Based on imperialistic competition
+- **Social Spider Optimization**: Inspired by social spider behavior
+- **League Championship Algorithm**: Models sports league competition
+
+### 8. **Hybrid Approaches**
+
+- **PSO-GA Hybrid**: Combines particle swarm with genetic algorithms
+- **ACO-SA Hybrid**: Integrates ant colony with simulated annealing
+- **Multi-objective BIAs**: Addresses multiple conflicting objectives
+- **Adaptive BIAs**: Self-tuning parameter control mechanisms
+
+<YouTube id="BnftNTFpJMc" />
+
+## 📈 Applications Across Domains
+
+Bio-inspired algorithms have demonstrated remarkable versatility across diverse application domains:
+
+### **Machine Learning & AI**
+
+- **Neural Network Training**: Optimizing weights and architectures
+- **Feature Selection**: Identifying optimal feature subsets
+- **Hyperparameter Tuning**: Automating model configuration
+- **Clustering**: Unsupervised pattern recognition
+
+### **Engineering Design**
+
+- **Structural Optimization**: Truss design, mechanical components
+- **Electrical Engineering**: Circuit design, antenna optimization
+- **Control Systems**: PID tuning, robust control design
+- **Manufacturing**: Production scheduling, resource allocation
+
+### **Bioinformatics & Healthcare**
+
+- **Protein Structure Prediction**: Molecular docking simulations
+- **Drug Discovery**: Molecular design and optimization
+- **Medical Image Processing**: Segmentation and classification
+- **Genomic Analysis**: Sequence alignment and pattern recognition
+
+### **Intelligent Systems**
+
+- **Robotics**: Path planning, swarm robotics
+- **Internet of Things (IoT)**: Network optimization, routing
+- **Smart Grids**: Energy distribution optimization
+- **Autonomous Vehicles**: Trajectory planning, control systems
+
+## 🔬 Recent Advances & Future Directions
+
+### **Hybridization Strategies**
+
+Recent research has focused on combining multiple bio-inspired approaches to leverage their complementary strengths. Hybrid algorithms often achieve superior performance by balancing exploration and exploitation capabilities.
+
+### **Parameter Tuning & Adaptation**
+
+- **Self-adaptive mechanisms**: Algorithms that automatically adjust their parameters
+- **Reinforcement learning integration**: Using RL for parameter control
+- **Multi-population approaches**: Maintaining diversity through multiple sub-populations
+
+### **Dynamic Optimization**
+
+- **Time-varying environments**: Adapting to changing problem landscapes
+- **Memory mechanisms**: Preserving useful information across generations
+- **Prediction models**: Anticipating future changes in the environment
+
+### **Open Challenges**
+
+1. **Scalability**: Performance degradation in high-dimensional spaces
+2. **Convergence**: Balancing exploration vs. exploitation
+3. **Reliability**: Ensuring consistent performance across different problems
+4. **Interpretability**: Understanding algorithm behavior and decisions
+5. **Benchmarking**: Standardized evaluation frameworks
+6. **Theoretical Foundations**: Mathematical analysis of convergence properties
