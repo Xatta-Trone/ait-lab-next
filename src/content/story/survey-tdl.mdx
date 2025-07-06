@@ -1,0 +1,293 @@
+---
+title: "A Survey on Deep Tabular Learning"
+authors:
+  - name: "Shriyank Somvanshi"
+    profile: "https://scholar.google.com/citations?user=JecpxeUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Syed Aaqib Javed"
+    profile: "https://scholar.google.com/citations?user=LN6RJTUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Gian Antariksa"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Ahmed Hossain"
+    profile: ""
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+year: 2024
+category: "arXiv preprint"
+abstract: "Tabular data, widely used in industries like healthcare, finance, and transportation, presents unique challenges for deep learning due to its heterogeneous nature and lack of spatial structure. This survey reviews the evolution of deep learning models for tabular data, from early fully connected networks (FCNs) to advanced architectures like TabNet, SAINT, TabTranSELU, and MambaNet. These models incorporate attention mechanisms, feature embeddings, and hybrid architectures to address tabular data complexities. TabNet uses sequential attention for instance-wise feature selection, improving interpretability, while SAINT combines self-attention and intersample attention to capture complex interactions across features and data points, both advancing scalability and reducing computational overhead. Hybrid architectures such as TabTransformer and FT-Transformer integrate attention mechanisms with multi-layer perceptrons (MLPs) to handle categorical and numerical data, with FT-Transformer adapting transformers for tabular datasets. Research continues to balance performance and efficiency for large datasets. Graph-based models like GNN4TDL and GANDALF combine neural networks with decision trees or graph structures, enhancing feature representation and mitigating overfitting in small datasets through advanced regularization techniques. Diffusion-based models like the Tabular Denoising Diffusion Probabilistic Model (TabDDPM) generate synthetic data to address data scarcity, improving model robustness. Similarly, models like TabPFN and Ptab leverage pre-trained language models, incorporating transfer learning and self-supervised techniques into tabular tasks. This survey highlights key advancements and outlines future research directions on scalability, generalization, and interpretability in diverse tabular data applications."
+keywords:
+  [
+    "Computing methodologies",
+    "Machine learning",
+    "Deep learning",
+    "Tabular data",
+    "Attention mechanisms",
+    "Feature embeddings",
+    "Hybrid architectures",
+    "Graph-based models",
+    "Diffusion models",
+    "Transfer learning",
+    "Self-supervised learning",
+    "Interpretability",
+  ]
+description: "Comprehensive survey of deep learning models for tabular data exploring their evolution, architectures, and applications across various domains."
+featured_image: "/images/story/tdl_SubTab.png"
+buttons:
+  - text: "ArXiv Preprint"
+    url: "https://arxiv.org/abs/2410.12034"
+    icon: "globe"
+    variant: "default"
+  - text: "Watch Video"
+    url: "https://youtu.be/ponutmABFh4"
+    icon: "play"
+    variant: "secondary"
+  - text: "GitHub"
+    url: "https://github.com/Xatta-Trone/awesome-tdl"
+    icon: "github"
+    variant: "secondary"
+bibtex: |
+  @article{2410.12034,
+        author = {Somvanshi, Shriyank and Das, Subasish and Javed, Syed Aaqib and Antariksa, Gian and Hossain, Ahmed},
+        title = {A Survey on Deep Tabular Learning},
+        year = {2024},
+        publisher = {arXiv},
+        url = {https://arxiv.org/abs/2410.12034},
+        doi = {10.48550/arXiv.2410.12034},
+        note = {arXiv preprint},
+        journal = {arXiv:2410.12034},
+        keywords = {Deep Tabular Learning, Tabular Data, Attention Mechanisms, Feature Embeddings, Hybrid Architectures}
+    }
+---
+
+## Deep Tabular Learning Evolution
+
+Tabular data, characterized by its heterogeneous nature and lack of spatial structure, presents unique challenges for deep learning applications. Unlike image or text data, tabular data consists of mixed data types (numerical, categorical, ordinal) without inherent spatial or sequential relationships, making traditional deep learning architectures less effective.
+
+This survey traces the evolution of deep learning models for tabular data, from early fully connected networks (FCNs) to sophisticated architectures that incorporate attention mechanisms, feature embeddings, and hybrid approaches. The field has witnessed significant advancements in addressing the fundamental challenges of tabular data representation and learning.
+
+![Deep Tabular Learning Architecture](/images/story/tdl_SubTab.png)
+
+_Figure 1: SubTab framework._
+
+## 🌱 Key Architectural Innovations
+
+### **Attention-Based Models**
+
+Attention mechanisms have revolutionized deep tabular learning by enabling models to focus on relevant features and capture complex interactions:
+
+#### **TabNet**
+
+- **Sequential Attention**: Instance-wise feature selection for improved interpretability
+- **Feature Selection**: Automatic identification of important features for each prediction
+- **Sparse Feature Selection**: Reducing computational overhead while maintaining performance
+- **Interpretable Decisions**: Providing insights into feature importance for each prediction
+
+#### **SAINT (Self-Attention and Intersample Attention Transformer)**
+
+- **Self-Attention**: Capturing feature-to-feature interactions within samples
+- **Intersample Attention**: Modeling relationships between different data points
+- **Dual Attention Mechanism**: Combining both attention types for comprehensive modeling
+- **Scalability**: Efficient attention computation for large datasets
+
+#### **TabTranSELU**
+
+- **SELU Activation**: Self-normalizing neural networks for stable training
+- **Attention Integration**: Combining attention with SELU for better performance
+- **Feature Interaction Modeling**: Capturing complex feature relationships
+- **Training Stability**: Improved convergence through self-normalization
+
+### **Hybrid Architectures**
+
+Modern deep tabular learning models combine multiple architectural paradigms to leverage their complementary strengths:
+
+#### **TabTransformer**
+
+- **Transformer Integration**: Adapting transformer architectures for tabular data
+- **Categorical Embeddings**: Learning meaningful representations for categorical features
+- **Numerical Processing**: Specialized handling of numerical features
+- **Multi-head Attention**: Capturing diverse feature interaction patterns
+
+#### **FT-Transformer (Feature Tokenizer Transformer)**
+
+- **Feature Tokenization**: Converting tabular features into token representations
+- **Transformer Adaptation**: Modifying transformer architecture for tabular datasets
+- **Categorical-Numerical Fusion**: Unified processing of mixed data types
+- **Scalable Architecture**: Efficient processing of large tabular datasets
+
+#### **MambaNet**
+
+- **State Space Models**: Leveraging structured state space models for tabular data
+- **Linear Complexity**: Efficient processing with linear computational complexity
+- **Long-range Dependencies**: Capturing complex feature interactions
+- **Memory Efficiency**: Reduced memory requirements compared to attention-based models
+
+## 📈 Advanced Model Categories
+
+### **Graph-Based Models**
+
+Graph-based approaches represent tabular data as graphs to capture complex relationships:
+
+#### **GNN4TDL (Graph Neural Networks for Tabular Deep Learning)**
+
+- **Graph Construction**: Converting tabular data into graph representations
+- **Node Features**: Representing data points as graph nodes
+- **Edge Relationships**: Modeling feature interactions as graph edges
+- **Graph Neural Networks**: Applying GNN architectures for learning
+
+#### **GANDALF (Graph Attention Networks with Decision Trees)**
+
+- **Hybrid Architecture**: Combining neural networks with decision trees
+- **Graph Attention**: Attention mechanisms in graph neural networks
+- **Tree Integration**: Incorporating decision tree structures
+- **Regularization**: Advanced techniques to prevent overfitting
+
+### **Diffusion-Based Models**
+
+Diffusion models have been adapted for tabular data generation and augmentation:
+
+#### **TabDDPM (Tabular Denoising Diffusion Probabilistic Model)**
+
+- **Synthetic Data Generation**: Creating realistic tabular data samples
+- **Data Augmentation**: Addressing data scarcity through generation
+- **Model Robustness**: Improving model performance with synthetic data
+- **Privacy Preservation**: Generating data while maintaining privacy
+
+### **Pre-trained Language Model Integration**
+
+Recent approaches leverage pre-trained language models for tabular tasks:
+
+#### **TabPFN (Tabular Prior-Free Neural Network)**
+
+- **Pre-trained Models**: Leveraging language model pre-training
+- **Transfer Learning**: Applying knowledge from pre-trained models
+- **Few-shot Learning**: Learning from limited tabular data
+- **Scalable Architecture**: Efficient processing of large datasets
+
+#### **Ptab**
+
+- **Language Model Adaptation**: Adapting language models for tabular data
+- **Self-supervised Learning**: Leveraging self-supervised techniques
+- **Feature Representation**: Learning meaningful feature embeddings
+- **Cross-modal Transfer**: Transferring knowledge across different data modalities
+
+<YouTube id="ponutmABFh4" />
+
+## 🔬 Applications Across Domains
+
+Deep tabular learning has demonstrated remarkable success across diverse application domains:
+
+### **Healthcare & Medical**
+
+- **Disease Diagnosis**: Predicting medical conditions from patient data
+- **Drug Discovery**: Molecular property prediction and drug design
+- **Clinical Decision Support**: Assisting healthcare professionals
+- **Patient Risk Assessment**: Predicting health outcomes and risks
+- **Medical Imaging Analysis**: Combining tabular data with imaging
+
+### **Finance & Banking**
+
+- **Credit Scoring**: Assessing creditworthiness from financial data
+- **Fraud Detection**: Identifying fraudulent transactions
+- **Risk Management**: Predicting financial risks and market trends
+- **Customer Segmentation**: Understanding customer behavior patterns
+- **Algorithmic Trading**: Market prediction and trading strategies
+
+### **Transportation & Logistics**
+
+- **Traffic Prediction**: Forecasting traffic patterns and congestion
+- **Route Optimization**: Finding optimal transportation routes
+- **Demand Forecasting**: Predicting transportation demand
+- **Vehicle Maintenance**: Predictive maintenance scheduling
+- **Supply Chain Optimization**: Logistics and inventory management
+
+### **E-commerce & Retail**
+
+- **Recommendation Systems**: Product and content recommendations
+- **Customer Behavior Analysis**: Understanding purchasing patterns
+- **Inventory Management**: Optimizing stock levels
+- **Price Optimization**: Dynamic pricing strategies
+- **Churn Prediction**: Identifying customers likely to leave
+
+### **Manufacturing & Industry**
+
+- **Quality Control**: Predicting product quality from process data
+- **Predictive Maintenance**: Equipment failure prediction
+- **Process Optimization**: Improving manufacturing efficiency
+- **Energy Management**: Optimizing energy consumption
+- **Supply Chain Management**: End-to-end supply chain optimization
+
+## 🚀 Emerging Trends & Future Directions
+
+### **Scalability & Efficiency**
+
+- **Large-scale Processing**: Handling massive tabular datasets
+- **Computational Efficiency**: Reducing training and inference time
+- **Memory Optimization**: Managing memory requirements for large models
+- **Distributed Training**: Scaling across multiple computing resources
+
+### **Generalization & Robustness**
+
+- **Domain Adaptation**: Transferring knowledge across different domains
+- **Out-of-Distribution Generalization**: Handling unseen data distributions
+- **Adversarial Robustness**: Defending against adversarial attacks
+- **Uncertainty Quantification**: Estimating prediction uncertainty
+
+### **Interpretability & Explainability**
+
+- **Feature Importance**: Understanding which features drive predictions
+- **Model Interpretability**: Making complex models understandable
+- **Decision Explanations**: Providing explanations for model decisions
+- **Fairness & Bias**: Ensuring fair and unbiased predictions
+
+### **Multi-modal Integration**
+
+- **Tabular + Text**: Combining tabular data with text information
+- **Tabular + Image**: Integrating tabular data with visual information
+- **Tabular + Time Series**: Handling temporal aspects of tabular data
+- **Cross-modal Learning**: Learning representations across different modalities
+
+## 📊 Research Impact & Community Engagement
+
+This comprehensive survey provides a foundational resource for researchers and practitioners working in deep tabular learning.
+
+The survey addresses critical challenges in tabular data modeling, including:
+
+- **Heterogeneous Data Types**: Handling mixed numerical and categorical features
+- **Feature Interactions**: Capturing complex relationships between features
+- **Scalability**: Processing large-scale tabular datasets efficiently
+- **Interpretability**: Making deep learning models understandable for tabular data
+
+The research community has shown increasing interest in deep tabular learning as a solution for complex tabular data problems across various industries. This survey serves as a comprehensive guide for understanding the current state of the field and identifying future research directions.
+
+The work has fostered discussions about the applicability of deep learning to tabular data, challenging the traditional dominance of tree-based methods and gradient boosting in this domain. This has implications for the broader adoption of deep learning in industries that primarily work with tabular data.
+
+## 🔮 Future Challenges & Opportunities
+
+### **Technical Challenges**
+
+1. **Feature Engineering**: Automating the process of feature creation and selection
+2. **Data Quality**: Handling missing values, outliers, and noisy data
+3. **Model Complexity**: Balancing model performance with interpretability
+4. **Computational Resources**: Managing the computational cost of deep models
+
+### **Research Opportunities**
+
+1. **Novel Architectures**: Designing specialized architectures for tabular data
+2. **Advanced Optimization**: Developing efficient training and inference methods
+3. **Multi-modal Learning**: Integrating tabular data with other data types
+4. **Automated Machine Learning**: Building AutoML systems for tabular data
+
+### **Industry Applications**
+
+1. **Real-time Systems**: Deploying deep tabular models in production environments
+2. **Edge Computing**: Running models on resource-constrained devices
+3. **Privacy-preserving Learning**: Training models while protecting data privacy
+4. **Federated Learning**: Collaborative learning across distributed datasets
+
+The survey provides a roadmap for future research and development in deep tabular learning, highlighting the potential for transformative impact across industries that rely heavily on tabular data for decision-making and prediction tasks.

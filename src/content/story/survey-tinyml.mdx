@@ -1,0 +1,275 @@
+---
+title: "From Tiny Machine Learning to Tiny Deep Learning: A Survey"
+authors:
+  - name: "Shriyank Somvanshi"
+    profile: "https://scholar.google.com/citations?user=JecpxeUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Md Monzurul Islam"
+    profile: "https://scholar.google.com/citations?hl=en&user=edkjFpwAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Gaurab Chhetri"
+    profile: "https://scholar.google.com/citations?user=NRzdAVEAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Rohit Chakraborty"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Mahmuda Sultana Mimi"
+    profile: "https://scholar.google.com/citations?user=CUmpUkAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Sawgat Ahmed Shuvo"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Kazi Sifatul Islam"
+    profile: "https://scholar.google.com/citations?hl=en&user=tROcM68AAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Syed Aaqib Javed"
+    profile: "https://scholar.google.com/citations?user=LN6RJTUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Sharif Ahmed Rafat"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Anandi Dutta, Ph.D."
+    profile: "https://scholar.google.com/citations?hl=en&user=x55wcQIAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+year: 2025
+category: "arXiv preprint"
+abstract: "The rapid growth of edge devices has driven the demand for deploying artificial intelligence (AI) at the edge, giving rise to Tiny Machine Learning (TinyML) and its evolving counterpart, Tiny Deep Learning (TinyDL). While TinyML initially focused on enabling simple inference tasks on microcontrollers, the emergence of TinyDL marks a paradigm shift toward deploying deep learning models on severely resource-constrained hardware. This survey presents a comprehensive overview of the transition from TinyML to TinyDL, encompassing architectural innovations, hardware platforms, model optimization techniques, and software toolchains. We analyze state-of-the-art methods in quantization, pruning, and neural architecture search (NAS), and examine hardware trends from MCUs to dedicated neural accelerators. Furthermore, we categorize software deployment frameworks, compilers, and AutoML tools enabling practical on-device learning. Applications across domains such as computer vision, audio recognition, healthcare, and industrial monitoring are reviewed to illustrate the real-world impact of TinyDL. Finally, we identify emerging directions including neuromorphic computing, federated TinyDL, edge-native foundation models, and domain-specific co-design approaches. This survey aims to serve as a foundational resource for researchers and practitioners, offering a holistic view of the ecosystem and laying the groundwork for future advancements in edge AI."
+keywords:
+  [
+    "Computing methodologies",
+    "Machine learning",
+    "Deep learning",
+    "Tiny Machine Learning (TinyML)",
+    "Tiny Deep Learning (TinyDL)",
+    "Edge computing",
+    "Model optimization",
+    "Neural architecture search",
+    "Quantization",
+    "Pruning",
+    "Hardware acceleration",
+    "Embedded systems",
+  ]
+description: "Comprehensive survey of Tiny Machine Learning to Tiny Deep Learning exploring their evolution, optimization techniques, hardware platforms, and applications in edge AI."
+featured_image: "/images/story/tinyml.png"
+buttons:
+  - text: "ArXiv Preprint"
+    url: "https://arxiv.org/abs/2506.18927"
+    icon: "globe"
+    variant: "default"
+  - text: "Watch Video"
+    url: "https://youtu.be/_H2vqzYayng"
+    icon: "play"
+    variant: "secondary"
+  - text: "GitHub"
+    url: "https://github.com/gauravfs-14/awesome-tinyml"
+    icon: "github"
+    variant: "secondary"
+bibtex: |
+  @article{2506.18927,
+        author = {Somvanshi, Shriyank and Islam, Md Monzurul and Chhetri, Gaurab and Chakraborty, Rohit and Mimi, Mahmuda Sultana and Shuvo, Sawgat Ahmed and Islam, Kazi Sifatul and Javed, Syed Aaqib and Rafat, Sharif Ahmed and Dutta, Anandi and Das, Subasish},
+        title = {From Tiny Machine Learning to Tiny Deep Learning: A Survey},
+        year = {2025},
+        publisher = {arXiv},
+        url = {https://arxiv.org/abs/2506.18927},
+        doi = {10.48550/arXiv.2506.18927},
+        note = {arXiv preprint},
+        journal = {arXiv:2506.18927},
+        keywords = {Tiny Machine Learning, Tiny Deep Learning, Edge AI, Model Optimization, Neural Architecture Search}
+    }
+---
+
+## TinyML to TinyDL Evolution
+
+The rapid proliferation of edge devices has catalyzed a paradigm shift in artificial intelligence deployment, giving rise to Tiny Machine Learning (TinyML) and its advanced evolution, Tiny Deep Learning (TinyDL). This transition represents a fundamental change from simple inference tasks on microcontrollers to sophisticated deep learning capabilities on severely resource-constrained hardware.
+
+TinyML initially emerged to enable basic machine learning inference on microcontrollers with limited memory (typically < 1MB) and computational power. However, the growing demand for more sophisticated AI capabilities at the edge has driven the development of TinyDL, which focuses on deploying complex deep learning models on resource-constrained devices while maintaining performance and efficiency.
+
+![TinyML to TinyDL Architecture Evolution](/images/story/tinyml.png)
+_Figure 1: TinyML Pipeline._
+
+## 🌱 Key Technological Innovations
+
+### **Model Optimization Techniques**
+
+The success of TinyDL relies heavily on sophisticated model optimization techniques that enable deep learning models to operate within the strict constraints of edge devices:
+
+#### **Quantization**
+
+- **Post-training Quantization**: Converting pre-trained models to lower precision (8-bit, 4-bit, or binary)
+- **Quantization-Aware Training (QAT)**: Training models with quantization constraints from the beginning
+- **Mixed-Precision Quantization**: Using different precision levels for different layers
+- **Dynamic Quantization**: Runtime precision adjustment based on computational requirements
+
+#### **Pruning**
+
+- **Structured Pruning**: Removing entire channels, filters, or layers
+- **Unstructured Pruning**: Removing individual weights based on importance
+- **Iterative Pruning**: Gradual removal of parameters during training
+- **Neural Architecture Pruning**: Optimizing network topology
+
+#### **Neural Architecture Search (NAS)**
+
+- **Hardware-Aware NAS**: Designing architectures optimized for specific hardware
+- **Multi-objective NAS**: Balancing accuracy, latency, and memory usage
+- **One-shot NAS**: Efficient architecture search through weight sharing
+- **AutoML for TinyDL**: Automated model design and optimization
+
+### **Hardware Platforms**
+
+The evolution of TinyDL has been supported by significant advances in hardware platforms:
+
+#### **Microcontrollers (MCUs)**
+
+- **ARM Cortex-M Series**: Low-power, cost-effective solutions
+- **ESP32 Series**: Integrated WiFi and Bluetooth capabilities
+- **STM32 Series**: High-performance MCUs with DSP capabilities
+- **RISC-V Based**: Open-source architecture for customization
+
+#### **Neural Accelerators**
+
+- **Tensor Processing Units (TPUs)**: Google's specialized AI accelerators
+- **Neural Processing Units (NPUs)**: Dedicated neural network processors
+- **Field-Programmable Gate Arrays (FPGAs)**: Reconfigurable hardware
+- **Application-Specific Integrated Circuits (ASICs)**: Custom-designed chips
+
+## 📈 Applications Across Domains
+
+TinyDL has demonstrated remarkable versatility across diverse application domains, enabling intelligent capabilities in previously unimaginable contexts:
+
+### **Computer Vision**
+
+- **Object Detection**: Real-time detection on edge cameras
+- **Face Recognition**: Privacy-preserving biometric systems
+- **Gesture Recognition**: Human-computer interaction
+- **Quality Inspection**: Industrial manufacturing automation
+- **Autonomous Vehicles**: On-board perception systems
+
+### **Audio Recognition**
+
+- **Voice Commands**: Always-on voice interfaces
+- **Sound Classification**: Environmental monitoring
+- **Music Recognition**: Content identification
+- **Noise Cancellation**: Real-time audio processing
+- **Speech-to-Text**: Offline transcription capabilities
+
+### **Healthcare & Medical**
+
+- **Wearable Devices**: Continuous health monitoring
+- **Medical Imaging**: Point-of-care diagnostics
+- **Drug Discovery**: Molecular property prediction
+- **Patient Monitoring**: Real-time vital sign analysis
+- **Telemedicine**: Remote diagnostic capabilities
+
+### **Industrial Monitoring**
+
+- **Predictive Maintenance**: Equipment failure prediction
+- **Quality Control**: Automated inspection systems
+- **Energy Management**: Smart grid optimization
+- **Environmental Monitoring**: Pollution detection
+- **Supply Chain**: Inventory and logistics optimization
+
+### **Smart Cities & IoT**
+
+- **Traffic Management**: Intelligent transportation systems
+- **Smart Buildings**: Energy and security optimization
+- **Public Safety**: Surveillance and emergency response
+- **Environmental Sensing**: Air quality and weather monitoring
+- **Infrastructure Monitoring**: Bridge and road condition assessment
+
+<YouTube id="_H2vqzYayng" />
+
+## 🔬 Software Ecosystem & Toolchains
+
+The TinyDL ecosystem is supported by a comprehensive software stack that enables efficient development and deployment:
+
+### **Development Frameworks**
+
+- **TensorFlow Lite**: Google's mobile and edge ML framework
+- **PyTorch Mobile**: Facebook's mobile deployment solution
+- **ONNX Runtime**: Cross-platform inference engine
+- **Apache TVM**: End-to-end deep learning compiler
+- **NCNN**: Tencent's high-performance inference framework
+
+### **Model Optimization Tools**
+
+- **TensorFlow Model Optimization Toolkit**: Quantization and pruning
+- **PyTorch Quantization**: Dynamic and static quantization
+- **Intel OpenVINO**: Model optimization and deployment
+- **Qualcomm Neural Processing SDK**: Mobile optimization
+- **ARM Compute Library**: Optimized kernels for ARM processors
+
+### **AutoML Platforms**
+
+- **Google AutoML**: Automated model design
+- **Microsoft Azure ML**: Cloud-based model optimization
+- **Amazon SageMaker**: End-to-end ML pipeline
+- **Hugging Face Optimum**: Model optimization library
+- **Neural Magic**: Sparse neural network optimization
+
+## 🚀 Emerging Directions & Future Trends
+
+### **Neuromorphic Computing**
+
+- **Spiking Neural Networks (SNNs)**: Brain-inspired computing
+- **Memristor-based Systems**: Analog computing for AI
+- **Event-Driven Processing**: Energy-efficient computation
+- **Bio-inspired Architectures**: Mimicking biological neural systems
+
+### **Federated TinyDL**
+
+- **Privacy-Preserving Learning**: Collaborative training without data sharing
+- **Edge-to-Edge Communication**: Direct device-to-device learning
+- **Heterogeneous Federated Learning**: Multi-device type collaboration
+- **Federated Neural Architecture Search**: Distributed architecture optimization
+
+### **Edge-Native Foundation Models**
+
+- **Tiny Transformers**: Efficient attention mechanisms
+- **Edge-Specific Pre-training**: Domain-adapted foundation models
+- **Modular Architectures**: Composable model components
+- **Incremental Learning**: Continuous model adaptation
+
+### **Domain-Specific Co-Design**
+
+- **Hardware-Software Co-optimization**: Joint design of algorithms and hardware
+- **Application-Specific Architectures**: Tailored solutions for specific domains
+- **Energy-Aware Design**: Power consumption optimization
+- **Real-time Constraints**: Meeting strict timing requirements
+
+## 📊 Research Impact & Community Engagement
+
+This comprehensive survey provides a foundational resource for researchers and practitioners working in the rapidly evolving field of edge AI.
+
+The survey addresses critical challenges in deploying AI at the edge, including:
+
+- **Resource Constraints**: Memory, computational power, and energy limitations
+- **Performance Optimization**: Balancing accuracy, latency, and efficiency
+- **Deployment Complexity**: Software toolchains and hardware integration
+- **Scalability**: Supporting diverse edge device types and applications
+
+The research community has shown increasing interest in TinyDL as a solution for bringing AI capabilities to resource-constrained environments. This survey serves as a comprehensive guide for understanding the current state of the field and identifying future research directions.
+
+The work has fostered discussions about the democratization of AI, enabling sophisticated machine learning capabilities on devices that were previously considered too resource-constrained for such applications. This has implications for privacy, accessibility, and the broader adoption of AI technologies in everyday devices.
+
+## 🔮 Future Challenges & Opportunities
+
+### **Technical Challenges**
+
+1. **Model Complexity vs. Resource Constraints**: Balancing sophisticated models with limited hardware
+2. **Energy Efficiency**: Minimizing power consumption for battery-powered devices
+3. **Real-time Performance**: Meeting strict latency requirements for time-critical applications
+4. **Model Robustness**: Ensuring reliable performance in diverse environmental conditions
+
+### **Research Opportunities**
+
+1. **Novel Architectures**: Designing networks specifically for edge deployment
+2. **Advanced Optimization**: Developing more efficient compression and quantization techniques
+3. **Hardware Innovation**: Creating specialized accelerators for TinyDL workloads
+4. **Software Tools**: Building comprehensive development and deployment frameworks
+
+The survey provides a roadmap for future research and development in TinyDL, highlighting the potential for transformative impact across industries and applications.
