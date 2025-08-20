@@ -1,5 +1,71 @@
 [
   {
+    "name": "Dipti Koirala",
+    "label": "B.Sc., Electrical Engineering (2025)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://www.linkedin.com/in/dipti-koirala-978172340",
+    "email": "yfn21@txstate.edu",
+    "image": "dipti_k.JPG",
+    "googleScholar": "",
+    "github": "",
+    "twitter": "",
+    "websites": [],
+    "description": "Dipti Koirala is currently an undergraduate student in the Electrical Engineering program at Texas State University, concentrating in Micro and Nano Devices and Systems. She joined the Artificial Intelligence in Transportation (AIT) Lab in Summer 2025 and is an undergraduate research assistant under the supervision of Dr. Subasish Das. Dipti is keenly interested in the intersection of electronics, semiconductors, data science, and intelligent transportation systems. Her academic interests include sensor-driven technologies, signal processing, and the use of AI to improve traffic safety and infrastructure performance. With a background in physics-based research, materials analysis, and applied mathematics, she brings a multidisciplinary perspective to the lab and is passionate about contributing to innovative, data-informed solutions engineering fields.",
+    "awards": []
+  },
+  {
+    "name": "Mahmuda Sultana Mimi",
+    "label": "M.Sc., Civil Engineering (2023 - 2025)",
+    "group": "Graduate Student",
+    "linkedin": "https://www.linkedin.com/in/mahmuda-mimi",
+    "email": "",
+    "image": "mahmuda_sultana_mimi.jpg",
+    "description": "Mahmuda is currently pursuing Master's in Civil Engineering at Texas State University under the supervision of Dr. Subasish Das. She joined AIT lab in Fall 2023 as a Graduate Research Assistant. Previously, she earned her Bachelor's degree in Urban and Regional Planning from Bangladesh University of Engineering and Technology (BUET). Her research focuses on transportation safety, encompassing vulnerable road users, driver behavior, and micromobility; as well as travel behavior and demand modeling. She is deeply engaged in developing Machine Learning, and Deep Learning based models; Statistical and Econometric models; GIS based spatial data analysis; and data mining in the field of transportation. In addition to her academic pursuits, she serves as the secretary of the ITE TXST chapter, where she supports initiatives to enhance transportation systems and promote safety.",
+    "googleScholar": "https://scholar.google.com/citations?user=CUmpUkAAAAAJ&hl=en",
+    "github": "https://github.com/Mahmuda-mimi",
+    "twitter": "",
+    "websites": [],
+    "awards": [
+      "Graduate College Scholarship, $1,000 (2023, 2024)",
+      "ASHE Central Texas Scholarship Award, $1,000 (Fall 2024)",
+      "WTS Helene Overley Memorial Scholarship, $5,000 (2025)"
+    ]
+  },
+  {
+    "name": "Syed Aaqib Javed",
+    "label": "M.Sc., Civil Engineering (2023 – 2025)",
+    "group": "Graduate Student",
+    "linkedin": "https://www.linkedin.com/in/syed-aaqib-javed-37545b69/",
+    "email": "",
+    "image": "syed_aaqib_javed.jpg",
+    "description": "Syed Aaqib Javed is a Master's student in Civil Engineering, specializing in Transportation Engineering at Texas State University (TXST). He has been working as a graduate research assistant at the Artificial Intelligence in Transportation (AIT) Lab under the supervision of Dr. Subasish Das since Fall 2023. Prior to joining TXST, he worked as a faculty member at Ahsanullah University of Science and Technology (AUST) in Dhaka, Bangladesh. He completed his B.Sc. in Civil Engineering at AUST. His research interests include transportation safety, transportation system planning, and travel behavior analysis. In addition to his academic work, he is an active member of the TXST-ITE student chapter, where he contributes to projects aimed at optimizing transportation infrastructure and promoting safety initiatives.",
+    "googleScholar": "https://scholar.google.com/citations?user=LN6RJTUAAAAJ&hl=en",
+    "github": "https://github.com/Aaqibce",
+    "twitter": "",
+    "websites": [],
+    "awards": [
+      "Graduate College Scholarship, $1,000 (2024)",
+      "Spring 2025 Research Support Fellowship, $1,924 (2024)"
+    ]
+  },
+  {
+    "name": "Swastika Barua",
+    "label": "M.Sc., Civil Engineering (2023 - 2025)",
+    "group": "Graduate Student",
+    "linkedin": "https://www.linkedin.com/in/swastika-barua/",
+    "email": "",
+    "image": "swastika_barua.jpg",
+    "description": "Swastika Barua is pursuing her Master's in Civil Engineering at Texas State University, under the supervision of Dr. Subasish Das. She joined the AIT Lab in Fall 2023 and currently working as a Graduate Research Assistant. Swastika obtained her Bachelor's degree from Bangladesh University of Engineering and Technology, Bangladesh. Her research focuses on traffic safety and driver behavior analysis, with a specialization in classical statistical methods and machine learning techniques. Beyond her academic endeavors, Swastika actively participates in the TXST-ITE student chapter, contributing to initiatives aimed at enhancing transportation systems and safety.",
+    "googleScholar": "https://scholar.google.com/citations?user=FYy8Sj8AAAAJ&hl=en&oi=ao",
+    "github": "https://github.com/SwastikaBarua",
+    "twitter": "",
+    "websites": [],
+    "awards": [
+      "Scholarly Travel Activity and Research (S.T.A.R.) Grant, $450 (2024)",
+      "Graduate Student Travel Fund, $1,600 (2024)"
+    ]
+  },
+  {
     "name": "Jinli Liu, Ph.D.",
     "label": "Post-doctoral Researcher (Jan 2025-Current), Ph.D. Student (2023-2024)",
     "group": "Post-Doctoral Researcher",
@@ -32,9 +98,7 @@
     "github": "https://github.com/AhmedHossain09",
     "twitter": "",
     "websites": [],
-    "awards": [
-      ""
-    ]
+    "awards": [""]
   },
   {
     "name": "Monire Jafari",
@@ -52,7 +116,7 @@
   },
   {
     "name": "Teale Robison",
-    "label": "B.Sc., Urban and Regional Planning (Fall 2021- Current)",
+    "label": "B.Sc., Urban and Regional Planning (2021- 2025)",
     "group": "Undergraduate Student",
     "linkedin": "https://www.linkedin.com/in/teale-robison-b0ab7624b",
     "email": "",

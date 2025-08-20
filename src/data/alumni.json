@@ -1,5 +1,17 @@
 [
   {
+    "name": "Rohit Chakraborty",
+    "label": "M.Sc.",
+    "subject": "Civil Engineering, TXST",
+    "duration": "2023-2025"
+  },
+  {
+    "name": "Pradicta Bhattacharjee",
+    "label": "B.Sc.",
+    "subject": "Industrial Engineering, TXST",
+    "duration": "2025"
+  },
+  {
     "name": "Amir Hossein Oliaee",
     "label": "Ph.D. Candidate",
     "subject": "Architecture, TAMU",
