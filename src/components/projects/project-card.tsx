@@ -86,7 +86,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
         )} */}
-        {project.link && (
+        {(project.link && project.link !== "") && (
           <Link href={project.link} className="w-full">
             <Button
               variant="ghost"

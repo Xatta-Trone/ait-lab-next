@@ -2,7 +2,7 @@ export interface Project {
   number: string;
   title: string;
   description: string;
-  link: string;
+  link?: string;
   sponsor: string;
   PI: string;
   PI_role: string;
