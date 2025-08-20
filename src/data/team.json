@@ -10,33 +10,9 @@
     "researchGate": "https://www.researchgate.net/profile/Subasish-Das",
     "github": "https://github.com/subasish",
     "twitter": "https://x.com/subasish_das",
-    "websites": [
-      "https://subasish.github.io/"
-    ],
+    "websites": ["https://subasish.github.io/"],
     "description": "Dr. Subasish Das is an Assistant Professor of Civil Engineering Program in the Ingram School of Engineering at Texas State University. He is also involved with Texas A&M Transportation  Institute (TTI) as a part time Associate Research Scientist. Previously, he worked as a full-time Associate Research Scientist at TTI during 2015 to 2022. He has more than 13 years of experience related to roadway safety, traffic operation, and connected and automated vehicle (CAV) technologies. He is a Systems Engineer by training with hands on experience on Six Sigma and Lean Engineering. His major areas of expertise include database management, statistical analysis and machine learning with emphasis in safety and transportation operations, spatial analysis with modern web GIS tools, interactive data visualization, and deep learning tools for CAV technologies. Dr. Das is a prolific author. He has published more than 160 technical reports, and journal articles. He is the author of the book “Artificial Intelligence in Highway Safety,” which was published by CRC Press in 2022. The AASHTO Research Advisory Committee (RAC) awarded one of his research reports as 2014 AASHTO Sweet Sixteen High Value Research Project. Dr. Das is an active member of ITE, and ASCE. He is an Eno Fellow. He served as vice-president of membership of Young Professionals in Transportation Houston chapter. He is currently a member of three TRB Committees: Information and Knowledge Management (AJE45), Artificial Intelligence and Advanced Computing Applications (AED50), and Impairment in Transportation (ACS50).",
-    "awards": [
-      ""
-    ]
-  },
-  {
-    "name": "David A. Mills",
-    "label": "Ph.D. Candidate, Geographic Information Science (Fall 2022 - Current)",
-    "group": "Ph.D. Candidate",
-    "linkedin": "https://www.linkedin.com/in/david-adam-mills/",
-    "email": "davidmills@txstate.edu",
-    "image": "david_a._mills.jpg",
-    "description": "David A. Mills is a geospatial data analyst and software developer. He is a PhD Candidate in Geographic Information Science at Texas State University. David has been working for Dr. Das in the AIT Lab since 2022. David specializes in discovering and improving the understanding spatio-temporal phenomena. He builds pioneering smart technologies and leverages them using advanced geocomputational techniques. David is a former non-commissioned officer of the United States Army who developed cultural awareness, mechanical skills, and honed effective leadership while stationed in South Korea, Germany, and Afghanistan. He is detail-oriented, focused, and self-driven. David is a published researcher, a frequenter of scientific conferences, and an avid smart-technology enthusiast. He is committed to the task of promoting environmental and public safety awareness while improving communities through the application of leading-edge technologies and geospatial analysis.",
-    "googleScholar": "https://scholar.google.com/citations?user=DJcqWr0AAAAJ&hl=en&oi=sra",
-    "github": "https://github.com/davidamills",
-    "twitter": "",
-    "websites": [
-      "https://davidmills.io"
-    ],
-    "awards": [
-      "Dwight D. Eisenhower Transportation Fellowship Program, $7,000 (2022)",
-      "NSF I-Corps Interior Northeast Winter 2024 Cohort, $50,000 (2024)",
-      "FY25 New Ventures Award, $10,000 (2025)"
-    ]
+    "awards": [""]
   },
   {
     "name": "Shriyank Somvanshi",
@@ -58,74 +34,21 @@
     ]
   },
   {
-    "name": "Mahmuda Sultana Mimi",
-    "label": "M.Sc., Civil Engineering (Fall 2023 - Current)",
-    "group": "Graduate Student",
-    "linkedin": "https://www.linkedin.com/in/mahmuda-mimi",
-    "email": "",
-    "image": "mahmuda_sultana_mimi.jpg",
-    "description": "Mahmuda is currently pursuing Master's in Civil Engineering at Texas State University under the supervision of Dr. Subasish Das. She joined AIT lab in Fall 2023 as a Graduate Research Assistant. Previously, she earned her Bachelor's degree in Urban and Regional Planning from Bangladesh University of Engineering and Technology (BUET). Her research focuses on transportation safety, encompassing vulnerable road users, driver behavior, and micromobility; as well as travel behavior and demand modeling. She is deeply engaged in developing Machine Learning, and Deep Learning based models; Statistical and Econometric models; GIS based spatial data analysis; and data mining in the field of transportation. In addition to her academic pursuits, she serves as the secretary of the ITE TXST chapter, where she supports initiatives to enhance transportation systems and promote safety.",
-    "googleScholar": "https://scholar.google.com/citations?user=CUmpUkAAAAAJ&hl=en",
-    "github": "https://github.com/Mahmuda-mimi",
+    "name": "David A. Mills",
+    "label": "Ph.D. Candidate, Geographic Information Science (Fall 2022 - Current)",
+    "group": "Ph.D. Candidate",
+    "linkedin": "https://www.linkedin.com/in/david-adam-mills/",
+    "email": "davidmills@txstate.edu",
+    "image": "david_a._mills.jpg",
+    "description": "David A. Mills is a geospatial data analyst and software developer. He is a PhD Candidate in Geographic Information Science at Texas State University. David has been working for Dr. Das in the AIT Lab since 2022. David specializes in discovering and improving the understanding spatio-temporal phenomena. He builds pioneering smart technologies and leverages them using advanced geocomputational techniques. David is a former non-commissioned officer of the United States Army who developed cultural awareness, mechanical skills, and honed effective leadership while stationed in South Korea, Germany, and Afghanistan. He is detail-oriented, focused, and self-driven. David is a published researcher, a frequenter of scientific conferences, and an avid smart-technology enthusiast. He is committed to the task of promoting environmental and public safety awareness while improving communities through the application of leading-edge technologies and geospatial analysis.",
+    "googleScholar": "https://scholar.google.com/citations?user=DJcqWr0AAAAJ&hl=en&oi=sra",
+    "github": "https://github.com/davidamills",
     "twitter": "",
-    "websites": [],
+    "websites": ["https://davidmills.io"],
     "awards": [
-      "Graduate College Scholarship, $1,000 (2023, 2024)",
-      "ASHE Central Texas Scholarship Award, $1,000 (Fall 2024)",
-      "WTS Helene Overley Memorial Scholarship, $5,000 (2025)"
-    ]
-  },
-  {
-    "name": "Syed Aaqib Javed",
-    "label": "M.Sc., Civil Engineering (Fall 2023 – Current)",
-    "group": "Graduate Student",
-    "linkedin": "https://www.linkedin.com/in/syed-aaqib-javed-37545b69/",
-    "email": "",
-    "image": "syed_aaqib_javed.jpg",
-    "description": "Syed Aaqib Javed is a Master's student in Civil Engineering, specializing in Transportation Engineering at Texas State University (TXST). He has been working as a graduate research assistant at the Artificial Intelligence in Transportation (AIT) Lab under the supervision of Dr. Subasish Das since Fall 2023. Prior to joining TXST, he worked as a faculty member at Ahsanullah University of Science and Technology (AUST) in Dhaka, Bangladesh. He completed his B.Sc. in Civil Engineering at AUST. His research interests include transportation safety, transportation system planning, and travel behavior analysis. In addition to his academic work, he is an active member of the TXST-ITE student chapter, where he contributes to projects aimed at optimizing transportation infrastructure and promoting safety initiatives.",
-    "googleScholar": "https://scholar.google.com/citations?user=LN6RJTUAAAAJ&hl=en",
-    "github": "https://github.com/Aaqibce",
-    "twitter": "",
-    "websites": [],
-    "awards": [
-      "Graduate College Scholarship, $1,000 (2024)",
-      "Spring 2025 Research Support Fellowship, $1,924 (2024)"
-    ]
-  },
-  {
-    "name": "Rohit Chakraborty",
-    "label": "M.Sc., Civil Engineering (Fall 2023 – Current)",
-    "group": "Graduate Student",
-    "linkedin": "https://www.linkedin.com/in/rohit-chakraborty-052579163/",
-    "email": "",
-    "image": "rohit_chakraborty.jpg",
-    "description": "Rohit is currently a MS student in the Civil Engineering Program at Texas State University, advised by Dr. Das. He joined the AIT Lab in Fall 2023 and works as a graduate research assistant. Previously, Rohit completed his B.S. in Civil Engineering from Ahsanullah University of Science and Technology, Bangladesh. Rohit is interested in data mining applications in transportation safety and operations. His research expertise also includes traffic simulation, transportation modeling, and driving behavior analysis. Rohit enjoys cooking, cycling, and listening music.",
-    "googleScholar": "https://scholar.google.com/citations?user=Ip63NkMAAAAJ&hl=en",
-    "github": "https://github.com/Rohitck98",
-    "twitter": "",
-    "websites": [],
-    "awards": [
-      "Scholarly Travel Activity and Research (S.T.A.R.) Grant, $450 (2024)",
-      "Graduate Student Travel Fund, $1,600 (2024)",
-      "CASITE Scholarship (2nd Position), $1,500 (2024)",
-      "Spring 2025 Research Support Fellowship, $1,900 (2024)"
-    ]
-  },
-  {
-    "name": "Swastika Barua",
-    "label": "M.Sc., Civil Engineering (Fall 2023 - Current)",
-    "group": "Graduate Student",
-    "linkedin": "https://www.linkedin.com/in/swastika-barua/",
-    "email": "",
-    "image": "swastika_barua.jpg",
-    "description": "Swastika Barua is pursuing her Master's in Civil Engineering at Texas State University, under the supervision of Dr. Subasish Das. She joined the AIT Lab in Fall 2023 and currently working as a Graduate Research Assistant. Swastika obtained her Bachelor's degree from Bangladesh University of Engineering and Technology, Bangladesh. Her research focuses on traffic safety and driver behavior analysis, with a specialization in classical statistical methods and machine learning techniques. Beyond her academic endeavors, Swastika actively participates in the TXST-ITE student chapter, contributing to initiatives aimed at enhancing transportation systems and safety.",
-    "googleScholar": "https://scholar.google.com/citations?user=FYy8Sj8AAAAJ&hl=en&oi=ao",
-    "github": "https://github.com/SwastikaBarua",
-    "twitter": "",
-    "websites": [],
-    "awards": [
-      "Scholarly Travel Activity and Research (S.T.A.R.) Grant, $450 (2024)",
-      "Graduate Student Travel Fund, $1,600 (2024)"
+      "Dwight D. Eisenhower Transportation Fellowship Program, $7,000 (2022)",
+      "NSF I-Corps Interior Northeast Winter 2024 Cohort, $50,000 (2024)",
+      "FY25 New Ventures Award, $10,000 (2025)"
     ]
   },
   {
@@ -140,9 +63,7 @@
     "github": "https://github.com/Anannya-Ghosh",
     "twitter": "",
     "websites": [],
-    "awards": [
-      ""
-    ]
+    "awards": [""]
   },
   {
     "name": "Md Monzurul Islam",
@@ -162,9 +83,7 @@
       "https://www.webofscience.com/wos/author/record/MBG-5163-2025"
     ],
     "description": "Md Monzurul Islam is a Master's student in Civil Engineering (Transportation) at Texas State University, where he works as a Graduate Research Assistant under the supervision of Dr. Subasish Das. He brings a diverse academic and professional background, holding a Master's degree in Architecture from the University of Tokyo and a Bachelor's degree in Civil Engineering from Bangladesh University of Engineering and Technology. Monzurul's research focuses on transportation safety, crash risk assessment, and driver behavior analysis, utilizing machine learning, statistical models, and GIS-based spatial analysis. He is also proficient in building R-based tools for quick visualization and decision-making. In addition to his research, Monzurul has extensive experience in software development, project management, and structural engineering. As Vice President of Outreach for the Institute of Transportation Engineers (TXST Chapter), Monzurul develops and implements strategies for community engagement, builds relationships with external organizations, alumni, and potential sponsors, organizes promotional events, and manages outreach and recruitment efforts to attract new members. Monzurul also enjoys tinkering with a wide variety of tools and technologies, always curious to explore and experiment with everything he encounters—in his words, 'I like to play with everything.'",
-    "awards": [
-      ""
-    ]
+    "awards": [""]
   },
   {
     "name": "Sazzad Bin Bashar Polock",
@@ -178,9 +97,7 @@
     "twitter": "",
     "websites": [],
     "description": "Sazzad Bin Bashar Polock is a Master's student in Civil Engineering (Transportation) at Texas State University, working under the guidance of Dr. Subasish Das. Currently working as a graduate instructional assistant at the Ingram School of Engineering, he joined the Artificial Intelligence in Transportation (AIT) lab in Fall 2024. His research interests include traffic safety, crash data analysis, driver behavior, and the integration of autonomous vehicles within existing infrastructure. He earned his bachelor's degree in civil engineering from Ahsanullah University of Science and Technology in 2023.",
-    "awards": [
-      ""
-    ]
+    "awards": [""]
   },
   {
     "name": "Tausif Islam Chowdhury",
@@ -194,9 +111,7 @@
     "twitter": "",
     "websites": [],
     "description": "Tausif Islam Chowdhury is a Master's student in Civil Engineering (Transportation) at Texas State University, working under the guidance of Dr. Subasish Das. Currently serving as a Graduate Instructional Assistant at the Ingram School of Engineering. He joined the Artificial Intelligence in Transportation (AIT) Lab in Spring 2025. His research interests include transportation safety, infrastructure resilience, artificial intelligence applications in transportation, and sustainable urban mobility. He earned his bachelor's degree in Building Engineering and Construction Management from Khulna University of Engineering & Technology (KUET) in 2023. Tausif enjoys exploring emerging technologies, data science techniques, and creatively solving complex problems, while also having a passion for video games, cricket, and football.",
-    "awards": [
-      ""
-    ]
+    "awards": [""]
   },
   {
     "name": "Darrell Anderson",
@@ -228,9 +143,7 @@
     "twitter": "",
     "websites": [],
     "description": "Biplov is currently an undergraduate student in the Civil Engineering Program at Texas State University, guided by Dr. Das. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant. Originally from Nepal, Biplov is interested in transportation engineering and infrastructure development. His research focus includes transportation safety and sustainability. He has prior experience as a Surveying Assistant at SadaShiva Infra Private Limited, where he contributed to site assessments and data collection for mapping and project planning. Biplov's projects include geological field studies and detailed surveying tasks with proficiency in total stations, theodolites, CAD software, SolidWorks, and Microsoft Office. Outside of academics, Biplov enjoys watching cricket, playing table tennis, and hiking.",
-    "awards": [
-      "Undergraduate Research Fellowship (URF), $2,000 (2025)"
-    ]
+    "awards": ["Undergraduate Research Fellowship (URF), $2,000 (2025)"]
   },
   {
     "name": "Gaurab Chhetri",
@@ -244,43 +157,11 @@
     "orcid": "https://orcid.org/0009-0000-0124-4814",
     "github": "https://github.com/gauravfs-14",
     "twitter": "https://x.com/gaurav_fs_14",
-    "websites": [
-      "https://gaurabchhetri.com.np",
-      "https://computenepal.com"
-    ],
-    "description": "Gaurab is currently an undergraduate student in the Computer Science Program at Texas State University. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant for Dr. Das. Originally from Nepal, Gaurab is passionate about web development and IT operations, with a strong focus on creating responsive and user-friendly web applications. His technical expertise spans HTML, CSS, JavaScript, React, Tailwind, Node.js, Express, MongoDB, and MySQL, along with version control using Git and GitHub. Before joining Texas State, Gaurab worked as an IT Officer, where he managed domain registrations, email systems, and computer lab environments. He also has experience in digital marketing, social media management, and graphic design, providing a holistic approach to enhancing online presence for businesses. His hands-on experience extends to WordPress, PHP, SQL, and a variety of tools that streamline IT operations and web development.'",
+    "websites": ["https://gaurabchhetri.com.np", "https://computenepal.com"],
+    "description": "Gaurab is currently an undergraduate student in the Computer Science Program at Texas State University. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant for Dr. Das. Originally from Nepal, Gaurab is passionate about web development and IT operations, with a strong focus on creating responsive and user-friendly web applications. His technical expertise spans HTML, CSS, JavaScript, React, Tailwind, Node.js, Express, MongoDB, and MySQL, along with version control using Git and GitHub. Before joining Texas State, Gaurab worked as an IT Officer, where he managed domain registrations, email systems, and computer lab environments. He also has experience in digital marketing, social media management, and graphic design, providing a holistic approach to enhancing online presence for businesses. His hands-on experience extends to WordPress, PHP, SQL, and a variety of tools that streamline IT operations and web development.",
     "awards": [
       "Best In Coding at Hackacat Nano by ACM AI @ TXST (2024)",
       "Undergraduate Research Fellowship (URF), $2,000 (2025)"
     ]
-  },
-  {
-    "name": "Dipti Koirala",
-    "label": "B.Sc., Electrical Engineering (Summer 2025 - Current)",
-    "group": "Undergraduate Student",
-    "linkedin": "https://www.linkedin.com/in/dipti-koirala-978172340",
-    "email": "yfn21@txstate.edu",
-    "image": "dipti_k.JPG",
-    "googleScholar": "",
-    "github": "",
-    "twitter": "",
-    "websites": [],
-    "description": "Dipti Koirala is currently an undergraduate student in the Electrical Engineering program at Texas State University, concentrating in Micro and Nano Devices and Systems. She joined the Artificial Intelligence in Transportation (AIT) Lab in Summer 2025 and is an undergraduate research assistant under the supervision of Dr. Subasish Das. Dipti is keenly interested in the intersection of electronics, semiconductors, data science, and intelligent transportation systems. Her academic interests include sensor-driven technologies, signal processing, and the use of AI to improve traffic safety and infrastructure performance. With a background in physics-based research, materials analysis, and applied mathematics, she brings a multidisciplinary perspective to the lab and is passionate about contributing to innovative, data-informed solutions engineering fields.",
-    "awards": []
-  },
-  {
-    "name": "Pradicta Bhattacharjee",
-    "label": "B.Sc., Industrial Engineering (Summer 2025 - Current)",
-    "group": "Undergraduate Student",
-    "linkedin": "https://www.linkedin.com/in/pradicta-bhattacharjee-024864210/",
-    "email": "vso28@txstate.edu",
-    "image": "pradicta_b.JPG",
-    "googleScholar": "",
-    "orcid": "https://orcid.org/0009-0008-9330-7453",
-    "github": "",
-    "twitter": "",
-    "websites": [],
-    "description": "Pradicta Bhattacharjee is a rising sophomore majoring in Industrial Engineering at Texas State University. She joined the AIT Lab in the Summer of 2025, driven by a strong interest in Operations Research and Quality Control. Pradicta currently serves as a Makerspace Student Assistant at the Ingram Hall Makerspace, a position she has held since Spring 2025. In this role, she is responsible for coordinating and conducting technical training sessions on advanced prototyping equipment, with a strong emphasis on operational safety, procedural clarity, and user competency. She manages comprehensive equipment usage logs, maintains detailed maintenance and training records, and works in close collaboration with engineering faculty and student teams to support project execution, optimize resource utilization, and foster an innovative, hands-on learning environment. Her academic and professional interests extend to data analysis, where she is developing her skills to support process improvement and decision-making. Pradicta is proficient in a range of technological tools, including Microsoft Office (Word, Excel, PowerPoint, Teams), Adobe Illustrator, Canva, SolidWorks, and AutoCAD. Outside of her academic and research pursuits, Pradicta enjoys painting, playing the ukulele, and traveling, which reflect her creative spirit and curiosity about the world.",
-    "awards": []
   }
 ]

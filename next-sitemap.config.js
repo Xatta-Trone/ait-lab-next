@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.NEXT_PUBLIC_BASE_URL || "https://aitlab.ioe.edu.np",
+  siteUrl: process.env.NEXT_PUBLIC_BASE_URL || "https://ait-lab.vercel.app",
   generateRobotsTxt: true,
   sitemapSize: 5000,
   changefreq: "daily",
