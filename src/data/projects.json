@@ -1,5 +1,171 @@
 [
   {
+    "number": "BTSCRP BTS-42",
+    "title": "Guidelines for Authorizing, Implementing, and Operating Automated Traffic Enforcement Programs",
+    "description": "The objective of this research is to develop guidelines for (1) authorizing, implementing, and operating automated traffic enforcement programs that inspire confidence and trust and (2) assessing public opinion and concerns regarding automated traffic enforcement by jurisdictions using, or considering the use of, this technology.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5739",
+    "sponsor": "National Academies of Sciences, Engineering, and Medicine",
+    "PI": "Subasish Das (TXST), Co-PI: Anandi K. Dutta (TXST)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2026,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2028,
+      "month": "December"
+    },
+    "status": "ongoing",
+    "image": "BTSCRP-BTS-42.png"
+
+  },
+  {
+    "number": "0-7259",
+    "title": "Perform Assessment of TxDOT Safety Scoring Tools to Determine Effectiveness and Calibration",
+    "description": "This project involves performing an assessment of TxDOT's Safety Scoring Tools to determine their effectiveness and calibration in enhancing roadway safety. The project's principal investigator is Subasish Das. The project was submitted in 2025 and is slated for funding from January 1, 2026, to December 31, 2027, with a budget of $70,008.",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das (TXST)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2026,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2027,
+      "month": "December"
+    },
+    "status": "ongoing",
+    "image": "Perform Assessment of TxDOT Safety Scoring Tools to Determine Effectiveness and Calibration.png"
+  },
+  {
+    "number": "0-7263",
+    "title": "Optimize Tradeoffs between Centerline Buffers, Lane Width, and Shoulders for Rural Undivided Highways",
+    "description": "The TxDOT research project 0-7263 focuses on optimizing the design of rural undivided highways by analyzing the trade-offs between centerline buffers, lane width, and shoulder width. The goal is to provide a framework for TxDOT to make informed decisions on cross-sectional design, balancing safety and operational performance. This includes evaluating the impact of different combinations of these elements on crash rates and traffic flow.",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das (TXST)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2026,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2027,
+      "month": "December"
+    },
+    "image": "Optimize Tradeoffs between Centerline Buffers, Lane Width, and Shoulders for Rural Undivided HighwaysOptimize Tradeoffs between Centerline Buffers, Lane Width, and Shoulders for Rural Undivided Highways.png",
+    "status": "ongoing"
+  },
+  {
+    "number": "0-7275",
+    "title": "Cost Effective Roundabouts: Evaluate Options for Reducing Roundabout Footprints and Construction Costs",
+    "description": "This project aims to evaluate various design options for roundabouts to identify strategies for reducing their physical footprint and construction costs while maintaining safety and operational efficiency.",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das (TXST)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2026,
+      "month": "January"
+    },
+    "end_date": {
+      "year": 2027,
+      "month": "December"
+    },
+    "status": "ongoing",
+    "image": "Cost Effective Roundabouts- Evaluate Options for Reducing Roundabout Footprints and Construction Costs.png"
+  },
+  {
+    "number": "BTSCRP BTS-39",
+    "title": "Toolkit for Reducing Substance-Impaired Driving for the Last Leg of the Journey",
+    "description": "The traffic safety community has worked for decades to put a taboo on substance-impaired driving. While there remains a great deal of work to be done, progress has been made in mitigating the substance-impaired driving problem. For example, in recent years there has been evidence of an increase in the number of individuals who drive to the end of a transit or commuter rail line, take transit or commuter rail into the city where they become substance impaired, and then return using transit or commuter rail. However, the last leg of the journey to arrive home often requires driving, thus exposing substance-impaired drivers and other road users to motor vehicle crashes. This scenario is especially challenging in suburban and rural areas that have limited alternatives to driving the last leg of the journey. In addition to transit and commuter rail stations, substance-impaired drivers may face similar challenges traveling the last few miles home from park-and-ride lots and airports. While progress has been made in reducing the overall number of impaired miles traveled, addressing safety concerns associated with the last leg of the journey remains a significant highway safety challenge. Research is needed to help state highway safety offices (SHSOs) and other stakeholders develop strategies to address this challenge. OBJECTIVE: The objective of this research is to develop a toolkit of practical strategies to help SHSOs and other stakeholders address challenges associated with substance-impaired drivers traveling the last leg of the journey.",
+    "link": "https://rip.trb.org/View/2394424",
+    "sponsor": "National Academies",
+    "PI": "Subasish Das (TXST)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2025,
+      "month": "October"
+    },
+    "end_date": {
+      "year": 2027,
+      "month": "December"
+    },
+    "status": "ongoing",
+    "image": "Toolkit for Reducing Substance-Impaired Driving for the Last Leg of the Journey.png"
+  },
+  {
+    "number": "",
+    "title": "Developing Fatigue Management Decision Support System for the U.S. Rail Industry",
+    "description": "The objective of this research is to develop a decision support system for the U.S. rail industry to manage fatigue among train operators.",
+    "sponsor": "FRA",
+    "PI": "Subasish Das (TXST)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2025,
+      "month": "October"
+    },
+    "end_date": {
+      "year": 2027,
+      "month": "September"
+    },
+    "status": "ongoing",
+    "image": "Developing Fatigue Management Decision Support System for the U.S. Rail Industry.png"
+  },
+  {
+    "number": "0-7274",
+    "title": "Synthesis on Evaluate Effectiveness of Pedestrian Elements Constructed through Competitive Funding Mechanisms",
+    "description": "",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das (TXST)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2025,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2026,
+      "month": "August"
+    },
+    "status": "ongoing",
+    "image": "Synthesis on Evaluate Effectiveness of Pedestrian Elements Constructed through Competitive Funding Mechanisms.png"
+  },
+  {
+    "number": "0-7265",
+    "title": "Evaluate Emerging Transportation Technologies and Advancements in Engineering and Roadway Safety Efforts Impact on Crashes",
+    "description": "",
+    "sponsor": "TxDOT",
+    "PI": "Subasish Das (TXST)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2025,
+      "month": "September"
+    },
+    "end_date": {
+      "year": 2025,
+      "month": "August"
+    },
+    "status": "ongoing",
+    "image": "Evaluate Emerging Transportation Technologies and Advancements in Engineering and Roadway Safety Efforts Impact on Crashes.png"
+  },
+  {
+    "number": "NCHRP 17-133",
+    "title": "Applicability of the 85th Percentile for Setting Speed Limits on Freeways, Expressways, and Rural Highways",
+    "description": "The objectives of this project are to (1) examine the applicability of the 85th percentile speed as a factor in setting speed limits on freeways, expressways, and rural highways and (2) prepare a guide for state DOTs and other agencies with the authority to set speed limits on freeways, expressways, and rural highways that includes, at a minimum, implementation considerations, an application framework, and outreach materials for communication with policymakers.",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5681",
+    "sponsor": "NCHRP",
+    "PI": "Subasish Das (TXST)",
+    "PI_role": "PI",
+    "start_date": {
+      "year": 2025,
+      "month": "July"
+    },
+    "end_date": {
+      "year": 2027,
+      "month": "June"
+    },
+    "status": "ongoing",
+    "image": "Applicability of the 85th Percentile for Setting Speed Limits on Freeways, Expressways, and Rural Highways.png"
+  },
+  {
     "number": "",
     "title": "Refining the Understanding of Parking Space Requirements and Its Impact on Vehicle Miles Traveled",
     "description": "The goal of this project will be to explore, document, and broaden the collective understanding of mandated parking minimums within Minnesota and the region. Specifically, this project will examine the long-term benefits and challenges presented by reducing and/or removing currently established parking space requirements with new or redevelopment projects, and opportunities for parking space reallocation with existing uses.",
