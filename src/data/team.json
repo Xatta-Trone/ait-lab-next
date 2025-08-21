@@ -163,5 +163,53 @@
       "Best In Coding at Hackacat Nano by ACM AI @ TXST (2024)",
       "Undergraduate Research Fellowship (URF), $2,000 (2025)"
     ]
+  },
+  {
+    "name": "Venkata Surya Bellamkonda",
+    "label": "M.Sc., Data Analytics And Information Systems (Temp Employee since August, 2025)",
+    "group": "Graduate Student",
+    "linkedin": "",
+    "email": "",
+    "image": "Bellamkonda.png",
+    "googleScholar": "",
+    "researchGate": "",
+    "orcid": "",
+    "github": "https://github.com/bellamkondasurya1999",
+    "twitter": "",
+    "websites": [],
+    "description": "Venkata Surya Bellamkonda is a Machine Learning Engineer and recent graduate of Texas State University with a Master’s in Data Analytics & Information Systems. His experience spans adversarial machine learning, NLP, and scalable AI solutions, with applied projects in job search automation, AI-driven education, and MLOps workflows.",
+    "awards": []
+  },
+  {
+    "name": "Pavan Hebli",
+    "label": "M.Sc., Data Analytics And Information Systems (Temp Employee since August, 2025)",
+    "group": "Graduate Student",
+    "linkedin": "",
+    "email": "",
+    "image": "pavan.png",
+    "googleScholar": "",
+    "researchGate": "",
+    "orcid": "",
+    "github": "https://github.com/PavanHebli",
+    "twitter": "",
+    "websites": ["https://pavanhebli.medium.com/"],
+    "description": "Pavan Hebli recently completed his Master's degree in Data Analytics and Information Systems from Texas State University. During his graduate studies, he served as a Graduate Research Assistant, co-authoring \"Siamese Networks and Adversarial Attacks: An Overview\" (IEEE ICPHM 2024) and developing advanced machine learning architectures for improved model robustness. Prior to his graduate studies, Pavan has extensive industry experience as a Senior AI Engineer at Assert AI, where he worked on developing and deploying computer vision models and solutions in production environments. He also worked as a Python Developer at Biosense Technologies, focusing on predictive modeling and machine learning applications for healthcare diagnostics. His technical expertise spans machine learning, deep learning, computer vision, NLP, and large language models, with proficiency in PyTorch, TensorFlow, and various AI frameworks.",
+    "awards": []
+  },
+  {
+    "name": "Mohammed Wasim Ansari",
+    "label": "M.Sc., Data Analytics And Information Systems (Temp Employee since August, 2025)",
+    "group": "Graduate Student",
+    "linkedin": "https://www.linkedin.com/in/wasim-ansari-md/",
+    "email": "",
+    "image": "wasim.png",
+    "googleScholar": "https://scholar.google.com/citations?user=Kvd7s5YAAAAJ&hl=en",
+    "researchGate": "",
+    "orcid": "",
+    "github": "https://github.com/wasim277",
+    "twitter": "",
+    "websites": [],
+    "description": "Mohammed Wasim Ansari recently earned his Master’s degree in Data Analytics and Information Systems from Texas State University, where he also served as a Graduate Research Assistant. His research centered on Natural Language Processing (NLP) and the adversarial nature of text data, utilizing advanced deep learning models such as CNNs, Bi-LSTMs, and BERT to enhance model robustness and accuracy. He is currently a Research Assistant in the Artificial Intelligence in Transportation (AIT) Lab under the guidance of Dr. Subhasish Das, contributing to projects that apply AI and machine learning to transportation challenges. Before pursuing his master’s, Wasim worked for three years as a Data Analyst at Amazon in the Last Mile Analytics and Quality team. In this role, he engineered data pipelines, developed analytics solutions to improve operational efficiency, and collaborated on A/B testing experiments to evaluate new features and process changes.",
+    "awards": []
   }
 ]
