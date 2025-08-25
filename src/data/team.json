@@ -15,6 +15,22 @@
     "awards": [""]
   },
   {
+      "name": "Amir Rafe",
+      "label": "Postdoctoral Researcher (Fall 2025 - Current)",
+      "group": "Postdoctoral Researcher",
+      "linkedin": "https://www.linkedin.com/in/amir-rafe-08770854/",
+      "email": "",
+      "image": "amir.png",
+      "googleScholar": "https://scholar.google.com/citations?hl=en&user=IUVLrp9PgFEC&view_op=list_works",
+      "researchGate": "https://www.researchgate.net/profile/Amir-Rafe",
+      "orcid": "",
+      "github": "https://github.com/pozapas",
+      "twitter": "https://twitter.com/rafeamir",
+      "websites": ["https://pozapas.github.io/", "https://www.youtube.com/@AmirRafe"],
+      "description": "Amir Rafe is a Postdoctoral Researcher in the Artificial Intelligence in Transportation (AIT) Lab at Texas State University. His research spans Causal AI, Computational Epistemology in AI, Complexity, and Safety, with a focus on understanding and improving how intelligent systems reason about and interact with complex, safety-critical environments. His doctoral work, EvacuAIDi: An AI-Driven, Causal-Informed Framework for Probabilistic and Disability-Inclusive Evacuation Guidance, integrates artificial intelligence, human behavior modeling, and causal reasoning to create more reliable and inclusive evacuation solutions. Amir has over 15 years of professional experience as a transportation engineering consultant, working on pedestrian safety, crowd evacuation, transportation master plans, freight logistics, and airport design across multiple countries. He began programming at the age of 12 with Fortran and has since gained extensive experience across many programming languages, now primarily developing in Python. His expertise includes AI-driven modeling, complex system simulation, probabilistic reasoning, and decision-support tool development. Beyond creating open-source tools, Amir is deeply driven by investigating the why behind phenomena and exploring how intricate systems emerge and evolve. Amir is also passionate about scientific outreach and education. He actively engages in science communication through social media, hosting a podcast on causality (Decoding Causality), which has been named one of the Top 15 causality podcasts on the web by Million Podcasts, and managing a LinkedIn page on Evacuation Science. Dedicated to teaching, he earned his College Teaching Certificate from Utah State University in August 2025 and continues to mentor students and foster interdisciplinary collaboration. Committed to bridging theory and practice, Amir seeks to advance methods that combine human insight, causal reasoning, and computational intelligence to build safer, more robust, and epistemically sound systems. As he describes it, “I like to create solutions that not only work but truly explain why they work, because understanding the cause is the foundation of lasting safety and progress.”",
+      "awards": []
+  },
+  {
     "name": "Shriyank Somvanshi",
     "label": "Ph.D. Candidate, MSEC (Fall 2023 – Current)",
     "group": "Ph.D. Candidate",
@@ -32,6 +48,22 @@
       "Graduate Student Travel Fund, $1,300 (2024)",
       "CASITE Scholarship (3rd Position), $500 (2024)"
     ]
+  },
+  {
+    "name": "Sawgat Ahmed Shuvo",
+    "label": "Ph.D. Candidate, Civil Engineering (Fall 2025 – Current)",
+    "group": "Ph.D. Candidate",
+    "linkedin": "https://www.linkedin.com/in/sawgat-ahmed-38023678/",
+    "email": "",
+    "image": "sawgat.png",
+    "googleScholar": "https://scholar.google.com/citations?user=ngoAdDkAAAAJ&hl=en ",
+    "researchGate": "",
+    "orcid": "https://orcid.org/my-orcid?orcid=0009-0007-0594-9863 ",
+    "github": "",
+    "twitter": "",
+    "websites": [],
+    "description": "Sawgat Ahmed Shuvo is pursuing his PhD in Civil Engineering at Texas State University, where he works as a Doctoral Assistant at AIT Lab under the supervision of Dr. Subasish Das. He completed his Bachelor in Civil Engineering in 2011 from Bangladesh University of Engineering and Technology (BUET), with a major in Transportation Engineering and a minor in Structural Engineering. His undergraduate thesis was about Pedestrian Crossing Behavior in Dhaka City. He earned a Master of Urban Planning in 2019 with a specialization in Transportation Planning from the University of Melbourne, Australia. His graduate thesis was about Public Transport in Melbourne for Improving Bus Network Efficiency. He has around 13 years of professional experience in diverse fields of civil engineering. In 2014, he joined the Bangladesh Civil Service and began his career at the Public Works Department (PWD), where he was involved in planning and design of various public infrastructure across the country. Prior to that, he worked at the Institute of Water Modelling (IWM), where he was involved in mathematical modeling of wave dynamics and littoral drift models. He also worked at Era Construction, where he gained practical experience in construction supervision and management. He is affiliated with several professional organizations, including the Institute of Engineers, Bangladesh (IEB), Bangladesh Earthquake Society and the Bangladesh Civil Service Public Works Engineers’ Association (BCSPWEA). He has also successfully obtained Structural Engineer (SEng) registration from IEB. His research interests include public transport, active transport, structural analysis, and policy analysis.",
+    "awards": []
   },
   {
     "name": "David A. Mills",
@@ -114,105 +146,6 @@
     "awards": [""]
   },
   {
-    "name": "Darrell Anderson",
-    "label": "B.Sc., Civil Engineering (Fall 2023 - Current)",
-    "group": "Undergraduate Student",
-    "linkedin": "https://www.linkedin.com/in/darrell-m-anderson",
-    "email": "",
-    "image": "darrell_anderson.jpg",
-    "googleScholar": "",
-    "github": "",
-    "twitter": "",
-    "websites": [],
-    "description": "Darrell is a senior at Texas State University, majoring in Civil Engineering (CE) and minoring in mathematics. In the summer of 2023, Darrell started working as an undergraduate research assistant at the Artificial Intelligence in Transportation (AIT) lab under Dr. Das Subasish. While at AIT, Darrell was awarded the Dwight David Eisenhower Transportation Fellowship (DDETFP), which he presented at DC on the concept of 15-minute cities. As a member of a few engineering and environmental groups, Darrell is passionate about the environment and water resources, and he is interested in the impact that urbanization, along with the increase in traffic systems, has on the environment. As a civil drafter/designer for a small urban planning and development company, he has helped design many sites currently under development. As a founding member of the Institute of Transportation Engineers – at Texas State University, he holds the treasurer position. In his free time, he enjoys cooking, baking, and reading and is working towards becoming a sommelier in his free time.",
-    "awards": [
-      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $8,500 (2023)",
-      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $7,000 (2024)",
-      "Undergraduate Research Fellowship (URF), $1,160 (2025)"
-    ]
-  },
-  {
-    "name": "Biplov Pandey",
-    "label": "B.Sc., Civil Engineering (Fall 2024 - Current)",
-    "group": "Undergraduate Student",
-    "linkedin": "https://www.linkedin.com/in/biplov-pandey-09b43a306/",
-    "email": "",
-    "image": "biplov_pandey.jpg",
-    "googleScholar": "",
-    "github": "https://github.com/BiplovPandey17",
-    "twitter": "",
-    "websites": [],
-    "description": "Biplov is currently an undergraduate student in the Civil Engineering Program at Texas State University, guided by Dr. Das. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant. Originally from Nepal, Biplov is interested in transportation engineering and infrastructure development. His research focus includes transportation safety and sustainability. He has prior experience as a Surveying Assistant at SadaShiva Infra Private Limited, where he contributed to site assessments and data collection for mapping and project planning. Biplov's projects include geological field studies and detailed surveying tasks with proficiency in total stations, theodolites, CAD software, SolidWorks, and Microsoft Office. Outside of academics, Biplov enjoys watching cricket, playing table tennis, and hiking.",
-    "awards": ["Undergraduate Research Fellowship (URF), $2,000 (2025)"]
-  },
-  {
-    "name": "Gaurab Chhetri",
-    "label": "B.Sc., Computer Science (Fall 2024 - Current)",
-    "group": "Undergraduate Student",
-    "linkedin": "https://www.linkedin.com/in/gaurabchhetri/",
-    "email": "",
-    "image": "gaurab.jpg",
-    "googleScholar": "",
-    "researchGate": "",
-    "orcid": "https://orcid.org/0009-0000-0124-4814",
-    "github": "https://github.com/gauravfs-14",
-    "twitter": "https://x.com/gaurav_fs_14",
-    "websites": ["https://gaurabchhetri.com.np", "https://computenepal.com"],
-    "description": "Gaurab is currently an undergraduate student in the Computer Science Program at Texas State University. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant for Dr. Das. Originally from Nepal, Gaurab is passionate about web development and IT operations, with a strong focus on creating responsive and user-friendly web applications. His technical expertise spans HTML, CSS, JavaScript, React, Tailwind, Node.js, Express, MongoDB, and MySQL, along with version control using Git and GitHub. Before joining Texas State, Gaurab worked as an IT Officer, where he managed domain registrations, email systems, and computer lab environments. He also has experience in digital marketing, social media management, and graphic design, providing a holistic approach to enhancing online presence for businesses. His hands-on experience extends to WordPress, PHP, SQL, and a variety of tools that streamline IT operations and web development.",
-    "awards": [
-      "Best In Coding at Hackacat Nano by ACM AI @ TXST (2024)",
-      "Undergraduate Research Fellowship (URF), $2,000 (2025)"
-    ]
-  },
-  {
-      "name": "Amir Rafe",
-      "label": "Postdoctoral Researcher (Fall 2025 - Current)",
-      "group": "Postdoctoral Researcher",
-      "linkedin": "https://www.linkedin.com/in/amir-rafe-08770854/",
-      "email": "",
-      "image": "amir.png",
-      "googleScholar": "https://scholar.google.com/citations?hl=en&user=IUVLrp9PgFEC&view_op=list_works",
-      "researchGate": "https://www.researchgate.net/profile/Amir-Rafe",
-      "orcid": "",
-      "github": "https://github.com/pozapas",
-      "twitter": "https://twitter.com/rafeamir",
-      "websites": ["https://pozapas.github.io/", "https://www.youtube.com/@AmirRafe"],
-      "description": "Amir Rafe is a Postdoctoral Researcher in the Artificial Intelligence in Transportation (AIT) Lab at Texas State University. His research spans Causal AI, Computational Epistemology in AI, Complexity, and Safety, with a focus on understanding and improving how intelligent systems reason about and interact with complex, safety-critical environments. His doctoral work, EvacuAIDi: An AI-Driven, Causal-Informed Framework for Probabilistic and Disability-Inclusive Evacuation Guidance, integrates artificial intelligence, human behavior modeling, and causal reasoning to create more reliable and inclusive evacuation solutions. Amir has over 15 years of professional experience as a transportation engineering consultant, working on pedestrian safety, crowd evacuation, transportation master plans, freight logistics, and airport design across multiple countries. He began programming at the age of 12 with Fortran and has since gained extensive experience across many programming languages, now primarily developing in Python. His expertise includes AI-driven modeling, complex system simulation, probabilistic reasoning, and decision-support tool development. Beyond creating open-source tools, Amir is deeply driven by investigating the why behind phenomena and exploring how intricate systems emerge and evolve. Amir is also passionate about scientific outreach and education. He actively engages in science communication through social media, hosting a podcast on causality (Decoding Causality), which has been named one of the Top 15 causality podcasts on the web by Million Podcasts, and managing a LinkedIn page on Evacuation Science. Dedicated to teaching, he earned his College Teaching Certificate from Utah State University in August 2025 and continues to mentor students and foster interdisciplinary collaboration. Committed to bridging theory and practice, Amir seeks to advance methods that combine human insight, causal reasoning, and computational intelligence to build safer, more robust, and epistemically sound systems. As he describes it, “I like to create solutions that not only work but truly explain why they work, because understanding the cause is the foundation of lasting safety and progress.”",
-      "awards": []
-  },
-  {
-    "name": "Sawgat Ahmed Shuvo",
-    "label": "Ph.D. Candidate, Civil Engineering (Fall 2025 – Current)",
-    "group": "Ph.D. Candidate",
-    "linkedin": "https://www.linkedin.com/in/sawgat-ahmed-38023678/",
-    "email": "",
-    "image": "sawgat.png",
-    "googleScholar": "https://scholar.google.com/citations?user=ngoAdDkAAAAJ&hl=en ",
-    "researchGate": "",
-    "orcid": "https://orcid.org/my-orcid?orcid=0009-0007-0594-9863 ",
-    "github": "",
-    "twitter": "",
-    "websites": [],
-    "description": "Sawgat Ahmed Shuvo is pursuing his PhD in Civil Engineering at Texas State University, where he works as a Doctoral Assistant at AIT Lab under the supervision of Dr. Subasish Das. He completed his Bachelor in Civil Engineering in 2011 from Bangladesh University of Engineering and Technology (BUET), with a major in Transportation Engineering and a minor in Structural Engineering. His undergraduate thesis was about Pedestrian Crossing Behavior in Dhaka City. He earned a Master of Urban Planning in 2019 with a specialization in Transportation Planning from the University of Melbourne, Australia. His graduate thesis was about Public Transport in Melbourne for Improving Bus Network Efficiency. He has around 13 years of professional experience in diverse fields of civil engineering. In 2014, he joined the Bangladesh Civil Service and began his career at the Public Works Department (PWD), where he was involved in planning and design of various public infrastructure across the country. Prior to that, he worked at the Institute of Water Modelling (IWM), where he was involved in mathematical modeling of wave dynamics and littoral drift models. He also worked at Era Construction, where he gained practical experience in construction supervision and management. He is affiliated with several professional organizations, including the Institute of Engineers, Bangladesh (IEB), Bangladesh Earthquake Society and the Bangladesh Civil Service Public Works Engineers’ Association (BCSPWEA). He has also successfully obtained Structural Engineer (SEng) registration from IEB. His research interests include public transport, active transport, structural analysis, and policy analysis.",
-    "awards": []
-  },
-  {
-    "name": "Shamyo Brotee",
-    "label": "M.Sc., Computer Science (Fall 2025 - Current)",
-    "group": "Graduate Student",
-    "linkedin": "https://www.linkedin.com/in/sbrotee63/",
-    "email": "",
-    "image": "shamyo.png",
-    "googleScholar": "https://scholar.google.com/citations?user=2jHz2x0AAAAJ&hl=en",
-    "researchGate": "",
-    "orcid": "",
-    "github": "",
-    "twitter": "",
-    "websites": ["https://sbrotee63.github.io/"],
-    "description": "Shamyo Brotee is currently a Master's student in Computer Science at Texas State University, beginning in Fall 2025. He works as a Graduate Research Assistant under the supervision of Dr. Subasish Das and Dr. Anandi Dutta. Originally from Bangladesh, he earned his Bachelor’s degree in Computer Science and Engineering from the University of Dhaka. His past research focused on multi-agent deep reinforcement learning for autonomous vehicles, and his overall research interests include applying machine learning in autonomous vehicles, transportation, and other autonomous systems. Before graduate school, he gained industry and academic experience as a software developer and a university lecturer in Bangladesh. He is proficient in Python, C++, SQL Server, and data visualization using Power BI, with experience in applying machine learning in diverse applications. He is an inquisitive person who is always willing to learn more.",
-    "awards": []
-  },
-  {
     "name": "Arka Chakraborty",
     "label": "M.Sc., Civil Engineering (Fall 2025 - Current)",
     "group": "Graduate Student",
@@ -261,6 +194,75 @@
     "awards": ["Graduate Merit Fellowship, $1,285 (2025, 2026)"]
   },
   {
+    "name": "Shamyo Brotee",
+    "label": "M.Sc., Computer Science (Fall 2025 - Current)",
+    "group": "Graduate Student",
+    "linkedin": "https://www.linkedin.com/in/sbrotee63/",
+    "email": "",
+    "image": "shamyo.png",
+    "googleScholar": "https://scholar.google.com/citations?user=2jHz2x0AAAAJ&hl=en",
+    "researchGate": "",
+    "orcid": "",
+    "github": "",
+    "twitter": "",
+    "websites": ["https://sbrotee63.github.io/"],
+    "description": "Shamyo Brotee is currently a Master's student in Computer Science at Texas State University, beginning in Fall 2025. He works as a Graduate Research Assistant under the supervision of Dr. Subasish Das and Dr. Anandi Dutta. Originally from Bangladesh, he earned his Bachelor’s degree in Computer Science and Engineering from the University of Dhaka. His past research focused on multi-agent deep reinforcement learning for autonomous vehicles, and his overall research interests include applying machine learning in autonomous vehicles, transportation, and other autonomous systems. Before graduate school, he gained industry and academic experience as a software developer and a university lecturer in Bangladesh. He is proficient in Python, C++, SQL Server, and data visualization using Power BI, with experience in applying machine learning in diverse applications. He is an inquisitive person who is always willing to learn more.",
+    "awards": []
+  },
+  {
+    "name": "Gaurab Chhetri",
+    "label": "B.Sc., Computer Science (Fall 2024 - Current)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://www.linkedin.com/in/gaurabchhetri/",
+    "email": "",
+    "image": "gaurab.jpg",
+    "googleScholar": "https://scholar.google.com/citations?user=NRzdAVEAAAAJ&hl=en",
+    "researchGate": "",
+    "orcid": "https://orcid.org/0009-0000-0124-4814",
+    "github": "https://github.com/gauravfs-14",
+    "twitter": "https://x.com/gaurav_fs_14",
+    "websites": ["https://gaurabchhetri.com.np", "https://computenepal.com"],
+    "description": "Gaurab is currently an undergraduate student in the Computer Science Program at Texas State University. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant for Dr. Das. Originally from Nepal, Gaurab is passionate about web development and IT operations, with a strong focus on creating responsive and user-friendly web applications. His technical expertise spans HTML, CSS, JavaScript, React, Tailwind, Node.js, Express, MongoDB, and MySQL, along with version control using Git and GitHub. Before joining Texas State, Gaurab worked as an IT Officer, where he managed domain registrations, email systems, and computer lab environments. He also has experience in digital marketing, social media management, and graphic design, providing a holistic approach to enhancing online presence for businesses. His hands-on experience extends to WordPress, PHP, SQL, and a variety of tools that streamline IT operations and web development.",
+    "awards": [
+      "Best In Coding at Hackacat Nano by ACM AI @ TXST (2024)",
+      "Undergraduate Research Fellowship (URF) @ TXST, $2,000 (2025)",
+      "SerpApi Community Engagement Track Winner – RiverHacks @ ACC, Austin, TX, $3,000 (2025)",
+      "Organized AI Hackathon Winner @ Austin,TX, $500 (2025)"
+    ]
+  },
+  {
+    "name": "Biplov Pandey",
+    "label": "B.Sc., Civil Engineering (Fall 2024 - Current)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://www.linkedin.com/in/biplov-pandey-09b43a306/",
+    "email": "",
+    "image": "biplov_pandey.jpg",
+    "googleScholar": "",
+    "github": "https://github.com/BiplovPandey17",
+    "twitter": "",
+    "websites": [],
+    "description": "Biplov is currently an undergraduate student in the Civil Engineering Program at Texas State University, guided by Dr. Das. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant. Originally from Nepal, Biplov is interested in transportation engineering and infrastructure development. His research focus includes transportation safety and sustainability. He has prior experience as a Surveying Assistant at SadaShiva Infra Private Limited, where he contributed to site assessments and data collection for mapping and project planning. Biplov's projects include geological field studies and detailed surveying tasks with proficiency in total stations, theodolites, CAD software, SolidWorks, and Microsoft Office. Outside of academics, Biplov enjoys watching cricket, playing table tennis, and hiking.",
+    "awards": ["Undergraduate Research Fellowship (URF), $2,000 (2025)"]
+  },
+  {
+    "name": "Darrell Anderson",
+    "label": "B.Sc., Civil Engineering (Fall 2023 - Current)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://www.linkedin.com/in/darrell-m-anderson",
+    "email": "",
+    "image": "darrell_anderson.jpg",
+    "googleScholar": "",
+    "github": "",
+    "twitter": "",
+    "websites": [],
+    "description": "Darrell is a senior at Texas State University, majoring in Civil Engineering (CE) and minoring in mathematics. In the summer of 2023, Darrell started working as an undergraduate research assistant at the Artificial Intelligence in Transportation (AIT) lab under Dr. Das Subasish. While at AIT, Darrell was awarded the Dwight David Eisenhower Transportation Fellowship (DDETFP), which he presented at DC on the concept of 15-minute cities. As a member of a few engineering and environmental groups, Darrell is passionate about the environment and water resources, and he is interested in the impact that urbanization, along with the increase in traffic systems, has on the environment. As a civil drafter/designer for a small urban planning and development company, he has helped design many sites currently under development. As a founding member of the Institute of Transportation Engineers – at Texas State University, he holds the treasurer position. In his free time, he enjoys cooking, baking, and reading and is working towards becoming a sommelier in his free time.",
+    "awards": [
+      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $8,500 (2023)",
+      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $7,000 (2024)",
+      "Undergraduate Research Fellowship (URF), $1,160 (2025)"
+    ]
+  },
+  {
     "name": "Irfan Sarwar Pranjol",
     "label": "B.Sc., Mechanical Engineering (Fall 2025 - Current)",
     "group": "Undergraduate Student",
@@ -275,6 +277,37 @@
     "websites": [],
     "description": "Irfan Sarwar Pranjol is an undergraduate student in the Mechanical Engineering program at Texas State University. He joined the Artificial Intelligence in Transportation (AIT) Lab in Fall 2025 as an undergraduate research assistant. Originally from Dhaka, Bangladesh, he has a strong academic background with a perfect GPA in both high school and college, along with a 1450 SAT score (96th percentile worldwide). His research interests lie at the intersection of artificial intelligence, sustainability, and engineering applications. Beyond academics, he has extensive leadership experience as Secretary General of the Notre Dame Eco and Space Club, where he organized national-level summits, astronomy workshops, and rocketry seminars. He also co-founded “Stellarscapes,” Bangladesh’s first astronomy-based high school exhibition, and has guided multiple student teams to success in international and national science competitions. He is skilled in Microsoft Office, spreadsheets, and Canva, and brings strong organizational and communication abilities developed through years of leading clubs, editing scientific magazines, and anchoring large events. Outside academics, he enjoys soccer, swimming, working out, and badminton.",
     "awards": []
+  },
+  {
+    "name": "Mahmuda Sultana Mimi",
+    "label": "M.Sc., Civil Engineering (2023 - 2025) (Temp Employee Since September, 2025)",
+    "group": "Graduate Student",
+    "linkedin": "https://www.linkedin.com/in/mahmuda-mimi",
+    "email": "",
+    "image": "mahmuda_sultana_mimi.jpg",
+    "description": "Mahmuda is currently pursuing Master's in Civil Engineering at Texas State University under the supervision of Dr. Subasish Das. She joined AIT lab in Fall 2023 as a Graduate Research Assistant. Previously, she earned her Bachelor's degree in Urban and Regional Planning from Bangladesh University of Engineering and Technology (BUET). Her research focuses on transportation safety, encompassing vulnerable road users, driver behavior, and micromobility; as well as travel behavior and demand modeling. She is deeply engaged in developing Machine Learning, and Deep Learning based models; Statistical and Econometric models; GIS based spatial data analysis; and data mining in the field of transportation. In addition to her academic pursuits, she serves as the secretary of the ITE TXST chapter, where she supports initiatives to enhance transportation systems and promote safety.",
+    "googleScholar": "https://scholar.google.com/citations?user=CUmpUkAAAAAJ&hl=en",
+    "github": "https://github.com/Mahmuda-mimi",
+    "twitter": "",
+    "websites": [],
+    "awards": [
+      "Graduate College Scholarship, $1,000 (2023, 2024)",
+      "ASHE Central Texas Scholarship Award, $1,000 (Fall 2024)",
+      "WTS Helene Overley Memorial Scholarship, $5,000 (2025)"
+    ]
+  },
+  {
+    "name": "Michael J Starewich",
+    "label": "M.Sc., Mathematics (2023-2024) (Temp Employee Since January, 2025)",
+    "group": "Graduate Student",
+    "linkedin": "",
+    "email": "",
+    "image": "michael_j_starewich.jpg",
+    "description": "Michael Starewich earned his M.S. in Mathematics, with a concentration in Statistics, from Texas State University in December 2024. He has experience in data analysis, statistical modeling, and teaching. Outside of work, he enjoys spending time with his pets and barbecuing on the weekends.",
+    "googleScholar": "",
+    "github": "",
+    "twitter": "",
+    "websites": []
   },
   {
     "name": "Venkata Surya Bellamkonda",

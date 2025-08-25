@@ -14,24 +14,6 @@
     "awards": []
   },
   {
-    "name": "Mahmuda Sultana Mimi",
-    "label": "M.Sc., Civil Engineering (2023 - 2025)",
-    "group": "Graduate Student",
-    "linkedin": "https://www.linkedin.com/in/mahmuda-mimi",
-    "email": "",
-    "image": "mahmuda_sultana_mimi.jpg",
-    "description": "Mahmuda is currently pursuing Master's in Civil Engineering at Texas State University under the supervision of Dr. Subasish Das. She joined AIT lab in Fall 2023 as a Graduate Research Assistant. Previously, she earned her Bachelor's degree in Urban and Regional Planning from Bangladesh University of Engineering and Technology (BUET). Her research focuses on transportation safety, encompassing vulnerable road users, driver behavior, and micromobility; as well as travel behavior and demand modeling. She is deeply engaged in developing Machine Learning, and Deep Learning based models; Statistical and Econometric models; GIS based spatial data analysis; and data mining in the field of transportation. In addition to her academic pursuits, she serves as the secretary of the ITE TXST chapter, where she supports initiatives to enhance transportation systems and promote safety.",
-    "googleScholar": "https://scholar.google.com/citations?user=CUmpUkAAAAAJ&hl=en",
-    "github": "https://github.com/Mahmuda-mimi",
-    "twitter": "",
-    "websites": [],
-    "awards": [
-      "Graduate College Scholarship, $1,000 (2023, 2024)",
-      "ASHE Central Texas Scholarship Award, $1,000 (Fall 2024)",
-      "WTS Helene Overley Memorial Scholarship, $5,000 (2025)"
-    ]
-  },
-  {
     "name": "Syed Aaqib Javed",
     "label": "M.Sc., Civil Engineering (2023 – 2025)",
     "group": "Graduate Student",
@@ -165,19 +147,6 @@
     "image": "dr._md._nasim_khan.jpg",
     "description": "Dr. Nasim Khan is a Senior Transportation Engineer at AtkinsRéalis, specializing in transportation safety, intelligent transportation systems, and traffic engineering. He holds a Ph.D. and a Master of Science in Transportation Engineering from the University of Wyoming, along with a Bachelor's degree in Civil Engineering from Bangladesh University of Engineering and Technology. Before his current role, Dr. Khan served as a Postdoctoral Scholar at Texas State University, where he worked at the Artificial Intelligence in Transportation (AIT) Lab, focusing on crash risk modeling, connected and autonomous vehicles, and smart traffic management systems. His professional experience includes roles as a Postdoctoral Research Associate and Graduate Research Assistant at the University of Wyoming, and as a Lecturer at the University of Information Technology & Sciences. Dr. Khan’s expertise includes advanced traffic control strategies, data-driven safety analysis, and GIS-based transportation studies. He has a strong record of publishing and presenting his research at major conferences and is dedicated to integrating innovative technologies to enhance transportation systems and improve safety.",
     "googleScholar": "https://scholar.google.com/citations?user=isdeiukAAAAJ&hl=en",
-    "github": "",
-    "twitter": "",
-    "websites": []
-  },
-  {
-    "name": "Michael J Starewich",
-    "label": "M.Sc., Mathematics (2023-2024)",
-    "group": "Graduate Student",
-    "linkedin": "",
-    "email": "",
-    "image": "michael_j_starewich.jpg",
-    "description": "Michael Starewich earned his M.S. in Mathematics, with a concentration in Statistics, from Texas State University in December 2024. He has experience in data analysis, statistical modeling, and teaching. Outside of work, he enjoys spending time with his pets and barbecuing on the weekends.",
-    "googleScholar": "",
     "github": "",
     "twitter": "",
     "websites": []
