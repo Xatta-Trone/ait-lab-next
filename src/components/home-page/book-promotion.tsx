@@ -6,6 +6,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "@/components/ui/button";
 import { BookOpen, ShoppingCart } from "lucide-react";
 import Link from "next/link";
+import AutoPlay from "embla-carousel-autoplay";
 
 interface Book {
   title: string;
@@ -30,7 +31,7 @@ export default function BookPromotion({
   books?: Book[];
 }) {
   const isSlider = books.length > 1;
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true}, [AutoPlay({ playOnInit: true, delay: 3000, stopOnMouseEnter: true, stopOnInteraction: false })]);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
