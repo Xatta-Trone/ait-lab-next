@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Calendar, ExternalLink } from "lucide-react";
+import { Calendar, ExternalLink, Maximize2 } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -15,12 +15,13 @@ import ImageWithFallback from "../image-w-fallback";
 
 interface ProjectCardProps {
   project: Project;
+  onModalOpen: (project: Project) => void;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ project, onModalOpen }: ProjectCardProps) {
   return (
     <Card className="glass-card h-full flex flex-col card-hover overflow-hidden">
-      <div className="relative h-48 w-full">
+      <div className="relative aspect-video">
         <ImageWithFallback
           src={"/images/projects/" + project.image || "/images/placeholder.png"}
           alt={project.title}
@@ -70,7 +71,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </p>
         <p className="text-sm text-foreground/70">Sponsor: {project.sponsor}</p>
       </CardContent>
-      <CardFooter className="flex flex-col items-start gap-2 pt-0">
+      <CardFooter className="flex items-start gap-2 pt-0 justify-between">
         {/* {project.links && project.links.length > 0 && (
           <div className="flex flex-wrap gap-2 w-auto mb-2">
             {project.links.map((link, index) => (
@@ -86,14 +87,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
         )} */}
+        <Button
+          variant="ghost"
+          className="gap-2 w-auto justify-start group hover:bg-blue-500/10"
+          onClick={() => onModalOpen(project)}
+        >
+          <span>View Details</span>
+          <Maximize2 className="h-4 w-4" />
+        </Button>
         {(project.link && project.link !== "") && (
-          <Link href={project.link} className="w-full">
+          <Link href={project.link} className="w-fit" target="_blank" rel="noopener noreferrer">
             <Button
-              variant="ghost"
-              className="gap-2 w-auto justify-start group hover:bg-blue-500/10"
+              className="flex items-center gap-1 text-xs px-2 py-1 rounded-lg bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 transition-colors ml-auto"
             >
-              <span>View Project Details</span>
-              <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ExternalLink className="h-4 w-4" />
+              <span>Learn More</span>
             </Button>
           </Link>
         )}

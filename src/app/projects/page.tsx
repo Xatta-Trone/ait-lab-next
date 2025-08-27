@@ -24,6 +24,8 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { Spinner } from "@/components/ui/spinner";
+import ProjectModal from "@/components/projects/project-modal";
+import { Project } from "@/types/project";
 
 export default function ProjectsPage() {
   const {
@@ -45,6 +47,14 @@ export default function ProjectsPage() {
     hasPrevPage,
     totalItems,
   } = useProjectsData();
+
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
 
   // Add state for debounced input
   const [searchInput, setSearchInput] = useState(searchQuery);
@@ -175,6 +185,7 @@ export default function ProjectsPage() {
               <ProjectCard
                 key={project.title + project.number + project.PI}
                 project={project}
+                onModalOpen={handleProjectClick}
               />
             ))}
           </div>
@@ -276,6 +287,11 @@ export default function ProjectsPage() {
           </TabsContent>
         </Tabs>
       </div>
+      <ProjectModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </div>
   );
 }
