@@ -14,7 +14,7 @@
   {
     "title": "CE 4362: Traffic Engineering",
     "schedule": "",
-    "term": "Fall 2024",
+    "term": "Fall 2024, Fall 2025",
     "description": "This course is a basic introduction of the components of a highway traffic system and fundamentals of traffic engineering; analysis of traffic stream characteristics, levels of service, and capacity of urban and rural highways; study of warrants for traffic control devices; design and analysis of traffic signals and timing plans; analysis of urban and highway traffic characteristics using simulation software.",
     "prerequisite": {
       "courseTitle": "CE 3360",
@@ -26,7 +26,7 @@
   {
     "title": "CE 7393. Artificial Intelligence Applications in Civil Engineering",
     "schedule": "",
-    "term": "Fall 2024",
+    "term": "Fall 2024, Fall 2025",
     "description": "This course explores the interface between artificial intelligence (AI) and civil engineering. The course covers foundational topics including civil engineering basics, AI fundamentals, matrix algebra, and data preprocessing. The curriculum also includes specific AI methodologies, like supervised, unsupervised, deep learning, and explainable AI, in addition to natural language processing. It highlights emerging technologies in civil engineering and the ethical and social implications of AI in the sector.",
     "level": "Ph.D. (Graduate)",
     "lectures": [
