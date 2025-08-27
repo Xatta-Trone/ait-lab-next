@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Calendar, Expand, ExpandIcon, ExternalLink, Maximize2 } from "lucide-react";
+import { Calendar, ExternalLink, Maximize2 } from "lucide-react";
 import {
   Card,
   CardContent,
