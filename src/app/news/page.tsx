@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/pagination";
 import { useState, useEffect } from "react";
 import { Spinner } from "@/components/ui/spinner";
+import { Button } from "@/components/ui/button";
 
 export default function NewsPage() {
   // Use the enhanced hook with pagination
@@ -210,12 +211,7 @@ export default function NewsPage() {
             <p className="text-foreground/60 mb-6">
               We couldn&apos;t find any news items matching your search criteria.
             </p>
-            <button
-              onClick={() => setSearchQuery("")}
-              className="text-blue-500 hover:underline"
-            >
-              Clear search
-            </button>
+            <Button onClick={() => setSearchInput("")}>Clear search</Button>
           </div>
         )}
       </div>
