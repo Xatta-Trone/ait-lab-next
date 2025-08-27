@@ -12,6 +12,7 @@ import { FiGithub } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiResearchgate } from "react-icons/si";
 import ImageWithFallback from "../image-w-fallback";
+import { LiaOrcid } from "react-icons/lia";
 
 interface TeamMemberModalProps {
   member: TeamMember | Fellow | null;
@@ -60,7 +61,7 @@ export default function TeamMemberModal({
             <X className="h-5 w-5" />
           </Button>
         </div>
-
+ 
         <div className="flex-grow overflow-y-auto p-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-4">
@@ -98,6 +99,17 @@ export default function TeamMemberModal({
                   >
                     <FiLinkedin className="h-4 w-4 text-blue-500" />
                     <span>LinkedIn</span>
+                  </Link>
+                )}
+                {member.orcid && (
+                  <Link
+                    href={member.orcid}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm px-3 py-2 rounded-full glass-card hover:bg-blue-500/10 transition-colors"
+                  >
+                    <LiaOrcid className="h-4 w-4 text-blue-500" />
+                    <span>ORCID</span>
                   </Link>
                 )}
                 {member.googleScholar && (
