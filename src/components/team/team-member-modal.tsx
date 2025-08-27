@@ -34,10 +34,21 @@ export default function TeamMemberModal({
       document.body.style.overflow = "hidden";
     }
 
+    // Add Escape key listener when modal is open
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    }
+    if (isOpen) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
     return () => {
       document.body.style.overflow = "auto";
+      window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isOpen]);
+  }, [isOpen, onClose]);
 
   if (!mounted || !isOpen || !member) return null;
 
