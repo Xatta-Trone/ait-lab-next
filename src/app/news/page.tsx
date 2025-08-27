@@ -1,8 +1,7 @@
 "use client";
 
-import { Search, Bell, FileText, Calendar } from "lucide-react";
+import { Search, Bell, Calendar } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import NewsItemCard from "@/components/news/news-card";
 import type { NewsItem } from "@/types/news";
 import SectionHeading from "@/components/ui/section-heading";
@@ -18,22 +17,7 @@ import {
 import { useState, useEffect } from "react";
 import { Spinner } from "@/components/ui/spinner";
 
-// Categorization functions to maintain consistent filtering logic
-const isAlert = (item: NewsItem): boolean =>
-  item.title.toLowerCase().includes("funding") ||
-  item.title.toLowerCase().includes("achievement") ||
-  item.title.toLowerCase().includes("alert");
-
-const isPaper = (item: NewsItem): boolean =>
-  item.title.toLowerCase().includes("paper") ||
-  item.title.toLowerCase().includes("conference") ||
-  item.description.toLowerCase().includes("paper") ||
-  item.description.toLowerCase().includes("published");
-
 export default function NewsPage() {
-  // Track the active tab for pagination
-  const [activeTab, setActiveTab] = useState<"alerts" | "papers">("alerts");
-
   // Use the enhanced hook with pagination
   const {
     newsItems: filteredNews,
@@ -73,34 +57,23 @@ export default function NewsPage() {
     return () => clearTimeout(timer);
   }, [searchInput, setSearchQuery, searchQuery, isDebouncing]);
 
-  // First, categorize the complete filtered data
-  const allAlerts = filteredNews.filter(isAlert);
-  const allPapers = filteredNews.filter(isPaper);
+  // Calculate total pages
+  const totalPages = Math.max(1, Math.ceil(filteredNews.length / itemsPerPage));
 
-  // Determine which category to display based on active tab
-  const activeItems = activeTab === "alerts" ? allAlerts : allPapers;
-
-  // Calculate the correct total pages for the active category
-  const activeTotalPages = Math.max(
-    1,
-    Math.ceil(activeItems.length / itemsPerPage)
-  );
-
-  // Reset page when switching tabs or when it exceeds the available pages
+  // Reset page if it exceeds available pages
   useEffect(() => {
-    // If current page is beyond max pages for this tab, reset to page 1
-    if (currentPage > activeTotalPages) {
+    if (currentPage > totalPages) {
       setPage(1);
     }
-  }, [activeTab, activeTotalPages, currentPage, setPage]);
+  }, [totalPages, currentPage, setPage]);
 
   // Ensure currentPage is within valid range
-  const safeCurrentPage = Math.min(Math.max(1, currentPage), activeTotalPages);
+  const safeCurrentPage = Math.min(Math.max(1, currentPage), totalPages);
 
-  // Then apply pagination to the correct category
+  // Apply pagination
   const startIndex = (safeCurrentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const paginatedActiveItems = activeItems.slice(startIndex, endIndex);
+  const paginatedItems = filteredNews.slice(startIndex, endIndex);
 
   // Group news by month
   const groupNewsByMonth = (items: NewsItem[]) => {
@@ -120,7 +93,7 @@ export default function NewsPage() {
     return grouped;
   };
 
-  const groupedItems = groupNewsByMonth(paginatedActiveItems);
+  const groupedItems = groupNewsByMonth(paginatedItems);
 
   // Get months in order (most recent first)
   const getMonthsInOrder = (groupedItems: Record<string, NewsItem[]>) => {
@@ -135,10 +108,10 @@ export default function NewsPage() {
 
   // Render pagination UI using the calculated pagination state
   const renderPagination = () => {
-    if (activeTotalPages <= 1) return null;
+    if (totalPages <= 1) return null;
 
-    // Pagination flags based on current active tab context
-    const hasNextPage = safeCurrentPage < activeTotalPages;
+    // Pagination flags
+    const hasNextPage = safeCurrentPage < totalPages;
     const hasPrevPage = safeCurrentPage > 1;
 
     return (
@@ -151,7 +124,7 @@ export default function NewsPage() {
             />
           </PaginationItem>
 
-          {Array.from({ length: activeTotalPages }).map((_, i) => (
+          {Array.from({ length: totalPages }).map((_, i) => (
             <PaginationItem key={i}>
               <PaginationLink
                 isActive={safeCurrentPage === i + 1}
@@ -207,109 +180,43 @@ export default function NewsPage() {
           <div className="text-center py-16 text-red-500">
             Error loading news data
           </div>
+        ) : paginatedItems.length > 0 ? (
+          <>
+            <div className="space-y-12">
+              {monthsInOrder.map((month) => (
+                <div key={month}>
+                  <div className="flex items-center gap-3 mb-6">
+                    <Calendar className="h-5 w-5 text-blue-500" />
+                    <h2 className="text-xl font-bold">{month}</h2>
+                    <div className="h-px flex-grow bg-gradient-to-r from-blue-500/20 to-transparent"></div>
+                  </div>
+                  <div className="space-y-6">
+                    {groupedItems[month].map((item, index) => (
+                      <NewsItemCard
+                        key={`${month}-${index}`}
+                        newsItem={item}
+                      />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            {renderPagination()}
+          </>
         ) : (
-          /* Tabs for news categories */
-          <Tabs
-            defaultValue="alerts"
-            className="mb-8"
-            onValueChange={(value) => {
-              setActiveTab(value as "alerts" | "papers");
-              setPage(1); // Reset to page 1 when changing tabs
-            }}
-          >
-            <TabsList className="glass-card">
-              <TabsTrigger value="alerts" className="flex items-center gap-2">
-                Alerts & Achievements
-              </TabsTrigger>
-              <TabsTrigger value="papers" className="flex items-center gap-2">
-                Papers & Presentations
-              </TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="alerts" className="mt-6">
-              {activeTab === "alerts" && paginatedActiveItems.length > 0 ? (
-                <>
-                  <div className="space-y-12">
-                    {monthsInOrder.map((month) => (
-                      <div key={month}>
-                        <div className="flex items-center gap-3 mb-6">
-                          <Calendar className="h-5 w-5 text-blue-500" />
-                          <h2 className="text-xl font-bold">{month}</h2>
-                          <div className="h-px flex-grow bg-gradient-to-r from-blue-500/20 to-transparent"></div>
-                        </div>
-                        <div className="space-y-6">
-                          {groupedItems[month].map((item, index) => (
-                            <NewsItemCard
-                              key={`alert-${month}-${index}`}
-                              newsItem={item}
-                            />
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  {renderPagination()}
-                </>
-              ) : (
-                <div className="text-center py-16 glass-card rounded-xl">
-                  <Bell className="h-16 w-16 mx-auto text-foreground/30 mb-4" />
-                  <h3 className="text-xl font-medium mb-2">No alerts found</h3>
-                  <p className="text-foreground/60 mb-6">
-                    We couldn&apos;t find any alerts or achievements matching
-                    your search criteria.
-                  </p>
-                  <button
-                    onClick={() => setSearchQuery("")}
-                    className="text-blue-500 hover:underline"
-                  >
-                    Clear search
-                  </button>
-                </div>
-              )}
-            </TabsContent>
-
-            <TabsContent value="papers" className="mt-6">
-              {activeTab === "papers" && paginatedActiveItems.length > 0 ? (
-                <>
-                  <div className="space-y-12">
-                    {monthsInOrder.map((month) => (
-                      <div key={month}>
-                        <div className="flex items-center gap-3 mb-6">
-                          <Calendar className="h-5 w-5 text-blue-500" />
-                          <h2 className="text-xl font-bold">{month}</h2>
-                          <div className="h-px flex-grow bg-gradient-to-r from-blue-500/20 to-transparent"></div>
-                        </div>
-                        <div className="space-y-6">
-                          {groupedItems[month].map((item, index) => (
-                            <NewsItemCard
-                              key={`paper-${month}-${index}`}
-                              newsItem={item}
-                            />
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  {renderPagination()}
-                </>
-              ) : (
-                <div className="text-center py-16 glass-card rounded-xl">
-                  <FileText className="h-16 w-16 mx-auto text-foreground/30 mb-4" />
-                  <h3 className="text-xl font-medium mb-2">No papers found</h3>
-                  <p className="text-foreground/60 mb-6">
-                    We couldn&apos;t find any papers or presentations matching
-                    your search criteria.
-                  </p>
-                  <button
-                    onClick={() => setSearchQuery("")}
-                    className="text-blue-500 hover:underline"
-                  >
-                    Clear search
-                  </button>
-                </div>
-              )}
-            </TabsContent>
-          </Tabs>
+          <div className="text-center py-16 glass-card rounded-xl">
+            <Bell className="h-16 w-16 mx-auto text-foreground/30 mb-4" />
+            <h3 className="text-xl font-medium mb-2">No news found</h3>
+            <p className="text-foreground/60 mb-6">
+              We couldn&apos;t find any news items matching your search criteria.
+            </p>
+            <button
+              onClick={() => setSearchQuery("")}
+              className="text-blue-500 hover:underline"
+            >
+              Clear search
+            </button>
+          </div>
         )}
       </div>
     </div>
