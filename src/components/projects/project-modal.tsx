@@ -1,17 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { X, Globe, Award, ExternalLink, Calendar } from "lucide-react";
+import { X, Globe, ExternalLink, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { FiLinkedin } from "react-icons/fi";
-import { FaGoogleScholar } from "react-icons/fa6";
-import { FiGithub } from "react-icons/fi";
-import { FaXTwitter } from "react-icons/fa6";
-import { SiResearchgate } from "react-icons/si";
 import ImageWithFallback from "../image-w-fallback";
-import { LiaOrcid } from "react-icons/lia";
 import { Project } from "@/types/project";
 import { Badge } from "../ui/badge";
 
