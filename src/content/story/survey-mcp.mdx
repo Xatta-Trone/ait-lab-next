@@ -1,0 +1,117 @@
+---
+title: "Model Context Protocols in Adaptive Transport Systems: A Survey"
+authors:
+  - name: "Gaurab Chhetri"
+    profile: "https://scholar.google.com/citations?user=NRzdAVEAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Shriyank Somvanshi"
+    profile: "https://scholar.google.com/citations?user=JecpxeUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Md Monzurul Islam"
+    profile: "https://scholar.google.com/citations?hl=en&user=edkjFpwAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Shamyo Brotee"
+    profile: "https://scholar.google.com/citations?hl=en&user=2jHz2x0AAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Mahmuda Sultana Mimi"
+    profile: "https://scholar.google.com/citations?user=CUmpUkAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Dipti Koirala"
+    affiliation: "Texas State University, USA"
+  - name: "Biplov Pandey"
+    profile: "https://scholar.google.com/citations?user=9udK1YsAAAAJ&hl=en&oi=ao"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+year: 2025
+category: "arXiv preprint"
+abstract: "The rapid expansion of interconnected devices, autonomous systems, and AI applications has created severe fragmentation in adaptive transport systems, where diverse protocols and context sources remain isolated. This survey provides the first systematic investigation of the Model Context Protocol (MCP) as a unifying paradigm, highlighting its ability to bridge protocol-level adaptation with context-aware decision making. Analyzing established literature, we show that existing efforts have implicitly converged toward MCP-like architectures, signaling a natural evolution from fragmented solutions to standardized integration frameworks. We propose a five-category taxonomy covering adaptive mechanisms, context-aware frameworks, unification models, integration strategies, and MCP-enabled architectures. Our findings reveal three key insights: traditional transport protocols have reached the limits of isolated adaptation, MCP's client-server and JSON-RPC structure enables semantic interoperability, and AI-driven transport demands integration paradigms uniquely suited to MCP. Finally, we present a research roadmap positioning MCP as a foundation for next-generation adaptive, context-aware, and intelligent transport infrastructures."
+keywords:
+  [
+   "Model Context Protocol",
+   "semantic interoperability",
+   "context-aware systems",
+   "adaptive transport protocols",
+   "JSON-RPC",
+   "client–server",
+   "AI-driven systems",
+   "autonomous systems",
+   "Internet of Things"
+  ]
+description: "Comprehensive survey of MCP exploring their theoretical foundations, evolution, applications, and future potential in AI-enabled adaptive systems."
+featured_image: "/images/story/mcp_org.png"
+buttons:
+  - text: "ArXiv Preprint"
+    url: "https://arxiv.org/abs/2508.19239"
+    icon: "globe"
+    variant: "default"
+  - text: "Watch Video"
+    url: "https://youtu.be/ob1e6kABXz0"
+    icon: "play"
+    variant: "secondary"
+  - text: "GitHub"
+    url: "https://github.com/gauravfs-14/awesome-mcp"
+    icon: "github"
+    variant: "secondary"
+bibtex: |
+    @misc{chhetri2025modelcontextprotocolsadaptive,
+        title={Model Context Protocols in Adaptive Transport Systems: A Survey}, 
+        author={Gaurab Chhetri and Shriyank Somvanshi and Md Monzurul Islam and Shamyo Brotee and Mahmuda Sultana Mimi and Dipti Koirala and Biplov Pandey and Subasish Das},
+        year={2025},
+        eprint={2508.19239},
+        archivePrefix={arXiv},
+        primaryClass={cs.AI},
+        url={https://arxiv.org/abs/2508.19239}, 
+    }
+---
+
+
+![MCP Paper Organization](/images/story/mcp_org.png)
+_Figure 1: Organization of the MCP paper_
+
+## What is the problem/motivation
+
+* We live in a world where many devices, autonomous systems, Internet of Things (IoT), etc. are connected, moving, sensing, acting. Transport systems (e.g. autonomous vehicles, smart traffic lights, edge/cloud systems) are becoming adaptive and context‐aware. 
+
+* But there is **fragmentation**: protocols act in isolation, context data is siloed, adaptation/decision logic is spread across layers or domains. These cause inefficiency, safety risks, duplicated effort, mismatches in behavior. 
+
+* There has been recent work in adaptive transport, context‐aware computing, multi‐agent systems, etc., but there’s no unified framework or standardized protocol to tie together context, tools, and adaptive behavior across heterogeneous systems. 
+
+## What the paper proposes/covers
+
+* The authors survey existing literature and architectures in the intersection of adaptive transport protocols, context‐aware systems, and unification/integration models. They introduce a taxonomy with **five categories**:
+
+  1. Adaptive Protocol Mechanisms (things like congestion control, flow control, error recovery, etc.) 
+  2. Context‐Aware Frameworks (how systems sense, interpret, and use context) 
+  3. Unification Models (architectural strategies to bring together protocol + context + tools) 
+  4. Transport System Integration architectures (how adaptive transport is embedded in larger systems: IoT, edge/cloud, multimodal transport, etc.) 
+  5. MCP‐Enabled Architectures: how Model Context Protocol (MCP) fits in, what its mechanisms are, how decisions, exchanges, representations etc. happen under MCP. 
+
+* They explain MCP in detail: its architecture (client‐server model), how context is represented (schemas, metadata, uncertainty, provenance), how context is exchanged (using JSON‐RPC, capability negotiation, etc.), how contextual decision making is enabled. 
+
+* Then they map MCP’s potential onto transport systems: environmental context (sensor fusion, uncertainty, roadside units, etc.), application context (user intent, driver behavior, etc.), network state awareness (bandwidth, latency, link quality) 
+
+* They also analyze performance/evaluation: what metrics are used, what methodologies, what trade‐offs (overhead, latency, scalability). 
+
+* Finally they identify open challenges: scalability, cost/complexity, security/privacy, standardization, governance of schemas, overheads, how to maintain consistency in semantics, etc. And they propose a roadmap for future research. 
+
+## What is new/what insight emerges
+
+* The survey argues that many earlier works are *implicitly* converging on architectures that look like MCP even if they haven’t used that name. So MCP is not entirely novel but helps unify thinking, make explicit what many adaptive systems are tending towards. 
+* MCP’s strong points are semantic interoperability (i.e. not just sending bits/messages but meaning, metadata, uncertainty, provenance), capability negotiation, tool orchestration, which allow systems to dynamically discover, adapt, share context more richly. 
+* But with those rich capabilities come trade-offs: overhead, complexity, the burden of standardization, maintaining semantic consistency across many actors, privacy/trust issues, etc. The paper does a good job of balancing the promise with realistic challenges.
+
+## Why this matters/potential impact
+
+* As transport systems become more interconnected (autonomous vehicles, smart infrastructure, IoT, edge/cloud compute) having a common protocol or framework for context exchange could reduce friction, increase safety, efficiency, adaptability.
+
+* MCP could serve as a foundation for future transport/mobility infrastructures that are robust under variable conditions, that can coordinate across domains (vehicle‐to‐infrastructure, infrastructure‐to‐cloud, etc.), which is especially critical in urban settings, emergencies, mobility as a service, etc.
+
+* Better standardization can reduce duplication, make it easier for vendors/municipalities/cities/researchers to interoperate.
+
+* On the flip side, attention must be paid to overheads, ensure that standardization does not stifle innovation, manage privacy/security carefully.
+
+<YouTube id="ob1e6kABXz0" />
