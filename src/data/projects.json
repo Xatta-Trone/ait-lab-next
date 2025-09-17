@@ -1,11 +1,30 @@
 [
   {
+    "number": "",
+    "title": "Examining the Pre-Crash Circumstances Leading to Pedestrian Fatalities",
+    "description": "This project aims to investigate the specific events and contributing factors in the moments leading up to fatal pedestrian-vehicle crashes. Utilizing a detailed analysis of data, the research will focus on identifying key behavioral patterns of both pedestrians and drivers, as well as environmental and infrastructural conditions, that contribute to these tragic incidents. The study will examine factors such as distracted walking (e.g., smartphone use), driver inattention, visibility issues (e.g., time of day, weather, lighting), and the effectiveness of existing traffic control devices and crosswalk markings. The ultimate goal is to develop a comprehensive understanding of these \"pre-crash circumstances\" to inform the creation of targeted countermeasures, public awareness campaigns, and engineering improvements that can save lives and reduce the number of pedestrian fatalities on our roadways.",
+    "link": "",
+    "sponsor": "AAA Foundation for Traffic Safety (AAAFTS)",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
+    "start_date": {
+      "year": 2025,
+      "month": "October"
+    },
+    "end_date": {
+      "year": 2027,
+      "month": "March"
+    },
+    "status": "ongoing",
+    "image": "Examining the Pre-Crash Circumstances Leading to Pedestrian Fatalities.png"
+  },
+  {
     "number": "BTSCRP BTS-42",
     "title": "Guidelines for Authorizing, Implementing, and Operating Automated Traffic Enforcement Programs",
     "description": "The objective of this research is to develop guidelines for (1) authorizing, implementing, and operating automated traffic enforcement programs that inspire confidence and trust and (2) assessing public opinion and concerns regarding automated traffic enforcement by jurisdictions using, or considering the use of, this technology.",
     "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5739",
     "sponsor": "National Academies of Sciences, Engineering, and Medicine",
-    "PI": "Subasish Das (TXST), Co-PI: Anandi K. Dutta (TXST)",
+    "PI": "Subasish Das, Co-PI: Anandi K. Dutta",
     "PI_role": "PI",
     "start_date": {
       "year": 2026,
@@ -24,8 +43,8 @@
     "title": "Perform Assessment of TxDOT Safety Scoring Tools to Determine Effectiveness and Calibration",
     "description": "This project involves performing an assessment of TxDOT's Safety Scoring Tools to determine their effectiveness and calibration in enhancing roadway safety. The project's principal investigator is Subasish Das. The project was submitted in 2025 and is slated for funding from January 1, 2026, to December 31, 2027, with a budget of $70,008.",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST)",
-    "PI_role": "PI",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2026,
       "month": "January"
@@ -42,8 +61,8 @@
     "title": "Optimize Tradeoffs between Centerline Buffers, Lane Width, and Shoulders for Rural Undivided Highways",
     "description": "The TxDOT research project 0-7263 focuses on optimizing the design of rural undivided highways by analyzing the trade-offs between centerline buffers, lane width, and shoulder width. The goal is to provide a framework for TxDOT to make informed decisions on cross-sectional design, balancing safety and operational performance. This includes evaluating the impact of different combinations of these elements on crash rates and traffic flow.",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST)",
-    "PI_role": "PI",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2026,
       "month": "January"
@@ -60,8 +79,8 @@
     "title": "Cost Effective Roundabouts: Evaluate Options for Reducing Roundabout Footprints and Construction Costs",
     "description": "This project aims to evaluate various design options for roundabouts to identify strategies for reducing their physical footprint and construction costs while maintaining safety and operational efficiency.",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST)",
-    "PI_role": "PI",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2026,
       "month": "January"
@@ -79,7 +98,7 @@
     "description": "The traffic safety community has worked for decades to put a taboo on substance-impaired driving. While there remains a great deal of work to be done, progress has been made in mitigating the substance-impaired driving problem. For example, in recent years there has been evidence of an increase in the number of individuals who drive to the end of a transit or commuter rail line, take transit or commuter rail into the city where they become substance impaired, and then return using transit or commuter rail. However, the last leg of the journey to arrive home often requires driving, thus exposing substance-impaired drivers and other road users to motor vehicle crashes. This scenario is especially challenging in suburban and rural areas that have limited alternatives to driving the last leg of the journey. In addition to transit and commuter rail stations, substance-impaired drivers may face similar challenges traveling the last few miles home from park-and-ride lots and airports. While progress has been made in reducing the overall number of impaired miles traveled, addressing safety concerns associated with the last leg of the journey remains a significant highway safety challenge. Research is needed to help state highway safety offices (SHSOs) and other stakeholders develop strategies to address this challenge. OBJECTIVE: The objective of this research is to develop a toolkit of practical strategies to help SHSOs and other stakeholders address challenges associated with substance-impaired drivers traveling the last leg of the journey.",
     "link": "https://rip.trb.org/View/2394424",
     "sponsor": "National Academies",
-    "PI": "Subasish Das (TXST)",
+    "PI": "Subasish Das",
     "PI_role": "PI",
     "start_date": {
       "year": 2025,
@@ -97,7 +116,7 @@
     "title": "Developing Fatigue Management Decision Support System for the U.S. Rail Industry",
     "description": "The objective of this research is to develop a decision support system for the U.S. rail industry to manage fatigue among train operators.",
     "sponsor": "FRA",
-    "PI": "Subasish Das (TXST)",
+    "PI": "Subasish Das",
     "PI_role": "PI",
     "start_date": {
       "year": 2025,
@@ -115,7 +134,7 @@
     "title": "Synthesis on Evaluate Effectiveness of Pedestrian Elements Constructed through Competitive Funding Mechanisms",
     "description": "",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST)",
+    "PI": "Subasish Das",
     "PI_role": "PI",
     "start_date": {
       "year": 2025,
@@ -133,8 +152,8 @@
     "title": "Evaluate Emerging Transportation Technologies and Advancements in Engineering and Roadway Safety Efforts Impact on Crashes",
     "description": "",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST)",
-    "PI_role": "PI",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2025,
       "month": "September"
@@ -152,8 +171,8 @@
     "description": "The objectives of this project are to (1) examine the applicability of the 85th percentile speed as a factor in setting speed limits on freeways, expressways, and rural highways and (2) prepare a guide for state DOTs and other agencies with the authority to set speed limits on freeways, expressways, and rural highways that includes, at a minimum, implementation considerations, an application framework, and outreach materials for communication with policymakers.",
     "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5681",
     "sponsor": "NCHRP",
-    "PI": "Subasish Das (TXST)",
-    "PI_role": "PI",
+    "PI": "Subasish Das",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2025,
       "month": "July"
@@ -171,8 +190,8 @@
     "description": "The goal of this project will be to explore, document, and broaden the collective understanding of mandated parking minimums within Minnesota and the region. Specifically, this project will examine the long-term benefits and challenges presented by reducing and/or removing currently established parking space requirements with new or redevelopment projects, and opportunities for parking space reallocation with existing uses.",
     "link": "https://researchprojects.dot.state.mn.us/projectpages/details?id=30647&type=CONTRACT",
     "sponsor": "MnDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Kakan Dey (MSU)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Kakan Dey (MSU)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2025,
       "month": ""
@@ -209,8 +228,8 @@
     "description": "This project will explore various factors that affect pavement marking performance over the service life of the marking (pavement marking materials, installation specifications, pavement surface, traffic conditions, and geographic and climatic region) to develop performance models for Texas. Performance of a variety of markings and markers will be evaluated at various field test areas.",
     "link": "https://library.ctr.utexas.edu/Presto/project=0-7215",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Adam Pike (TTI)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Adam Pike (TTI)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2024,
       "month": "September"
@@ -228,8 +247,8 @@
     "description": "The main objective of this project is to improve roadway safety by evaluating and maintaining pavement markings, including retroreflective markers, in selected roadways. The goal is to assess their condition, renew markings as needed, and determine if these efforts reduce vehicle fatalities and crashes.",
     "link": "",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Bahar Dadashova (TTI)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Bahar Dadashova (TTI)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2024,
       "month": "September"
@@ -247,8 +266,8 @@
     "description": "The objective of this project is to document the benefits of innovative intersection designs, develop case studies of successfully implemented intersections in Texas, and provide resources to support the adoption and implementation of these designs across the state.",
     "link": "https://library.ctr.utexas.edu/Presto/project=0-7226",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Marcus Brewer (TTI)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Marcus Brewer (TTI)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2025,
       "month": "September"
@@ -266,8 +285,8 @@
     "description": "The objective of this project is to develop Safety Performance Functions (SPFs) and Crash Modification Factors (CMFs) for ramp terminals and frontage road intersections, evaluate the safety impact of weaving on frontage roads versus freeways, and create crash predictive models tailored to different area types, regions, and facility types.",
     "link": "https://library.ctr.utexas.edu/Presto/project=0-7222",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Srinivas Geedipally (TTI)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Srinivas Geedipally (TTI)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2025,
       "month": "September"
@@ -285,7 +304,7 @@
     "description": "The objective of this project is to develop a comprehensive framework and toolsets for evaluating coastal flood risks and assessing highway network durability using AI-based flood models, hydrodynamic simulations, and road risk scoring.",
     "link": "https://rip.trb.org/View/2422886",
     "sponsor": "USDOT",
-    "PI": "Subasish Das (TXST), PI: Eunsang Cho (TXST)",
+    "PI": "Subasish Das, PI: Eunsang Cho (TXST)",
     "PI_role": "Co-PI",
     "start_date": {
       "year": 2024,
@@ -323,8 +342,8 @@
     "description": "The objective of this study is to provide empirical models and evidence to help designers balance complete streets principles with roadside safety on low- and intermediate-speed urban roads.",
     "link": "https://researchprojects.dot.state.mn.us/projectpages/pages/projectDetails.jsf?id=29684&type=CONTRACT&jftfdi=&jffi=projectDetails%3Fid%3D29684%26type%3DCONTRACT",
     "sponsor": "MDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Kakan Dey (MSU)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Kakan Dey (MSU)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2024,
       "month": "July"
@@ -361,8 +380,8 @@
     "description": "",
     
     "sponsor": "AAA Foundation for Traffic Safety",
-    "PI": "Subasish Das (TXST), Lead-PI: Angela Kitali (UW)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Angela Kitali (UW)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2023,
       "month": ""
@@ -405,8 +424,8 @@
     "description": "The objective of this project is to develop updated Crash Modification Factors (CMFs) for Super 2 highways in Texas by analyzing recent crash data and site characteristics. The results will help TxDOT and other practitioners make informed decisions about installing future Super 2 corridors, providing additional safety support and complementing existing guidance. The CMFs will also be submitted to the FHWA's CMF Clearinghouse for inclusion in their database.",
     "link": "https://library.ctr.utexas.edu/Presto/project=7183",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Marcus Brewer (TTI)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Marcus Brewer (TTI)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2023,
       "month": "September"
@@ -424,8 +443,8 @@
     "description": "The objective of this project is to develop and validate data-driven methods for estimating vehicle miles traveled (VMT) on local roads in Texas. These methods aim to provide more accurate and cost-effective VMT estimates, reducing potential bias and financial challenges associated with conducting short-term traffic counts, while offering significant savings to the Texas Department of Transportation.",
     "link": "https://library.ctr.utexas.edu/Presto/project=0-7187",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Sushant Sharma (TTI)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Sushant Sharma (TTI)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2023,
       "month": "September"
@@ -443,8 +462,8 @@
     "description": "The objective of this project is to assess safety concerns at shared use path (SUP) roadway crossings involving pedestrians, bicyclists, micromobility users, and people with disabilities. The project aims to develop design and planning guidance for selecting appropriate treatments, considering different types of users, road classifications, land-use contexts, and crossing geometries, including paths next to railroads. This will support the safe implementation of SUPs across Texas.",
     "link": "https://library.ctr.utexas.edu/Presto/project=0-7189",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Bahar Dadashova (TTI)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Bahar Dadashova (TTI)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2023,
       "month": "September"
@@ -462,8 +481,8 @@
     "description": "The objective of this project is to evaluate the long-term and short-term safety effectiveness of retroreflective solid stripe applications on concrete barriers by analyzing before-and-after collision and near-collision data. The research also involves installing the treatments at six high-crash locations with various barrier types to assess their short-term impact. The findings will be used to update the special specification (SS) drafted by TxDOT's Traffic Safety Division for wider future use.",
     "link": "https://library.ctr.utexas.edu/Presto/project=7171",
     "sponsor": "TxDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Boniphace Kutela (TTI)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Boniphace Kutela (TTI)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2023,
       "month": "September"
@@ -481,8 +500,8 @@
     "description": "The objective of this project is to evaluate the performance of various pavement marking materials in relation to visibility, durability, and compatibility with autonomous vehicle systems. The study aims to analyze technical and performance data, address issues such as drying time, durability, and supply chain challenges, and provide recommendations for improving marking installation, maintenance practices, and specifications. The goal is to enhance road marking performance under varying conditions, ensuring visibility for both human drivers and automated driving systems.",
     "link": "https://rip.trb.org/View/2124968",
     "sponsor": "NJDOT",
-    "PI": "Subasish Das (TXST), Lead-PI: Mohammad Jalayer (RU)",
-    "PI_role": "PI",
+    "PI": "Subasish Das, Lead-PI: Mohammad Jalayer (RU)",
+    "PI_role": "Institutional PI",
     "start_date": {
       "year": 2023,
       "month": "January"
@@ -690,7 +709,7 @@
     "description": "The objective of the project is to compile a comprehensive synthesis of research on education and training opportunities related to core competencies in safety analysis. The project aims to develop a user-friendly tool that allows transportation agencies to assess their workforce development needs effectively. Additionally, the project provides a template for highway agencies to identify efficient and effective education and training programs, ensuring that their staff are equipped with the necessary skills and knowledge for conducting safety analysis.",
     "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=3999",
     "sponsor": "NCHRP",
-    "PI": "Subasish Das (TXST), PI: Karen Dixon (TTI)",
+    "PI": "Subasish Das, PI: Karen Dixon (TTI)",
     "PI_role": "Co-PI",
     "start_date": {
       "year": 2018,
@@ -709,7 +728,7 @@
     "description": "The objective of the project is to provide guidance for roadside vegetation management by comparing the costs, safety, and environmental impacts of routine mowing with managed vegetation succession outside the safety clear zone. The project aims to help DOTs re-evaluate their roadside management practices to balance environmental benefits, such as stormwater management, carbon sequestration, and habitat conservation, with cost savings and safety improvements for maintenance personnel.",
     "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=4197",
     "sponsor": "NCHRP",
-    "PI": "Subasish Das (TXST), PI: Beverly Storey (TTI)",
+    "PI": "Subasish Das, PI: Beverly Storey (TTI)",
     "PI_role": "Co-PI",
     "start_date": {
       "year": 2018,
@@ -747,7 +766,7 @@
     "description": "The objective of this analysis is to examine alcohol-related behaviors specific to Louisiana's diverse cultural groups and their impact on alcohol-involved crashes. The study identifies key risk factors, high-risk locations, and public perceptions of drinking and driving. It also explores countermeasures such as sobriety checkpoints and safe ride options. Additionally, the study addresses data gaps through surveys of DUI/DWI offenders and interviews with key stakeholders to better understand the underlying causes of drinking and driving and to recommend strategies for prevention.",
     "link": "https://rosap.ntl.bts.gov/view/dot/37080",
     "sponsor": "",
-    "PI": "Subasish Das PI: Eva Shipp (TTI)",
+    "PI": "Subasish Das, PI: Eva Shipp (TTI)",
     "PI_role": "CO-PI",
     "start_date": {
       "year": 2017,
@@ -824,7 +843,7 @@
     "link": "https://subasish.github.io/SD_Conts/2015%20Das%20LTRC%20TIRE%20Sentiment%20Analysis.pdf",
     "sponsor": "LaDOTD",
     "PI": "Subasish Das",
-    "PI_role": "Key Researcher",
+    "PI_role": "Co-PI",
     "start_date": {
       "year": 2015,
       "month": "February"
