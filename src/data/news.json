@@ -1,20 +1,135 @@
 [
   {
-    "title": "New Funding Alert",
-    "description": "AIT Lab got awarded a MnDOT project 'Refining the Understanding of Parking Space Requirements and Its Impact on Vehicle Miles Travelled.' TXST Budget: $50,000. TXST will work with Michigan State University (MSU) as a sub-contractor! PI: Kakan Dey, Co-PI: Subasish Das.",
-    "date": "December 20, 2024",
-    "link": ""
+    "title": "Student Achievement",
+    "description": "Gaurab Chhetri and team won Bold Innovation in Search & AI Track @ RiverHacks, Austin, TX, $1,000. Congrats!",
+    "date": "October 05, 2025",
+    "link": "https://github.com/gauravfs-14/beyond-blue"
   },
   {
-    "title": "New Funding Alert",
-    "description": "AIT Lab is awarded with 'NCHRP Synthesis 20-05/Topic 56-05: Traffic Analysis Practices for Non-Motorized Modes (Vulnerable Road Users).' Budget: $55,000. PI: Subasish Das.",
-    "date": "September 27, 2024",
+    "title": "Student Achievement",
+    "description": "Javed, Syed Aaqib crossed 200 citations in Google Scholar. Congrats!",
+    "date": "October 04, 2025",
+    "link": "https://scholar.google.com/citations?user=LN6RJTUAAAAJ&hl=en"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Islam, Md Monzurul crossed 100 citations in Google Scholar. Congrats!",
+    "date": "October 04, 2025",
+    "link": "https://scholar.google.com/citations?user=edkjFpwAAAAJ&hl=en"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Impact of temporal, spatial, and roadway factors on driver overrides in Level 2 automation: A bivariate binary probit model analysis - Swastika Barua, Mahmuda Sultana Mimi, Syed Aaqib Javed, Reuben Tamakloe, Subasish Das",
+    "date": "September 02, 2025",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1369847825003110"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Behavioral and psychological determinants of pedestrian collisions on arterial roads with evidence from random parameter models - Ahmed Hossain, Subasish Das, Monire Jafari, Michael Starewich, Rohit Chakraborty, Boniphace Kutela ",
+    "date": "August 28, 2025",
+    "link": "https://www.nature.com/articles/s41598-025-16762-3"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "A data-driven approach to child pedestrian crash analysis using dimension reduction, clustering, and explainable AI - Swastika Barua, Rohit Chakraborty, Md Monzurul Islam, Subasish Das",
+    "date": "August 28, 2025",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0001457525003173"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Gaurab Chhetri and team won Organized AI Hackathon @ Austin, TX, $500. Congrats!",
+    "date": "June 22, 2025",
+    "link": "https://github.com/gauravfs-14/medguide-ai"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "A Survey on Kolmogorov-Arnold Network - Shriyank Somvanshi, Syed Aaqib Javed, Md Monzurul Islam, Diwas Pandit, Subasish Das",
+    "date": "June 06, 2025",
+    "link": "https://dl.acm.org/doi/10.1145/3743128"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Uncovering the role of restraint usage in driver ejection: a data mining investigation of fatal and injury crashes - Rohit Chakraborty, Anannya Ghosh Tusti, Ahmed Hossain, Mohaddese Salehian, Syed Aaqib Javed, Subasish Das",
+    "date": "May 06, 2025",
+    "link": "https://www.tandfonline.com/doi/full/10.1080/15389588.2025.2491580?src=exp-la"
+  },
+  {
+    "slug": "2025-mahmuda-sultana-mimi-awarded-helene-m-overly-memorial-scholarship",
+    "title": "Student Achievement",
+    "description": "Mahmuda Sultana Mimi Receives Helene M. Overly Memorial Scholarship at WTS Heart of Texas Chapter’s 21st Gala. Congrats!",
+    "date": "April 26, 2025",
     "link": ""
   },
   {
     "title": "Student Achievement",
-    "description": "AIT Lab's first Ph.D. student Jinli Liu became Dr. Jinli Liu with a Ph.D. in Geographic Information Science. Congrats!",
-    "date": "December 14, 2024",
+    "description": "Shriyank Somvanshi received the Graduate College Scholarship worth $1000. Congrats!",
+    "date": "April 23, 2025",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Anannya Ghosh Tusti received the Graduate College Scholarship worth $1000. Congrats!",
+    "date": "April 23, 2025",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Evaluating crash risk factors of farm equipment vehicles on county and non-county roads using interpretable tabular deep learning (TabNet) - Md Monzurul Islam, Jinli Liu, Rohit Chakraborty, Subasish Das",
+    "date": "April 18, 2025",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0001457525001344"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Assessing motorcyclist injury severity on curved road segments with temporal dynamics and unobsorved heterogeneity - Monire Jafari, Michael Starewich, Ahmed Hossain, Swastika Barua, Nawaf Alnawmasi, Xinyue Ye & Subasish Das",
+    "date": "April 16, 2025",
+    "link": "https://www.nature.com/articles/s41598-025-97972-7?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20250416&utm_content=10.1038/s41598-025-97972-7"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Biplov Pandey has been awarded a $2,000 URF grant for a project: Enhancing Grid Resilience by Incorporating Sustainable EV Charging Networks in Texas. Congrats!",
+    "date": "April 02, 2025",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Gaurab Chhetri has been awarded a $2,000 URF grant for a project: Integrating AI and IoT Technologies for Heat Stress Prediction in Solar Energy Facilities Using Synthetic Data. Congrats!",
+    "date": "April 02, 2025",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Darrell Anderson has been awarded a $1,160 URF grant for a project: Case Study: Ensuring Walkability in San Marcos, TX Using Machine Learning and GIS to Assess the Feasibility of the 15-Minute City Concept. Congrats!",
+    "date": "March 27, 2025",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Big congratulations to Mahmuda Sultana Mimi for being selected as a 2025 Eno Fellow — a prestigious national honor awarded to the top MS/PhD students in transportation across the U.S.! Mimi’s passion, leadership, and dedication to shaping the future of transportation have earned her a spot among an elite cohort of future leaders.",
+    "date": "March 21, 2025",
+    "link": "https://enotrans.org/2025-leadership-awards/"
+  },
+  {
+    "title": "New Funding Alert",
+    "description": "AIT Lab got awarded 'NCHRP 17-134: Center Line Buffer Areas for Safety: Implementation Guidelines and Tool.' Budget: $250,000. TTI will work as a sub-contractor! PI: Subasish Das, Co-PI: Srinivas Geedipally.",
+    "date": "February 26, 2025",
+    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5682"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Mills A. David received the FY25 New Ventures Award of $10,000. Congrats!",
+    "date": "January 01, 2025",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Mahmuda Sultana Mimi received the WTS Helene Overley Memorial Scholarship of $5,000. Congrats!",
+    "date": "January 01, 2025",
+    "link": ""
+  },
+  {
+    "title": "New Funding Alert",
+    "description": "AIT Lab got awarded a MnDOT project 'Refining the Understanding of Parking Space Requirements and Its Impact on Vehicle Miles Travelled.' TXST Budget: $50,000. TXST will work with Michigan State University (MSU) as a sub-contractor! PI: Kakan Dey, Co-PI: Subasish Das.",
+    "date": "December 20, 2024",
     "link": ""
   },
   {
@@ -25,14 +140,8 @@
   },
   {
     "title": "Student Achievement",
-    "description": "Rohit Chakraborty and AIT Lab's third Ph.D. student Shriyank Somvanshi are awarded with 2024 CASITE Scholarship individually. Congrats!",
-    "date": "December 4, 2024",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Undergraduate research assistant Khaled Aly Abousabaa got his B.S. in Civil Engineering. Congrats!",
-    "date": "December 13, 2024",
+    "description": "AIT Lab's first Ph.D. student Jinli Liu became Dr. Jinli Liu with a Ph.D. in Geographic Information Science. Congrats!",
+    "date": "December 14, 2024",
     "link": ""
   },
   {
@@ -43,50 +152,8 @@
   },
   {
     "title": "Student Achievement",
-    "description": "Mahmuda Sultana Mimi has received a scholarship from ASHE CTX. Congrats!",
-    "date": "November 12, 2024",
-    "link": ""
-  },
-  {
-    "title": "New Paper Published",
-    "description": "Revealing Equity Gaps in Pedestrian Crash Data Through Explainable Artificial Intelligence Clustering - Jinli Liu, Gian Antariksa, Shriyank Somvanshi, Subasish Das",
-    "date": "November 27, 2024",
-    "link": "https://www.sciencedirect.com/science/article/abs/pii/S1361920924004954"
-  },
-  {
-    "title": "New Paper Published",
-    "description": "Demographic Risk Factors and Injury Severity Scores in Substance-use Behaviour related Traffic Crashes - Mahmuda Sultana Mimi, Rohit Chakraborty, Swastika Barua, Subasish Das, Md Nasim Khan, Bahar Dadashova",
-    "date": "November 18, 2024",
-    "link": "https://www.sciencedirect.com/science/article/pii/S1369847824003206"
-  },
-  {
-    "title": "New Paper Published",
-    "description": "A Survey on Deep Tabular Learning - Shriyank Somvanshi, Subasish Das, Syed Aaqib Javed, Gian Antariksa, Ahmed Hossain",
-    "date": "October 17, 2024",
-    "link": "https://arxiv.org/abs/2410.12034"
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Darrell M. Anderson received the Dwight D. Eisenhower Transportation Fellowship Program (DDETFP) award of $8,500. Congrats!",
-    "date": "September 01, 2023",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Darrell M. Anderson received the Dwight D. Eisenhower Transportation Fellowship Program (DDETFP) award of $7,000. Congrats!",
-    "date": "September 01, 2024",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Swastika Barua received the Scholarly Travel Activity and Research (S.T.A.R.) Grant of $450. Congrats!",
-    "date": "October 01, 2024",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Swastika Barua received the Graduate Student Travel Fund of $1,600. Congrats!",
-    "date": "December 01, 2024",
+    "description": "Undergraduate research assistant Khaled Aly Abousabaa got his B.S. in Civil Engineering. Congrats!",
+    "date": "December 13, 2024",
     "link": ""
   },
   {
@@ -109,8 +176,68 @@
   },
   {
     "title": "Student Achievement",
+    "description": "Shriyank Somvanshi received the 2024 CASITE Scholarship (3rd Position) of $500. Congrats!",
+    "date": "December 01, 2024",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Revealing Equity Gaps in Pedestrian Crash Data Through Explainable Artificial Intelligence Clustering - Jinli Liu, Gian Antariksa, Shriyank Somvanshi, Subasish Das",
+    "date": "November 27, 2024",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S1361920924004954"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Demographic Risk Factors and Injury Severity Scores in Substance-use Behaviour related Traffic Crashes - Mahmuda Sultana Mimi, Rohit Chakraborty, Swastika Barua, Subasish Das, Md Nasim Khan, Bahar Dadashova",
+    "date": "November 18, 2024",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1369847824003206"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Mahmuda Sultana Mimi has received a scholarship from ASHE CTX. Congrats!",
+    "date": "November 12, 2024",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Gaurab Chhetri, Dipesh Pandit, and Diwas Pandit won Best In Coding at Hackacat Nano by ACM AI @ TXST. Congrats!",
+    "date": "November 01, 2024",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Shriyank Somvanshi received the Scholarly Travel Activity and Research (S.T.A.R.) Grant + Graduate Student Travel Fund of $1,595. Congrats!",
+    "date": "November 01, 2024",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "A Survey on Deep Tabular Learning - Shriyank Somvanshi, Subasish Das, Syed Aaqib Javed, Gian Antariksa, Ahmed Hossain",
+    "date": "October 17, 2024",
+    "link": "https://arxiv.org/abs/2410.12034"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Swastika Barua received the Scholarly Travel Activity and Research (S.T.A.R.) Grant of $450. Congrats!",
+    "date": "October 01, 2024",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
     "description": "Rohit Chakraborty received the Scholarly Travel Activity and Research (S.T.A.R.) Grant of $450. Congrats!",
     "date": "October 01, 2024",
+    "link": ""
+  },
+  {
+    "title": "New Funding Alert",
+    "description": "AIT Lab is awarded with 'NCHRP Synthesis 20-05/Topic 56-05: Traffic Analysis Practices for Non-Motorized Modes (Vulnerable Road Users).' Budget: $55,000. PI: Subasish Das.",
+    "date": "September 27, 2024",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Darrell M. Anderson received the Dwight D. Eisenhower Transportation Fellowship Program (DDETFP) award of $7,000. Congrats!",
+    "date": "September 01, 2024",
     "link": ""
   },
   {
@@ -121,25 +248,25 @@
   },
   {
     "title": "Student Achievement",
-    "description": "Jinli Liu received the WTS Heart of Texas Chapter WTS Helene M Overly Memorial Scholarship of $5,000. Congrats!",
-    "date": "January 01, 2023",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Jinli Liu received the CASITE Scholarship (3rd Position) of $500. Congrats!",
-    "date": "December 01, 2023",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Jinli Liu received the P.E.O International Peace Scholarship of $10,000. Congrats!",
-    "date": "April 01, 2023",
+    "description": "Shriyank Somvanshi received the Student Government Scholarship of $1,000. Congrats!",
+    "date": "August 01, 2024",
     "link": ""
   },
   {
     "title": "Student Achievement",
     "description": "Jinli Liu received the P.E.O International Peace Scholarship of $10,500. Congrats!",
+    "date": "April 01, 2024",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Syed Aaqib Javed received the Graduate College Scholarship (Fall 2024) of $1,000.00. Congrats!",
+    "date": "April 01, 2024",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Mahmuda Sultana Mimi received the Graduate College Scholarship for the academic year 2024-25 of $1,000. Congrats!",
     "date": "April 01, 2024",
     "link": ""
   },
@@ -157,14 +284,26 @@
   },
   {
     "title": "Student Achievement",
-    "description": "Syed Aaqib Javed received the Spring 2025 Research Support Fellowship of $1,924.00. Congrats!",
-    "date": "December 01, 2024",
+    "description": "Mills A. David received the NSF I-Corps Interior Northeast Winter 2024 Cohort award of $50,000. Congrats!",
+    "date": "January 01, 2024",
     "link": ""
   },
   {
     "title": "Student Achievement",
-    "description": "Syed Aaqib Javed received the Graduate College Scholarship (Fall 2024) of $1,000.00. Congrats!",
-    "date": "April 01, 2024",
+    "description": "Jinli Liu received the CASITE Scholarship (3rd Position) of $500. Congrats!",
+    "date": "December 01, 2023",
+    "link": ""
+  },
+  {
+    "title": "New Funding Alert",
+    "description": "Examining the Pre-Crash Circumstances Leading to Pedestrian Fatalities - AAA Foundation (sub-contractor: TTI), Budget: $105,000",
+    "date": "September 15, 2023",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Darrell M. Anderson received the Dwight D. Eisenhower Transportation Fellowship Program (DDETFP) award of $8,500. Congrats!",
+    "date": "September 01, 2023",
     "link": ""
   },
   {
@@ -175,44 +314,14 @@
   },
   {
     "title": "Student Achievement",
-    "description": "Mahmuda Sultana Mimi received the Graduate College Scholarship for the academic year 2024-25 of $1,000. Congrats!",
-    "date": "April 01, 2024",
+    "description": "Jinli Liu received the P.E.O International Peace Scholarship of $10,000. Congrats!",
+    "date": "April 01, 2023",
     "link": ""
   },
   {
     "title": "Student Achievement",
-    "description": "Mahmuda Sultana Mimi received the ASHE Central Texas Scholarship Award Fall 2024 of $1,000. Congrats!",
-    "date": "November 01, 2024",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Mahmuda Sultana Mimi received the WTS Helene Overley Memorial Scholarship of $5,000. Congrats!",
-    "date": "January 01, 2025",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Gaurab Chhetri, Dipesh Pandit, and Diwas Pandit won Best In Coding at Hackacat Nano by ACM AI @ TXST. Congrats!",
-    "date": "November 01, 2024",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Shriyank Somvanshi received the Scholarly Travel Activity and Research (S.T.A.R.) Grant + Graduate Student Travel Fund of $1,595. Congrats!",
-    "date": "November 01, 2024",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Shriyank Somvanshi received the 2024 CASITE Scholarship (3rd Position) of $500. Congrats!",
-    "date": "December 01, 2024",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Shriyank Somvanshi received the Student Government Scholarship of $1,000. Congrats!",
-    "date": "August 01, 2024",
+    "description": "Jinli Liu received the WTS Heart of Texas Chapter WTS Helene M Overly Memorial Scholarship of $5,000. Congrats!",
+    "date": "January 01, 2023",
     "link": ""
   },
   {
@@ -220,90 +329,6 @@
     "description": "Mills A. David received the 2022 Dwight D. Eisenhower Transportation Fellowship Program (DDETFP) of $7,000. Congrats!",
     "date": "January 01, 2023",
     "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Mills A. David received the NSF I-Corps Interior Northeast Winter 2024 Cohort award of $50,000. Congrats!",
-    "date": "January 01, 2024",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Mills A. David received the FY25 New Ventures Award of $10,000. Congrats!",
-    "date": "January 01, 2025",
-    "link": ""
-  },
-  {
-    "title": "New Funding Alert",
-    "description": "AIT Lab got awarded 'NCHRP 17-134: Center Line Buffer Areas for Safety: Implementation Guidelines and Tool.' Budget: $250,000. TTI will work as a sub-contractor! PI: Subasish Das, Co-PI: Srinivas Geedipally.",
-    "date": "February 26, 2025",
-    "link": "https://apps.trb.org/cmsfeed/TRBNetProjectDisplay.asp?ProjectID=5682"
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Big congratulations to Mahmuda Sultana Mimi for being selected as a 2025 Eno Fellow — a prestigious national honor awarded to the top MS/PhD students in transportation across the U.S.! Mimi’s passion, leadership, and dedication to shaping the future of transportation have earned her a spot among an elite cohort of future leaders.",
-    "date": "March 21, 2025",
-    "link": "https://enotrans.org/2025-leadership-awards/"
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Darrell Anderson has been awarded a $1,160 URF grant for a project: Case Study: Ensuring Walkability in San Marcos, TX Using Machine Learning and GIS to Assess the Feasibility of the 15-Minute City Concept. Congrats!",
-    "date": "March 27, 2025",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Biplov Pandey has been awarded a $2,000 URF grant for a project: Enhancing Grid Resilience by Incorporating Sustainable EV Charging Networks in Texas. Congrats!",
-    "date": "April 02, 2025",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Gaurab Chhetri has been awarded a $2,000 URF grant for a project: Integrating AI and IoT Technologies for Heat Stress Prediction in Solar Energy Facilities Using Synthetic Data. Congrats!",
-    "date": "April 02, 2025",
-    "link": ""
-  },
-  {
-    "title": "New Paper Published",
-    "description": "Assessing motorcyclist injury severity on curved road segments with temporal dynamics and unobsorved heterogeneity - Monire Jafari, Michael Starewich, Ahmed Hossain, Swastika Barua, Nawaf Alnawmasi, Xinyue Ye & Subasish Das",
-    "date": "April 16, 2025",
-    "link": "https://www.nature.com/articles/s41598-025-97972-7?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20250416&utm_content=10.1038/s41598-025-97972-7"
-  },
-  {
-    "title": "New Paper Published",
-    "description": "Evaluating crash risk factors of farm equipment vehicles on county and non-county roads using interpretable tabular deep learning (TabNet) - Md Monzurul Islam, Jinli Liu, Rohit Chakraborty, Subasish Das",
-    "date": "April 18, 2025",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0001457525001344"
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Shriyank Somvanshi received the Graduate College Scholarship worth $1000. Congrats!",
-    "date": "April 23, 2025",
-    "link": ""
-  },
-  {
-    "title": "Student Achievement",
-    "description": "Anannya Ghosh Tusti received the Graduate College Scholarship worth $1000. Congrats!",
-    "date": "April 23, 2025",
-    "link": ""
-  },
-  {
-    "slug": "2025-mahmuda-sultana-mimi-awarded-helene-m-overly-memorial-scholarship",
-    "title": "Student Achievement",
-    "description": "Mahmuda Sultana Mimi Receives Helene M. Overly Memorial Scholarship at WTS Heart of Texas Chapter’s 21st Gala",
-    "date": "April 26, 2025",
-    "link": ""
-  },
-  {
-    "title": "New Paper Published",
-    "description": "Uncovering the role of restraint usage in driver ejection: a data mining investigation of fatal and injury crashes - Rohit Chakraborty, Anannya Ghosh Tusti, Ahmed Hossain, Mohaddese Salehian, Syed Aaqib Javed, Subasish Das",
-    "date": "May 06, 2025",
-    "link": "https://www.tandfonline.com/doi/full/10.1080/15389588.2025.2491580?src=exp-la"
-  },
-  {
-    "title": "New Paper Published",
-    "description": "A Survey on Kolmogorov-Arnold Network - Shriyank Somvanshi, Syed Aaqib Javed, Md Monzurul Islam, Diwas Pandit, Subasish Das",
-    "date": "June 06, 2025",
-    "link": "https://dl.acm.org/doi/10.1145/3743128"
   }
 ]
+
