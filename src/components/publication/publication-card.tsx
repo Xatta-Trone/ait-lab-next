@@ -33,13 +33,13 @@ export default function PublicationCard({ publication }: PublicationCardProps) {
             />
           }
           <div className="absolute top-2 right-2">
-            <Badge className="bg-blue-500 text-white">
-              {publication.year
-                ? publication.year
-                : publication.date_added
-                ? new Date(publication.date_added).getFullYear()
-                : "N/A"}
-            </Badge>
+            {(publication.year || publication.date_added) && (
+              <Badge className="bg-blue-500 text-white">
+                {publication.year
+                  ? publication.year
+                  : new Date(publication.date_added).getFullYear()}
+              </Badge>
+            )}
           </div>
           {publication.total_citations > 0 && (
             <div className="absolute top-2 left-2">
