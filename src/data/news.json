@@ -1,6 +1,66 @@
 [
   {
     "title": "Student Achievement",
+    "description": "Md Monzurul Islam and Sharif Ahmed Rafat won the BobCatalyst Innovation Accelerator Program (BIAP) Award ($5,000). Congrats!",
+    "date": "December 12, 2025",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Built Environment and Injury Risk: Association Rule-Based Exploration of E-Scooter Crashes in Texas Cities - Sayed Aaqib Javed, Sazzad Bin Bashar Polock, Swastika Barua, Tausif Islam Chowdhury, Anannya Ghosh Tusti, Subasish Das",
+    "date": "December 09, 2025",
+    "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5387446"
+  },
+  {
+    "title": "New Funding Alert",
+    "description": "Sheaf-Theoretic Identifiability in Technology-Enhanced Multi-Sensor Safety Infrastructure - Internal Funding: $12,000",
+    "date": "December 08, 2025",
+    "link": ""
+  },
+  {
+    "title": "New Funding Alert",
+    "description": "Role of emerging transportation technologies and safety initiatives in mitigating crashes in coastal communities - $80,000",
+    "date": "December 02, 2025",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Uncovering risk patterns in single and multiple ambulance crashes with association rules mining: evidence from Texas crash data - Sayed Aaqib Javed, Rohit Chakraborty, Ahmed Hossain, Subasish Das",
+    "date": "November 24, 2025",
+    "link": "https://www.tandfonline.com/doi/full/10.1080/23249935.2025.2592237"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Md Monzurul Islam received the 2025 CASITE Scholarship of $1,500. Congrats!",
+    "date": "November 20, 2025",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Uncovering risk patterns in single and multiple ambulance crashes with association rules mining: evidence from Texas crash data - Monire Jafari, Michael Starewich, Subasish Das, Swastika Barua, Reuben Tamakloe",
+    "date": "November 20, 2025",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0386111225000470"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Md Monzurul Islam won the American Society of Highway Engineers (ASHE) award of $2,000. Congrats!",
+    "date": "November 11, 2025",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "From Tiny Machine Learning to Tiny Deep Learning: A Survey - Shriyank Somvanshi, Md Monzurul Islam, Gaurab Chhetri, Rohit Chakraborty, Mahmuda Sultana Mimi, Sawgat Ahmed Shuvo, Kazi Sifatul Islam, Syed Javed, Sharif Ahmed Rafat, Anandi Dutta, Subasish Das",
+    "date": "October 22, 2025",
+    "link": "https://dl.acm.org/doi/abs/10.1145/3776588"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Crash Risk patterns among older bicyclists: Insights from hybrid XGBoost-Cluster Correspondence Analysis - Mahmuda Sultana Mimi, Md Monzurul Islam, Abbas Sheykhfard, Subasish Das",
+    "date": "October 19, 2025",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022437525001549"
+  },
+  {
+    "title": "Student Achievement",
     "description": "Gaurab Chhetri and team won Bold Innovation in Search & AI Track @ RiverHacks, Austin, TX, $1,000. Congrats!",
     "date": "October 05, 2025",
     "link": "https://github.com/gauravfs-14/beyond-blue"

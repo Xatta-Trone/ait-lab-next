@@ -2,6 +2,12 @@
 User-agent: *
 Allow: /
 
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
 # Host
 Host: https://ait-lab.vercel.app
 
