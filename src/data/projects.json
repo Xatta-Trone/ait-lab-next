@@ -1,4 +1,42 @@
 [
+    {
+      "number": "",
+      "title": "Role of emerging transportation technologies and safety initiatives in mitigating crashes in coastal communities",
+      "description": "This project investigates the impact of emerging transportation technologies and safety initiatives specifically designed for coastal communities to mitigate traffic crashes. The research focuses on unique challenges faced by these areas, such as weather-related visibility issues, tourist-related traffic fluctuations, and specific infrastructure needs, to determine the effectiveness of modern countermeasures.",
+      "link": "",
+      "sponsor": "USDOT (UTC CREATE)",
+      "PI": "Subasish Das",
+      "PI_role": "Principal",
+      "start_date": {
+        "year": 2026,
+        "month": "January"
+      },
+      "end_date": {
+        "year": 2026,
+        "month": "December"
+      },
+      "status": "ongoing",
+      "image": "Role of emerging transportation technologies and safety initiatives in mitigating crashes in coastal communities.png"
+    },
+    {
+      "number": "",
+      "title": "Sheaf-Theoretic Identifiability in Technology-Enhanced Multi-Sensor Safety Infrastructure",
+      "description": "This research explores the application of sheaf theory, a mathematical framework from topology, to address identifiability issues within multi-sensor safety infrastructure. The project aims to develop robust methods for integrating and interpreting data from diverse sensors (e.g., cameras, radar, LiDAR) to enhance the reliability and accuracy of crash prediction and prevention systems in technology-enhanced transportation environments.",
+      "link": "",
+      "sponsor": "REP, Texas State University",
+      "PI": "Subasish Das",
+      "PI_role": "Principal",
+      "start_date": {
+        "year": 2026,
+        "month": "January"
+      },
+      "end_date": {
+        "year": 2026,
+        "month": "December"
+      },
+      "status": "ongoing",
+      "image": "Sheaf-Theoretic Identifiability in Technology-Enhanced Multi-Sensor Safety Infrastructure.png"
+    },
   {
     "number": "",
     "title": "Examining the Pre-Crash Circumstances Leading to Pedestrian Fatalities",
