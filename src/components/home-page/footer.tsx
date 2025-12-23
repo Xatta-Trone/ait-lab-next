@@ -20,7 +20,6 @@ const flattenNavItems = (
       });
     }
   });
-
   return flattened;
 };
 
@@ -75,6 +74,14 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/trbam2026"
+                  className="text-foreground/70 hover:text-primary transition-colors"
+                >
+                  TRBAM 2026 Schedule
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -1,0 +1,791 @@
+[
+    {
+      "id": "26-00136",
+      "title": "Uncovering Patterns in E-Scooter Crash Severity Using the Lift Increase Criterion in Association Rule Mining",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Sazzad Bin Bashar Polock", "affiliation": "Texas State University" },
+        { "name": "Tausif Islam Chowdhury", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00186",
+      "title": "Fusing Text and Tabular Intelligence: A Hybrid AutoML Approach to E-Scooter Crash Severity Analysis",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Jinli Liu", "affiliation": "Texas State University" },
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-01434",
+      "title": "Evaluating the Influence of Intersection Contexts on Urban E-Scooter Crash Severity using Structural Topic Modeling of Crash Narratives",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Biplov Pandey", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-02606",
+      "title": "Prompting Without Labels: Zero- and Few-Shot LLM Performance on e-Scooter Crash Prediction Tasks",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Gaurab Chhetri", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-02514",
+      "title": "Coastal Flooding on Transportation Infrastructures: A Systematic Review of Patterns, Impacts and Methodologies",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Md Shah Mominul Islam Momin", "affiliation": "Texas State University" },
+        { "name": "Eunsang Cho", "affiliation": "Texas State University" },
+        { "name": "Eunsaem Cho", "affiliation": "NASA Goddard Space Flight Center" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00187",
+      "title": "Spatially-Enhanced AutoGluon for Estimation of Annual Average Daily Traffic on Local Road Networks",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Jinli Liu", "affiliation": "Texas State University" },
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00815",
+      "title": "Artificial Intelligence and Spatial Modeling to Estimate Traffic Volume Measures on Local Roadways",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Yihong Yuan", "affiliation": "Texas State University" },
+        { "name": "Xiao Huang", "affiliation": "Emory University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-02585",
+      "title": "Deep Learning-Based Trespassing Surveillance System for Enhancing Safety at Highway-Rail Grade Crossings",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Tausif Islam Chowdhury", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-03019",
+      "title": "Identifying Latent Structures in Fatal Highway-Rail Grade Crossing Crashes using Dimensionality Reduction Methods",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Tausif Islam Chowdhury", "affiliation": "Texas State University" },
+        { "name": "Arka Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Anika Baitullah", "affiliation": "Texas State University" },
+        { "name": "Boniphace Kutela", "affiliation": "Texas A&M Transportation Institute" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-04531",
+      "title": "Understanding Pedestrian Trespassing at U.S. Highway-Rail Grade Crossings: A Decade-Long Analysis Integrating Topic Modeling and Spatial Tools",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Tausif Islam Chowdhury", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00531",
+      "title": "Behavioral Modeling of Drivers near Speed Control Cameras: A Dual Perspective from Micro and Macro Data",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Lectern",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Abbas Sheykhfard", "affiliation": "Texas Southern University" },
+        { "name": "Ting Lei", "affiliation": "Texas Southern University" },
+        { "name": "Soheila Saeidi", "affiliation": "Florida Atlantic University, Boca Raton" },
+        { "name": "Mohammad SafariTaherkhani", "affiliation": "University of Maryland, College Park" },
+        { "name": "Grigorios Fountas", "affiliation": "Aristotle University of Thessaloniki" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Evangelos Kaisar", "affiliation": "Florida Atlantic University" }
+      ]
+    },
+    {
+      "id": "26-04326",
+      "title": "Investigating Older Driver Involved Crashes at High-Speed Signalized Intersections (HSSIs): A Random Parameter Ordered Probit Approach",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Ahmed Hossain", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Monire Jafari", "affiliation": "Texas State University" },
+        { "name": "Siam Junaed", "affiliation": "Neel-Schaffer, Inc." },
+        { "name": "Julius Codjoe", "affiliation": "Louisiana Department of Transportation and Development" }
+      ]
+    },
+    {
+      "id": "26-00104",
+      "title": "Driving Education Advancements of Novice Drivers, A Review of Studies in the United States",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Anandi Dutta", "affiliation": "Texas State University" },
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00054",
+      "title": "Cooperative Dynamics in Older Age and Human-Automation Interactions in Automated Vehicle Crashes",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-05470",
+      "title": "Explainable Machine Learning for Analyzing Factors Influencing Emergency Medical Services Response Times on Interstate Highways",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Nazmus Sakib", "affiliation": "Auburn University" },
+        { "name": "M. Ashifur Rahman", "affiliation": "Louisiana Transportation Research Center" },
+        { "name": "Siam Junaed", "affiliation": "Neel-Schaffer, Inc." },
+        { "name": "Atif Khan", "affiliation": "Louisiana Department of Transportation and Development" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Milhan Moomen", "affiliation": "University of Louisiana, Lafayette" },
+        { "name": "Julius Codjoe", "affiliation": "University of Louisiana, Lafayette" },
+        { "name": "Vijaya Gopu", "affiliation": "University of Louisiana, Lafayette" }
+      ]
+    },
+    {
+      "id": "26-00122",
+      "title": "Explainable AI-Driven Hybrid Modeling for Crash Severity Analysis Near Bus Stops in Urban Areas",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Jinli Liu", "affiliation": "Texas State University" },
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Biplov Pandey", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00616",
+      "title": "Analyzing Alcohol-Impaired Multi-Occupant Crashes through Hybrid Dimension Reduction and the Safe System Lens",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["4:00 PM", "5:45 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Bahar Dadashova", "affiliation": "Texas A&M Transportation Institute" },
+        { "name": "Abbas Sheykhfard", "affiliation": "Texas Southern University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-03810",
+      "title": "Revealing Contextual Patterns in Cannabis-Involved Fatal Crashes Using Data-Driven Association Mapping",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["4:00 PM", "5:45 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Sazzad Bin Bashar Polock", "affiliation": "Texas State University" },
+        { "name": "Biplov Pandey", "affiliation": "Texas State University" },
+        { "name": "Sawgat Ahmed Shuvo", "affiliation": "Texas State University" },
+        { "name": "Kakan Dey", "affiliation": "Michigan State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-05598",
+      "title": "Analyzing Underage Drinking and Driving Crashes Using a Correlated Random Parameters with Heterogeneity in Means Approach",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["4:00 PM", "5:45 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "M. Ashifur Rahman", "affiliation": "Louisiana Transportation Research Center" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Siam Junaed", "affiliation": "University of Louisiana, Lafayette" },
+        { "name": "Richard Dzinyela", "affiliation": "Texas A&M Transportation Institute" },
+        { "name": "Ahmed Hossain", "affiliation": "Texas State University" },
+        { "name": "Elisabeta Mitran", "affiliation": "University of Louisiana, Lafayette" },
+        { "name": "Milhan Moomen", "affiliation": "University of Louisiana, Lafayette" },
+        { "name": "Julius Codjoe", "affiliation": "University of Louisiana, Lafayette" },
+        { "name": "Xiaoduan Sun", "affiliation": "University of Louisiana, Lafayette" }
+      ]
+    },
+    {
+      "id": "26-05240",
+      "title": "Perceived Safety of Automated Vehicles: A Bayesian Network Analysis of Predictors and Implications for Ridership and Road Sharing",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["4:00 PM", "5:45 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Francisca Kasubi", "affiliation": "HNTB" },
+        { "name": "Boniphace Kutela", "affiliation": "Texas A&M Transportation Institute" },
+        { "name": "Ahmed Hossain", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Abdallah Kinero", "affiliation": "Shrewsberry & Associates" }
+      ]
+    },
+    {
+      "id": "26-00088",
+      "title": "ST-GraphNet: A Spatio-Temporal Graph Neural Network for Understanding and Predicting Automated Vehicle Crash Severity",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["4:00 PM", "5:45 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-04243",
+      "title": "The Negative Binomial Lindley Model with Spatiotemporal Random Parameters: Accounting for Spatiotemporal Effects in Crash Data Analysis",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["4:00 PM", "5:45 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Richard Dzinyela", "affiliation": "Texas A&M Transportation Institute" },
+        { "name": "Mohammadali Shirazi", "affiliation": "University of Oklahoma, Norman" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Dominique Lord", "affiliation": "Texas A&M University" }
+      ]
+    },
+    {
+      "id": "26-00132",
+      "title": "Unmasking Vehicle Automation–Severity Interactions through Multimodal Association Rules Mining",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["6:15 PM", "7:45 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-02301",
+      "title": "Crash Severity Prediction in AEB-Equipped Vehicles Using Advanced Tabular Deep",
+      "date": "2026-01-12",
+      "dayOfWeek": "Monday",
+      "time": ["6:15 PM", "7:45 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-02715",
+      "title": "Quantifying Factors that Impact Ride-Hailing Use Among Older Californians",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Lectern",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-02976",
+      "title": "Semantic Modeling of Pedestrian Behaviors at Shared-Use Path Crossings in Major Cities: Insights from BERT-Based Architectures and Structural Topic Modeling",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Anandi Dutta", "affiliation": "Texas State University" },
+        { "name": "Bahar Dadashova", "affiliation": "Texas A&M Transportation Institute" }
+      ]
+    },
+    {
+      "id": "26-03433",
+      "title": "Pedestrian Fatalities on U.S. Interstates: A Pattern Mining Approach to Investigating Pedestrian Actions and Policy Implications",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "M. Ashifur Rahman", "affiliation": "Louisiana Transportation Research Center" },
+        { "name": "Tara Tolford", "affiliation": "University of New Orleans" },
+        { "name": "Siam Junaed", "affiliation": "Neel-Schaffer, Inc." },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Ahmed Hossain", "affiliation": "Texas State University" },
+        { "name": "Milhan Moomen", "affiliation": "University of Louisiana, Lafayette" },
+        { "name": "Elisabeta Mitran", "affiliation": "University of Louisiana, Lafayette" },
+        { "name": "Julius Codjoe", "affiliation": "University of Louisiana, Lafayette" }
+      ]
+    },
+    {
+      "id": "26-03848",
+      "title": "Decoding Pedestrian Crash Complexity at Crosswalks using Hybrid Dimension Reduction and Random Parameter Models",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Michael Starewich", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Nawaf Alnawmasi", "affiliation": "Texas A&M University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-04224",
+      "title": "Enhanced Balanced-Generative Adversarial Networks to Predict Pedestrian Injury Types",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Gian Antariksa", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-04655",
+      "title": "Understanding Contributing Factors to Pedestrian Failure-to-Yield Fatal Crashes: Maneuvers Classification Using AutoML and Model Interpretability Techniques",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Tausif Islam Chowdhury", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-02679",
+      "title": "Assessing Roadway Network Risk to Compound Flooding in Galveston County, Texas: An Integrated Hydrodynamic and Machine Learning Approach",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Md Shah Mominul Islam Momin", "affiliation": "Texas State University" },
+        { "name": "Eunsang Cho", "affiliation": "Texas State University" },
+        { "name": "Eunsaem Cho", "affiliation": "NASA Goddard Space Flight Center" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-04747",
+      "title": "Assessing the Impact of Road and Roadside Features on Safety in Urban Highways: A Case Study in Red Wing City, Minnesota",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Lectern",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Mohammad Karasneh", "affiliation": "Michigan State University" },
+        { "name": "Kakan Dey", "affiliation": "Michigan State University" },
+        { "name": "Md Tanvir Ashraf", "affiliation": "Texas A&M Transportation Institute" },
+        { "name": "Ankith Mohan", "affiliation": "Michigan State University" },
+        { "name": "Peter Savolainen", "affiliation": "Michigan State University" },
+        { "name": "Timothy Gates", "affiliation": "Michigan State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00158",
+      "title": "Uncovering Risk Patterns in Single and Multiple Ambulance Crashes with Association Rules Mining",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Ahmed Hossain", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00185",
+      "title": "Analyzing Factors Influencing Crash Severity in Vehicles with Automation Features using AutoGluon",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Jinli Liu", "affiliation": "No Organization" },
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Sazzad Bin Bashar Polock", "affiliation": "Texas State University" },
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Nawaf Alnawmasi", "affiliation": "Texas A&M University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00115",
+      "title": "Crash Pattern Mining by SAE Automation Levels and Severity",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Jinli Liu", "affiliation": "No Organization" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Boniphace Kutela", "affiliation": "Texas A&M Transportation Institute" }
+      ]
+    },
+    {
+      "id": "26-00106",
+      "title": "Applying MambaAttention, TabPFN, and TabTransformers to Classify SAE Automation Levels in Crashes",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Anandi Dutta", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-02962",
+      "title": "Attention-Based and State-Space Models for Predicting Electric Vehicle Crash Severity",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Pavan Hebli", "affiliation": "Texas State University" },
+        { "name": "Gaurab Chhetri", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00181",
+      "title": "Hybrid Dimension Reduction and Explainable AI Models to Explore Truck Crash Patterns at Intersections",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["1:30 PM", "3:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00750",
+      "title": "Crash Risk Analysis of Non-Motorists using Interpretable Tabular Deep Learning",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["1:30 PM", "3:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00147",
+      "title": "Uncovering Robust Patterns in U-Turn Crash Severity Using Lift Increase Criterion in Association Rule Mining using Multimodal Data",
+      "date": "2026-01-13",
+      "dayOfWeek": "Tuesday",
+      "time": ["4:00 PM", "5:45 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00121",
+      "title": "Crash Risk Analysis of Non-Motorists using Interpretable Tabular Deep Learning",
+      "date": "2026-01-14",
+      "dayOfWeek": "Wednesday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Lectern",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Kayvan Aghabayk", "affiliation": "University of Tehran" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00118",
+      "title": "A Dimensionality-Reduction based XAI Framework for Roundabout Crash Severity Insights",
+      "date": "2026-01-14",
+      "dayOfWeek": "Wednesday",
+      "time": ["8:00 AM", "9:45 AM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00128",
+      "title": "On Any Sunday and Beyond: A SHAP Enabled Random Parameters Analysis of Older Motorcyclist Injury Severity",
+      "date": "2026-01-14",
+      "dayOfWeek": "Wednesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Michael Starewich", "affiliation": "Texas State University" },
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Sazzad Bin Bashar Polock", "affiliation": "Texas State University" },
+        { "name": "Tausif Islam Chowdhury", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00155",
+      "title": "Accounting for Unobserved Heterogeneity in Predicting Crash Injury Severities Among Young Motorcycle Riders",
+      "date": "2026-01-14",
+      "dayOfWeek": "Wednesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Michael Starewich", "affiliation": "Texas State University" },
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Syed Javed", "affiliation": "Texas State University" },
+        { "name": "Sazzad Bin Bashar Polock", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-00234",
+      "title": "Advancing Crash Severity Prediction for Young Riders Using Tabular Data Intelligence",
+      "date": "2026-01-14",
+      "dayOfWeek": "Wednesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
+        { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
+        { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
+        { "name": "Boniphace Kutela", "affiliation": "Texas A&M Transportation Institute" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-04133",
+      "title": "Patterns Associated with Fatal Motorcycle-Involved Crashes in Bangladesh: Applying Text Mining Techniques and Structural Topic Modeling",
+      "date": "2026-01-14",
+      "dayOfWeek": "Wednesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Ahmed Hossain", "affiliation": "Texas State University" },
+        { "name": "Nazmus Sakib", "affiliation": "Auburn University" },
+        { "name": "Abdullah Al Asif", "affiliation": "Bangladesh University of Engineering and Technology" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-04937",
+      "title": "Temporal Patterns and Risk Factors in Food Delivery Vehicle Crashes: Evidence from Structural Topic Modeling of Daytime and Nighttime Incidents",
+      "date": "2026-01-14",
+      "dayOfWeek": "Wednesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Gaurab Chhetri", "affiliation": "Texas State University" },
+        { "name": "Tausif Islam Chowdhury", "affiliation": "Texas State University" },
+        { "name": "Biplov Pandey", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-05053",
+      "title": "Analyzing Motorcycle Crashes on Rural Undivided Roads: A Data-Driven Approach",
+      "date": "2026-01-14",
+      "dayOfWeek": "Wednesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Swastika Barua", "affiliation": "Texas State University" },
+        { "name": "Anandi Dutta", "affiliation": "Texas State University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" }
+      ]
+    },
+    {
+      "id": "26-04732",
+      "title": "Evaluating State DOT Practices and Priorities in Pavement Marking Implementation and Maintenance: Insights from Multi-State Interviews and Comparative Analysis",
+      "date": "2026-01-14",
+      "dayOfWeek": "Wednesday",
+      "time": ["10:30 AM", "12:15 PM"],
+      "sessionType": "Poster",
+      "location": "Hall A",
+      "authors": [
+        { "name": "Ahmed Hasan", "affiliation": "New Jersey Department of Transportation" },
+        { "name": "Md. Arifuzzaman Nayeem", "affiliation": "STV, Inc." },
+        { "name": "Deep Patel", "affiliation": "AtkinsRealis" },
+        { "name": "Md Sadman Islam", "affiliation": "Rowan University" },
+        { "name": "Mohammad Jalayer", "affiliation": "Rowan University" },
+        { "name": "Subasish Das", "affiliation": "Texas State University" },
+        { "name": "Adam Pike", "affiliation": "Texas A&M Transportation Institute" }
+      ]
+    }
+  ]
+  
