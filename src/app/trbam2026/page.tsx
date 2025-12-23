@@ -64,10 +64,12 @@ export default function TRBAM2026Page() {
       // Date filter
       const matchesDate = selectedDate === "all" || paper.date === selectedDate;
 
-      // Session type filter
+      // Session type filter (check if starts with the selected type)
       const matchesSessionType =
         selectedSessionType === "all" ||
-        paper.sessionType === selectedSessionType;
+        paper.sessionType
+          .toLowerCase()
+          .startsWith(selectedSessionType.toLowerCase());
 
       // Time filter
       const paperTime = `${paper.time[0]} - ${paper.time[1]}`;
@@ -283,16 +285,10 @@ export default function TRBAM2026Page() {
                             {timeSlot}
                           </span>
                         </div>
-                        <div className="flex items-center gap-2 flex-wrap">
-                          <Badge variant="secondary" className="text-xs">
-                            {papersInSlot.length} paper
-                            {papersInSlot.length !== 1 ? "s" : ""}
-                          </Badge>
-                          <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                            <MapPin className="h-3 w-3" />
-                            <span>{papersInSlot[0]?.location}</span>
-                          </div>
-                        </div>
+                        <Badge variant="secondary" className="text-xs">
+                          {papersInSlot.length} paper
+                          {papersInSlot.length !== 1 ? "s" : ""}
+                        </Badge>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3">
                         {papersInSlot.map((paper) => (
@@ -323,7 +319,11 @@ function PaperCard({ paper }: { paper: TRBAM2026Paper }) {
             {paper.id}
           </Badge>
           <Badge
-            variant={paper.sessionType === "Poster" ? "secondary" : "outline"}
+            variant={
+              paper.sessionType.toLowerCase().startsWith("poster")
+                ? "secondary"
+                : "outline"
+            }
             className="text-xs"
           >
             {paper.sessionType}
@@ -334,6 +334,20 @@ function PaperCard({ paper }: { paper: TRBAM2026Paper }) {
         </CardTitle>
       </CardHeader>
       <CardContent className="flex-grow px-4 pb-3 pt-0 space-y-2">
+        {/* Time and Location */}
+        <div className="flex items-center gap-3 text-xs text-muted-foreground pb-1 border-b border-border/30">
+          <div className="flex items-center gap-1">
+            <Clock className="h-3 w-3" />
+            <span>
+              {paper.time[0]} - {paper.time[1]}
+            </span>
+          </div>
+          <div className="flex items-center gap-1">
+            <MapPin className="h-3 w-3" />
+            <span>{paper.location}</span>
+          </div>
+        </div>
+
         {/* Authors - Compact View */}
         <div>
           <div className="flex items-center gap-1 mb-1.5 text-xs font-medium text-muted-foreground">

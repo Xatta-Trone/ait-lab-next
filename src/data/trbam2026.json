@@ -6,7 +6,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B516)",
       "authors": [
         { "name": "Syed Javed", "affiliation": "Texas State University" },
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
@@ -23,7 +23,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B517)",
       "authors": [
         { "name": "Jinli Liu", "affiliation": "Texas State University" },
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
@@ -39,7 +39,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B518)",
       "authors": [
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
         { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
@@ -55,7 +55,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B519)",
       "authors": [
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
         { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
@@ -72,7 +72,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A108)",
       "authors": [
         { "name": "Md Shah Mominul Islam Momin", "affiliation": "Texas State University" },
         { "name": "Eunsang Cho", "affiliation": "Texas State University" },
@@ -87,7 +87,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A130)",
       "authors": [
         { "name": "Jinli Liu", "affiliation": "Texas State University" },
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
@@ -103,7 +103,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A131)",
       "authors": [
         { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
         { "name": "Yihong Yuan", "affiliation": "Texas State University" },
@@ -118,7 +118,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B494)",
       "authors": [
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
         { "name": "Tausif Islam Chowdhury", "affiliation": "Texas State University" },
@@ -133,7 +133,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B504)",
       "authors": [
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
         { "name": "Tausif Islam Chowdhury", "affiliation": "Texas State University" },
@@ -150,7 +150,7 @@
       "dayOfWeek": "Monday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B503)",
       "authors": [
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
@@ -165,8 +165,8 @@
       "date": "2026-01-12",
       "dayOfWeek": "Monday",
       "time": ["10:30 AM", "12:15 PM"],
-      "sessionType": "Lectern",
-      "location": "Hall A",
+      "sessionType": "Lectern (LS# 2043)",
+      "location": "CC, 146C",
       "authors": [
         { "name": "Abbas Sheykhfard", "affiliation": "Texas Southern University" },
         { "name": "Ting Lei", "affiliation": "Texas Southern University" },
@@ -184,7 +184,7 @@
       "dayOfWeek": "Monday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A130)",
       "authors": [
         { "name": "Ahmed Hossain", "affiliation": "Texas State University" },
         { "name": "Subasish Das", "affiliation": "Texas State University" },
@@ -200,7 +200,7 @@
       "dayOfWeek": "Monday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A132)",
       "authors": [
         { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
         { "name": "Anandi Dutta", "affiliation": "Texas State University" },
@@ -215,7 +215,7 @@
       "dayOfWeek": "Monday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A131)",
       "authors": [
         { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
@@ -232,7 +232,7 @@
       "dayOfWeek": "Monday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A240)",
       "authors": [
         { "name": "Nazmus Sakib", "affiliation": "Auburn University" },
         { "name": "M. Ashifur Rahman", "affiliation": "Louisiana Transportation Research Center" },
@@ -251,7 +251,7 @@
       "dayOfWeek": "Monday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B559)",
       "authors": [
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
@@ -268,7 +268,7 @@
       "dayOfWeek": "Monday",
       "time": ["4:00 PM", "5:45 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B493)",
       "authors": [
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
@@ -284,7 +284,7 @@
       "dayOfWeek": "Monday",
       "time": ["4:00 PM", "5:45 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B462)",
       "authors": [
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
         { "name": "Sazzad Bin Bashar Polock", "affiliation": "Texas State University" },
@@ -301,7 +301,7 @@
       "dayOfWeek": "Monday",
       "time": ["4:00 PM", "5:45 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B485)",
       "authors": [
         { "name": "M. Ashifur Rahman", "affiliation": "Louisiana Transportation Research Center" },
         { "name": "Subasish Das", "affiliation": "Texas State University" },
@@ -321,7 +321,7 @@
       "dayOfWeek": "Monday",
       "time": ["4:00 PM", "5:45 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A284)",
       "authors": [
         { "name": "Francisca Kasubi", "affiliation": "HNTB" },
         { "name": "Boniphace Kutela", "affiliation": "Texas A&M Transportation Institute" },
@@ -337,7 +337,7 @@
       "dayOfWeek": "Monday",
       "time": ["4:00 PM", "5:45 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B430)",
       "authors": [
         { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
@@ -353,7 +353,7 @@
       "dayOfWeek": "Monday",
       "time": ["4:00 PM", "5:45 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B431)",
       "authors": [
         { "name": "Richard Dzinyela", "affiliation": "Texas A&M Transportation Institute" },
         { "name": "Mohammadali Shirazi", "affiliation": "University of Oklahoma, Norman" },
@@ -368,7 +368,7 @@
       "dayOfWeek": "Monday",
       "time": ["6:15 PM", "7:45 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B493)",
       "authors": [
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
@@ -384,7 +384,7 @@
       "dayOfWeek": "Monday",
       "time": ["6:15 PM", "7:45 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B494)",
       "authors": [
         { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
@@ -398,8 +398,8 @@
       "date": "2026-01-13",
       "dayOfWeek": "Tuesday",
       "time": ["8:00 AM", "9:45 AM"],
-      "sessionType": "Lectern",
-      "location": "Hall A",
+      "sessionType": "Lectern (LS# 3018)",
+      "location": "CC, 201",
       "authors": [
         { "name": "Subasish Das", "affiliation": "Texas State University" }
       ]
@@ -411,7 +411,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A166)",
       "authors": [
         { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
@@ -427,7 +427,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A160)",
       "authors": [
         { "name": "M. Ashifur Rahman", "affiliation": "Louisiana Transportation Research Center" },
         { "name": "Tara Tolford", "affiliation": "University of New Orleans" },
@@ -446,7 +446,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A168)",
       "authors": [
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
         { "name": "Michael Starewich", "affiliation": "Texas State University" },
@@ -463,7 +463,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A167)",
       "authors": [
         { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
         { "name": "Gian Antariksa", "affiliation": "Texas State University" },
@@ -477,7 +477,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A170)",
       "authors": [
         { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
@@ -493,7 +493,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B581)",
       "authors": [
         { "name": "Md Shah Mominul Islam Momin", "affiliation": "Texas State University" },
         { "name": "Eunsang Cho", "affiliation": "Texas State University" },
@@ -507,8 +507,8 @@
       "date": "2026-01-13",
       "dayOfWeek": "Tuesday",
       "time": ["10:30 AM", "12:15 PM"],
-      "sessionType": "Lectern",
-      "location": "Hall A",
+      "sessionType": "Lectern (LS# 3050)",
+      "location": "CC, 202A",
       "authors": [
         { "name": "Mohammad Karasneh", "affiliation": "Michigan State University" },
         { "name": "Kakan Dey", "affiliation": "Michigan State University" },
@@ -526,7 +526,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B451)",
       "authors": [
         { "name": "Syed Javed", "affiliation": "Texas State University" },
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
@@ -541,7 +541,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B452)",
       "authors": [
         { "name": "Jinli Liu", "affiliation": "No Organization" },
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
@@ -558,7 +558,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B450)",
       "authors": [
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
         { "name": "Syed Javed", "affiliation": "Texas State University" },
@@ -575,7 +575,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B482)",
       "authors": [
         { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
         { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
@@ -592,7 +592,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B525)",
       "authors": [
         { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
         { "name": "Pavan Hebli", "affiliation": "Texas State University" },
@@ -607,7 +607,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["1:30 PM", "3:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B423)",
       "authors": [
         { "name": "Mahmuda Sultana Mimi", "affiliation": "Texas State University" },
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
@@ -622,7 +622,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["1:30 PM", "3:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B401)",
       "authors": [
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
         { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
@@ -638,7 +638,7 @@
       "dayOfWeek": "Tuesday",
       "time": ["4:00 PM", "5:45 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A235)",
       "authors": [
         { "name": "Syed Javed", "affiliation": "Texas State University" },
         { "name": "Subasish Das", "affiliation": "Texas State University" }
@@ -646,12 +646,12 @@
     },
     {
       "id": "26-00121",
-      "title": "Crash Risk Analysis of Non-Motorists using Interpretable Tabular Deep Learning",
+      "title": "A Multidimensional Analysis of E-Scooter Crash Severity: Integrating Cluster Correspondence and SHAP Interpretability",
       "date": "2026-01-14",
       "dayOfWeek": "Wednesday",
       "time": ["8:00 AM", "9:45 AM"],
-      "sessionType": "Lectern",
-      "location": "Hall A",
+      "sessionType": "Lectern (LS# 4002)",
+      "location": "CC, 146C",
       "authors": [
         { "name": "Md Monzurul Islam", "affiliation": "Texas State University" },
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
@@ -667,7 +667,7 @@
       "dayOfWeek": "Wednesday",
       "time": ["8:00 AM", "9:45 AM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B401)",
       "authors": [
         { "name": "Rohit Chakraborty", "affiliation": "Texas State University" },
         { "name": "Subasish Das", "affiliation": "Texas State University" }
@@ -680,7 +680,7 @@
       "dayOfWeek": "Wednesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B410)",
       "authors": [
         { "name": "Michael Starewich", "affiliation": "Texas State University" },
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
@@ -698,7 +698,7 @@
       "dayOfWeek": "Wednesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B411)",
       "authors": [
         { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
         { "name": "Michael Starewich", "affiliation": "Texas State University" },
@@ -715,7 +715,7 @@
       "dayOfWeek": "Wednesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B412)",
       "authors": [
         { "name": "Shriyank Somvanshi", "affiliation": "Texas State University" },
         { "name": "Anannya Ghosh Tusti", "affiliation": "Texas State University" },
@@ -731,7 +731,7 @@
       "dayOfWeek": "Wednesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B413)",
       "authors": [
         { "name": "Ahmed Hossain", "affiliation": "Texas State University" },
         { "name": "Nazmus Sakib", "affiliation": "Auburn University" },
@@ -746,7 +746,7 @@
       "dayOfWeek": "Wednesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B414)",
       "authors": [
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
         { "name": "Gaurab Chhetri", "affiliation": "Texas State University" },
@@ -762,7 +762,7 @@
       "dayOfWeek": "Wednesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (B415)",
       "authors": [
         { "name": "Swastika Barua", "affiliation": "Texas State University" },
         { "name": "Anandi Dutta", "affiliation": "Texas State University" },
@@ -776,7 +776,7 @@
       "dayOfWeek": "Wednesday",
       "time": ["10:30 AM", "12:15 PM"],
       "sessionType": "Poster",
-      "location": "Hall A",
+      "location": "CC, Hall A (A152)",
       "authors": [
         { "name": "Ahmed Hasan", "affiliation": "New Jersey Department of Transportation" },
         { "name": "Md. Arifuzzaman Nayeem", "affiliation": "STV, Inc." },
