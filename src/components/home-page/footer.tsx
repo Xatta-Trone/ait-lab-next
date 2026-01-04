@@ -23,7 +23,10 @@ const flattenNavItems = (
   return flattened;
 };
 
-const quickLinks = flattenNavItems(NavLinks);
+const quickLinks = flattenNavItems(NavLinks).filter(
+  (link) =>
+    link.title !== "Annual Report" && !link.href.includes("/annual_report/")
+);
 
 const socialLinks = [
   { name: "LinkedIn", href: "https://www.linkedin.com/in/subasishdas/" },

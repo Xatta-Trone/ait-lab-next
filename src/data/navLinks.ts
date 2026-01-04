@@ -51,4 +51,13 @@ export const NavLinks: NavItem[] = [
     title: "News",
     href: "/news",
   },
+  {
+    title: "Annual Report",
+    children: [
+      {
+        title: "2025",
+        href: "/annual_report/2025.pdf",
+      },
+    ],
+  },
 ];
