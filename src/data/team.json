@@ -182,22 +182,6 @@
     "awards": ["Graduate Merit Fellowship, $1,285 (2025, 2026)"]
   },
   {
-    "name": "Shamyo Brotee",
-    "label": "M.Sc. Student, Computer Science (Fall 2025 - Current)",
-    "group": "Graduate Student",
-    "linkedin": "https://www.linkedin.com/in/sbrotee63/",
-    "email": "",
-    "image": "shamyo.png",
-    "googleScholar": "https://scholar.google.com/citations?user=2jHz2x0AAAAJ&hl=en",
-    "researchGate": "",
-    "orcid": "",
-    "github": "",
-    "twitter": "",
-    "websites": ["https://sbrotee63.github.io/"],
-    "description": "Shamyo Brotee is currently a Master's student in Computer Science at Texas State University, beginning in Fall 2025. He works as a Graduate Research Assistant under the supervision of Dr. Subasish Das and Dr. Anandi Dutta. Originally from Bangladesh, he earned his Bachelor’s degree in Computer Science and Engineering from the University of Dhaka. His past research focused on multi-agent deep reinforcement learning for autonomous vehicles, and his overall research interests include applying machine learning in autonomous vehicles, transportation, and other autonomous systems. Before graduate school, he gained industry and academic experience as a software developer and a university lecturer in Bangladesh. He is proficient in Python, C++, SQL Server, and data visualization using Power BI, with experience in applying machine learning in diverse applications. He is an inquisitive person who is always willing to learn more.",
-    "awards": []
-  },
-  {
     "name": "Salma Akter Laboni",
     "label": "MBA Student, Business Administration (Fall 2025 - Current)",
     "group": "Graduate Student",
@@ -247,24 +231,6 @@
     "websites": [],
     "description": "Biplov is currently an undergraduate student in the Civil Engineering Program at Texas State University, guided by Dr. Das. He joined the AIT Lab in Fall 2024 and works as an undergraduate research assistant. Originally from Nepal, Biplov is interested in transportation engineering and infrastructure development. His research focus includes transportation safety and sustainability. He has prior experience as a Surveying Assistant at SadaShiva Infra Private Limited, where he contributed to site assessments and data collection for mapping and project planning. Biplov's projects include geological field studies and detailed surveying tasks with proficiency in total stations, theodolites, CAD software, SolidWorks, and Microsoft Office. Outside of academics, Biplov enjoys watching cricket, playing table tennis, and hiking.",
     "awards": ["Undergraduate Research Fellowship (URF), $2,000 (2025)"]
-  },
-  {
-    "name": "Darrell Anderson",
-    "label": "B.Sc. Student, Civil Engineering (Fall 2023 - Current)",
-    "group": "Undergraduate Student",
-    "linkedin": "https://www.linkedin.com/in/darrell-m-anderson",
-    "email": "",
-    "image": "darrell_anderson.jpg",
-    "googleScholar": "",
-    "github": "",
-    "twitter": "",
-    "websites": [],
-    "description": "Darrell is a senior at Texas State University, majoring in Civil Engineering (CE) and minoring in mathematics. In the summer of 2023, Darrell started working as an undergraduate research assistant at the Artificial Intelligence in Transportation (AIT) lab under Dr. Das Subasish. While at AIT, Darrell was awarded the Dwight David Eisenhower Transportation Fellowship (DDETFP), which he presented at DC on the concept of 15-minute cities. As a member of a few engineering and environmental groups, Darrell is passionate about the environment and water resources, and he is interested in the impact that urbanization, along with the increase in traffic systems, has on the environment. As a civil drafter/designer for a small urban planning and development company, he has helped design many sites currently under development. As a founding member of the Institute of Transportation Engineers – at Texas State University, he holds the treasurer position. In his free time, he enjoys cooking, baking, and reading and is working towards becoming a sommelier in his free time.",
-    "awards": [
-      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $8,500 (2023)",
-      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $7,000 (2024)",
-      "Undergraduate Research Fellowship (URF), $1,160 (2025)"
-    ]
   },
   {
     "name": "Irfan Sarwar Pranjol",
@@ -341,38 +307,6 @@
     "twitter": "",
     "websites": [],
     "description": "Venkata Surya Bellamkonda is a Machine Learning Engineer and recent graduate of Texas State University with a Master’s in Data Analytics & Information Systems. His experience spans adversarial machine learning, NLP, and scalable AI solutions, with applied projects in job search automation, AI-driven education, and MLOps workflows.",
-    "awards": []
-  },
-  {
-    "name": "Pavan Hebli",
-    "label": "M.Sc., Data Analytics And Information Systems (Temp Employee since August, 2025)",
-    "group": "Graduate Student",
-    "linkedin": "",
-    "email": "",
-    "image": "pavan.png",
-    "googleScholar": "",
-    "researchGate": "",
-    "orcid": "",
-    "github": "https://github.com/PavanHebli",
-    "twitter": "",
-    "websites": ["https://pavanhebli.medium.com/"],
-    "description": "Pavan Hebli recently completed his Master's degree in Data Analytics and Information Systems from Texas State University. During his graduate studies, he served as a Graduate Research Assistant, co-authoring \"Siamese Networks and Adversarial Attacks: An Overview\" (IEEE ICPHM 2024) and developing advanced machine learning architectures for improved model robustness. Prior to his graduate studies, Pavan has extensive industry experience as a Senior AI Engineer at Assert AI, where he worked on developing and deploying computer vision models and solutions in production environments. He also worked as a Python Developer at Biosense Technologies, focusing on predictive modeling and machine learning applications for healthcare diagnostics. His technical expertise spans machine learning, deep learning, computer vision, NLP, and large language models, with proficiency in PyTorch, TensorFlow, and various AI frameworks.",
-    "awards": []
-  },
-  {
-    "name": "Mohammed Wasim Ansari",
-    "label": "M.Sc., Data Analytics And Information Systems (Temp Employee since August, 2025)",
-    "group": "Graduate Student",
-    "linkedin": "https://www.linkedin.com/in/wasim-ansari-md/",
-    "email": "",
-    "image": "wasim.png",
-    "googleScholar": "https://scholar.google.com/citations?user=Kvd7s5YAAAAJ&hl=en",
-    "researchGate": "",
-    "orcid": "",
-    "github": "https://github.com/wasim277",
-    "twitter": "",
-    "websites": [],
-    "description": "Mohammed Wasim Ansari recently earned his Master’s degree in Data Analytics and Information Systems from Texas State University, where he also served as a Graduate Research Assistant. His research centered on Natural Language Processing (NLP) and the adversarial nature of text data, utilizing advanced deep learning models such as CNNs, Bi-LSTMs, and BERT to enhance model robustness and accuracy. He is currently a Research Assistant in the Artificial Intelligence in Transportation (AIT) Lab under the guidance of Dr. Subhasish Das, contributing to projects that apply AI and machine learning to transportation challenges. Before pursuing his master’s, Wasim worked for three years as a Data Analyst at Amazon in the Last Mile Analytics and Quality team. In this role, he engineered data pipelines, developed analytics solutions to improve operational efficiency, and collaborated on A/B testing experiments to evaluate new features and process changes.",
     "awards": []
   }
 ]
