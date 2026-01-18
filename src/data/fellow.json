@@ -1,5 +1,23 @@
 [
   {
+    "name": "Darrell Anderson",
+    "label": "B.Sc. Student, Civil Engineering (Fall 2023 - Fall 2025)",
+    "group": "Undergraduate Student",
+    "linkedin": "https://www.linkedin.com/in/darrell-m-anderson",
+    "email": "",
+    "image": "darrell_anderson.jpg",
+    "googleScholar": "",
+    "github": "",
+    "twitter": "",
+    "websites": [],
+    "description": "Darrell is a senior at Texas State University, majoring in Civil Engineering (CE) and minoring in mathematics. In the summer of 2023, Darrell started working as an undergraduate research assistant at the Artificial Intelligence in Transportation (AIT) lab under Dr. Das Subasish. While at AIT, Darrell was awarded the Dwight David Eisenhower Transportation Fellowship (DDETFP), which he presented at DC on the concept of 15-minute cities. As a member of a few engineering and environmental groups, Darrell is passionate about the environment and water resources, and he is interested in the impact that urbanization, along with the increase in traffic systems, has on the environment. As a civil drafter/designer for a small urban planning and development company, he has helped design many sites currently under development. As a founding member of the Institute of Transportation Engineers – at Texas State University, he holds the treasurer position. In his free time, he enjoys cooking, baking, and reading and is working towards becoming a sommelier in his free time.",
+    "awards": [
+      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $8,500 (2023)",
+      "Dwight D. Eisenhower Transportation Fellowship Program (DDETFP), $7,000 (2024)",
+      "Undergraduate Research Fellowship (URF), $1,160 (2025)"
+    ]
+  },
+  {
     "name": "Dipti Koirala",
     "label": "B.Sc. Student, Electrical Engineering (2025)",
     "group": "Undergraduate Student",
@@ -11,6 +29,22 @@
     "twitter": "",
     "websites": [],
     "description": "Dipti Koirala is currently an undergraduate student in the Electrical Engineering program at Texas State University, concentrating in Micro and Nano Devices and Systems. She joined the Artificial Intelligence in Transportation (AIT) Lab in Summer 2025 and is an undergraduate research assistant under the supervision of Dr. Subasish Das. Dipti is keenly interested in the intersection of electronics, semiconductors, data science, and intelligent transportation systems. Her academic interests include sensor-driven technologies, signal processing, and the use of AI to improve traffic safety and infrastructure performance. With a background in physics-based research, materials analysis, and applied mathematics, she brings a multidisciplinary perspective to the lab and is passionate about contributing to innovative, data-informed solutions engineering fields.",
+    "awards": []
+  },
+  {
+    "name": "Shamyo Brotee",
+    "label": "M.Sc. Student, Computer Science (Fall 2025)",
+    "group": "Graduate Student",
+    "linkedin": "https://www.linkedin.com/in/sbrotee63/",
+    "email": "",
+    "image": "shamyo.png",
+    "googleScholar": "https://scholar.google.com/citations?user=2jHz2x0AAAAJ&hl=en",
+    "researchGate": "",
+    "orcid": "",
+    "github": "",
+    "twitter": "",
+    "websites": ["https://sbrotee63.github.io/"],
+    "description": "Shamyo Brotee is currently a Master's student in Computer Science at Texas State University, beginning in Fall 2025. He works as a Graduate Research Assistant under the supervision of Dr. Subasish Das and Dr. Anandi Dutta. Originally from Bangladesh, he earned his Bachelor’s degree in Computer Science and Engineering from the University of Dhaka. His past research focused on multi-agent deep reinforcement learning for autonomous vehicles, and his overall research interests include applying machine learning in autonomous vehicles, transportation, and other autonomous systems. Before graduate school, he gained industry and academic experience as a software developer and a university lecturer in Bangladesh. He is proficient in Python, C++, SQL Server, and data visualization using Power BI, with experience in applying machine learning in diverse applications. He is an inquisitive person who is always willing to learn more.",
     "awards": []
   },
   {
