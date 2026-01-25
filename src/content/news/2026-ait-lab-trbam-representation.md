@@ -18,13 +18,15 @@ The AIT Lab delegation was led by **Dr. Subasish Das**, Director of the AIT Lab,
 
 Together, the team contributed presentations covering a wide range of topics, including crash severity modeling, autonomous vehicle safety, explainable artificial intelligence, pedestrian and micromobility risk analysis, urban mobility analytics, and social media–based transportation perception studies.
 
+**[View the complete interactive TRBAM 2026 presentation schedule →](/trbam2026)**
+
 ## Advancing Transportation Safety Through AI
 
 Across oral and poster sessions, AIT Lab researchers showcased work leveraging state-of-the-art machine learning, deep learning, and explainable AI frameworks to analyze large-scale transportation datasets. These studies aim to improve injury severity prediction, enhance infrastructure safety assessment, and better understand public perceptions of emerging mobility technologies.
 
 Dr. Das emphasized the importance of student-centered research engagement:
 
-> *“TRB provides an exceptional platform for interdisciplinary collaboration and knowledge exchange. I am proud of our students and researchers for their dedication and the breadth of work they presented. Their contributions demonstrate how computational approaches can directly inform transportation policy and safety practice.”*
+> *TRB provides an exceptional platform for interdisciplinary collaboration and knowledge exchange. I am proud of our students and researchers for their dedication and the breadth of work they presented. Their contributions demonstrate how computational approaches can directly inform transportation policy and safety practice.*
 
 A key highlight of this year’s participation was the strong involvement of student researchers, including undergraduate contributors, who actively presented their work, attended committee meetings, and engaged with experts from academia, government agencies, and industry. For many, TRBAM 2026 marked their first international research conference, offering valuable professional exposure and networking opportunities.
 

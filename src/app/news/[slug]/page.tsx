@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { Calendar } from "lucide-react";
 import ImageGallery from "@/components/news/image-gallery";
+import PDFViewer from "@/components/news/pdf-viewer";
 
 interface PageProps {
   params: Promise<{ slug: string }>; // params should be a Promise
@@ -58,6 +59,9 @@ export default async function NewsPage({ params }: PageProps) {
       )
     : [];
 
+  // Check if this is the TRBAM news article
+  const isTRBAMNews = resolvedParams.slug === "2026-ait-lab-trbam-representation";
+
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
       <div className="max-w-4xl mx-auto">
@@ -77,6 +81,14 @@ export default async function NewsPage({ params }: PageProps) {
             dangerouslySetInnerHTML={{ __html: news.content || "" }}
           />
         </div>
+
+        {/* PDF Schedule Section */}
+        {isTRBAMNews && (
+          <PDFViewer
+            pdfUrl="/trbam2026schedule.pdf"
+            title="TRBAM 2026 Presentation Schedule"
+          />
+        )}
 
         {/* Gallery Section */}
         {trbamImages.length > 0 && (
