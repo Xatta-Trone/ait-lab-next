@@ -4,6 +4,7 @@ import { getNewsById } from "@/utils/news";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { Calendar } from "lucide-react";
+import ImageGallery from "@/components/news/image-gallery";
 
 interface PageProps {
   params: Promise<{ slug: string }>; // params should be a Promise
@@ -50,6 +51,13 @@ export default async function NewsPage({ params }: PageProps) {
     notFound();
   }
 
+  // Gallery images for TRBAM news
+  const trbamImages = resolvedParams.slug === "2026-ait-lab-trbam-representation"
+    ? Array.from({ length: 12 }, (_, i) =>
+        `/images/news/trbam2026/${String(i + 1).padStart(2, "0")}.png`
+      )
+    : [];
+
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
       <div className="max-w-4xl mx-auto">
@@ -69,6 +77,11 @@ export default async function NewsPage({ params }: PageProps) {
             dangerouslySetInnerHTML={{ __html: news.content || "" }}
           />
         </div>
+
+        {/* Gallery Section */}
+        {trbamImages.length > 0 && (
+          <ImageGallery images={trbamImages} title="Event Photos" />
+        )}
 
         {/* Optional Link Section */}
         {news.link && (
