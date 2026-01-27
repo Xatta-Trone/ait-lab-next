@@ -54,7 +54,7 @@ export default async function NewsPage({ params }: PageProps) {
 
   // Gallery images for TRBAM news
   const trbamImages = resolvedParams.slug === "2026-ait-lab-trbam-representation"
-    ? Array.from({ length: 12 }, (_, i) =>
+    ? Array.from({ length: 9 }, (_, i) =>
         `/images/news/trbam2026/${String(i + 1).padStart(2, "0")}.png`
       )
     : [];
@@ -82,17 +82,19 @@ export default async function NewsPage({ params }: PageProps) {
           />
         </div>
 
+        
+
+        {/* Gallery Section */}
+        {trbamImages.length > 0 && (
+          <ImageGallery images={trbamImages} title="Event Photos" />
+        )}
+
         {/* PDF Schedule Section */}
         {isTRBAMNews && (
           <PDFViewer
             pdfUrl="/trbam2026schedule.pdf"
             title="TRBAM 2026 Presentation Schedule"
           />
-        )}
-
-        {/* Gallery Section */}
-        {trbamImages.length > 0 && (
-          <ImageGallery images={trbamImages} title="Event Photos" />
         )}
 
         {/* Optional Link Section */}
