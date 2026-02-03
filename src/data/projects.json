@@ -1,5 +1,24 @@
 [
     {
+        "number": "",
+        "title": "Telematics-Informed Crash Risk Modeling to Support Targeted Traffic Enforcement for CMV Safety",
+        "description": "This project aims to develop a telematics-informed crash risk model to support targeted traffic enforcement for commercial motor vehicle (CMV) safety. The model will integrate real-time vehicle data, such as speed, location, and driver behavior, with historical crash data to identify high-risk CMV operations and target enforcement efforts effectively.",
+        "link": "",
+        "sponsor": "Federal Motor Carrier Safety Administration (FMCSA)",
+        "PI": "Subasish Das",
+        "PI_role": "Principal",
+        "start_date": {
+            "year": 2026,
+            "month": "January"
+        },
+        "end_date": {
+            "year": 2027,
+            "month": "December"
+        },
+        "status": "ongoing",
+        "image": "Telematics-Informed Crash Risk Modeling to Support Targeted Traffic Enforcement for CMV Safety.png"
+    },
+    {
       "number": "",
       "title": "Role of emerging transportation technologies and safety initiatives in mitigating crashes in coastal communities",
       "description": "This project investigates the impact of emerging transportation technologies and safety initiatives specifically designed for coastal communities to mitigate traffic crashes. The research focuses on unique challenges faced by these areas, such as weather-related visibility issues, tourist-related traffic fluctuations, and specific infrastructure needs, to determine the effectiveness of modern countermeasures.",
