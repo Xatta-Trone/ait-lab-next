@@ -2,7 +2,16 @@ import { useQueryState } from "nuqs";
 import labToolsData from "../data/lab_tools.json";
 import { useDataFetching } from "./useDataFetching";
 import { useMemo } from "react";
-import { LabTool } from "@/types/tool";
+import type { LabTool, LabToolBranch } from "@/types/tool";
+
+const BRANCH_ORDER: LabToolBranch[] = [
+  "Point",
+  "Segment",
+  "Area",
+  "Route",
+  "Resource",
+  "Other",
+];
 
 export function useLabToolsData() {
   const {
@@ -13,8 +22,8 @@ export function useLabToolsData() {
 
   // Create query parameters for filtering
   const [searchQuery, setSearchQuery] = useQueryState("search");
-  const [typeFilter, setTypeFilter] = useQueryState("type");
   const [projectFilter, setProjectFilter] = useQueryState("project");
+  const [branchFilter, setBranchFilter] = useQueryState("branch");
 
   // Pagination - add pagination state
   const [pageString, setPageString] = useQueryState("page", {
@@ -35,17 +44,45 @@ export function useLabToolsData() {
     });
   }, [rawData]);
 
-  // Filter lab tools based on query parameters
-  const filteredTools = data.filter((tool) => {
+  // Base filtering (everything except data-branch)
+  const baseFilteredTools = data.filter((tool) => {
     const matchesSearch =
       !searchQuery ||
       tool.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      tool.description.toLowerCase().includes(searchQuery.toLowerCase());
-
-    const matchesType = !typeFilter || tool.type === typeFilter;
+      tool.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (tool.project || "").toLowerCase().includes(searchQuery.toLowerCase());
     const matchesProject = !projectFilter || tool.project === projectFilter;
 
-    return matchesSearch && matchesType && matchesProject;
+    return matchesSearch && matchesProject;
+  });
+
+  // Branch counts (respecting base filters, ignoring current branch selection)
+  const branchCounts = useMemo(() => {
+    const counts: Record<LabToolBranch, number> = {
+      Point: 0,
+      Segment: 0,
+      Area: 0,
+      Route: 0,
+      Resource: 0,
+      Other: 0,
+    };
+
+    for (const tool of baseFilteredTools) {
+      counts[tool.dataBranch] += 1;
+    }
+
+    return counts;
+  }, [baseFilteredTools]);
+
+  const availableBranches = useMemo(() => {
+    return BRANCH_ORDER.filter((branch) => branchCounts[branch] > 0);
+  }, [branchCounts]);
+
+  // Final filtering including branch selection
+  const filteredTools = baseFilteredTools.filter((tool) => {
+    const matchesBranch =
+      !branchFilter || tool.dataBranch === (branchFilter as LabToolBranch);
+    return matchesBranch;
   });
 
   // Pagination calculations
@@ -70,24 +107,25 @@ export function useLabToolsData() {
   const prevPage = () => goToPage(validCurrentPage - 1);
 
   // Get unique values for filters
-  const types = Array.from(new Set(data.map((tool) => tool.type)));
   const projects = Array.from(
-    new Set(data.map((tool) => tool.project).filter(Boolean))
+    new Set(data.map((tool) => tool.project).filter(Boolean)),
   );
 
   return {
     tools: currentPageItems,
     allFilteredTools: filteredTools,
+    baseFilteredTools,
     isLoading,
     error,
-    types,
     projects,
     searchQuery: searchQuery || "",
     setSearchQuery,
-    typeFilter: typeFilter || "",
-    setTypeFilter,
     projectFilter: projectFilter || "",
     setProjectFilter,
+    branchFilter: branchFilter || "",
+    setBranchFilter,
+    branchCounts,
+    availableBranches,
     // Pagination data
     currentPage: validCurrentPage,
     totalPages,

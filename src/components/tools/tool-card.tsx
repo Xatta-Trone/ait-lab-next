@@ -16,12 +16,16 @@ interface ToolCardProps {
 }
 
 export default function ToolCard({ tool }: ToolCardProps) {
+  const imageSrc = tool.image
+    ? "/images/lab_tools/" + tool.image
+    : "/images/placeholder.png";
+
   return (
     <Card className="glass-card h-full flex flex-col card-hover overflow-hidden">
       <CardHeader className="p-0">
         <div className="relative h-48 w-full">
           <ImageWithFallback
-            src={"/images/lab_tools/" + tool.image || "/images/placeholder.png"}
+            src={imageSrc}
             alt={tool.title}
             fill
             className="object-cover"
