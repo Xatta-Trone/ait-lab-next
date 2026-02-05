@@ -1,3 +1,11 @@
+export type LabToolBranch =
+  | "Point"
+  | "Segment"
+  | "Area"
+  | "Route"
+  | "Resource"
+  | "Other";
+
 export interface LabTool {
   title: string;
   project: string;
@@ -9,5 +17,7 @@ export interface LabTool {
   }[];
   image: string;
   type: string;
+  /** Sub-grouping for tools (Point/Segment/Area/etc.). Must be present in JSON. */
+  dataBranch: LabToolBranch;
   date: string;
 }
