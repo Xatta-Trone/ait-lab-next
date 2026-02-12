@@ -29,7 +29,9 @@ const nextConfig: NextConfig = {
   },
 
   // Ensure proper transpilation
-  transpilePackages: [],
+  // Required for Turbopack/Next 15 to avoid React runtime mismatches
+  // when using `next-mdx-remote/rsc`.
+  transpilePackages: ["next-mdx-remote"],
 
   // Experimental features for better MDX support
   experimental: {
