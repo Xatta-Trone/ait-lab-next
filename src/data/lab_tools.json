@@ -563,5 +563,16 @@
         "links": [],
         "image": "bts39.png",
         "date": "July 15, 2025"
+    },
+    {
+        "title": "TxDOT 0-7274 tool",
+        "project": "",
+        "description": "",
+        "latestProjectLink": "https://aitlab.shinyapps.io/txdot-7274-tool/",
+        "type": "shiny",
+        "dataBranch": "Point",
+        "links": [],
+        "image": "txdot7274.png",
+        "date": "February 16, 2026"
     }
 ]
