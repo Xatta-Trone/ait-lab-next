@@ -1,0 +1,84 @@
+---
+title: "A Survey on Joint Embedding Predictive Architectures and World Models"
+authors:
+  - name: "Shamyo Brotee"
+    profile: "https://scholar.google.com/citations?hl=en&user=2jHz2x0AAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Gaurab Chhetri"
+    profile: "https://scholar.google.com/citations?user=NRzdAVEAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Sazzad Bin Bashar Polock"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Venkata Surya Bellamkonda"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Amir Rafe, Ph.D."
+    profile: "https://scholar.google.com/citations?hl=en&user=IUVLrp9PgFEC"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+year: 2025
+category: "SSRN working paper"
+abstract: "Joint Embedding Predictive Architectures (JEPAs) and World Models have emerged as foundational paradigms advancing autonomous artificial intelligence (AI). This survey provides an integrated account of their theoretical foundations, methodological innovations, and empirical evidence. We synthesize how JEPAs leverage self-supervised latent prediction to learn semantic, transferable representations across modalities, while World Models construct internal simulations for planning and control via action-conditioned dynamics. By mapping architectural convergences, benchmarking performance, and analyzing deployment trends, we highlight the growing alignment between representation learning for perception and predictive modeling for sequential decision-making. The discussion spans JEPA variants and modern world models, showing open challenges in stability, uncertainty, and scalability, and identifies hybrid designs that unify perception and control. Overall, this work offers a comprehensive framework and critical outlook on integrating JEPAs and World Models as complementary substrates for general, robust, and efficient AI."
+keywords:
+  [
+    "Joint embedding predictive architecture",
+    "JEPA",
+    "Self-supervised learning",
+    "World models",
+    "Representation learning",
+    "Video understanding",
+    "Multimodal learning",
+    "Latent prediction",
+    "I-JEPA",
+    "V-JEPA",
+  ]
+description: "Survey of Joint Embedding Predictive Architectures and their role as world models across vision, video, audio, 3D, and multimodal learning."
+featured_image: "/images/story/jepa-timeline.png"
+featured_image_alt: "Timeline of JEPA milestones from 2022 conceptual foundation through I-JEPA, video and point-cloud variants, multimodal TI-JEPA, V-JEPA 2, and LLM-JEPA."
+buttons:
+  - text: "SSRN"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5772122"
+    icon: "file"
+    variant: "default"
+  - text: "GitHub"
+    url: "https://github.com/gauravfs-14/awesome-jepa"
+    icon: "github"
+    variant: "secondary"
+bibtex: |
+  @misc{brotee2025jepa,
+    title = {A Survey on Joint Embedding Predictive Architectures and World Models},
+    author = {Brotee, Shamyo and Chhetri, Gaurab and Polock, Sazzad Bin Bashar and Bellamkonda, Venkata Surya and Rafe, Amir and Das, Subasish},
+    year = {2025},
+    doi = {10.2139/ssrn.5772122},
+    url = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5772122},
+    publisher = {SSRN},
+    note = {SSRN Electronic Journal}
+  }
+---
+
+## Prediction in latent space, not in pixels
+
+**Joint-Embedding Predictive Architectures (JEPAs)** learn by predicting **representations** of masked or future content from representations of visible context. That design sidesteps full **generative reconstruction** of high-dimensional signals while still encouraging models to internalize **structure, dynamics, and semantics**—a natural fit for **world-model** narratives in which an agent tracks how states evolve.
+
+The figure below sketches how the field has **branched by modality and objective** after the early conceptual and image-focused work.
+
+![Timeline of JEPA variants and milestones from 2022 through 2025](/images/story/jepa-timeline.png)
+
+_Figure 1: Chronological overview from the predictive world-model framing and hierarchical JEPA ideas through image (I-JEPA), stacked and audio variants, video and 3D instantiations, multimodal text–image JEPA, large-scale video world models, LLM-oriented JEPA, and robotics-flavored point-cloud applications._
+
+## Taxonomy and world models
+
+The survey maps **architectures** (encoders, predictors, targets, stop-gradient and EMA teachers where used), **modalities** (image, video, audio spectrograms and waveforms, points, text-image, language), and **objectives** (pure latent prediction vs. combinations with variance–invariance–covariance style regularizers, masked targets, distillation, or discriminative side tasks). A recurring theme is **what** should be predicted in embedding space so that downstream **planning, control, or retrieval** benefits without paying the cost of pixel- or token-level decoding at scale.
+
+## Practice and open directions
+
+Implementation choices—**masking strategies**, **multi-scale hierarchy**, **dataset scale**, and **evaluation protocols**—strongly affect whether representations transfer to **segmentation, action recognition, robotics, or clinical** pipelines. Open problems include tighter **theory** for what latent prediction implies about **causality and identifiability**, best practices for **multimodal** JEPA, and fair **benchmarking** against contrastive and masked-autoencoder baselines.
+
+## Resources
+
+The paper is on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5772122) ([DOI 10.2139/ssrn.5772122](https://doi.org/10.2139/ssrn.5772122)). For a curated, updated list of papers, code, and tutorials, see [**awesome-jepa**](https://github.com/gauravfs-14/awesome-jepa).

@@ -1,0 +1,120 @@
+---
+title: "Quantum Computing in Transportation Engineering: A Survey"
+authors:
+  - name: "Shriyank Somvanshi"
+    profile: "https://scholar.google.com/citations?user=JecpxeUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Md Monzurul Islam"
+    profile: "https://scholar.google.com/citations?hl=en&user=edkjFpwAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Sazzad Bin Bashar Polock"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Gaurab Chhetri"
+    profile: "https://scholar.google.com/citations?user=NRzdAVEAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Darrell Anderson"
+    profile: ""
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+year: 2026
+category: "IEEE T-ITS"
+abstract: "Quantum computing introduces powerful computational paradigms capable of addressing optimization and machine learning challenges that are increasingly critical in transportation engineering. This paper presents a comprehensive survey of how quantum algorithms and models are being applied across transportation domains, including intelligent transportation systems, traffic management, vehicle routing, logistics, and autonomous systems. Unlike prior reviews that primarily introduce quantum theory, we systematically connect fundamental quantum principles-qubits, superposition, entanglement, and quantum gates-with specific transportation use cases. We synthesize recent findings showing that the Quantum Approximate Optimization Algorithm, Grover’s search, and hybrid quantum–classical solvers can improve performance in combinatorial problems such as vehicle routing and dynamic traffic signal control, while quantum machine learning models (e.g., Quantum Convolutional Neural Networks, Quantum Generative Adversarial Networks, and clustering algorithms) demonstrate promise in traffic prediction, anomaly detection, and autonomous vehicle perception. Our review highlights that although quantum hardware limitations (noise, scalability, connectivity) remain significant, empirical studies already suggest measurable improvements in solution quality and computational efficiency when compared to classical heuristics. The key contribution of this survey is to map the landscape of quantum computing in transportation engineering, identify application-specific advantages and current bottlenecks, and outline future research directions toward scalable, domain-specific quantum algorithms. By doing so, we provide transportation researchers and practitioners with a structured foundation to integrate quantum approaches into emerging mobility systems, with implications for efficiency, safety, sustainability, and equity."
+keywords:
+  [
+    "Quantum computing",
+    "Transportation engineering",
+    "Intelligent transportation systems",
+    "Combinatorial optimization",
+    "Quantum annealing",
+    "QAOA",
+    "Hybrid quantum-classical computing",
+    "Quantum machine learning",
+    "Traffic management",
+    "Vehicle routing",
+  ]
+description: "Survey of quantum computing methods mapped to transportation engineering and intelligent transportation systems, covering optimization, learning, and deployment challenges."
+featured_image: "/images/story/evolution-qc.png"
+featured_image_alt: "Flowchart of quantum computing eras from foundations through NISQ and quantum ML, linking capabilities and constraints to transportation applications."
+buttons:
+  - text: "IEEE Xplore"
+    url: "https://ieeexplore.ieee.org/document/11395309"
+    icon: "file"
+    variant: "default"
+  - text: "SSRN Preprint"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5141686"
+    icon: "book"
+    variant: "secondary"
+bibtex: |
+  @article{somvanshi2026quantum,
+    author = {Somvanshi, Shriyank and Das, Subasish and Islam, Md Monzurul and Polock, Sazzad Bin Bashar and Chhetri, Gaurab and Anderson, Darrell},
+    title = {Quantum Computing in Transportation Engineering: A Survey},
+    journal = {IEEE Transactions on Intelligent Transportation Systems},
+    year = {2026},
+    pages = {1--18},
+    doi = {10.1109/TITS.2026.3662626},
+    url = {https://ieeexplore.ieee.org/document/11395309}
+  }
+---
+
+## Motivation and scope
+
+Transportation systems combine **physical infrastructure**, **human behavior**, and **algorithmic decision-making** at enormous scale. Planning and operations routinely rely on **combinatorial optimization** (routing, timetabling, resource allocation), **control** (signals, congestion management), and **machine learning** (forecasting, detection, decision support). Classical methods excel in many settings, but problem size, real-time constraints, and multi-objective structure continue to push the community toward new computational tools.
+
+**Quantum computing** introduces a different set of primitives—superposition, interference, and entangled state manipulation—that can change the cost of specific subroutines, and **quantum annealing** offers a direct hook from discrete optimization to energy minimization. This survey organizes the literature for **transportation engineering and intelligent transportation systems (ITS)** audiences: what quantum models exist, how they map to mobility problems, and what barriers matter for credible evaluation.
+
+![Evolution of quantum computing and its application to transportation](/images/story/evolution-qc.png)
+
+_Figure 1: Evolution of quantum computing from foundational concepts through algorithmic milestones, the optimization turn, the NISQ era, and quantum ML, with capabilities versus constraints and a mapping to transportation tasks (routing, traffic control, ITS analytics, autonomy support)._
+
+## From quantum building blocks to transportation problems
+
+The survey connects standard quantum concepts to the kinds of models transportation researchers already use:
+
+- **Qubits, gates, and circuits** underpin gate-model algorithms that aim to prepare useful state distributions or expectation values for objective functions derived from routing, scheduling, or network design.
+- **Grover-style search** is relevant when the discussion turns to **structured search** over large but finite configuration spaces, with practical caveats about constant factors, oracle construction, and competition with classical heuristics.
+- **QAOA and variational quantum eigensolver (VQE)-style** workflows target **combinatorial cost landscapes** that resemble integer programs or relaxed graph problems common in logistics and traffic engineering.
+- **Quantum annealing and QUBO formulations** align naturally with **Ising-energy** views of discrete choices, an entry point used in several transportation-flavored optimization studies.
+
+Framing matters: the contribution of a survey is not to claim universal speedups, but to clarify **which problem encodings** appear in the literature and **what assumptions** each approach requires.
+
+## Application threads in mobility and ITS
+
+Across the transportation quantum literature, recurring application threads include:
+
+### **Network-level and flow-oriented optimization**
+
+Managing congestion, reallocating capacity, or coordinating subnetworks often leads to **large discrete decision spaces**. Quantum and hybrid methods are explored as alternatives or supplements to classical decomposition, metaheuristics, and commercial solvers—typically at **proof-of-concept** scale first.
+
+### **Routing and logistics**
+
+**Traveling salesman**, **vehicle routing**, and rich variants with time windows and capacity constraints are canonical NP-hard structures. Surveys emphasize **QUBO encodings**, annealing demonstrations, and variational approaches, alongside the importance of **constraint handling** and **feasibility** when moving from toy instances to operational settings.
+
+### **Signal control and coordination**
+
+Adaptive signals and corridor coordination can be cast as **sequential decision** or **combinatorial timing** problems. Quantum proposals must be judged against mature classical adaptive control and reinforcement-learning baselines, including latency and safety requirements.
+
+### **Learning-centric ITS tasks**
+
+**Quantum machine learning** proposals touch traffic prediction, pattern analysis, and anomaly detection. A survey-level takeaway is methodological: claims of advantage should be read alongside issues such as **data loading**, **trainability**, **noise**, and comparisons to **strong classical models** already deployed in ITS.
+
+## Hybrid workflows and near-term reality
+
+Most practical roadmaps assume **hybrid quantum–classical** computation: classical outer loops handle decomposition, preprocessing, constraint repair, and learning, while quantum subroutines tackle selected subproblems or surrogate objectives. This division matches current hardware limits and encourages **problem-first** benchmarking rather than hardware demonstrations alone.
+
+## Challenges and research directions
+
+Credible progress in this space depends on addressing:
+
+- **Hardware noise and scale** relative to graph size in real transportation networks.
+- **Encoding overhead** when mapping operational constraints into quantum-native forms.
+- **Benchmarking discipline**—explicit classical baselines, realistic data, and reporting of instance sizes and failure modes.
+- **Interdisciplinary integration** of domain constraints (safety, equity, institutional rules) with algorithm design.
+
+## Research impact
+
+Published in the **IEEE Transactions on Intelligent Transportation Systems**, this survey offers a structured entry point for **transportation researchers**, **ITS practitioners**, and **quantum computing specialists** who need a shared vocabulary and a map of methods, use cases, and open gaps.

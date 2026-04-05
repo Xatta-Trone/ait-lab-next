@@ -1,0 +1,99 @@
+---
+title: "Post-Quantum Cryptography and Quantum-Safe Security: A Comprehensive Survey"
+authors:
+  - name: "Gaurab Chhetri"
+    profile: "https://scholar.google.com/citations?user=NRzdAVEAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Shriyank Somvanshi"
+    profile: "https://scholar.google.com/citations?user=JecpxeUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Pavan Hebli"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Shamyo Brotee"
+    profile: "https://scholar.google.com/citations?hl=en&user=2jHz2x0AAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+year: 2025
+category: "arXiv preprint"
+abstract: "Post-quantum cryptography (PQC) is moving from evaluation to deployment as NIST finalizes standards for ML-KEM, ML-DSA, and SLH-DSA. This survey maps the space from foundations to practice. We first develop a taxonomy across lattice-, code-, hash-, multivariate-, isogeny-, and MPC-in-the-Head families, summarizing security assumptions, cryptanalysis, and standardization status. We then compare performance and communication costs using representative, implementation-grounded measurements, and review hardware acceleration (AVX2, FPGA/ASIC) and implementation security with a focus on side-channel resistance. Building upward, we examine protocol integration (TLS, DNSSEC), PKI and certificate hygiene, and deployment in constrained and high-assurance environments (IoT, cloud, finance, blockchain). We also discuss complementarity with quantum technologies (QKD, QRNGs) and the limits of near-term quantum computing. Throughout, we emphasize crypto-agility, hybrid migration, and evidence-based guidance for operators. We conclude with open problems spanning parameter agility, leakage-resilient implementations, and domain-specific rollout playbooks. This survey aims to be a practical reference for researchers and practitioners planning quantum-safe systems, bridging standards, engineering, and operations."
+keywords:
+  [
+    "Post-quantum cryptography",
+    "Quantum-safe security",
+    "ML-KEM",
+    "ML-DSA",
+    "SLH-DSA",
+    "NIST standards",
+    "Lattice cryptography",
+    "Crypto-agility",
+    "TLS",
+    "Side-channel resistance",
+    "Hybrid migration",
+  ]
+description: "Comprehensive survey of post-quantum cryptography from algorithm families and NIST standards through implementation, protocols, and deployment for quantum-safe systems."
+featured_image: "/images/story/ml-dsa-pqc.png"
+featured_image_alt: "Digital signature flow: hash message, sign with private key and nonce, verify with public key—conceptual fit for module-lattice schemes such as ML-DSA."
+buttons:
+  - text: "arXiv"
+    url: "https://arxiv.org/abs/2510.10436"
+    icon: "globe"
+    variant: "default"
+  - text: "GitHub"
+    url: "https://github.com/gauravfs-14/awesome-pqc"
+    icon: "github"
+    variant: "secondary"
+bibtex: |
+  @misc{chhetri2025postquantum,
+    title = {Post-Quantum Cryptography and Quantum-Safe Security: A Comprehensive Survey},
+    author = {Chhetri, Gaurab and Somvanshi, Shriyank and Hebli, Pavan and Brotee, Shamyo and Das, Subasish},
+    year = {2025},
+    eprint = {2510.10436},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CR},
+    doi = {10.48550/arXiv.2510.10436},
+    url = {https://arxiv.org/abs/2510.10436},
+    note = {Preprint under active peer review for ACM Computing Surveys}
+  }
+---
+
+## Motivation: from evaluation to deployment
+
+Public-key infrastructure today rests largely on problems that **large-scale quantum computers could undermine** (for example, integer factorization and discrete logarithms). **Post-quantum cryptography (PQC)** replaces those assumptions with alternatives believed to resist both classical and known quantum attacks. As NIST advances **ML-KEM** (key encapsulation), **ML-DSA** (module-lattice signatures, formerly Dilithium), and **SLH-DSA** (stateless hash-based signatures), organizations must move from “watching the standards” to **concrete migration plans**—without breaking interoperability, performance, or assurance.
+
+This survey is written for **researchers and operators** who need a single thread from **mathematical families** through **implementations**, **protocols**, and **rollout**.
+
+![Digital signature workflow illustrating sign and verify paths relevant to ML-DSA and PQC](/images/story/ml-dsa-pqc.png)
+
+_Figure 1: Canonical digital signature flow—hash the message, sign with a private key (and fresh randomness), transmit the message and signature, verify with the public key. ML-DSA instantiates the sign/verify primitives using module-lattice structures designed for quantum-safe security._
+
+## Taxonomy of PQC families
+
+The paper organizes candidate constructions by underlying hardness:
+
+- **Lattices** — including Kyber/ML-KEM-style KEMs and Dilithium/ML-DSA-style signatures; central to the first wave of NIST standards.
+- **Codes**, **hashes**, **multivariate systems**, **isogenies**, and **MPC-in-the-Head** — each with distinct keys, ciphertext/signature sizes, performance profiles, and cryptanalytic history.
+
+For each family, the survey ties **assumptions**, **attacks**, and **standardization status** together so readers can compare options on security grounds, not marketing claims.
+
+## Performance, hardware, and implementation security
+
+Benchmarks in the literature vary widely; this work emphasizes **implementation-grounded** comparisons of **compute cost** and **bandwidth**, then surveys **acceleration** (e.g. SIMD, dedicated hardware) and **side-channel resistance**—because a standard on paper is only as trustworthy as the constant-time, leakage-aware code that ships.
+
+## Protocols, PKI, and real deployments
+
+Building upward, the survey covers **TLS**, **DNSSEC**, **certificate chains**, and hygiene in **PKI**; **constrained devices** and **IoT**; **cloud** and **financial** stacks; and **blockchain** settings where long-lived keys and forks complicate upgrades. Themes include **hybrid** classical+PQC handshakes during transition, **crypto-agility** for future algorithm swaps, and **evidence-based** guidance rather than one-size-fits-all checklists.
+
+## Quantum technologies alongside PQC
+
+**QKD** and **QRNGs** appear in operational discussions; the survey clarifies how they **complement** PQC (and where they do not replace sound key agreement or authentication). It also situates expectations relative to **near-term quantum computing** capabilities versus the threat models that motivate migration today.
+
+## Open problems and impact
+
+Closing sections highlight **parameter agility**, **leakage-resilient** implementations, and **domain-specific playbooks** for migration. The preprint is under active peer review for **ACM Computing Surveys**; see [arXiv:2510.10436](https://arxiv.org/abs/2510.10436) for the latest version.
+
+We also maintain [**awesome-pqc**](https://github.com/gauravfs-14/awesome-pqc)—a curated list of PQC papers, tools, implementations, and tutorials aligned with the survey’s themes (NIST standards, implementation security, hybrid migration, and deployment).

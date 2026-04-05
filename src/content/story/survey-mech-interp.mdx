@@ -1,0 +1,100 @@
+---
+title: "Bridging the Black Box: A Survey on Mechanistic Interpretability in AI"
+authors:
+  - name: "Shriyank Somvanshi"
+    profile: "https://scholar.google.com/citations?user=JecpxeUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Md Monzurul Islam"
+    profile: "https://scholar.google.com/citations?hl=en&user=edkjFpwAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Amir Rafe, Ph.D."
+    profile: "https://scholar.google.com/citations?hl=en&user=IUVLrp9PgFEC"
+    affiliation: "Texas State University, USA"
+  - name: "Anannya Ghosh Tusti"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Arka Chakraborty"
+    profile: "https://scholar.google.com/citations?user=thyttScAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Anika Baitullah"
+    profile: "https://scholar.google.com/citations?user=tZFdqf0AAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Tausif Islam Chowdhury"
+    profile: "https://scholar.google.com/citations?hl=en&user=CzZhaagAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Nawaf Alnawmasi"
+    profile: ""
+    affiliation: "Texas A&M University, USA"
+  - name: "Anandi Dutta, Ph.D."
+    profile: "https://scholar.google.com/citations?hl=en&user=x55wcQIAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+  - "Texas A&M University, USA"
+year: 2026
+category: "ACM Computing Surveys"
+abstract: "Mechanistic interpretability seeks to reverse-engineer the internal logic of neural networks by uncovering human-understandable circuits, algorithms, and causal structures that drive model behavior. Unlike post hoc explanations that describe what models do, this paradigm focuses on why and how they compute, tracing information flow through neurons, attention heads, and activation pathways. This survey provides a high-level synthesis of the field—highlighting its motivation, conceptual foundations, and methodological taxonomy rather than enumerating individual techniques. We organize mechanistic interpretability across three abstraction layers—neurons, circuits, and algorithms—and three evaluation perspectives: behavioral, counterfactual, and causal. We further discuss representative approaches and toolchains that enable structural analysis of modern AI systems, outlining how mechanistic interpretability bridges theoretical insights with practical transparency. Despite rapid progress, challenges persist in scaling these analyses to frontier models, resolving polysemantic representations, and establishing standardized causal benchmarks. By connecting historical evolution, current methodologies, and emerging research directions, this survey aims to provide an integrative framework for understanding how mechanistic interpretability can support transparency, reliability, and governance in large-scale AI."
+keywords:
+  [
+    "Mechanistic interpretability",
+    "Explainable AI",
+    "Neural circuits",
+    "Causal analysis",
+    "Large language models",
+    "Transparency",
+    "Activation patching",
+    "Sparse autoencoders",
+    "Post hoc interpretability",
+  ]
+description: "ACM Computing Surveys article surveying mechanistic interpretability: neurons, circuits, algorithms, and behavioral, counterfactual, and causal evaluation."
+featured_image: "/images/story/tax-interpret.png"
+featured_image_alt: "Taxonomy comparing post hoc interpretability, explainable-by-design models, and mechanistic interpretability on access, explanation origin, causal insight, and scalability."
+buttons:
+  - text: "ACM Digital Library"
+    url: "https://dl.acm.org/doi/full/10.1145/3787104"
+    icon: "file"
+    variant: "default"
+  - text: "GitHub"
+    url: "https://github.com/gauravfs-14/awesome-mechanistic-interpretability"
+    icon: "github"
+    variant: "secondary"
+bibtex: |
+  @article{somvanshi2026bridging,
+    author = {Somvanshi, Shriyank and Islam, Md Monzurul and Rafe, Amir and Tusti, Anannya Ghosh and Chakraborty, Arka and Baitullah, Anika and Chowdhury, Tausif Islam and Alnawmasi, Nawaf and Dutta, Anandi and Das, Subasish},
+    title = {Bridging the Black Box: A Survey on Mechanistic Interpretability in {AI}},
+    year = {2026},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {58},
+    number = {8},
+    pages = {1--35},
+    issn = {0360-0300},
+    url = {https://doi.org/10.1145/3787104},
+    doi = {10.1145/3787104},
+    journal = {ACM Comput. Surv.},
+    month = feb
+  }
+---
+
+## Where mechanistic interpretability sits
+
+Interpretability is not one technique but a **family of goals and access patterns**. The figure below contrasts three paradigms: **post hoc** methods that explain a trained black box from the outside (feature attribution, saliency, surrogates), **explainable-by-design** models whose structure is intended to be read directly (trees, rules, symbolic components), and **mechanistic interpretability**—often grouped under post hoc in surveys, but requiring **white-box** access to recover **internal** structure such as circuits, subspaces, and causal pathways.
+
+![Taxonomy of interpretability paradigms: post hoc, explainable-by-design, and mechanistic](/images/story/tax-interpret.png)
+
+_Figure 1: Comparison of access (black-box vs white-box), where explanations come from (external vs inherent vs internal), example techniques, and trade-offs between causal insight and scalability._
+
+## Layers and lenses in the survey
+
+The **ACM Computing Surveys** article synthesizes mechanistic interpretability at three abstraction layers—**neurons**, **circuits**, and **algorithms**—and discusses evaluation from **behavioral**, **counterfactual**, and **causal** angles. That structure helps readers move from local probes (what activates?) to compositional hypotheses (which subgraph implements a subtask?) without losing sight of validation discipline.
+
+## Tooling, scale, and open challenges
+
+Modern work combines **activation patching**, **causal tracing**, **sparse autoencoders**, and related toolchains to make internal features more legible—especially in **transformers** and **LLMs**. The survey emphasizes that progress must be weighed against **scaling** to frontier models, **polysemantic** units, and the need for **standardized** causal and robustness benchmarks so claims about “what the model is doing” can be compared across studies.
+
+## Resources
+
+The definitive reference is the journal version on the [ACM Digital Library](https://dl.acm.org/doi/full/10.1145/3787104) ([DOI 10.1145/3787104](https://doi.org/10.1145/3787104)). For papers, libraries, and tutorials that track the field, see [**awesome-mechanistic-interpretability**](https://github.com/gauravfs-14/awesome-mechanistic-interpretability).

@@ -36,8 +36,8 @@ authors:
     affiliation: "Texas State University, USA"
 affiliations:
   - "Texas State University, USA"
-year: 2025
-category: "arXiv preprint"
+year: 2026
+category: "ACM Computing Surveys"
 abstract: "The rapid growth of edge devices has driven the demand for deploying artificial intelligence (AI) at the edge, giving rise to Tiny Machine Learning (TinyML) and its evolving counterpart, Tiny Deep Learning (TinyDL). While TinyML initially focused on enabling simple inference tasks on microcontrollers, the emergence of TinyDL marks a paradigm shift toward deploying deep learning models on severely resource-constrained hardware. This survey presents a comprehensive overview of the transition from TinyML to TinyDL, encompassing architectural innovations, hardware platforms, model optimization techniques, and software toolchains. We analyze state-of-the-art methods in quantization, pruning, and neural architecture search (NAS), and examine hardware trends from MCUs to dedicated neural accelerators. Furthermore, we categorize software deployment frameworks, compilers, and AutoML tools enabling practical on-device learning. Applications across domains such as computer vision, audio recognition, healthcare, and industrial monitoring are reviewed to illustrate the real-world impact of TinyDL. Finally, we identify emerging directions including neuromorphic computing, federated TinyDL, edge-native foundation models, and domain-specific co-design approaches. This survey aims to serve as a foundational resource for researchers and practitioners, offering a holistic view of the ecosystem and laying the groundwork for future advancements in edge AI."
 keywords:
   [
@@ -57,10 +57,14 @@ keywords:
 description: "Comprehensive survey of Tiny Machine Learning to Tiny Deep Learning exploring their evolution, optimization techniques, hardware platforms, and applications in edge AI."
 featured_image: "/images/story/tinyml.png"
 buttons:
+  - text: "ACM Digital Library"
+    url: "https://doi.org/10.1145/3776588"
+    icon: "file"
+    variant: "default"
   - text: "ArXiv Preprint"
     url: "https://arxiv.org/abs/2506.18927"
     icon: "globe"
-    variant: "default"
+    variant: "secondary"
   - text: "Watch Video"
     url: "https://youtu.be/_H2vqzYayng"
     icon: "play"
@@ -70,17 +74,24 @@ buttons:
     icon: "github"
     variant: "secondary"
 bibtex: |
-  @article{2506.18927,
-        author = {Somvanshi, Shriyank and Islam, Md Monzurul and Chhetri, Gaurab and Chakraborty, Rohit and Mimi, Mahmuda Sultana and Shuvo, Sawgat Ahmed and Islam, Kazi Sifatul and Javed, Syed Aaqib and Rafat, Sharif Ahmed and Dutta, Anandi and Das, Subasish},
-        title = {From Tiny Machine Learning to Tiny Deep Learning: A Survey},
-        year = {2025},
-        publisher = {arXiv},
-        url = {https://arxiv.org/abs/2506.18927},
-        doi = {10.48550/arXiv.2506.18927},
-        note = {arXiv preprint},
-        journal = {arXiv:2506.18927},
-        keywords = {Tiny Machine Learning, Tiny Deep Learning, Edge AI, Model Optimization, Neural Architecture Search}
-    }
+  @article{10.1145/3776588,
+    author = {Somvanshi, Shriyank and Islam, Md Monzurul and Chhetri, Gaurab and Chakraborty, Rohit and Mimi, Mahmuda Sultana and Shuvo, Sawgat Ahmed and Islam, Kazi Sifatul and Javed, Syed and Rafat, Sharif Ahmed and Dutta, Anandi and Das, Subasish},
+    title = {From Tiny Machine Learning to Tiny Deep Learning: A Survey},
+    year = {2025},
+    issue_date = {May 2026},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {58},
+    number = {7},
+    issn = {0360-0300},
+    url = {https://doi.org/10.1145/3776588},
+    doi = {10.1145/3776588},
+    journal = {ACM Comput. Surv.},
+    month = dec,
+    articleno = {168},
+    numpages = {33},
+    keywords = {Tiny machine learning, tiny deep learning, edge AI, embedded deep learning}
+  }
 ---
 
 ## TinyML to TinyDL Evolution
