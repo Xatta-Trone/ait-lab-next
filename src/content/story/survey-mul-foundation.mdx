@@ -1,0 +1,88 @@
+---
+title: "Machine Unlearning in the Era of Foundation Models: Taxonomy, Methods, and Guarantees"
+authors:
+  - name: "Gaurab Chhetri"
+    profile: "https://scholar.google.com/citations?user=NRzdAVEAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Shamyo Brotee"
+    profile: "https://scholar.google.com/citations?hl=en&user=2jHz2x0AAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Mohammed Wasim Ansari"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Venkata Surya Bellamkonda"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Amir Rafe, Ph.D."
+    profile: "https://scholar.google.com/citations?hl=en&user=IUVLrp9PgFEC"
+    affiliation: "Texas State University, USA"
+  - name: "Nawaf Alnawmasi"
+    profile: ""
+    affiliation: "University of Ha'il, Saudi Arabia"
+  - name: "Anandi Dutta, Ph.D."
+    profile: "https://scholar.google.com/citations?hl=en&user=x55wcQIAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+  - "University of Ha'il, Saudi Arabia"
+year: 2026
+category: "SSRN working paper"
+abstract: "Machine unlearning aims to selectively remove data-dependent influence from trained machine learning models to meet privacy, safety, and regulatory requirements. As contemporary learning systems evolve toward foundation models, distributed and federated training, and large-scale generative architectures, unlearning has expanded beyond naive retraining-based deletion to encompass approximate, certified, and representation-level interventions. This survey provides a comprehensive synthesis of machine unlearning through a four-dimensional taxonomy, Intent, Mechanism, Guarantee, and Context (IMGC), that explicitly displays what is forgotten, how forgetting is operationalized, what level of assurance is provided, and where unlearning is applied within the system stack. We systematically review exact and approximate unlearning techniques, including retraining-based methods, influence-function approaches, parameter manipulation, and certified and differentially private unlearning, and examine their instantiations in large language models, federated learning, graph neural networks (GNNs), and generative models. Across these settings, we highlight how architectural, statistical, and deployment constraints fundamentally shape achievable unlearning guarantees. Beyond algorithmic methods, the survey analyzes evaluation protocols, verification and auditing practices, security and privacy threats, and deployment considerations, clarifying key trade-offs, limitations, and open challenges in designing reliable, auditable, and policy-aligned unlearning systems."
+keywords:
+  [
+    "Machine unlearning",
+    "Foundation models",
+    "Large language models",
+    "Privacy",
+    "Right to be forgotten",
+    "Model editing",
+    "Evaluation metrics",
+    "Robustness",
+    "Taxonomy",
+  ]
+description: "Survey of machine unlearning for foundation models and LLMs: taxonomy, methods, guarantees, interfaces, and verification."
+featured_image: "/images/story/wf-and-prob-mul.png"
+featured_image_alt: "Workflow from released LLM and unlearning UI through unlearning process to unlearned model, with problem clusters for submission, process, and verification."
+buttons:
+  - text: "SSRN"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5968054"
+    icon: "file"
+    variant: "default"
+bibtex: |
+  @misc{chhetri2026machine,
+    title = {Machine Unlearning in the Era of Foundation Models: Taxonomy, Methods, and Guarantees},
+    author = {Chhetri, Gaurab and Brotee, Shamyo and Ansari, Mohammed Wasim and Bellamkonda, Venkata Surya and Rafe, Amir and Alnawmasi, Nawaf and Dutta, Anandi and Das, Subasish},
+    year = {2026},
+    doi = {10.2139/ssrn.5968054},
+    url = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5968054},
+    publisher = {SSRN},
+    note = {SSRN Electronic Journal}
+  }
+---
+
+## Unlearning when models are huge and always on
+
+**Foundation models** and **LLMs** complicate the simple story of “delete the row, retrain the table.” Retraining from scratch is often infeasible; **machine unlearning** instead seeks procedures that **remove influence** of designated data or concepts while **preserving** acceptable behavior on the rest. In product settings, providers may ship a model plus an **unlearning interface**—so users can request forgetting—then **re-release** an updated checkpoint. That pipeline raises distinct research problems at **submission**, **execution**, and **release**.
+
+![Workflow for an LLM unlearning service and grouped research problems](/images/story/wf-and-prob-mul.png)
+
+_Figure 1: End-to-end view from model release and public unlearning UI through the unlearning process to a re-released model, with problem clusters for submission and interface design, the unlearning algorithm itself, and verification or metrics at release._
+
+## Submission and interface
+
+The survey discusses **what** should be unlearned—**concepts**, **documents**, **entities**, or **behaviors**—and how to represent requests without admitting **poisoned** or adversarial evidence. **Sequential** or **repeated** unlearning interacts with stability and capacity limits; interfaces must balance usability with safety.
+
+## Unlearning process
+
+Method sections typically contrast **data-centric** approaches (filtering, influence-based updates), **parameter-centric** edits (fine-tuning, gradient steps, sparse updates), and **hybrid** or **architecture-aware** strategies suited to large transformers. Core tensions include **how complete** removal can be in practice, **how to choose a retaining set** that preserves utility, and how approximate methods relate to formal **guarantees**.
+
+## Verification and release
+
+After unlearning, stakeholders ask whether the model **actually forgot**—which **metrics** (membership inference–style probes, behavioral tests, knowledge checks) are appropriate, and whether effectiveness holds under **adaptive** or **distribution-shift** evaluation. The survey connects these questions to **robustness** of claimed unlearning and responsible **release** practices.
+
+## Citation
+
+Full text and updates are available on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5968054) ([DOI 10.2139/ssrn.5968054](https://doi.org/10.2139/ssrn.5968054)). If the SSRN abstract differs from the frontmatter here, replace the YAML `abstract` field with the official wording from the paper page.
