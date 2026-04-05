@@ -1,0 +1,94 @@
+---
+title: "Realism and Causality in Synthetic Data Generation: A Survey"
+authors:
+  - name: "Gaurab Chhetri"
+    profile: "https://scholar.google.com/citations?user=NRzdAVEAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Shriyank Somvanshi"
+    profile: "https://scholar.google.com/citations?user=JecpxeUAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Mahmuda Sultana Mimi"
+    profile: "https://scholar.google.com/citations?user=CUmpUkAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+  - name: "Mohammed Wasim Ansari"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Md Monzurul Islam"
+    profile: "https://scholar.google.com/citations?hl=en&user=edkjFpwAAAAJ"
+    affiliation: "Texas State University, USA"
+  - name: "Swastika Barua"
+    profile: ""
+    affiliation: "Texas State University, USA"
+  - name: "Subasish Das, Ph.D."
+    profile: "https://scholar.google.com/citations?user=qK-YgxAAAAAJ&hl=en"
+    affiliation: "Texas State University, USA"
+affiliations:
+  - "Texas State University, USA"
+year: 2025
+category: "SSRN working paper"
+abstract: "Synthetic Data Generation (SDG) often appears adequate by distributional tests yet fails under domain shift, privacy audits, or safety analyses because measurement physics and causal structure are absent. This survey introduces Realistic Artificial Data (RAD), also known as Realistic Synthetic Data (RSD), a causally grounded subset of SDG that encodes data-generating processes and measurement systems to support evaluation of fidelity, causal recoverability, stability, and sim-to-real transfer. We synthesize recurring SDG failures (mode collapse, privacy leakage, correlation distortion, sensor mismatch) and emerging solutions: physics-calibrated rendering, causal simulators and digital twins, constraint-aware tabular generators, and LLM-guided synthesis with domain constraints. We consolidate evaluation frameworks around fidelity-utility-causality-stability reporting and identify promising RAD applications in safety-critical domains (autonomy, healthcare) alongside critical gaps in standardization and governance."
+keywords:
+  [
+    "Synthetic data generation",
+    "Realistic artificial data",
+    "Causal inference",
+    "Generative modeling",
+    "Simulation",
+    "Privacy-preserving ML",
+    "Data-centric AI",
+    "Distribution shift",
+    "Evaluation metrics",
+  ]
+description: "Survey of realism and causality in synthetic data generation, covering RAD-style evaluation, generative and simulators, and trustworthy deployment."
+featured_image: "/images/story/rad-sdg-diff.png"
+featured_image_alt: "Traffic-intersection metaphor contrasting real versus synthetic agents across representative, realistic, novel, and coherence dimensions for SDG evaluation."
+buttons:
+  - text: "SSRN"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5679762"
+    icon: "file"
+    variant: "default"
+  - text: "GitHub"
+    url: "https://github.com/gauravfs-14/awesome-sdg-rad"
+    icon: "github"
+    variant: "secondary"
+bibtex: |
+  @misc{chhetri2025realism,
+    title = {Realism and Causality in Synthetic Data Generation: A Survey},
+    author = {Chhetri, Gaurab and Somvanshi, Shriyank and Sultana Mimi, Mahmuda and Ansari, Mohammed Wasim and Islam, Md Monzurul and Barua, Swastika and Das, Subasish},
+    year = {2025},
+    month = oct,
+    doi = {10.2139/ssrn.5679762},
+    url = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5679762},
+    publisher = {SSRN},
+    note = {SSRN Electronic Journal}
+  }
+---
+
+## Why realism and causality matter
+
+**Synthetic data** is used to protect privacy, balance rare classes, and scale training when collection is expensive or risky. Classical SDG often optimizes for **marginal or joint resemblance** to a reference corpus. That can suffice for some tasks—but models and regulators increasingly ask whether synthetic records **behave** like real data under **interventions**, **constraints**, and **shift**. This survey argues for placing **realism** (plausible mechanisms and consistency) and **causality** (structure that supports counterfactual and interventional reasoning) at the center of how we design and evaluate generators.
+
+## RAD-style evaluation: more than “looks real”
+
+The figure below uses a **traffic intersection** metaphor to separate **positive** and **failure** modes of synthetic data:
+
+- **Representative** synthetic samples cover the diversity of the real distribution; **unrepresentative** data collapses modes or omits subgroups.
+- **Realistic** placements respect scene logic and constraints; **unrealistic** samples violate physics or context.
+- **Novel** yet valid scenarios extend beyond memorized training points; **non-novel** outputs simply replay or overlay training exemplars.
+- **Internal structure** (for example, temporal activity) should be **coherent** with real dynamics; **incoherent** series miss peaks, trends, or causal timing.
+
+![RAD and SDG evaluation dimensions using a real-versus-synthetic traffic scene metaphor](/images/story/rad-sdg-diff.png)
+
+_Figure 1: Contrasting real (baseline) and synthetic agents across representativeness, realism, novelty, and temporal coherence—visual shorthand for evaluation criteria discussed in the survey._
+
+## From mimicry to Realistic Artificial Data (RAD)
+
+**Realistic Artificial Data (RAD)** highlights generation that is **causally aware**, **physically consistent**, and **privacy-safe**, often via **simulation**, **domain models**, or **hybrid** pipelines that tie generative networks to explicit structure. The survey maps how the field moves from **statistical mimicry** and **deep generative models** toward **simulator-in-the-loop**, **physics-informed**, and **structural causal** approaches where assumptions are explicit enough to audit.
+
+## Methods, evaluation, and deployment
+
+Methodologically, the paper threads together **GANs, VAEs, diffusion and flow models**, **tabular and sequence synthesizers**, **LLM-driven generation**, and **agent- or rule-based simulators**, with attention to **identifiability** and **verification**. On evaluation, it stresses **multi-criteria** assessment—fidelity, utility, fairness and coverage, robustness, and leakage risk—rather than a single score. Deployment discussions connect to **privacy accounting**, **governance**, and **domain standards** (health, mobility, finance, and beyond).
+
+## Resources and citation
+
+The full survey is available on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5679762) (DOI [10.2139/ssrn.5679762](https://doi.org/10.2139/ssrn.5679762)). For a living bibliography of tools, datasets, papers, and implementations aligned with SDG and RAD, see the curated [**awesome-sdg-rad**](https://github.com/gauravfs-14/awesome-sdg-rad) repository.
