@@ -89,57 +89,57 @@ export function usePublicationData() {
     return matchesSearch && matchesYear && matchesJournal;
   });
 
-  // // Sort publications
-  // const sortedPublications = [...filteredPublications].sort((a, b) => {
-  //   const dateA = new Date(a.date_added).getTime();
-  //   const dateB = new Date(b.date_added).getTime();
+  // Sort publications
+  const sortedPublications = [...filteredPublications].sort((a, b) => {
+    const dateA = new Date(a.date_added).getTime();
+    const dateB = new Date(b.date_added).getTime();
 
-  //   if (sortOrder === "newest") {
-  //     return dateB - dateA;
-  //   } else {
-  //     return dateA - dateB;
-  //   }
-  // });
+    if (sortOrder === "newest") {
+      return dateB - dateA;
+    } else {
+      return dateA - dateB;
+    }
+  });
 
-  const normalizeDate = (publication: ResearchPaper): number => {
-  const raw = publication.publication_date || publication.year;
-  if (!raw) return 0;
+//   const normalizeDate = (publication: ResearchPaper): number => {
+//   const raw = publication.publication_date || publication.year;
+//   if (!raw) return 0;
 
-  const str = String(raw).trim();
+//   const str = String(raw).trim();
 
-  // "2026/4/17"
-  if (/^\d{4}\/\d{1,2}\/\d{1,2}$/.test(str)) {
-    const [y, m, d] = str.split("/");
-    return new Date(parseInt(y), parseInt(m) - 1, parseInt(d)).getTime();
-  }
+//   // "2026/4/17"
+//   if (/^\d{4}\/\d{1,2}\/\d{1,2}$/.test(str)) {
+//     const [y, m, d] = str.split("/");
+//     return new Date(parseInt(y), parseInt(m) - 1, parseInt(d)).getTime();
+//   }
 
-  // "2024/5"
-  if (/^\d{4}\/\d{1,2}$/.test(str)) {
-    const [y, m] = str.split("/");
-    return new Date(parseInt(y), parseInt(m) - 1, 1).getTime();
-  }
+//   // "2024/5"
+//   if (/^\d{4}\/\d{1,2}$/.test(str)) {
+//     const [y, m] = str.split("/");
+//     return new Date(parseInt(y), parseInt(m) - 1, 1).getTime();
+//   }
 
-  // "2026" — year only, use date_added as tiebreaker
-  if (/^\d{4}$/.test(str)) {
-    return new Date(parseInt(str), 0, 1).getTime();
-  }
+//   // "2026" — year only, use date_added as tiebreaker
+//   if (/^\d{4}$/.test(str)) {
+//     return new Date(parseInt(str), 0, 1).getTime();
+//   }
 
-  return new Date(str).getTime() || 0;
-};
+//   return new Date(str).getTime() || 0;
+// };
 
-const sortedPublications = [...filteredPublications].sort((a, b) => {
-  const dateA = normalizeDate(a);
-  const dateB = normalizeDate(b);
+// const sortedPublications = [...filteredPublications].sort((a, b) => {
+//   const dateA = normalizeDate(a);
+//   const dateB = normalizeDate(b);
 
-  if (dateA !== dateB) {
-    return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
-  }
+//   if (dateA !== dateB) {
+//     return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
+//   }
 
-  // Tiebreak with date_added
-  const addedA = a.date_added ? new Date(a.date_added).getTime() : 0;
-  const addedB = b.date_added ? new Date(b.date_added).getTime() : 0;
-  return sortOrder === "newest" ? addedB - addedA : addedA - addedB;
-});
+//   // Tiebreak with date_added
+//   const addedA = a.date_added ? new Date(a.date_added).getTime() : 0;
+//   const addedB = b.date_added ? new Date(b.date_added).getTime() : 0;
+//   return sortOrder === "newest" ? addedB - addedA : addedA - addedB;
+// });
 
   // Pagination calculations
   const totalItems = sortedPublications.length;
