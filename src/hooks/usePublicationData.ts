@@ -8,6 +8,76 @@ export function usePublicationData() {
   const [error, setError] = useState<Error | null>(null);
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
 
+  const parsePublicationDate = (publication?: string | number) => {
+    if (!publication) {
+      return {
+        year: 0,
+        month: 0,
+        day: 0,
+      };
+    }
+
+    const value = String(publication).trim();
+    const parts = value.split(/[/-]/).map((part) => parseInt(part, 10));
+
+    if (parts.length === 3 && parts.every((part) => !Number.isNaN(part))) {
+      return {
+        year: parts[0],
+        month: parts[1],
+        day: parts[2],
+      };
+    }
+
+    if (parts.length === 2 && parts.every((part) => !Number.isNaN(part))) {
+      return {
+        year: parts[0],
+        month: parts[1],
+        day: 0,
+      };
+    }
+
+    const year = parseInt(value, 10);
+    if (!Number.isNaN(year)) {
+      return {
+        year,
+        month: 0,
+        day: 0,
+      };
+    }
+
+    const fallback = new Date(value);
+    if (!Number.isNaN(fallback.getTime())) {
+      return {
+        year: fallback.getFullYear(),
+        month: fallback.getMonth() + 1,
+        day: fallback.getDate(),
+      };
+    }
+
+    return {
+      year: 0,
+      month: 0,
+      day: 0,
+    };
+  };
+
+  const getPublicationSortKey = (publication: ResearchPaper) => {
+    const parsedPublicationDate = parsePublicationDate(
+      publication.publication_date || publication.year
+    );
+
+    const parsedDateAdded = parsePublicationDate(publication.date_added);
+
+    return {
+      publicationYear: parsedPublicationDate.year,
+      publicationMonth: parsedPublicationDate.month,
+      publicationDay: parsedPublicationDate.day,
+      dateAddedYear: parsedDateAdded.year,
+      dateAddedMonth: parsedDateAdded.month,
+      dateAddedDay: parsedDateAdded.day,
+    };
+  };
+
   // Manual fetch implementation instead of using useDataFetching
   useEffect(() => {
     const fetchData = async () => {
@@ -91,13 +161,53 @@ export function usePublicationData() {
 
   // Sort publications
   const sortedPublications = [...filteredPublications].sort((a, b) => {
-    const dateA = new Date(a.date_added).getTime();
-    const dateB = new Date(b.date_added).getTime();
+    const sortKeyA = getPublicationSortKey(a);
+    const sortKeyB = getPublicationSortKey(b);
 
     if (sortOrder === "newest") {
-      return dateB - dateA;
+      if (sortKeyB.publicationYear !== sortKeyA.publicationYear) {
+        return sortKeyB.publicationYear - sortKeyA.publicationYear;
+      }
+
+      if (sortKeyB.publicationMonth !== sortKeyA.publicationMonth) {
+        return sortKeyB.publicationMonth - sortKeyA.publicationMonth;
+      }
+
+      if (sortKeyB.publicationDay !== sortKeyA.publicationDay) {
+        return sortKeyB.publicationDay - sortKeyA.publicationDay;
+      }
+
+      if (sortKeyB.dateAddedYear !== sortKeyA.dateAddedYear) {
+        return sortKeyB.dateAddedYear - sortKeyA.dateAddedYear;
+      }
+
+      if (sortKeyB.dateAddedMonth !== sortKeyA.dateAddedMonth) {
+        return sortKeyB.dateAddedMonth - sortKeyA.dateAddedMonth;
+      }
+
+      return sortKeyB.dateAddedDay - sortKeyA.dateAddedDay;
     } else {
-      return dateA - dateB;
+      if (sortKeyA.publicationYear !== sortKeyB.publicationYear) {
+        return sortKeyA.publicationYear - sortKeyB.publicationYear;
+      }
+
+      if (sortKeyA.publicationMonth !== sortKeyB.publicationMonth) {
+        return sortKeyA.publicationMonth - sortKeyB.publicationMonth;
+      }
+
+      if (sortKeyA.publicationDay !== sortKeyB.publicationDay) {
+        return sortKeyA.publicationDay - sortKeyB.publicationDay;
+      }
+
+      if (sortKeyA.dateAddedYear !== sortKeyB.dateAddedYear) {
+        return sortKeyA.dateAddedYear - sortKeyB.dateAddedYear;
+      }
+
+      if (sortKeyA.dateAddedMonth !== sortKeyB.dateAddedMonth) {
+        return sortKeyA.dateAddedMonth - sortKeyB.dateAddedMonth;
+      }
+
+      return sortKeyA.dateAddedDay - sortKeyB.dateAddedDay;
     }
   });
 
