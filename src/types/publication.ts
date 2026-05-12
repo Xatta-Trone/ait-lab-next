@@ -4,6 +4,7 @@ export interface ResearchPaper {
   total_citations: number;
   year: number;
   url: string;
+  publication_date?: string;
   journal?: string;
   publisher?: string;
   source?: string;
