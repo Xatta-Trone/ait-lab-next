@@ -1,5 +1,95 @@
 [
   {
+    "title": "New Funding Alert",
+    "description": "Road Assessment and Performance Tracking for Operational Risk (RAPTOR) awarded for BIAP Phase II - Sawgat Ahmed Shuvo, Amir Rafe, Gaurab Chhetri, Subasish Das",
+    "date": "May 14, 2026",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Benchmarking Advanced Tabular AI Models for Classifying SAE Automation Levels in Crash Data accepted at Data Science for Transportation - Shriyank Somvanshi, Anandi Dutta, Subasish Das",
+    "date": "May 13, 2026",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Tausif Islam Chowdhury successfully defended his Master's thesis proposal \"From Driver Assistance to Full Automation: Examining Crash Severity Determinants in Texas\". Congrats!",
+    "date": "May 12, 2026",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Sazzad Bin Bashar Polock successfully defended his Master's thesis \"Bike Lane Involved Crash Severity: An Analysis of Heterogeneity, Temporal Stability, and Policy Implication\". Congrats!",
+    "date": "May 12, 2026",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Arka Chakraborty received the TXST Graduate College Scholarship for Fall 2026. Congrats!",
+    "date": "May 8, 2026",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Md Monzurul Islam successfully defended his Master's thesis \"HERMES: Heterogeneous Edge-Relational Multi-Head SSM-Embedded Attention for Traffic Conflict Prediction at Signalized Intersections\". Congrats!",
+    "date": "May 7, 2026",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Arka Chakraborty, Anika Baitullah, and Gaurab Chhetri presented their poster for Project SafeMake at the Senior Design Day at Texas State University.",
+    "date": "May 5, 2026",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "WISE: Web Information Satire and Fakeness Evaluation accepted at Web&Graph Workshop @ WSDM 2026 - Gaurab Chhetri, Tausif Islam Chowdhury, Subasish Das",
+    "date": "May 5, 2026",
+    "link": "https://doi.org/10.1145/3779211.3793174"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "SPARK: Search Personalization via Agent Driven Retrieval and Knowledge Sharing accepted at Web&Graph Workshop @ WSDM 2026 - Gaurab Chhetri, Tausif Islam Chowdhury, Subasish Das",
+    "date": "May 5, 2026",
+    "link": "https://doi.org/10.1145/3779211.3793173"
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Policy Implications from Trend Mining of Ramp related Fatal Crashes accepted at Case Studies on Transport Policy - Arka Chakraborty, Sharif Ahmed Rafat, Sawgat Ahmed Shuvo, Subasish Das",
+    "date": "May 4, 2026",
+    "link": "https://doi.org/10.1016/j.cstp.2026.101834"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Radha Yadav presented her poster \"Evaluating Context's Impact on Hallucinations in Large Language Models\" at the Texas State University Undergraduate Research Conference.",
+    "date": "April 22, 2026",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Gaurab Chhetri presented his poster \"WISE: Web Information Satire and Fakeness Evaluation\" at the Texas State University Undergraduate Research Conference.",
+    "date": "April 22, 2026",
+    "link": ""
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Arka Chakraborty and Anika Baitullah won the poster presentation graduate award at the 5th TXST Analytics Showcase for \"Sustainable Transportation System Design by Analyzing Crash Factors: A Machine-Based Approach on Bicyclist Crash Prediction\". Congrats!",
+    "date": "April 22, 2026",
+    "link": ""
+  },
+  {
+    "title": "New Paper Published",
+    "description": "Context-Specific Safety Policy for Highway Railway Grade Crossings: Evidence from Fatal Crash Pattern Analysis accepted at Transport Policy - Anika Baitullah, Sharif Ahmed Rafat, Tausif Islam Chowdhury, Subasish Das",
+    "date": "April 14, 2026",
+    "link": "https://doi.org/10.1016/j.tranpol.2026.104187"
+  },
+  {
+    "title": "Student Achievement",
+    "description": "Laboni Salma Akter presented her poster \"Supply Chain Optimization, Digitalization, and Performance: The Mediating Role of Integration in a Developing Economy\" at the 2026 Texas State University Graduate Research Conference.",
+    "date": "April 9, 2026",
+    "link": ""
+  },
+  {
     "title": "Lab Achievement",
     "description": "AIT Lab Demonstrates Strong Research Leadership at TRB Annual Meeting 2026 in Washington, D.C.",
     "date": "January 18, 2026",
